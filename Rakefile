@@ -7,7 +7,7 @@ end
 
 public_dir      = "public"    # compiled site directory
 deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
-repo_url        = "git@github.com:tisba/hoc-website.git"
+repo_url        = "git@github.com:tisba/gst-website.git"
 deploy_branch   = "gh-pages"
 
 ##############
