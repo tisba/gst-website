@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Geekstammtisch</title>
+        <link>http://geekstammtisch.de</link>
+        <atom:link rel="self" href="http://geekstammtisch.de/episodes.m4a.rss" type="application/rss+xml" title="M4A Audio"/>
+        
+        <atom:link rel="alternate" href="http://geekstammtisch.de/episodes.mp3.rss" type="application/rss+xml" title="MP3 Audio"/>
+        
+        <language>de-de</language>
+        <generator>gst-kitchen</generator>
+        <copyright>Geekstammtisch, cc-by-nc-sa</copyright>
+        <itunes:subtitle>Der heimelige Nerdgespräch über Webentwicklung, Ruby/Rails und mehr</itunes:subtitle>
+        <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+        <managingEditor>alle@geekstammtisch.de (Dirk Breuer, Sebastian Cohnen)</managingEditor>
+        <itunes:summary>Mehr oder weniger Regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment</itunes:summary>
+        <itunes:explicit>no</itunes:explicit>
+        <description>Mehr oder weniger Regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment</description>
+        <itunes:owner>
+            <itunes:name>Dirk Breuer, Sebastian Cohnen</itunes:name>
+            <itunes:email>alle@geekstammtisch.de</itunes:email>
+        </itunes:owner>
+
+        <itunes:image href="http://shakti.local:9292/images/cover.jpg"/>
+        
+        <itunes:category text="Technology"/>
+        <itunes:category text="Technology">
+            <itunes:category text="Gadgets"/>
+        </itunes:category>
+        <itunes:category text="Technology">
+            <itunes:category text="Tech News"/>
+        </itunes:category>
+        
+        
+        <item>
+          <title>GST000 - Start</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Geekstammtisch</itunes:author>
+          <itunes:subtitle>GST000 - Start</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst000.m4a" length="14400347" type="audio/x-m4a"/>
+          <guid isPermaLink="false">GST000</guid>
+          <pubDate>Wed, 05 Dec 2012 21:34:03 +0100</pubDate>
+          <itunes:duration>00:33:36</itunes:duration>
+          <itunes:summary><![CDATA[lorem]]></itunes:summary>
+          <description><![CDATA[<em>lorem</em>]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#0:" />
+        </item>
+        
+    </channel>
+</rss>
