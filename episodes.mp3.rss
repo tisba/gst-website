@@ -10,19 +10,19 @@
         <language>de-de</language>
         <generator>gst-kitchen</generator>
         <copyright>Geekstammtisch, cc-by-nc-sa</copyright>
-        <itunes:subtitle>Der heimelige Nerdgespräch über Webentwicklung, Ruby/Rails und mehr</itunes:subtitle>
+        <itunes:subtitle>Das heimelige Nerdgespräch über Webentwicklung, Ruby/Rails und mehr</itunes:subtitle>
         <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
         <managingEditor>alle@geekstammtisch.de (Dirk Breuer, Sebastian Cohnen)</managingEditor>
-        <itunes:summary>Mehr oder weniger Regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment</itunes:summary>
+        <itunes:summary>Mehr oder weniger regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment</itunes:summary>
         <itunes:explicit>no</itunes:explicit>
-        <description>Mehr oder weniger Regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment</description>
+        <description>Mehr oder weniger regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment</description>
         <itunes:owner>
             <itunes:name>Dirk Breuer, Sebastian Cohnen</itunes:name>
             <itunes:email>alle@geekstammtisch.de</itunes:email>
         </itunes:owner>
 
-        <itunes:image href="http://shakti.local:9292/images/cover.jpg"/>
-        
+        <itunes:image href="http://geekstammtisch.de/images/cover.jpg"/>
+
         <itunes:category text="Technology"/>
         <itunes:category text="Technology">
             <itunes:category text="Gadgets"/>
@@ -30,19 +30,19 @@
         <itunes:category text="Technology">
             <itunes:category text="Tech News"/>
         </itunes:category>
-        
+
         
         <item>
           <title>GST000 - Start</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Geekstammtisch</itunes:author>
           <itunes:subtitle>GST000 - Start</itunes:subtitle>
-          <enclosure url="http://media.geekstammtisch.de/episodes/gst000.mp3" length="24194772" type="audio/mpeg"/>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst000.mp3" length="31169459" type="audio/mpeg"/>
           <guid isPermaLink="false">GST000</guid>
-          <pubDate>Wed, 05 Dec 2012 21:34:03 +0100</pubDate>
-          <itunes:duration>00:33:36</itunes:duration>
-          <itunes:summary><![CDATA[lorem]]></itunes:summary>
-          <description><![CDATA[<em>lorem</em>]]></description>
+          <pubDate>Fri, 07 Dec 2012 14:57:14 +0100</pubDate>
+          <itunes:duration>00:42:59</itunes:duration>
+          <itunes:summary><![CDATA[Kleine Runde nach erfolgreichem bezwingen von Garage Band!]]></itunes:summary>
+          <description><![CDATA[Kleine Runde nach erfolgreichem bezwingen von Garage Band!]]></description>
           <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#0:" />
         </item>
         
