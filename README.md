@@ -1,12 +1,22 @@
 # Benutzung
 
+## Webserver zum Preview starten
+
+    rake server
+
+## Webseite Deployen
+
+    rake deploy
+
+## Neuen Podcast veröffentlichen
+
 Liste aller Auphonic Produktionen holen:
 
-     gst-kitchen list
+    gst-kitchen list
 
 Dann die UUID von der neuen Episode kopieren und folgendes ausführen:
 
-     gst-kitchen process --uuid=<PRODUCTION-UUID>
+    gst-kitchen process --uuid=<PRODUCTION-UUID>
 
 Es sollte nun eine neue YAML-Datei unter `episodes/` geben.
 
