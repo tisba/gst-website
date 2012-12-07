@@ -1,0 +1,18 @@
+--- !ruby/struct:Episode
+number: 0
+name: Start
+length: 2579
+media:
+  mp3:
+    size: 31169459
+    file_ext: mp3
+  aac:
+    size: 19002231
+    file_ext: m4a
+  alac:
+    size: 187249993
+    file_ext: m4a
+auphonic_uuid: S3yVWZuEBDVPP2QCipfKML
+published_at: 2012-12-07 18:04:25.501487000 +01:00
+summary: Kleine Runde nach erfolgreichem bezwingen von Garage Band!
+description: Kleine Runde nach erfolgreichem bezwingen von Garage Band!
