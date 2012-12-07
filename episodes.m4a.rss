@@ -9,7 +9,7 @@
         
         <language>de-de</language>
         <generator>gst-kitchen</generator>
-        <copyright>Geekstammtisch, cc-by-nc-sa</copyright>
+        <copyright>Dirk Breuer, Sebastian Cohnen, cc-by-nc-sa</copyright>
         <itunes:subtitle>Das heimelige Nerdgespräch über Webentwicklung, Ruby/Rails und mehr</itunes:subtitle>
         <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
         <managingEditor>alle@geekstammtisch.de (Dirk Breuer, Sebastian Cohnen)</managingEditor>
@@ -35,7 +35,7 @@
         <item>
           <title>GST000 - Start</title>
           <itunes:explicit>no</itunes:explicit>
-          <itunes:author>Geekstammtisch</itunes:author>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
           <itunes:subtitle>GST000 - Start</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst000.m4a" length="19002231" type="audio/x-m4a"/>
           <guid isPermaLink="false">GST000</guid>
