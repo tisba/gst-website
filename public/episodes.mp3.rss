@@ -10,19 +10,19 @@
         <language>de-de</language>
         <generator>gst-kitchen</generator>
         <copyright>Geekstammtisch, cc-by-nc-sa</copyright>
-        <itunes:subtitle>Der heimelige Nerdgespräch über Webentwicklung, Ruby/Rails und mehr</itunes:subtitle>
+        <itunes:subtitle>Das heimelige Nerdgespräch über Webentwicklung, Ruby/Rails und mehr</itunes:subtitle>
         <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
         <managingEditor>alle@geekstammtisch.de (Dirk Breuer, Sebastian Cohnen)</managingEditor>
-        <itunes:summary>Mehr oder weniger Regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment</itunes:summary>
+        <itunes:summary>Mehr oder weniger regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment</itunes:summary>
         <itunes:explicit>no</itunes:explicit>
-        <description>Mehr oder weniger Regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment</description>
+        <description>Mehr oder weniger regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment</description>
         <itunes:owner>
             <itunes:name>Dirk Breuer, Sebastian Cohnen</itunes:name>
             <itunes:email>alle@geekstammtisch.de</itunes:email>
         </itunes:owner>
 
-        <itunes:image href="http://shakti.local:9292/images/cover.jpg"/>
-        
+        <itunes:image href="http://geekstammtisch.de/images/cover.jpg"/>
+
         <itunes:category text="Technology"/>
         <itunes:category text="Technology">
             <itunes:category text="Gadgets"/>
