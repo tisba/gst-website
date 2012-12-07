@@ -5,7 +5,7 @@ summary: Mehr oder weniger regelmäßiger Stammtisch rund um Nerdthemen und Webd
 handle: GST
 website: http://geekstammtisch.de
 cover: /images/cover.jpg
-media_url: http://media.geektammtisch.de/episodes
+media_url: http://media.geekstammtisch.de/episodes
 formats:
 - :m4a_aac
 - :mp3_mp3
