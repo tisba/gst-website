@@ -1,0 +1,12 @@
+---
+title: Geekstammtisch
+subtitle: Das heimelige Nerdgespräch über Webentwicklung, Ruby/Rails und mehr
+summary: Mehr oder weniger regelmäßiger Stammtisch rund um Nerdthemen und Webdevelopment
+handle: GST
+website: http://geekstammtisch.de
+cover: /images/cover.jpg
+media_url: http://media.geektammtisch.de/episodes
+formats:
+- :m4a_aac
+- :mp3_mp3
+rss_output_path: public/
