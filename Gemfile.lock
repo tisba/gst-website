@@ -10,12 +10,21 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    bootstrap-sass (2.2.1.1)
+      sass (~> 3.2)
+    chunky_png (1.2.6)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    fssm (0.2.9)
     puma (1.6.3)
       rack (~> 1.2)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
     rake (10.0.2)
+    sass (3.2.3)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.3.3)
@@ -30,6 +39,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (~> 2.2.1.1)
+  compass
   gst-kitchen!
   puma
   rake
