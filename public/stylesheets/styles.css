@@ -8788,18 +8788,24 @@ a.thumbnail:hover {
 }
 /* line 8, ../../sass/styles.scss */
 body {
+  padding-top: 30px;
   padding-bottom: 40px;
 }
-/* line 11, ../../sass/styles.scss */
+/* line 12, ../../sass/styles.scss */
 body .sidebar-nav {
   padding: 18px 0;
 }
 
-/* line 16, ../../sass/styles.scss */
+/* line 17, ../../sass/styles.scss */
 .container {
   width: 960px;
 }
-/* line 19, ../../sass/styles.scss */
+/* line 20, ../../sass/styles.scss */
+.container #header-image {
+  display: block;
+  margin: auto;
+}
+/* line 25, ../../sass/styles.scss */
 .container #subscribe-in-itunes {
   display: block;
   width: 350px;

@@ -6,6 +6,7 @@
 @import "slate";
 
 body {
+  padding-top: 30px;
   padding-bottom: 40px;
 
   .sidebar-nav {
@@ -15,6 +16,11 @@ body {
 
 .container {
   width: 960px;
+
+  #header-image {
+    display: block;
+    margin: auto;
+  }
 
   #subscribe-in-itunes {
     display: block;
