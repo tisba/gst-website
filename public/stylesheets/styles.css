@@ -8796,18 +8796,14 @@ body .sidebar-nav {
   padding: 18px 0;
 }
 
-/* line 17, ../../sass/styles.scss */
-.container {
-  width: 960px;
-}
-/* line 20, ../../sass/styles.scss */
+/* line 18, ../../sass/styles.scss */
 .container #header-image {
   display: block;
   margin: auto;
 }
-/* line 25, ../../sass/styles.scss */
+/* line 23, ../../sass/styles.scss */
 .container #subscribe-in-itunes {
   display: block;
-  width: 350px;
+  width: 200px;
   margin: 20px auto;
 }
