@@ -9,18 +9,17 @@ $(document).ready(function() {
     episodes = json.channel[0].item.reverse();
 
     var latest;
-    $.each(episodes, function(index, value) { 
-      $("#episode-list").prepend('<tr><td><a href="javascript:selectEpisode('+index+')">'+value.title[0].Text+"</a></td></tr>");
+    $.each(episodes, function(index, value) {
+      $("#episode-list").append('<li><a id="episode-'+index+'" href="javascript:selectEpisode('+index+')">'+value.title[0].Text+"</a></li>");
       latest = index;
     });
 
     var urlhash = self.location.hash;
 
     if (urlhash.match(/#\d+$/)){
-      console.log("hash found!")
-      urlhash = urlhash.substring(1)
-      var episodeNumber = Math.floor(urlhash)
-      $.each(episodes, function(index, value) { 
+      urlhash = urlhash.substring(1);
+      var episodeNumber = Math.floor(urlhash);
+      $.each(episodes, function(index, value) {
         if (handle+pad(episodeNumber,3) == value.guid[0].Text) selectEpisode(index, -1);
       });
     } else {
@@ -36,6 +35,7 @@ function selectEpisode(episodenumber, jumpSeconds) {
   $("#audioplayer").empty();
   $("#title").empty();
   $("#shownotes").empty();
+  $("#episode-list li a").removeClass("active");
 
   // Fill in new episode
   var preload = (jumpSeconds > 0 ) ? "auto" : "none";
@@ -46,6 +46,7 @@ function selectEpisode(episodenumber, jumpSeconds) {
   $("#title").append('<a href="'+enclosure+'">'+episode.title[0].Text+'</a>');
   $("#audioplayer").append('<audio src="'+enclosure+'" preload="'+preload+'"></audio>');
   $("#shownotes").html(description);
+  $("#episode-" + episodenumber).addClass("active");
 
   var as = audiojs.createAll();
   audioplayer = as[0]
