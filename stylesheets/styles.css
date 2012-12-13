@@ -8798,12 +8798,5 @@ body .sidebar-nav {
 
 /* line 18, ../../sass/styles.scss */
 .container #header-image {
-  display: block;
-  margin: auto;
-}
-/* line 23, ../../sass/styles.scss */
-.container #subscribe-in-itunes {
-  display: block;
-  width: 200px;
-  margin: 20px auto;
+  margin: 20px 0;
 }
