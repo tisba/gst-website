@@ -4,16 +4,16 @@ name: Chubby Models on a Diet
 length: 3210
 media:
   mp3:
-    size: 0
+    size: 38648523
     file_ext: mp3
   aac:
-    size: 0
+    size: 23502318
     file_ext: m4a
   alac:
-    size: 0
+    size: 233993820
     file_ext: m4a
 auphonic_uuid: L9L8MiWVxQA3HrhSTmt5LF
-published_at: 2013-01-07 20:29:43.029669000 +01:00
+published_at: 2013-01-07 20:50:46.614204000 +01:00
 summary: ! "## Errata\r\n\r\n  * Refinements sind doch drin, aber nur in sehr eingeschränkter
   Weise (https://bugs.ruby-lang.org/issues/4085#note-175)\r\n    (via @klaustopher)\r\n
   \ * Bodo’s (@bitboxer) Feedback zu rvm vs. rbenv\r\n    * `.ruby-version` erlaubt
