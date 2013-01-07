@@ -1,9 +1,11 @@
 GIT
   remote: git@github.com:tisba/gst-kitchen.git
-  revision: 77c75e63c4944fe97bd5dfa5ee784291f185a5be
+  revision: 134c757470d4e03e21853bd021f9ddf2db7df486
+  branch: render-as-markdown
   specs:
-    gst-kitchen (0.2.0)
+    gst-kitchen (0.3.0)
       rake
+      redcarpet
       trollop
       yajl-ruby
 
@@ -13,10 +15,18 @@ GEM
     bootstrap-sass (2.2.1.1)
       sass (~> 3.2)
     chunky_png (1.2.6)
+    columnize (0.3.6)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    debugger (1.2.2)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.1.1)
+      debugger-ruby_core_source (~> 1.1.5)
+    debugger-linecache (1.1.2)
+      debugger-ruby_core_source (>= 1.1.1)
+    debugger-ruby_core_source (1.1.5)
     fssm (0.2.9)
     puma (1.6.3)
       rack (~> 1.2)
@@ -24,6 +34,7 @@ GEM
     rack-protection (1.2.0)
       rack
     rake (10.0.2)
+    redcarpet (2.2.2)
     sass (3.2.3)
     shotgun (0.9)
       rack (>= 1.0)
@@ -41,6 +52,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 2.2.1.1)
   compass
+  debugger
   gst-kitchen!
   puma
   rake

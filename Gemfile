@@ -8,4 +8,6 @@ gem "shotgun"
 gem "puma"
 gem "rake"
 
-gem "gst-kitchen", :git => "git@github.com:tisba/gst-kitchen.git"
+gem "debugger"
+
+gem "gst-kitchen", git: "git@github.com:tisba/gst-kitchen.git", branch: "render-as-markdown"
