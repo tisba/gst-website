@@ -39,7 +39,7 @@
           <itunes:subtitle>GST000 - Batteries Included</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst000.m4a" length="18676513" type="audio/x-m4a"/>
           <guid isPermaLink="false">GST000</guid>
-          <pubDate>Wed, 12 Dec 2012 21:39:53 +0100</pubDate>
+          <pubDate>Mon, 17 Dec 2012 19:02:58 +0100</pubDate>
           <itunes:duration>00:42:27</itunes:duration>
           <itunes:summary><![CDATA[## Geekstammtisch Publishing Prozess
   * Inspiriert durch IGOR (https://github.com/m4p/fanboys-IGOR)
@@ -84,7 +84,7 @@
   * RailsGirls Followups erfolgreich
   * Weiter geht's im März mit Rails Girls Rheinland in Monheim (http://railsgirls.com/rheinland)
   * cologne.rb Weihnachtsmarkt Eddition im Dezember (Twitter @colognerb)]]></itunes:summary>
-          <description><![CDATA[<h3 id="geekstammtischpublishingprozess">Geekstammtisch Publishing Prozess</h3>
+          <description><![CDATA[<h3>Geekstammtisch Publishing Prozess</h3>
 
 <ul>
 <li>Inspiriert durch IGOR (<a href="https://github.com/m4p/fanboys-IGOR">https://github.com/m4p/fanboys-IGOR</a>)</li>
@@ -93,34 +93,34 @@
 <li>Aufnahmen, Auphonic (Processing, Metadaten), Auphonic API, Feed Rendern, rake deploy, fertig!</li>
 </ul>
 
-<h3 id="rubycompiletricksperformance111">Ruby Compile Tricks (Performance!!11!1)</h3>
+<h3>Ruby Compile Tricks (Performance!!11!1)</h3>
 
 <ul>
 <li><a href="http://alisnic.net/blog/making-your-ruby-fly">http://alisnic.net/blog/making-your-ruby-fly</a></li>
 <li><a href="http://spin.atomicobject.com/2012/11/06/is-your-application-running-with-ruby-slow/">http://spin.atomicobject.com/2012/11/06/is-your-application-running-with-ruby-slow/</a></li>
 <li>Falcon Patch (<a href="https://gist.github.com/1688857">https://gist.github.com/1688857</a>)</li>
-<li>Compile Flags auslesen aus einem gebauten Ruby: ruby -rpp -rrbconfig.rb -e &#8220;include RbConfig; pp CONFIG&#8221;</li>
+<li>Compile Flags auslesen aus einem gebauten Ruby: ruby -rpp -rrbconfig.rb -e &quot;include RbConfig; pp CONFIG&quot;</li>
 </ul>
 
-<h3 id="rubyupgrademitrvm">Ruby Upgrade mit RVM</h3>
+<h3>Ruby Upgrade mit RVM</h3>
 
 <ul>
 <li><code>rvm upgrade ruby-1.9.3-p286 ruby-1.9.3-p327</code></li>
 <li>Installiert 1.9.3-p327 migriert alle gems und wirft die alte Ruby version
- auch komplett weg, wenn gewünscht</li>
+auch komplett weg, wenn gewünscht</li>
 </ul>
 
-<h3 id="rubyentwicklung">Ruby Entwicklung</h3>
+<h3>Ruby Entwicklung</h3>
 
 <ul>
 <li>Core-Developer aller Implementierungen haben sich im IRC getroffen</li>
 <li>Matz behält sich das Recht vor, Dinge alleine zu entscheiden: “I’m not going to stop being the dictator but I want you guys to participate in the process of improving the language”</li>
-<li>Offene Fragen, u.a. ‘If an implementation can&#8217;t implement something, is it not &#8220;ruby&#8221;?’</li>
+<li>Offene Fragen, u.a. ‘If an implementation can&#39;t implement something, is it not &quot;ruby&quot;?’</li>
 <li>Hängt mit dem Talk von Brian Ford auf der RubyConf 2012 zusammen: <a href="http://www.confreaks.com/videos/1278-rubyconf2012-toward-a-design-for-ruby">http://www.confreaks.com/videos/1278-rubyconf2012-toward-a-design-for-ruby</a></li>
 <li><a href="http://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20121210">http://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20121210</a></li>
 </ul>
 
-<h3 id="gempicks">gem picks</h3>
+<h3>gem picks</h3>
 
 <ul>
 <li><code>better_errors</code>: <a href="https://github.com/charliesome/better_errors">https://github.com/charliesome/better_errors</a>
@@ -131,34 +131,209 @@
 </ul></li>
 </ul>
 
-<h3 id="apps">Apps</h3>
+<h3>Apps</h3>
 
 <ul>
 <li>iStats Menu 3 mit Retina, Historie, Update für 7 EUR (<a href="http://bjango.com/mac/istatmenus/">http://bjango.com/mac/istatmenus/</a>)</li>
 <li>Instacast 3, neue App, universal, eigener Sync Service (<a href="https://itunes.apple.com/de/app/instacast/id577056377?mt=8&amp;affId=1644991">https://itunes.apple.com/de/app/instacast/id577056377?mt=8&amp;affId=1644991</a>)</li>
 </ul>
 
-<h3 id="bestpractices">Best Practices</h3>
+<h3>Best Practices</h3>
 
 <ul>
 <li>Composition over Inheritance?! (<a href="http://en.wikipedia.org/wiki/Composition_over_inheritance">http://en.wikipedia.org/wiki/Composition_over_inheritance</a>)</li>
 </ul>
 
-<h3 id="githubsgistsinneuundbuntschn:">Github&#8217;s Gists in Neu und Bunt, schön :)</h3>
+<h3>Github&#39;s Gists in Neu und Bunt, schön :)</h3>
 
 <ul>
 <li>Github Blog Post: <a href="https://github.com/blog/1276-welcome-to-a-new-gist">https://github.com/blog/1276-welcome-to-a-new-gist</a></li>
 </ul>
 
-<h3 id="events">Events</h3>
+<h3>Events</h3>
 
 <ul>
 <li>RailsGirls Followups erfolgreich</li>
-<li>Weiter geht&#8217;s im März mit Rails Girls Rheinland in Monheim (<a href="http://railsgirls.com/rheinland">http://railsgirls.com/rheinland</a>)</li>
-<li>cologne.rb Weihnachtsmarkt Eddition im Dezember (Twitter @colognerb)</li>
+<li>Weiter geht&#39;s im März mit Rails Girls Rheinland in Monheim (<a href="http://railsgirls.com/rheinland">http://railsgirls.com/rheinland</a>)</li>
+<li>cologne.rb Weihnachtsmarkt Eddition im Dezember (Twitter <a href="https://twitter.com/colognerb">@colognerb</a>)</li>
 </ul>
 ]]></description>
           <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#0:" />
+        </item>
+        
+        <item>
+          <title>GST001 - Chubby Models on a Diet</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST001 - Chubby Models on a Diet</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst001.m4a" length="0" type="audio/x-m4a"/>
+          <guid isPermaLink="false">GST001</guid>
+          <pubDate>Mon, 07 Jan 2013 20:29:43 +0100</pubDate>
+          <itunes:duration>00:53:30</itunes:duration>
+          <itunes:summary><![CDATA[## Errata
+
+  * Refinements sind doch drin, aber nur in sehr eingeschränkter Weise (https://bugs.ruby-lang.org/issues/4085#note-175)
+    (via @klaustopher)
+  * Bodo’s (@bitboxer) Feedback zu rvm vs. rbenv
+    * `.ruby-version` erlaubt die Verwendung einer Ruby-Version pro Verzeichnis (https://github.com/sstephenson/rbenv#rbenv-local)
+    * Realisiert wird das mit `shims`: https://github.com/sstephenson/rbenv#understanding-shims
+    * Das `cd` Kommando _nicht_ überschreiben, ist einfach sauberer
+    * rbenv ist eher UNIX-Style: Ein Tool für eine Aufgabe
+    * Bodo hat schon Probleme auf dem Server, gibt aber zu "da schon tief für in die Scheisse greifen" zu müssen
+
+## In eigener Sache
+
+  * Endlich auch im iTunes Store und damit auch in Instacast!
+    * Nach dem Store mehr mp4 Downloads als mp3! (2:1)
+    * Download Zahlen von Podcasts ermitteln: nicht einfach :-/
+  * Und auch via Bittorrent (http://bitlove.org/tisba/gst)
+    * Mac OS X Client mit Torrent Support: http://www.getmiro.com/
+  * Nettes Feedback zum gst-kitchen Publishing Prozess von @auphonic und @timpritlove
+
+## Ruby
+
+  * Ruby 1.9.3p362 released, macht aber wohl Probleme (seg faults)
+    * https://github.com/travis-ci/travis-ci/issues/827
+    * https://bugs.ruby-lang.org/issues/7629
+  * Ruby Compilation
+    * mruby in ArangoDB: http://www.arangodb.org/
+    * mruby nach JavaScript Complier: http://qiezi.me/projects/mruby-web-irb/mruby.html
+    * Ruby zu Java-Quellcode!1!!11!: https://github.com/headius/rubyflux
+
+## Rails
+
+  * SQL Injection Vector (OMG!)
+    * Rails 3.2.10/3.1.9/3.0.18: http://weblog.rubyonrails.org/2013/1/2/Rails-3-2-10--3-1-9--and-3-0-18-have-been-released/
+    * Alles halb so wild: http://blog.phusion.nl/2013/01/03/rails-sql-injection-vulnerability-hold-your-horses-here-are-the-facts/
+
+## Software Development
+
+  * Put chubby models on a diet with concerns
+    * @dhh legt los: http://37signals.com/svn/posts/3372-put-chubby-models-on-a-diet-with-concerns
+    * Gegenmeinung von Corey Haines: http://programmingtour.blogspot.de/2012/12/why-i-dont-use-activesupportconcern.html
+    * tl;dr: `ActionSupport::Concerns` macht mehr als nur `include/extend`, nämlich auch Dependency Management
+
+## Binstubs
+
+  * Diskussion ob einchecken oder nicht: https://github.com/rails/rails/commit/61b91c4c55bcbd5a2ec85d6e1c67755150653dff
+  * Was sind Binstubs: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
+  * Ohne `bundle exec` leben: `bundle install --binstubs`
+
+## SCM Hosting:
+
+  * gitlab
+    * Open Source Klon von GitHub
+    * http://gitlabhq.com/
+    * Dirk hat’s getestet
+    * Kostenpflichtige Alternative: Github Enterprise (https://enterprise.github.com/) und Stash (http://www.atlassian.com/software/stash/overview)
+
+## Random Stuff
+
+  * Linus Torvalds beschimpft Kernel-Entwickler: https://lkml.org/lkml/2012/12/23/75
+  * `conference.jabber.org`: Group-Chat Service kostenlos, wenn man das mal brauchen sollte ;-)]]></itunes:summary>
+          <description><![CDATA[<h3>Errata</h3>
+
+<ul>
+<li>Refinements sind doch drin, aber nur in sehr eingeschränkter Weise (<a href="https://bugs.ruby-lang.org/issues/4085#note-175">https://bugs.ruby-lang.org/issues/4085#note-175</a>)
+(via <a href="https://twitter.com/klaustopher">@klaustopher</a>)</li>
+<li>Bodo’s (<a href="https://twitter.com/bitboxer">@bitboxer</a>) Feedback zu rvm vs. rbenv
+
+<ul>
+<li><code>.ruby-version</code> erlaubt die Verwendung einer Ruby-Version pro Verzeichnis (<a href="https://github.com/sstephenson/rbenv#rbenv-local">https://github.com/sstephenson/rbenv#rbenv-local</a>)</li>
+<li>Realisiert wird das mit <code>shims</code>: <a href="https://github.com/sstephenson/rbenv#understanding-shims">https://github.com/sstephenson/rbenv#understanding-shims</a></li>
+<li>Das <code>cd</code> Kommando <em>nicht</em> überschreiben, ist einfach sauberer</li>
+<li>rbenv ist eher UNIX-Style: Ein Tool für eine Aufgabe</li>
+<li>Bodo hat schon Probleme auf dem Server, gibt aber zu &quot;da schon tief für in die Scheisse greifen&quot; zu müssen</li>
+</ul></li>
+</ul>
+
+<h3>In eigener Sache</h3>
+
+<ul>
+<li>Endlich auch im iTunes Store und damit auch in Instacast!
+
+<ul>
+<li>Nach dem Store mehr mp4 Downloads als mp3! (2:1)</li>
+<li>Download Zahlen von Podcasts ermitteln: nicht einfach :-/</li>
+</ul></li>
+<li>Und auch via Bittorrent (<a href="http://bitlove.org/tisba/gst">http://bitlove.org/tisba/gst</a>)
+
+<ul>
+<li>Mac OS X Client mit Torrent Support: <a href="http://www.getmiro.com/">http://www.getmiro.com/</a></li>
+</ul></li>
+<li>Nettes Feedback zum gst-kitchen Publishing Prozess von <a href="https://twitter.com/auphonic">@auphonic</a> und <a href="https://twitter.com/timpritlove">@timpritlove</a></li>
+</ul>
+
+<h3>Ruby</h3>
+
+<ul>
+<li>Ruby 1.9.3p362 released, macht aber wohl Probleme (seg faults)
+
+<ul>
+<li><a href="https://github.com/travis-ci/travis-ci/issues/827">https://github.com/travis-ci/travis-ci/issues/827</a></li>
+<li><a href="https://bugs.ruby-lang.org/issues/7629">https://bugs.ruby-lang.org/issues/7629</a></li>
+</ul></li>
+<li>Ruby Compilation
+
+<ul>
+<li>mruby in ArangoDB: <a href="http://www.arangodb.org/">http://www.arangodb.org/</a></li>
+<li>mruby nach JavaScript Complier: <a href="http://qiezi.me/projects/mruby-web-irb/mruby.html">http://qiezi.me/projects/mruby-web-irb/mruby.html</a></li>
+<li>Ruby zu Java-Quellcode!1!!11!: <a href="https://github.com/headius/rubyflux">https://github.com/headius/rubyflux</a></li>
+</ul></li>
+</ul>
+
+<h3>Rails</h3>
+
+<ul>
+<li>SQL Injection Vector (OMG!)
+
+<ul>
+<li>Rails 3.2.10/3.1.9/3.0.18: <a href="http://weblog.rubyonrails.org/2013/1/2/Rails-3-2-10--3-1-9--and-3-0-18-have-been-released/">http://weblog.rubyonrails.org/2013/1/2/Rails-3-2-10--3-1-9--and-3-0-18-have-been-released/</a></li>
+<li>Alles halb so wild: <a href="http://blog.phusion.nl/2013/01/03/rails-sql-injection-vulnerability-hold-your-horses-here-are-the-facts/">http://blog.phusion.nl/2013/01/03/rails-sql-injection-vulnerability-hold-your-horses-here-are-the-facts/</a></li>
+</ul></li>
+</ul>
+
+<h3>Software Development</h3>
+
+<ul>
+<li>Put chubby models on a diet with concerns
+
+<ul>
+<li><a href="https://twitter.com/dhh">@dhh</a> legt los: <a href="http://37signals.com/svn/posts/3372-put-chubby-models-on-a-diet-with-concerns">http://37signals.com/svn/posts/3372-put-chubby-models-on-a-diet-with-concerns</a></li>
+<li>Gegenmeinung von Corey Haines: <a href="http://programmingtour.blogspot.de/2012/12/why-i-dont-use-activesupportconcern.html">http://programmingtour.blogspot.de/2012/12/why-i-dont-use-activesupportconcern.html</a></li>
+<li>tl;dr: <code>ActionSupport::Concerns</code> macht mehr als nur <code>include/extend</code>, nämlich auch Dependency Management</li>
+</ul></li>
+</ul>
+
+<h3>Binstubs</h3>
+
+<ul>
+<li>Diskussion ob einchecken oder nicht: <a href="https://github.com/rails/rails/commit/61b91c4c55bcbd5a2ec85d6e1c67755150653dff">https://github.com/rails/rails/commit/61b91c4c55bcbd5a2ec85d6e1c67755150653dff</a></li>
+<li>Was sind Binstubs: <a href="https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs">https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs</a></li>
+<li>Ohne <code>bundle exec</code> leben: <code>bundle install --binstubs</code></li>
+</ul>
+
+<h3>SCM Hosting:</h3>
+
+<ul>
+<li>gitlab
+
+<ul>
+<li>Open Source Klon von GitHub</li>
+<li><a href="http://gitlabhq.com/">http://gitlabhq.com/</a></li>
+<li>Dirk hat’s getestet</li>
+<li>Kostenpflichtige Alternative: Github Enterprise (<a href="https://enterprise.github.com/">https://enterprise.github.com/</a>) und Stash (<a href="http://www.atlassian.com/software/stash/overview">http://www.atlassian.com/software/stash/overview</a>)</li>
+</ul></li>
+</ul>
+
+<h3>Random Stuff</h3>
+
+<ul>
+<li>Linus Torvalds beschimpft Kernel-Entwickler: <a href="https://lkml.org/lkml/2012/12/23/75">https://lkml.org/lkml/2012/12/23/75</a></li>
+<li><code>conference.jabber.org</code>: Group-Chat Service kostenlos, wenn man das mal brauchen sollte ;-)</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#1:" />
         </item>
         
     </channel>

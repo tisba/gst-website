@@ -1,0 +1,51 @@
+--- !ruby/struct:Episode
+number: 1
+name: Chubby Models on a Diet
+length: 3210
+media:
+  mp3:
+    size: 0
+    file_ext: mp3
+  aac:
+    size: 0
+    file_ext: m4a
+  alac:
+    size: 0
+    file_ext: m4a
+auphonic_uuid: L9L8MiWVxQA3HrhSTmt5LF
+published_at: 2013-01-07 20:29:43.029669000 +01:00
+summary: ! "## Errata\r\n\r\n  * Refinements sind doch drin, aber nur in sehr eingeschränkter
+  Weise (https://bugs.ruby-lang.org/issues/4085#note-175)\r\n    (via @klaustopher)\r\n
+  \ * Bodo’s (@bitboxer) Feedback zu rvm vs. rbenv\r\n    * `.ruby-version` erlaubt
+  die Verwendung einer Ruby-Version pro Verzeichnis (https://github.com/sstephenson/rbenv#rbenv-local)\r\n
+  \   * Realisiert wird das mit `shims`: https://github.com/sstephenson/rbenv#understanding-shims\r\n
+  \   * Das `cd` Kommando _nicht_ überschreiben, ist einfach sauberer\r\n    * rbenv
+  ist eher UNIX-Style: Ein Tool für eine Aufgabe\r\n    * Bodo hat schon Probleme
+  auf dem Server, gibt aber zu \"da schon tief für in die Scheisse greifen\" zu müssen\r\n\r\n##
+  In eigener Sache\r\n\r\n  * Endlich auch im iTunes Store und damit auch in Instacast!\r\n
+  \   * Nach dem Store mehr mp4 Downloads als mp3! (2:1)\r\n    * Download Zahlen
+  von Podcasts ermitteln: nicht einfach :-/\r\n  * Und auch via Bittorrent (http://bitlove.org/tisba/gst)\r\n
+  \   * Mac OS X Client mit Torrent Support: http://www.getmiro.com/\r\n  * Nettes
+  Feedback zum gst-kitchen Publishing Prozess von @auphonic und @timpritlove\r\n\r\n##
+  Ruby\r\n\r\n  * Ruby 1.9.3p362 released, macht aber wohl Probleme (seg faults)\r\n
+  \   * https://github.com/travis-ci/travis-ci/issues/827\r\n    * https://bugs.ruby-lang.org/issues/7629\r\n
+  \ * Ruby Compilation\r\n    * mruby in ArangoDB: http://www.arangodb.org/\r\n    *
+  mruby nach JavaScript Complier: http://qiezi.me/projects/mruby-web-irb/mruby.html\r\n
+  \   * Ruby zu Java-Quellcode!1!!11!: https://github.com/headius/rubyflux\r\n\r\n##
+  Rails\r\n\r\n  * SQL Injection Vector (OMG!)\r\n    * Rails 3.2.10/3.1.9/3.0.18:
+  http://weblog.rubyonrails.org/2013/1/2/Rails-3-2-10--3-1-9--and-3-0-18-have-been-released/\r\n
+  \   * Alles halb so wild: http://blog.phusion.nl/2013/01/03/rails-sql-injection-vulnerability-hold-your-horses-here-are-the-facts/\r\n\r\n##
+  Software Development\r\n\r\n  * Put chubby models on a diet with concerns\r\n    *
+  @dhh legt los: http://37signals.com/svn/posts/3372-put-chubby-models-on-a-diet-with-concerns\r\n
+  \   * Gegenmeinung von Corey Haines: http://programmingtour.blogspot.de/2012/12/why-i-dont-use-activesupportconcern.html\r\n
+  \   * tl;dr: `ActionSupport::Concerns` macht mehr als nur `include/extend`, nämlich
+  auch Dependency Management\r\n\r\n## Binstubs\r\n\r\n  * Diskussion ob einchecken
+  oder nicht: https://github.com/rails/rails/commit/61b91c4c55bcbd5a2ec85d6e1c67755150653dff\r\n
+  \ * Was sind Binstubs: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs\r\n
+  \ * Ohne `bundle exec` leben: `bundle install --binstubs`\r\n\r\n## SCM Hosting:\r\n\r\n
+  \ * gitlab\r\n    * Open Source Klon von GitHub\r\n    * http://gitlabhq.com/\r\n
+  \   * Dirk hat’s getestet\r\n    * Kostenpflichtige Alternative: Github Enterprise
+  (https://enterprise.github.com/) und Stash (http://www.atlassian.com/software/stash/overview)\r\n\r\n##
+  Random Stuff\r\n\r\n  * Linus Torvalds beschimpft Kernel-Entwickler: https://lkml.org/lkml/2012/12/23/75\r\n
+  \ * `conference.jabber.org`: Group-Chat Service kostenlos, wenn man das mal brauchen
+  sollte ;-)"

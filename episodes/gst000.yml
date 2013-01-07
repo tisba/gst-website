@@ -13,7 +13,7 @@ media:
     size: 174254999
     file_ext: m4a
 auphonic_uuid: MdYbYFDVzQ3UmU3oNdEwih
-published_at: 2012-12-12 21:39:53.106361000 +01:00
+published_at: 2012-12-17 19:02:58.044614000 +01:00
 summary: ! "## Geekstammtisch Publishing Prozess\r\n  * Inspiriert durch IGOR (https://github.com/m4p/fanboys-IGOR)\r\n
   \ * https://github.com/tisba/gst-website\r\n  * https://github.com/tisba/gst-kitchen\r\n
   \ * Aufnahmen, Auphonic (Processing, Metadaten), Auphonic API, Feed Rendern, rake
@@ -40,77 +40,3 @@ summary: ! "## Geekstammtisch Publishing Prozess\r\n  * Inspiriert durch IGOR (h
   Events\r\n  * RailsGirls Followups erfolgreich\r\n  * Weiter geht's im März mit
   Rails Girls Rheinland in Monheim (http://railsgirls.com/rheinland)\r\n  * cologne.rb
   Weihnachtsmarkt Eddition im Dezember (Twitter @colognerb)"
-description: |
-  <h3 id="geekstammtischpublishingprozess">Geekstammtisch Publishing Prozess</h3>
-
-  <ul>
-  <li>Inspiriert durch IGOR (<a href="https://github.com/m4p/fanboys-IGOR">https://github.com/m4p/fanboys-IGOR</a>)</li>
-  <li><a href="https://github.com/tisba/gst-website">https://github.com/tisba/gst-website</a></li>
-  <li><a href="https://github.com/tisba/gst-kitchen">https://github.com/tisba/gst-kitchen</a></li>
-  <li>Aufnahmen, Auphonic (Processing, Metadaten), Auphonic API, Feed Rendern, rake deploy, fertig!</li>
-  </ul>
-
-  <h3 id="rubycompiletricksperformance111">Ruby Compile Tricks (Performance!!11!1)</h3>
-
-  <ul>
-  <li><a href="http://alisnic.net/blog/making-your-ruby-fly">http://alisnic.net/blog/making-your-ruby-fly</a></li>
-  <li><a href="http://spin.atomicobject.com/2012/11/06/is-your-application-running-with-ruby-slow/">http://spin.atomicobject.com/2012/11/06/is-your-application-running-with-ruby-slow/</a></li>
-  <li>Falcon Patch (<a href="https://gist.github.com/1688857">https://gist.github.com/1688857</a>)</li>
-  <li>Compile Flags auslesen aus einem gebauten Ruby: ruby -rpp -rrbconfig.rb -e &#8220;include RbConfig; pp CONFIG&#8221;</li>
-  </ul>
-
-  <h3 id="rubyupgrademitrvm">Ruby Upgrade mit RVM</h3>
-
-  <ul>
-  <li><code>rvm upgrade ruby-1.9.3-p286 ruby-1.9.3-p327</code></li>
-  <li>Installiert 1.9.3-p327 migriert alle gems und wirft die alte Ruby version
-   auch komplett weg, wenn gewünscht</li>
-  </ul>
-
-  <h3 id="rubyentwicklung">Ruby Entwicklung</h3>
-
-  <ul>
-  <li>Core-Developer aller Implementierungen haben sich im IRC getroffen</li>
-  <li>Matz behält sich das Recht vor, Dinge alleine zu entscheiden: “I’m not going to stop being the dictator but I want you guys to participate in the process of improving the language”</li>
-  <li>Offene Fragen, u.a. ‘If an implementation can&#8217;t implement something, is it not &#8220;ruby&#8221;?’</li>
-  <li>Hängt mit dem Talk von Brian Ford auf der RubyConf 2012 zusammen: <a href="http://www.confreaks.com/videos/1278-rubyconf2012-toward-a-design-for-ruby">http://www.confreaks.com/videos/1278-rubyconf2012-toward-a-design-for-ruby</a></li>
-  <li><a href="http://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20121210">http://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20121210</a></li>
-  </ul>
-
-  <h3 id="gempicks">gem picks</h3>
-
-  <ul>
-  <li><code>better_errors</code>: <a href="https://github.com/charliesome/better_errors">https://github.com/charliesome/better_errors</a>
-
-  <ul>
-  <li>schöne Rails/Rack Fehlerseiten mit REPL!!1!11</li>
-  <li>benötigt für die REPL dark ruby magic von <a href="https://github.com/banister/binding_of_caller">https://github.com/banister/binding_of_caller</a></li>
-  </ul></li>
-  </ul>
-
-  <h3 id="apps">Apps</h3>
-
-  <ul>
-  <li>iStats Menu 3 mit Retina, Historie, Update für 7 EUR (<a href="http://bjango.com/mac/istatmenus/">http://bjango.com/mac/istatmenus/</a>)</li>
-  <li>Instacast 3, neue App, universal, eigener Sync Service (<a href="https://itunes.apple.com/de/app/instacast/id577056377?mt=8&amp;affId=1644991">https://itunes.apple.com/de/app/instacast/id577056377?mt=8&amp;affId=1644991</a>)</li>
-  </ul>
-
-  <h3 id="bestpractices">Best Practices</h3>
-
-  <ul>
-  <li>Composition over Inheritance?! (<a href="http://en.wikipedia.org/wiki/Composition_over_inheritance">http://en.wikipedia.org/wiki/Composition_over_inheritance</a>)</li>
-  </ul>
-
-  <h3 id="githubsgistsinneuundbuntschn:">Github&#8217;s Gists in Neu und Bunt, schön :)</h3>
-
-  <ul>
-  <li>Github Blog Post: <a href="https://github.com/blog/1276-welcome-to-a-new-gist">https://github.com/blog/1276-welcome-to-a-new-gist</a></li>
-  </ul>
-
-  <h3 id="events">Events</h3>
-
-  <ul>
-  <li>RailsGirls Followups erfolgreich</li>
-  <li>Weiter geht&#8217;s im März mit Rails Girls Rheinland in Monheim (<a href="http://railsgirls.com/rheinland">http://railsgirls.com/rheinland</a>)</li>
-  <li>cologne.rb Weihnachtsmarkt Eddition im Dezember (Twitter @colognerb)</li>
-  </ul>
