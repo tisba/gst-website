@@ -41,13 +41,13 @@
           <guid isPermaLink="false">GST000</guid>
           <pubDate>Mon, 17 Dec 2012 19:02:58 +0100</pubDate>
           <itunes:duration>00:42:27</itunes:duration>
-          <itunes:summary><![CDATA[## Geekstammtisch Publishing Prozess
+          <itunes:summary><![CDATA[### Geekstammtisch Publishing Prozess
   * Inspiriert durch IGOR (https://github.com/m4p/fanboys-IGOR)
   * https://github.com/tisba/gst-website
   * https://github.com/tisba/gst-kitchen
   * Aufnahmen, Auphonic (Processing, Metadaten), Auphonic API, Feed Rendern, rake deploy, fertig!
 
-## Ruby Compile Tricks (Performance!!11!1)
+### Ruby Compile Tricks (Performance!!11!1)
   * http://alisnic.net/blog/making-your-ruby-fly
   * http://spin.atomicobject.com/2012/11/06/is-your-application-running-with-ruby-slow/
   * Falcon Patch (https://gist.github.com/1688857)
@@ -58,7 +58,7 @@
   * Installiert 1.9.3-p327 migriert alle gems und wirft die alte Ruby version
   auch komplett weg, wenn gewünscht
 
-## Ruby Entwicklung
+### Ruby Entwicklung
   * Core-Developer aller Implementierungen haben sich im IRC getroffen
   * Matz behält sich das Recht vor, Dinge alleine zu entscheiden: “I’m not going to stop being the dictator but I want you guys to participate in the process of improving the language”
   * Offene Fragen, u.a. ‘If an implementation can't implement something, is it not "ruby"?’
@@ -70,7 +70,7 @@
     * schöne Rails/Rack Fehlerseiten mit REPL!!1!11
     * benötigt für die REPL dark ruby magic von https://github.com/banister/binding_of_caller
 
-## Apps
+### Apps
   * iStats Menu 3 mit Retina, Historie, Update für 7 EUR (http://bjango.com/mac/istatmenus/)
   * Instacast 3, neue App, universal, eigener Sync Service (https://itunes.apple.com/de/app/instacast/id577056377?mt=8&affId=1644991)
 
@@ -102,7 +102,7 @@
 <li>Compile Flags auslesen aus einem gebauten Ruby: ruby -rpp -rrbconfig.rb -e &quot;include RbConfig; pp CONFIG&quot;</li>
 </ul>
 
-<h3>Ruby Upgrade mit RVM</h3>
+<h2>Ruby Upgrade mit RVM</h2>
 
 <ul>
 <li><code>rvm upgrade ruby-1.9.3-p286 ruby-1.9.3-p327</code></li>
@@ -120,7 +120,7 @@ auch komplett weg, wenn gewünscht</li>
 <li><a href="http://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20121210">http://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20121210</a></li>
 </ul>
 
-<h3>gem picks</h3>
+<h2>gem picks</h2>
 
 <ul>
 <li><code>better_errors</code>: <a href="https://github.com/charliesome/better_errors">https://github.com/charliesome/better_errors</a>
@@ -138,19 +138,19 @@ auch komplett weg, wenn gewünscht</li>
 <li>Instacast 3, neue App, universal, eigener Sync Service (<a href="https://itunes.apple.com/de/app/instacast/id577056377?mt=8&amp;affId=1644991">https://itunes.apple.com/de/app/instacast/id577056377?mt=8&amp;affId=1644991</a>)</li>
 </ul>
 
-<h3>Best Practices</h3>
+<h2>Best Practices</h2>
 
 <ul>
 <li>Composition over Inheritance?! (<a href="http://en.wikipedia.org/wiki/Composition_over_inheritance">http://en.wikipedia.org/wiki/Composition_over_inheritance</a>)</li>
 </ul>
 
-<h3>Github&#39;s Gists in Neu und Bunt, schön :)</h3>
+<h2>Github&#39;s Gists in Neu und Bunt, schön :)</h2>
 
 <ul>
 <li>Github Blog Post: <a href="https://github.com/blog/1276-welcome-to-a-new-gist">https://github.com/blog/1276-welcome-to-a-new-gist</a></li>
 </ul>
 
-<h3>Events</h3>
+<h2>Events</h2>
 
 <ul>
 <li>RailsGirls Followups erfolgreich</li>
@@ -170,7 +170,7 @@ auch komplett weg, wenn gewünscht</li>
           <guid isPermaLink="false">GST001</guid>
           <pubDate>Mon, 07 Jan 2013 20:50:46 +0100</pubDate>
           <itunes:duration>00:53:30</itunes:duration>
-          <itunes:summary><![CDATA[## Errata
+          <itunes:summary><![CDATA[### Errata
 
   * Refinements sind doch drin, aber nur in sehr eingeschränkter Weise (https://bugs.ruby-lang.org/issues/4085#note-175)
     (via @klaustopher)
@@ -213,13 +213,13 @@ auch komplett weg, wenn gewünscht</li>
     * Gegenmeinung von Corey Haines: http://programmingtour.blogspot.de/2012/12/why-i-dont-use-activesupportconcern.html
     * tl;dr: `ActionSupport::Concerns` macht mehr als nur `include/extend`, nämlich auch Dependency Management
 
-## Binstubs
+### Binstubs
 
   * Diskussion ob einchecken oder nicht: https://github.com/rails/rails/commit/61b91c4c55bcbd5a2ec85d6e1c67755150653dff
   * Was sind Binstubs: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
   * Ohne `bundle exec` leben: `bundle install --binstubs`
 
-## SCM Hosting:
+### SCM Hosting:
 
   * gitlab
     * Open Source Klon von GitHub
@@ -247,7 +247,7 @@ auch komplett weg, wenn gewünscht</li>
 </ul></li>
 </ul>
 
-<h3>In eigener Sache</h3>
+<h2>In eigener Sache</h2>
 
 <ul>
 <li>Endlich auch im iTunes Store und damit auch in Instacast!
@@ -264,7 +264,7 @@ auch komplett weg, wenn gewünscht</li>
 <li>Nettes Feedback zum gst-kitchen Publishing Prozess von <a href="https://twitter.com/auphonic">@auphonic</a> und <a href="https://twitter.com/timpritlove">@timpritlove</a></li>
 </ul>
 
-<h3>Ruby</h3>
+<h2>Ruby</h2>
 
 <ul>
 <li>Ruby 1.9.3p362 released, macht aber wohl Probleme (seg faults)
@@ -282,7 +282,7 @@ auch komplett weg, wenn gewünscht</li>
 </ul></li>
 </ul>
 
-<h3>Rails</h3>
+<h2>Rails</h2>
 
 <ul>
 <li>SQL Injection Vector (OMG!)
@@ -293,7 +293,7 @@ auch komplett weg, wenn gewünscht</li>
 </ul></li>
 </ul>
 
-<h3>Software Development</h3>
+<h2>Software Development</h2>
 
 <ul>
 <li>Put chubby models on a diet with concerns
@@ -326,7 +326,7 @@ auch komplett weg, wenn gewünscht</li>
 </ul></li>
 </ul>
 
-<h3>Random Stuff</h3>
+<h2>Random Stuff</h2>
 
 <ul>
 <li>Linus Torvalds beschimpft Kernel-Entwickler: <a href="https://lkml.org/lkml/2012/12/23/75">https://lkml.org/lkml/2012/12/23/75</a></li>
@@ -334,6 +334,208 @@ auch komplett weg, wenn gewünscht</li>
 </ul>
 ]]></description>
           <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#1:" />
+        </item>
+        
+        <item>
+          <title>GST002 - Shell ist immer da</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST002 - Shell ist immer da</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst002.mp3" length="43681307" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST002</guid>
+          <pubDate>Mon, 21 Jan 2013 22:12:54 +0100</pubDate>
+          <itunes:duration>01:00:29</itunes:duration>
+          <itunes:summary><![CDATA[Heute mit unserem ersten Gast: Sebastian Schulze (@bascht, http://bascht.com/)
+
+### Errata
+
+  * Von Bodo zu Ruby Patch 1.9.3-p362:
+    * Das ist nich nur unwichtiges Zeug drin gewesen:
+      Zum Beispiel wurde der Hash-Algo von Murmurhash
+      zu SipHash geändert um Hash Flodding und damit
+      DOS zu verhindern.
+    * Details dazu gab es auf dem 29c3 in diesem Vortrag: http://events.ccc.de/congress/2012/Fahrplan/events/5152.en.html
+      * Video: http://mirror.fem-net.de/CCC/29C3/mp4-h264-HQ/29c3-5152-en-hashflooding_dos_reloaded_h264.mp4
+
+### Ruby
+
+  * Fix all the SEGFAULTs (with 1.9.3-p374)
+  * Nokogiri von der Commandozeile (https://github.com/sparklemotion/nokogiri/blob/master/bin/nokogiri)
+  * Aaron Patterson, Ryan Davis: Worst. Ideas. Ever. http://www.confreaks.com/videos/198-rubyconf2009-worst-ideas-ever
+  * Bascht hat ein Web-Entwickler Background ist aber mittlerweile als freier DevOps unterwegs (http://blog.csanchez.org/2012/03/13/infrastructure-as-code/)
+  * http://devopsreactions.tumblr.com/
+  * Bascht deployed auch schon mal im JRuby Kontext:
+    * Maven, Tomcat, War-Files und so weiter…
+  * Java-Entwickler sind sehr nette Leute :-)
+  * Scripting mit Bash?
+  * Oder einfach direkt in Ruby :-)
+    * Brightbox Debian Packages/PPA (http://docs.brightbox.com/ruby/ubuntu/)
+  * Einfach immer Gemfiles verwenden
+    * `bundle console`: http://gembundler.com/v1.2/bundle_console.html
+  * Schmankerl: OpenLDAP Configure Script in knackigen 26k LOCs (http://code.metager.de/source/xref/openldap/configure#430)
+    * Unit testing for Bash: https://code.google.com/p/shunit2/ (Dirk hat's gefunden)
+  * Test-Driven-Admin
+  * Automatisierung muss sein, weil man will nicht das hier: http://eric.lubow.org/wp-content/uploads/2010/03/cssh_screenshot.jpg
+    * Cluster Shell (http://sourceforge.net/projects/clusterssh/)
+    * Oder einfach mit iTerm2 ("Shell" -> "Broadcast Input")
+  * Echte Automatisierung:
+    * Am besten direkt von Anfang an richtig machen!
+    * Puppet: http://puppetlabs.com/
+    * Chef: http://www.opscode.com/chef/
+    * Chef-Doku: http://docs.opscode.com/
+    * KEINEN eigenen Chef-Server zum testen aufsetzen, einfach kostenlos bei Opscode einen nehmen: https://manage.opscode.com/
+    * irgendwas anderes / eigenes ;-) (immer noch besser als manuell)
+    * Keine Angst mehr vor Freitagnachmittag-Deploys: http://devopsreactions.tumblr.com/post/37823969926/a-small-infrastructure-change-4pm-friday
+  * GST berichtete: mruby-web-irb is now WebRuby: https://github.com/xxuejie/webruby
+  * Ruby Facets: https://github.com/rubyworks/facets
+  * Zucker: http://rubyzucker.info/
+  * Anwendungsfall für ActiveSupport: http://bascht.hasbeen.in
+
+### Rails
+
+  * OMG!1!, more security fixes
+    * Rails 3.2.11, 3.1.10, 3.0.19 und sogar 2.3.15 released
+    * CVE-2013-0155: https://groups.google.com/group/rubyonrails-security/browse_thread/thread/b75585bae4326af2
+    * CVE-2013-0156: https://groups.google.com/group/rubyonrails-security/browse_thread/thread/eb56e482f9d21934
+  * View-Decorator: https://github.com/drapergem/draper
+  * Gary Berhardt: "How do we stop our Rails apps from being so horrible when they grow up?"
+
+### Web Services
+
+  * http://hackdesign.org/ - Desing courses for Hacker
+
+### Events
+
+  * cologne.rb braucht Talks: https://github.com/colognerb/talks/wiki/Potentielle-Themen
+    * Unser Talk: https://speakerdeck.com/railsbros_dirk/cologne-dot-rb-magic-kindergarten
+  * Am 6.7. ist Iron Maiden in Oberhausen \m/
+    * Sigint findet auch an diesem Wochenende statt: http://sigint.ccc.de/ (5.-7.7.2013)
+  * Railsgirls treffen sich auch wieder (31.01.): http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1442)
+  * wroc_love.rb: Zweiter Batch an Tickets raus - https://tito.io/wrocloverb/2013
+
+### Offtopic
+
+  * Dokumentation über das Phänomen Bronies: http://www.bronydoc.com/Brony/MAIN.html :-)
+  * Pony Podcast: http://ponytime.net/]]></itunes:summary>
+          <description><![CDATA[<p>Heute mit unserem ersten Gast: Sebastian Schulze (<a href="https://twitter.com/bascht">@bascht</a>, <a href="http://bascht.com/">http://bascht.com/</a>)</p>
+
+<h3>Errata</h3>
+
+<ul>
+<li>Von Bodo zu Ruby Patch 1.9.3-p362:
+
+<ul>
+<li>Das ist nich nur unwichtiges Zeug drin gewesen:
+Zum Beispiel wurde der Hash-Algo von Murmurhash
+zu SipHash geändert um Hash Flodding und damit
+DOS zu verhindern.</li>
+<li>Details dazu gab es auf dem 29c3 in diesem Vortrag: <a href="http://events.ccc.de/congress/2012/Fahrplan/events/5152.en.html">http://events.ccc.de/congress/2012/Fahrplan/events/5152.en.html</a>
+
+<ul>
+<li>Video: <a href="http://mirror.fem-net.de/CCC/29C3/mp4-h264-HQ/29c3-5152-en-hashflooding_dos_reloaded_h264.mp4">http://mirror.fem-net.de/CCC/29C3/mp4-h264-HQ/29c3-5152-en-hashflooding_dos_reloaded_h264.mp4</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3>Ruby</h3>
+
+<ul>
+<li>Fix all the SEGFAULTs (with 1.9.3-p374)</li>
+<li>Nokogiri von der Commandozeile (<a href="https://github.com/sparklemotion/nokogiri/blob/master/bin/nokogiri">https://github.com/sparklemotion/nokogiri/blob/master/bin/nokogiri</a>)</li>
+<li>Aaron Patterson, Ryan Davis: Worst. Ideas. Ever. <a href="http://www.confreaks.com/videos/198-rubyconf2009-worst-ideas-ever">http://www.confreaks.com/videos/198-rubyconf2009-worst-ideas-ever</a></li>
+<li>Bascht hat ein Web-Entwickler Background ist aber mittlerweile als freier DevOps unterwegs (<a href="http://blog.csanchez.org/2012/03/13/infrastructure-as-code/">http://blog.csanchez.org/2012/03/13/infrastructure-as-code/</a>)</li>
+<li><a href="http://devopsreactions.tumblr.com/">http://devopsreactions.tumblr.com/</a></li>
+<li>Bascht deployed auch schon mal im JRuby Kontext:
+
+<ul>
+<li>Maven, Tomcat, War-Files und so weiter…</li>
+</ul></li>
+<li>Java-Entwickler sind sehr nette Leute :-)</li>
+<li>Scripting mit Bash?</li>
+<li>Oder einfach direkt in Ruby :-)
+
+<ul>
+<li>Brightbox Debian Packages/PPA (<a href="http://docs.brightbox.com/ruby/ubuntu/">http://docs.brightbox.com/ruby/ubuntu/</a>)</li>
+</ul></li>
+<li>Einfach immer Gemfiles verwenden
+
+<ul>
+<li><code>bundle console</code>: <a href="http://gembundler.com/v1.2/bundle_console.html">http://gembundler.com/v1.2/bundle_console.html</a></li>
+</ul></li>
+<li>Schmankerl: OpenLDAP Configure Script in knackigen 26k LOCs (<a href="http://code.metager.de/source/xref/openldap/configure#430">http://code.metager.de/source/xref/openldap/configure#430</a>)
+
+<ul>
+<li>Unit testing for Bash: <a href="https://code.google.com/p/shunit2/">https://code.google.com/p/shunit2/</a> (Dirk hat&#39;s gefunden)</li>
+</ul></li>
+<li>Test-Driven-Admin</li>
+<li>Automatisierung muss sein, weil man will nicht das hier: <a href="http://eric.lubow.org/wp-content/uploads/2010/03/cssh_screenshot.jpg">http://eric.lubow.org/wp-content/uploads/2010/03/cssh_screenshot.jpg</a>
+
+<ul>
+<li>Cluster Shell (<a href="http://sourceforge.net/projects/clusterssh/">http://sourceforge.net/projects/clusterssh/</a>)</li>
+<li>Oder einfach mit iTerm2 (&quot;Shell&quot; -&gt; &quot;Broadcast Input&quot;)</li>
+</ul></li>
+<li>Echte Automatisierung:
+
+<ul>
+<li>Am besten direkt von Anfang an richtig machen!</li>
+<li>Puppet: <a href="http://puppetlabs.com/">http://puppetlabs.com/</a></li>
+<li>Chef: <a href="http://www.opscode.com/chef/">http://www.opscode.com/chef/</a></li>
+<li>Chef-Doku: <a href="http://docs.opscode.com/">http://docs.opscode.com/</a></li>
+<li>KEINEN eigenen Chef-Server zum testen aufsetzen, einfach kostenlos bei Opscode einen nehmen: <a href="https://manage.opscode.com/">https://manage.opscode.com/</a></li>
+<li>irgendwas anderes / eigenes ;-) (immer noch besser als manuell)</li>
+<li>Keine Angst mehr vor Freitagnachmittag-Deploys: <a href="http://devopsreactions.tumblr.com/post/37823969926/a-small-infrastructure-change-4pm-friday">http://devopsreactions.tumblr.com/post/37823969926/a-small-infrastructure-change-4pm-friday</a></li>
+</ul></li>
+<li>GST berichtete: mruby-web-irb is now WebRuby: <a href="https://github.com/xxuejie/webruby">https://github.com/xxuejie/webruby</a></li>
+<li>Ruby Facets: <a href="https://github.com/rubyworks/facets">https://github.com/rubyworks/facets</a></li>
+<li>Zucker: <a href="http://rubyzucker.info/">http://rubyzucker.info/</a></li>
+<li>Anwendungsfall für ActiveSupport: <a href="http://bascht.hasbeen.in">http://bascht.hasbeen.in</a></li>
+</ul>
+
+<h3>Rails</h3>
+
+<ul>
+<li>OMG!1!, more security fixes
+
+<ul>
+<li>Rails 3.2.11, 3.1.10, 3.0.19 und sogar 2.3.15 released</li>
+<li>CVE-2013-0155: <a href="https://groups.google.com/group/rubyonrails-security/browse_thread/thread/b75585bae4326af2">https://groups.google.com/group/rubyonrails-security/browse_thread/thread/b75585bae4326af2</a></li>
+<li>CVE-2013-0156: <a href="https://groups.google.com/group/rubyonrails-security/browse_thread/thread/eb56e482f9d21934">https://groups.google.com/group/rubyonrails-security/browse_thread/thread/eb56e482f9d21934</a></li>
+</ul></li>
+<li>View-Decorator: <a href="https://github.com/drapergem/draper">https://github.com/drapergem/draper</a></li>
+<li>Gary Berhardt: &quot;How do we stop our Rails apps from being so horrible when they grow up?&quot;</li>
+</ul>
+
+<h3>Web Services</h3>
+
+<ul>
+<li><a href="http://hackdesign.org/">http://hackdesign.org/</a> - Desing courses for Hacker</li>
+</ul>
+
+<h3>Events</h3>
+
+<ul>
+<li>cologne.rb braucht Talks: <a href="https://github.com/colognerb/talks/wiki/Potentielle-Themen">https://github.com/colognerb/talks/wiki/Potentielle-Themen</a>
+
+<ul>
+<li>Unser Talk: <a href="https://speakerdeck.com/railsbros_dirk/cologne-dot-rb-magic-kindergarten">https://speakerdeck.com/railsbros_dirk/cologne-dot-rb-magic-kindergarten</a></li>
+</ul></li>
+<li>Am 6.7. ist Iron Maiden in Oberhausen \m/
+
+<ul>
+<li>Sigint findet auch an diesem Wochenende statt: <a href="http://sigint.ccc.de/">http://sigint.ccc.de/</a> (5.-7.7.2013)</li>
+</ul></li>
+<li>Railsgirls treffen sich auch wieder (31.01.): <a href="http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1442">http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1442</a>)</li>
+<li>wroc_love.rb: Zweiter Batch an Tickets raus - <a href="https://tito.io/wrocloverb/2013">https://tito.io/wrocloverb/2013</a></li>
+</ul>
+
+<h3>Offtopic</h3>
+
+<ul>
+<li>Dokumentation über das Phänomen Bronies: <a href="http://www.bronydoc.com/Brony/MAIN.html">http://www.bronydoc.com/Brony/MAIN.html</a> :-)</li>
+<li>Pony Podcast: <a href="http://ponytime.net/">http://ponytime.net/</a></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#2:" />
         </item>
         
     </channel>

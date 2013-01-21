@@ -14,7 +14,7 @@ media:
     file_ext: m4a
 auphonic_uuid: L9L8MiWVxQA3HrhSTmt5LF
 published_at: 2013-01-07 20:50:46.614204000 +01:00
-summary: ! "## Errata\r\n\r\n  * Refinements sind doch drin, aber nur in sehr eingeschränkter
+summary: ! "### Errata\r\n\r\n  * Refinements sind doch drin, aber nur in sehr eingeschränkter
   Weise (https://bugs.ruby-lang.org/issues/4085#note-175)\r\n    (via @klaustopher)\r\n
   \ * Bodo’s (@bitboxer) Feedback zu rvm vs. rbenv\r\n    * `.ruby-version` erlaubt
   die Verwendung einer Ruby-Version pro Verzeichnis (https://github.com/sstephenson/rbenv#rbenv-local)\r\n
@@ -39,10 +39,10 @@ summary: ! "## Errata\r\n\r\n  * Refinements sind doch drin, aber nur in sehr ei
   @dhh legt los: http://37signals.com/svn/posts/3372-put-chubby-models-on-a-diet-with-concerns\r\n
   \   * Gegenmeinung von Corey Haines: http://programmingtour.blogspot.de/2012/12/why-i-dont-use-activesupportconcern.html\r\n
   \   * tl;dr: `ActionSupport::Concerns` macht mehr als nur `include/extend`, nämlich
-  auch Dependency Management\r\n\r\n## Binstubs\r\n\r\n  * Diskussion ob einchecken
+  auch Dependency Management\r\n\r\n### Binstubs\r\n\r\n  * Diskussion ob einchecken
   oder nicht: https://github.com/rails/rails/commit/61b91c4c55bcbd5a2ec85d6e1c67755150653dff\r\n
   \ * Was sind Binstubs: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs\r\n
-  \ * Ohne `bundle exec` leben: `bundle install --binstubs`\r\n\r\n## SCM Hosting:\r\n\r\n
+  \ * Ohne `bundle exec` leben: `bundle install --binstubs`\r\n\r\n### SCM Hosting:\r\n\r\n
   \ * gitlab\r\n    * Open Source Klon von GitHub\r\n    * http://gitlabhq.com/\r\n
   \   * Dirk hat’s getestet\r\n    * Kostenpflichtige Alternative: Github Enterprise
   (https://enterprise.github.com/) und Stash (http://www.atlassian.com/software/stash/overview)\r\n\r\n##

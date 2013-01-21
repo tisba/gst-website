@@ -14,16 +14,16 @@ media:
     file_ext: m4a
 auphonic_uuid: MdYbYFDVzQ3UmU3oNdEwih
 published_at: 2012-12-17 19:02:58.044614000 +01:00
-summary: ! "## Geekstammtisch Publishing Prozess\r\n  * Inspiriert durch IGOR (https://github.com/m4p/fanboys-IGOR)\r\n
+summary: ! "### Geekstammtisch Publishing Prozess\r\n  * Inspiriert durch IGOR (https://github.com/m4p/fanboys-IGOR)\r\n
   \ * https://github.com/tisba/gst-website\r\n  * https://github.com/tisba/gst-kitchen\r\n
   \ * Aufnahmen, Auphonic (Processing, Metadaten), Auphonic API, Feed Rendern, rake
-  deploy, fertig!\r\n\r\n## Ruby Compile Tricks (Performance!!11!1)\r\n  * http://alisnic.net/blog/making-your-ruby-fly\r\n
+  deploy, fertig!\r\n\r\n### Ruby Compile Tricks (Performance!!11!1)\r\n  * http://alisnic.net/blog/making-your-ruby-fly\r\n
   \ * http://spin.atomicobject.com/2012/11/06/is-your-application-running-with-ruby-slow/\r\n
   \ * Falcon Patch (https://gist.github.com/1688857)\r\n  * Compile Flags auslesen
   aus einem gebauten Ruby: ruby -rpp -rrbconfig.rb -e \"include RbConfig; pp CONFIG\"\r\n\r\n##
   Ruby Upgrade mit RVM\r\n  * `rvm upgrade ruby-1.9.3-p286 ruby-1.9.3-p327`\r\n  *
   Installiert 1.9.3-p327 migriert alle gems und wirft die alte Ruby version\r\n  auch
-  komplett weg, wenn gewünscht\r\n\r\n## Ruby Entwicklung\r\n  * Core-Developer aller
+  komplett weg, wenn gewünscht\r\n\r\n### Ruby Entwicklung\r\n  * Core-Developer aller
   Implementierungen haben sich im IRC getroffen\r\n  * Matz behält sich das Recht
   vor, Dinge alleine zu entscheiden: “I’m not going to stop being the dictator but
   I want you guys to participate in the process of improving the language”\r\n  *
@@ -32,7 +32,7 @@ summary: ! "## Geekstammtisch Publishing Prozess\r\n  * Inspiriert durch IGOR (h
   \ * http://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20121210\r\n\r\n##
   gem picks\r\n  * `better_errors`: https://github.com/charliesome/better_errors\r\n
   \   * schöne Rails/Rack Fehlerseiten mit REPL!!1!11\r\n    * benötigt für die REPL
-  dark ruby magic von https://github.com/banister/binding_of_caller\r\n\r\n## Apps\r\n
+  dark ruby magic von https://github.com/banister/binding_of_caller\r\n\r\n### Apps\r\n
   \ * iStats Menu 3 mit Retina, Historie, Update für 7 EUR (http://bjango.com/mac/istatmenus/)\r\n
   \ * Instacast 3, neue App, universal, eigener Sync Service (https://itunes.apple.com/de/app/instacast/id577056377?mt=8&affId=1644991)\r\n\r\n##
   Best Practices\r\n  * Composition over Inheritance?! (http://en.wikipedia.org/wiki/Composition_over_inheritance)\r\n\r\n##

@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:tisba/gst-kitchen.git
-  revision: 134c757470d4e03e21853bd021f9ddf2db7df486
+  revision: 2ba7095dd0512cd2830c0ed45df874ba890a78bc
   branch: render-as-markdown
   specs:
     gst-kitchen (0.3.0)

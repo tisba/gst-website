@@ -1,0 +1,61 @@
+--- !ruby/struct:Episode
+number: 2
+name: Shell ist immer da
+length: 3629
+media:
+  mp3:
+    size: 43681307
+    file_ext: mp3
+  aac:
+    size: 26556394
+    file_ext: m4a
+  alac:
+    size: 265873413
+    file_ext: m4a
+auphonic_uuid: Q8txfT8ibfLt9XWBRDSWtX
+published_at: 2013-01-21 22:12:54.807919000 +01:00
+summary: ! "Heute mit unserem ersten Gast: Sebastian Schulze (@bascht, http://bascht.com/)\r\n\r\n###
+  Errata\r\n\r\n  * Von Bodo zu Ruby Patch 1.9.3-p362:\r\n    * Das ist nich nur unwichtiges
+  Zeug drin gewesen:\r\n      Zum Beispiel wurde der Hash-Algo von Murmurhash\r\n
+  \     zu SipHash geändert um Hash Flodding und damit\r\n      DOS zu verhindern.\r\n
+  \   * Details dazu gab es auf dem 29c3 in diesem Vortrag: http://events.ccc.de/congress/2012/Fahrplan/events/5152.en.html\r\n
+  \     * Video: http://mirror.fem-net.de/CCC/29C3/mp4-h264-HQ/29c3-5152-en-hashflooding_dos_reloaded_h264.mp4\r\n\r\n###
+  Ruby\r\n\r\n  * Fix all the SEGFAULTs (with 1.9.3-p374)\r\n  * Nokogiri von der
+  Commandozeile (https://github.com/sparklemotion/nokogiri/blob/master/bin/nokogiri)\r\n
+  \ * Aaron Patterson, Ryan Davis: Worst. Ideas. Ever. http://www.confreaks.com/videos/198-rubyconf2009-worst-ideas-ever\r\n
+  \ * Bascht hat ein Web-Entwickler Background ist aber mittlerweile als freier DevOps
+  unterwegs (http://blog.csanchez.org/2012/03/13/infrastructure-as-code/)\r\n  * http://devopsreactions.tumblr.com/\r\n
+  \ * Bascht deployed auch schon mal im JRuby Kontext:\r\n    * Maven, Tomcat, War-Files
+  und so weiter…\r\n  * Java-Entwickler sind sehr nette Leute :-)\r\n  * Scripting
+  mit Bash?\r\n  * Oder einfach direkt in Ruby :-)\r\n    * Brightbox Debian Packages/PPA
+  (http://docs.brightbox.com/ruby/ubuntu/)\r\n  * Einfach immer Gemfiles verwenden\r\n
+  \   * `bundle console`: http://gembundler.com/v1.2/bundle_console.html\r\n  * Schmankerl:
+  OpenLDAP Configure Script in knackigen 26k LOCs (http://code.metager.de/source/xref/openldap/configure#430)\r\n
+  \   * Unit testing for Bash: https://code.google.com/p/shunit2/ (Dirk hat's gefunden)\r\n
+  \ * Test-Driven-Admin\r\n  * Automatisierung muss sein, weil man will nicht das
+  hier: http://eric.lubow.org/wp-content/uploads/2010/03/cssh_screenshot.jpg\r\n    *
+  Cluster Shell (http://sourceforge.net/projects/clusterssh/)\r\n    * Oder einfach
+  mit iTerm2 (\"Shell\" -> \"Broadcast Input\")\r\n  * Echte Automatisierung:\r\n
+  \   * Am besten direkt von Anfang an richtig machen!\r\n    * Puppet: http://puppetlabs.com/\r\n
+  \   * Chef: http://www.opscode.com/chef/\r\n    * Chef-Doku: http://docs.opscode.com/\r\n
+  \   * KEINEN eigenen Chef-Server zum testen aufsetzen, einfach kostenlos bei Opscode
+  einen nehmen: https://manage.opscode.com/\r\n    * irgendwas anderes / eigenes ;-)
+  (immer noch besser als manuell)\r\n    * Keine Angst mehr vor Freitagnachmittag-Deploys:
+  http://devopsreactions.tumblr.com/post/37823969926/a-small-infrastructure-change-4pm-friday\r\n
+  \ * GST berichtete: mruby-web-irb is now WebRuby: https://github.com/xxuejie/webruby\r\n
+  \ * Ruby Facets: https://github.com/rubyworks/facets\r\n  * Zucker: http://rubyzucker.info/\r\n
+  \ * Anwendungsfall für ActiveSupport: http://bascht.hasbeen.in\r\n\r\n### Rails\r\n\r\n
+  \ * OMG!1!, more security fixes\r\n    * Rails 3.2.11, 3.1.10, 3.0.19 und sogar
+  2.3.15 released\r\n    * CVE-2013-0155: https://groups.google.com/group/rubyonrails-security/browse_thread/thread/b75585bae4326af2\r\n
+  \   * CVE-2013-0156: https://groups.google.com/group/rubyonrails-security/browse_thread/thread/eb56e482f9d21934\r\n
+  \ * View-Decorator: https://github.com/drapergem/draper\r\n  * Gary Berhardt: \"How
+  do we stop our Rails apps from being so horrible when they grow up?\"\r\n\r\n###
+  Web Services\r\n\r\n  * http://hackdesign.org/ - Desing courses for Hacker\r\n\r\n###
+  Events\r\n\r\n  * cologne.rb braucht Talks: https://github.com/colognerb/talks/wiki/Potentielle-Themen\r\n
+  \   * Unser Talk: https://speakerdeck.com/railsbros_dirk/cologne-dot-rb-magic-kindergarten\r\n
+  \ * Am 6.7. ist Iron Maiden in Oberhausen \\m/\r\n    * Sigint findet auch an diesem
+  Wochenende statt: http://sigint.ccc.de/ (5.-7.7.2013)\r\n  * Railsgirls treffen
+  sich auch wieder (31.01.): http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1442)\r\n
+  \ * wroc_love.rb: Zweiter Batch an Tickets raus - https://tito.io/wrocloverb/2013\r\n\r\n###
+  Offtopic\r\n\r\n  * Dokumentation über das Phänomen Bronies: http://www.bronydoc.com/Brony/MAIN.html
+  :-)\r\n  * Pony Podcast: http://ponytime.net/"
