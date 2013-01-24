@@ -6,8 +6,7 @@ $(document).ready(function() {
   $.get(rss_url, function(xml) {
     var json = $.xmlToJSON(xml, null, 1);
 
-    episodes = json.channel[0].item.reverse();
-
+    episodes = json.channel[0].item;
     var latest;
     $.each(episodes, function(index, value) {
       $("#episode-list").append('<li><a id="episode-'+index+'" href="javascript:selectEpisode('+index+')">'+value.title[0].Text+"</a></li>");
@@ -15,16 +14,16 @@ $(document).ready(function() {
     });
 
     var urlhash = self.location.hash;
+    var preselection = latest;
 
-    if (urlhash.match(/#\d+$/)){
-      urlhash = urlhash.substring(1);
-      var episodeNumber = Math.floor(urlhash);
+    // Check for GST prefix, slice and extract episode number
+    if (urlhash.match(/#GST\d+$/)){
+      var episodeNumber = Math.floor(urlhash.substring(4));
       $.each(episodes, function(index, value) {
-        if (handle+pad(episodeNumber,3) == value.guid[0].Text) selectEpisode(index, -1);
+        if (handle+pad(episodeNumber,3) == value.guid[0].Text) preselection = index;
       });
-    } else {
-      selectEpisode(latest, -1);
     }
+    selectEpisode(preselection, -1);
   });
 });
 
@@ -47,6 +46,8 @@ function selectEpisode(episodenumber, jumpSeconds) {
   $("#audioplayer").append('<audio src="'+enclosure+'" preload="'+preload+'"></audio>');
   $("#shownotes").html(description);
   $("#episode-" + episodenumber).addClass("active");
+
+  self.location.hash = episode.guid[0].Text;
 
   var as = audiojs.createAll();
   audioplayer = as[0]
