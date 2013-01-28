@@ -71,9 +71,16 @@
         </div>
 
         <div class="well">
-          <h2><span id="title">Kein Stammtisch ohne Javascript mein Freund!</span></h2>
-          <span id="audioplayer"></span>
-          <div id="shownotes">shownotes</div>
+          <article>
+            <header>
+              <time id="pubdate" datetime="2011-02-23T13:00">23. Februar 2011</time>
+              <h2><span id="title">Kein Stammtisch ohne Javascript mein Freund!</span></h2>
+            </header>
+            <section>
+              <span id="audioplayer"></span>
+              <div id="shownotes">shownotes</div>
+            </section>
+          </article>
         </div>
 
       </div><!--/span-->
@@ -93,9 +100,11 @@
   </div><!--/.fluid-container-->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/lang/de.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/libs/modernizr-1.6.min.js"></script>
   <script src="js/audiojs/audio.min.js"></script>
 </body>
 </html>
