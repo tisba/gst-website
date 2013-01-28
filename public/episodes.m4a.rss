@@ -538,5 +538,436 @@ DOS zu verhindern.</li>
           <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#2:" />
         </item>
         
+        <item>
+          <title>GST003 - Mein Callstack ist kleiner</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST003 - Mein Callstack ist kleiner</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst003.m4a" length="28112691" type="audio/x-m4a"/>
+          <guid isPermaLink="false">GST003</guid>
+          <pubDate>Mon, 28 Jan 2013 21:07:15 +0100</pubDate>
+          <itunes:duration>01:04:00</itunes:duration>
+          <itunes:summary><![CDATA[Heute wieder mit Gast: Florian Gilcher (@Argorak, http://asquera.de/blog)
+
+### Errata
+
+  * Auf Grund der kurzen Zeit zwischen den Aufnahmen qausi ausgefallen. Oder einfach keine Fehler gemacht ;-)
+
+### Unser Gast
+
+  * Florian aus Berlin
+    * Hat dort seine eigene Firma
+    * Ist vor allem Backend-Entwickler \o/
+    * Padrino.rb Core-Entwickler (Sinatra-basiertes Webframework: http://www.padrinorb.com)
+    * Sehr aktiv im deutschen Ruby-Forum aktiv: http://forum.ruby-portal.de/
+    * Hat letztes Jahr das eurucamp mitorganisiert: http://2012.eurucamp.org/
+    * Und ist auch sonst sehr stark in der Community aktiv: "Community macht Spaß"
+
+### Padrino
+
+  * Entstanden aus Sinatra-Plugins
+  * Auch heute ist eine Padrino-App "nur" eine Ansammlung von Sinatra-Apps
+  * Padrino ist viel expliziter als Rails
+  * Padrino "zwingt" den Entwickler sich mit vielen (allen) Entscheidungen selbst zu beschäftigen
+  * Rails Pain #1: Initializer-Reihenfolge (auch von Engines), Paadrino kümmert sich nicht
+    * Ladereihenfolge, Config etc muss man selbst machen
+  * Rails Pain #2: Logger austauschen
+    * Dirk empfiehlt das `logging` Gem https://github.com/TwP/logging
+    * Basti und Dirk haben sonst wenig Probleme mit Logging
+  * Eignet sich Padrino gut für Einsteiger?
+    * Der Grund Aufwand ist nach Flo schon höher
+    * Aber der Zusammenhang zwischen den Komponenten wird klarer
+    * Padrino behandelt Padrino Erweiterungen (Engines) expliziter
+    * Philosophie bei Padrino: Setzt euch mit den Dingen auseinander!
+  * Rails und Einsteiger? Auch nicht mehr ganz so einfach…
+    * Yehuda Katz baut deswegen Tokaido (https://github.com/tokaido/tokaidoapp)
+    * Steve Klabnik: Rails has Two Default Stacks (http://words.steveklabnik.com/rails-has-two-default-stacks)
+  * Padrino Getting Started
+    * Es gibt auch Generatoren
+    * Schritt Eins: HTTP-Stack
+    * Komponenten müssen ausgewählt werden
+      * Von Test-Framework bis ORM alles auszuwählen
+      * In Ruby passt eigentlich alles gut zusammen ohne viel Aufwand
+    * Mit Rack (http://rack.github.com/) ist alles besser geworden
+  * Es gibt auch noch Ramaze: The Web Framework for Rubyists (http://ramaze.net/)
+  * Flo träumt von Jeremy Evans’ sequel (https://github.com/jeremyevans/sequel)
+  * PostgreSQL hstore (http://www.postgresql.org/docs/9.0/static/hstore.html)
+    * ActiveRecord hat mittlerweile auch eine Unterstützung
+  * ORM tauschen ist mit Padrino genauso schwer wie bei Rails
+    * Bei echten Projekten tauscht man nicht einfach mal so das DB-Backend, ORM hin oder her
+    * Padrino macht es auch nicht einfacher, gibt einem aber von Anfang die Info, dass es mehr
+      als ein gibt
+  * Doku bei Rails sehr monolitisch, bei Padrino für jede Komponente eine eigene, unabhängige Doku
+  * Der Austausch von ActiveRecord ist wegen ActiveModel sehr leicht geworden
+    * Sehr viele ORMs und Form-Helper nutzen sehr viel ActiveModel
+  * Padrino benutzt ActiveSupport
+    * Allerdings sehr wenig by default
+  * Zwischenfazit: Der Entwickler wird bei Padrino eher gezwungen sich mit Komponenten und Entscheidungen
+    kritisch zu beschäftigen
+  * Padrino bietet besser dokumentierte APIs um Komponenten einzuschieben
+    * Rails 2 Zeiten - reden wir nicht drüber
+    * Immer noch Altlasten, z.B.: viele Möglichkeiten aus dem Controller zu rendern
+    * Rails ist einfach gute Konkurrenz ;-)
+    * Rails ist schon ein sehr mächtiges Werkzeug
+  * Als Rails-Entwickler kann man sich gut von Padrino inspirieren lassen
+  * Basti ist beeindruckt vom Merb-Rails Merge (http://rubyonrails.org/merb)
+
+### Software Engineering
+
+  * Bezug "How do we stop our Rails apps from being so horrible when they grow up?" (http://bit.ly/VFtzUI)
+    * Alles unter dem Controller ist für Dirk immer noch ein sehr schwieriges Thema
+  * Kann Padrino da unterstützen? Durch Aufklärung?
+    * Bei Padrino ist der Tipp: Schnell raus aus dem Controller
+    * Ein Webframework sollte vor allem den Web-Teil richtig machen
+    * Bei allem danach hört die Unterstützung schnell auf
+  * DCI (Data, context and interaction)
+  * Flo arbeitet gerade einem Projekt mit Delegates ähnlich wie in Objective-C: Funktioniert super.
+  * Dependency Injection ist eigentlich nur die richtigen Objekte an die richtige Stelle schieben
+    * DI muss nicht Spring mit XML sein
+    * Geht in Ruby viel einfacher
+    * Geht auch in Java viel einfacher: Google Guice (https://code.google.com/p/google-guice/)
+  * "Am Ende trennt sich bei diesen Themen einfach die Spreu vom Weizen"
+    * ActiveRecord führt einen aber vielleicht zu weit in einen falsche Richtung
+    * Allerdings: Nie wieder ohne ORM
+  * Anemic Domain Model von Martin Fowler (http://martinfowler.com/bliki/AnemicDomainModel.html)
+    * Ist ein Anti-Pattern
+    * Sieht aus wie ein Domain-Model, aber:
+      * Models halten nur Daten
+      * Verhalten lebt in einem prozeduralen Service-Layer
+    * Lösung sind dann "richtige" Domain-Models (http://martinfowler.com/eaaCatalog/domainModel.html) und
+      "richtige" Service-Layer (http://martinfowler.com/eaaCatalog/serviceLayer.html)
+    * Basti hat bisher noch nie davon gehört
+    * Flo hat P of EAA nur überflogen aber Refactoring gefressen
+      * Wichtigste Erkenntnis: Feature Hut ODER Refactoring Hut NIEMALS beides!
+  * Die Zwei Stacks von Rails (http://words.steveklabnik.com/rails-has-two-default-stacks)
+    * Omakase (http://en.wikipedia.org/wiki/Omakase) vs. Prime (http://en.wikipedia.org/wiki/Prime_(symbol)#Use_in_mathematics.2C_statistics.2C_and_science)
+      * Omakase: ERB, MySQL, minitest, Fat Models, Skinny Controllers
+      * Prima: HAML, PostgreSQL, RSpec & Cucumber, Fat Models, Skinny
+      Controllers, Service Layer
+    * Für Rails ist DHH der Sushi-Chef: http://david.heinemeierhansson.com/2012/rails-is-omakase.html
+    * Es geht nicht um besser oder schlechter
+    * Wie kommen Anfänger klar?
+    * Eigentlich muss man sich gar nicht aktiv entscheiden, wie kommt man überhaupt auf den anderen Stack
+      * PostgreSQL ist die Profi-Alernative zu MySQL
+      * Mehr Aufwand in der Wartung verhält sich aber viel wartbarer
+      * MySQL lässt sich trotzdem sehr gut betreiben
+      * Flo steht auf rustikale Software
+      * Man entdeckt Tablespaces (http://www.postgresql.org/docs/8.3/static/manage-ag-tablespaces.html)
+    * Basti mag eher RSpec aber nimmt sonst eher den Omakase Stack
+    * Flo mag mehr ERb nimmt aber Postgres
+    * Eigentlich passt der Name eh nicht, weil ein guter Chef setzt einem nicht zweimal das gleiche Essen vor
+      * Idee: Stack-Randomizer im Projektgenerator
+  * Flo kennt das Rubyworks-Ökosystem
+    * Wir haben das maßlos unterschätzt
+    * Ist Thomas Sawyer (http://rubyworks.github.com/)
+    * Ruby Q.E.D.: Cucumber auf Steroiden (https://github.com/rubyworks/qed)
+    * Verwendet AE als Test-Lib (http://rubyworks.github.com/ae/) auch von ihm
+    * Es lassen sich damit Blog-Posts testen
+  * Semantic-Versioning at its best: https://github.com/sunaku/tork
+  * Mit viel Liebe und Mühe sehr gute Libraries und die Masse verwendet es noch nichtmal
+    * https://github.com/sunaku/inochi
+  * RSpec's Doku ist in Cucumber (https://www.relishapp.com/)
+  * Dokumentation ist nicht trivial
+  * Zed Shaw hat einmal gesagt, dass das Problem darin besteht, dass wir den Leuten beibringen müssen wie sie es entwicklen
+    * Die Technik ist da, das Lernen ist das Problem
+    * Code-Review ist dafür gut
+    * In guten Teams geht nichts einfach durch
+    * Es geht dabei um Code, nicht um Kritik an der Person
+
+### Tools
+
+  * JSON
+    * JSON Pretty Print: https://github.com/jmhodges/jsonpp
+    * jq: http://stedolan.github.com/jq/
+      * JSON Path ist Kindergarten
+  * httpie statt curl: https://github.com/jkbr/httpie
+  * CodeRay hat einen Terminal Highlighter (http://coderay.rubychan.de/)
+    * Sehr genau, weniger Sprachen als Pygments (http://pygments.org/)
+  * Hosting Static Pages:
+    * GitHub Pages (http://pages.github.com/)
+    * Muss nicht nur Jekyll sein…
+    * http://neilmiddleton.com/the-composability-of-buildpacks/
+    * http://middlemanapp.com/ -> Heroku
+    * Auch gut für Bloggen im Zug
+  * Empfehlung: Syntax-Sonntag bei Ruby-Mine (http://www.ruby-mine.de/)
+    * Sehr gute Einführung in Oniguruma (http://www.ruby-mine.de/wonado)
+  * Gutes deutsches Ruby-Wiki: http://wiki.ruby-portal.de/Hauptseite
+  * Open-Source Nachbau des RPG-Makers (http://www.rpgmakerweb.com/) in Ruby (http://wiki.ruby-portal.de/OpenRubyRMK)
+  * Ruby-Forum ist immer noch in PHP :-)
+  * Foren sind irgendwie nicht mehr aktuell, wird aber noch nachgefragt
+
+### Events
+
+  * Insider-Infos zur SIGINT (Nachtrag):
+    * Mehr Technik-Bezug incoming!
+    * CFP soll ganz bald starten
+  * eurucamp findet auch wieder 2013 statt: http://eurucamp.org/ (16. - 18. August 2013)]]></itunes:summary>
+          <description><![CDATA[<p>Heute wieder mit Gast: Florian Gilcher (<a href="https://twitter.com/Argorak">@Argorak</a>, <a href="http://asquera.de/blog">http://asquera.de/blog</a>)</p>
+
+<h3>Errata</h3>
+
+<ul>
+<li>Auf Grund der kurzen Zeit zwischen den Aufnahmen qausi ausgefallen. Oder einfach keine Fehler gemacht ;-)</li>
+</ul>
+
+<h3>Unser Gast</h3>
+
+<ul>
+<li>Florian aus Berlin
+
+<ul>
+<li>Hat dort seine eigene Firma</li>
+<li>Ist vor allem Backend-Entwickler \o/</li>
+<li>Padrino.rb Core-Entwickler (Sinatra-basiertes Webframework: <a href="http://www.padrinorb.com">http://www.padrinorb.com</a>)</li>
+<li>Sehr aktiv im deutschen Ruby-Forum aktiv: <a href="http://forum.ruby-portal.de/">http://forum.ruby-portal.de/</a></li>
+<li>Hat letztes Jahr das eurucamp mitorganisiert: <a href="http://2012.eurucamp.org/">http://2012.eurucamp.org/</a></li>
+<li>Und ist auch sonst sehr stark in der Community aktiv: &quot;Community macht Spaß&quot;</li>
+</ul></li>
+</ul>
+
+<h3>Padrino</h3>
+
+<ul>
+<li>Entstanden aus Sinatra-Plugins</li>
+<li>Auch heute ist eine Padrino-App &quot;nur&quot; eine Ansammlung von Sinatra-Apps</li>
+<li>Padrino ist viel expliziter als Rails</li>
+<li>Padrino &quot;zwingt&quot; den Entwickler sich mit vielen (allen) Entscheidungen selbst zu beschäftigen</li>
+<li>Rails Pain #1: Initializer-Reihenfolge (auch von Engines), Paadrino kümmert sich nicht
+
+<ul>
+<li>Ladereihenfolge, Config etc muss man selbst machen</li>
+</ul></li>
+<li>Rails Pain #2: Logger austauschen
+
+<ul>
+<li>Dirk empfiehlt das <code>logging</code> Gem <a href="https://github.com/TwP/logging">https://github.com/TwP/logging</a></li>
+<li>Basti und Dirk haben sonst wenig Probleme mit Logging</li>
+</ul></li>
+<li>Eignet sich Padrino gut für Einsteiger?
+
+<ul>
+<li>Der Grund Aufwand ist nach Flo schon höher</li>
+<li>Aber der Zusammenhang zwischen den Komponenten wird klarer</li>
+<li>Padrino behandelt Padrino Erweiterungen (Engines) expliziter</li>
+<li>Philosophie bei Padrino: Setzt euch mit den Dingen auseinander!</li>
+</ul></li>
+<li>Rails und Einsteiger? Auch nicht mehr ganz so einfach…
+
+<ul>
+<li>Yehuda Katz baut deswegen Tokaido (<a href="https://github.com/tokaido/tokaidoapp">https://github.com/tokaido/tokaidoapp</a>)</li>
+<li>Steve Klabnik: Rails has Two Default Stacks (<a href="http://words.steveklabnik.com/rails-has-two-default-stacks">http://words.steveklabnik.com/rails-has-two-default-stacks</a>)</li>
+</ul></li>
+<li>Padrino Getting Started
+
+<ul>
+<li>Es gibt auch Generatoren</li>
+<li>Schritt Eins: HTTP-Stack</li>
+<li>Komponenten müssen ausgewählt werden
+
+<ul>
+<li>Von Test-Framework bis ORM alles auszuwählen</li>
+<li>In Ruby passt eigentlich alles gut zusammen ohne viel Aufwand</li>
+</ul></li>
+<li>Mit Rack (<a href="http://rack.github.com/">http://rack.github.com/</a>) ist alles besser geworden</li>
+</ul></li>
+<li>Es gibt auch noch Ramaze: The Web Framework for Rubyists (<a href="http://ramaze.net/">http://ramaze.net/</a>)</li>
+<li>Flo träumt von Jeremy Evans’ sequel (<a href="https://github.com/jeremyevans/sequel">https://github.com/jeremyevans/sequel</a>)</li>
+<li>PostgreSQL hstore (<a href="http://www.postgresql.org/docs/9.0/static/hstore.html">http://www.postgresql.org/docs/9.0/static/hstore.html</a>)
+
+<ul>
+<li>ActiveRecord hat mittlerweile auch eine Unterstützung</li>
+</ul></li>
+<li>ORM tauschen ist mit Padrino genauso schwer wie bei Rails
+
+<ul>
+<li>Bei echten Projekten tauscht man nicht einfach mal so das DB-Backend, ORM hin oder her</li>
+<li>Padrino macht es auch nicht einfacher, gibt einem aber von Anfang die Info, dass es mehr
+als ein gibt</li>
+</ul></li>
+<li>Doku bei Rails sehr monolitisch, bei Padrino für jede Komponente eine eigene, unabhängige Doku</li>
+<li>Der Austausch von ActiveRecord ist wegen ActiveModel sehr leicht geworden
+
+<ul>
+<li>Sehr viele ORMs und Form-Helper nutzen sehr viel ActiveModel</li>
+</ul></li>
+<li>Padrino benutzt ActiveSupport
+
+<ul>
+<li>Allerdings sehr wenig by default</li>
+</ul></li>
+<li>Zwischenfazit: Der Entwickler wird bei Padrino eher gezwungen sich mit Komponenten und Entscheidungen
+kritisch zu beschäftigen</li>
+<li>Padrino bietet besser dokumentierte APIs um Komponenten einzuschieben
+
+<ul>
+<li>Rails 2 Zeiten - reden wir nicht drüber</li>
+<li>Immer noch Altlasten, z.B.: viele Möglichkeiten aus dem Controller zu rendern</li>
+<li>Rails ist einfach gute Konkurrenz ;-)</li>
+<li>Rails ist schon ein sehr mächtiges Werkzeug</li>
+</ul></li>
+<li>Als Rails-Entwickler kann man sich gut von Padrino inspirieren lassen</li>
+<li>Basti ist beeindruckt vom Merb-Rails Merge (<a href="http://rubyonrails.org/merb">http://rubyonrails.org/merb</a>)</li>
+</ul>
+
+<h3>Software Engineering</h3>
+
+<ul>
+<li>Bezug &quot;How do we stop our Rails apps from being so horrible when they grow up?&quot; (<a href="http://bit.ly/VFtzUI">http://bit.ly/VFtzUI</a>)
+
+<ul>
+<li>Alles unter dem Controller ist für Dirk immer noch ein sehr schwieriges Thema</li>
+</ul></li>
+<li>Kann Padrino da unterstützen? Durch Aufklärung?
+
+<ul>
+<li>Bei Padrino ist der Tipp: Schnell raus aus dem Controller</li>
+<li>Ein Webframework sollte vor allem den Web-Teil richtig machen</li>
+<li>Bei allem danach hört die Unterstützung schnell auf</li>
+</ul></li>
+<li>DCI (Data, context and interaction)</li>
+<li>Flo arbeitet gerade einem Projekt mit Delegates ähnlich wie in Objective-C: Funktioniert super.</li>
+<li>Dependency Injection ist eigentlich nur die richtigen Objekte an die richtige Stelle schieben
+
+<ul>
+<li>DI muss nicht Spring mit XML sein</li>
+<li>Geht in Ruby viel einfacher</li>
+<li>Geht auch in Java viel einfacher: Google Guice (<a href="https://code.google.com/p/google-guice/">https://code.google.com/p/google-guice/</a>)</li>
+</ul></li>
+<li>&quot;Am Ende trennt sich bei diesen Themen einfach die Spreu vom Weizen&quot;
+
+<ul>
+<li>ActiveRecord führt einen aber vielleicht zu weit in einen falsche Richtung</li>
+<li>Allerdings: Nie wieder ohne ORM</li>
+</ul></li>
+<li>Anemic Domain Model von Martin Fowler (<a href="http://martinfowler.com/bliki/AnemicDomainModel.html">http://martinfowler.com/bliki/AnemicDomainModel.html</a>)
+
+<ul>
+<li>Ist ein Anti-Pattern</li>
+<li>Sieht aus wie ein Domain-Model, aber:
+
+<ul>
+<li>Models halten nur Daten</li>
+<li>Verhalten lebt in einem prozeduralen Service-Layer</li>
+</ul></li>
+<li>Lösung sind dann &quot;richtige&quot; Domain-Models (<a href="http://martinfowler.com/eaaCatalog/domainModel.html">http://martinfowler.com/eaaCatalog/domainModel.html</a>) und
+&quot;richtige&quot; Service-Layer (<a href="http://martinfowler.com/eaaCatalog/serviceLayer.html">http://martinfowler.com/eaaCatalog/serviceLayer.html</a>)</li>
+<li>Basti hat bisher noch nie davon gehört</li>
+<li>Flo hat P of EAA nur überflogen aber Refactoring gefressen
+
+<ul>
+<li>Wichtigste Erkenntnis: Feature Hut ODER Refactoring Hut NIEMALS beides!</li>
+</ul></li>
+</ul></li>
+<li>Die Zwei Stacks von Rails (<a href="http://words.steveklabnik.com/rails-has-two-default-stacks">http://words.steveklabnik.com/rails-has-two-default-stacks</a>)
+
+<ul>
+<li>Omakase (<a href="http://en.wikipedia.org/wiki/Omakase">http://en.wikipedia.org/wiki/Omakase</a>) vs. Prime (<a href="http://en.wikipedia.org/wiki/Prime_(symbol)#Use_in_mathematics.2C_statistics.2C_and_science">http://en.wikipedia.org/wiki/Prime_(symbol)#Use_in_mathematics.2C_statistics.2C_and_science</a>)
+
+<ul>
+<li>Omakase: ERB, MySQL, minitest, Fat Models, Skinny Controllers</li>
+<li>Prima: HAML, PostgreSQL, RSpec &amp; Cucumber, Fat Models, Skinny
+Controllers, Service Layer</li>
+</ul></li>
+<li>Für Rails ist DHH der Sushi-Chef: <a href="http://david.heinemeierhansson.com/2012/rails-is-omakase.html">http://david.heinemeierhansson.com/2012/rails-is-omakase.html</a></li>
+<li>Es geht nicht um besser oder schlechter</li>
+<li>Wie kommen Anfänger klar?</li>
+<li>Eigentlich muss man sich gar nicht aktiv entscheiden, wie kommt man überhaupt auf den anderen Stack
+
+<ul>
+<li>PostgreSQL ist die Profi-Alernative zu MySQL</li>
+<li>Mehr Aufwand in der Wartung verhält sich aber viel wartbarer</li>
+<li>MySQL lässt sich trotzdem sehr gut betreiben</li>
+<li>Flo steht auf rustikale Software</li>
+<li>Man entdeckt Tablespaces (<a href="http://www.postgresql.org/docs/8.3/static/manage-ag-tablespaces.html">http://www.postgresql.org/docs/8.3/static/manage-ag-tablespaces.html</a>)</li>
+</ul></li>
+<li>Basti mag eher RSpec aber nimmt sonst eher den Omakase Stack</li>
+<li>Flo mag mehr ERb nimmt aber Postgres</li>
+<li>Eigentlich passt der Name eh nicht, weil ein guter Chef setzt einem nicht zweimal das gleiche Essen vor
+
+<ul>
+<li>Idee: Stack-Randomizer im Projektgenerator</li>
+</ul></li>
+</ul></li>
+<li>Flo kennt das Rubyworks-Ökosystem
+
+<ul>
+<li>Wir haben das maßlos unterschätzt</li>
+<li>Ist Thomas Sawyer (<a href="http://rubyworks.github.com/">http://rubyworks.github.com/</a>)</li>
+<li>Ruby Q.E.D.: Cucumber auf Steroiden (<a href="https://github.com/rubyworks/qed">https://github.com/rubyworks/qed</a>)</li>
+<li>Verwendet AE als Test-Lib (<a href="http://rubyworks.github.com/ae/">http://rubyworks.github.com/ae/</a>) auch von ihm</li>
+<li>Es lassen sich damit Blog-Posts testen</li>
+</ul></li>
+<li>Semantic-Versioning at its best: <a href="https://github.com/sunaku/tork">https://github.com/sunaku/tork</a></li>
+<li>Mit viel Liebe und Mühe sehr gute Libraries und die Masse verwendet es noch nichtmal
+
+<ul>
+<li><a href="https://github.com/sunaku/inochi">https://github.com/sunaku/inochi</a></li>
+</ul></li>
+<li>RSpec&#39;s Doku ist in Cucumber (<a href="https://www.relishapp.com/">https://www.relishapp.com/</a>)</li>
+<li>Dokumentation ist nicht trivial</li>
+<li>Zed Shaw hat einmal gesagt, dass das Problem darin besteht, dass wir den Leuten beibringen müssen wie sie es entwicklen
+
+<ul>
+<li>Die Technik ist da, das Lernen ist das Problem</li>
+<li>Code-Review ist dafür gut</li>
+<li>In guten Teams geht nichts einfach durch</li>
+<li>Es geht dabei um Code, nicht um Kritik an der Person</li>
+</ul></li>
+</ul>
+
+<h3>Tools</h3>
+
+<ul>
+<li>JSON
+
+<ul>
+<li>JSON Pretty Print: <a href="https://github.com/jmhodges/jsonpp">https://github.com/jmhodges/jsonpp</a></li>
+<li>jq: <a href="http://stedolan.github.com/jq/">http://stedolan.github.com/jq/</a>
+
+<ul>
+<li>JSON Path ist Kindergarten</li>
+</ul></li>
+</ul></li>
+<li>httpie statt curl: <a href="https://github.com/jkbr/httpie">https://github.com/jkbr/httpie</a></li>
+<li>CodeRay hat einen Terminal Highlighter (<a href="http://coderay.rubychan.de/">http://coderay.rubychan.de/</a>)
+
+<ul>
+<li>Sehr genau, weniger Sprachen als Pygments (<a href="http://pygments.org/">http://pygments.org/</a>)</li>
+</ul></li>
+<li>Hosting Static Pages:
+
+<ul>
+<li>GitHub Pages (<a href="http://pages.github.com/">http://pages.github.com/</a>)</li>
+<li>Muss nicht nur Jekyll sein…</li>
+<li><a href="http://neilmiddleton.com/the-composability-of-buildpacks/">http://neilmiddleton.com/the-composability-of-buildpacks/</a></li>
+<li><a href="http://middlemanapp.com/">http://middlemanapp.com/</a> -&gt; Heroku</li>
+<li>Auch gut für Bloggen im Zug</li>
+</ul></li>
+<li>Empfehlung: Syntax-Sonntag bei Ruby-Mine (<a href="http://www.ruby-mine.de/">http://www.ruby-mine.de/</a>)
+
+<ul>
+<li>Sehr gute Einführung in Oniguruma (<a href="http://www.ruby-mine.de/wonado">http://www.ruby-mine.de/wonado</a>)</li>
+</ul></li>
+<li>Gutes deutsches Ruby-Wiki: <a href="http://wiki.ruby-portal.de/Hauptseite">http://wiki.ruby-portal.de/Hauptseite</a></li>
+<li>Open-Source Nachbau des RPG-Makers (<a href="http://www.rpgmakerweb.com/">http://www.rpgmakerweb.com/</a>) in Ruby (<a href="http://wiki.ruby-portal.de/OpenRubyRMK">http://wiki.ruby-portal.de/OpenRubyRMK</a>)</li>
+<li>Ruby-Forum ist immer noch in PHP :-)</li>
+<li>Foren sind irgendwie nicht mehr aktuell, wird aber noch nachgefragt</li>
+</ul>
+
+<h3>Events</h3>
+
+<ul>
+<li>Insider-Infos zur SIGINT (Nachtrag):
+
+<ul>
+<li>Mehr Technik-Bezug incoming!</li>
+<li>CFP soll ganz bald starten</li>
+</ul></li>
+<li>eurucamp findet auch wieder 2013 statt: <a href="http://eurucamp.org/">http://eurucamp.org/</a> (16. - 18. August 2013)</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#3:" />
+        </item>
+        
     </channel>
 </rss>
