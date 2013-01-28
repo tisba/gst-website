@@ -41,11 +41,14 @@ function selectEpisode(episodenumber, jumpSeconds) {
   var episode = episodes[episodenumber];
   var enclosure = episode.enclosure[0].url;
   var description = episode.description[0].Text;
+  var pubDate = moment(episode.pubDate[0].Text);
 
   $("#title").append('<a href="'+enclosure+'">'+episode.title[0].Text+'</a>');
   $("#audioplayer").append('<audio src="'+enclosure+'" preload="'+preload+'"></audio>');
   $("#shownotes").html(description);
   $("#episode-" + episodenumber).addClass("active");
+  $("time#pubdate").attr("datetime", pubDate.format("YYYY-MM-DD HH:mm"));
+  $("time#pubdate").html(pubDate.format("Do MMMM YYYY"));
 
   self.location.hash = episode.guid[0].Text;
 
