@@ -10,4 +10,4 @@ gem "rake"
 
 gem "debugger"
 
-gem "gst-kitchen", git: "git@github.com:tisba/gst-kitchen.git", branch: "render-as-markdown"
+gem "gst-kitchen"
