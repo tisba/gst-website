@@ -1,0 +1,93 @@
+--- !ruby/struct:Episode
+number: 4
+name: Ich dachte C ist fertig
+length: 4338
+media:
+  mp3:
+    size: 52196815
+    file_ext: mp3
+  aac:
+    size: 31723589
+    file_ext: m4a
+  alac:
+    size: 321392206
+    file_ext: m4a
+  opus:
+    size: 35604935
+    file_ext: opus
+auphonic_uuid: LSc3A9JvCLCwetaLtws9Mg
+published_at: 2013-02-05 00:31:37.971883000 +01:00
+summary: ! "Unser Gast ist heute: Frank Celler (@fceller, http://triagens.com)\r\n\r\n**Synopsis**:
+  Heute geht es um mruby, C-Hacking und Bytecode-Compiler\r\n\r\n### Errata\r\n\r\n
+  \ * Neue RubyWiki Seite zum Open RPG Maker: http://devel.pegasus-alpha.eu/projects/openrubyrmk/boards\r\n
+  \   (danke @qquintilianus, https://twitter.com/qquintilianus/status/298385311761842176)\r\n\r\n###
+  Unser Gast\r\n\r\n  * Als Errata zu GST001, mruby ;-)\r\n  * Frank ist kein Rubyist,
+  sondern C-Hacker\r\n\r\n### (M)Ruby\r\n\r\n  * Steht für Matz Minimal Embedded Ruby\r\n
+  \ * Um irgendwo embedded zu werden\r\n    * Hardware (zB.: Roboter)\r\n    * iOS
+  (http://mobiruby.org/)\r\n    * Andere Programme (zB: Datenbanken)\r\n  * Redis
+  (http://redis.io/) embedded zum Beispiel Lua (http://www.lua.org/)\r\n    * Da Lua
+  irgendwie nicht so richtig für Programmierer ist, könnte\r\n      mruby hier eine
+  Lücke schließen\r\n  * Ruby 1.8 ist nicht dafür entworfen irgendwo eingebettet zu
+  werden\r\n  * **mruby in a Nutshell**\r\n    * Bytecode-Compiler (ähnlich wie YARV
+  in Ruby 1.9)\r\n    * Soll eine sehr, sehr kleine, überall lauffähige VM bieten\r\n
+  \     (Rite-VM)\r\n    * Ein sehr kleiner Satz von Libraries\r\n      * Es gibt
+  _kein_ `require`\r\n      * Es gibt `mgem` (https://github.com/bovi/mgem)\r\n      *
+  **Einschub:** http://mruby.sh/ -> Englische Übersetzung der japanischen News\r\n
+  \       von Daniel Bovensiepen (http://www.bovensiepen.net/)\r\n      * mgems sind
+  quasi C-Libs\r\n      * Stdlib ist quasi nicht existent\r\n      * Core ist auch
+  stark eingeschränkt (kein Bignum, keine Regexp,\r\n        keine Threads)\r\n      *
+  Es gibt als mgem eine cURL-Lib (was für eine Datenbank die HTTP\r\n        spricht
+  ganz sinnvoll ist)\r\n      * mruby ohne Threads macht vor allem für Datenbanken
+  Sinn\r\n      * Ruby ist ein Standard: http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=59579\r\n
+  \     * Inzwischen gehen auch `attr_accessor` und andere Introspection\r\n        Features\r\n
+  \     * mruby wird magischer ;-)\r\n  * Wo hat der Frank mruby überhaupt eingebettet?\r\n
+  \   * ArangoDB - http://www.arangodb.org/\r\n    * Eine Open-Source Dokumentendatenbank\r\n
+  \ * Wofür bettet man eine Scriptsprache in eine Datenbank ein?\r\n    * Filtern
+  von Ausgaben\r\n    * Implementierung von Triggern (statt PL/SQL - http://en.wikipedia.org/wiki/PL/SQL)\r\n
+  \   * Anreichern von Ausgaben\r\n    * Welche Scriptsprache nimmt man da:\r\n      *
+  PHP trauen wir uns nicht\r\n      * JavaScript funktioniert mit V8 (https://code.google.com/p/v8/),
+  wurde dann auch integriert\r\n        * Dokumentation ist grausam\r\n        * Sehr
+  schnell, in C++\r\n        * wenn man einen Fehler sucht, kann man nur aufgeben
+  ;-)\r\n  * Arango ist in C/C++ geschrieben\r\n    * Haben sehr früh Zugang zum mruby
+  Repo bekommen\r\n  * mruby lässt sich sehr leicht einbetten\r\n  * Dokumentation
+  ist genauso schlecht wie die von V8\r\n    * Man kommt aber noch zu Fuß durch den
+  Code\r\n  * Probleme bei V8 war JavaScript-Prototypen in C++ Objekte abzubilden\r\n
+  \ * mruby wurde mit dem Gedanke entwickelt eingebettet zu werden, daher\r\n    sind
+  entsprechende Hooks vorgesehen C-Strukturen in Ruby abzubilden\r\n  * V8 verwendet
+  UTF-16, Arango verwendet UTF-8\r\n  * mruby verwendet auch UTF-8 -> Overhead fällt
+  weg\r\n  * Frank hat mit LLVM rum gespielt und hat aus mruby den Faktor 2-3 raus
+  geholt\r\n  * Was noch viel für die Performance tun kann ist Method-Caching\r\n
+  \ * Momentan ist mruby noch Alpha-Status\r\n    * In der homebrew Version ist mruby
+  drin\r\n    * Für Linux muss es per Hand gebaut werden\r\n  * Bei ArangoDB ist eine
+  Shell für mruby dabei (siehe auch: http://qiezi.me/projects/mruby-web-irb/mruby.html)\r\n
+  \ * emscripten.org\r\n  * Die mruby Shell in ArangoDB ist analog zu der JavaScript
+  Shell in\r\n    ArangoDB\r\n  * mruby hatte bis vor kurzem keine richtiges Makefile\r\n
+  \   * Daniel Bovensiepen hat dann ein CMake-File erstellt (http://cmake.org)\r\n
+  \   * Seit Dezember 2012 gibt es auch ein Rakefile\r\n    * War unter Windows vor
+  der totale Krampf\r\n  * ArangoDB gibt es seit kurzem auch für Windows\r\n    *
+  Probleme mit libev und ICU\r\n  * UTF-8 hat zwei Darstellung für Umlaute: den Umlaut
+  und zwei Punkte + Buchstabe\r\n  * Basti hatte einmal sehr viel Freude mit case-insensitive
+  und case-sensitive Systemen\r\n  * Macht auch Probleme bei Collation\r\n  * ICU
+  macht das einfach für einen (http://site.icu-project.org/)\r\n  * Die Windows-Version
+  von ArangoDB hat keinen mruby Support\r\n  * mruby targeted aber Windows\r\n  *
+  Anekdote: Die C-Standards entwickeln sich im Jahrzehnt-Rhytmus\r\n  * VisualStudio
+  ist bei ANSI-C Version '89 stehengeblieben\r\n  * Frank macht C schon seit 30 Jahren\r\n
+  \   * Hat für den TRS-80 ein Arcade-Spiel nachprogrammiert (http://en.wikipedia.org/wiki/TRS-80)\r\n
+  \   * Frank hat das Spiel auf einem TRS-80 Emulator für Linux widergefunden :-)\r\n
+  \   * \"Magic Worm for Model I\" (http://fosdem.graph-database.org/news/8,\r\n      http://www.retrocomputing.net/parts/r/radio/TRS80_4/docs/on2002.htm)\r\n
+  \ * Frank erinnert einen C Interpreter\r\n  * Wenn C dann lieber Objective-C, meint
+  Frank\r\n  * Ist für Rubyisten noch eingängiger, vom mentalen Modell\r\n  * Basti
+  hat auf dem letzten DevHouseFriday 'Ruby is Magic - Reflections' gezeigt (https://speakerdeck.com/railsbros_dirk/colognerb-reflections)\r\n
+  \ * Cocoa ist von oben bis unten voll mit Magic\r\n  * ArangoDB im MacApp-Store:
+  https://itunes.apple.com/de/app/arangodb/id564723448?l=en&mt=12\r\n    * War letztes
+  Jahr unter den Top-10 für Dev-Tools\r\n    * Ohne mruby\r\n    * Ähnlich wie damals
+  CouchDBX: http://janl.github.com/couchdbx/\r\n  * Die JavaScript-Shell von ArangoDB
+  läuft im Browser\r\n  * Die ArangoDB-Shell ist ein eigener Client und spricht mit
+  dem Server über HTTP\r\n    * JavaScript-Console für den Browser: http://replit.github.com/jq-console/\r\n
+  \ * http://stedolan.github.com/jq/\r\n  * The JSON Query Language: http://www.jsoniq.org/\r\n
+  \   * Ähnlich wie das was ArangoDB verwendet (unabhängig)\r\n\r\n### Events\r\n\r\n
+  \ * NoSQL Matters: 25. - 27.4.2013 (http://2013.nosql-matters.org/cgn/)\r\n    *
+  Early Bird Tickets schon verfügbar\r\n    * 25.4. ist Training Day\r\n    * Keynote:
+  Martin Fowler\r\n    * Im KOMED in Köln\r\n    * Mit Hadoop-Track\r\n    * Und der
+  Rest der bisher veröffentlichen Speaker ist nicht weniger hochkarätig\r\n\r\nBTW:
+  Jan Lenhardt ist jetzt bei 'The Couch Firm' - http://thecouchfirm.com/"
