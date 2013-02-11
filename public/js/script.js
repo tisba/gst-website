@@ -57,7 +57,8 @@ function selectEpisode(episodenumber, jumpSeconds) {
   $("time#pubdate").attr("datetime", pubDate.format("YYYY-MM-DD HH:mm"));
   $("time#pubdate").html(pubDate.format("Do MMMM YYYY"));
 
-  self.location.hash = episode.guid[0].Text;
+  if (episodenumber != episodes.length - 1 || !_.isEmpty(self.location.hash))
+    self.location.hash = episode.guid[0].Text;
 
   $('#podlovewebplayer_1').podlovewebplayer({
     duration: episode.duration[0].Text,
