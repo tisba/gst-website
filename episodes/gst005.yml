@@ -1,0 +1,102 @@
+--- !ruby/struct:Episode
+number: 5
+name: HistorieLöschenService
+length: 5194
+media:
+  mp3:
+    size: 62470391
+    file_ext: mp3
+  aac:
+    size: 37955444
+    file_ext: m4a
+  alac:
+    size: 387517119
+    file_ext: m4a
+  opus:
+    size: 42217570
+    file_ext: opus
+auphonic_uuid: Sf8WWrMy2GqRake9JiJsPG
+published_at: 2013-02-14 15:07:49.526700000 +01:00
+summary: ! "Unser Gast ist heute: Oliver Jucknath (http://www.jubeco.de/)\r\n\r\n**Synopsis**:
+  Heute geht es um (Software) Architektur, Testing, Agile\r\nEntwicklung in großen
+  Teams und SOA. Außerdem bietet unser Gast einige\r\ninteressante Einblicke in seine
+  Erfahrung mit Großprojekten.\r\n\r\n\r\n### Unser Gast\r\n\r\n  * Oliver ist Entwickler,
+  SOA Evangelist, Architekt und Social Debugger\r\n  * Angefangen zu programmieren
+  mit 11, macht aktuell vor allem Java\r\n  * lange Zeit Entwickler gewesen\r\n  *
+  mittlerweile mehr in Richtung Consulting\r\n  * schreibt auch Computerspiele Service-orientiert\r\n\r\n\r\n###
+  Architektur\r\n\r\n  * Was ist Architektur? Auswahl von Tooling, Deployment, Performance,
+  ...\r\n  * Manchmal ist etwas neu entwickeltes weg werfen und neu machen eine sehr
+  gute Idee\r\n  * Explorative Architektur\r\n  * Oliver hat einen sehr weiten Blick
+  auf Architektur\r\n    * Architektur fängt bei der fachlichen Seite an\r\n    *
+  …und endet beim Entwickler\r\n  * Oliver hat Konzerne mit Write-only Architekturen
+  erlebt, wo ein\r\n    Architekt ein System baut, ohne wirkliches Feedback zu bekommen\r\n
+  \ * Oliver's kleinstes Projekt: nur er selber – das größte 2000 Entwickler\r\n  *
+  Erste Grundregel des Consultings: \"Arbeite nicht für einen dummen Chef\"\r\n  *
+  Task Force: Projektarbeit unter extremen Umständen. Weit über Time & Budget. Projektrettung.\r\n
+  \ * Der Übergang von Architekturaufgaben zum Entwicklungsprozess sind teilweise
+  fließend\r\n\r\n\r\n### Agile Entwicklung\r\n\r\n  * Agile Entwicklung zielt darauf
+  ab, immer wieder lauffähige\r\n    Zwischenergebnisse zu erzielen\r\n  * Lieber
+  eine Woche in die falsche, dann zwei Wochen in die fast\r\n    richtige und dann
+  in die richtige Richtung laufen\r\n  * Clean HEAD, Dirty HEAD\r\n    * Lieber Clean
+  HEAD, nur in Ausnahmesituationen Dirty HEAD\r\n\r\n\r\n### Continuous Deployment
+  und Testing\r\n\r\n  * Continuous Deployment ist für viele der heilige Gral\r\n
+  \ * Continuous Deployment erfordert zwingend kontinuierliches Testen\r\n  * Oliver:
+  \"Testen ist Teil der Architektur\"\r\n  * Durch zu vieles (Unit) Testen, kann die
+  Agilität abnehmen (viele\r\n    Tests für einen kleinen Change)\r\n  * Oliver bevorzugt
+  mittlerweile Application Level Testing (z.B. mit jmeter)\r\n  * Entwickler sind
+  häufig keine guten Tester (falsche Perspektive)\r\n  * Ab Teams mit sieben Entwicklern,
+  würde Oliver gerne einen Tester dabei haben\r\n  * In großen Unternehmen, haben
+  Entwickler keinen Einblick in\r\n    Produktionsdaten und können somit nicht immer
+  verstehen, was die\r\n    Benutzer brauchen.\r\n  * Olivers Debugging Abenteuer:
+  Es gab bei einem großen deutschen Telco mal ein Handy für 87 Fragezeichen\r\n  *
+  Testing auf einer pre-Stage Umgebung (siehe Continuous Deployment)\r\n  * Optionale
+  Service Parameter und Featureflags (Loose Coupling)\r\n  * Continuous Deployment
+  (CD) ist richtig teuer:\r\n    * gute Entwickler\r\n    * vernünftiges Projektmanagement\r\n
+  \   * Pre-Stage Hardware\r\n  * Wo lohnt sich CD?\r\n    * Handelsplattformen, Banken,
+  die sich schnell auf Situationen\r\n      einstellen müssen\r\n  * Bei kleinen Projekten:
+  CI und CD machbarer\r\n  * Man will aber in jedem Fall Metriken haben, das ist (natürlich)
+  auch\r\n    ein Thema für die Architektur\r\n\r\n\r\n### SOA: Service-oriented Architecture\r\n\r\n
+  \ * Oliver: Der Sprung zur SOA ist wie der Sprung zur Objekt-orientierten Programmierung\r\n
+  \ * Änderungen an einem System über fünf Jahre bei einer großen Telco\r\n    * GUI:
+  extrem viele Änderungen, sehr variabel\r\n    * Datenbank: ebenfalls nicht sehr
+  stabil\r\n    * Services: sind am stabilsten\r\n  * Was ist ein Service?\r\n  *
+  Ein Service ist eine Schnittstelle zu einer fachlichen (selten\r\n    technisch)
+  Funktionalität, die unabhängig von der Implementierung ist\r\n  * Service Anti-Pattern:
+  Ein Service, der eine OO-Schnittstelle, exportiert.\r\n  * Ein Service muss die
+  Fachlichkeit beschreiben, dass können am besten\r\n    Leute aus der Fachseite\r\n
+  \ * Entwickler passen sich besser an die \"komischen\" fachlichen Services\r\n    an,
+  als die Fachseite an die Services, die Entwickler definieren\r\n    würden.\r\n
+  \ * Services sind NICHT Objekt-orientiert!\r\n  * Reusability ist keine gute Idee
+  für Services, mehrfache Verwendung\r\n    durch verschiedene Kanäle ist hingegen
+  eine gute Idee\r\n  * \"Menschen denken nicht Objekt-orientiert\"\r\n  * Services
+  sind leichtgewichtig, man kann sie einfacher ändern, oder\r\n    neue, parallel
+  zu bestehenden einführen\r\n  * Noch ein Anti-Pattern: \"Do what I mean Service\",
+  bestehend aus einem\r\n    String \"XML in\" und Return-Wert \"XML out\"\r\n  *
+  Services sollen wohl definiert sein\r\n  * Ein Service-Bus ist ein zentrales Medium,
+  welches benutzt wird, um als\r\n    Servicenutzer einen Service aufzurufen.\r\n
+  \ * Ein Bus kann auf fachlicher Ebene beobachtet werden, denn auf dem\r\n    Bus
+  werden Fachliche Dinge versendet\r\n  * Vor SOA war EAI (http://en.wikipedia.org/wiki/Enterprise_application_integration)\r\n
+  \ * SOA Architekturen haben eine bessere Performance als andere Architekturen\r\n
+  \ * Mit CRUD fährt man SOA mit richtiger Wonne gegen die Wand\r\n  * Und CRUD ist
+  der Tot jeder Performance\r\n  * Der (nächste) heilige Gral: Modellierung von Prozessen\r\n
+  \ * Wechsel im Medium sind ein Problem: Anmeldung via Webseite, Support via Telefon\r\n
+  \ * Was man will: Eine Business Process Engine (im Prinzip eine große State Machine)\r\n
+  \ * Ein Prozess mit persistiert werden können\r\n  * Eine SOA in Kombination mit
+  einer Process Engine erlaubt es sehr\r\n    gute Beobachtungen und Aussagen über
+  Systeme und Geschäftsabläufe zu treffen\r\n\r\n\r\n### Die Cloud\r\n\r\n  * Die
+  Cloud ist interessant für Architekten\r\n  * …hat aber auch eigene Schwierigkeiten:
+  z.B. anvertrauen von Daten\r\n  * Cloud ist hervorragend um (hoch) parallel und
+  mit hoher Verfügbarkeit zu arbeiten\r\n  * …setzt aber viel Knowhow im Bereich Kryptographie
+  voraus\r\n  * Oliver würde User Authentifizierung nicht in der Cloud machen\r\n
+  \ * Warum will man in die Cloud?\r\n    * Geringere Kosten\r\n    * Hohe Verfügbarkeit\r\n
+  \   * Hohe Sicherheit\r\n  * Oliver meint, dass hohe Verfügbarkeit ist kein wirkliches
+  Argument\r\n    für die Cloud ist, weil heutige Hardware ohnehin sehr gut ist\r\n
+  \ * 90% der Downtimes sind Security Relevant, der Rest ist meist ein Fehler von
+  Entwicklern\r\n  * Daher hauptsächlicher Grund für Downtimes: Security\r\n  * Pro
+  Cloud: Anonymous Angriff auf Amazon, gemerkt hat Amazon aber kaum was\r\n\r\n\r\n###
+  Olivers kleine Geschichte zu Open Source\r\n\r\n  * Kleine Firma und StartUps: Open
+  Source, yeah!\r\n  * Dann wird es ernst und die Firma seriös: Wir können uns Oracle
+  leisten!\r\n  * Dann will man aber five-nines Uptime haben… das geht nur noch mit\r\n
+  \   Open Source, weil man ggf. selber Dinge patchen muss\r\n  * Weil: Stecker ziehen
+  ist schlecht für die Uptime\r\n  * Unterm Strich will man alle Systeme, die an der
+  Front stehen, in Open\r\n    Source haben"
