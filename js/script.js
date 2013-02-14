@@ -37,23 +37,37 @@ function selectEpisode(episodenumber, jumpSeconds) {
   $("#episode-list li a").removeClass("active");
 
   // Fill in new episode
-  var preload = (jumpSeconds > 0 ) ? "auto" : "none";
+  var preload = (jumpSeconds > 0) ? "auto" : "none";
   var episode = episodes[episodenumber];
   var enclosure = episode.enclosure[0].url;
   var description = episode.description[0].Text;
   var pubDate = moment(episode.pubDate[0].Text);
 
-  $("#title").append('<a href="'+enclosure+'">'+episode.title[0].Text+'</a>');
-  $("#audioplayer").append('<audio src="'+enclosure+'" preload="'+preload+'"></audio>');
+  var playerTemplate  = _.template($("#player_template").html());
+
+  $("#title").append(episode.title[0].Text);
+  $("#audioplayer").append(playerTemplate({
+    preload: preload,
+    url: enclosure,
+    title: episode.title[0].Text,
+    episode_url: episode.guid[0].Text
+  }));
   $("#shownotes").html(description);
   $("#episode-" + episodenumber).addClass("active");
   $("time#pubdate").attr("datetime", pubDate.format("YYYY-MM-DD HH:mm"));
   $("time#pubdate").html(pubDate.format("Do MMMM YYYY"));
 
-  self.location.hash = episode.guid[0].Text;
+  if (episodenumber != episodes.length - 1 || !_.isEmpty(self.location.hash))
+    self.location.hash = episode.guid[0].Text;
 
-  var as = audiojs.createAll();
-  audioplayer = as[0]
+  $('#podlovewebplayer_1').podlovewebplayer({
+    duration: episode.duration[0].Text,
+    audioWidth: 'auto',
+    audioHeight: '30',
+    alwaysShowHours: 'true',
+    alwaysShowControls: 'true',
+    features: ['current','progress','duration','fullscreen','volume']
+  });
 }
 
 function pad(number, length) {

@@ -5,106 +5,120 @@
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="de" class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Geekstammtisch</title>
-  <meta name="description" content="geekstammtisch podcast" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-language" content="de-DE" id="language" />
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-  <meta name="author" content="tisba" />
-  <link rel="alternate" type="application/rss+xml" title="iTunes Feed" href="http://geekstammtisch.de/episodes.m4a.rss" />
-  <link rel="alternate" type="application/rss+xml" title="Legacy Feed" href="http://geekstammtisch.de/episodes.mp3.rss" />
+    <title>Geekstammtisch</title>
+    <meta name="description" content="geekstammtisch podcast" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="de-DE" id="language" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="author" content="tisba" />
+    <link rel="alternate" type="application/rss+xml" title="iTunes Feed" href="http://geekstammtisch.de/episodes.m4a.rss" />
+    <link rel="alternate" type="application/rss+xml" title="Legacy Feed" href="http://geekstammtisch.de/episodes.mp3.rss" />
 
-  <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/podlove-web-player.css" rel="stylesheet" type="text/css" />
 
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-</head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
 
-<body>
+  <body>
 
-  <div class="container">
-    <div class="row">
-      <div class="span3">
-        <img src="images/geekstammtisch-header-image.png"
+    <div class="container">
+      <div class="row">
+        <div class="span3">
+          <img src="images/geekstammtisch-header-image.png"
           class="img-polaroid"
           width="300px"
           height="300px"
           id="header-image">
-        <div class="sidebar-nav">
-          <ul class="nav nav-list" id="episode-list">
-            <li class="nav-header">Episoden</li>
-          </ul>
-        </div><!--/.well -->
-      </div><!--/span-->
-      <div class="span9">
-        <h2>Willkommen beim Geekstammtisch
-          <a class="btn btn-larg btn-info" id="subscribe-in-itunes"
-            href="http://itunes.apple.com/de/podcast/geekstammtisch/id587071768"
-            title="In iTunes abonnieren">In iTunes abonnieren</a>
-        </h2>
-        <div class="well">
-          <p>
-          Der Geekstammtisch ist ein regelmäßig abgehaltener Gesprächs-Podcast mit gemütlicher Wohnzimmeratmosphäre
-          rund um Web-Entwicklung, Ruby/Rails und die Kölner Entwicklerszene.
-          </p>
+          <div class="sidebar-nav">
+            <ul class="nav nav-list" id="episode-list">
+              <li class="nav-header">Episoden</li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <h2>Willkommen beim Geekstammtisch
+            <a class="btn btn-larg btn-info" id="subscribe-in-itunes"
+              href="http://itunes.apple.com/de/podcast/geekstammtisch/id587071768"
+              title="In iTunes abonnieren">In iTunes abonnieren</a>
+          </h2>
+          <div class="well">
+            <p>
+              Der Geekstammtisch ist ein regelmäßig abgehaltener Gesprächs-Podcast mit gemütlicher Wohnzimmeratmosphäre
+              rund um Web-Entwicklung, Ruby/Rails und die Kölner Entwicklerszene.
+            </p>
 
-          <p>
-          Der Geekstammtisch ist eine Produktion aus Spaß an der Freude von Sebastian
-          (<a href="https://twitter.com/tisba">@tisba</a>) und Dirk (<a href="https://twitter.com/railsbros_dirk">@railsbros_dirk</a>), aufgezeichnet wird auf dem Sofa des
-          <a href="http://home-office-cologne.de" title="Home Office Cologne">Home Office Cologne</a>.
-          </p>
+            <p>
+              Der Geekstammtisch ist eine Produktion aus Spaß an der Freude von Sebastian
+              (<a href="https://twitter.com/tisba">@tisba</a>) und Dirk (<a href="https://twitter.com/railsbros_dirk">@railsbros_dirk</a>), aufgezeichnet wird auf dem Sofa des
+              <a href="http://home-office-cologne.de" title="Home Office Cologne">Home Office Cologne</a>.
+            </p>
 
-          <p>Wir haben für euch diverse Feeds zum abonnieren im Angebot:</p>
+            <p>Wir haben für euch diverse Feeds zum abonnieren im Angebot:</p>
 
-          <ul>
-            <li><a href="http://itunes.apple.com/de/podcast/geekstammtisch/id587071768" title="In iTunes abonnieren">iTunes</a>,</li>
-            <li><a href="http://geekstammtisch.de/episodes.m4a.rss">Apple-optimiertes M4A</a> oder notfalls auch den</li>
-            <li><a href="http://geekstammtisch.de/episodes.mp3.rss">Legacy-Feed</a> und für die ganz nerdigen unter euch den</li>
-            <li><a href="http://bitlove.org/tisba/gst/feed">Torrent-Feed</a> (AAC).</li>
-          </ul>
+            <ul>
+              <li><a href="http://itunes.apple.com/de/podcast/geekstammtisch/id587071768" title="In iTunes abonnieren">iTunes</a>,</li>
+              <li><a href="http://geekstammtisch.de/episodes.m4a.rss">Apple-optimiertes M4A</a> oder notfalls auch den</li>
+              <li><a href="http://geekstammtisch.de/episodes.mp3.rss">Legacy-Feed</a> und für die ganz nerdigen unter euch den</li>
+              <li><a href="http://bitlove.org/tisba/gst/feed">Torrent-Feed</a> (AAC).</li>
+            </ul>
 
-          <p>Feedback gerne via <a href="https://twitter.com/geekstammtisch">@geekstammtisch</a>.</p>
-        </div>
+            <p>Feedback gerne via <a href="https://twitter.com/geekstammtisch">@geekstammtisch</a>.</p>
+          </div>
 
-        <div class="well">
-          <article>
-            <header>
-              <time id="pubdate" datetime="2011-02-23T13:00">23. Februar 2011</time>
-              <h2><span id="title">Kein Stammtisch ohne Javascript mein Freund!</span></h2>
-            </header>
-            <section>
-              <span id="audioplayer"></span>
-              <div id="shownotes">shownotes</div>
-            </section>
-          </article>
-        </div>
+          <div class="well">
+            <article>
+              <header>
+                <time id="pubdate" datetime="2011-02-23T13:00">23. Februar 2011</time>
+                <h2><span id="title">Kein Stammtisch ohne Javascript mein Freund!</span></h2>
+              </header>
+              <section>
+                <span id="audioplayer"></span>
+                <div id="shownotes">shownotes</div>
+              </section>
+            </article>
+          </div>
 
-      </div><!--/span-->
-    </div>
+        </div><!--/span-->
+      </div>
 
-    <hr>
+      <hr>
 
-    <footer id="footer">
-      <p>
-        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">cc-by-nc-sa</a> &bull;
-        <a href="javascript:showimpressum()">Impressum</a> &bull;
-        <a href="https://github.com/m4p/fanboys-IGOR">heavily inspired by IGOR</a> &bull;
-        <a href="http://bootswatch.com/slate/">Slate</a> Template by <a href="http://thomaspark.me/">Thomas Park</a>
-      </p>
-    </footer>
+      <footer id="footer">
+        <p>
+          <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">cc-by-nc-sa</a> &bull;
+          <a href="javascript:showimpressum()">Impressum</a> &bull;
+          <a href="https://github.com/m4p/fanboys-IGOR">heavily inspired by IGOR</a> &bull;
+          <a href="http://bootswatch.com/slate/">Slate</a> Template by <a href="http://thomaspark.me/">Thomas Park</a>
+        </p>
+      </footer>
 
-  </div><!--/.fluid-container-->
+    </div><!--/.fluid-container-->
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="js/libs/modernizr-1.6.min.js"></script>
-  <script src="js/moment.min.js"></script>
-  <script src="js/lang/de.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/audiojs/audio.min.js"></script>
-</body>
+    <script type="text/template" id="player_template">
+      <audio id="podlovewebplayer_1" style="width: auto; height: 30px" controls preload="<%= preload %>">
+        <source src="<%= url %>" type="audio/mp3" />
+        <h3 data-pwp="title">
+          <a href="http://geekstammtisch.de/#<%= episode_url %>"><%= title %></a>
+        </h3>
+      </audio>
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/libs/modernizr-1.6.min.js"></script>
+    <script src="js/libs/underscore.min.js"></script>
+    <script src="js/libs/moment.min.js"></script>
+    <script src="mediaelement/mediaelement-and-player.min.js"></script>
+    <script src="js/libs/jquery.ba-hashchange.min.js"></script>
+    <script src="js/libs/podlove-web-player.js"></script>
+    <script src="js/lang/de.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
