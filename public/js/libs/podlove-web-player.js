@@ -9,211 +9,12 @@
 		// and http://www.w3.org/TR/media-frags/#fragment-dimensions
 		timecodeRegExp = /(\d+:)?(\d+):(\d+)(\.\d+)?([,-](\d+:)?(\d+):(\d+)(\.\d+)?)?/;
 
-	/**
-	 * return number as string lefthand filled with zeros
-	 * @param number number
-	 * @param width number
-	 * @return string
-	 **/
-	function zeroFill(number, width) {
-		width -= number.toString().length;
-		return width > 0 ? new Array(width + 1).join('0') + number : number + '';
-	}
 
-	/**
-	 * accepts array with start and end time in seconds
-	 * returns timecode in deep-linking format
-	 * @param times array
-	 * @return string
-	 **/
-	function generateTimecode(times) {
-		function generatePart(seconds) {
-			var part, hours, milliseconds;
-			// prevent negative values from player
-			if (!seconds || seconds <= 0) {
-				return '00:00';
-			}
-
-			// required (minutes : seconds)
-			part = zeroFill(Math.floor(seconds / 60) % 60, 2) + ':' +
-					zeroFill(Math.floor(seconds % 60) % 60, 2);
-
-			hours = zeroFill(Math.floor(seconds / 60 / 60), 2);
-			hours = hours === '00' ? '' : hours + ':';
-			milliseconds = zeroFill(Math.floor(seconds % 1 * 1000), 3);
-			milliseconds = milliseconds === '000' ? '' : '.' + milliseconds;
-
-			return hours + part + milliseconds;
-		}
-
-		if (times[1] > 0 && times[1] < 9999999 && times[0] < times[1]) {
-			return generatePart(times[0]) + ',' + generatePart(times[1]);
-		}
-
-		return generatePart(times[0]);
-	}
-
-	/**
-	 * parses time code into seconds
-	 * @param string timecode
-	 * @return number
-	 **/
-	function parseTimecode(timecode) {
-		var parts, startTime = 0, endTime = 0;
-
-		if (timecode) {
-			parts = timecode.match(timecodeRegExp);
-
-			if (parts && parts.length === 10) {
-				// hours
-				startTime += parts[1] ? parseInt(parts[1], 10) * 60 * 60 : 0;
-				// minutes
-				startTime += parseInt(parts[2], 10) * 60;
-				// seconds
-				startTime += parseInt(parts[3], 10);
-				// milliseconds
-				startTime += parts[4] ? parseFloat(parts[4]) : 0;
-				// no negative time
-				startTime = Math.max(startTime, 0);
-
-				// if there only a startTime but no endTime
-				if (parts[5] === undefined) {
-					return [startTime, false];
-				}
-
-				// hours
-				endTime += parts[6] ? parseInt(parts[6], 10) * 60 * 60 : 0;
-				// minutes
-				endTime += parseInt(parts[7], 10) * 60;
-				// seconds
-				endTime += parseInt(parts[8], 10);
-				// milliseconds
-				endTime += parts[9] ? parseFloat(parts[9]) : 0;
-				// no negative time
-				endTime = Math.max(endTime, 0);
-
-				return (endTime > startTime) ? [startTime, endTime] : [startTime, false];
-			}
-		}
-		return false;
-	}
-
-	function turnHighlightOff () { 
-		$('.highlight').removeClass('highlight');
-	}
-
-	function checkCurrentURL() {
-		var deepLink;
-		deepLink = parseTimecode(window.location.href);
-		if (deepLink !== false) {
-			startAtTime = deepLink[0];
-			stopAtTime = deepLink[1];
-		}
-	}
-
-	function setFragmentURL(fragment) {
-		var url;
-		window.location.hash = fragment;
-	}
-
-	// update the chapter list when the data is loaded
-	function updateChapterMarks(player, marks) {
-		var doLinkMarks = marks.closest('table').hasClass('linked');
-
-		marks.each(function () {
-			var deepLink,
-				mark       = $(this),
-				startTime  = mark.data('start'),
-				endTime    = mark.data('end'),
-				isEnabled  = mark.data('enabled'),
-				// isBuffered = player.buffered.end(0) > startTime,
-				isActive   = player.currentTime > startTime - 0.3 &&
-						player.currentTime <= endTime;
-
-			// prevent timing errors
-			if (player.buffered.length > 0) {
-			  var isBuffered = player.buffered.end(0) > startTime;
-			}
-
-			if (isActive) {
-				mark
-					.addClass('active')
-					.siblings().removeClass('active');
-			}
-			if (!isEnabled && isBuffered) {
-				deepLink = '#t=' + generateTimecode([startTime, endTime]);
-
-				$(mark).data('enabled', true).addClass('loaded').find('a[rel=player]').removeClass('disabled');
-				/*
-				if (doLinkMarks && mark.find('a').length === 0) {
-					mark.find('td.title')
-						.wrapInner('<a href="' + deepLink + '" />');
-				}
-				*/
-			}
-		});
-	}
-
-	function checkTime(e) {
-		if (players.length > 1) { return; }
-		var player = e.data.player;
-		if (startAtTime !== false && 
-			//Kinda hackish: Make sure that the timejump is at least 1 second (fix for OGG/Firefox)
-			(typeof player.lastCheck === "undefined" || 
-			Math.abs(startAtTime - player.lastCheck) > 1)) {
-			player.setCurrentTime(startAtTime);
-			player.lastCheck = startAtTime;
-			startAtTime = false;
-		}
-		if (stopAtTime !== false && player.currentTime >= stopAtTime) {
-			player.pause();
-			stopAtTime = false;
-		}
-	}
-
-	function addressCurrentTime(e) {
-		var fragment;
-		/* Why did we need that? It prevented firefox from generating fragments after pause
-		if (players.length === 1 &&
-				stopAtTime === false &&
-				startAtTime === false) {
-		*/
-		if (players.length === 1) {
-			fragment = 't=' + generateTimecode([e.data.player.currentTime]);
-			setFragmentURL(fragment);
-		}
-	}
-
-	/* --------------------- Build actual player ---- */
 
 	$.fn.podlovewebplayer = function(options) {
 		var player = this[0];
 		var richplayer = false;
 		var haschapters = false;
-
-		//handle default values for params
-		var params = $.extend({}, {
-			'chapterlinks': 'all',
-			'width': '100%',
-			'duration': false,
-			'chaptersVisible': false,
-			'timecontrolsVisible': false,
-			'summaryVisible': false
-		}, options);
-
-		//fine tuning params
-		params.width = params.width.replace('px','');
-		if (player.tagName == "AUDIO" && typeof params.audioWidth !== 'undefined') {
-			params.width = params.audioWidth;
-		}
-		if (player.tagName == "VIDEO" && typeof $(player).attr('width') !== 'undefined') {
-			params.width = $(player).attr('width');
-		}
-		//duration can be given in seconds or in timecode format
-		if (params.duration && params.duration != parseInt(params.duration)) {
-			var secArray = parseTimecode(params.duration);
-			params.duration = secArray[0];
-		}
 
 		// MEJS options defaults (taken from mediaelementjs.com, slightly adopted for podcasting needs)
 		var mejsoptions = {
@@ -239,15 +40,52 @@
 			duration: 0
 		}
 
-		//transfer width/height to the correct mejs counterparts	
+		//handle default values for params
+		var params = $.extend({}, {
+			'chapterlinks': 'all',
+			'width': '100%',
+			'duration': false,
+			'chaptersVisible': false,
+			'timecontrolsVisible': false,
+			'summaryVisible': false
+		}, options);
 
+		//fine tuning params
+		params.width = params.width.replace('px','');
+		if (params.width.toUpperCase() == "AUTO") {
+			params.width = "100%";
+		}
+
+		//fine tuning audio params
 		if (player.tagName == "AUDIO") {
 			mejsoptions.audioWidth = params.width;
-		} else {
+			if (typeof params.audioWidth !== 'undefined') {
+				params.width = params.audioWidth;
+			}
+			
+			//kill fullscreen button
+			$.each(mejsoptions.features, function(i){
+				if (this == 'fullscreen') {
+					mejsoptions.features.splice(i,1);		
+				}
+			});
+
+		//fine tuning video params
+		} else if (player.tagName == "VIDEO")
+
 			if (typeof params.height !== 'undefined') {
 				mejsoptions.videoWidth = params.width;
 				mejsoptions.videoHeight = params.height;
 			}
+
+		 	if (typeof $(player).attr('width') !== 'undefined') {
+			params.width = $(player).attr('width');
+		}
+
+		//duration can be given in seconds or in timecode format
+		if (params.duration && params.duration != parseInt(params.duration)) {
+			var secArray = parseTimecode(params.duration);
+			params.duration = secArray[0];
 		}
 		
 		//turn ALL suitable pwp params to mejs options
@@ -272,34 +110,46 @@
 		});
 
 		//build rich player with meta data
-		if (player.tagName == "AUDIO" && (
+		if (  typeof params.chapters !== 'undefined' ||
 				typeof params.title !== 'undefined' ||
 				typeof params.subtitle !== 'undefined' ||
 				typeof params.summary !== 'undefined' ||
 				typeof params.poster !== 'undefined' ||
 				typeof $(player).attr('poster') !== 'undefined'
-				)) {
+				) {
 
 			//set status variable
 			var richplayer = true;
-
-			//kill play/pause button from miniplayer
-			$.each(mejsoptions.features, function(i){
-				if (this == 'playpause') {
-					mejsoptions.features.splice(i,1);		
-				}
-			});
 			
+			wrapper.addClass('podlovewebplayer_' + player.tagName.toLowerCase());
 
-			wrapper.prepend('<div class="podlovewebplayer_meta"><a class="bigplay" href="#">Play Episode</a></div>');
-			if (typeof params.poster !== 'undefined') {
-				wrapper.find('.podlovewebplayer_meta').append(
-					'<div class="coverart"><img src="'+params.poster+'" alt=""></div>');
+			if(player.tagName == "AUDIO") {
+				
+				//kill play/pause button from miniplayer
+				$.each(mejsoptions.features, function(i){
+					if (this == 'playpause') {
+						mejsoptions.features.splice(i,1);		
+					}
+				});
+				
+				wrapper.prepend('<div class="podlovewebplayer_meta"></div>');
+				
+				wrapper.find('.podlovewebplayer_meta').prepend('<a class="bigplay" href="#">Play Episode</a>');
+				if (typeof params.poster !== 'undefined') {
+					wrapper.find('.podlovewebplayer_meta').append(
+						'<div class="coverart"><img src="'+params.poster+'" alt=""></div>');
+				}
+				if (typeof $(player).attr('poster') !== 'undefined') {
+					wrapper.find('.podlovewebplayer_meta').append(
+						'<div class="coverart"><img src="'+$(player).attr('poster')+'" alt=""></div>');
+				}
 			}
-			if (typeof $(player).attr('poster') !== 'undefined') {
-				wrapper.find('.podlovewebplayer_meta').append(
-					'<div class="coverart"><img src="'+$(player).attr('poster')+'" alt=""></div>');
+
+			if (player.tagName == "VIDEO") {
+				wrapper.prepend('<div class="podlovewebplayer_top"></div>');
+				wrapper.append('<div class="podlovewebplayer_meta"></div>');
 			}
+			
 			if (typeof params.title !== 'undefined') {
 				wrapper.find('.podlovewebplayer_meta').append(
 					'<h3 class="episodetitle">'+params.title+'</h3>');
@@ -312,7 +162,6 @@
 			//always render toggler buttons wrapper
 			wrapper.find('.podlovewebplayer_meta').append('<div class="togglers"></div>');
 			
-			//
 			if (typeof params.summary !== 'undefined') {
 				var summaryActive = "";
 				if (params.summaryVisible == true) {
@@ -331,7 +180,7 @@
 		}
 
 		var timecontrolsActive = "";
-		if (params.summaryVisible == true) {
+		if (params.timecontrolsVisible == true) {
 			timecontrolsActive = " active";
 		}
 		wrapper.append('<div class="controlbox'+timecontrolsActive+'"></div>');
@@ -691,4 +540,171 @@
 
 		});
 	};
+
+
+
+
+
+
+	/**
+	 * return number as string lefthand filled with zeros
+	 * @param number number
+	 * @param width number
+	 * @return string
+	 **/
+	function zeroFill(number, width) {
+		width -= number.toString().length;
+		return width > 0 ? new Array(width + 1).join('0') + number : number + '';
+	}
+
+
+	/**
+	 * accepts array with start and end time in seconds
+	 * returns timecode in deep-linking format
+	 * @param times array
+	 * @return string
+	 **/
+	function generateTimecode(times) {
+		function generatePart(seconds) {
+			var part, hours, milliseconds;
+			// prevent negative values from player
+			if (!seconds || seconds <= 0) {
+				return '00:00';
+			}
+
+			// required (minutes : seconds)
+			part = zeroFill(Math.floor(seconds / 60) % 60, 2) + ':' +
+					zeroFill(Math.floor(seconds % 60) % 60, 2);
+
+			hours = zeroFill(Math.floor(seconds / 60 / 60), 2);
+			hours = hours === '00' ? '' : hours + ':';
+			milliseconds = zeroFill(Math.floor(seconds % 1 * 1000), 3);
+			milliseconds = milliseconds === '000' ? '' : '.' + milliseconds;
+
+			return hours + part + milliseconds;
+		}
+
+		if (times[1] > 0 && times[1] < 9999999 && times[0] < times[1]) {
+			return generatePart(times[0]) + ',' + generatePart(times[1]);
+		}
+
+		return generatePart(times[0]);
+	}
+
+	/**
+	 * parses time code into seconds
+	 * @param string timecode
+	 * @return number
+	 **/
+	function parseTimecode(timecode) {
+		var parts, startTime = 0, endTime = 0;
+
+		if (timecode) {
+			parts = timecode.match(timecodeRegExp);
+
+			if (parts && parts.length === 10) {
+				// hours
+				startTime += parts[1] ? parseInt(parts[1], 10) * 60 * 60 : 0;
+				// minutes
+				startTime += parseInt(parts[2], 10) * 60;
+				// seconds
+				startTime += parseInt(parts[3], 10);
+				// milliseconds
+				startTime += parts[4] ? parseFloat(parts[4]) : 0;
+				// no negative time
+				startTime = Math.max(startTime, 0);
+
+				// if there only a startTime but no endTime
+				if (parts[5] === undefined) {
+					return [startTime, false];
+				}
+
+				// hours
+				endTime += parts[6] ? parseInt(parts[6], 10) * 60 * 60 : 0;
+				// minutes
+				endTime += parseInt(parts[7], 10) * 60;
+				// seconds
+				endTime += parseInt(parts[8], 10);
+				// milliseconds
+				endTime += parts[9] ? parseFloat(parts[9]) : 0;
+				// no negative time
+				endTime = Math.max(endTime, 0);
+
+				return (endTime > startTime) ? [startTime, endTime] : [startTime, false];
+			}
+		}
+		return false;
+	}
+
+	function checkCurrentURL() {
+		var deepLink;
+		deepLink = parseTimecode(window.location.href);
+		if (deepLink !== false) {
+			startAtTime = deepLink[0];
+			stopAtTime = deepLink[1];
+		}
+	}
+
+	function setFragmentURL(fragment) {
+		var url;
+		window.location.hash = fragment;
+	}
+
+	// update the chapter list when the data is loaded
+	function updateChapterMarks(player, marks) {
+		var doLinkMarks = marks.closest('table').hasClass('linked');
+
+		marks.each(function () {
+			var deepLink,
+				mark       = $(this),
+				startTime  = mark.data('start'),
+				endTime    = mark.data('end'),
+				isEnabled  = mark.data('enabled'),
+				// isBuffered = player.buffered.end(0) > startTime,
+				isActive   = player.currentTime > startTime - 0.3 &&
+						player.currentTime <= endTime;
+
+			// prevent timing errors
+			if (player.buffered.length > 0) {
+			  var isBuffered = player.buffered.end(0) > startTime;
+			}
+
+			if (isActive) {
+				mark
+					.addClass('active')
+					.siblings().removeClass('active');
+			}
+			if (!isEnabled && isBuffered) {
+				deepLink = '#t=' + generateTimecode([startTime, endTime]);
+
+				$(mark).data('enabled', true).addClass('loaded').find('a[rel=player]').removeClass('disabled');
+			}
+		});
+	}
+
+	function checkTime(e) {
+		if (players.length > 1) { return; }
+		var player = e.data.player;
+		if (startAtTime !== false && 
+			//Kinda hackish: Make sure that the timejump is at least 1 second (fix for OGG/Firefox)
+			(typeof player.lastCheck === "undefined" || 
+			Math.abs(startAtTime - player.lastCheck) > 1)) {
+			player.setCurrentTime(startAtTime);
+			player.lastCheck = startAtTime;
+			startAtTime = false;
+		}
+		if (stopAtTime !== false && player.currentTime >= stopAtTime) {
+			player.pause();
+			stopAtTime = false;
+		}
+	}
+
+	function addressCurrentTime(e) {
+		var fragment;
+		if (players.length === 1) {
+			fragment = 't=' + generateTimecode([e.data.player.currentTime]);
+			setFragmentURL(fragment);
+		}
+	}
+	
 }(jQuery));

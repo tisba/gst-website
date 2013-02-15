@@ -62,10 +62,9 @@ function selectEpisode(episodenumber, jumpSeconds) {
 
   $('#podlovewebplayer_1').podlovewebplayer({
     duration: episode.duration[0].Text,
-    audioWidth: 'auto',
-    audioHeight: '30',
-    alwaysShowHours: 'true',
-    alwaysShowControls: 'true',
+    width: 'auto',
+    alwaysShowHours: true,
+    alwaysShowControls: true,
     features: ['current','progress','duration','fullscreen','volume']
   });
 }
