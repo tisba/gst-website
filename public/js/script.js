@@ -48,9 +48,7 @@ function selectEpisode(episodenumber, jumpSeconds) {
   $("#title").append(episode.title[0].Text);
   $("#audioplayer").append(playerTemplate({
     preload: preload,
-    url: enclosure,
-    title: episode.title[0].Text,
-    episode_url: episode.guid[0].Text
+    url: enclosure
   }));
   $("#shownotes").html(description);
   $("#episode-" + episodenumber).addClass("active");
@@ -60,13 +58,26 @@ function selectEpisode(episodenumber, jumpSeconds) {
   if (episodenumber != episodes.length - 1 || !_.isEmpty(self.location.hash))
     self.location.hash = episode.guid[0].Text;
 
-  $('#podlovewebplayer_1').podlovewebplayer({
+  var playerOptions = {
     duration: episode.duration[0].Text,
-    width: 'auto',
+    audioWidth: 'auto',
     alwaysShowHours: true,
     alwaysShowControls: true,
-    features: ['current','progress','duration','fullscreen','volume']
-  });
+    title: episode.title[0].Text,
+    permalink: "http://geekstammtisch.de/#" + episode.guid[0].Text
+  };
+
+  if (episode.chapters !== undefined) {
+    var chapters = "";
+
+    $.each(episode.chapters[0].chapter, function(index, chapter) {
+      chapters += "" + chapter.start + ".000 " + chapter.title + "\n";
+    });
+
+    playerOptions["chapters"] = chapters;
+  }
+
+  $('#podlovewebplayer_1').podlovewebplayer(playerOptions);
 }
 
 function pad(number, length) {

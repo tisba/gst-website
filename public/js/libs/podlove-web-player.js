@@ -12,11 +12,11 @@
 
 
 	$.fn.podlovewebplayer = function(options) {
-		var player = this[0];
-		var richplayer = false;
-		var haschapters = false;
+		var player = this[0],
+			richplayer = false,
+			haschapters = false;
 
-		// MEJS options defaults (taken from mediaelementjs.com, slightly adopted for podcasting needs)
+		// MEJS options default values
 		var mejsoptions = {
 			defaultVideoWidth: 480,
 			defaultVideoHeight: 270,
@@ -37,41 +37,42 @@
 			framesPerSecond: 25,
 			enableKeyboard: true,
 			pauseOtherPlayers: true,
-			duration: 0
+			duration: false
 		}
 
-		//handle default values for params
+		// Additional parameters default values
 		var params = $.extend({}, {
-			'chapterlinks': 'all',
-			'width': '100%',
-			'duration': false,
-			'chaptersVisible': false,
-			'timecontrolsVisible': false,
-			'summaryVisible': false
+			chapterlinks: 'all',
+			width: '100%',
+			duration: false,
+			chaptersVisible: false,
+			timecontrolsVisible: false,
+			summaryVisible: false
 		}, options);
 
 		//fine tuning params
-		params.width = params.width.replace('px','');
-		if (params.width.toUpperCase() == "AUTO") {
-			params.width = "100%";
+		if (params.width.toLowerCase() == 'auto') {
+			params.width = '100%';
+		} else {
+			params.width = params.width.replace('px', '');
 		}
 
-		//fine tuning audio params
-		if (player.tagName == "AUDIO") {
-			mejsoptions.audioWidth = params.width;
+		//audio params
+		if (player.tagName == 'AUDIO') {
 			if (typeof params.audioWidth !== 'undefined') {
 				params.width = params.audioWidth;
 			}
+			mejsoptions.audioWidth = params.width;
 			
 			//kill fullscreen button
 			$.each(mejsoptions.features, function(i){
 				if (this == 'fullscreen') {
-					mejsoptions.features.splice(i,1);		
+					mejsoptions.features.splice(i, 1);		
 				}
 			});
 
-		//fine tuning video params
-		} else if (player.tagName == "VIDEO")
+		//video params
+		} else if (player.tagName == 'VIDEO') {
 
 			if (typeof params.height !== 'undefined') {
 				mejsoptions.videoWidth = params.width;
@@ -79,16 +80,17 @@
 			}
 
 		 	if (typeof $(player).attr('width') !== 'undefined') {
-			params.width = $(player).attr('width');
+				params.width = $(player).attr('width');
+			}
 		}
 
 		//duration can be given in seconds or in timecode format
-		if (params.duration && params.duration != parseInt(params.duration)) {
+		if (params.duration && params.duration != ~~params.duration) {
 			var secArray = parseTimecode(params.duration);
 			params.duration = secArray[0];
 		}
 		
-		//turn ALL suitable pwp params to mejs options
+		//Overwrite MEJS default values with actual data
 		$.each(mejsoptions, function(key, value){
 			if (typeof params[key] !== 'undefined') {
 				mejsoptions[key] = params[key];
@@ -96,11 +98,16 @@
 		});
 
 		//wrapper and init stuff
-		if (params.width == parseInt(params.width)) { 
-			params.width += "px"; 
+		if (params.width == ~~params.width) { 
+			params.width += 'px'; 
 		}
-		$(player).wrap('<div class="podlovewebplayer_wrapper" style="width: '+params.width+'"></div>');
-		var deepLink, wrapper = $(player).parent();
+
+		var orig = player;
+
+		player = $(player).clone().wrap('<div class="podlovewebplayer_wrapper" style="width: ' + params.width + '"></div>')[0];
+		var deepLink,
+			wrapper = $(player).parent();
+
 		players.push(player);
 
 		//add params from html fallback area
@@ -151,8 +158,13 @@
 			}
 			
 			if (typeof params.title !== 'undefined') {
-				wrapper.find('.podlovewebplayer_meta').append(
-					'<h3 class="episodetitle">'+params.title+'</h3>');
+				if (typeof params.permalink !== 'undefined') {
+					wrapper.find('.podlovewebplayer_meta').append(
+						'<h3 class="episodetitle"><a href="'+params.permalink+'">'+params.title+'</a></h3>');
+				} else {
+					wrapper.find('.podlovewebplayer_meta').append(
+						'<h3 class="episodetitle">'+params.title+'</h3>');
+				}
 			}
 			if (typeof params.subtitle !== 'undefined') {
 				wrapper.find('.podlovewebplayer_meta').append(
@@ -228,22 +240,25 @@
 
 			//first round: kill empty rows and build structured object
 			$.each(params.chapters.split("\n"), function(){
+				//exit early if this line contains nothing but whitespace
+				if( !/\S/.test(this)){
+					return;
+				}
+
 				var line = $.trim(this);
 				var tc = parseTimecode(line.substring(0,line.indexOf(' ')));
 				var chaptitle = $.trim(line.substring(line.indexOf(' ')));
-				if (line.length > 5) {
-					tempchapters[i] = {start: tc[0], title: chaptitle };
-					i++;
-				}
+				tempchapters[i] = {start: tc[0], title: chaptitle };
+				i++;
 			});
 
 			//second round: collect more information
 			$.each(tempchapters, function(i){
-				if (typeof tempchapters[parseInt(i)+1] !== 'undefined') {
-					this.end = 	tempchapters[parseInt(i)+1].start;
+				if (typeof tempchapters[-~i] !== 'undefined') {
+					this.end = 	tempchapters[-~i].start;
 					if(Math.round(this.end-this.start) > maxchapterlength) {
 						maxchapterlength = Math.round(this.end-this.start);
-						maxchapterstart = Math.round(tempchapters[parseInt(i)+1].start);
+						maxchapterstart = Math.round(tempchapters[-~i].start);
 					}
 				}
 			})
@@ -252,9 +267,9 @@
 			$.each(tempchapters, function(i){
 				var deeplink = document.location;
 
-				var finalchapter = (typeof tempchapters[parseInt(i)+1] === 'undefined') ? true : false;
+				var finalchapter = (typeof tempchapters[-~i] === 'undefined') ? true : false;
 				if (!finalchapter) {
-					this.end = 	tempchapters[parseInt(i)+1].start;
+					this.end = 	tempchapters[-~i].start;
 					if((maxchapterlength >= 3600)&&(Math.round(this.end-this.start) < 3600)) {
 						this.duration = '00:'+generateTimecode([Math.round(this.end-this.start)]);
 					} else {
@@ -277,7 +292,7 @@
 				// deeplink, start and end
 				var deeplink_chap = '#t=' + generateTimecode( [this.start, this.end] );
 				var oddchapter = 'oddchapter';
-				if(parseInt(i)%2) { oddchapter = ''; }
+				if((~~i)%2) { oddchapter = ''; }
 				var rowstring = '<tr class="chaptertr '+oddchapter+'" data-start="'+this.start+'" data-end="'+this.end+'">';
 
 				if((maxchapterstart >= 3600)&&(Math.round(this.start) < 3600)) {
@@ -317,6 +332,8 @@
 				});
 			}
 		}
+
+		$(orig).replaceWith(wrapper);
 		$(player).mediaelementplayer(mejsoptions);
 	};
 
@@ -342,34 +359,41 @@
 
 		// get things straight for flash fallback
 		if (player.pluginType == 'flash') {
-			var layoutedPlayer = $("#mep_" + player.id.substring(9));
+			var layoutedPlayer = $('#mep_' + player.id.substring(9));
 		}
-		// get DOM object of meta info
-		var metainfo = layoutedPlayer.closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_meta');
-		var summary = layoutedPlayer.closest('.podlovewebplayer_wrapper').find('.summary');
-		var chapterdiv = layoutedPlayer.closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_chapterbox');
+
+		// cache some jQ objects
+		var wrapper = layoutedPlayer.closest('.podlovewebplayer_wrapper'),
+			metainfo = wrapper.find('.podlovewebplayer_meta'),
+			summary = wrapper.find('.summary'),
+			controlbox = wrapper.find('.controlbox'),
+			chapterdiv = wrapper.find('.podlovewebplayer_chapterbox');
 		
+		// fix height of summary for better toggability
 		summary.each(function() {
-			$(this).data("height", $(this).height());
+			$(this).data('height', $(this).height());
 			if (!$(this).hasClass('active')) {
 				$(this).height('0px');
 			}
 		})
 		
 		if (metainfo.length === 1) {
+
 			metainfo.find('a.infowindow').on('click', function(){
-				$(this).closest('.podlovewebplayer_wrapper').find('.summary').toggleClass('active');
-				if($(this).closest('.podlovewebplayer_wrapper').find('.summary').hasClass('active')) {
-					$(this).closest('.podlovewebplayer_wrapper').find('.summary').height($(this).closest('.podlovewebplayer_wrapper').find('.summary').data("height")+'px');
+				summary.toggleClass('active');
+				if(summary.hasClass('active')) {
+					summary.height(summary.data('height') + 'px');
 				} else {
-					$(this).closest('.podlovewebplayer_wrapper').find('.summary').height('0px');
+					summary.height('0px');
 				}
 				return false;
 			});
+
 			metainfo.find('a.showcontrols').on('click', function(){
-				$(this).closest('.podlovewebplayer_wrapper').find('.controlbox').toggleClass('active');
+				controlbox.toggleClass('active');
 				return false;
 			});
+
 			metainfo.find('.bigplay').on('click', function(){
 				if (player.paused) {
 					player.play();
@@ -380,57 +404,53 @@
 				}
 				return false;
 			});
-			layoutedPlayer.closest('.podlovewebplayer_wrapper').find('.prevbutton').click(function(){
-				if((typeof player.currentTime === 'number')&&(player.currentTime > 0)) {
-					if(player.currentTime > $(this).closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_chapterbox').find('.active').data('start')+10) {
-						player.setCurrentTime($(this).closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_chapterbox').find('.active').data('start'));
-					}
-					else {
-						player.setCurrentTime($(this).closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_chapterbox').find('.active').prev().data('start'));
-					}
-					
-				}
-				else {
+
+			wrapper.find('.prevbutton').click(function(){
+				if ((typeof player.currentTime === 'number')&&(player.currentTime > 0)) {
+					if(player.currentTime > chapterdiv.find('.active').data('start')+10) {
+						player.setCurrentTime(chapterdiv.find('.active').data('start'));
+					} else {
+						player.setCurrentTime(chapterdiv.find('.active').prev().data('start'));
+					}					
+				} else {
 					player.play();
 				}
-				
 				return false;
 			});
-			layoutedPlayer.closest('.podlovewebplayer_wrapper').find('.nextbutton').click(function(){
-				if((typeof player.currentTime === 'number')&&(player.currentTime > 0)) {
-					player.setCurrentTime($(this).closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_chapterbox').find('.active').next().data('start'));
-				}
-				else {
+			
+			wrapper.find('.nextbutton').click(function(){
+				if ((typeof player.currentTime === 'number') && (player.currentTime > 0)) {
+					player.setCurrentTime(chapterdiv.find('.active').next().data('start'));
+				} else {
 					player.play();
 				}
-				
 				return false;
 			});
-			layoutedPlayer.closest('.podlovewebplayer_wrapper').find('.rewindbutton').click(function(){
+
+			wrapper.find('.rewindbutton').click(function(){
 				if((typeof player.currentTime === 'number')&&(player.currentTime > 0)) {
-					player.setCurrentTime(player.currentTime-30);
-				}
-				else {
+					player.setCurrentTime(player.currentTime - 30);
+				} else {
 					player.play();
 				}
-				
 				return false;
 			});
-			layoutedPlayer.closest('.podlovewebplayer_wrapper').find('.forwardbutton').click(function(){
+
+			wrapper.find('.forwardbutton').click(function(){
 				if((typeof player.currentTime === 'number')&&(player.currentTime > 0)) {
 					player.setCurrentTime(player.currentTime+30);
-				}
-				else {
+				} else {
 					player.play();
 				}
-				
 				return false;
 			});
-			layoutedPlayer.closest('.podlovewebplayer_wrapper').find('.currentbutton').click(function(){
+
+			wrapper.find('.currentbutton').click(function(){
 				window.prompt('This URL directly points to the current playback position', $(this).closest('.podlovewebplayer_wrapper').find('.episodetitle a').attr('href')+'#t='+generateTimecode([player.currentTime]));
 				return false;
 			});
-			layoutedPlayer.closest('.podlovewebplayer_wrapper').find('.tweetbutton').click(function(){
+
+			wrapper.find('.tweetbutton').click(function(){
 				window.open('https://twitter.com/share?text='+encodeURI($(this).closest('.podlovewebplayer_wrapper').find('.episodetitle a').text())+'&url='+encodeURI($(this).closest('.podlovewebplayer_wrapper').find('.episodetitle a').attr('href'))+'%23t%3D'+generateTimecode([player.currentTime]), 'tweet it', 'width=550,height=420,resizable=yes');
 				return false;
 			});
@@ -472,21 +492,20 @@
 			});
 
 		chapterdiv.each(function() {
-			$(this).data("height", $(this).height());
-			$(this).height($(this).data("height"));
+			$(this).data('height', $(this).height());
+			$(this).height($(this).data('height'));
 			if(!$(this).hasClass('active')) {
 				$(this).height('0px');
 			}
 		})
 		
 		if (chapterdiv.length === 1) {
-			metainfo.find('a.chaptertoggle').on('click', function(){
-				$(this).closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_chapterbox').toggleClass('active');
-				if($(this).closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_chapterbox').hasClass('active')) {
-					$(this).closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_chapterbox').height($(this).closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_chapterbox').data("height")+'px');
-				}
-				else {
-					$(this).closest('.podlovewebplayer_wrapper').find('.podlovewebplayer_chapterbox').height('0px');
+			metainfo.find('a.chaptertoggle').on('click', function() {
+				chapterdiv.toggleClass('active');
+				if (chapterdiv.hasClass('active')) {
+					chapterdiv.height(chapterdiv.data('height') + 'px');
+				} else {
+					chapterdiv.height('0px');
 				}
 				return false;
 			});
@@ -504,7 +523,6 @@
 					$(this).text(generateTimecode([end-start]));
 				});
 			}
-			
 
 			// add Deeplink Behavior if there is only one player on the site
 			if (players.length === 1) {
@@ -552,7 +570,7 @@
 	 * @param width number
 	 * @return string
 	 **/
-	function zeroFill(number, width) {
+	var zeroFill = function(number, width) {
 		width -= number.toString().length;
 		return width > 0 ? new Array(width + 1).join('0') + number : number + '';
 	}
@@ -564,7 +582,7 @@
 	 * @param times array
 	 * @return string
 	 **/
-	function generateTimecode(times) {
+	var generateTimecode = function(times) {
 		function generatePart(seconds) {
 			var part, hours, milliseconds;
 			// prevent negative values from player
@@ -596,7 +614,7 @@
 	 * @param string timecode
 	 * @return number
 	 **/
-	function parseTimecode(timecode) {
+	var parseTimecode = function(timecode) {
 		var parts, startTime = 0, endTime = 0;
 
 		if (timecode) {
@@ -636,7 +654,7 @@
 		return false;
 	}
 
-	function checkCurrentURL() {
+	var checkCurrentURL = function() {
 		var deepLink;
 		deepLink = parseTimecode(window.location.href);
 		if (deepLink !== false) {
@@ -645,13 +663,13 @@
 		}
 	}
 
-	function setFragmentURL(fragment) {
+	var setFragmentURL = function(fragment) {
 		var url;
 		window.location.hash = fragment;
 	}
 
 	// update the chapter list when the data is loaded
-	function updateChapterMarks(player, marks) {
+	var updateChapterMarks = function(player, marks) {
 		var doLinkMarks = marks.closest('table').hasClass('linked');
 
 		marks.each(function () {
@@ -670,25 +688,21 @@
 			}
 
 			if (isActive) {
-				mark
-					.addClass('active')
-					.siblings().removeClass('active');
+				mark.addClass('active').siblings().removeClass('active');
 			}
 			if (!isEnabled && isBuffered) {
 				deepLink = '#t=' + generateTimecode([startTime, endTime]);
-
 				$(mark).data('enabled', true).addClass('loaded').find('a[rel=player]').removeClass('disabled');
 			}
 		});
 	}
 
-	function checkTime(e) {
+	var checkTime = function (e) {
 		if (players.length > 1) { return; }
 		var player = e.data.player;
 		if (startAtTime !== false && 
-			//Kinda hackish: Make sure that the timejump is at least 1 second (fix for OGG/Firefox)
-			(typeof player.lastCheck === "undefined" || 
-			Math.abs(startAtTime - player.lastCheck) > 1)) {
+				//Kinda hackish: Make sure that the timejump is at least 1 second (fix for OGG/Firefox)
+				(typeof player.lastCheck === 'undefined' || Math.abs(startAtTime - player.lastCheck) > 1)) {
 			player.setCurrentTime(startAtTime);
 			player.lastCheck = startAtTime;
 			startAtTime = false;
@@ -699,7 +713,7 @@
 		}
 	}
 
-	function addressCurrentTime(e) {
+	var addressCurrentTime = function(e) {
 		var fragment;
 		if (players.length === 1) {
 			fragment = 't=' + generateTimecode([e.data.player.currentTime]);
