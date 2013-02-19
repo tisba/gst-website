@@ -1,0 +1,118 @@
+--- !ruby/struct:Episode
+number: 6
+name: Heute machen, morgen Legacy
+length: 5287
+media:
+  mp3:
+    size: 63590709
+    file_ext: mp3
+  aac:
+    size: 38635988
+    file_ext: m4a
+  alac:
+    size: 384917566
+    file_ext: m4a
+  opus:
+    size: 43450751
+    file_ext: opus
+auphonic_uuid: MriAHqfejozE2e5Phuz3Sk
+published_at: 2013-02-19 23:27:37.908571000 +01:00
+summary: ! "**Synopsis:** Heute geht es um ArangoDB und wie man einen coolen low-level
+  Client für eine Datenbank baut, Mutation Testing,\r\nRuby/Rails Security und anderen
+  geilen Scheiß.\r\n\r\n### Gast (00:00:40)\r\n\r\n  * Lucas Dohmen (@moonbeamlabs)\r\n
+  \ * Studiert an der RWTH Aachen\r\n\r\n### ArangoDB & Ashikawa (00:01:40)\r\n\r\n
+  \ * Lucas arbeitet an diversen Open Source Projekten rund um ArangoDB\r\n    * https://github.com/triAGENS/ashikawa-ar\r\n
+  \   * https://github.com/triAGENS/ArangoDB\r\n    * https://github.com/triAGENS/ashikawa-core\r\n
+  \ * Zwei Pattern zur Anbindung von Datenbanken: ActiveRecord (http://www.martinfowler.com/eaaCatalog/activeRecord.html)
+  und DataMapper (http://www.martinfowler.com/eaaCatalog/dataMapper.html)\r\n  * Ziel
+  von Ashikawa Core:\r\n    * Sehr leichtgewichtige Abstraktion über der REST-API
+  von ArangoDB\r\n    * “Treiber” von anderen Dokumentendatenbanken liefern nicht
+  nur einen Treiber sondern auch “Framework”\r\n    * Aktuell lässt sich das HTTP-Backend
+  noch nicht austauschen, wird aber in Zukunft auf Faraday (https://github.com/lostisland/faraday)
+  aufbauen\r\n    * Noch ist Ashikawa **nicht** Thread-safe\r\n  * Was baut auf Ashikawa
+  Core auf?\r\n    * Implementierung des Active-Record-Patterns: https://github.com/triAGENS/ashikawa-ar\r\n
+  \   * Lucas verwendet Teile des DataMapper2 Projekts:\r\n      * https://github.com/solnic/virtus:
+  Attributes on Steroids\r\n      * https://github.com/mbj/aequitas: External Validations\r\n
+  \     * Beide sind API-kompatibel zu ActiveModel, d.h. sie lassen sich einfach in
+  Rails verwenden\r\n  * Contributor sind gerne gesehen!\r\n  * Lucas hat sich für
+  die DataMapper2 Bibliotheken entschieden, weil DataMapper2 ArangoDB schon unterstützt
+  (neben Postgres)\r\n  * Lucas hat außerdem das Gefühl, dass die Code-Qualität bei
+  DataMapper2 höher ist\r\n\r\n### Testing Ruby (00:19:50)\r\n\r\n  * Seattle.rb (http://ruby.sadi.st/Ruby_Sadist.html
+  NSFW)\r\n    * Projekte wie `flog`, `flay`, `heckle`\r\n  * Am Anfang war die Code-to-Test-Ratio
+  das Maß aller Dinge\r\n  * Dann kam die Code Coverage (http://en.wikipedia.org/wiki/Code_coverage)\r\n
+  \ * Code Coverage ist seit Ruby 1.9 sehr einfach zu messen\r\n  * Wir haben uns
+  darauf geeinigt, dass 100% Code Coverage in Core-Bibliotheken erstrebenswert ist,
+  in Anwendungen nicht mehr\r\n  * Beide Metriken sagen aber nichts über die absolute
+  Qualität von Tests aus\r\n  * Wenn 100% Code Coverage erreichen sehr schwierig ist,
+  dann ist das ein Code-Smell\r\n  * Code Metrics as a Service: Code Climate (https://codeclimate.com/)\r\n
+  \ * Enter Mutation Testing…\r\n    * Nette Einführung in das Thema und in mutant:
+  http://solnic.eu/2013/01/23/mutation-testing-with-mutant.html\r\n    * mutant gem:
+  https://github.com/mbj/mutant\r\n    * Mutation-Testing ist langsam\r\n    * Macht
+  vor allem Sinn bei abgeschlossenen Bibliotheken\r\n  * Lucas will auch Mutation
+  Testing in ashikawa-core machen\r\n  * mutant läuft am besten unter Rubinius\r\n
+  \ * https://github.com/burke/zeus\r\n    * pre-loaded Rails environment\r\n    *
+  ähnlich zu spork, aber intelligenter, wenn es um reloading geht\r\n\r\n### Ruby/Rails
+  Security (00:39:00)\r\n\r\n  * Aaron über YAML, YAML F7U12: http://tenderlovemaking.com/2013/02/06/yaml-f7u12.html\r\n
+  \   * YAML nicht als User-Input!\r\n    * JSON und XML sind für den Austausch besser
+  geeignet\r\n  * Padrino ist safe: http://www.padrinorb.com/blog/sleep-well-yaml-vulnerabilites-and-padrino\r\n
+  \ * Rails Security Issues und Start Ups? http://www.kalzumeus.com/2013/01/31/what-the-rails-security-issue-means-for-your-startup/\r\n
+  \   * **We’re are doomed!1!1!elf**\r\n    * Sicherheitslücken gehören dazu (Höre
+  http://geekstammtisch.de/#GST005)\r\n    * Wichtig ist wie man damit umgeht (Entwickler
+  wie Maintainer)\r\n  * PHP-Code Injection via User-Agent String: http://blog.spiderlabs.com/2013/02/honeypot-alert-user-agent-field-php-injection-attacks.html\r\n\r\n###
+  Ruby (00:48:50)\r\n\r\n  * Ruby auf Python: Topaz (http://docs.topazruby.com/en/latest/blog/announcing-topaz/)\r\n
+  \ * Basti erinnert ein Projekt für eine True-Ruby-Sandbox: Ruby -> Rubyracer (V8)
+  -> emscripted-ruby -> Ruby (https://github.com/cantino/ruby_on_ruby)\r\n  * Yanked
+  Gems sind doof :-) (net-scp, net-ssh-gateway, newrelic)\r\n\r\n### Technical Dept
+  (00:55:10)\r\n\r\n  * Technical Dept: http://tech.groups.yahoo.com/group/scrumdevelopment/message/55626\r\n
+  \   * Don't do it.\r\n    * When we do it, figure out why and stop.\r\n    * When
+  we do it, **leave it alone** if it's not in the way.\r\n    * If it is in the way,
+  clean up the parts we pass through.\r\n\r\n### Erlang on XEN aka geiler Scheiß (01:08:35)\r\n\r\n
+  \ * Erlang on XEN: http://zerg.erlangonxen.org/\r\n  * Startet im Kontext eines
+  Requests eine komplette Erlang VM inkl. Applikation\r\n\r\n### Tools (01:11:40)\r\n\r\n
+  \ * Record your Terminal: http://ascii.io/\r\n  * Boxen: http://boxen.github.com/\r\n
+  \   * Für Chef: https://github.com/pivotal/pivotal_workstation\r\n  * Vim Autocompletion
+  (wenn Lucas schon da ist ^^)\r\n    * Aktuell verwenden Lucas und Dirk “YouCompleteMe”:
+  https://github.com/Valloric/YouCompleteMe. Gefällt uns nicht so gut, aber sehr zu
+  empfehlen wenn man C-* programmiert\r\n    * Alternative: https://github.com/Shougo/neocomplcache\r\n
+  \   * Oder einfach ohne extra Plugin ;-)\r\n\r\n### Events (01:20:20)\r\n\r\n  *
+  Railsgirls Rheinland ist in knapp 2 Wochen (http://www.nerdhub.de/events/260-rails-girls-rheinland/dates/1756)\r\n
+  \ * Railsgirls Followup am Donnerstag bei Intro (http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1571)\r\n
+  \ * cologne.rb am Mittwoch bei adcloud (http://www.nerdhub.de/events/40-cologne-rb/dates/843)\r\n
+  \ * cologne.js in der neuen Bottfabrik! (http://www.nerdhub.de/events/3-cologne-js/dates/1597)\r\n\r\n###
+  Offtopic (01:25:40)\r\n\r\n  * Die Nifty Drives (http://theniftyminidrive.com/)
+  von Basti und Dirk sind endlich da\r\n    * Das von Dirk leider aber doch nur in
+  Silber (statt Pink)\r\n  * XKCD Style Comics in HTML: http://cmx.io/edit/"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Intro
+- !ruby/struct:Chapter
+  start: '00:00:40'
+  title: ! 'Unser Gast: Lucas'
+- !ruby/struct:Chapter
+  start: '00:01:40'
+  title: ArangoDB & Ashikawa
+- !ruby/struct:Chapter
+  start: '00:19:50'
+  title: Testing Ruby
+- !ruby/struct:Chapter
+  start: '00:39:00'
+  title: Ruby/Rails Security
+- !ruby/struct:Chapter
+  start: '00:48:50'
+  title: Ruby Krams
+- !ruby/struct:Chapter
+  start: '00:55:10'
+  title: Technical Dept
+- !ruby/struct:Chapter
+  start: '01:08:35'
+  title: Erlang on XEN aka geiler Scheiß
+- !ruby/struct:Chapter
+  start: '01:11:40'
+  title: Tools
+- !ruby/struct:Chapter
+  start: '01:20:20'
+  title: Events
+- !ruby/struct:Chapter
+  start: '01:25:40'
+  title: Offtopic
