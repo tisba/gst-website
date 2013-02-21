@@ -47,8 +47,17 @@ function selectEpisode(episodenumber, jumpSeconds) {
 
   $("#title").append(episode.title[0].Text);
   $("#audioplayer").append(playerTemplate({
-    preload: preload,
-    url: enclosure
+    preload: "none",
+    media_sources: [
+      {
+        url: enclosure.replace(/\.mp3$/, ".m4a"),
+        content_type: "audio/mp4"
+      },
+      {
+        url: enclosure,
+        content_type: "audio/mp3"
+      }
+    ]
   }));
   $("#shownotes").html(description);
   $("#episode-" + episodenumber).addClass("active");

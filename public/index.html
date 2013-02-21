@@ -105,7 +105,9 @@
 
     <script type="text/template" id="player_template">
       <audio id="podlovewebplayer_1" style="width: auto" preload="<%= preload %>">
-        <source src="<%= url %>" type="audio/mp3" />
+        <% _.each(media_sources, function(media) { %>
+        <source src="<%= media.url %>" type="<%= media.content_type %>" />
+        <% }); %>
       </audio>
     </script>
 
