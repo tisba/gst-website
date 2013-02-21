@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:psc="http://podlove.org/simple-chapters" version="2.0">
     <channel>
         <title>Geekstammtisch</title>
         <link>http://geekstammtisch.de</link>
@@ -158,7 +158,9 @@ auch komplett weg, wenn gewünscht</li>
 <li>cologne.rb Weihnachtsmarkt Eddition im Dezember (Twitter <a href="https://twitter.com/colognerb">@colognerb</a>)</li>
 </ul>
 ]]></description>
-          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#0:" />
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST000" />
+
+          
         </item>
         
         <item>
@@ -333,7 +335,9 @@ auch komplett weg, wenn gewünscht</li>
 <li><code>conference.jabber.org</code>: Group-Chat Service kostenlos, wenn man das mal brauchen sollte ;-)</li>
 </ul>
 ]]></description>
-          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#1:" />
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST001" />
+
+          
         </item>
         
         <item>
@@ -535,7 +539,9 @@ DOS zu verhindern.</li>
 <li>Pony Podcast: <a href="http://ponytime.net/">http://ponytime.net/</a></li>
 </ul>
 ]]></description>
-          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#2:" />
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST002" />
+
+          
         </item>
         
         <item>
@@ -966,7 +972,9 @@ Controllers, Service Layer</li>
 <li>eurucamp findet auch wieder 2013 statt: <a href="http://eurucamp.org/">http://eurucamp.org/</a> (16. - 18. August 2013)</li>
 </ul>
 ]]></description>
-          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#3:" />
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST003" />
+
+          
         </item>
         
         <item>
@@ -1284,7 +1292,9 @@ ArangoDB</li>
 
 <p>BTW: Jan Lenhardt ist jetzt bei &#39;The Couch Firm&#39; - <a href="http://thecouchfirm.com/">http://thecouchfirm.com/</a></p>
 ]]></description>
-          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#4:" />
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST004" />
+
+          
         </item>
         
         <item>
@@ -1598,7 +1608,319 @@ Open Source, weil man ggf. selber Dinge patchen muss</li>
 Source haben</li>
 </ul>
 ]]></description>
-          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#5:" />
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST005" />
+
+          
+        </item>
+        
+        <item>
+          <title>GST006 - Heute machen, morgen Legacy</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST006 - Heute machen, morgen Legacy</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst006.mp3" length="63590709" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST006</guid>
+          <pubDate>Tue, 19 Feb 2013 23:27:37 +0100</pubDate>
+          <itunes:duration>01:28:07</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Heute geht es um ArangoDB und wie man einen coolen low-level Client für eine Datenbank baut, Mutation Testing,
+Ruby/Rails Security und anderen geilen Scheiß.
+
+### Gast (00:00:40)
+
+  * Lucas Dohmen (@moonbeamlabs)
+  * Studiert an der RWTH Aachen
+
+### ArangoDB & Ashikawa (00:01:40)
+
+  * Lucas arbeitet an diversen Open Source Projekten rund um ArangoDB
+    * https://github.com/triAGENS/ashikawa-ar
+    * https://github.com/triAGENS/ArangoDB
+    * https://github.com/triAGENS/ashikawa-core
+  * Zwei Pattern zur Anbindung von Datenbanken: ActiveRecord (http://www.martinfowler.com/eaaCatalog/activeRecord.html) und DataMapper (http://www.martinfowler.com/eaaCatalog/dataMapper.html)
+  * Ziel von Ashikawa Core:
+    * Sehr leichtgewichtige Abstraktion über der REST-API von ArangoDB
+    * “Treiber” von anderen Dokumentendatenbanken liefern nicht nur einen Treiber sondern auch “Framework”
+    * Aktuell lässt sich das HTTP-Backend noch nicht austauschen, wird aber in Zukunft auf Faraday (https://github.com/lostisland/faraday) aufbauen
+    * Noch ist Ashikawa **nicht** Thread-safe
+  * Was baut auf Ashikawa Core auf?
+    * Implementierung des Active-Record-Patterns: https://github.com/triAGENS/ashikawa-ar
+    * Lucas verwendet Teile des DataMapper2 Projekts:
+      * https://github.com/solnic/virtus: Attributes on Steroids
+      * https://github.com/mbj/aequitas: External Validations
+      * Beide sind API-kompatibel zu ActiveModel, d.h. sie lassen sich einfach in Rails verwenden
+  * Contributor sind gerne gesehen!
+  * Lucas hat sich für die DataMapper2 Bibliotheken entschieden, weil DataMapper2 ArangoDB schon unterstützt (neben Postgres)
+  * Lucas hat außerdem das Gefühl, dass die Code-Qualität bei DataMapper2 höher ist
+
+### Testing Ruby (00:19:50)
+
+  * Seattle.rb (http://ruby.sadi.st/Ruby_Sadist.html NSFW)
+    * Projekte wie `flog`, `flay`, `heckle`
+  * Am Anfang war die Code-to-Test-Ratio das Maß aller Dinge
+  * Dann kam die Code Coverage (http://en.wikipedia.org/wiki/Code_coverage)
+  * Code Coverage ist seit Ruby 1.9 sehr einfach zu messen
+  * Wir haben uns darauf geeinigt, dass 100% Code Coverage in Core-Bibliotheken erstrebenswert ist, in Anwendungen nicht mehr
+  * Beide Metriken sagen aber nichts über die absolute Qualität von Tests aus
+  * Wenn 100% Code Coverage erreichen sehr schwierig ist, dann ist das ein Code-Smell
+  * Code Metrics as a Service: Code Climate (https://codeclimate.com/)
+  * Enter Mutation Testing…
+    * Nette Einführung in das Thema und in mutant: http://solnic.eu/2013/01/23/mutation-testing-with-mutant.html
+    * mutant gem: https://github.com/mbj/mutant
+    * Mutation-Testing ist langsam
+    * Macht vor allem Sinn bei abgeschlossenen Bibliotheken
+  * Lucas will auch Mutation Testing in ashikawa-core machen
+  * mutant läuft am besten unter Rubinius
+  * https://github.com/burke/zeus
+    * pre-loaded Rails environment
+    * ähnlich zu spork, aber intelligenter, wenn es um reloading geht
+
+### Ruby/Rails Security (00:39:00)
+
+  * Aaron über YAML, YAML F7U12: http://tenderlovemaking.com/2013/02/06/yaml-f7u12.html
+    * YAML nicht als User-Input!
+    * JSON und XML sind für den Austausch besser geeignet
+  * Padrino ist safe: http://www.padrinorb.com/blog/sleep-well-yaml-vulnerabilites-and-padrino
+  * Rails Security Issues und Start Ups? http://www.kalzumeus.com/2013/01/31/what-the-rails-security-issue-means-for-your-startup/
+    * **We’re are doomed!1!1!elf**
+    * Sicherheitslücken gehören dazu (Höre http://geekstammtisch.de/#GST005)
+    * Wichtig ist wie man damit umgeht (Entwickler wie Maintainer)
+  * PHP-Code Injection via User-Agent String: http://blog.spiderlabs.com/2013/02/honeypot-alert-user-agent-field-php-injection-attacks.html
+
+### Ruby (00:48:50)
+
+  * Ruby auf Python: Topaz (http://docs.topazruby.com/en/latest/blog/announcing-topaz/)
+  * Basti erinnert ein Projekt für eine True-Ruby-Sandbox: Ruby -> Rubyracer (V8) -> emscripted-ruby -> Ruby (https://github.com/cantino/ruby_on_ruby)
+  * Yanked Gems sind doof :-) (net-scp, net-ssh-gateway, newrelic)
+
+### Technical Dept (00:55:10)
+
+  * Technical Dept: http://tech.groups.yahoo.com/group/scrumdevelopment/message/55626
+    * Don't do it.
+    * When we do it, figure out why and stop.
+    * When we do it, **leave it alone** if it's not in the way.
+    * If it is in the way, clean up the parts we pass through.
+
+### Erlang on XEN aka geiler Scheiß (01:08:35)
+
+  * Erlang on XEN: http://zerg.erlangonxen.org/
+  * Startet im Kontext eines Requests eine komplette Erlang VM inkl. Applikation
+
+### Tools (01:11:40)
+
+  * Record your Terminal: http://ascii.io/
+  * Boxen: http://boxen.github.com/
+    * Für Chef: https://github.com/pivotal/pivotal_workstation
+  * Vim Autocompletion (wenn Lucas schon da ist ^^)
+    * Aktuell verwenden Lucas und Dirk “YouCompleteMe”: https://github.com/Valloric/YouCompleteMe. Gefällt uns nicht so gut, aber sehr zu empfehlen wenn man C-* programmiert
+    * Alternative: https://github.com/Shougo/neocomplcache
+    * Oder einfach ohne extra Plugin ;-)
+
+### Events (01:20:20)
+
+  * Railsgirls Rheinland ist in knapp 2 Wochen (http://www.nerdhub.de/events/260-rails-girls-rheinland/dates/1756)
+  * Railsgirls Followup am Donnerstag bei Intro (http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1571)
+  * cologne.rb am Mittwoch bei adcloud (http://www.nerdhub.de/events/40-cologne-rb/dates/843)
+  * cologne.js in der neuen Bottfabrik! (http://www.nerdhub.de/events/3-cologne-js/dates/1597)
+
+### Offtopic (01:25:40)
+
+  * Die Nifty Drives (http://theniftyminidrive.com/) von Basti und Dirk sind endlich da
+    * Das von Dirk leider aber doch nur in Silber (statt Pink)
+  * XKCD Style Comics in HTML: http://cmx.io/edit/]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Heute geht es um ArangoDB und wie man einen coolen low-level Client für eine Datenbank baut, Mutation Testing,
+Ruby/Rails Security und anderen geilen Scheiß.</p>
+
+<h3>Gast (00:00:40)</h3>
+
+<ul>
+<li>Lucas Dohmen (<a href="https://twitter.com/moonbeamlabs">@moonbeamlabs</a>)</li>
+<li>Studiert an der RWTH Aachen</li>
+</ul>
+
+<h3>ArangoDB &amp; Ashikawa (00:01:40)</h3>
+
+<ul>
+<li>Lucas arbeitet an diversen Open Source Projekten rund um ArangoDB
+
+<ul>
+<li><a href="https://github.com/triAGENS/ashikawa-ar">https://github.com/triAGENS/ashikawa-ar</a></li>
+<li><a href="https://github.com/triAGENS/ArangoDB">https://github.com/triAGENS/ArangoDB</a></li>
+<li><a href="https://github.com/triAGENS/ashikawa-core">https://github.com/triAGENS/ashikawa-core</a></li>
+</ul></li>
+<li>Zwei Pattern zur Anbindung von Datenbanken: ActiveRecord (<a href="http://www.martinfowler.com/eaaCatalog/activeRecord.html">http://www.martinfowler.com/eaaCatalog/activeRecord.html</a>) und DataMapper (<a href="http://www.martinfowler.com/eaaCatalog/dataMapper.html">http://www.martinfowler.com/eaaCatalog/dataMapper.html</a>)</li>
+<li>Ziel von Ashikawa Core:
+
+<ul>
+<li>Sehr leichtgewichtige Abstraktion über der REST-API von ArangoDB</li>
+<li>“Treiber” von anderen Dokumentendatenbanken liefern nicht nur einen Treiber sondern auch “Framework”</li>
+<li>Aktuell lässt sich das HTTP-Backend noch nicht austauschen, wird aber in Zukunft auf Faraday (<a href="https://github.com/lostisland/faraday">https://github.com/lostisland/faraday</a>) aufbauen</li>
+<li>Noch ist Ashikawa <strong>nicht</strong> Thread-safe</li>
+</ul></li>
+<li>Was baut auf Ashikawa Core auf?
+
+<ul>
+<li>Implementierung des Active-Record-Patterns: <a href="https://github.com/triAGENS/ashikawa-ar">https://github.com/triAGENS/ashikawa-ar</a></li>
+<li>Lucas verwendet Teile des DataMapper2 Projekts:
+
+<ul>
+<li><a href="https://github.com/solnic/virtus:">https://github.com/solnic/virtus:</a> Attributes on Steroids</li>
+<li><a href="https://github.com/mbj/aequitas:">https://github.com/mbj/aequitas:</a> External Validations</li>
+<li>Beide sind API-kompatibel zu ActiveModel, d.h. sie lassen sich einfach in Rails verwenden</li>
+</ul></li>
+</ul></li>
+<li>Contributor sind gerne gesehen!</li>
+<li>Lucas hat sich für die DataMapper2 Bibliotheken entschieden, weil DataMapper2 ArangoDB schon unterstützt (neben Postgres)</li>
+<li>Lucas hat außerdem das Gefühl, dass die Code-Qualität bei DataMapper2 höher ist</li>
+</ul>
+
+<h3>Testing Ruby (00:19:50)</h3>
+
+<ul>
+<li>Seattle.rb (<a href="http://ruby.sadi.st/Ruby_Sadist.html">http://ruby.sadi.st/Ruby_Sadist.html</a> NSFW)
+
+<ul>
+<li>Projekte wie <code>flog</code>, <code>flay</code>, <code>heckle</code></li>
+</ul></li>
+<li>Am Anfang war die Code-to-Test-Ratio das Maß aller Dinge</li>
+<li>Dann kam die Code Coverage (<a href="http://en.wikipedia.org/wiki/Code_coverage">http://en.wikipedia.org/wiki/Code_coverage</a>)</li>
+<li>Code Coverage ist seit Ruby 1.9 sehr einfach zu messen</li>
+<li>Wir haben uns darauf geeinigt, dass 100% Code Coverage in Core-Bibliotheken erstrebenswert ist, in Anwendungen nicht mehr</li>
+<li>Beide Metriken sagen aber nichts über die absolute Qualität von Tests aus</li>
+<li>Wenn 100% Code Coverage erreichen sehr schwierig ist, dann ist das ein Code-Smell</li>
+<li>Code Metrics as a Service: Code Climate (<a href="https://codeclimate.com/">https://codeclimate.com/</a>)</li>
+<li>Enter Mutation Testing…
+
+<ul>
+<li>Nette Einführung in das Thema und in mutant: <a href="http://solnic.eu/2013/01/23/mutation-testing-with-mutant.html">http://solnic.eu/2013/01/23/mutation-testing-with-mutant.html</a></li>
+<li>mutant gem: <a href="https://github.com/mbj/mutant">https://github.com/mbj/mutant</a></li>
+<li>Mutation-Testing ist langsam</li>
+<li>Macht vor allem Sinn bei abgeschlossenen Bibliotheken</li>
+</ul></li>
+<li>Lucas will auch Mutation Testing in ashikawa-core machen</li>
+<li>mutant läuft am besten unter Rubinius</li>
+<li><a href="https://github.com/burke/zeus">https://github.com/burke/zeus</a>
+
+<ul>
+<li>pre-loaded Rails environment</li>
+<li>ähnlich zu spork, aber intelligenter, wenn es um reloading geht</li>
+</ul></li>
+</ul>
+
+<h3>Ruby/Rails Security (00:39:00)</h3>
+
+<ul>
+<li>Aaron über YAML, YAML F7U12: <a href="http://tenderlovemaking.com/2013/02/06/yaml-f7u12.html">http://tenderlovemaking.com/2013/02/06/yaml-f7u12.html</a>
+
+<ul>
+<li>YAML nicht als User-Input!</li>
+<li>JSON und XML sind für den Austausch besser geeignet</li>
+</ul></li>
+<li>Padrino ist safe: <a href="http://www.padrinorb.com/blog/sleep-well-yaml-vulnerabilites-and-padrino">http://www.padrinorb.com/blog/sleep-well-yaml-vulnerabilites-and-padrino</a></li>
+<li>Rails Security Issues und Start Ups? <a href="http://www.kalzumeus.com/2013/01/31/what-the-rails-security-issue-means-for-your-startup/">http://www.kalzumeus.com/2013/01/31/what-the-rails-security-issue-means-for-your-startup/</a>
+
+<ul>
+<li><strong>We’re are doomed!1!1!elf</strong></li>
+<li>Sicherheitslücken gehören dazu (Höre <a href="http://geekstammtisch.de/#GST005">http://geekstammtisch.de/#GST005</a>)</li>
+<li>Wichtig ist wie man damit umgeht (Entwickler wie Maintainer)</li>
+</ul></li>
+<li>PHP-Code Injection via User-Agent String: <a href="http://blog.spiderlabs.com/2013/02/honeypot-alert-user-agent-field-php-injection-attacks.html">http://blog.spiderlabs.com/2013/02/honeypot-alert-user-agent-field-php-injection-attacks.html</a></li>
+</ul>
+
+<h3>Ruby (00:48:50)</h3>
+
+<ul>
+<li>Ruby auf Python: Topaz (<a href="http://docs.topazruby.com/en/latest/blog/announcing-topaz/">http://docs.topazruby.com/en/latest/blog/announcing-topaz/</a>)</li>
+<li>Basti erinnert ein Projekt für eine True-Ruby-Sandbox: Ruby -&gt; Rubyracer (V8) -&gt; emscripted-ruby -&gt; Ruby (<a href="https://github.com/cantino/ruby_on_ruby">https://github.com/cantino/ruby_on_ruby</a>)</li>
+<li>Yanked Gems sind doof :-) (net-scp, net-ssh-gateway, newrelic)</li>
+</ul>
+
+<h3>Technical Dept (00:55:10)</h3>
+
+<ul>
+<li>Technical Dept: <a href="http://tech.groups.yahoo.com/group/scrumdevelopment/message/55626">http://tech.groups.yahoo.com/group/scrumdevelopment/message/55626</a>
+
+<ul>
+<li>Don&#39;t do it.</li>
+<li>When we do it, figure out why and stop.</li>
+<li>When we do it, <strong>leave it alone</strong> if it&#39;s not in the way.</li>
+<li>If it is in the way, clean up the parts we pass through.</li>
+</ul></li>
+</ul>
+
+<h3>Erlang on XEN aka geiler Scheiß (01:08:35)</h3>
+
+<ul>
+<li>Erlang on XEN: <a href="http://zerg.erlangonxen.org/">http://zerg.erlangonxen.org/</a></li>
+<li>Startet im Kontext eines Requests eine komplette Erlang VM inkl. Applikation</li>
+</ul>
+
+<h3>Tools (01:11:40)</h3>
+
+<ul>
+<li>Record your Terminal: <a href="http://ascii.io/">http://ascii.io/</a></li>
+<li>Boxen: <a href="http://boxen.github.com/">http://boxen.github.com/</a>
+
+<ul>
+<li>Für Chef: <a href="https://github.com/pivotal/pivotal_workstation">https://github.com/pivotal/pivotal_workstation</a></li>
+</ul></li>
+<li>Vim Autocompletion (wenn Lucas schon da ist ^^)
+
+<ul>
+<li>Aktuell verwenden Lucas und Dirk “YouCompleteMe”: <a href="https://github.com/Valloric/YouCompleteMe">https://github.com/Valloric/YouCompleteMe</a>. Gefällt uns nicht so gut, aber sehr zu empfehlen wenn man C-* programmiert</li>
+<li>Alternative: <a href="https://github.com/Shougo/neocomplcache">https://github.com/Shougo/neocomplcache</a></li>
+<li>Oder einfach ohne extra Plugin ;-)</li>
+</ul></li>
+</ul>
+
+<h3>Events (01:20:20)</h3>
+
+<ul>
+<li>Railsgirls Rheinland ist in knapp 2 Wochen (<a href="http://www.nerdhub.de/events/260-rails-girls-rheinland/dates/1756">http://www.nerdhub.de/events/260-rails-girls-rheinland/dates/1756</a>)</li>
+<li>Railsgirls Followup am Donnerstag bei Intro (<a href="http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1571">http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1571</a>)</li>
+<li>cologne.rb am Mittwoch bei adcloud (<a href="http://www.nerdhub.de/events/40-cologne-rb/dates/843">http://www.nerdhub.de/events/40-cologne-rb/dates/843</a>)</li>
+<li>cologne.js in der neuen Bottfabrik! (<a href="http://www.nerdhub.de/events/3-cologne-js/dates/1597">http://www.nerdhub.de/events/3-cologne-js/dates/1597</a>)</li>
+</ul>
+
+<h3>Offtopic (01:25:40)</h3>
+
+<ul>
+<li>Die Nifty Drives (<a href="http://theniftyminidrive.com/">http://theniftyminidrive.com/</a>) von Basti und Dirk sind endlich da
+
+<ul>
+<li>Das von Dirk leider aber doch nur in Silber (statt Pink)</li>
+</ul></li>
+<li>XKCD Style Comics in HTML: <a href="http://cmx.io/edit/">http://cmx.io/edit/</a></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST006" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro" />
+          
+            <psc:chapter start="00:00:40" title="Unser Gast: Lucas" />
+          
+            <psc:chapter start="00:01:40" title="ArangoDB &amp; Ashikawa" />
+          
+            <psc:chapter start="00:19:50" title="Testing Ruby" />
+          
+            <psc:chapter start="00:39:00" title="Ruby/Rails Security" />
+          
+            <psc:chapter start="00:48:50" title="Ruby Krams" />
+          
+            <psc:chapter start="00:55:10" title="Technical Dept" />
+          
+            <psc:chapter start="01:08:35" title="Erlang on XEN aka geiler Scheiß" />
+          
+            <psc:chapter start="01:11:40" title="Tools" />
+          
+            <psc:chapter start="01:20:20" title="Events" />
+          
+            <psc:chapter start="01:25:40" title="Offtopic" />
+          
+          </psc:chapters>
+          
         </item>
         
     </channel>

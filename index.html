@@ -19,6 +19,7 @@
     <link rel="alternate" type="application/rss+xml" title="Legacy Feed" href="http://geekstammtisch.de/episodes.mp3.rss" />
 
     <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    <link href="mediaelement/mediaelementplayer.min.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/podlove-web-player.css" rel="stylesheet" type="text/css" />
 
@@ -94,6 +95,7 @@
         <p>
           <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">cc-by-nc-sa</a> &bull;
           <a href="javascript:showimpressum()">Impressum</a> &bull;
+          <a href="https://github.com/tisba/gst-kitchen">powered by gst-kitchen</a> &bull;
           <a href="https://github.com/m4p/fanboys-IGOR">heavily inspired by IGOR</a> &bull;
           <a href="http://bootswatch.com/slate/">Slate</a> Template by <a href="http://thomaspark.me/">Thomas Park</a>
         </p>
@@ -102,11 +104,10 @@
     </div><!--/.fluid-container-->
 
     <script type="text/template" id="player_template">
-      <audio id="podlovewebplayer_1" style="width: auto; height: 30px" controls preload="<%= preload %>">
-        <source src="<%= url %>" type="audio/mp3" />
-        <h3 data-pwp="title">
-          <a href="http://geekstammtisch.de/#<%= episode_url %>"><%= title %></a>
-        </h3>
+      <audio id="podlovewebplayer_1" style="width: auto" preload="<%= preload %>">
+        <% _.each(media_sources, function(media) { %>
+        <source src="<%= media.url %>" type="<%= media.content_type %>" />
+        <% }); %>
       </audio>
     </script>
 

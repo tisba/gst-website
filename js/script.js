@@ -40,6 +40,7 @@ function selectEpisode(episodenumber, jumpSeconds) {
   var preload = (jumpSeconds > 0) ? "auto" : "none";
   var episode = episodes[episodenumber];
   var enclosure = episode.enclosure[0].url;
+  encosure = "http://media.geekstammtisch.de/episodes/gstccc.mp3";
   var description = episode.description[0].Text;
   var pubDate = moment(episode.pubDate[0].Text);
 
@@ -47,10 +48,17 @@ function selectEpisode(episodenumber, jumpSeconds) {
 
   $("#title").append(episode.title[0].Text);
   $("#audioplayer").append(playerTemplate({
-    preload: preload,
-    url: enclosure,
-    title: episode.title[0].Text,
-    episode_url: episode.guid[0].Text
+    preload: "none",
+    media_sources: [
+      {
+        url: enclosure.replace(/\.mp3$/, ".m4a"),
+        content_type: "audio/mp4"
+      },
+      {
+        url: enclosure,
+        content_type: "audio/mp3"
+      }
+    ]
   }));
   $("#shownotes").html(description);
   $("#episode-" + episodenumber).addClass("active");
@@ -60,14 +68,26 @@ function selectEpisode(episodenumber, jumpSeconds) {
   if (episodenumber != episodes.length - 1 || !_.isEmpty(self.location.hash))
     self.location.hash = episode.guid[0].Text;
 
-  $('#podlovewebplayer_1').podlovewebplayer({
+  var playerOptions = {
     duration: episode.duration[0].Text,
     audioWidth: 'auto',
-    audioHeight: '30',
-    alwaysShowHours: 'true',
-    alwaysShowControls: 'true',
-    features: ['current','progress','duration','fullscreen','volume']
-  });
+    alwaysShowHours: true,
+    alwaysShowControls: true,
+    title: episode.title[0].Text,
+    permalink: "http://geekstammtisch.de/#" + episode.guid[0].Text
+  };
+
+  if (episode.chapters !== undefined) {
+    var chapters = "";
+
+    $.each(episode.chapters[0].chapter, function(index, chapter) {
+      chapters += "" + chapter.start + ".000 " + chapter.title + "\n";
+    });
+
+    playerOptions["chapters"] = chapters;
+  }
+
+  $('#podlovewebplayer_1').podlovewebplayer(playerOptions);
 }
 
 function pad(number, length) {
