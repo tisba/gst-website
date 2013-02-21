@@ -40,7 +40,6 @@ function selectEpisode(episodenumber, jumpSeconds) {
   var preload = (jumpSeconds > 0) ? "auto" : "none";
   var episode = episodes[episodenumber];
   var enclosure = episode.enclosure[0].url;
-  encosure = "http://media.geekstammtisch.de/episodes/gstccc.mp3";
   var description = episode.description[0].Text;
   var pubDate = moment(episode.pubDate[0].Text);
 
