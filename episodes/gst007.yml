@@ -1,0 +1,118 @@
+--- !ruby/struct:Episode
+number: 7
+name: Provisionieren mit Bash
+length: 6010
+media:
+  mp3:
+    size: 72255059
+    file_ext: mp3
+  aac:
+    size: 43888579
+    file_ext: m4a
+  alac:
+    size: 432302526
+    file_ext: m4a
+  opus:
+    size: 49518956
+    file_ext: opus
+auphonic_uuid: iwt6WxicNdvLWfV9NqNLrD
+published_at: 2013-03-09 18:40:28.176472000 +01:00
+summary: ! "**Synopsis:** Heute zu Gast ist Klaus (@klaustopher) und wir reden viel\r\nüber
+  Ruby 2.0, die aktuellen Rails Release Candidates, Config-Formate\r\nund Threading
+  in Ruby. Das\r\nganze wird diesmal abgerundet mit einem Ausflug in die Frontend-Welt
+  und\r\nein Besuch bei DevOps.\r\n\r\n### Unser Gast (00:01:25)\r\n\r\n  * Klaus
+  Zanders (@klaustopher)\r\n  * www.putpat.tv\r\n  * Hat bei IBM studiert\r\n  * War
+  dann bei Microsoft\r\n  * Zwischendurch bei einer Versicherung\r\n  * Nun darf er
+  endlich Ruby machen \\o/\r\n\r\n### In eigener Sache (00:04:35)\r\n\r\n  * Wir haben
+  Hörer in Polen!! https://shellycloud.com/\r\n  * Es gibt Leute, die an gst-kitchen
+  interessiert sind *yeah* :)\r\n  * Wir haben jetzt auch Kapitelmarken\r\n  * Unsere
+  Webseite hat jetzt den Podlove-Webplayer\r\n  * opus ist auf dem Weg\r\n\r\n###
+  Ruby 2.0 (00:09:00)\r\n\r\n  * Ruby 2.0 ist da (ja, schon was länger). Und die Community
+  war mal\r\n    wieder super schnell mit Adaption von allem (debugger, rvm)\r\n  *
+  Basti hat mit Ruby 2.0 und Dtrace\r\n    (http://en.wikipedia.org/wiki/DTrace) rumgespielt\r\n
+  \ * Ruby 2.0 TracePoints zur Analyse\r\n    http://matt.aimonetti.net/posts/2013/03/05/inspecting-rails-4-request-dispatch-using-ruby-2-dot-0\r\n
+  \ * Ein paar Slides zu den neuen Features von Ruby 2.0:\r\n    https://speakerdeck.com/peterc/ruby-2-dot-0-walkthrough-the-best-bits\r\n
+  \ * Matz’s Talk auf der Waza (Heroku):\r\n    https://blog.heroku.com/archives/2013/3/6/matz_highlights_ruby_2_0_at_waza\r\n
+  \ * Ruby 1.8.7 ist ab Juni nicht mehr supported (auch keine Security\r\n    Fixes)\r\n\r\n###
+  Refinements (00:20:31)\r\n\r\n  * Wir haben ein wenig über Refinements diskutiert\r\n
+  \   (http://www.ruby-lang.org/en/news/2013/02/24/ruby-2-0-0-p0-is-released#label-9)\r\n\r\n###
+  Rails (00:26:57)\r\n\r\n  * Rails 4.0.rc1:\r\n    http://weblog.rubyonrails.org/2013/2/25/Rails-4-0-beta1/\r\n
+  \ * Rails 3.2.13.rc2:\r\n    http://weblog.rubyonrails.org/2013/3/7/Rails-3-2-13-rc2-has-been-released/\r\n\r\n###
+  TOML, Performance, SOA und Threads (00:28:40)\r\n\r\n  * @mojombo hat ein neues
+  Config Format erfunden:\r\n    http://zerowidth.com/2013/02/24/parsing-toml-in-ruby-with-parslet.html\r\n
+  \ * @tenderlove zu `class_eval` vs `define_method`:\r\n    http://tenderlovemaking.com/2013/03/03/dynamic_method_definitions.html\r\n
+  \ * SOA mit Rails:\r\n    https://developer.uservoice.com/blog/2013/02/27/introducing-mutations-putting-soa-on-rails-for-security-and-maintainability/\r\n
+  \ * Ruby Threading\r\n    * Threads in Ruby:\r\n      http://tonyarcieri.com/2012-the-year-rubyists-learned-to-stop-worrying-and-love-the-threads\r\n
+  \   * Concurrency in jruby:\r\n      https://github.com/jruby/jruby/wiki/Concurrency-in-jruby\r\n
+  \   * Rails 4 ist threadsafe per Default\r\n    * C-Extensions lieber mit FFI: https://github.com/ffi/ffi\r\n\r\n###
+  RegExp debugging, 1M Connections mit Ruby (00:47:50)\r\n\r\n  * RegExp debuggen
+  mit http://www.debuggex.com/\r\n  * RegExp Bug in gst-kitchen:\r\n    https://github.com/tisba/gst-kitchen/issues/4\r\n
+  \ * Alt, aber immer noch gut: Ruby macht eine Millionen Concurrent\r\n    Connections!
+  https://github.com/slivu/1mc2\r\n  * Open Source Projekte, die auf Rails basieren:\r\n
+  \   http://www.opensourcerails.com\r\n  * Ruby Game auf Gosu: Panzer programmieren
+  die sich gegenseitig\r\n    abschießen https://github.com/awilliams/RTanque\r\n
+  \   * Gosu: http://en.wikipedia.org/wiki/Gosu\r\n  * Fußball-Simulator:\r\n    http://sourceforge.net/apps/mediawiki/sserver/index.php?title=Main_Page\r\n\r\n###
+  FlatUI, ember.js & The end of Browser Wars? (01:02:00)\r\n\r\n  * FlatUI Takedown
+  Foo\r\n    * http://designmodo.com/flat-free/ (Comments)\r\n    * https://github.com/github/dmca/commit/735e17614cca63102b8414ed2846c3effbfe9535\r\n
+  \   * https://news.layervault.com/stories/1992-layervault-whats-up-with-the-dmca\r\n
+  \   * https://github.com/github/dmca/blob/master/2013-03-06-LayerVault.md\r\n    *
+  https://github.com/github/dmca/blob/master/2013-03-06-LayerVault-counternotice.md\r\n
+  \ * Ember.js: http://emberjs.com/\r\n    * Sehr opinionated, Client-Javascript MVC
+  Framework\r\n    * Tavis-CI (https://travis-ci.org/) hat die GUI in Ember.js\r\n
+  \   * http://www.discourse.org/ ist in Ember.js\r\n  * Browser-War zu Ende?\r\n
+  \   * Opera nun auf Webkit & V8\r\n    * Und ja Basti, Firefox gibt es auch noch\r\n\r\n###
+  Self-Plug: Homeoffice Cologne (01:18:23)\r\n\r\n  * Unsere Bürogemeinschaft (und
+  Studio): http://home-office-cologne.de\r\n\r\n### DevOps: Chef (01:21:33)\r\n\r\n
+  \ * Chef\r\n    * AWS setzt auf Chef mit OpsWorks: https://aws.amazon.com/opsworks/\r\n
+  \   * kurzes Einführungsvideo:\r\n      http://www.youtube.com/watch?v=9NnWJsS4Y2c\r\n
+  \   * OpsWorks Cookbooks: https://github.com/aws/opsworks-cookbooks\r\n    * Facebook
+  managed ihren Web-Tier mit Chef:\r\n      http://www.infoq.com/news/2013/02/facebook-chef\r\n
+  \ * Rack-Stack: unicorn, haproxy & nginx\r\n\r\n### Misc (01:32:21)\r\n\r\n  * iOS
+  Workshop mit Roddi: http://undsoversity.de/ios-entwicklung\r\n  * Best Tool for
+  the Job bei Spotify:\r\n    http://labs.spotify.com/2013/02/25/in-praise-of-boring-technology/\r\n\r\n###
+  Musikkonsum (01:35:30)\r\n\r\n  * Spotify ja oder nein?\r\n  * Musik via Podcast
+  (im elektronischen Bereich jedenfalls)\r\n\r\n### Events (01:38:50)\r\n\r\n  * RailsGirls
+  Follow-Up Meeting am 18.3. in der Bottmühle:\r\n    https://www.facebook.com/events/173658956115148/"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Intro
+- !ruby/struct:Chapter
+  start: '00:01:25'
+  title: Unser Gast
+- !ruby/struct:Chapter
+  start: '00:04:35'
+  title: In eigener Sache
+- !ruby/struct:Chapter
+  start: '00:09:00'
+  title: Ruby 2.0
+- !ruby/struct:Chapter
+  start: '00:20:31'
+  title: Refinements
+- !ruby/struct:Chapter
+  start: '00:26:57'
+  title: Rails
+- !ruby/struct:Chapter
+  start: '00:28:40'
+  title: TOML, Performance, SOA und Threads
+- !ruby/struct:Chapter
+  start: '00:47:50'
+  title: RegExp debugging, 1M Connections mit Ruby
+- !ruby/struct:Chapter
+  start: '01:02:00'
+  title: FlatUI, ember.js & The end of Browser Wars?
+- !ruby/struct:Chapter
+  start: '01:18:23'
+  title: ! 'Self-Plug: Homeoffice Cologne'
+- !ruby/struct:Chapter
+  start: '01:21:33'
+  title: ! 'DevOps: Chef'
+- !ruby/struct:Chapter
+  start: '01:32:21'
+  title: Misc
+- !ruby/struct:Chapter
+  start: '01:35:30'
+  title: Musikkonsum
+- !ruby/struct:Chapter
+  start: '01:38:50'
+  title: Events
