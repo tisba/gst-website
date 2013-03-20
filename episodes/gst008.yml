@@ -1,0 +1,73 @@
+--- !ruby/struct:Episode
+number: 8
+name: Rake auf Drogen
+length: 5432
+media:
+  mp3:
+    size: 65310340
+    file_ext: mp3
+  aac:
+    size: 39674486
+    file_ext: m4a
+  alac:
+    size: 392773780
+    file_ext: m4a
+  opus:
+    size: 44717658
+    file_ext: opus
+auphonic_uuid: imxLXTqyqtSTV7UbZkGGQh
+published_at: 2013-03-20 17:49:40.441417000 +01:00
+summary: ! "**Synopsis**: Heute ist der Lucas (@moonbeamlabs) mal wieder zu Besuch
+  und wir haben über Serialisierung in Ruby, Thor und JRuby gesprochen. Es gibt auch
+  mal wieder was aus der DevOps-Ecke, namentlich Vagrant und VMware und Gem-Hosting.
+  Natürlich haben wir uns auch nicht nehmen lassen, über das Ende von Google Reader
+  zu philosophieren und den GitHub Enterprise Faux Pa zu erwähnen. Zum Ende erzählt
+  Lucas noch etwas zu seinem Dotfiles Installationsskript.\r\n\r\n### Intro / Errata
+  (00:00:00)\r\n\r\n  * Ruby 1.8.7 depricated seit Juni 2012 (http://www.ruby-lang.org/en/news/2011/10/06/plans-for-1-8-7/)\r\n
+  \ * Ruby 2.0 Walkthrough war damals nur für die Kickstarter Backer verfügbar: http://www.kickstarter.com/projects/1225193080/the-ruby-20-walkthrough/posts\r\n
+  \ * irb für mehrere Rubies von Peter Cooper: https://gist.github.com/peterc/1226588\r\n\r\n###
+  Ruby (00:06:27)\r\n\r\n  * Rails-API Projekt: https://github.com/rails-api/rails-api\r\n
+  \   * https://github.com/rails-api/active_model_serializers\r\n    * http://railscasts.com/episodes/409-active-model-serializers\r\n
+  \   * http://railscasts.com/episodes/320-jbuilder\r\n    * http://railscasts.com/episodes/322-rabl\r\n
+  \   * https://github.com/apotonick/roar\r\n  * Thor - “Rake auf Drogen” (http://whatisthor.com/)\r\n
+  \   * Leider sehr dürftig dokumentiert\r\n    * Erlaubt sehr effizient und strukturiert
+  CLI Tools zu schreiben\r\n  * RedCarpet (https://github.com/vmg/redcarpet)\r\n    *
+  Sucht neuen Maintainer (https://github.com/vmg/redcarpet/issues/212)\r\n    * Ist
+  kramdown die Zukunft? (https://github.com/gettalong/kramdown)\r\n\r\n### JRuby (00:28:06)\r\n\r\n
+  \ * https://github.com/trinidad/trinidad\r\n  * http://torquebox.org\r\n  * https://github.com/jruby/jruby/wiki/Servers\r\n
+  \ * Torquebox wird von RedHat gesponsered und ist daher vielleicht die bessere Alternative.
+  Man muss ja nicht alle Features verwenden.\r\n\r\n### DevOps (00:43:10)\r\n\r\n
+  \ * Vagrant Provider für VMware Fusion ist fertig, kostet 79 USD: http://www.vagrantup.com/vmware\r\n
+  \   * Mitchell Hashimoto / HashiCorp: http://www.hashicorp.com/ \r\n    * AWS Provider:
+  http://www.hashicorp.com/blog/preview-vagrant-aws.html\r\n  * Private Gems hosten\r\n
+  \   * Gem in a Box: https://github.com/cwninja/geminabox\r\n    * http://www.gemfury.com/l/gem-server\r\n\r\n###
+  Netzklatsch (00:58:04)\r\n\r\n  * Google Reader\r\n  * Reeder App (http://reederapp.com)
+  ohne Google Reader? Hoffentlich! https://twitter.com/reederapp/status/311995748482945025\r\n
+  \ * Alternativen zu Google Reader\r\n    * http://www.feedafever.com/ (Reeder supported
+  Fever, aber bisher nur auf dem iPhone)\r\n    * http://www.feedly.com/\r\n  * Prismatic:
+  http://getprismatic.com/news/home\r\n  * Github Leak: Liste der GHE Kunden https://news.ycombinator.com/item?id=5400986\r\n\r\n###
+  Cool Stuff (01:17:50)\r\n\r\n  * Play by Play mit Aaron Patterson: https://peepcode.com/products/play-by-play-tenderlove-ruby-on-rails\r\n
+  \ * Play by Play mit Aaron Patterson und Corey Haines: https://peepcode.com/products/play-by-play-aaroncorey\r\n
+  \ * http://idevelop.github.com/ascii-camera/\r\n  * Alternative zu Lynx: http://elinks.or.cz/\r\n
+  \ * Dotfiles\r\n    * Lucas hat ‘Exogenesis’ gebaut: https://github.com/moonglum/exogenesis\r\n
+  \ * Dirks Suche nach nicht bedruckten Tastaturen: http://www.colorware.com/p-201-apple-wireless-keyboard.aspx
+  (weiterhin erfolglos)"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Intro / Errata
+- !ruby/struct:Chapter
+  start: '00:06:27'
+  title: Ruby
+- !ruby/struct:Chapter
+  start: '00:28:06'
+  title: JRuby
+- !ruby/struct:Chapter
+  start: '00:43:10'
+  title: DevOps
+- !ruby/struct:Chapter
+  start: '00:58:04'
+  title: Netzklatsch
+- !ruby/struct:Chapter
+  start: '01:17:50'
+  title: Cool Stuff

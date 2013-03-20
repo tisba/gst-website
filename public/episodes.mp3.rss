@@ -2268,5 +2268,185 @@ abschießen <a href="https://github.com/awilliams/RTanque">https://github.com/aw
           
         </item>
         
+        <item>
+          <title>GST008 - Rake auf Drogen</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST008 - Rake auf Drogen</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst008.mp3" length="65310340" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST008</guid>
+          <pubDate>Wed, 20 Mar 2013 17:49:40 +0100</pubDate>
+          <itunes:duration>01:30:32</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis**: Heute ist der Lucas (@moonbeamlabs) mal wieder zu Besuch und wir haben über Serialisierung in Ruby, Thor und JRuby gesprochen. Es gibt auch mal wieder was aus der DevOps-Ecke, namentlich Vagrant und VMware und Gem-Hosting. Natürlich haben wir uns auch nicht nehmen lassen, über das Ende von Google Reader zu philosophieren und den GitHub Enterprise Faux Pa zu erwähnen. Zum Ende erzählt Lucas noch etwas zu seinem Dotfiles Installationsskript.
+
+### Intro / Errata (00:00:00)
+
+  * Ruby 1.8.7 depricated seit Juni 2012 (http://www.ruby-lang.org/en/news/2011/10/06/plans-for-1-8-7/)
+  * Ruby 2.0 Walkthrough war damals nur für die Kickstarter Backer verfügbar: http://www.kickstarter.com/projects/1225193080/the-ruby-20-walkthrough/posts
+  * irb für mehrere Rubies von Peter Cooper: https://gist.github.com/peterc/1226588
+
+### Ruby (00:06:27)
+
+  * Rails-API Projekt: https://github.com/rails-api/rails-api
+    * https://github.com/rails-api/active_model_serializers
+    * http://railscasts.com/episodes/409-active-model-serializers
+    * http://railscasts.com/episodes/320-jbuilder
+    * http://railscasts.com/episodes/322-rabl
+    * https://github.com/apotonick/roar
+  * Thor - “Rake auf Drogen” (http://whatisthor.com/)
+    * Leider sehr dürftig dokumentiert
+    * Erlaubt sehr effizient und strukturiert CLI Tools zu schreiben
+  * RedCarpet (https://github.com/vmg/redcarpet)
+    * Sucht neuen Maintainer (https://github.com/vmg/redcarpet/issues/212)
+    * Ist kramdown die Zukunft? (https://github.com/gettalong/kramdown)
+
+### JRuby (00:28:06)
+
+  * https://github.com/trinidad/trinidad
+  * http://torquebox.org
+  * https://github.com/jruby/jruby/wiki/Servers
+  * Torquebox wird von RedHat gesponsered und ist daher vielleicht die bessere Alternative. Man muss ja nicht alle Features verwenden.
+
+### DevOps (00:43:10)
+
+  * Vagrant Provider für VMware Fusion ist fertig, kostet 79 USD: http://www.vagrantup.com/vmware
+    * Mitchell Hashimoto / HashiCorp: http://www.hashicorp.com/ 
+    * AWS Provider: http://www.hashicorp.com/blog/preview-vagrant-aws.html
+  * Private Gems hosten
+    * Gem in a Box: https://github.com/cwninja/geminabox
+    * http://www.gemfury.com/l/gem-server
+
+### Netzklatsch (00:58:04)
+
+  * Google Reader
+  * Reeder App (http://reederapp.com) ohne Google Reader? Hoffentlich! https://twitter.com/reederapp/status/311995748482945025
+  * Alternativen zu Google Reader
+    * http://www.feedafever.com/ (Reeder supported Fever, aber bisher nur auf dem iPhone)
+    * http://www.feedly.com/
+  * Prismatic: http://getprismatic.com/news/home
+  * Github Leak: Liste der GHE Kunden https://news.ycombinator.com/item?id=5400986
+
+### Cool Stuff (01:17:50)
+
+  * Play by Play mit Aaron Patterson: https://peepcode.com/products/play-by-play-tenderlove-ruby-on-rails
+  * Play by Play mit Aaron Patterson und Corey Haines: https://peepcode.com/products/play-by-play-aaroncorey
+  * http://idevelop.github.com/ascii-camera/
+  * Alternative zu Lynx: http://elinks.or.cz/
+  * Dotfiles
+    * Lucas hat ‘Exogenesis’ gebaut: https://github.com/moonglum/exogenesis
+  * Dirks Suche nach nicht bedruckten Tastaturen: http://www.colorware.com/p-201-apple-wireless-keyboard.aspx (weiterhin erfolglos)]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis</strong>: Heute ist der Lucas (<a href="https://twitter.com/moonbeamlabs">@moonbeamlabs</a>) mal wieder zu Besuch und wir haben über Serialisierung in Ruby, Thor und JRuby gesprochen. Es gibt auch mal wieder was aus der DevOps-Ecke, namentlich Vagrant und VMware und Gem-Hosting. Natürlich haben wir uns auch nicht nehmen lassen, über das Ende von Google Reader zu philosophieren und den GitHub Enterprise Faux Pa zu erwähnen. Zum Ende erzählt Lucas noch etwas zu seinem Dotfiles Installationsskript.</p>
+
+<h3>Intro / Errata (00:00:00)</h3>
+
+<ul>
+<li>Ruby 1.8.7 depricated seit Juni 2012 (<a href="http://www.ruby-lang.org/en/news/2011/10/06/plans-for-1-8-7/">http://www.ruby-lang.org/en/news/2011/10/06/plans-for-1-8-7/</a>)</li>
+<li>Ruby 2.0 Walkthrough war damals nur für die Kickstarter Backer verfügbar: <a href="http://www.kickstarter.com/projects/1225193080/the-ruby-20-walkthrough/posts">http://www.kickstarter.com/projects/1225193080/the-ruby-20-walkthrough/posts</a></li>
+<li>irb für mehrere Rubies von Peter Cooper: <a href="https://gist.github.com/peterc/1226588">https://gist.github.com/peterc/1226588</a></li>
+</ul>
+
+<h3>Ruby (00:06:27)</h3>
+
+<ul>
+<li>Rails-API Projekt: <a href="https://github.com/rails-api/rails-api">https://github.com/rails-api/rails-api</a>
+
+<ul>
+<li><a href="https://github.com/rails-api/active_model_serializers">https://github.com/rails-api/active_model_serializers</a></li>
+<li><a href="http://railscasts.com/episodes/409-active-model-serializers">http://railscasts.com/episodes/409-active-model-serializers</a></li>
+<li><a href="http://railscasts.com/episodes/320-jbuilder">http://railscasts.com/episodes/320-jbuilder</a></li>
+<li><a href="http://railscasts.com/episodes/322-rabl">http://railscasts.com/episodes/322-rabl</a></li>
+<li><a href="https://github.com/apotonick/roar">https://github.com/apotonick/roar</a></li>
+</ul></li>
+<li>Thor - “Rake auf Drogen” (<a href="http://whatisthor.com/">http://whatisthor.com/</a>)
+
+<ul>
+<li>Leider sehr dürftig dokumentiert</li>
+<li>Erlaubt sehr effizient und strukturiert CLI Tools zu schreiben</li>
+</ul></li>
+<li>RedCarpet (<a href="https://github.com/vmg/redcarpet">https://github.com/vmg/redcarpet</a>)
+
+<ul>
+<li>Sucht neuen Maintainer (<a href="https://github.com/vmg/redcarpet/issues/212">https://github.com/vmg/redcarpet/issues/212</a>)</li>
+<li>Ist kramdown die Zukunft? (<a href="https://github.com/gettalong/kramdown">https://github.com/gettalong/kramdown</a>)</li>
+</ul></li>
+</ul>
+
+<h3>JRuby (00:28:06)</h3>
+
+<ul>
+<li><a href="https://github.com/trinidad/trinidad">https://github.com/trinidad/trinidad</a></li>
+<li><a href="http://torquebox.org">http://torquebox.org</a></li>
+<li><a href="https://github.com/jruby/jruby/wiki/Servers">https://github.com/jruby/jruby/wiki/Servers</a></li>
+<li>Torquebox wird von RedHat gesponsered und ist daher vielleicht die bessere Alternative. Man muss ja nicht alle Features verwenden.</li>
+</ul>
+
+<h3>DevOps (00:43:10)</h3>
+
+<ul>
+<li>Vagrant Provider für VMware Fusion ist fertig, kostet 79 USD: <a href="http://www.vagrantup.com/vmware">http://www.vagrantup.com/vmware</a>
+
+<ul>
+<li>Mitchell Hashimoto / HashiCorp: <a href="http://www.hashicorp.com/">http://www.hashicorp.com/</a> </li>
+<li>AWS Provider: <a href="http://www.hashicorp.com/blog/preview-vagrant-aws.html">http://www.hashicorp.com/blog/preview-vagrant-aws.html</a></li>
+</ul></li>
+<li>Private Gems hosten
+
+<ul>
+<li>Gem in a Box: <a href="https://github.com/cwninja/geminabox">https://github.com/cwninja/geminabox</a></li>
+<li><a href="http://www.gemfury.com/l/gem-server">http://www.gemfury.com/l/gem-server</a></li>
+</ul></li>
+</ul>
+
+<h3>Netzklatsch (00:58:04)</h3>
+
+<ul>
+<li>Google Reader</li>
+<li>Reeder App (<a href="http://reederapp.com">http://reederapp.com</a>) ohne Google Reader? Hoffentlich! <a href="https://twitter.com/reederapp/status/311995748482945025">https://twitter.com/reederapp/status/311995748482945025</a></li>
+<li>Alternativen zu Google Reader
+
+<ul>
+<li><a href="http://www.feedafever.com/">http://www.feedafever.com/</a> (Reeder supported Fever, aber bisher nur auf dem iPhone)</li>
+<li><a href="http://www.feedly.com/">http://www.feedly.com/</a></li>
+</ul></li>
+<li>Prismatic: <a href="http://getprismatic.com/news/home">http://getprismatic.com/news/home</a></li>
+<li>Github Leak: Liste der GHE Kunden <a href="https://news.ycombinator.com/item?id=5400986">https://news.ycombinator.com/item?id=5400986</a></li>
+</ul>
+
+<h3>Cool Stuff (01:17:50)</h3>
+
+<ul>
+<li>Play by Play mit Aaron Patterson: <a href="https://peepcode.com/products/play-by-play-tenderlove-ruby-on-rails">https://peepcode.com/products/play-by-play-tenderlove-ruby-on-rails</a></li>
+<li>Play by Play mit Aaron Patterson und Corey Haines: <a href="https://peepcode.com/products/play-by-play-aaroncorey">https://peepcode.com/products/play-by-play-aaroncorey</a></li>
+<li><a href="http://idevelop.github.com/ascii-camera/">http://idevelop.github.com/ascii-camera/</a></li>
+<li>Alternative zu Lynx: <a href="http://elinks.or.cz/">http://elinks.or.cz/</a></li>
+<li>Dotfiles
+
+<ul>
+<li>Lucas hat ‘Exogenesis’ gebaut: <a href="https://github.com/moonglum/exogenesis">https://github.com/moonglum/exogenesis</a></li>
+</ul></li>
+<li>Dirks Suche nach nicht bedruckten Tastaturen: <a href="http://www.colorware.com/p-201-apple-wireless-keyboard.aspx">http://www.colorware.com/p-201-apple-wireless-keyboard.aspx</a> (weiterhin erfolglos)</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST008" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro / Errata" />
+          
+            <psc:chapter start="00:06:27" title="Ruby" />
+          
+            <psc:chapter start="00:28:06" title="JRuby" />
+          
+            <psc:chapter start="00:43:10" title="DevOps" />
+          
+            <psc:chapter start="00:58:04" title="Netzklatsch" />
+          
+            <psc:chapter start="01:17:50" title="Cool Stuff" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
