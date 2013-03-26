@@ -2448,5 +2448,216 @@ abschießen <a href="https://github.com/awilliams/RTanque">https://github.com/aw
           
         </item>
         
+        <item>
+          <title>GST009 - Zweites Rack rechts</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST009 - Zweites Rack rechts</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst009.mp3" length="57587809" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST009</guid>
+          <pubDate>Tue, 26 Mar 2013 13:50:35 +0100</pubDate>
+          <itunes:duration>01:19:48</itunes:duration>
+          <itunes:summary><![CDATA[Synopsis: Zur 9ten Ausgabe hat sich der gute @bascht wieder zu uns auf
+das Sofa gesetzt. Wie sollte es anders sein, reden wir relativ viel über
+DevOps Themen. Neben Deploymentstrategien geht es dabei um Best
+Practices mit Chef und VPNs. Zum Ende gibt es wieder neues aus der
+Rubrik Cool Stuff™. Auf Grund knapper Vorbereitung ist die Folge diesmal
+wieder etwas kürzer geraten. 
+
+### Intro (00:00:00)
+
+  * Ruby 2.0 Walkthrough von Peter Cooper fertig. Backer haben schon
+    Zugriff, wird also wohl demnächst kommen.
+
+### Rails (00:01:46)
+
+  * Rails 3.2.13, 3.1.12 und 2.3.18:
+    http://weblog.rubyonrails.org/2013/3/18/SEC-ANN-Rails-3-2-13-3-1-12-and-2-3-18-have-been-released
+  * Zusammenhang mit dem GitHub Email Leak von letzter Woche:
+    https://github.com/blog/1440-today-s-email-incident
+    * Regression in Rails:
+      https://github.com/rails/rails/commit/f980289fd2c1b9073a94b5d49b780a49f5e2933c#L1L23
+    * Issue dazu: https://github.com/rails/rails/issues/9813
+    * Noch mehr Regressions:
+      http://blog.bugsnag.com/2013/03/20/rails-3-2-13-performance-regressions-major-bugs
+
+### Deployment-Strategien (00:06:52)
+
+  * Wie wollen wir deployen?
+  * Parallel vs. Seriell
+  * @bascht benutzt zur Zeit Deployment mit Puppet
+    (https://puppetlabs.com/) und Jenkins (http://jenkins-ci.org/)
+  * Migrationen (zumindest aufwändigere) machen die Sache schnell
+    aufwändig und komplex
+  * Chef-Capistrano: https://github.com/cramerdev/capistrano-chef
+
+### Arbeiten mit Chef (00:24:15)
+
+  * Bundler für Chef: http://berkshelf.com/ (Alternative:
+    https://github.com/applicationsonline/librarian-chef)
+  * Überhaupt interessanter GitHub Account: https://github.com/RiotGames
+    (League of Legends)
+  * Vagrant Intregration für Librarian (von Felix)
+    https://github.com/thegcat/vagrant-librarian
+  * Abstruser Bug in Chef (10.x) beim iterieren über Attribute:
+    https://tickets.opscode.com/browse/CHEF-1804
+  * Für Chef contributen ist anstrengend:
+    https://github.com/railsbros-dirk/rsyslog/blob/master/CONTRIBUTING.md
+    * Daher Wrapper Cookbook, Gem was dabei unterstützen soll, hab ich
+      aber nicht ausprobiert: https://github.com/bryanwb/chef-rewind
+    * Gefunden bei
+      http://dougireton.com/blog/2013/02/16/chef-cookbook-anti-patterns/
+      (auch gute Artikel über Vim)
+
+### VPN (00:42:26)
+
+  * Basti ist auf der Suche nach einem VPN
+  * Fragewürdige Seite: 'BESTVPNZ'
+  * VPN-Vergleich-Liste
+    http://torrentfreak.com/vpn-services-that-take-your-anonymity-seriously-2013-edition-130302/
+  * Warum? -> Wenn man mal irgendwo ist wo es man nicht weiß was man für
+    Internet bekommt.
+  * Aktueller Favorit ist BlackVPN: https://www.blackvpn.com/services/
+  * Einwurf: 30C3 Sneak Preview: https://alpha.app.net/evelyn/post/4178558
+
+### Cool Stuff™ (00:55:30)
+
+  * CSS-style JSON Selektoren: http://jsonselect.org/
+  * http://goessner.net/articles/JsonPath/
+  * Window Manager für OS X: https://github.com/jigish/slate
+  * Window Manager für Linux (in Ruby gebaut): http://subforge.org/projects/subtle
+  * https://github.com/aziz/tmuxinator (gefunden über Lucas dotfiles)
+
+### Vermischtes (01:14:31)
+
+  * http://flattr.kejsarmakten.se/github/ -> Flattr Button bei GitHub
+  * https://www.gittip.com/
+  * Sublime statt Vim:
+    http://delvarworld.github.com/blog/2013/03/16/just-use-sublime-text/
+  * Haben uns sagen lassen, dass RubyMine total geil sein soll
+    (zumindest als Editor / Browser): http://www.jetbrains.com/ruby/]]></itunes:summary>
+          <description><![CDATA[<p>Synopsis: Zur 9ten Ausgabe hat sich der gute <a href="https://twitter.com/bascht">@bascht</a> wieder zu uns auf
+das Sofa gesetzt. Wie sollte es anders sein, reden wir relativ viel über
+DevOps Themen. Neben Deploymentstrategien geht es dabei um Best
+Practices mit Chef und VPNs. Zum Ende gibt es wieder neues aus der
+Rubrik Cool Stuff™. Auf Grund knapper Vorbereitung ist die Folge diesmal
+wieder etwas kürzer geraten. </p>
+
+<h3>Intro (00:00:00)</h3>
+
+<ul>
+<li>Ruby 2.0 Walkthrough von Peter Cooper fertig. Backer haben schon
+Zugriff, wird also wohl demnächst kommen.</li>
+</ul>
+
+<h3>Rails (00:01:46)</h3>
+
+<ul>
+<li>Rails 3.2.13, 3.1.12 und 2.3.18:
+<a href="http://weblog.rubyonrails.org/2013/3/18/SEC-ANN-Rails-3-2-13-3-1-12-and-2-3-18-have-been-released">http://weblog.rubyonrails.org/2013/3/18/SEC-ANN-Rails-3-2-13-3-1-12-and-2-3-18-have-been-released</a></li>
+<li>Zusammenhang mit dem GitHub Email Leak von letzter Woche:
+<a href="https://github.com/blog/1440-today-s-email-incident">https://github.com/blog/1440-today-s-email-incident</a>
+
+<ul>
+<li>Regression in Rails:
+<a href="https://github.com/rails/rails/commit/f980289fd2c1b9073a94b5d49b780a49f5e2933c#L1L23">https://github.com/rails/rails/commit/f980289fd2c1b9073a94b5d49b780a49f5e2933c#L1L23</a></li>
+<li>Issue dazu: <a href="https://github.com/rails/rails/issues/9813">https://github.com/rails/rails/issues/9813</a></li>
+<li>Noch mehr Regressions:
+<a href="http://blog.bugsnag.com/2013/03/20/rails-3-2-13-performance-regressions-major-bugs">http://blog.bugsnag.com/2013/03/20/rails-3-2-13-performance-regressions-major-bugs</a></li>
+</ul></li>
+</ul>
+
+<h3>Deployment-Strategien (00:06:52)</h3>
+
+<ul>
+<li>Wie wollen wir deployen?</li>
+<li>Parallel vs. Seriell</li>
+<li><a href="https://twitter.com/bascht">@bascht</a> benutzt zur Zeit Deployment mit Puppet
+(<a href="https://puppetlabs.com/">https://puppetlabs.com/</a>) und Jenkins (<a href="http://jenkins-ci.org/">http://jenkins-ci.org/</a>)</li>
+<li>Migrationen (zumindest aufwändigere) machen die Sache schnell
+aufwändig und komplex</li>
+<li>Chef-Capistrano: <a href="https://github.com/cramerdev/capistrano-chef">https://github.com/cramerdev/capistrano-chef</a></li>
+</ul>
+
+<h3>Arbeiten mit Chef (00:24:15)</h3>
+
+<ul>
+<li>Bundler für Chef: <a href="http://berkshelf.com/">http://berkshelf.com/</a> (Alternative:
+<a href="https://github.com/applicationsonline/librarian-chef">https://github.com/applicationsonline/librarian-chef</a>)</li>
+<li>Überhaupt interessanter GitHub Account: <a href="https://github.com/RiotGames">https://github.com/RiotGames</a>
+(League of Legends)</li>
+<li>Vagrant Intregration für Librarian (von Felix)
+<a href="https://github.com/thegcat/vagrant-librarian">https://github.com/thegcat/vagrant-librarian</a></li>
+<li>Abstruser Bug in Chef (10.x) beim iterieren über Attribute:
+<a href="https://tickets.opscode.com/browse/CHEF-1804">https://tickets.opscode.com/browse/CHEF-1804</a></li>
+<li>Für Chef contributen ist anstrengend:
+<a href="https://github.com/railsbros-dirk/rsyslog/blob/master/CONTRIBUTING.md">https://github.com/railsbros-dirk/rsyslog/blob/master/CONTRIBUTING.md</a>
+
+<ul>
+<li>Daher Wrapper Cookbook, Gem was dabei unterstützen soll, hab ich
+aber nicht ausprobiert: <a href="https://github.com/bryanwb/chef-rewind">https://github.com/bryanwb/chef-rewind</a></li>
+<li>Gefunden bei
+<a href="http://dougireton.com/blog/2013/02/16/chef-cookbook-anti-patterns/">http://dougireton.com/blog/2013/02/16/chef-cookbook-anti-patterns/</a>
+(auch gute Artikel über Vim)</li>
+</ul></li>
+</ul>
+
+<h3>VPN (00:42:26)</h3>
+
+<ul>
+<li>Basti ist auf der Suche nach einem VPN</li>
+<li>Fragewürdige Seite: &#39;BESTVPNZ&#39;</li>
+<li>VPN-Vergleich-Liste
+<a href="http://torrentfreak.com/vpn-services-that-take-your-anonymity-seriously-2013-edition-130302/">http://torrentfreak.com/vpn-services-that-take-your-anonymity-seriously-2013-edition-130302/</a></li>
+<li>Warum? -&gt; Wenn man mal irgendwo ist wo es man nicht weiß was man für
+Internet bekommt.</li>
+<li>Aktueller Favorit ist BlackVPN: <a href="https://www.blackvpn.com/services/">https://www.blackvpn.com/services/</a></li>
+<li>Einwurf: 30C3 Sneak Preview: <a href="https://alpha.app.net/evelyn/post/4178558">https://alpha.app.net/evelyn/post/4178558</a></li>
+</ul>
+
+<h3>Cool Stuff™ (00:55:30)</h3>
+
+<ul>
+<li>CSS-style JSON Selektoren: <a href="http://jsonselect.org/">http://jsonselect.org/</a></li>
+<li><a href="http://goessner.net/articles/JsonPath/">http://goessner.net/articles/JsonPath/</a></li>
+<li>Window Manager für OS X: <a href="https://github.com/jigish/slate">https://github.com/jigish/slate</a></li>
+<li>Window Manager für Linux (in Ruby gebaut): <a href="http://subforge.org/projects/subtle">http://subforge.org/projects/subtle</a></li>
+<li><a href="https://github.com/aziz/tmuxinator">https://github.com/aziz/tmuxinator</a> (gefunden über Lucas dotfiles)</li>
+</ul>
+
+<h3>Vermischtes (01:14:31)</h3>
+
+<ul>
+<li><a href="http://flattr.kejsarmakten.se/github/">http://flattr.kejsarmakten.se/github/</a> -&gt; Flattr Button bei GitHub</li>
+<li><a href="https://www.gittip.com/">https://www.gittip.com/</a></li>
+<li>Sublime statt Vim:
+<a href="http://delvarworld.github.com/blog/2013/03/16/just-use-sublime-text/">http://delvarworld.github.com/blog/2013/03/16/just-use-sublime-text/</a></li>
+<li>Haben uns sagen lassen, dass RubyMine total geil sein soll
+(zumindest als Editor / Browser): <a href="http://www.jetbrains.com/ruby/">http://www.jetbrains.com/ruby/</a></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST009" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro" />
+          
+            <psc:chapter start="00:01:46" title="Rails" />
+          
+            <psc:chapter start="00:06:52" title="Deployment-Strategien" />
+          
+            <psc:chapter start="00:24:15" title="Arbeiten mit Chef" />
+          
+            <psc:chapter start="00:42:26" title="VPN" />
+          
+            <psc:chapter start="00:55:30" title="Cool Stuff™" />
+          
+            <psc:chapter start="01:14:31" title="Vermischtes" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>

@@ -1,0 +1,80 @@
+--- !ruby/struct:Episode
+number: 9
+name: Zweites Rack rechts
+length: 4788
+media:
+  mp3:
+    size: 57587809
+    file_ext: mp3
+  aac:
+    size: 34990412
+    file_ext: m4a
+  alac:
+    size: 349844961
+    file_ext: m4a
+  opus:
+    size: 39260991
+    file_ext: opus
+auphonic_uuid: PWNgz4ChjBSbiQJa4uED8V
+published_at: 2013-03-26 13:50:35.033288000 +01:00
+summary: ! "Synopsis: Zur 9ten Ausgabe hat sich der gute @bascht wieder zu uns auf\r\ndas
+  Sofa gesetzt. Wie sollte es anders sein, reden wir relativ viel über\r\nDevOps Themen.
+  Neben Deploymentstrategien geht es dabei um Best\r\nPractices mit Chef und VPNs.
+  Zum Ende gibt es wieder neues aus der\r\nRubrik Cool Stuff™. Auf Grund knapper Vorbereitung
+  ist die Folge diesmal\r\nwieder etwas kürzer geraten. \r\n\r\n### Intro (00:00:00)\r\n\r\n
+  \ * Ruby 2.0 Walkthrough von Peter Cooper fertig. Backer haben schon\r\n    Zugriff,
+  wird also wohl demnächst kommen.\r\n\r\n### Rails (00:01:46)\r\n\r\n  * Rails 3.2.13,
+  3.1.12 und 2.3.18:\r\n    http://weblog.rubyonrails.org/2013/3/18/SEC-ANN-Rails-3-2-13-3-1-12-and-2-3-18-have-been-released\r\n
+  \ * Zusammenhang mit dem GitHub Email Leak von letzter Woche:\r\n    https://github.com/blog/1440-today-s-email-incident\r\n
+  \   * Regression in Rails:\r\n      https://github.com/rails/rails/commit/f980289fd2c1b9073a94b5d49b780a49f5e2933c#L1L23\r\n
+  \   * Issue dazu: https://github.com/rails/rails/issues/9813\r\n    * Noch mehr
+  Regressions:\r\n      http://blog.bugsnag.com/2013/03/20/rails-3-2-13-performance-regressions-major-bugs\r\n\r\n###
+  Deployment-Strategien (00:06:52)\r\n\r\n  * Wie wollen wir deployen?\r\n  * Parallel
+  vs. Seriell\r\n  * @bascht benutzt zur Zeit Deployment mit Puppet\r\n    (https://puppetlabs.com/)
+  und Jenkins (http://jenkins-ci.org/)\r\n  * Migrationen (zumindest aufwändigere)
+  machen die Sache schnell\r\n    aufwändig und komplex\r\n  * Chef-Capistrano: https://github.com/cramerdev/capistrano-chef\r\n\r\n###
+  Arbeiten mit Chef (00:24:15)\r\n\r\n  * Bundler für Chef: http://berkshelf.com/
+  (Alternative:\r\n    https://github.com/applicationsonline/librarian-chef)\r\n  *
+  Überhaupt interessanter GitHub Account: https://github.com/RiotGames\r\n    (League
+  of Legends)\r\n  * Vagrant Intregration für Librarian (von Felix)\r\n    https://github.com/thegcat/vagrant-librarian\r\n
+  \ * Abstruser Bug in Chef (10.x) beim iterieren über Attribute:\r\n    https://tickets.opscode.com/browse/CHEF-1804\r\n
+  \ * Für Chef contributen ist anstrengend:\r\n    https://github.com/railsbros-dirk/rsyslog/blob/master/CONTRIBUTING.md\r\n
+  \   * Daher Wrapper Cookbook, Gem was dabei unterstützen soll, hab ich\r\n      aber
+  nicht ausprobiert: https://github.com/bryanwb/chef-rewind\r\n    * Gefunden bei\r\n
+  \     http://dougireton.com/blog/2013/02/16/chef-cookbook-anti-patterns/\r\n      (auch
+  gute Artikel über Vim)\r\n\r\n### VPN (00:42:26)\r\n\r\n  * Basti ist auf der Suche
+  nach einem VPN\r\n  * Fragewürdige Seite: 'BESTVPNZ'\r\n  * VPN-Vergleich-Liste\r\n
+  \   http://torrentfreak.com/vpn-services-that-take-your-anonymity-seriously-2013-edition-130302/\r\n
+  \ * Warum? -> Wenn man mal irgendwo ist wo es man nicht weiß was man für\r\n    Internet
+  bekommt.\r\n  * Aktueller Favorit ist BlackVPN: https://www.blackvpn.com/services/\r\n
+  \ * Einwurf: 30C3 Sneak Preview: https://alpha.app.net/evelyn/post/4178558\r\n\r\n###
+  Cool Stuff™ (00:55:30)\r\n\r\n  * CSS-style JSON Selektoren: http://jsonselect.org/\r\n
+  \ * http://goessner.net/articles/JsonPath/\r\n  * Window Manager für OS X: https://github.com/jigish/slate\r\n
+  \ * Window Manager für Linux (in Ruby gebaut): http://subforge.org/projects/subtle\r\n
+  \ * https://github.com/aziz/tmuxinator (gefunden über Lucas dotfiles)\r\n\r\n###
+  Vermischtes (01:14:31)\r\n\r\n  * http://flattr.kejsarmakten.se/github/ -> Flattr
+  Button bei GitHub\r\n  * https://www.gittip.com/\r\n  * Sublime statt Vim:\r\n    http://delvarworld.github.com/blog/2013/03/16/just-use-sublime-text/\r\n
+  \ * Haben uns sagen lassen, dass RubyMine total geil sein soll\r\n    (zumindest
+  als Editor / Browser): http://www.jetbrains.com/ruby/"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Intro
+- !ruby/struct:Chapter
+  start: '00:01:46'
+  title: Rails
+- !ruby/struct:Chapter
+  start: '00:06:52'
+  title: Deployment-Strategien
+- !ruby/struct:Chapter
+  start: '00:24:15'
+  title: Arbeiten mit Chef
+- !ruby/struct:Chapter
+  start: '00:42:26'
+  title: VPN
+- !ruby/struct:Chapter
+  start: '00:55:30'
+  title: Cool Stuff™
+- !ruby/struct:Chapter
+  start: '01:14:31'
+  title: Vermischtes
