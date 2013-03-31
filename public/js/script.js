@@ -64,6 +64,14 @@ function selectEpisode(episodenumber, jumpSeconds) {
   $("time#pubdate").attr("datetime", pubDate.format("YYYY-MM-DD HH:mm"));
   $("time#pubdate").html(pubDate.format("Do MMMM YYYY"));
 
+  FlattrLoader.render({
+    'uid': 'railsbros_dirk',
+    'url': 'http://geekstammtisch.de/#' + episode.guid[0].Text,
+    'title': episode.title[0].Text,
+    'button': 'compact',
+    'description': 'Description of the thing'
+  }, 'episode-flattr-button', 'replace');
+
   if (episodenumber != episodes.length - 1 || !_.isEmpty(self.location.hash))
     self.location.hash = episode.guid[0].Text;
 

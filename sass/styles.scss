@@ -26,4 +26,16 @@ body {
   #shownotes {
     margin-top: 10px;
   }
+
+  .well {
+    .FlattrButton {
+      float: right;
+    }
+
+    section {
+      .FlattrButton {
+        float: none;
+      }
+    }
+  }
 }
