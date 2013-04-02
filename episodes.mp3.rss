@@ -2659,5 +2659,166 @@ Internet bekommt.</li>
           
         </item>
         
+        <item>
+          <title>GST010 - Dackelklub</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST010 - Dackelklub</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst010.mp3" length="48848034" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST010</guid>
+          <pubDate>Tue, 02 Apr 2013 22:01:30 +0200</pubDate>
+          <itunes:duration>01:07:40</itunes:duration>
+          <itunes:summary><![CDATA[Synopsis: Wir sprechen zur 10. Sendung mit Liane (@liane_thoennes) über
+das Leben und Arbeiten einer Designerin unter Entwicklern. Wir reden
+über Werkzeuge, Prozesse und das allgemeine Miteinander. CoolStuff™ darf
+natürlich auch nicht fehlen.
+
+### Intro & Gast (00:00:00)
+
+  * Liane Thönnes @liane_thoennes / http://liane-thoennes.de
+  * Organisiert Railslove Cologne/Rheinland
+  * Liane ist Designerin bei Railslove (http://railslove.com/)
+  * Interessiert sich dafür, wie man die Zusammenarbeit von Designern und Entwicklern verbessern kann
+
+### (Web-)Design (00:02:59)
+
+  * Kommunikation ist alles
+  * Icon Font Generator: http://fontello.com/
+  * WYSIWYG-Tool für Typographie im Web: http://typecast.com/
+  * Liane schwebt ein Design-Workshop für Entwickler vor
+  * Erste Skizzen auf Papier
+  * Dann Mockups gerne auch auf Papier, oder z.B. mit balsamiq: http://www.balsamiq.com/products/mockups
+  * Konkretisierung von Farben, Fonts, Abständen, etc.
+  * Play by Play mit Ryan Singer 
+    * UX Sketching: https://peepcode.com/products/ryan-singer-ux
+    * UI Prototyping: https://peepcode.com/products/ryan-singer-ii
+  * Liane wünscht sich etwas mehr Liebe zum Detail von Entwicklern
+  * So fühlt sich Basti beim frontendlen: http://i.imgur.com/Q3cUg29.gif
+    * Leute, der Typ heißt PETER!
+  * Designer als ganz normaler Bestandteil eines agilen Entwicklungsprozesses
+  * An easy to follow design course for hackers who do amazing things: http://hackdesign.org
+
+### Coworking (00:43:15)
+
+  * Liane erzählt etwas zum Gasmotorenfabrik e.V.
+  * Es herrscht Uneinigkeit, was den Namen anbelangt
+  * Neue Location des Cowoco: An der Bottmühle 5, 50678 Köln
+  * Der Name ist noch so ein Problem :)
+
+### CoolStuff™ (00:52:56)
+
+  * Alternative zu tmuxinator: https://github.com/treyhunner/tmuxstart
+  * Kuchi-Paku – DIE Freisprecheinrichtung: http://www.youtube.com/watch?v=Y86A2_pYSYU
+  * PonyOS – A Hobby Operating System for Everypony! http://www.ponyos.org
+
+### Verschiedenes (00:57:15)
+
+  * Technische Validierung von iOS Apps für den Review Prozess:
+    http://jury.me/blog/2013/3/19/deploymate
+  * Bootstrap jetzt endlich in schön
+    http://divshot.github.com/geo-bootstrap/
+  * “Interface Builder for the Web”: http://www.divshot.com/
+  * Benchmark anyone?:
+    http://www.techempower.com/blog/2013/03/28/framework-benchmarks/
+  * How to become a designer:
+    http://blog.mariusz.cc/post/46946707199/how-to-become-a-better-designer
+  * Chef, Überschreiben von Templates in Community-Cookbooks:
+    https://gist.github.com/fujin/1713157
+  * Railsgirls Followup - 22.4.2013 im Colabor:
+    http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1998]]></itunes:summary>
+          <description><![CDATA[<p>Synopsis: Wir sprechen zur 10. Sendung mit Liane (<a href="https://twitter.com/liane_thoennes">@liane_thoennes</a>) über
+das Leben und Arbeiten einer Designerin unter Entwicklern. Wir reden
+über Werkzeuge, Prozesse und das allgemeine Miteinander. CoolStuff™ darf
+natürlich auch nicht fehlen.</p>
+
+<h3>Intro &amp; Gast (00:00:00)</h3>
+
+<ul>
+<li>Liane Thönnes <a href="https://twitter.com/liane_thoennes">@liane_thoennes</a> / <a href="http://liane-thoennes.de">http://liane-thoennes.de</a></li>
+<li>Organisiert Railslove Cologne/Rheinland</li>
+<li>Liane ist Designerin bei Railslove (<a href="http://railslove.com/">http://railslove.com/</a>)</li>
+<li>Interessiert sich dafür, wie man die Zusammenarbeit von Designern und Entwicklern verbessern kann</li>
+</ul>
+
+<h3>(Web-)Design (00:02:59)</h3>
+
+<ul>
+<li>Kommunikation ist alles</li>
+<li>Icon Font Generator: <a href="http://fontello.com/">http://fontello.com/</a></li>
+<li>WYSIWYG-Tool für Typographie im Web: <a href="http://typecast.com/">http://typecast.com/</a></li>
+<li>Liane schwebt ein Design-Workshop für Entwickler vor</li>
+<li>Erste Skizzen auf Papier</li>
+<li>Dann Mockups gerne auch auf Papier, oder z.B. mit balsamiq: <a href="http://www.balsamiq.com/products/mockups">http://www.balsamiq.com/products/mockups</a></li>
+<li>Konkretisierung von Farben, Fonts, Abständen, etc.</li>
+<li>Play by Play mit Ryan Singer 
+
+<ul>
+<li>UX Sketching: <a href="https://peepcode.com/products/ryan-singer-ux">https://peepcode.com/products/ryan-singer-ux</a></li>
+<li>UI Prototyping: <a href="https://peepcode.com/products/ryan-singer-ii">https://peepcode.com/products/ryan-singer-ii</a></li>
+</ul></li>
+<li>Liane wünscht sich etwas mehr Liebe zum Detail von Entwicklern</li>
+<li>So fühlt sich Basti beim frontendlen: <a href="http://i.imgur.com/Q3cUg29.gif">http://i.imgur.com/Q3cUg29.gif</a>
+
+<ul>
+<li>Leute, der Typ heißt PETER!</li>
+</ul></li>
+<li>Designer als ganz normaler Bestandteil eines agilen Entwicklungsprozesses</li>
+<li>An easy to follow design course for hackers who do amazing things: <a href="http://hackdesign.org">http://hackdesign.org</a></li>
+</ul>
+
+<h3>Coworking (00:43:15)</h3>
+
+<ul>
+<li>Liane erzählt etwas zum Gasmotorenfabrik e.V.</li>
+<li>Es herrscht Uneinigkeit, was den Namen anbelangt</li>
+<li>Neue Location des Cowoco: An der Bottmühle 5, 50678 Köln</li>
+<li>Der Name ist noch so ein Problem :)</li>
+</ul>
+
+<h3>CoolStuff™ (00:52:56)</h3>
+
+<ul>
+<li>Alternative zu tmuxinator: <a href="https://github.com/treyhunner/tmuxstart">https://github.com/treyhunner/tmuxstart</a></li>
+<li>Kuchi-Paku – DIE Freisprecheinrichtung: <a href="http://www.youtube.com/watch?v=Y86A2_pYSYU">http://www.youtube.com/watch?v=Y86A2_pYSYU</a></li>
+<li>PonyOS – A Hobby Operating System for Everypony! <a href="http://www.ponyos.org">http://www.ponyos.org</a></li>
+</ul>
+
+<h3>Verschiedenes (00:57:15)</h3>
+
+<ul>
+<li>Technische Validierung von iOS Apps für den Review Prozess:
+<a href="http://jury.me/blog/2013/3/19/deploymate">http://jury.me/blog/2013/3/19/deploymate</a></li>
+<li>Bootstrap jetzt endlich in schön
+<a href="http://divshot.github.com/geo-bootstrap/">http://divshot.github.com/geo-bootstrap/</a></li>
+<li>“Interface Builder for the Web”: <a href="http://www.divshot.com/">http://www.divshot.com/</a></li>
+<li>Benchmark anyone?:
+<a href="http://www.techempower.com/blog/2013/03/28/framework-benchmarks/">http://www.techempower.com/blog/2013/03/28/framework-benchmarks/</a></li>
+<li>How to become a designer:
+<a href="http://blog.mariusz.cc/post/46946707199/how-to-become-a-better-designer">http://blog.mariusz.cc/post/46946707199/how-to-become-a-better-designer</a></li>
+<li>Chef, Überschreiben von Templates in Community-Cookbooks:
+<a href="https://gist.github.com/fujin/1713157">https://gist.github.com/fujin/1713157</a></li>
+<li>Railsgirls Followup - 22.4.2013 im Colabor:
+<a href="http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1998">http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1998</a></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST010" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro &amp; Gast" />
+          
+            <psc:chapter start="00:02:59" title="(Web-)Design" />
+          
+            <psc:chapter start="00:43:15" title="Coworking" />
+          
+            <psc:chapter start="00:52:56" title="CoolStuff™" />
+          
+            <psc:chapter start="00:57:15" title="Verschiedenes" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
