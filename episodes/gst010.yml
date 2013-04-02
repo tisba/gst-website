@@ -1,0 +1,66 @@
+--- !ruby/struct:Episode
+number: 10
+name: Dackelklub
+length: 4060
+media:
+  mp3:
+    size: 48848034
+    file_ext: mp3
+  aac:
+    size: 29687582
+    file_ext: m4a
+  alac:
+    size: 305859959
+    file_ext: m4a
+  opus:
+    size: 33118776
+    file_ext: opus
+auphonic_uuid: sPzemxboYfRhHBh34xSEia
+published_at: 2013-04-02 22:01:30.830507000 +02:00
+summary: ! "Synopsis: Wir sprechen zur 10. Sendung mit Liane (@liane_thoennes) über\r\ndas
+  Leben und Arbeiten einer Designerin unter Entwicklern. Wir reden\r\nüber Werkzeuge,
+  Prozesse und das allgemeine Miteinander. CoolStuff™ darf\r\nnatürlich auch nicht
+  fehlen.\r\n\r\n### Intro & Gast (00:00:00)\r\n\r\n  * Liane Thönnes @liane_thoennes
+  / http://liane-thoennes.de\r\n  * Organisiert Railslove Cologne/Rheinland\r\n  *
+  Liane ist Designerin bei Railslove (http://railslove.com/)\r\n  * Interessiert sich
+  dafür, wie man die Zusammenarbeit von Designern und Entwicklern verbessern kann\r\n\r\n###
+  (Web-)Design (00:02:59)\r\n\r\n  * Kommunikation ist alles\r\n  * Icon Font Generator:
+  http://fontello.com/\r\n  * WYSIWYG-Tool für Typographie im Web: http://typecast.com/\r\n
+  \ * Liane schwebt ein Design-Workshop für Entwickler vor\r\n  * Erste Skizzen auf
+  Papier\r\n  * Dann Mockups gerne auch auf Papier, oder z.B. mit balsamiq: http://www.balsamiq.com/products/mockups\r\n
+  \ * Konkretisierung von Farben, Fonts, Abständen, etc.\r\n  * Play by Play mit Ryan
+  Singer \r\n    * UX Sketching: https://peepcode.com/products/ryan-singer-ux\r\n
+  \   * UI Prototyping: https://peepcode.com/products/ryan-singer-ii\r\n  * Liane
+  wünscht sich etwas mehr Liebe zum Detail von Entwicklern\r\n  * So fühlt sich Basti
+  beim frontendlen: http://i.imgur.com/Q3cUg29.gif\r\n    * Leute, der Typ heißt PETER!\r\n
+  \ * Designer als ganz normaler Bestandteil eines agilen Entwicklungsprozesses\r\n
+  \ * An easy to follow design course for hackers who do amazing things: http://hackdesign.org\r\n\r\n###
+  Coworking (00:43:15)\r\n\r\n  * Liane erzählt etwas zum Gasmotorenfabrik e.V.\r\n
+  \ * Es herrscht Uneinigkeit, was den Namen anbelangt\r\n  * Neue Location des Cowoco:
+  An der Bottmühle 5, 50678 Köln\r\n  * Der Name ist noch so ein Problem :)\r\n\r\n###
+  CoolStuff™ (00:52:56)\r\n\r\n  * Alternative zu tmuxinator: https://github.com/treyhunner/tmuxstart\r\n
+  \ * Kuchi-Paku – DIE Freisprecheinrichtung: http://www.youtube.com/watch?v=Y86A2_pYSYU\r\n
+  \ * PonyOS – A Hobby Operating System for Everypony! http://www.ponyos.org\r\n\r\n###
+  Verschiedenes (00:57:15)\r\n\r\n  * Technische Validierung von iOS Apps für den
+  Review Prozess:\r\n    http://jury.me/blog/2013/3/19/deploymate\r\n  * Bootstrap
+  jetzt endlich in schön\r\n    http://divshot.github.com/geo-bootstrap/\r\n  * “Interface
+  Builder for the Web”: http://www.divshot.com/\r\n  * Benchmark anyone?:\r\n    http://www.techempower.com/blog/2013/03/28/framework-benchmarks/\r\n
+  \ * How to become a designer:\r\n    http://blog.mariusz.cc/post/46946707199/how-to-become-a-better-designer\r\n
+  \ * Chef, Überschreiben von Templates in Community-Cookbooks:\r\n    https://gist.github.com/fujin/1713157\r\n
+  \ * Railsgirls Followup - 22.4.2013 im Colabor:\r\n    http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1998"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Intro & Gast
+- !ruby/struct:Chapter
+  start: '00:02:59'
+  title: (Web-)Design
+- !ruby/struct:Chapter
+  start: '00:43:15'
+  title: Coworking
+- !ruby/struct:Chapter
+  start: '00:52:56'
+  title: CoolStuff™
+- !ruby/struct:Chapter
+  start: '00:57:15'
+  title: Verschiedenes
