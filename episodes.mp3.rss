@@ -2676,7 +2676,7 @@ natürlich auch nicht fehlen.
 ### Intro & Gast (00:00:00)
 
   * Liane Thönnes @liane_thoennes / http://liane-thoennes.de
-  * Organisiert Railslove Cologne/Rheinland
+  * Organisiert Rails Girls Cologne/Rheinland
   * Liane ist Designerin bei Railslove (http://railslove.com/)
   * Interessiert sich dafür, wie man die Zusammenarbeit von Designern und Entwicklern verbessern kann
 
@@ -2735,7 +2735,7 @@ natürlich auch nicht fehlen.</p>
 
 <ul>
 <li>Liane Thönnes <a href="https://twitter.com/liane_thoennes">@liane_thoennes</a> / <a href="http://liane-thoennes.de">http://liane-thoennes.de</a></li>
-<li>Organisiert Railslove Cologne/Rheinland</li>
+<li>Organisiert Rails Girls Cologne/Rheinland</li>
 <li>Liane ist Designerin bei Railslove (<a href="http://railslove.com/">http://railslove.com/</a>)</li>
 <li>Interessiert sich dafür, wie man die Zusammenarbeit von Designern und Entwicklern verbessern kann</li>
 </ul>
@@ -2815,6 +2815,222 @@ natürlich auch nicht fehlen.</p>
             <psc:chapter start="00:52:56" title="CoolStuff™" />
           
             <psc:chapter start="00:57:15" title="Verschiedenes" />
+          
+          </psc:chapters>
+          
+        </item>
+        
+        <item>
+          <title>GST011 - Unsatisfied Computers</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST011 - Unsatisfied Computers</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst011.mp3" length="59553867" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST011</guid>
+          <pubDate>Mon, 15 Apr 2013 10:42:36 +0200</pubDate>
+          <itunes:duration>01:22:32</itunes:duration>
+          <itunes:summary><![CDATA[Synopsis: Heute ein Geekstammtisch Classic, mit ohne Gast. Wir reden
+über Regeln für gutes OO-Design, Code Metriken, schlechte Angewohnheiten
+von Entwicklern, Cool Stuff und etwas über git. Zur Auflockerung
+philosophieren wir gegen Ende noch etwas über den PC Markt.
+
+### Errata (00:00:45)
+
+ * Liane organisiert natürlich Railsgirls und arbeitet für Railslove. Da kommt man schon mal durcheinander :)
+ * Matthias @luebken machte uns aufmerksam auf “Lean UX”: https://twitter.com/luebken/status/321933241936384000
+ * Kuchi Paku Freisprecheinrichtung funktioniert nicht wie im Video, trotzdem lustig
+
+### Podcasting (00:04:35)
+
+ * Geekstammtisch nun mit flattr!
+ * Wir sind bei der Hörsuppe gefeaturet worden: hoersuppe.de
+ * Neues Produkt aus dem Kölner Podcasting Cluster: nerdkun.de mit @bitboxer, @klaustoper, @moonbeamlabs und @l_ama (produziert im HOC und mit gst-kitchen)
+
+### Ruby (00:08:23)
+
+ * Regeln für gutes OO-Design: https://gist.github.com/henrik/4509394#file-rules-md
+   * ursprünglich aus der Ruby Rogues Nummer 87: http://rubyrogues.com/087-rr-book-clubpractical-object-oriented-design-in-ruby-with-sandi-metz/
+   * http://gist.io/4567190
+   * https://github.com/codegram/pelusa
+ * Code Metriken: https://github.com/square/cane
+   * Style Checker (Trailing Whitespace, Line Length, Check for Tabs)
+   * ABC Metrik: Assignment, Branch, Condition
+   * Doc Check
+   * Weitere Checks recht einfach möglich
+ * Matrix Lib http://rubylearning.com/blog/2013/04/04/ruby-matrix-the-forgotten-library
+ * 7 Bad Programmer Habits: http://www.javacodegeeks.com/2012/05/top-7-programmers-bad-habits.html
+
+### Gems (00:32:15)
+
+ * Git-Like Interface Command Line Parser: https://github.com/davetron5000/gli
+ * Weniger umfangreiche Variante: https://github.com/davetron5000/methadone
+ * CSSCSS: A CSS redundancy analyzer that analyzes redundancy http://zmoazeni.github.io/csscss/
+
+### CoolStuff™ (00:37:31)
+
+ * GitHub.io: https://github.com/blog/1466-yummy-cookies-across-domains
+ * Boundary - “A New Approach to Application Performance Monitoring”: http://boundary.com/product/
+ * Pushpin: HTTP reverse proxy that supports streaming and long-polling https://github.com/fanout/pushpin
+ * http://starlogs.net/
+ * Vim Script lernen: http://learnvimscriptthehardway.stevelosh.com/
+
+### Verschiedenes: iOS, git, Google blink (00:49:25)
+
+ * Wie viel wird wo geflucht: http://andrewvos.com/2011/02/21/amount-of-profanity-in-git-commit-messages-per-programming-language/
+ * Blink, Chromiums neue Engine: http://blog.chromium.org/2013/04/blink-rendering-engine-for-chromium.html, http://www.chromium.org/blink
+ * iOS Performance Tips: http://www.raywenderlich.com/31166/25-ios-app-performance-tips-tricks (via: @denis2342)
+ * git Diskussion auf Twitter (@steveklabnik):
+   * https://twitter.com/steveklabnik/status/321332245086498816,
+   * https://twitter.com/steveklabnik/status/321335216595689473,
+   * https://twitter.com/garybernhardt/status/321339229009502208
+   * Conversation-Tracking in Twitter ist doof ^^
+
+### Meta(ebene) (01:00:20)
+
+ * Blog zu ADN Kram: http://bupk.es/
+ * Shodan: Eine beängstigende Suchmaschine:
+   * http://www.neunetz.com/2013/04/09/shodan-eine-beangstigende-suchmaschine/
+   * http://money.cnn.com/2013/04/08/technology/security/shodan/
+ * PC Markt?!: http://www.handelsblatt.com/unternehmen/it-medien/marktforscher-windows-8-hat-versagt/8048772.html
+ * Chad Fowler beschreibt seinen Traummitarbeiter: http://chadfowler.com/blog/2013/04/09/who-i-want-to-hire/
+
+### Events (01:14:40)
+
+ * NoSQL Matters Cologne (26. und 27.4. im KOMED): http://2013.nosql-matters.org/cgn/
+ * cologne.rb (17.4. bei triAGENS) http://www.nerdhub.de/events/40-cologne-rb/dates/845
+ * DevHouseFriday (19.4. bei wer-kennt-wen) http://www.nerdhub.de/events/9-devhouse-friday/dates/1878
+ * Railsgirls FollowUp (22.4. bei Colabor) http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1998
+ * JAX (22. bis 26.4. in Mainz): http://jax.de/2013/
+   * Vielleicht nicht so unsere Zielgruppe, aber wir haben einen Talk schon vorab gehört ;-)
+   * http://jax.de/2013/sessions/?tid=2884#session-24955]]></itunes:summary>
+          <description><![CDATA[<p>Synopsis: Heute ein Geekstammtisch Classic, mit ohne Gast. Wir reden
+über Regeln für gutes OO-Design, Code Metriken, schlechte Angewohnheiten
+von Entwicklern, Cool Stuff und etwas über git. Zur Auflockerung
+philosophieren wir gegen Ende noch etwas über den PC Markt.</p>
+
+<h3>Errata (00:00:45)</h3>
+
+<ul>
+<li>Liane organisiert natürlich Railsgirls und arbeitet für Railslove. Da kommt man schon mal durcheinander :)</li>
+<li>Matthias <a href="https://twitter.com/luebken">@luebken</a> machte uns aufmerksam auf “Lean UX”: <a href="https://twitter.com/luebken/status/321933241936384000">https://twitter.com/luebken/status/321933241936384000</a></li>
+<li>Kuchi Paku Freisprecheinrichtung funktioniert nicht wie im Video, trotzdem lustig</li>
+</ul>
+
+<h3>Podcasting (00:04:35)</h3>
+
+<ul>
+<li>Geekstammtisch nun mit flattr!</li>
+<li>Wir sind bei der Hörsuppe gefeaturet worden: hoersuppe.de</li>
+<li>Neues Produkt aus dem Kölner Podcasting Cluster: nerdkun.de mit <a href="https://twitter.com/bitboxer">@bitboxer</a>, <a href="https://twitter.com/klaustoper">@klaustoper</a>, <a href="https://twitter.com/moonbeamlabs">@moonbeamlabs</a> und <a href="https://twitter.com/l_ama">@l_ama</a> (produziert im HOC und mit gst-kitchen)</li>
+</ul>
+
+<h3>Ruby (00:08:23)</h3>
+
+<ul>
+<li>Regeln für gutes OO-Design: <a href="https://gist.github.com/henrik/4509394#file-rules-md">https://gist.github.com/henrik/4509394#file-rules-md</a>
+
+<ul>
+<li>ursprünglich aus der Ruby Rogues Nummer 87: <a href="http://rubyrogues.com/087-rr-book-clubpractical-object-oriented-design-in-ruby-with-sandi-metz/">http://rubyrogues.com/087-rr-book-clubpractical-object-oriented-design-in-ruby-with-sandi-metz/</a></li>
+<li><a href="http://gist.io/4567190">http://gist.io/4567190</a></li>
+<li><a href="https://github.com/codegram/pelusa">https://github.com/codegram/pelusa</a></li>
+</ul></li>
+<li>Code Metriken: <a href="https://github.com/square/cane">https://github.com/square/cane</a>
+
+<ul>
+<li>Style Checker (Trailing Whitespace, Line Length, Check for Tabs)</li>
+<li>ABC Metrik: Assignment, Branch, Condition</li>
+<li>Doc Check</li>
+<li>Weitere Checks recht einfach möglich</li>
+</ul></li>
+<li>Matrix Lib <a href="http://rubylearning.com/blog/2013/04/04/ruby-matrix-the-forgotten-library">http://rubylearning.com/blog/2013/04/04/ruby-matrix-the-forgotten-library</a></li>
+<li>7 Bad Programmer Habits: <a href="http://www.javacodegeeks.com/2012/05/top-7-programmers-bad-habits.html">http://www.javacodegeeks.com/2012/05/top-7-programmers-bad-habits.html</a></li>
+</ul>
+
+<h3>Gems (00:32:15)</h3>
+
+<ul>
+<li>Git-Like Interface Command Line Parser: <a href="https://github.com/davetron5000/gli">https://github.com/davetron5000/gli</a></li>
+<li>Weniger umfangreiche Variante: <a href="https://github.com/davetron5000/methadone">https://github.com/davetron5000/methadone</a></li>
+<li>CSSCSS: A CSS redundancy analyzer that analyzes redundancy <a href="http://zmoazeni.github.io/csscss/">http://zmoazeni.github.io/csscss/</a></li>
+</ul>
+
+<h3>CoolStuff™ (00:37:31)</h3>
+
+<ul>
+<li>GitHub.io: <a href="https://github.com/blog/1466-yummy-cookies-across-domains">https://github.com/blog/1466-yummy-cookies-across-domains</a></li>
+<li>Boundary - “A New Approach to Application Performance Monitoring”: <a href="http://boundary.com/product/">http://boundary.com/product/</a></li>
+<li>Pushpin: HTTP reverse proxy that supports streaming and long-polling <a href="https://github.com/fanout/pushpin">https://github.com/fanout/pushpin</a></li>
+<li><a href="http://starlogs.net/">http://starlogs.net/</a></li>
+<li>Vim Script lernen: <a href="http://learnvimscriptthehardway.stevelosh.com/">http://learnvimscriptthehardway.stevelosh.com/</a></li>
+</ul>
+
+<h3>Verschiedenes: iOS, git, Google blink (00:49:25)</h3>
+
+<ul>
+<li>Wie viel wird wo geflucht: <a href="http://andrewvos.com/2011/02/21/amount-of-profanity-in-git-commit-messages-per-programming-language/">http://andrewvos.com/2011/02/21/amount-of-profanity-in-git-commit-messages-per-programming-language/</a></li>
+<li>Blink, Chromiums neue Engine: <a href="http://blog.chromium.org/2013/04/blink-rendering-engine-for-chromium.html">http://blog.chromium.org/2013/04/blink-rendering-engine-for-chromium.html</a>, <a href="http://www.chromium.org/blink">http://www.chromium.org/blink</a></li>
+<li>iOS Performance Tips: <a href="http://www.raywenderlich.com/31166/25-ios-app-performance-tips-tricks">http://www.raywenderlich.com/31166/25-ios-app-performance-tips-tricks</a> (via: <a href="https://twitter.com/denis2342">@denis2342</a>)</li>
+<li>git Diskussion auf Twitter (<a href="https://twitter.com/steveklabnik">@steveklabnik</a>):
+
+<ul>
+<li><a href="https://twitter.com/steveklabnik/status/321332245086498816">https://twitter.com/steveklabnik/status/321332245086498816</a>,</li>
+<li><a href="https://twitter.com/steveklabnik/status/321335216595689473">https://twitter.com/steveklabnik/status/321335216595689473</a>,</li>
+<li><a href="https://twitter.com/garybernhardt/status/321339229009502208">https://twitter.com/garybernhardt/status/321339229009502208</a></li>
+<li>Conversation-Tracking in Twitter ist doof ^^</li>
+</ul></li>
+</ul>
+
+<h3>Meta(ebene) (01:00:20)</h3>
+
+<ul>
+<li>Blog zu ADN Kram: <a href="http://bupk.es/">http://bupk.es/</a></li>
+<li>Shodan: Eine beängstigende Suchmaschine:
+
+<ul>
+<li><a href="http://www.neunetz.com/2013/04/09/shodan-eine-beangstigende-suchmaschine/">http://www.neunetz.com/2013/04/09/shodan-eine-beangstigende-suchmaschine/</a></li>
+<li><a href="http://money.cnn.com/2013/04/08/technology/security/shodan/">http://money.cnn.com/2013/04/08/technology/security/shodan/</a></li>
+</ul></li>
+<li>PC Markt?!: <a href="http://www.handelsblatt.com/unternehmen/it-medien/marktforscher-windows-8-hat-versagt/8048772.html">http://www.handelsblatt.com/unternehmen/it-medien/marktforscher-windows-8-hat-versagt/8048772.html</a></li>
+<li>Chad Fowler beschreibt seinen Traummitarbeiter: <a href="http://chadfowler.com/blog/2013/04/09/who-i-want-to-hire/">http://chadfowler.com/blog/2013/04/09/who-i-want-to-hire/</a></li>
+</ul>
+
+<h3>Events (01:14:40)</h3>
+
+<ul>
+<li>NoSQL Matters Cologne (26. und 27.4. im KOMED): <a href="http://2013.nosql-matters.org/cgn/">http://2013.nosql-matters.org/cgn/</a></li>
+<li>cologne.rb (17.4. bei triAGENS) <a href="http://www.nerdhub.de/events/40-cologne-rb/dates/845">http://www.nerdhub.de/events/40-cologne-rb/dates/845</a></li>
+<li>DevHouseFriday (19.4. bei wer-kennt-wen) <a href="http://www.nerdhub.de/events/9-devhouse-friday/dates/1878">http://www.nerdhub.de/events/9-devhouse-friday/dates/1878</a></li>
+<li>Railsgirls FollowUp (22.4. bei Colabor) <a href="http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1998">http://www.nerdhub.de/events/115-rails-girls-cologne/dates/1998</a></li>
+<li>JAX (22. bis 26.4. in Mainz): <a href="http://jax.de/2013/">http://jax.de/2013/</a>
+
+<ul>
+<li>Vielleicht nicht so unsere Zielgruppe, aber wir haben einen Talk schon vorab gehört ;-)</li>
+<li><a href="http://jax.de/2013/sessions/?tid=2884#session-24955">http://jax.de/2013/sessions/?tid=2884#session-24955</a></li>
+</ul></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST011" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro" />
+          
+            <psc:chapter start="00:00:45" title="Errata" />
+          
+            <psc:chapter start="00:04:35" title="Podcasting" />
+          
+            <psc:chapter start="00:08:23" title="Ruby" />
+          
+            <psc:chapter start="00:32:15" title="Gems" />
+          
+            <psc:chapter start="00:37:31" title="CoolStuff™" />
+          
+            <psc:chapter start="00:49:25" title="Verschiedenes: iOS, git, Google blink" />
+          
+            <psc:chapter start="01:00:20" title="Meta(ebene)" />
+          
+            <psc:chapter start="01:14:40" title="Events" />
           
           </psc:chapters>
           
