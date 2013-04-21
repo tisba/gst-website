@@ -3011,30 +3011,30 @@ philosophieren wir gegen Ende noch etwas über den PC Markt.</p>
 ]]></description>
           <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST011" />
 
-          
+
           <psc:chapters>
-          
+
             <psc:chapter start="00:00:00" title="Intro" />
-          
+
             <psc:chapter start="00:00:45" title="Errata" />
-          
+
             <psc:chapter start="00:04:35" title="Podcasting" />
-          
+
             <psc:chapter start="00:08:23" title="Ruby" />
-          
+
             <psc:chapter start="00:32:15" title="Gems" />
-          
+
             <psc:chapter start="00:37:31" title="CoolStuff™" />
-          
+
             <psc:chapter start="00:49:25" title="Verschiedenes: iOS, git, Google blink" />
-          
+
             <psc:chapter start="01:00:20" title="Meta(ebene)" />
-          
+
             <psc:chapter start="01:14:40" title="Events" />
-          
+
           </psc:chapters>
-          
+
         </item>
-        
+
     </channel>
 </rss>
