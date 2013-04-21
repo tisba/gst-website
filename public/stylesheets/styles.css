@@ -8799,20 +8799,21 @@ body .sidebar-nav {
 /* line 18, ../../sass/styles.scss */
 .container #header-image {
   margin: 20px 0;
+  background-color: #52575c;
 }
-/* line 22, ../../sass/styles.scss */
+/* line 23, ../../sass/styles.scss */
 .container #pubdate {
   float: right;
 }
-/* line 26, ../../sass/styles.scss */
+/* line 27, ../../sass/styles.scss */
 .container #shownotes {
   margin-top: 10px;
 }
-/* line 31, ../../sass/styles.scss */
+/* line 32, ../../sass/styles.scss */
 .container .well .FlattrButton {
   float: right;
 }
-/* line 36, ../../sass/styles.scss */
+/* line 37, ../../sass/styles.scss */
 .container .well section .FlattrButton {
   float: none;
 }
