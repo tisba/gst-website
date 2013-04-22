@@ -1,4 +1,4 @@
-<!doctype html>  
+<!doctype html>
 
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
@@ -14,7 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="de-DE" id="language" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <meta name="author" content="tisba" />
+    <meta name="author" content="Dirk Breuer, Sebastian Cohnen" />
+
     <link rel="alternate" type="application/rss+xml" title="iTunes Feed" href="http://geekstammtisch.de/episodes.m4a.rss" />
     <link rel="alternate" type="application/rss+xml" title="Legacy Feed" href="http://geekstammtisch.de/episodes.mp3.rss" />
 
@@ -25,6 +26,7 @@
     <link href="stylesheets/podlove-web-player.css" rel="stylesheet" type="text/css" />
 
     <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="author" href="https://twitter.com/geekstammtisch">
     <link rel="payment" href="https://flattr.com/submit/auto?user_id=railsbros_dirk&title=Geekstammtisch%20Podcast&url=http://geekstammtisch.de" type="text/html" />
   </head>
 
@@ -45,11 +47,19 @@
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
-          <h2>Willkommen beim Geekstammtisch
-            <a class="btn btn-larg btn-info" id="subscribe-in-itunes"
-              href="http://itunes.apple.com/de/podcast/geekstammtisch/id587071768"
-              title="In iTunes abonnieren">In iTunes abonnieren</a>
-          </h2>
+          <div class="page-header">
+            <h1>Willkommen beim Geekstammtisch
+              <a class="btn btn-larg btn-info" id="subscribe-in-itunes"
+                href="http://itunes.apple.com/de/podcast/geekstammtisch/id587071768"
+                title="In iTunes abonnieren">In iTunes abonnieren</a>
+            </h1>
+          </div>
+
+          <p class="lead">
+            Der Geekstammtisch ist ein regelmäßig abgehaltener Gesprächs-Podcast mit gemütlicher Wohnzimmeratmosphäre
+            rund um Web-Entwicklung, Ruby/Rails und die Kölner Entwicklerszene.
+          </p>
+
           <div class="well">
             <a class="FlattrButton" style="display:none;"
               title="Geekstammtisch Podcast"
@@ -61,11 +71,6 @@
               href="http://geekstammtisch.de">
               Der Geekstammtisch ist ein regelmäßig abgehaltener Gesprächs-Podcast mit gemütlicher Wohnzimmeratmosphäre rund um Web-Entwicklung, Ruby/Rails und die Kölner Entwicklerszene.
             </a>
-
-            <p>
-              Der Geekstammtisch ist ein regelmäßig abgehaltener Gesprächs-Podcast mit gemütlicher Wohnzimmeratmosphäre
-              rund um Web-Entwicklung, Ruby/Rails und die Kölner Entwicklerszene.
-            </p>
 
             <p>
               Der Geekstammtisch ist eine Produktion aus Spaß an der Freude von Sebastian
@@ -119,8 +124,8 @@
     <script type="text/template" id="player_template">
       <audio id="podlovewebplayer_1" style="width: auto" preload="<%= preload %>">
         <% _.each(media_sources, function(media) { %>
-        <source src="<%= media.url %>" type="<%= media.content_type %>" />
-        <% }); %>
+          <source src="<%= media.url %>" type="<%= media.content_type %>" />
+          <% }); %>
       </audio>
     </script>
 
