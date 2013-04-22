@@ -28,15 +28,27 @@ body {
     margin-top: 10px;
   }
 
-  .well {
-    .FlattrButton {
-      float: right;
-    }
+  .FlattrButton {
+    float: right;
+  }
 
+  .well {
     section {
       .FlattrButton {
         float: none;
       }
+    }
+  }
+
+  .promo-code {
+    margin: auto;
+    width: 433px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .label {
+      font-size: 46px;
+      padding: 26px 8px;
+      font-weight: 300;
     }
   }
 }
