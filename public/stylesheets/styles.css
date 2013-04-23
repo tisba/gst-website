@@ -689,7 +689,7 @@ a.text-success:hover {
 h1, h2, h3, h4, h5, h6 {
   margin: 11.5px 0;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 23px;
   color: inherit;
   text-rendering: optimizelegibility;
@@ -8802,33 +8802,38 @@ body .sidebar-nav {
   background-color: #52575c;
 }
 /* line 25, ../../sass/styles.scss */
-.container .sidebar-nav .nav-list li > a {
-  font-weight: 600;
+.container .sidebar-nav .nav-list .nav-header {
+  font-size: 100%;
+  font-weight: 700;
 }
-/* line 31, ../../sass/styles.scss */
+/* line 29, ../../sass/styles.scss */
+.container .sidebar-nav .nav-list li > a {
+  font-weight: 400;
+}
+/* line 35, ../../sass/styles.scss */
 .container #pubdate {
   float: right;
 }
-/* line 35, ../../sass/styles.scss */
+/* line 39, ../../sass/styles.scss */
 .container #shownotes {
   margin-top: 10px;
 }
-/* line 39, ../../sass/styles.scss */
+/* line 43, ../../sass/styles.scss */
 .container .FlattrButton {
   float: right;
 }
-/* line 45, ../../sass/styles.scss */
+/* line 49, ../../sass/styles.scss */
 .container .well section .FlattrButton {
   float: none;
 }
-/* line 51, ../../sass/styles.scss */
+/* line 55, ../../sass/styles.scss */
 .container .promo-code {
   margin: auto;
   width: 433px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 56, ../../sass/styles.scss */
+/* line 60, ../../sass/styles.scss */
 .container .promo-code .label {
   font-size: 46px;
   padding: 26px 8px;

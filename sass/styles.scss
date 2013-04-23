@@ -22,8 +22,12 @@ body {
 
   .sidebar-nav {
     .nav-list {
+      .nav-header {
+        font-size: 100%;
+        font-weight: 700;
+      }
       li > a {
-        font-weight: 600;
+        font-weight: 400;
       }
     }
   }
