@@ -20,6 +20,14 @@ body {
     background-color: $gray;
   }
 
+  .sidebar-nav {
+    .nav-list {
+      li > a {
+        font-weight: 600;
+      }
+    }
+  }
+
   #pubdate {
     float: right;
   }
