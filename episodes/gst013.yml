@@ -1,0 +1,173 @@
+--- !ruby/struct:Episode
+number: 13
+name: NoSQL Matters 2013
+length: 5927
+media:
+  alac:
+    size: 251643234
+    file_ext: m4a
+  opus:
+    size: 48384265
+    file_ext: opus
+  aac:
+    size: 44159704
+    file_ext: m4a
+  mp3:
+    size: 71288332
+    file_ext: mp3
+auphonic_uuid: b5DrBnbpLv6dfXBrDjKLLd
+published_at: 2013-05-01 20:40:24.622812000 +02:00
+summary: "Synopsis: Wir waren auf der NoSQL Matters 2013 in Köln (@nosqlmatters).
+  Das ist jedoch keine Retrospektive in unserem Studio, sondern wir haben unser Equipment
+  in den Mediapark Köln getragen und mit Teilnehmern und Speakern direkt vor Ort kurze
+  Gespräche über die Konferenz, NoSQL und was sie technologisch bewegt geführt. Ergebnis
+  ist die vorliegende Ausgabe vom Geekstammtisch. Wir hoffen euch gefällt dieses Experiment
+  und ihr stört euch nicht zu sehr an der eingeschränkten Audioqualität.\r\n\r\n###
+  Gesprächspartner\r\n\r\n  * Martin Otten, adcloud (@Mobbit)\r\n  * Lucas Dohmen,
+  ArangoDB/triAGENS (@moonbeamlabs)\r\n  * Sebastian Röbke und Stefan Kaes, Xing\r\n
+  \ * Frank Celler (@fceller) und Martin Schönert (@mschoenert), ArangoDB/triAGENS\r\n
+  \ * Simon Willnauer, Elasticsearch Inc. (@s1m0nw)\r\n  * Roland Gude, YOOCHOOSE
+  (@rjtg_)\r\n  * Waldemar Schwan, adcloud (@Velrok)\r\n  * Sean Cribbs, Basho (@seancribbs)\r\n
+  \ * Gereon Steffens, Finanzen100 (@gereons)\r\n\r\n### Begrüßung (00:00:00)\r\n\r\n
+  \ * Wir erklären worum es bei der Ausgabe geht und schwärmen von Martin Fowlers
+  (http://martinfowler.com) Keynote ;-)\r\n    * Hat ein Buch zu dem Thema: http://martinfowler.com/books/nosql.html\r\n
+  \   * 'NoSQL' hat eigentlich keine Bedeutung und war nur ein Twitter-Hashtag\r\n
+  \   * _Polyglot-Persistence_ als zentrales Stichwort: \"Weg von der einen großen
+  Datenbank\"\r\n    * Zwei treibende Faktoren hinter der Entscheidung für NoSQL:\r\n
+  \     * Entwicklungsgeschwindigkeit\r\n      * \"Big Data\"\r\n    * Durch das Aufkommen
+  von SOA fällt die Datenbank als Integrationspunkt weg\r\n  * Definitive Aufforderung
+  sich die Videos zu den Talks anzusehen ;-)\r\n\r\n### Martin Otten von Adcloud (00:10:34)\r\n\r\n
+  \ * Martin (@Mobbit) arbeitet bei Adcloud in Köln\r\n  * Verwendung von unterschiedlichen
+  Datenbanksystemen\r\n  * Martin würde auch S3 als \"Datenbank\" bezeichnen\r\n  *
+  CouchDB ist super leicht an den Start zu bringen\r\n  * Basti weißt darauf hin,
+  dass man grundsätzlich das System so einsetzen soll, dass es seine Stärken ausspielen
+  kann\r\n  * Relationale Datenbanken sind auch dort noch nicht raus\r\n\r\n### Lucas
+  Dohmen von triAGENS (00:16:01)\r\n\r\n  * @moonbeamlabs war Teil der Orga und ist
+  Teil des ArangoDB Core-Teams\r\n  * Talks werden als Videos bereitgestellt\r\n  *
+  Die meisten Leute auf der Konferenz nutzen NoSQL Datenbanken und Gespräche werden
+  über konkrete Probleme im Einsatz geführt\r\n  * Lucas hat auch einen Talk über
+  ArangoDB Foxx gehalten (http://www.arangodb.org/2013/03/29/foxx-a-lightweight-javascript-application-framework-for-arangodb)\r\n
+  \   * Foxx bietet die Möglichkeit auf ArangoDB direkt eine REST-API zu definieren\r\n
+  \   * Ähnlich zu dem CouchApp-Projekt (http://couchapp.org/page/index)\r\n  * Lucas
+  geht viel auf Konferenzen, weil sie machen Spaß und die Gespräche sind gut\r\n  *
+  Lucas hat den Eindruck, dass die meisten bereits NoSQL Datenbanken einsetzen\r\n
+  \ * Viele setzen wohl viele Datenbanken ein, dass macht es zwar komplexer, aber
+  bei großen Datenmengen hat man eh komplexe Systeme\r\n  * ArangoDB als allgemeine
+  Datenbank vereint dokumentenbasierte wie graphbasierte Konzepte, was die Komplexität
+  wieder reduzieren kann\r\n\r\n### Sebastian Röbke und Stefan Kaes von Xing (00:25:04)\r\n\r\n
+  \ * Sebastian (@boosty) und Stefan sind im Architektur-Team von Xing tätig\r\n  *
+  Evaluieren neue Technologie, entwickeln Prototypen und beraten die übrigen Teams\r\n
+  \ * Setzen unterschiedliche Datenbanken wie RabbitMQ, Riak und Redis ein\r\n  *
+  Xing hat etwa 150 Engineers inkl. QA\r\n  * Inhalt des Talks\r\n    * Migration
+  von SQL zu einem Riak-basierten System\r\n    * Fokus auf die Migration\r\n  * Weitere
+  Technologien im Einsatz:\r\n    * Memcache, Redis, MongoDB, Neo4J, elasticsearch\r\n
+  \ * Für die Zukunft liegt der Fokus auf Optimierung der eingesetzen Technologien.
+  Dabei werden Anwendungen auch schon mal wieder zurück auf MySQL geschoben\r\n  *
+  Ziel ist die optimale Lösung für ein Problem zu finden\r\n\r\n### Frank Celler und
+  Martin Schönert von triAGENS (00:31:25)\r\n\r\n  * Martin (@mschoenert) arbeitet
+  derzeit vor allem als Software-Architekt bei triAGENS\r\n  * Frank (@fceller) ist
+  vor allem als Orga hier und kommt so langsam zur Ruhe :-)\r\n  * Martin hält einen
+  Talk über das CAP-Theorem (http://en.wikipedia.org/wiki/CAP_theorem) und dessen
+  Einfluss vor allem auf große Systeme\r\n  * Der Talk ist dabei unabhängig von konkreten
+  Datenbankimplementationen\r\n  * Für Frank ist das ganze eher eine Bewegung mit
+  fast ausschließlich Open Source Vertretern\r\n  * Es wird nicht der eine Produktkatalog
+  abgearbeitet, sondern vielmehr findet ein reger Austausch über die unterschiedlichen
+  Einsatzgebiete von Systemen statt\r\n  * Für Martin geht es bei der Konferenz vor
+  allem um den Austausch von Erfahrungen bei der Auswahl von Systemen\r\n  * NoSQL
+  werden aus Martins Sicht viel stärker als Bausteine gesehen um spezielle Probleme
+  lösen zu können\r\n  * Weg von monolithischen zu komponentenbasierten Systemen\r\n
+  \ * Frank freut sich, dass wir da sind :-)\r\n\r\n### Simon Willnauer von elasticsearch
+  (00:39:11)\r\n\r\n  * Simon (@s1m0nw) ist seit 2006 am Apache Lucene Projekt beteiligt
+  (http://lucene.apache.org/core/)\r\n  * Mit-Gründer von Elasticsearch Inc. (http://www.elasticsearch.com/)
+  der Firma hinter elasticsearch\r\n  * Organisiert die Berlin Buzzwords Konferenz
+  (http://berlinbuzzwords.de/)\r\n  * Er ist wirklich beeindruckt von der Konferenz
+  und der Organisation\r\n  * Simons Talk war ein Einsteiger-Talk _ohne_ Slides (https://github.com/s1monw/hammertime)\r\n
+  \ * Demo, die in Echtzeit alle wesentlichen Eigenschaften von elasticsearch zeigt\r\n
+  \ * Wir sind uns alle einig, dass Live-Demos immer eine gute Alternative sind und
+  vor allem authentisch rüberkommen\r\n  * Was hat eigentlich mit elasticsearch mit
+  NoSQL zu tun?\r\n    * \"Everything is a search\"\r\n    * Simon macht mit Lucene
+  NoSQL seit 2001\r\n    * Neo4J verwendet Lucene unter der Haube\r\n    * Lucene
+  ist ein sehr performanter Key-Value-Store\r\n    * \"Ich brauche keine Volltextsuche,
+  ich brauch kein elasticsearch\" -> Die Anwendungsbereiche sind sehr viel größer
+  (z.B. Lucene als sehr schnelle Hashmap zu nutzen)\r\n  * elasticsearch ist durch
+  sein append-only Ansatz extrem auf schnelles Schreiben optimiert und begünstigt
+  zudem den Einsatz von SSDs\r\n  * Lucene 4 ist seit Oktober 2012 draußen mit massiven
+  Verbesserungen bei der Performance und den Datenstrukturen\r\n\r\n### Roland Gude
+  von YOOCHOOSE (00:51:10)\r\n\r\n  * Roland (@rjtg_) arbeitet bei YOOCHOOSE in Köln
+  (http://http://www.yoochoose.com/)\r\n  * Baut ein Empfehlungssystem (z.B. für Shops)\r\n
+  \ * Beschäftigt sich dabei vor allem mit den Fragen rund um \"Big Data\" (Was? Wie?)\r\n
+  \ * Eingesetzt wird Cassandra (http://cassandra.apache.org/), Hadoop (für Research),
+  Spark (http://spark-project.org/)\r\n  * Roland fand Seans Vortrag zu konvergierenden
+  Datenstrukturen sehr gut: http://2013.nosql-matters.org/cgn/abstracts/#abstract_sean_cribbs\r\n
+  \ * Ebenfalls der Vortrag von Mahesh Paolini-Subramanya (@dieswaytoofast) http://2013.nosql-matters.org/cgn/abstracts/#abstract_mahesh_paolini-subramanya\r\n
+  \ * Bei der Frage, \"Ease of Development oder Big Data\" findet Roland, dass die
+  Einfachheit der Entwicklung keine große Rolle spielt. Er sieht eher den Vorteil
+  beim Betrieb von NoSQL Datenbanken.\r\n  * YOOCHOOSE verwendet Asgard, das AWS Deployment
+  und Management Tool von Netflix https://github.com/Netflix/asgard\r\n  * Cassandra
+  ist bei YOOCHOOSE ist noch nicht vollständig automatisiert, was den Betrieb angeht.
+  Es wird aber dran gearbeitet.\r\n\r\n### Waldemar Schwan von Adcloud (01:04:59)\r\n\r\n
+  \ * Waldemar (@Velrok) arbeitet bei Adcloud\r\n  * Im Moment arbeitet er an seiner
+  Masterarbeit zum Thema Empfehlungssysteme\r\n  * Beschäftigt sich mit Hadoop und
+  kümmert u.a. sich um Hive\r\n  * Fand, wie jeder bisher, die Keynote sehr gut\r\n
+  \ * Sehr spannend fand er auch den Vortrag von Michael Hausenblas (@mhausenblas)
+  zu Apache Drill (http://incubator.apache.org/drill/): http://2013.nosql-matters.org/cgn/abstracts/#abstract_michael_hausenblas\r\n
+  \ * Gekocht wird mit (heißem?) Wasser\r\n  * Waldemar wird einen Clojure Workshop
+  am 22.05.2013 ab 16:30 bei adcloud geben: http://dev.adcloud.com/blog/2013/04/19/clojure-introduction-workshop/\r\n\r\n###
+  Sean Cribbs von basho (01:15:18)\r\n\r\n  * Weltpremiere beim Geekstammtisch: Englisch
+  :)\r\n  * Sean (@seancribbs) ist Entwickler bei @basho (\"Makers of Riak\")\r\n
+  \ * Basho ist ein verteiltes Unternehmen und Sean verrät ein paar Geheimnisse, warum
+  das so gut funktioniert und worauf man achten muss\r\n    * Vertrauen in Mitarbeiter\r\n
+  \   * Hochmotivierte Mitarbeiter\r\n    * Verschiedene Kommunikationskanäle (z.B.
+  HipChat, Skype, mumble, gotomeeting.com, E-Mail, yammer, ...)\r\n    * man muss
+  **viel** kommunikativer sein, wenn man verteilt arbeitet\r\n  * Insgesamt bleibt
+  zu sagen die Kultur eines Unternehmens bestimmt die Technologie\r\n  * An der NoSQL
+  Matters gefällt Sean vor allem, dass so viele verschiedene Sichtweisen zusammenkommen
+  und wie Leute NoSQL Systeme konkret einsetzen für ihre Produkte\r\n  * Er sieht
+  einen beginnenden Reifeprozess im Bereich der NoSQL Datenbanken\r\n  * Es gibt weniger
+  Angst bei Unternehmen vor NoSQL Systemen und die Akzeptanz steigt\r\n  * Sean interessiert
+  sich sehr\r\n    * Probleme von verteilten Systemen\r\n    * eine \"strongly consistent\"
+  Alternative zu Riak\r\n  * In seinem Vortrag (http://2013.nosql-matters.org/cgn/abstracts/#abstract_sean_cribbs)
+  spricht er über konvergierende Datenstrukturen\r\n  * Es gibt eine gewisse Angst
+  vor eventual consistency aus Unverständnis\r\n  * Wir reden über Fehlannahmen, was
+  Konsistenzverhalten verschiedene Systeme anbelangt\r\n\r\n### Gereon Steffens von
+  Finanzen100 (01:25:03)\r\n\r\n  * Gereon (@gereons) arbeitet Finanzen100, die Finanzinformationssysteme
+  herstellen\r\n  * NoSQL spielt noch keine richtig große Rolle bei Finanzen100\r\n
+  \ * Erste Gehversuche mit Redis (inspiriert durch http://tisba.de/2012/06/28/nosql-not-only-a-fairy-tale/)\r\n
+  \ * Riak hat Gereon auch auf dem Radar und nutzt die Gelegenheit auf der Konferenz
+  sich auszutauschen\r\n  * Redis wurde als Spielprojekt eingesetzt um einen URL Shortner
+  zu bauen\r\n  * Und demnächst dann zum Aufbau von Watchlisten\r\n  * Angeschaut
+  hat sich recht viel :)\r\n  * Der Trend bei Finanzen100 geht weg von Web und hin
+  zu Apps\r\n  * Wir schweifen etwas ab und Reden über iOS Apps, iAd und Vor- und
+  Nachteile von nativen und nicht-nativen Apps\r\n  * Weiterhin reden wir über Finanzen100s
+  Transition von Webanwendung hin zu nativen Apps"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Eröffnung
+- !ruby/struct:Chapter
+  start: '00:10:34.130'
+  title: Martin Otten (Adcloud)
+- !ruby/struct:Chapter
+  start: '00:16:01.070'
+  title: Lucas Dohmen (triAGENS)
+- !ruby/struct:Chapter
+  start: '00:25:04.200'
+  title: Sebastian Röbke und Stefan Kaes (Xing)
+- !ruby/struct:Chapter
+  start: '00:31:25.160'
+  title: Frank Celler und Martin Schönert (triAGENS)
+- !ruby/struct:Chapter
+  start: '00:39:11.220'
+  title: Simon Willnauer (Elasticsearch)
+- !ruby/struct:Chapter
+  start: '00:51:10.160'
+  title: Roland Gude (yoochoose)
+- !ruby/struct:Chapter
+  start: '01:04:59.010'
+  title: Waldemar Schwan (Adcloud)
+- !ruby/struct:Chapter
+  start: '01:15:18.090'
+  title: Sean Cribbs (basho)
+- !ruby/struct:Chapter
+  start: '01:25:03.030'
+  title: Gereon Steffens (Finanzen100)
