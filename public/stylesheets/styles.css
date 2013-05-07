@@ -8811,29 +8811,33 @@ body .sidebar-nav {
   font-weight: 400;
 }
 /* line 35, ../../sass/styles.scss */
+.container .adn-button {
+  width: 230px;
+}
+/* line 39, ../../sass/styles.scss */
 .container #pubdate {
   float: right;
 }
-/* line 39, ../../sass/styles.scss */
+/* line 43, ../../sass/styles.scss */
 .container #shownotes {
   margin-top: 10px;
 }
-/* line 43, ../../sass/styles.scss */
+/* line 47, ../../sass/styles.scss */
 .container .FlattrButton {
   float: right;
 }
-/* line 49, ../../sass/styles.scss */
+/* line 53, ../../sass/styles.scss */
 .container .well section .FlattrButton {
   float: none;
 }
-/* line 55, ../../sass/styles.scss */
+/* line 59, ../../sass/styles.scss */
 .container .promo-code {
   margin: auto;
   width: 433px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 60, ../../sass/styles.scss */
+/* line 64, ../../sass/styles.scss */
 .container .promo-code .label {
   font-size: 46px;
   padding: 26px 8px;
