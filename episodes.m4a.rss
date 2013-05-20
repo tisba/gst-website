@@ -3415,5 +3415,199 @@ philosophieren wir gegen Ende noch etwas über den PC Markt.</p>
           
         </item>
         
+        <item>
+          <title>GST014 - Business Kasper UG</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST014 - Business Kasper UG</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst014.m4a" length="45554956" type="audio/x-m4a"/>
+          <guid isPermaLink="false">GST014</guid>
+          <pubDate>Mon, 20 May 2013 17:18:16 +0200</pubDate>
+          <itunes:duration>01:44:21</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis**: Wir haben uns mit Matthias @luebken hingesetzt und einen
+Geekstammtisch abgehalten. Gesprochen haben darüber, was einen guten,
+leidenschaftlichen Softwareentwickler ausmacht und warum wir alle agile
+Softwareentwicklung machen (wollen). Wie immer schweifen wir in alle
+mögliche Richtungen ab und danken @larsvegas für das Bringen neuen
+Bieres!
+
+### Intro & Gast (00:00:00)
+
+  * Matthias trinkt Leffe Ruby: http://www.leffe.com/en/beer/leffe-ruby
+  * Macht was mit Softwareentwicklung
+  * Director Software Development bei Adcloud
+  * Matthias <3 Agile Softwareentwicklung
+  * Programmiert zwar gerne, sein Steckenpferd ist aber eher der Enabler zu sein für Entwicklung
+
+### Der ideale Entwickler (00:04:45)
+
+  * Die Basis sind wirklich gute Entwickler
+    * Wir sind uns einig, dass “gut” nicht wirklich scharf zu definieren ist
+    * Leidenschaft für die Sache scheint ein wichtiger Punkt zu sein
+  * Braucht man “Coding Monkeys”?
+  * Extreme Programming: http://en.wikipedia.org/wiki/Extreme_programming
+    * Sustainable Pace: http://en.wikipedia.org/wiki/Extreme_programming_practices#Sustainable_pace
+  * (Aus GST011) Chad Fowler beschreibt seinen Traummitarbeiter: http://chadfowler.com/blog/2013/04/09/who-i-want-to-hire/
+  * Matthias will "Generalizing Specialists": http://www.agilemodeling.com/essays/generalizingSpecialists.htm (von Scott W. Ambler)
+  * T-Shaped People
+    * ein Spezialgebiet
+    * aber trotzdem eine gewisse Weitsicht
+
+### Einschub: Post-it! (00:26:16)
+
+  * Matthias liebt Post-it! Er arbeitet viel mit kleinen Zetteln in verschiedenen Bereichen der Produkt- und Softwareentwicklung bei Adcloud
+  * Matthias bietet Schulungen an, wie man Post-its richtig abzieht :)
+  * Präsentationen mit Post-it!s?
+  * Visual Facilitation kann man lernen, selbst als Nerd: http://de.wikipedia.org/wiki/Visual_Facilitation
+
+### Prozesse zur Softwareentwicklung & Arbeitsmodelle (00:35:00)
+
+  * Wasserfall: http://en.wikipedia.org/wiki/Waterfall_model
+  * Man kann aus zwei verschiedenen Richtungen zur agilen Softwareentwicklung kommen
+    * man möchte “weniger” oder andere Strukturen (von Wasserfall her kommend)
+    * man möchte mehr Struktur, weil es vorher gar keine gab (kein Prozess)
+  * Das agile Manifest (Manifesto for Agile Software Development): http://agilemanifesto.org/
+  * Principles behind the Agile Manifesto: http://agilemanifesto.org/principles.html
+  * Matthias findet Face-to-Face Kommunikation sehr wichtig und wir fragen uns, wie sich das in Einklang bringen kann mit verteilten Arbeiten, Homeoffice usw.
+  * Wie bringt man für agile Entwicklung Leute zusammen, die nicht die selbe Sprache als Muttersprache haben? Oder nicht alle vor Ort sind?
+  * Matthias würde immer nicht-verteilt arbeiten, wenn es möglich ist
+    * …andere versuchen genau das Gegenteil
+  * Marissa Mayer von Yahoo ruft die Homeoffice-Arbeiter zurück: http://www.nytimes.com/2013/02/26/technology/yahoo-orders-home-workers-back-to-the-office.html?pagewanted=all
+  * The Values of Extreme Programming: Simplicity, Communication, Feedback, Respect and Courage (http://www.extremeprogramming.org/values.html)
+    * Einführung von (agilen) Entwicklungsprozessen: Langsam und vorsichtig, oder ganz oder gar nicht
+    * Kanban (http://en.wikipedia.org/wiki/Kanban) als minimaler Prozess
+  * Dirk hat bei pkw.de gute Erfahrung damit gemacht, den “ganz oder gar nicht”-Ansatz zu verfolgen und sich einen externen Scrum Master zu besorgen
+  * Wir sind uns einig, dass Retrospektiven, das zentrale und entscheidene Mittel in guten Entwicklungsprozessen ist.
+  * Ein agiler Ansatz hat Auswirkungen auf das ganze Unternehmen: Agile Softwareentwicklung => Agiles Unternehmen
+  * Wir stellen fest, dass die ganze agile Bewegung schon recht alt ist (z.B. Lean Manufacturing: http://en.wikipedia.org/wiki/Lean_manufacturing)
+  * Embrace the Change, Veränderung ist Teil des Systems, und kein Fehler.
+
+### Das Wort zum Sonntag (01:35:42)
+
+  * Matthias empfielt alles von Henrik Kniberg (@henrikkniberg, http://www.crisp.se/konsulter/henrik-kniberg), z.B. http://blog.crisp.se/2012/11/14/henrikkniberg/scaling-agile-at-spotify)
+  * Kommt zu User Groups, tauscht euch aus!
+  * Hört Podcasts! :)
+  * Matthias ruft auf zur NoDev User Group in Köln, analog zu NoSQL, Not-Only Dev!
+    * aka "Business Kasper UG"
+    * #nodev
+    * Business Kasper (http://vimeo.com/4560687)]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis</strong>: Wir haben uns mit Matthias <a href="https://twitter.com/luebken">@luebken</a> hingesetzt und einen
+Geekstammtisch abgehalten. Gesprochen haben darüber, was einen guten,
+leidenschaftlichen Softwareentwickler ausmacht und warum wir alle agile
+Softwareentwicklung machen (wollen). Wie immer schweifen wir in alle
+mögliche Richtungen ab und danken <a href="https://twitter.com/larsvegas">@larsvegas</a> für das Bringen neuen
+Bieres!</p>
+
+<h3>Intro &amp; Gast (00:00:00)</h3>
+
+<ul>
+<li>Matthias trinkt Leffe Ruby: <a href="http://www.leffe.com/en/beer/leffe-ruby">http://www.leffe.com/en/beer/leffe-ruby</a></li>
+<li>Macht was mit Softwareentwicklung</li>
+<li>Director Software Development bei Adcloud</li>
+<li>Matthias &lt;3 Agile Softwareentwicklung</li>
+<li>Programmiert zwar gerne, sein Steckenpferd ist aber eher der Enabler zu sein für Entwicklung</li>
+</ul>
+
+<h3>Der ideale Entwickler (00:04:45)</h3>
+
+<ul>
+<li>Die Basis sind wirklich gute Entwickler
+
+<ul>
+<li>Wir sind uns einig, dass “gut” nicht wirklich scharf zu definieren ist</li>
+<li>Leidenschaft für die Sache scheint ein wichtiger Punkt zu sein</li>
+</ul></li>
+<li>Braucht man “Coding Monkeys”?</li>
+<li>Extreme Programming: <a href="http://en.wikipedia.org/wiki/Extreme_programming">http://en.wikipedia.org/wiki/Extreme_programming</a>
+
+<ul>
+<li>Sustainable Pace: <a href="http://en.wikipedia.org/wiki/Extreme_programming_practices#Sustainable_pace">http://en.wikipedia.org/wiki/Extreme_programming_practices#Sustainable_pace</a></li>
+</ul></li>
+<li>(Aus GST011) Chad Fowler beschreibt seinen Traummitarbeiter: <a href="http://chadfowler.com/blog/2013/04/09/who-i-want-to-hire/">http://chadfowler.com/blog/2013/04/09/who-i-want-to-hire/</a></li>
+<li>Matthias will &quot;Generalizing Specialists&quot;: <a href="http://www.agilemodeling.com/essays/generalizingSpecialists.htm">http://www.agilemodeling.com/essays/generalizingSpecialists.htm</a> (von Scott W. Ambler)</li>
+<li>T-Shaped People
+
+<ul>
+<li>ein Spezialgebiet</li>
+<li>aber trotzdem eine gewisse Weitsicht</li>
+</ul></li>
+</ul>
+
+<h3>Einschub: Post-it! (00:26:16)</h3>
+
+<ul>
+<li>Matthias liebt Post-it! Er arbeitet viel mit kleinen Zetteln in verschiedenen Bereichen der Produkt- und Softwareentwicklung bei Adcloud</li>
+<li>Matthias bietet Schulungen an, wie man Post-its richtig abzieht :)</li>
+<li>Präsentationen mit Post-it!s?</li>
+<li>Visual Facilitation kann man lernen, selbst als Nerd: <a href="http://de.wikipedia.org/wiki/Visual_Facilitation">http://de.wikipedia.org/wiki/Visual_Facilitation</a></li>
+</ul>
+
+<h3>Prozesse zur Softwareentwicklung &amp; Arbeitsmodelle (00:35:00)</h3>
+
+<ul>
+<li>Wasserfall: <a href="http://en.wikipedia.org/wiki/Waterfall_model">http://en.wikipedia.org/wiki/Waterfall_model</a></li>
+<li>Man kann aus zwei verschiedenen Richtungen zur agilen Softwareentwicklung kommen
+
+<ul>
+<li>man möchte “weniger” oder andere Strukturen (von Wasserfall her kommend)</li>
+<li>man möchte mehr Struktur, weil es vorher gar keine gab (kein Prozess)</li>
+</ul></li>
+<li>Das agile Manifest (Manifesto for Agile Software Development): <a href="http://agilemanifesto.org/">http://agilemanifesto.org/</a></li>
+<li>Principles behind the Agile Manifesto: <a href="http://agilemanifesto.org/principles.html">http://agilemanifesto.org/principles.html</a></li>
+<li>Matthias findet Face-to-Face Kommunikation sehr wichtig und wir fragen uns, wie sich das in Einklang bringen kann mit verteilten Arbeiten, Homeoffice usw.</li>
+<li>Wie bringt man für agile Entwicklung Leute zusammen, die nicht die selbe Sprache als Muttersprache haben? Oder nicht alle vor Ort sind?</li>
+<li>Matthias würde immer nicht-verteilt arbeiten, wenn es möglich ist
+
+<ul>
+<li>…andere versuchen genau das Gegenteil</li>
+</ul></li>
+<li>Marissa Mayer von Yahoo ruft die Homeoffice-Arbeiter zurück: <a href="http://www.nytimes.com/2013/02/26/technology/yahoo-orders-home-workers-back-to-the-office.html?pagewanted=all">http://www.nytimes.com/2013/02/26/technology/yahoo-orders-home-workers-back-to-the-office.html?pagewanted=all</a></li>
+<li>The Values of Extreme Programming: Simplicity, Communication, Feedback, Respect and Courage (<a href="http://www.extremeprogramming.org/values.html">http://www.extremeprogramming.org/values.html</a>)
+
+<ul>
+<li>Einführung von (agilen) Entwicklungsprozessen: Langsam und vorsichtig, oder ganz oder gar nicht</li>
+<li>Kanban (<a href="http://en.wikipedia.org/wiki/Kanban">http://en.wikipedia.org/wiki/Kanban</a>) als minimaler Prozess</li>
+</ul></li>
+<li>Dirk hat bei pkw.de gute Erfahrung damit gemacht, den “ganz oder gar nicht”-Ansatz zu verfolgen und sich einen externen Scrum Master zu besorgen</li>
+<li>Wir sind uns einig, dass Retrospektiven, das zentrale und entscheidene Mittel in guten Entwicklungsprozessen ist.</li>
+<li>Ein agiler Ansatz hat Auswirkungen auf das ganze Unternehmen: Agile Softwareentwicklung =&gt; Agiles Unternehmen</li>
+<li>Wir stellen fest, dass die ganze agile Bewegung schon recht alt ist (z.B. Lean Manufacturing: <a href="http://en.wikipedia.org/wiki/Lean_manufacturing">http://en.wikipedia.org/wiki/Lean_manufacturing</a>)</li>
+<li>Embrace the Change, Veränderung ist Teil des Systems, und kein Fehler.</li>
+</ul>
+
+<h3>Das Wort zum Sonntag (01:35:42)</h3>
+
+<ul>
+<li>Matthias empfielt alles von Henrik Kniberg (<a href="https://twitter.com/henrikkniberg">@henrikkniberg</a>, <a href="http://www.crisp.se/konsulter/henrik-kniberg">http://www.crisp.se/konsulter/henrik-kniberg</a>), z.B. <a href="http://blog.crisp.se/2012/11/14/henrikkniberg/scaling-agile-at-spotify">http://blog.crisp.se/2012/11/14/henrikkniberg/scaling-agile-at-spotify</a>)</li>
+<li>Kommt zu User Groups, tauscht euch aus!</li>
+<li>Hört Podcasts! :)</li>
+<li>Matthias ruft auf zur NoDev User Group in Köln, analog zu NoSQL, Not-Only Dev!
+
+<ul>
+<li>aka &quot;Business Kasper UG&quot;</li>
+<li>#nodev</li>
+<li>Business Kasper (<a href="http://vimeo.com/4560687">http://vimeo.com/4560687</a>)</li>
+</ul></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST014" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro &amp; Gast" />
+          
+            <psc:chapter start="00:04:45" title="Der ideale Entwickler" />
+          
+            <psc:chapter start="00:26:16" title="Einschub: Post-it!" />
+          
+            <psc:chapter start="00:35:00" title="Prozesse zur Softwareentwicklung &amp; Arbeitsmodelle" />
+          
+            <psc:chapter start="01:35:42" title="Das Wort zum Sonntag" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
