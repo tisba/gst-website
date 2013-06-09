@@ -3609,5 +3609,297 @@ Bieres!</p>
           
         </item>
         
+        <item>
+          <title>GST015 - Geschäftsvorfall als Ereignis</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST015 - Geschäftsvorfall als Ereignis</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst015.mp3" length="81345536" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST015</guid>
+          <pubDate>Sun, 09 Jun 2013 17:58:55 +0200</pubDate>
+          <itunes:duration>01:52:37</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis**: Diesmal ist es wieder technischer, aber nicht weniger nerdig. Wir hatten @bumi von @railslove zu Gast. Mit ihm haben wir über gute Zusammenarbeit von Kunde und Auftraggeber gesprochen. Weiterhin war AMQP zur Anbindung von Legacy-Systemen und das Betreiben von Software in der Cloud das Thema. Es gab dann noch einiges über Ruby und Frontendentwicklung zu erzählen. Und zum Schluss gibt es dann, wie immer, dann noch ein paar Hinweise auf interessante Events in nächster Zeit.
+
+### Unser Gast (00:00:00)
+
+  * Michael Bumann (@bumi, http://michaelbumann.com) hat Railslove gegründet und arbeitet da
+  * Arbeitet gerade an einer Merchant Portal für einen Payment Service Provider
+  * Bumi trinkt Tegernseer Hell
+  * Basti trinkt Augustiner Edelstoff
+  * Coworking in Köln: https://www.facebook.com/cowoco
+  * Basti erinnert sich an das Wikipedia Assoziationsspiel: http://www.re-publica.de/sessions/six-degrees-wikipedia
+    (gehört bei http://not-safe-for-work.de/nsfw070/)
+
+### Software Engineering (00:06:35)
+
+  * PSP: Payment-Service-Provide (http://en.wikipedia.org/wiki/Payment_service_provider)
+  * Bankenumfeld bedeutet immer auch Legacy-Systeme anbinden
+  * Message-basierte Kommunikation auf Basis von AMQP (http://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)
+    mit RabbitMQ (http://www.rabbitmq.com/)
+  * Entkopplung von Systemen durch Messaging
+  * Railslove macht nicht nur "einfache" Entwicklung, sondern arbeitet
+    in einem ganzheitlichen Ansatz: Anforderungen ermitteln, Technologie
+    auswählen, Implementierung bis hin zu UI-Unterstützung
+  * AMQP scheint im Bankensektor sehr verbreitet
+  * In Ruby verwendet man das amqp-gem (https://github.com/ruby-amqp/amqp/)
+  * Fehlerbehandlung ist nicht trivial
+  * Testing von asynchronem Code ist immer schwierig
+    * Fokus auf Unit-Testing
+    * Callbacks testbar machen: Der Anwendungsfall™ für die
+      `method`-Methode
+  * Failover-Testing ist auch hart…
+
+### Monitoring (00:29:36)
+
+  * Monitoring to the rescue
+    * RabbitMQ hat ein hervorragendes Monitoring Plugin: http://www.rabbitmq.com/management.html
+    * Unabhängig von RabbitMQ Events erzeugen, um sich ein Dashboard
+      zusammenbauen zu können
+  * Welche Möglichkeiten gibt es:
+    * Hosted Graphite, z.B. https://www.hostedgraphite.com/
+    * `ActiveSupport::Notifications`
+    * Custom Events bei NewRelic: https://newrelic.com/docs/instrumentation/custom-metric-collection
+  * Spannend ist es wenn es nicht nur ums Anzeigen geht, sondern wenn
+    man darauf Alerts definiert
+  * Es gibt eine Vielzahl von gehosteten Lösungen, die preislich alle
+    irgendwann nicht mehr skalieren.
+  * Events über Logging
+    * Papertrail (https://papertrailapp.com/)
+    * Splunkstorm (https://www.splunkstorm.com/)
+
+### Ops (00:39:10)
+
+  * http://www.baremetalcloud.com/index.php/en/
+  * Amazon EC2 Instance Pricing Calculator: http://promptcloud.com/ec2-ondemand-vs-reserved-instance-pricing.php
+  * Why I Dislike EC2 (Karl Seguin): http://openmymind.net/Why-I-Dislike-ec2/
+  * Die Cloud macht erst dann wirklich Sinn, wenn man sehr viele der angebotenen Dienste auch nutzt
+  * Railslove benutzt viel Brightbox (http://brightbox.com/)
+  * Brightbox Ruby PPA: http://tech.brightbox.com/posts/2013-05-31-passenger-and-ruby-ubuntu-updates/
+  * New Relic von Tilde, Inc.: https://github.com/tokaido/tokaidoapp#readme)
+
+### Ruby (00:53:15)
+
+  * Fahrplan für Ruby 2.1: http://rvm.jp/t.pdf
+  * Ruby Lang (inkl. Doku) auf GitHub: https://github.com/ruby/www.ruby-lang.org
+  * DTrace: http://crypt.codemancers.com/posts/2013-05-04-profile-ruby-2-dot-0-apps-using-dtrace-part-2
+  * Octokit, das neue Gem für Github/GHE: https://github.com/octokit/octokit.rb
+  * Futures für ActiveRecord: "Specify queries to be sent all at once to the database. Save round trips!"
+    https://github.com/leoasis/activerecord-futures
+  * Gem Dependencies: https://www.gemlou.pe
+  * Gem Hosting
+    * http://www.gemfury.com/
+    * https://github.com/cwninja/geminabox
+
+### Rails (01:11:52)
+
+  * RailsConf 2013 Videos online: http://confreaks.com/events/railsconf2013
+  * Watchlater playlist: http://watchlaterapp.com/folders/4fa7b7866ba60a0d58000023) (ask for invites)
+  * Worst Ideas Ever: http://www.confreaks.com/videos/198-rubyconf2009-worst-ideas-ever
+  * “Native” UUIDs in Rails 4 <3 Aaron!: https://github.com/rails/rails/commit/bc8ebefe9825dbff2cffa29ff015a1e7a31f9812
+
+### Tools (01:20:46)
+
+  * zsh-lovers - tips, tricks and examples for the Z shell: http://grml.org/zsh/zsh-lovers.html
+
+### Geiler Scheiß (01:24:31)
+
+  * The Open Source Report Card: http://osrc.dfm.io/
+  * The Sketchnote Handbook: http://rohdesign.com/book
+  * http://popapp.in/
+
+### Geiler Frontend Scheiß (01:30:30)
+
+  * Cross-Browser Testing
+    * Browserling: https://browserling.com/
+    * Browserstack: http://www.browserstack.com/
+    * CrossBrowserTesting: http://crossbrowsertesting.com/
+    * modern.IE: http://www.modern.ie/en-us
+  * Processing RAW Images mit JavaScript: http://blog.bitops.com/blog/2013/06/04/webraw-asmjs/
+
+### Events (01:40:06)
+
+  * Rails Girls - Summer of Code: http://railsgirlssummerofcode.org/
+  * Railscamp Germany, 27. + 28. Juli: http://railscamp.github.io/railscamp-germany-2013/
+  * Interactive Cologne, 17.-23. Juni: http://interactive-cologne.com/
+  * SIGINT in Köln, 5.-7. Juli
+    * Unser Talks auf der SIGINT: https://frab.cccv.de/export/sigint13/events/5065.html
+  * https://register.dpma.de/DPMAregister/marke/register/3020120063403/DE]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis</strong>: Diesmal ist es wieder technischer, aber nicht weniger nerdig. Wir hatten <a href="https://twitter.com/bumi">@bumi</a> von <a href="https://twitter.com/railslove">@railslove</a> zu Gast. Mit ihm haben wir über gute Zusammenarbeit von Kunde und Auftraggeber gesprochen. Weiterhin war AMQP zur Anbindung von Legacy-Systemen und das Betreiben von Software in der Cloud das Thema. Es gab dann noch einiges über Ruby und Frontendentwicklung zu erzählen. Und zum Schluss gibt es dann, wie immer, dann noch ein paar Hinweise auf interessante Events in nächster Zeit.</p>
+
+<h3>Unser Gast (00:00:00)</h3>
+
+<ul>
+<li>Michael Bumann (<a href="https://twitter.com/bumi">@bumi</a>, <a href="http://michaelbumann.com">http://michaelbumann.com</a>) hat Railslove gegründet und arbeitet da</li>
+<li>Arbeitet gerade an einer Merchant Portal für einen Payment Service Provider</li>
+<li>Bumi trinkt Tegernseer Hell</li>
+<li>Basti trinkt Augustiner Edelstoff</li>
+<li>Coworking in Köln: <a href="https://www.facebook.com/cowoco">https://www.facebook.com/cowoco</a></li>
+<li>Basti erinnert sich an das Wikipedia Assoziationsspiel: <a href="http://www.re-publica.de/sessions/six-degrees-wikipedia">http://www.re-publica.de/sessions/six-degrees-wikipedia</a>
+(gehört bei <a href="http://not-safe-for-work.de/nsfw070/">http://not-safe-for-work.de/nsfw070/</a>)</li>
+</ul>
+
+<h3>Software Engineering (00:06:35)</h3>
+
+<ul>
+<li>PSP: Payment-Service-Provide (<a href="http://en.wikipedia.org/wiki/Payment_service_provider">http://en.wikipedia.org/wiki/Payment_service_provider</a>)</li>
+<li>Bankenumfeld bedeutet immer auch Legacy-Systeme anbinden</li>
+<li>Message-basierte Kommunikation auf Basis von AMQP (<a href="http://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol">http://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol</a>)
+mit RabbitMQ (<a href="http://www.rabbitmq.com/">http://www.rabbitmq.com/</a>)</li>
+<li>Entkopplung von Systemen durch Messaging</li>
+<li>Railslove macht nicht nur &quot;einfache&quot; Entwicklung, sondern arbeitet
+in einem ganzheitlichen Ansatz: Anforderungen ermitteln, Technologie
+auswählen, Implementierung bis hin zu UI-Unterstützung</li>
+<li>AMQP scheint im Bankensektor sehr verbreitet</li>
+<li>In Ruby verwendet man das amqp-gem (<a href="https://github.com/ruby-amqp/amqp/">https://github.com/ruby-amqp/amqp/</a>)</li>
+<li>Fehlerbehandlung ist nicht trivial</li>
+<li>Testing von asynchronem Code ist immer schwierig
+
+<ul>
+<li>Fokus auf Unit-Testing</li>
+<li>Callbacks testbar machen: Der Anwendungsfall™ für die
+<code>method</code>-Methode</li>
+</ul></li>
+<li>Failover-Testing ist auch hart…</li>
+</ul>
+
+<h3>Monitoring (00:29:36)</h3>
+
+<ul>
+<li>Monitoring to the rescue
+
+<ul>
+<li>RabbitMQ hat ein hervorragendes Monitoring Plugin: <a href="http://www.rabbitmq.com/management.html">http://www.rabbitmq.com/management.html</a></li>
+<li>Unabhängig von RabbitMQ Events erzeugen, um sich ein Dashboard
+zusammenbauen zu können</li>
+</ul></li>
+<li>Welche Möglichkeiten gibt es:
+
+<ul>
+<li>Hosted Graphite, z.B. <a href="https://www.hostedgraphite.com/">https://www.hostedgraphite.com/</a></li>
+<li><code>ActiveSupport::Notifications</code></li>
+<li>Custom Events bei NewRelic: <a href="https://newrelic.com/docs/instrumentation/custom-metric-collection">https://newrelic.com/docs/instrumentation/custom-metric-collection</a></li>
+</ul></li>
+<li>Spannend ist es wenn es nicht nur ums Anzeigen geht, sondern wenn
+man darauf Alerts definiert</li>
+<li>Es gibt eine Vielzahl von gehosteten Lösungen, die preislich alle
+irgendwann nicht mehr skalieren.</li>
+<li>Events über Logging
+
+<ul>
+<li>Papertrail (<a href="https://papertrailapp.com/">https://papertrailapp.com/</a>)</li>
+<li>Splunkstorm (<a href="https://www.splunkstorm.com/">https://www.splunkstorm.com/</a>)</li>
+</ul></li>
+</ul>
+
+<h3>Ops (00:39:10)</h3>
+
+<ul>
+<li><a href="http://www.baremetalcloud.com/index.php/en/">http://www.baremetalcloud.com/index.php/en/</a></li>
+<li>Amazon EC2 Instance Pricing Calculator: <a href="http://promptcloud.com/ec2-ondemand-vs-reserved-instance-pricing.php">http://promptcloud.com/ec2-ondemand-vs-reserved-instance-pricing.php</a></li>
+<li>Why I Dislike EC2 (Karl Seguin): <a href="http://openmymind.net/Why-I-Dislike-ec2/">http://openmymind.net/Why-I-Dislike-ec2/</a></li>
+<li>Die Cloud macht erst dann wirklich Sinn, wenn man sehr viele der angebotenen Dienste auch nutzt</li>
+<li>Railslove benutzt viel Brightbox (<a href="http://brightbox.com/">http://brightbox.com/</a>)</li>
+<li>Brightbox Ruby PPA: <a href="http://tech.brightbox.com/posts/2013-05-31-passenger-and-ruby-ubuntu-updates/">http://tech.brightbox.com/posts/2013-05-31-passenger-and-ruby-ubuntu-updates/</a></li>
+<li>New Relic von Tilde, Inc.: <a href="https://github.com/tokaido/tokaidoapp#readme">https://github.com/tokaido/tokaidoapp#readme</a>)</li>
+</ul>
+
+<h3>Ruby (00:53:15)</h3>
+
+<ul>
+<li>Fahrplan für Ruby 2.1: <a href="http://rvm.jp/t.pdf">http://rvm.jp/t.pdf</a></li>
+<li>Ruby Lang (inkl. Doku) auf GitHub: <a href="https://github.com/ruby/www.ruby-lang.org">https://github.com/ruby/www.ruby-lang.org</a></li>
+<li>DTrace: <a href="http://crypt.codemancers.com/posts/2013-05-04-profile-ruby-2-dot-0-apps-using-dtrace-part-2">http://crypt.codemancers.com/posts/2013-05-04-profile-ruby-2-dot-0-apps-using-dtrace-part-2</a></li>
+<li>Octokit, das neue Gem für Github/GHE: <a href="https://github.com/octokit/octokit.rb">https://github.com/octokit/octokit.rb</a></li>
+<li>Futures für ActiveRecord: &quot;Specify queries to be sent all at once to the database. Save round trips!&quot;
+<a href="https://github.com/leoasis/activerecord-futures">https://github.com/leoasis/activerecord-futures</a></li>
+<li>Gem Dependencies: <a href="https://www.gemlou.pe">https://www.gemlou.pe</a></li>
+<li>Gem Hosting
+
+<ul>
+<li><a href="http://www.gemfury.com/">http://www.gemfury.com/</a></li>
+<li><a href="https://github.com/cwninja/geminabox">https://github.com/cwninja/geminabox</a></li>
+</ul></li>
+</ul>
+
+<h3>Rails (01:11:52)</h3>
+
+<ul>
+<li>RailsConf 2013 Videos online: <a href="http://confreaks.com/events/railsconf2013">http://confreaks.com/events/railsconf2013</a></li>
+<li>Watchlater playlist: <a href="http://watchlaterapp.com/folders/4fa7b7866ba60a0d58000023">http://watchlaterapp.com/folders/4fa7b7866ba60a0d58000023</a>) (ask for invites)</li>
+<li>Worst Ideas Ever: <a href="http://www.confreaks.com/videos/198-rubyconf2009-worst-ideas-ever">http://www.confreaks.com/videos/198-rubyconf2009-worst-ideas-ever</a></li>
+<li>“Native” UUIDs in Rails 4 &lt;3 Aaron!: <a href="https://github.com/rails/rails/commit/bc8ebefe9825dbff2cffa29ff015a1e7a31f9812">https://github.com/rails/rails/commit/bc8ebefe9825dbff2cffa29ff015a1e7a31f9812</a></li>
+</ul>
+
+<h3>Tools (01:20:46)</h3>
+
+<ul>
+<li>zsh-lovers - tips, tricks and examples for the Z shell: <a href="http://grml.org/zsh/zsh-lovers.html">http://grml.org/zsh/zsh-lovers.html</a></li>
+</ul>
+
+<h3>Geiler Scheiß (01:24:31)</h3>
+
+<ul>
+<li>The Open Source Report Card: <a href="http://osrc.dfm.io/">http://osrc.dfm.io/</a></li>
+<li>The Sketchnote Handbook: <a href="http://rohdesign.com/book">http://rohdesign.com/book</a></li>
+<li><a href="http://popapp.in/">http://popapp.in/</a></li>
+</ul>
+
+<h3>Geiler Frontend Scheiß (01:30:30)</h3>
+
+<ul>
+<li>Cross-Browser Testing
+
+<ul>
+<li>Browserling: <a href="https://browserling.com/">https://browserling.com/</a></li>
+<li>Browserstack: <a href="http://www.browserstack.com/">http://www.browserstack.com/</a></li>
+<li>CrossBrowserTesting: <a href="http://crossbrowsertesting.com/">http://crossbrowsertesting.com/</a></li>
+<li>modern.IE: <a href="http://www.modern.ie/en-us">http://www.modern.ie/en-us</a></li>
+</ul></li>
+<li>Processing RAW Images mit JavaScript: <a href="http://blog.bitops.com/blog/2013/06/04/webraw-asmjs/">http://blog.bitops.com/blog/2013/06/04/webraw-asmjs/</a></li>
+</ul>
+
+<h3>Events (01:40:06)</h3>
+
+<ul>
+<li>Rails Girls - Summer of Code: <a href="http://railsgirlssummerofcode.org/">http://railsgirlssummerofcode.org/</a></li>
+<li>Railscamp Germany, 27. + 28. Juli: <a href="http://railscamp.github.io/railscamp-germany-2013/">http://railscamp.github.io/railscamp-germany-2013/</a></li>
+<li>Interactive Cologne, 17.-23. Juni: <a href="http://interactive-cologne.com/">http://interactive-cologne.com/</a></li>
+<li>SIGINT in Köln, 5.-7. Juli
+
+<ul>
+<li>Unser Talks auf der SIGINT: <a href="https://frab.cccv.de/export/sigint13/events/5065.html">https://frab.cccv.de/export/sigint13/events/5065.html</a></li>
+</ul></li>
+<li><a href="https://register.dpma.de/DPMAregister/marke/register/3020120063403/DE">https://register.dpma.de/DPMAregister/marke/register/3020120063403/DE</a></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST015" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Unser Gast" />
+          
+            <psc:chapter start="00:06:35" title="Software Engineering" />
+          
+            <psc:chapter start="00:29:36" title="Monitoring" />
+          
+            <psc:chapter start="00:39:10" title="Ops" />
+          
+            <psc:chapter start="00:53:15" title="Ruby" />
+          
+            <psc:chapter start="01:11:52" title="Rails" />
+          
+            <psc:chapter start="01:20:46" title="Tools" />
+          
+            <psc:chapter start="01:24:31" title="Geiler Scheiß" />
+          
+            <psc:chapter start="01:30:30" title="Geiler Frontend Scheiß" />
+          
+            <psc:chapter start="01:40:06" title="Events" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
