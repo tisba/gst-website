@@ -3901,5 +3901,143 @@ irgendwann nicht mehr skalieren.</li>
           
         </item>
         
+        <item>
+          <title>GST016 - WWDC 2013 - Surfin’ USA</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST016 - WWDC 2013 - Surfin’ USA</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst016.mp3" length="30029755" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST016</guid>
+          <pubDate>Tue, 11 Jun 2013 21:14:00 +0200</pubDate>
+          <itunes:duration>00:41:22</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Anlässlich der diesjährigen Apple Entwickler Konferenz und
+der Tatsache, dass es endlich mal wieder einen Live-Stream gab, wollen
+wir uns einen Kommentar nicht nehmen lassen. Wir halten uns diesmal
+bewusst kurz, schneiden aber trotzdem alle Punkte zumindest an.
+Beeindruckt hat uns der neue Mac Pro, bei iOS 7 sind wir uns noch nicht
+sicher und OS X 10.9 macht vor allem den Eindruck, dass aufgeräumt wird.
+
+### Intro (00:00:00)
+
+  * Heute der Kommentar zur WWDC 2013 mit Basti und Dirk
+
+### Neues OS X: Mavericks (00:03:22)
+
+  * http://appleinsider.com/articles/13/06/10/apple-announces-os-x-mavericks-with-finder-tabs -tags-multiple-displays
+  * Ruby 2.0 ist Default in 10.9: https://twitter.com/y8/status/344430545113075712
+  * Tabs im Finder
+  * Tags! (Umgesetzt wahrscheinlich via Spotlight Keywords)
+  * Native Maps Anwendung und neuer Kalender
+  * Endlich ein brauchbarer Multi-Screen Support (und erweiterter Desktop auf Apple-TV)
+  * Viel unter der Haube passiert (Timer Coalescing und Compressed Memory)
+  * Neue Safari Version
+  * iCloud-Keychain
+
+### Hardware (00:20:14)
+
+  * MacBook Air Update (12 Stunden Akkulaufzeit)
+  * Mac Pro
+    * http://appleinsider.com/articles/13/06/10/apple-offers-sneak-peek-at-new-cylindrical-mac-pro-assembled-in-the-usa
+    * http://www.crackajack.de/2013/06/11/darth-pro/
+    * Apple’s Produktseite: http://www.apple.com/mac-pro/
+  * Neue AirPort Extreme (mit 802.11ac Support, IPv6 über PPPoE unklar)
+  * Neue AirPort Time Capsule (wie Extreme nur mit HDD; in 2 und 3 TB)
+
+### iOS 7 (00:27:01)
+
+  * http://appleinsider.com/articles/13/06/10/apple-reveals-overhauled-ios-7-with-flatter-more-colorful-design
+  * Vollständig überarbeitete GUI
+  * Besseres Siri
+  * Besseres Multitasking
+  * AirDrop und Control Center
+  * Find My iPhone Activation Lock für mehr Sicherheit gegen Diebstahl
+  * iTunes Radio
+
+### Sonstiges (00:37:40)
+
+  * Ende des Jahres wohl auch endlich mal ein neues iWork und zum Glück endlich iWork via iCloud
+  * Im (deutschen) Apple Store Zahlung via PayPal möglich: http://store.apple.com/de/help/payments#payments
+  * Gerade Apple Geld für 20% weniger: www.rewe.de/besser-einkaufen/services-im-markt/itunes-geschenkkarte.html]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Anlässlich der diesjährigen Apple Entwickler Konferenz und
+der Tatsache, dass es endlich mal wieder einen Live-Stream gab, wollen
+wir uns einen Kommentar nicht nehmen lassen. Wir halten uns diesmal
+bewusst kurz, schneiden aber trotzdem alle Punkte zumindest an.
+Beeindruckt hat uns der neue Mac Pro, bei iOS 7 sind wir uns noch nicht
+sicher und OS X 10.9 macht vor allem den Eindruck, dass aufgeräumt wird.</p>
+
+<h3>Intro (00:00:00)</h3>
+
+<ul>
+<li>Heute der Kommentar zur WWDC 2013 mit Basti und Dirk</li>
+</ul>
+
+<h3>Neues OS X: Mavericks (00:03:22)</h3>
+
+<ul>
+<li><a href="http://appleinsider.com/articles/13/06/10/apple-announces-os-x-mavericks-with-finder-tabs">http://appleinsider.com/articles/13/06/10/apple-announces-os-x-mavericks-with-finder-tabs</a> -tags-multiple-displays</li>
+<li>Ruby 2.0 ist Default in 10.9: <a href="https://twitter.com/y8/status/344430545113075712">https://twitter.com/y8/status/344430545113075712</a></li>
+<li>Tabs im Finder</li>
+<li>Tags! (Umgesetzt wahrscheinlich via Spotlight Keywords)</li>
+<li>Native Maps Anwendung und neuer Kalender</li>
+<li>Endlich ein brauchbarer Multi-Screen Support (und erweiterter Desktop auf Apple-TV)</li>
+<li>Viel unter der Haube passiert (Timer Coalescing und Compressed Memory)</li>
+<li>Neue Safari Version</li>
+<li>iCloud-Keychain</li>
+</ul>
+
+<h3>Hardware (00:20:14)</h3>
+
+<ul>
+<li>MacBook Air Update (12 Stunden Akkulaufzeit)</li>
+<li>Mac Pro
+
+<ul>
+<li><a href="http://appleinsider.com/articles/13/06/10/apple-offers-sneak-peek-at-new-cylindrical-mac-pro-assembled-in-the-usa">http://appleinsider.com/articles/13/06/10/apple-offers-sneak-peek-at-new-cylindrical-mac-pro-assembled-in-the-usa</a></li>
+<li><a href="http://www.crackajack.de/2013/06/11/darth-pro/">http://www.crackajack.de/2013/06/11/darth-pro/</a></li>
+<li>Apple’s Produktseite: <a href="http://www.apple.com/mac-pro/">http://www.apple.com/mac-pro/</a></li>
+</ul></li>
+<li>Neue AirPort Extreme (mit 802.11ac Support, IPv6 über PPPoE unklar)</li>
+<li>Neue AirPort Time Capsule (wie Extreme nur mit HDD; in 2 und 3 TB)</li>
+</ul>
+
+<h3>iOS 7 (00:27:01)</h3>
+
+<ul>
+<li><a href="http://appleinsider.com/articles/13/06/10/apple-reveals-overhauled-ios-7-with-flatter-more-colorful-design">http://appleinsider.com/articles/13/06/10/apple-reveals-overhauled-ios-7-with-flatter-more-colorful-design</a></li>
+<li>Vollständig überarbeitete GUI</li>
+<li>Besseres Siri</li>
+<li>Besseres Multitasking</li>
+<li>AirDrop und Control Center</li>
+<li>Find My iPhone Activation Lock für mehr Sicherheit gegen Diebstahl</li>
+<li>iTunes Radio</li>
+</ul>
+
+<h3>Sonstiges (00:37:40)</h3>
+
+<ul>
+<li>Ende des Jahres wohl auch endlich mal ein neues iWork und zum Glück endlich iWork via iCloud</li>
+<li>Im (deutschen) Apple Store Zahlung via PayPal möglich: <a href="http://store.apple.com/de/help/payments#payments">http://store.apple.com/de/help/payments#payments</a></li>
+<li>Gerade Apple Geld für 20% weniger: <a href="http://www.rewe.de/besser-einkaufen/services-im-markt/itunes-geschenkkarte.html">www.rewe.de/besser-einkaufen/services-im-markt/itunes-geschenkkarte.html</a></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST016" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro" />
+          
+            <psc:chapter start="00:03:22" title="Neues OS X: Mavericks" />
+          
+            <psc:chapter start="00:20:14" title="Hardware" />
+          
+            <psc:chapter start="00:27:01" title="iOS 7" />
+          
+            <psc:chapter start="00:37:40" title="Sonstiges" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
