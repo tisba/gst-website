@@ -1,0 +1,66 @@
+--- !ruby/struct:Episode
+number: 16
+name: WWDC 2013 - Surfin’ USA
+length: 2482
+media:
+  opus:
+    size: 20510663
+    file_ext: opus
+  descr:
+    size: 9810
+    file_ext: json
+  alac:
+    size: 173852748
+    file_ext: m4a
+  input:
+    size: 437824854
+    file_ext: unprocessed.aif
+  aac:
+    size: 18655016
+    file_ext: m4a
+  mp3:
+    size: 30029755
+    file_ext: mp3
+auphonic_uuid: 2dtZKF2u9mghBGguYiBHQn
+published_at: 2013-06-11 21:14:00.988132000 +02:00
+summary: "**Synopsis:** Anlässlich der diesjährigen Apple Entwickler Konferenz und\r\nder
+  Tatsache, dass es endlich mal wieder einen Live-Stream gab, wollen\r\nwir uns einen
+  Kommentar nicht nehmen lassen. Wir halten uns diesmal\r\nbewusst kurz, schneiden
+  aber trotzdem alle Punkte zumindest an.\r\nBeeindruckt hat uns der neue Mac Pro,
+  bei iOS 7 sind wir uns noch nicht\r\nsicher und OS X 10.9 macht vor allem den Eindruck,
+  dass aufgeräumt wird.\r\n\r\n### Intro (00:00:00)\r\n\r\n  * Heute der Kommentar
+  zur WWDC 2013 mit Basti und Dirk\r\n\r\n### Neues OS X: Mavericks (00:03:22)\r\n\r\n
+  \ * http://appleinsider.com/articles/13/06/10/apple-announces-os-x-mavericks-with-finder-tabs
+  -tags-multiple-displays\r\n  * Ruby 2.0 ist Default in 10.9: https://twitter.com/y8/status/344430545113075712\r\n
+  \ * Tabs im Finder\r\n  * Tags! (Umgesetzt wahrscheinlich via Spotlight Keywords)\r\n
+  \ * Native Maps Anwendung und neuer Kalender\r\n  * Endlich ein brauchbarer Multi-Screen
+  Support (und erweiterter Desktop auf Apple-TV)\r\n  * Viel unter der Haube passiert
+  (Timer Coalescing und Compressed Memory)\r\n  * Neue Safari Version\r\n  * iCloud-Keychain\r\n\r\n###
+  Hardware (00:20:14)\r\n\r\n  * MacBook Air Update (12 Stunden Akkulaufzeit)\r\n
+  \ * Mac Pro\r\n    * http://appleinsider.com/articles/13/06/10/apple-offers-sneak-peek-at-new-cylindrical-mac-pro-assembled-in-the-usa\r\n
+  \   * http://www.crackajack.de/2013/06/11/darth-pro/\r\n    * Apple’s Produktseite:
+  http://www.apple.com/mac-pro/\r\n  * Neue AirPort Extreme (mit 802.11ac Support,
+  IPv6 über PPPoE unklar)\r\n  * Neue AirPort Time Capsule (wie Extreme nur mit HDD;
+  in 2 und 3 TB)\r\n\r\n### iOS 7 (00:27:01)\r\n\r\n  * http://appleinsider.com/articles/13/06/10/apple-reveals-overhauled-ios-7-with-flatter-more-colorful-design\r\n
+  \ * Vollständig überarbeitete GUI\r\n  * Besseres Siri\r\n  * Besseres Multitasking\r\n
+  \ * AirDrop und Control Center\r\n  * Find My iPhone Activation Lock für mehr Sicherheit
+  gegen Diebstahl\r\n  * iTunes Radio\r\n\r\n### Sonstiges (00:37:40)\r\n\r\n  * Ende
+  des Jahres wohl auch endlich mal ein neues iWork und zum Glück endlich iWork via
+  iCloud\r\n  * Im (deutschen) Apple Store Zahlung via PayPal möglich: http://store.apple.com/de/help/payments#payments\r\n
+  \ * Gerade Apple Geld für 20% weniger: www.rewe.de/besser-einkaufen/services-im-markt/itunes-geschenkkarte.html"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Intro
+- !ruby/struct:Chapter
+  start: '00:03:22'
+  title: 'Neues OS X: Mavericks'
+- !ruby/struct:Chapter
+  start: '00:20:14'
+  title: Hardware
+- !ruby/struct:Chapter
+  start: '00:27:01'
+  title: iOS 7
+- !ruby/struct:Chapter
+  start: '00:37:40'
+  title: Sonstiges
