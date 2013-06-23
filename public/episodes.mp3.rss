@@ -4039,5 +4039,269 @@ sicher und OS X 10.9 macht vor allem den Eindruck, dass aufgeräumt wird.</p>
           
         </item>
         
+        <item>
+          <title>GST017 - developer-whisperer.DLL</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST017 - developer-whisperer.DLL</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst017.mp3" length="50891453" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST017</guid>
+          <pubDate>Sun, 23 Jun 2013 16:41:14 +0200</pubDate>
+          <itunes:duration>01:10:19</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Wir sprechen mit Oliver Thylmann über Köln als
+Gründerstadt, Gründungen im Allgemeinen, die Firma der Zukunft und und
+und. Dabei schweifen wir (also Oli) immer wieder mal ab, haben uns dann
+aber doch ganz gut im Zaum gehalten und ein gutes zeitiges Ende
+gefunden. Vielen Dank an @luebken für die Shownotes!
+
+### Unser Gast (00:00:00)
+
+  * Oliver Thylmann (@othylmann), Kölner Serial Entrepreneur
+  * Search Engine Spamming in der Jugend
+  * …, Ligatus, Ormigo, Adcloud, …
+  * Jetzt: Wieder was neues mit Henning in Köln
+
+### Köln als Gründungsstadt (00:04:52)
+
+  * Berlin ist weniger “kompakt” als z.B. Köln
+  * Oli: “Der noch nicht eröffnete Berliner Flughafen kostet so viel im Jahr, wie in deutsche Startups investiert wird”
+  * Köln hat eine gute Lage und ist gut angebunden
+  * Köln wird mehr und mehr besser vernetzt und es beginnt sich zu clustern
+  * Wir brauchen noch ein Oberholz (http://www.sanktoberholz.de/). Ein
+    Kaffee wie in Berlin wo alle Leute sich so treffen. Im Moment muss
+    so was wie der Startplatz herhalten.
+  * Virtuelle Firma: 150 km auseinander. Man trifft 2-3 Tage die Woche in einem Kaffee. Und es gibt Meetingräume.
+  * Oli sieht Köln als Gründerstadt. Wir haben recht viel. Nur es ist nicht so “laut”.
+    * Ein paar alte Beispiele: QSC, Sedo, Onvista, Is. Teledata
+  * Es fängt langsam an das sich Leute lose treffen. z.B. im Startplatz
+  * Klarstellung: Das Homeoffice ist **nicht** in der Südstadt!
+  * Vom Gefühl ist der Spot in der Ecke Mediapark, Friesenplatz, Brüssler Platz.
+  * Die Leute gehen nach Berlin und kommen teilweise wieder zurück.
+    * z.B.: Ich baue ein Mobile Startup. Warum muss ich nach Berlin, wenn Vodafone etc. hier sind?
+
+### Virtuelles Unternehmen, Remote Arbeiten (00:17:03)
+
+  * Was funktioniert als “virtuelles” Unternehmen gut? z.B. Wordpress, Github funktionieren gut. Das sind Produktfirmen.
+  * Wenn es nicht aus den Leuten raus kommt, dann brauchst Du wieder einen Produktmensch.
+  * Gerne virtuell. Aber ab und zu muss man sich treffen.
+  * Erste Gehversuche mit einem Remote-Entwickler: Ständiger Google-Hangout.
+  * “Es geht nicht darum was Du vorne in die Leitung rein pummst, sondern das was hinten raus kommt.” (DeHug?)
+
+### Die Firma der Zukunft (00:20:09)
+
+  * Wie setze ich eine Firma auf? Warum arbeiten die Leute in einer Firma?
+  * Was sind die Probleme die wir heute lösen?
+  * Gary Hammel: Future of Management (http://www.youtube.com/watch?v=K3-_IY66tpI)
+  * Arbeiten und Management im Wandel: Aber was ist das “andere” Management Prinzip?
+  * Firmen müssen innovativ am Kunden arbeiten. Der “klassische” Manager ist nicht beim Kunden! Wie kann man den Leuten am Kunden Entscheidungsmacht geben?
+    * In einem Hotel: Jeder Mitarbeiter hat 2000 USD um Probleme von Kunden zu lösen.
+    * Whole Foods (www.wholefoodsmarket.com): Stacked Ranking.
+    * Valve (www.valvesoftware.com): Es gibt keine Chef, sondern ein Handbuch: http://assets.sbnation.com/assets/1074301/Valve_Handbook_LowRes.pdf
+  * Valve hat aber auch Stacked Ranking. Es werden zwar nicht die unteren 5% gefeuert, trotzdem gibt es direktes Feedback.
+  * Oli Fragt sich: Wie würde die Firma aussehen wo die sehr guten Leuten arbeiten wenn es denen erstmal nicht mehr um Geld geht.
+  * Oli: “Die guten Leute sind besser besser, als sie teurer sind”; überproportional war das Wort, was Oli suchte :)
+  * Nettes Buch: Antifragile: Things That Gain from Disorder von Nassim Nicholas Taleb (http://www.amazon.de/Antifragile-Things-That-Gain-Disorder/dp/1400067820)
+    * Wie baue ich etwas auf, so dass ich ein Grundrauschen habe um nicht zu sterben und dann irgendwann die richtige Idee zu haben.
+  * Jeff Bezos: “Du musst viele Sachen ausprobieren, um Innovation zu haben”
+  * Welche Freiheiten muss ich den Leuten geben?
+
+### Developer Loveland (00:27:30)
+
+  * Aktuelle Idee von Oli: Developer Loveland, kurz DLL ^^
+  * Gesucht: Gute Entwickler? Innovation? Grundrauschen?
+  * Leuten die Möglichkeit geben, Ideen auszuprobieren; 10-20% der Sachen werden funktionieren und der Rest wird auch irgendwie nutzbar sein
+  * Wenn man das macht braucht man als erstes Menschen die Prototypen bauen können.
+  * DLL könnte ein Safety Net sein und man bekommst so die guten Leute die nicht den Sprung zur Gründung wagen.
+  * Wir überlegen, wie groß das ganze sein müsste und Oli kommt zum Schluß, dass es gerade in groß richtig Sinn macht.
+
+### Wert von Ideen, Jobs, SaaS Pricing (00:37:50)
+
+  * NDAs sind Quatsch. Jeder VC lehnt es ab und sagt “dann erzähl es mir halt nicht”.
+  * Umsetzung/Ausführung ist alles bei einer Idee
+    * Oli: Man kann über die Samwers sagen was man will, aber Execution können die.
+    * Ripple-Network (https://ripple.com/): Bitcoin Richtung, Remittance Market; Größter Player in Indien. Aktuell: 5,8 Millarden USD Gebühren der Banken damit Inder weltweit Geld nach Hause schicken können.
+  * Quantified Self: Es gibt einen BH der den Blutfluss misst und Brustkrebs erkennt.
+  * “Andere Seite Flachbildschirm Jobs”
+  * Dirk erzählt vom wenigen Spielraum, die Autohändler beim Leasing am Interface haben
+  * SaaS und Enterprise Markt: Entscheidungen kommen immer mehr von unten
+  * Oli prangert das Preismodel von Github Enterprise an!
+
+### Glückliche Kunden (00:49:44)
+
+  * Net Promoter Score: Würdest Du uns weiter empfehlen? 0-10. http://en.wikipedia.org/wiki/Net_Promoter
+  * Call-Center: Da wird nichts weitergeleitet, sondern wenn man sich einem Problem angenommen hat löst man es auch.
+  * “Glückliche Kunden erzählen es 10 Leuten, unglückliche erzählen es 1000”
+  * Dirk erzählt von dänischen Ferienhäusern, deren Vermittlung und Sommerfesten
+  * Was gibt es noch? Das einzige was es noch gibt? Innovation am Kunden!
+  * “Wer ist denn heutzutage noch intelligenter als ein 30 Minuten Gesurfter?”
+  * Agilgedöns, “der ganze agile Scheiß.”
+  * “If you don’t like change. You like irrelevancy even less.”
+  * Was ist ein Manager in der Zukunft: Jemand mit Marktverständnis und der ein Netzwerk hat.
+  * Erfahrung ist unmenschlich wichtig. z.B. von Klaus Hommels.
+
+### Zum Abschluß (01:01:03)
+
+  * Interactive Cologne: Die Kölner SXSW (South By South West) - http://interactive-cologne.com
+  * Hack on Startup in der Trinitatis Kirche in Köln. Ist wirklich gut geworden. Gute Pitches. Gute VCs. Gute Hacker.
+  * Man trifft die Kölner Szene.
+  * Warum der Startplatz: "Es gibt Menschen die sich um die Spülmaschine kümmern."
+  * Unperfekt Haus (http://www.unperfekthaus.de/). Geben nur 10 € aus für eine Putzfrau. Er nimmt Eintritt für nicht Künstler die durch das Haus gehen.
+  * Oli hat jede Geekstammtisch Folge gehört! \o/]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Wir sprechen mit Oliver Thylmann über Köln als
+Gründerstadt, Gründungen im Allgemeinen, die Firma der Zukunft und und
+und. Dabei schweifen wir (also Oli) immer wieder mal ab, haben uns dann
+aber doch ganz gut im Zaum gehalten und ein gutes zeitiges Ende
+gefunden. Vielen Dank an <a href="https://twitter.com/luebken">@luebken</a> für die Shownotes!</p>
+
+<h3>Unser Gast (00:00:00)</h3>
+
+<ul>
+<li>Oliver Thylmann (<a href="https://twitter.com/othylmann">@othylmann</a>), Kölner Serial Entrepreneur</li>
+<li>Search Engine Spamming in der Jugend</li>
+<li>…, Ligatus, Ormigo, Adcloud, …</li>
+<li>Jetzt: Wieder was neues mit Henning in Köln</li>
+</ul>
+
+<h3>Köln als Gründungsstadt (00:04:52)</h3>
+
+<ul>
+<li>Berlin ist weniger “kompakt” als z.B. Köln</li>
+<li>Oli: “Der noch nicht eröffnete Berliner Flughafen kostet so viel im Jahr, wie in deutsche Startups investiert wird”</li>
+<li>Köln hat eine gute Lage und ist gut angebunden</li>
+<li>Köln wird mehr und mehr besser vernetzt und es beginnt sich zu clustern</li>
+<li>Wir brauchen noch ein Oberholz (<a href="http://www.sanktoberholz.de/">http://www.sanktoberholz.de/</a>). Ein
+Kaffee wie in Berlin wo alle Leute sich so treffen. Im Moment muss
+so was wie der Startplatz herhalten.</li>
+<li>Virtuelle Firma: 150 km auseinander. Man trifft 2-3 Tage die Woche in einem Kaffee. Und es gibt Meetingräume.</li>
+<li>Oli sieht Köln als Gründerstadt. Wir haben recht viel. Nur es ist nicht so “laut”.
+
+<ul>
+<li>Ein paar alte Beispiele: QSC, Sedo, Onvista, Is. Teledata</li>
+</ul></li>
+<li>Es fängt langsam an das sich Leute lose treffen. z.B. im Startplatz</li>
+<li>Klarstellung: Das Homeoffice ist <strong>nicht</strong> in der Südstadt!</li>
+<li>Vom Gefühl ist der Spot in der Ecke Mediapark, Friesenplatz, Brüssler Platz.</li>
+<li>Die Leute gehen nach Berlin und kommen teilweise wieder zurück.
+
+<ul>
+<li>z.B.: Ich baue ein Mobile Startup. Warum muss ich nach Berlin, wenn Vodafone etc. hier sind?</li>
+</ul></li>
+</ul>
+
+<h3>Virtuelles Unternehmen, Remote Arbeiten (00:17:03)</h3>
+
+<ul>
+<li>Was funktioniert als “virtuelles” Unternehmen gut? z.B. Wordpress, Github funktionieren gut. Das sind Produktfirmen.</li>
+<li>Wenn es nicht aus den Leuten raus kommt, dann brauchst Du wieder einen Produktmensch.</li>
+<li>Gerne virtuell. Aber ab und zu muss man sich treffen.</li>
+<li>Erste Gehversuche mit einem Remote-Entwickler: Ständiger Google-Hangout.</li>
+<li>“Es geht nicht darum was Du vorne in die Leitung rein pummst, sondern das was hinten raus kommt.” (DeHug?)</li>
+</ul>
+
+<h3>Die Firma der Zukunft (00:20:09)</h3>
+
+<ul>
+<li>Wie setze ich eine Firma auf? Warum arbeiten die Leute in einer Firma?</li>
+<li>Was sind die Probleme die wir heute lösen?</li>
+<li>Gary Hammel: Future of Management (<a href="http://www.youtube.com/watch?v=K3-_IY66tpI">http://www.youtube.com/watch?v=K3-_IY66tpI</a>)</li>
+<li>Arbeiten und Management im Wandel: Aber was ist das “andere” Management Prinzip?</li>
+<li>Firmen müssen innovativ am Kunden arbeiten. Der “klassische” Manager ist nicht beim Kunden! Wie kann man den Leuten am Kunden Entscheidungsmacht geben?
+
+<ul>
+<li>In einem Hotel: Jeder Mitarbeiter hat 2000 USD um Probleme von Kunden zu lösen.</li>
+<li>Whole Foods (<a href="http://www.wholefoodsmarket.com):">www.wholefoodsmarket.com):</a> Stacked Ranking.</li>
+<li>Valve (<a href="http://www.valvesoftware.com):">www.valvesoftware.com):</a> Es gibt keine Chef, sondern ein Handbuch: <a href="http://assets.sbnation.com/assets/1074301/Valve_Handbook_LowRes.pdf">http://assets.sbnation.com/assets/1074301/Valve_Handbook_LowRes.pdf</a></li>
+</ul></li>
+<li>Valve hat aber auch Stacked Ranking. Es werden zwar nicht die unteren 5% gefeuert, trotzdem gibt es direktes Feedback.</li>
+<li>Oli Fragt sich: Wie würde die Firma aussehen wo die sehr guten Leuten arbeiten wenn es denen erstmal nicht mehr um Geld geht.</li>
+<li>Oli: “Die guten Leute sind besser besser, als sie teurer sind”; überproportional war das Wort, was Oli suchte :)</li>
+<li>Nettes Buch: Antifragile: Things That Gain from Disorder von Nassim Nicholas Taleb (<a href="http://www.amazon.de/Antifragile-Things-That-Gain-Disorder/dp/1400067820">http://www.amazon.de/Antifragile-Things-That-Gain-Disorder/dp/1400067820</a>)
+
+<ul>
+<li>Wie baue ich etwas auf, so dass ich ein Grundrauschen habe um nicht zu sterben und dann irgendwann die richtige Idee zu haben.</li>
+</ul></li>
+<li>Jeff Bezos: “Du musst viele Sachen ausprobieren, um Innovation zu haben”</li>
+<li>Welche Freiheiten muss ich den Leuten geben?</li>
+</ul>
+
+<h3>Developer Loveland (00:27:30)</h3>
+
+<ul>
+<li>Aktuelle Idee von Oli: Developer Loveland, kurz DLL ^^</li>
+<li>Gesucht: Gute Entwickler? Innovation? Grundrauschen?</li>
+<li>Leuten die Möglichkeit geben, Ideen auszuprobieren; 10-20% der Sachen werden funktionieren und der Rest wird auch irgendwie nutzbar sein</li>
+<li>Wenn man das macht braucht man als erstes Menschen die Prototypen bauen können.</li>
+<li>DLL könnte ein Safety Net sein und man bekommst so die guten Leute die nicht den Sprung zur Gründung wagen.</li>
+<li>Wir überlegen, wie groß das ganze sein müsste und Oli kommt zum Schluß, dass es gerade in groß richtig Sinn macht.</li>
+</ul>
+
+<h3>Wert von Ideen, Jobs, SaaS Pricing (00:37:50)</h3>
+
+<ul>
+<li>NDAs sind Quatsch. Jeder VC lehnt es ab und sagt “dann erzähl es mir halt nicht”.</li>
+<li>Umsetzung/Ausführung ist alles bei einer Idee
+
+<ul>
+<li>Oli: Man kann über die Samwers sagen was man will, aber Execution können die.</li>
+<li>Ripple-Network (<a href="https://ripple.com/):">https://ripple.com/):</a> Bitcoin Richtung, Remittance Market; Größter Player in Indien. Aktuell: 5,8 Millarden USD Gebühren der Banken damit Inder weltweit Geld nach Hause schicken können.</li>
+</ul></li>
+<li>Quantified Self: Es gibt einen BH der den Blutfluss misst und Brustkrebs erkennt.</li>
+<li>“Andere Seite Flachbildschirm Jobs”</li>
+<li>Dirk erzählt vom wenigen Spielraum, die Autohändler beim Leasing am Interface haben</li>
+<li>SaaS und Enterprise Markt: Entscheidungen kommen immer mehr von unten</li>
+<li>Oli prangert das Preismodel von Github Enterprise an!</li>
+</ul>
+
+<h3>Glückliche Kunden (00:49:44)</h3>
+
+<ul>
+<li>Net Promoter Score: Würdest Du uns weiter empfehlen? 0-10. <a href="http://en.wikipedia.org/wiki/Net_Promoter">http://en.wikipedia.org/wiki/Net_Promoter</a></li>
+<li>Call-Center: Da wird nichts weitergeleitet, sondern wenn man sich einem Problem angenommen hat löst man es auch.</li>
+<li>“Glückliche Kunden erzählen es 10 Leuten, unglückliche erzählen es 1000”</li>
+<li>Dirk erzählt von dänischen Ferienhäusern, deren Vermittlung und Sommerfesten</li>
+<li>Was gibt es noch? Das einzige was es noch gibt? Innovation am Kunden!</li>
+<li>“Wer ist denn heutzutage noch intelligenter als ein 30 Minuten Gesurfter?”</li>
+<li>Agilgedöns, “der ganze agile Scheiß.”</li>
+<li>“If you don’t like change. You like irrelevancy even less.”</li>
+<li>Was ist ein Manager in der Zukunft: Jemand mit Marktverständnis und der ein Netzwerk hat.</li>
+<li>Erfahrung ist unmenschlich wichtig. z.B. von Klaus Hommels.</li>
+</ul>
+
+<h3>Zum Abschluß (01:01:03)</h3>
+
+<ul>
+<li>Interactive Cologne: Die Kölner SXSW (South By South West) - <a href="http://interactive-cologne.com">http://interactive-cologne.com</a></li>
+<li>Hack on Startup in der Trinitatis Kirche in Köln. Ist wirklich gut geworden. Gute Pitches. Gute VCs. Gute Hacker.</li>
+<li>Man trifft die Kölner Szene.</li>
+<li>Warum der Startplatz: &quot;Es gibt Menschen die sich um die Spülmaschine kümmern.&quot;</li>
+<li>Unperfekt Haus (<a href="http://www.unperfekthaus.de/">http://www.unperfekthaus.de/</a>). Geben nur 10 € aus für eine Putzfrau. Er nimmt Eintritt für nicht Künstler die durch das Haus gehen.</li>
+<li>Oli hat jede Geekstammtisch Folge gehört! \o/</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST017" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Unser Gast" />
+          
+            <psc:chapter start="00:04:52" title="Köln als Gründungsstadt" />
+          
+            <psc:chapter start="00:17:03" title="Virtuelles Unternehmen, Remote Arbeiten" />
+          
+            <psc:chapter start="00:20:09" title="Die Firma der Zukunft" />
+          
+            <psc:chapter start="00:27:30" title="Developer Loveland" />
+          
+            <psc:chapter start="00:37:50" title="Wert von Ideen, Jobs, SaaS Pricing" />
+          
+            <psc:chapter start="00:49:44" title="Glückliche Kunden" />
+          
+            <psc:chapter start="01:01:03" title="Zum Abschluß" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>

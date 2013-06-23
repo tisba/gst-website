@@ -1,0 +1,132 @@
+--- !ruby/struct:Episode
+number: 17
+name: developer-whisperer.DLL
+length: 4219
+media:
+  opus:
+    size: 34377644
+    file_ext: opus
+  descr:
+    size: 15956
+    file_ext: json
+  alac:
+    size: 278664181
+    file_ext: m4a
+  input:
+    size: 745680942
+    file_ext: unprocessed.aif
+  aac:
+    size: 31162369
+    file_ext: m4a
+  mp3:
+    size: 50891453
+    file_ext: mp3
+auphonic_uuid: NnvAow5dzSNMyFZzZmfxmX
+published_at: 2013-06-23 16:41:14.991096000 +02:00
+summary: "**Synopsis:** Wir sprechen mit Oliver Thylmann über Köln als\r\nGründerstadt,
+  Gründungen im Allgemeinen, die Firma der Zukunft und und\r\nund. Dabei schweifen
+  wir (also Oli) immer wieder mal ab, haben uns dann\r\naber doch ganz gut im Zaum
+  gehalten und ein gutes zeitiges Ende\r\ngefunden. Vielen Dank an @luebken für die
+  Shownotes!\r\n\r\n### Unser Gast (00:00:00)\r\n\r\n  * Oliver Thylmann (@othylmann),
+  Kölner Serial Entrepreneur\r\n  * Search Engine Spamming in der Jugend\r\n  * …,
+  Ligatus, Ormigo, Adcloud, …\r\n  * Jetzt: Wieder was neues mit Henning in Köln\r\n\r\n###
+  Köln als Gründungsstadt (00:04:52)\r\n\r\n  * Berlin ist weniger “kompakt” als z.B.
+  Köln\r\n  * Oli: “Der noch nicht eröffnete Berliner Flughafen kostet so viel im
+  Jahr, wie in deutsche Startups investiert wird”\r\n  * Köln hat eine gute Lage und
+  ist gut angebunden\r\n  * Köln wird mehr und mehr besser vernetzt und es beginnt
+  sich zu clustern\r\n  * Wir brauchen noch ein Oberholz (http://www.sanktoberholz.de/).
+  Ein\r\n    Kaffee wie in Berlin wo alle Leute sich so treffen. Im Moment muss\r\n
+  \   so was wie der Startplatz herhalten.\r\n  * Virtuelle Firma: 150 km auseinander.
+  Man trifft 2-3 Tage die Woche in einem Kaffee. Und es gibt Meetingräume.\r\n  *
+  Oli sieht Köln als Gründerstadt. Wir haben recht viel. Nur es ist nicht so “laut”.\r\n
+  \   * Ein paar alte Beispiele: QSC, Sedo, Onvista, Is. Teledata\r\n  * Es fängt
+  langsam an das sich Leute lose treffen. z.B. im Startplatz\r\n  * Klarstellung:
+  Das Homeoffice ist **nicht** in der Südstadt!\r\n  * Vom Gefühl ist der Spot in
+  der Ecke Mediapark, Friesenplatz, Brüssler Platz.\r\n  * Die Leute gehen nach Berlin
+  und kommen teilweise wieder zurück.\r\n    * z.B.: Ich baue ein Mobile Startup.
+  Warum muss ich nach Berlin, wenn Vodafone etc. hier sind?\r\n\r\n### Virtuelles
+  Unternehmen, Remote Arbeiten (00:17:03)\r\n\r\n  * Was funktioniert als “virtuelles”
+  Unternehmen gut? z.B. Wordpress, Github funktionieren gut. Das sind Produktfirmen.\r\n
+  \ * Wenn es nicht aus den Leuten raus kommt, dann brauchst Du wieder einen Produktmensch.\r\n
+  \ * Gerne virtuell. Aber ab und zu muss man sich treffen.\r\n  * Erste Gehversuche
+  mit einem Remote-Entwickler: Ständiger Google-Hangout.\r\n  * “Es geht nicht darum
+  was Du vorne in die Leitung rein pummst, sondern das was hinten raus kommt.” (DeHug?)\r\n\r\n###
+  Die Firma der Zukunft (00:20:09)\r\n\r\n  * Wie setze ich eine Firma auf? Warum
+  arbeiten die Leute in einer Firma?\r\n  * Was sind die Probleme die wir heute lösen?\r\n
+  \ * Gary Hammel: Future of Management (http://www.youtube.com/watch?v=K3-_IY66tpI)\r\n
+  \ * Arbeiten und Management im Wandel: Aber was ist das “andere” Management Prinzip?\r\n
+  \ * Firmen müssen innovativ am Kunden arbeiten. Der “klassische” Manager ist nicht
+  beim Kunden! Wie kann man den Leuten am Kunden Entscheidungsmacht geben?\r\n    *
+  In einem Hotel: Jeder Mitarbeiter hat 2000 USD um Probleme von Kunden zu lösen.\r\n
+  \   * Whole Foods (www.wholefoodsmarket.com): Stacked Ranking.\r\n    * Valve (www.valvesoftware.com):
+  Es gibt keine Chef, sondern ein Handbuch: http://assets.sbnation.com/assets/1074301/Valve_Handbook_LowRes.pdf\r\n
+  \ * Valve hat aber auch Stacked Ranking. Es werden zwar nicht die unteren 5% gefeuert,
+  trotzdem gibt es direktes Feedback.\r\n  * Oli Fragt sich: Wie würde die Firma aussehen
+  wo die sehr guten Leuten arbeiten wenn es denen erstmal nicht mehr um Geld geht.\r\n
+  \ * Oli: “Die guten Leute sind besser besser, als sie teurer sind”; überproportional
+  war das Wort, was Oli suchte :)\r\n  * Nettes Buch: Antifragile: Things That Gain
+  from Disorder von Nassim Nicholas Taleb (http://www.amazon.de/Antifragile-Things-That-Gain-Disorder/dp/1400067820)\r\n
+  \   * Wie baue ich etwas auf, so dass ich ein Grundrauschen habe um nicht zu sterben
+  und dann irgendwann die richtige Idee zu haben.\r\n  * Jeff Bezos: “Du musst viele
+  Sachen ausprobieren, um Innovation zu haben”\r\n  * Welche Freiheiten muss ich den
+  Leuten geben?\r\n\r\n### Developer Loveland (00:27:30)\r\n\r\n  * Aktuelle Idee
+  von Oli: Developer Loveland, kurz DLL ^^\r\n  * Gesucht: Gute Entwickler? Innovation?
+  Grundrauschen?\r\n  * Leuten die Möglichkeit geben, Ideen auszuprobieren; 10-20%
+  der Sachen werden funktionieren und der Rest wird auch irgendwie nutzbar sein\r\n
+  \ * Wenn man das macht braucht man als erstes Menschen die Prototypen bauen können.\r\n
+  \ * DLL könnte ein Safety Net sein und man bekommst so die guten Leute die nicht
+  den Sprung zur Gründung wagen.\r\n  * Wir überlegen, wie groß das ganze sein müsste
+  und Oli kommt zum Schluß, dass es gerade in groß richtig Sinn macht.\r\n\r\n###
+  Wert von Ideen, Jobs, SaaS Pricing (00:37:50)\r\n\r\n  * NDAs sind Quatsch. Jeder
+  VC lehnt es ab und sagt “dann erzähl es mir halt nicht”.\r\n  * Umsetzung/Ausführung
+  ist alles bei einer Idee\r\n    * Oli: Man kann über die Samwers sagen was man will,
+  aber Execution können die.\r\n    * Ripple-Network (https://ripple.com/): Bitcoin
+  Richtung, Remittance Market; Größter Player in Indien. Aktuell: 5,8 Millarden USD
+  Gebühren der Banken damit Inder weltweit Geld nach Hause schicken können.\r\n  *
+  Quantified Self: Es gibt einen BH der den Blutfluss misst und Brustkrebs erkennt.\r\n
+  \ * “Andere Seite Flachbildschirm Jobs”\r\n  * Dirk erzählt vom wenigen Spielraum,
+  die Autohändler beim Leasing am Interface haben\r\n  * SaaS und Enterprise Markt:
+  Entscheidungen kommen immer mehr von unten\r\n  * Oli prangert das Preismodel von
+  Github Enterprise an!\r\n\r\n### Glückliche Kunden (00:49:44)\r\n\r\n  * Net Promoter
+  Score: Würdest Du uns weiter empfehlen? 0-10. http://en.wikipedia.org/wiki/Net_Promoter\r\n
+  \ * Call-Center: Da wird nichts weitergeleitet, sondern wenn man sich einem Problem
+  angenommen hat löst man es auch.\r\n  * “Glückliche Kunden erzählen es 10 Leuten,
+  unglückliche erzählen es 1000”\r\n  * Dirk erzählt von dänischen Ferienhäusern,
+  deren Vermittlung und Sommerfesten\r\n  * Was gibt es noch? Das einzige was es noch
+  gibt? Innovation am Kunden!\r\n  * “Wer ist denn heutzutage noch intelligenter als
+  ein 30 Minuten Gesurfter?”\r\n  * Agilgedöns, “der ganze agile Scheiß.”\r\n  * “If
+  you don’t like change. You like irrelevancy even less.”\r\n  * Was ist ein Manager
+  in der Zukunft: Jemand mit Marktverständnis und der ein Netzwerk hat.\r\n  * Erfahrung
+  ist unmenschlich wichtig. z.B. von Klaus Hommels.\r\n\r\n### Zum Abschluß (01:01:03)\r\n\r\n
+  \ * Interactive Cologne: Die Kölner SXSW (South By South West) - http://interactive-cologne.com\r\n
+  \ * Hack on Startup in der Trinitatis Kirche in Köln. Ist wirklich gut geworden.
+  Gute Pitches. Gute VCs. Gute Hacker.\r\n  * Man trifft die Kölner Szene.\r\n  *
+  Warum der Startplatz: \"Es gibt Menschen die sich um die Spülmaschine kümmern.\"\r\n
+  \ * Unperfekt Haus (http://www.unperfekthaus.de/). Geben nur 10 € aus für eine Putzfrau.
+  Er nimmt Eintritt für nicht Künstler die durch das Haus gehen.\r\n  * Oli hat jede
+  Geekstammtisch Folge gehört! \\o/"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Unser Gast
+- !ruby/struct:Chapter
+  start: '00:04:52'
+  title: Köln als Gründungsstadt
+- !ruby/struct:Chapter
+  start: '00:17:03'
+  title: Virtuelles Unternehmen, Remote Arbeiten
+- !ruby/struct:Chapter
+  start: '00:20:09'
+  title: Die Firma der Zukunft
+- !ruby/struct:Chapter
+  start: '00:27:30'
+  title: Developer Loveland
+- !ruby/struct:Chapter
+  start: '00:37:50'
+  title: Wert von Ideen, Jobs, SaaS Pricing
+- !ruby/struct:Chapter
+  start: '00:49:44'
+  title: Glückliche Kunden
+- !ruby/struct:Chapter
+  start: '01:01:03'
+  title: Zum Abschluß
