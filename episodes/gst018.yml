@@ -1,0 +1,148 @@
+--- !ruby/struct:Episode
+number: 18
+name: Runde Ecken
+length: 5151
+media:
+  alac:
+    size: 361836878
+    file_ext: m4a
+  aac:
+    size: 37869747
+    file_ext: m4a
+  mp3:
+    size: 62081670
+    file_ext: mp3
+  input:
+    size: 910366254
+    file_ext: unprocessed.aif
+  descr:
+    size: 19000
+    file_ext: json
+  opus:
+    size: 42286961
+    file_ext: opus
+auphonic_uuid: fK7srncBj7xbquyrABHo9c
+published_at: 2013-06-28 18:09:55.559065000 +02:00
+summary: "### Synopsis\r\nDer Geekstammtisch wird volljährig! Dieses mal sprachen
+  wir mit Sebastian Kippe (@skddc) und sprechen über Hacking Trips, sein Startup 5Apps,
+  das Arbeiten beim W3C, HTTP 2.0, IPv6, SSL, DevOps. Zum Abschluss noch ein ganz
+  besonderes Thema: BitCoins und Namecoin.\r\n\r\n### Unser Gast (00:00:00)\r\n\r\n*
+  Sebastian Kippe (@skddc)\r\n* Gründer von 5Apps ([https://5apps.com/](https://5apps.com/))\r\n*
+  Railscamp Germany 2013 Organizer\r\n* Arbeitet an remoteStorage ([http://remotestorage.io](http://remotestorage.io))
+  und anderen Open Source Projekten\r\n\r\n### Hackertrips (00:02:23)\r\n\r\n* AfricaHackTrip
+  2013: http://africahacktrip.org\r\n* Geeksphone (Firefox OS developer device): [http://www.geeksphone.com](http://www.geeksphone.com)\r\n*
+  Hacker Beach: [http://hackerbeach.org](http://hackerbeach.org)\r\n  * Einfach über
+  Weihnachten mal ein Flugticket buchen und kommen.\r\n\r\n### 5Apps (00:06:08)\r\n\r\n*
+  Haben eine Vision und implementieren verschiedene Produkte, um diese zu erreichen.\r\n*
+  sind WC3 Mitglied: [https://5apps.com/press/2013-05-28-5apps-joins-w3c-to-help-shape-the-web](https://5apps.com/press/2013-05-28-5apps-joins-w3c-to-help-shape-the-web)\r\n*
+  Wir diskutieren über die aktuellen Trends im HTML5/CSS/… Sektor\r\n* Die 5Apps Vision:
+  Alle Anwendungssoftware für den User soll auf der der Open Web Platform aufbauen.\r\n\r\n###
+  Web Apps (00:08:56)\r\n\r\n* Packaging von client-side Web Anwendungen\r\n    *
+  Packaged Web Apps (Widgets) - Packaging and XML Configuration: [http://www.w3.org/TR/widgets/](http://www.w3.org/TR/widgets/)\r\n
+  \   * Open Web App manifest: [https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest](https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest)\r\n*
+  Ausflug: Java Web Start ([https://en.wikipedia.org/wiki/Java_Web_Start](https://en.wikipedia.org/wiki/Java_Web_Start))
+  und Java Applets ([https://en.wikipedia.org/wiki/Java_applet](https://en.wikipedia.org/wiki/Java_applet)).\r\n*
+  Dart: [http://en.wikipedia.org/wiki/Dart_(programming_language)](http://en.wikipedia.org/wiki/Dart_(programming_language))\r\n*
+  Produkte bei Google Apps for Business: [http://www.google.com/enterprise/apps/business/products.html](http://www.google.com/enterprise/apps/business/products.html)\r\n*
+  Google Reader Replacement: Basti und Basti benutzen [https://feedbin.me/](https://feedbin.me/)\r\n*
+  **DIE** RSS Mailing Liste von Brent Simmons: http://inessential.com/2013/03/17/rss-sync_mailing_list\r\n\r\n###
+  5Apps Deploy und Storage & remoteStorage (00:16:00)\r\n\r\n* Das erste Produkt von
+  5Apps: 5Apps Deploy\r\n* PaaS für Client-side JavaScript Apps\r\n* Hilft zusätzlich
+  zu einem \"git push\"-Deploy z.B. beim Packaging\r\n* Weitere zukünftige Dienste
+  von 5Apps Deploy:\r\n    * JavaScript Exception Tracking\r\n    * Web store/payment
+  integration\r\n* 5Apps Storage\r\n    * work in progress (schon experimentell kostenlos
+  bei jedem Account dabei)\r\n    * basiert auf remoteStorage (siehe oben)\r\n    *
+  Idee: Daten liegen nicht beim App-Anbieter (z.B. Google), sondern wo der User das
+  will\r\n* remoteStorage ist ein Protokoll für einen Key-Value Speicher [http://remotestorage.io/](http://remotestorage.io/)
+  [http://tools.ietf.org/html/draft-dejong-remotestorage-01](http://tools.ietf.org/html/draft-dejong-remotestorage-01)\r\n*
+  Webfinger: [https://code.google.com/p/webfinger/](https://code.google.com/p/webfinger/)\r\n*
+  remoteStorage: Umziehen des Anbieters?\r\n    * aktuell nicht direkt vorgesehen,
+  wenn dann muss das der Client machen, oder der Serveranbieter selbst anbieten\r\n
+  \   * Google Takeout: [https://www.google.com/takeout](https://www.google.com/takeout)\r\n*
+  Verschiedene Apps sollen die selben Daten benutzen können\r\n    * und eben nicht
+  wie bei iCloud!\r\n* Konflikte werden im Moment bei remoteStorage noch wenig berücksichtigt
+  :-/\r\n* remoteStorage.js funktioniert auch offline\r\n* ownCloud: [http://owncloud.org](http://owncloud.org/)\r\n*
+  Unhosted: https://unhosted.org\r\n* 5Apps benutzt Riak für ihr remoteStorage Produkt
+  und App Hosting\r\n\r\n### Das W3C, DRM & App Stores (00:27:10)\r\n\r\n* 5Apps ist
+  unter anderem in der Web Apps Working Group: http://www.w3.org/2008/webapps/\r\n*
+  Sebastian ist schon länger in der HTML Working Group\r\n* W3C bei Github: [https://github.com/w3c](https://github.com/w3c)\r\n
+  \   * https://github.com/w3c/manifest\r\n* Der dritte wichtige Schritt bei 5Apps:
+  App Store(s)\r\n* Freie Apps, selbst gehostet, ohne Lock-In\r\n* Open Source als
+  Kern eines Unternehmens gibt es immer häufiger\r\n    * z.B. Basho mit Riak\r\n*
+  Früher™ war das Web schon mal offener\r\n* Wir schweifen kurz richtung Videostandards
+  für’s Web ab: webm/VP8, h.265\r\n* Gedankenexperiment: h.264 freikaufen\r\n* Das
+  W3C und DRM: [http://www.w3.org/QA/2013/03/drm_and_the_open_web.html](http://www.w3.org/QA/2013/03/drm_and_the_open_web.html)\r\n
+  \   * Encrypted Media Extensions: [https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html](https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html)\r\n
+  \   * Proprietäre DRM-Module\r\n    * eigentlich nicht vereinbar mit den Zielen
+  des W3Cs [http://www.w3.org/Consortium/mission#principles](http://www.w3.org/Consortium/mission#principles)\r\n\r\n###
+  HTTP 2.0, IPv6, SSL (00:40:15)\r\n\r\n* HTTP 2.0 (http://en.wikipedia.org/wiki/HTTP_2.0)
+  und SPDY ([http://en.wikipedia.org/wiki/SPDY](http://en.wikipedia.org/wiki/SPDY))\r\n*
+  5Apps unterstützt SPDY für das App Hosting und für den 5Apps Storage\r\n* …aber
+  kein IPv6 :-/\r\n* Custom Domain SSL ist teuer\r\n    * 20 USD/Monat bei Heroku:
+  https://addons.heroku.com/ssl\r\n    * 600 USD/Monat bei AWS CloudFront: [http://aws.amazon.com/cloudfront/custom-ssl-domains/](http://aws.amazon.com/cloudfront/custom-ssl-domains/)\r\n*
+  In neuen Browsern gibt es keine Warnungen mehr bei unsicherem Content, sondern der
+  wird geblockt\r\n\r\n### Ops und Infrastruktur bei 5Apps (00:46:51)\r\n\r\n* 5Apps:
+  zwei Vollzeit Entwickler und ein Infrastruktur-Entwickler: [https://5apps.com/about#team](https://5apps.com/about#team)\r\n*
+  Brightbox Cloud: [http://brightbox.com/](http://brightbox.com/)\r\n    * UK, gute
+  API, Support in fog ([http://fog.io/](http://fog.io/))\r\n* Im Einsatz bei 5Apps:
+  Rails, Sinatra, Unicorn, Resque, Gitolite\r\n* nginx als Webserver, Loadbalancer
+  (intern und extern)\r\n* Riak: [http://basho.com/riak/](http://basho.com/riak/)\r\n*
+  chef: [http://www.opscode.com/chef/](http://www.opscode.com/chef/)\r\n    * Infrastruktur\r\n
+  \   * Deployment ([http://community.opscode.com/cookbooks/application](http://community.opscode.com/cookbooks/application))\r\n
+  \   * Knife Spork [https://github.com/jonlives/knife-spork](https://github.com/jonlives/knife-spork)\r\n*
+  Travis CI Pro: [http://travis-ci.com/](http://travis-ci.com/)\r\n    * CI\r\n    *
+  Asset Compilation\r\n    * Deployment\r\n    * leider noch invite-only\r\n\r\n###
+  Travis Foundation & RailsGirls: Summer of Code (00:57:00)\r\n\r\n* Travis Foundation:
+  [http://about.travis-ci.org/foundation](http://about.travis-ci.org/foundation/)\r\n*
+  RailsGirls Summer of Code: [http://railsgirlssummerofcode.org](http://railsgirlssummerofcode.org)\r\n\r\n###
+  Self-Hosted Cloud, GPG, Apple und HTML5 (01:00:08)\r\n\r\n* 5Apps strebt auch langfristig
+  self-hosting an\r\n* SURFnet: [http://www.surfnet.nl/en/Pages/default.aspx](http://www.surfnet.nl/en/Pages/default.aspx)\r\n*
+  SAML [http://en.wikipedia.org/wiki/Security_Assertion_Markup_Language](http://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)\r\n*
+  Anynines [http://www.anynines.com](http://www.anynines.com/)\r\n* CloudFoundry [http://www.cloudfoundry.com](http://www.cloudfoundry.com)\r\n*
+  GPGMail für OS X [https://gpgtools.org/gpgmail/index.html](https://gpgtools.org/gpgmail/index.html)\r\n*
+  ThinkPad X1 [http://shop.lenovo.com/us/en/laptops/thinkpad/x-series/x1-carbon/index.html](http://shop.lenovo.com/us/en/laptops/thinkpad/x-series/x1-carbon/index.html)\r\n*
+  OS X Mavericks Safari [http://www.apple.com/osx/preview/#safari](http://www.apple.com/osx/preview/#safari)\r\n*
+  Apple Mac Pro website [http://www.apple.com/mac-pro](http://www.apple.com/mac-pro/)\r\n*
+  iWork for iCloud [https://www.apple.com/iwork-for-icloud](https://www.apple.com/iwork-for-icloud/)\r\n*
+  XHTML [http://www.w3.org/TR/xhtml1/](http://www.w3.org/TR/xhtml1/)\r\n* XHTML Fehlerseite
+  für invalides Markup [http://cafe.elharo.com/wp-content/uploads/2008/06/01fig02.png](http://cafe.elharo.com/wp-content/uploads/2008/06/01fig02.png)\r\n\r\n###
+  Bitcoin / Namecoin (01:17:30)\r\n\r\n* Mozilla Persona :[https://persona.org](https://persona.org)\r\n*
+  Bitcoin: [https://en.bitcoin.it/wiki/Main_Page](https://en.bitcoin.it/wiki/Main_Page)\r\n*
+  Namecoin: [http://dot-bit.org/Namecoin](http://dot-bit.org/Namecoin) [http://dot-bit.org/Main_Page](http://dot-bit.org/Main_Page)\r\n*
+  Bitcoin Meetups im Startplatz: [http://www.startplatz.de/event/2-bitcoin-konferenz](http://www.startplatz.de/event/2-bitcoin-konferenz)\r\n*
+  Bitcoin Kiez: [http://bitcoinkiez.wordpress.com](http://bitcoinkiez.wordpress.com)\r\n*
+  Room 77: [http://room77.de](http://room77.de)"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Unser Gast
+- !ruby/struct:Chapter
+  start: '00:02:23'
+  title: Hackertrips
+- !ruby/struct:Chapter
+  start: '00:06:08'
+  title: 5Apps
+- !ruby/struct:Chapter
+  start: '00:08:56'
+  title: Web Apps
+- !ruby/struct:Chapter
+  start: '00:16:00'
+  title: 5Apps Deploy und Storage & remoteStorage
+- !ruby/struct:Chapter
+  start: '00:27:10'
+  title: Das W3C, DRM & App Stores
+- !ruby/struct:Chapter
+  start: '00:40:15'
+  title: HTTP 2.0, IPv6, SSL
+- !ruby/struct:Chapter
+  start: '00:46:51'
+  title: Ops und Infrastruktur bei 5Apps
+- !ruby/struct:Chapter
+  start: '00:57:00'
+  title: 'Travis Foundation & RailsGirls: Summer of Code'
+- !ruby/struct:Chapter
+  start: '01:00:08'
+  title: Self-Hosted Cloud, GPG, Apple und HTML5
+- !ruby/struct:Chapter
+  start: '01:17:30'
+  title: Bitcoin / Namecoin
