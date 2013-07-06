@@ -44,11 +44,16 @@ function selectEpisode(episodenumber, jumpSeconds) {
   var pubDate = moment(episode.pubDate[0].Text);
 
   var playerTemplate  = _.template($("#player_template").html());
+  var downloadTemplate  = _.template($("#download_template").html());
 
   $("#title").append(episode.title[0].Text);
   $("#audioplayer").append(playerTemplate({
     preload: "none",
     media_sources: [
+      {
+        url: enclosure.replace(/\.mp3$/, ".opus"),
+        content_type: "audio/ogg; codecs=opus"
+      },
       {
         url: enclosure.replace(/\.mp3$/, ".m4a"),
         content_type: "audio/mp4"
@@ -56,6 +61,22 @@ function selectEpisode(episodenumber, jumpSeconds) {
       {
         url: enclosure,
         content_type: "audio/mp3"
+      }
+    ]
+  }));
+  $("#download-links").html(downloadTemplate({
+    media_sources: [
+      {
+        url: enclosure.replace(/\.mp3$/, ".opus"),
+        format: "opus"
+      },
+      {
+        url: enclosure.replace(/\.mp3$/, ".m4a"),
+        format: "m4a"
+      },
+      {
+        url: enclosure,
+        format: "mp3"
       }
     ]
   }));
