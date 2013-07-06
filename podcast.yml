@@ -12,4 +12,5 @@ media_url: http://media.geekstammtisch.de/episodes
 formats:
 - :m4a_aac
 - :mp3_mp3
+- :opus_opus
 rss_output_path: public/

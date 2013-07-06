@@ -7,6 +7,8 @@
         
         <atom:link rel="alternate" href="http://geekstammtisch.de/episodes.mp3.rss" type="application/rss+xml" title="MP3 Audio"/>
         
+        <atom:link rel="alternate" href="http://geekstammtisch.de/episodes.opus.rss" type="application/rss+xml" title="OPUS Audio"/>
+        
         <language>de-de</language>
         <generator>gst-kitchen</generator>
         <copyright>Dirk Breuer, Sebastian Cohnen, cc-by-nc-sa</copyright>
