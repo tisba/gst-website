@@ -12,6 +12,9 @@ media:
   alac:
     size: 233993820
     file_ext: m4a
+  opus:
+    size: 26362507
+    file_ext: opus
 auphonic_uuid: L9L8MiWVxQA3HrhSTmt5LF
 published_at: 2013-01-07 20:50:46.614204000 +01:00
 summary: ! "### Errata\r\n\r\n  * Refinements sind doch drin, aber nur in sehr eingeschränkter

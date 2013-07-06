@@ -12,6 +12,9 @@ media:
   alac:
     size: 294594823
     file_ext: m4a
+  opus:
+    size: 31297600
+    file_ext: opus
 auphonic_uuid: DqboQ9gUDnQFjrprt3N9jP
 published_at: 2013-01-28 21:07:15.141790000 +01:00
 summary: ! "Heute wieder mit Gast: Florian Gilcher (@Argorak, http://asquera.de/blog)\r\n\r\n###

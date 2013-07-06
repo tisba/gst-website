@@ -12,6 +12,9 @@ media:
   alac:
     size: 265873413
     file_ext: m4a
+  opus:
+    size: 29796441
+    file_ext: opus
 auphonic_uuid: Q8txfT8ibfLt9XWBRDSWtX
 published_at: 2013-01-21 22:12:54.807919000 +01:00
 summary: ! "Heute mit unserem ersten Gast: Sebastian Schulze (@bascht, http://bascht.com/)\r\n\r\n###
