@@ -56,6 +56,10 @@ function selectEpisode(episodenumber, jumpSeconds) {
       {
         url: enclosure,
         content_type: "audio/mp3"
+      },
+      {
+        url: enclosure.replace(/\.mp3$/, ".opus"),
+        content_type: "audio/ogg; codecs=opus"
       }
     ]
   }));
