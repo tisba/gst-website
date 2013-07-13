@@ -39,7 +39,8 @@ function selectEpisode(episodenumber, jumpSeconds) {
   // Fill in new episode
   var preload = (jumpSeconds > 0) ? "auto" : "none";
   var episode = episodes[episodenumber];
-  var enclosure = episode.enclosure[0].url;
+  // var enclosure = episode.enclosure[0].url;
+  var enclosure = "http://media.geekstammtisch.de/episodes/gstxxx.mp3";
   var description = episode.description[0].Text;
   var pubDate = moment(episode.pubDate[0].Text);
 
@@ -77,6 +78,7 @@ function selectEpisode(episodenumber, jumpSeconds) {
     alwaysShowHours: true,
     alwaysShowControls: true,
     title: episode.title[0].Text,
+    hidesharebutton: false,
     permalink: "http://geekstammtisch.de/#" + episode.guid[0].Text
   };
 
