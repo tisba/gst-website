@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GST017 - developer-whisperer.DLL</title>
+    <meta name="description" content="Wir sprechen mit Oliver Thylmann über Köln als Gründerstadt, Gründungen im Allgemeinen, die Firma der Zukunft und und und. Dabei schweifen wir (also Oli) immer wieder mal ab, haben uns dann aber doch ganz gut im Zaum gehalten und ein gutes zeitiges Ende gefunden. Vielen Dank an @luebken für die Shownotes!">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="//geekstammtisch.de/stylesheets/podlove-web-player.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <audio id="podlovewebplayer_gst" style="width: auto" preload="none">
+      <source src="http://media.geekstammtisch.de/episodes/gst017.mp3" type="audio/mp3" />
+      <source src="http://media.geekstammtisch.de/episodes/gst017.mp4" type="audio/mp4" />
+      <source src="http://media.geekstammtisch.de/episodes/gst017.opus" type="audio/ogg" codecs="opus" />
+    </audio>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="/js/libs/modernizr-1.6.min.js"></script>
+    <script src="/js/libs/underscore.min.js"></script>
+    <script src="//geekstammtisch.de/js/libs/podlove-web-player.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function () {
+        var currentEpisode = {
+          duration: "01:10:19",
+          title: "GST017 - developer-whisperer.DLL",
+          permalink: "http://geekstammtisch.de/#GST017"
+        };
+
+        var playerOptions = {
+          duration: currentEpisode.duration,
+          audioWidth: 'auto',
+          alwaysShowHours: true,
+          alwaysShowControls: true,
+          title: currentEpisode.title,
+          hidesharebutton: false,
+          chaptersVisible: false,
+          poster: "http://geekstammtisch.de/images/pwp_poster.png",
+          permalink: currentEpisode.permalink
+        };
+
+        $('#podlovewebplayer_gst').podlovewebplayer(playerOptions);
+      })
+    </script>
+  </body>
+</html>
