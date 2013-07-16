@@ -77,6 +77,7 @@ function selectEpisode(episodenumber, jumpSeconds) {
     alwaysShowHours: true,
     alwaysShowControls: true,
     title: episode.title[0].Text,
+    hidesharebutton: false,
     permalink: "http://geekstammtisch.de/#" + episode.guid[0].Text
   };
 
