@@ -4647,34 +4647,434 @@ Der Geekstammtisch wird volljährig! Dieses mal sprachen wir mit Sebastian Kippe
 ]]></description>
           <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST018" />
 
-
+          
           <psc:chapters>
-
+          
             <psc:chapter start="00:00:00" title="Unser Gast" />
-
+          
             <psc:chapter start="00:02:23" title="Hackertrips" />
-
+          
             <psc:chapter start="00:06:08" title="5Apps" />
-
+          
             <psc:chapter start="00:08:56" title="Web Apps" />
-
+          
             <psc:chapter start="00:16:00" title="5Apps Deploy und Storage &amp; remoteStorage" />
-
+          
             <psc:chapter start="00:27:10" title="Das W3C, DRM &amp; App Stores" />
-
+          
             <psc:chapter start="00:40:15" title="HTTP 2.0, IPv6, SSL" />
-
+          
             <psc:chapter start="00:46:51" title="Ops und Infrastruktur bei 5Apps" />
-
+          
             <psc:chapter start="00:57:00" title="Travis Foundation &amp; RailsGirls: Summer of Code" />
-
+          
             <psc:chapter start="01:00:08" title="Self-Hosted Cloud, GPG, Apple und HTML5" />
-
+          
             <psc:chapter start="01:17:30" title="Bitcoin / Namecoin" />
-
+          
           </psc:chapters>
-
+          
         </item>
+        
+        <item>
+          <title>GST019 - Weg von .NET &amp; Windows</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST019 - Weg von .NET &amp; Windows</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst019.m4a" length="34243159" type="audio/x-m4a"/>
+          <guid isPermaLink="false">GST019</guid>
+          <pubDate>Sat, 27 Jul 2013 16:29:29 +0200</pubDate>
+          <itunes:duration>01:17:25</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis**: Wir hatten dieses Mal Stefan Schiffer (@scrat0105) zu Gast. Er berichtet von dem doch sehr radikalen Wandel seines Arbeitgebers: Von On-Premise zu SaaS und Cloud, von Wasserfall-Prozessen hin zu Agiler Softwareentwicklung und von .NET & Windows zu Ruby & Linux. Stefan erzählt, woher der Wandel kommt und wie er den Wandel von Anfang an miterlebt hat.
 
+### Intro (00:00:00)
+
+  * Kurz in eigener Sache
+    * opus-Feed: http://geekstammtisch.de/episodes.opus.rss
+    * Rheinklick: Die digitale Offensive des Kölner Stadt-Anzeiger rund um die Kölner Tech-Szene
+    * der Geekstammtisch beim Rheinklick-Blog: http://www.ksta.de/rheinklick/podcast-des-geekstammtischs-gruende--in-koeln-zu-gruenden,22789250,23728778.html
+    * Wir sind auf dem Railscamp
+
+### Unser Gast (00:03:24)
+
+  * Stefan Schiffer: @scrat0105, https://www.xing.com/profiles/Stefan_Schiffer8
+  * hört gern denn Geekstammtisch <3
+  * hat mit Dirk und Basti Medieninformatik an der FH Köln studiert
+  * wollte immer in Richtung UX
+  * macht seit ~2 Jahren Rails
+  * explizite Stellen für Interaction Design sind eher unüblich
+
+###  InVision (00:06:02)
+
+  * Stefan arbeitet bei InVision AG: http://www.invision.de
+  * InVision ein solides mittelstänidges Unternehmen aus der klassichen B2B On Premise Welt
+  * Jetzt allerdings radikaler Wandel: Weg von On Premise hin zur Cloud und zu SaaS
+  * InVision stellt Software für die Personaleinsatzplanung wie etwa Personal-Forecasting her
+  * Vor 3-4 Jahren kam die Erkenntnis, dass man sich technologisch modernisieren muss
+  * War mit der damaligen Software schwierig bis unmöglich
+  * Daher war eine Schnitt unvermeidbar
+  * InVision ist _kein_ Startup
+  * Mittlerweile hat sich eine "Startup-Mentalität" eingestellt
+    * Von Individualsoftware hin zu webbasierten Diensten
+    * Das UX-Team kommt hier viel besser zum Einsatz
+  * Vorher gab es eine C#/.NET-basierte Lösung mit viel lizensierter Drittanbietersoftware
+  * Das neue, Rails-basierte Produkt ist noch nicht in Gänze live
+  * Das Ziel ist, dass das neue Produkt das alte irgendwann ablöst
+  * Die alte Software lebt nun auch in der Cloud und wird weiterhin betrieben
+  * Diese Lösung ist auch schon als Saas verfügbar
+  * Neue Kompotenten greifen auch noch teilweise auf die alte Software zu
+  * Bestandskunden wechseln nach und nach auf die Cloud-basierte Variante
+  * Vor allem sehr große Kunden sind noch auf der On Premise Version
+  * Die Cloud der Wahl ist AWS (inkl. Windowsserver für die alte Umgebung)
+  * Kunden, die die On Premise Lösung einsetzen können bereits auf neue Clouddienste zugreifen
+    * Beispiel dafür ist das Cloud-basierte Forecasting, was bereits jetzt einen Mehrwert bietet
+    * Bedingt dadurch hat man nicht nur einmalige Migrationen von Altdaten, sondern auch eine konstante Verbindung zwischen den Systemen
+  * 80% der Entwickler arbeiten auf dem neuen System, 20% arbeiten an der Pflege des Altsystems
+  * Entwicklung findet an drei Standorten statt (Derry/Londonderry, Ratingen, Leipzig)
+  * Jeder Standort hat mehrere Teams für unterschiedliche Komponenten der Software
+  * Neben den Entwicklungsteams, gibt es noch Service-Teams für UX und Technical Writing, die allen Teams zur Verfügung stehen
+  * Es gibt ein Operations-Team in Derry/Londonderry und es wird ein DevOps-Team in Ratingen aufgebaut
+  * 50-60 Menschen in der Produktentwicklung
+
+### Out of the Dark (00:17:40)
+
+  * Was war der Auslöser für den radikalen Wandel?
+    * Technologische Erweiterbarkeit war nicht mehr gegeben
+    * Zwei Möglichkeiten: Entweder radikal aufräumen, oder von Vorne anfangen
+    * Man war von der Cloud und ihren Möglichkeiten für den Anwendungsfall überzeugt
+  * Erst kam der Switch zur Cloud und erst danach der Wechsel der Technologie
+  * Gleichzeitig mit der Technologie wurde der Entwicklungsprozess und die Unternehmensstruktur radikal geändert
+  * Wichtig war, dass die Unternehmensführung zu 100% dahinter steht
+  * Ja, es sind Leute auf der Strecke geblieben: Es sind mehr Leute gegangen als die normale Fluktuation
+  * Die Änderung der Unternehmensstruktur war im Nachgang eine Bedingung für den neuen Prozess
+  * Mitarbeiter müssen Verantwortung übernehmen
+  * Vorteil: Fachwissen gefestigt, Probleme bekannt und weitestgehend gelöst, Kundenstamm vorhanden
+  * Nachteil: Niemand kannte Rails, niemand war firm in agiler Softwareentwicklung
+  * Zu Beginn Scrum nach Lehrbuch inkl. externen Trainings
+  * Heute wird Scrum _nicht_ in Reinform gemacht, was die typische Entwicklung ist
+
+### Von C# hin zu Rails (00:26:38)
+
+  * Schwerfällige Entwicklung
+  * Automatisiertes Testing nur sehr schwer möglich
+  * In der C#-Welt ist Open-Source nicht sehr populär
+  * Entscheidung für Rails ist eher spontan gefallen
+    * Prototypen wurden mit Rails erstellt und das Vorgehen hat überzeugt
+    * Danach hat man sich entschieden, dass man einfach weiter darin arbeitet und die Prototypen noch mal neumacht
+  * Lizensierung und deren Kosten ein tatsächliches Problem
+  * Kosten für die Server in der Cloud waren auch ein Problem
+  * Herausforderungen beim Umstieg auf Rails war vor allem zu lernen was es bedeutet Web-Anwendungen zu schreiben
+  * Ansonsten die üblichen Probleme: Neue Sprache, neues Framework, neues Paradigma
+  * QA musste lernen Tests zu schreiben
+  * Keine IDE mehr, sondern arbeiten mit Texteditor und CLI, vor allem durch den "Wegfall" des Debuggers
+  * "Ich kann gar nicht mehr debuggen"
+  * Zudem kam auch noch ein Wechsel des Betriebssystems ^^
+  * Man musste auch lernen wie man deployed und Server provisioniert
+  * Jenkins zur Realisierung der Deployment-Pipeline
+  * Provisionierung der Server mit Chef
+  * Genutzte Dienste von AWS: Vor allem EC2, ELB und S3
+  * DB wird selber auf EC2 gehostet
+  * Basti weist mal wieder darauf hin, dass AWS sich nur lohnt, wenn man es richtig nutzt und automatisch provisioniert
+  * Stefan erzählt, dass sie am Anfang EC2 "nur" als Server in der Cloud gesehen haben und erst den richtigen Umgang lernen mussten
+  * Stefan meint, sie sind fast fertig, aber fertig wird man ja eh nicht
+  * Initiale Wissenslücke durch Trainings, Workshops und Self-Training geschlossen
+  * Man musste lernen, dass man seinen eigenen Code auch mal wegwerfen muss
+
+### Agile Softwareentwicklung (00:38:20)
+
+  * Während der Umstellung auf neue Technologien hat man sich die Frage gestellt, warum schreiben wir eigentlich Spezifikationen? Am Ende kommt eh nicht das raus, was der Kunde wollte?
+  * Die häufigste Antwort auf diese Fragen war: Im besten Fall war es überflüssig, aber in der Regel hat es Nachteile gebracht.
+  * Und was ist eigentlich dieses Scrum?
+  * SaaS eignet sich perse nicht für Wasserfall, man muss viel schneller reagieren können
+  * Man hört ganz anders auf die Kunden: Nicht mehr der einzelne zählt, sondern der Bedarf des Marktes
+  * Dadurch musste auch der Produktbereich umlernen bzw. überhaupt aufgebaut werden
+  * Entscheidungen über Produktänderungen werden vor allem in den einzelnen Teams getroffen
+  * Am Anfang war es schwierig ein Produkt ohne echte Kunden zu entwickeln
+  * Die Lücke musste durch internes Know-How geschlossen werden
+  * Das machte auch Reviews schwierig
+  * Mittlerweile haben alle Teams den selben Sprint-Rythmus und machen ihr Review gemeinsam in einem Conference-Call
+  * Stefan ist zufrieden mit dem Transformationsprozess
+  * besondere positive Aspekte, der Mehrwert der Umstellung
+    * direktes und schnelles Feedback
+    * worst-case werden nur 1-2 Sprints an Zeit "weggeworfen"
+  * Retrospektiven werden noch etwas stiefmütterlich behandelt
+  * Teams arbeiten sehr eigenverantwortlich
+    * jedes Team betreibt ihre eigenen Komponenten/Module
+    * organisieren selbst Urlaub im Team
+  * Standortübergreifende Kommunikation ist eine Herausforderung
+    * Module, die enger zusammenarbeiten und direkte Abhängigkeiten haben, sind nach Möglichkeit am selben Standort angesiedelt
+    * Ausnahme, das UX Team: Das Team ist verteilt und unterstüzt die anderen Teams
+  * Technologie/Architekturentscheidungen werden in einer Art Architekturboard getroffen, nachdem es Vorschläge und Bewertungen aus dem jeweiligen Team gab.
+
+### Technical Depts, eigene gems als externe Dependencies (00:54:19)
+
+  * "Technische Schulden" hat jeder, egal wie jung oder alt ein Projekt ist
+  * Es gibt ein paar Regeln, wie mit Technical Depts umzugehen ist:
+    * erst kommen Bugs, dann Technical Depts und dann User Features
+  * interne gems, werden von den Teams wie externe Dependencies verwendet (mit Pull Requests, Forks usw.)
+  * dadurch, dass alle Teams quasi eigene Rails Apps entwickeln, sind die Teams relativ unabhängig von Entscheidungen, wie erb vs HAML oder CSS/SCSS/…
+  * mitlerweile wird nur noch HAML benutzt: http://haml.info/
+
+### Lernprozesse & Kulturwandel (01:01:25)
+
+  * Andauernder Learnprozess, viele Fehler, viel gelernt
+  * Zusammen mit dem technischen Wandel gab es auch einen starken "kulturellen" Wandel
+    * neuer Entwicklungsansatz, neue Motiviation gute Qualität abzuliefern
+    * Collective (code) Ownership: http://www.extremeprogramming.org/rules/collective.html
+    * ständier Lern- und Verbesserungsprozess
+
+### APIs, Service-Orientierung (01:03:47)    
+
+  * Die bisherige On-Premise-Lösung war nicht Service-orientiert
+  * Jetzt geht es schon mehr in diese Richtung
+  * z.B. gibt es ein zentrales User-Management (Service)
+    * API spricht JSON via HTTP
+    * wird bereitgestellt durch gems
+  * Services/Module haben ihre eigenen Datenbanken
+
+### Zum Abschluss (01:09:12)
+
+  * Wir sind beeindruckt von dem doch radikalen und positiven Wandel, den Stefan beschrieben hat
+  * Wir sind uns einig, dass ein ganzheitlicher Ansatz am erfolgversprechendsten ist
+  * InVision sucht noch Entwickler und vor allem Leute, die DevOps machen wollen
+  * Basti hat eine Mail mit Jobangebot bekommen, worin mit einem Foto von Clubmate im Kühlschrank geworben wurde :)
+  * Mate gibt es bei InVision noch nicht, aber es wird gegrillt (reicht nicht ganz ^^)]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis</strong>: Wir hatten dieses Mal Stefan Schiffer (<a href="https://twitter.com/scrat0105">@scrat0105</a>) zu Gast. Er berichtet von dem doch sehr radikalen Wandel seines Arbeitgebers: Von On-Premise zu SaaS und Cloud, von Wasserfall-Prozessen hin zu Agiler Softwareentwicklung und von .NET &amp; Windows zu Ruby &amp; Linux. Stefan erzählt, woher der Wandel kommt und wie er den Wandel von Anfang an miterlebt hat.</p>
+
+<h3>Intro (00:00:00)</h3>
+
+<ul>
+<li>Kurz in eigener Sache
+
+<ul>
+<li>opus-Feed: <a href="http://geekstammtisch.de/episodes.opus.rss">http://geekstammtisch.de/episodes.opus.rss</a></li>
+<li>Rheinklick: Die digitale Offensive des Kölner Stadt-Anzeiger rund um die Kölner Tech-Szene</li>
+<li>der Geekstammtisch beim Rheinklick-Blog: <a href="http://www.ksta.de/rheinklick/podcast-des-geekstammtischs-gruende--in-koeln-zu-gruenden,22789250,23728778.html">http://www.ksta.de/rheinklick/podcast-des-geekstammtischs-gruende--in-koeln-zu-gruenden,22789250,23728778.html</a></li>
+<li>Wir sind auf dem Railscamp</li>
+</ul></li>
+</ul>
+
+<h3>Unser Gast (00:03:24)</h3>
+
+<ul>
+<li>Stefan Schiffer: <a href="https://twitter.com/scrat0105">@scrat0105</a>, <a href="https://www.xing.com/profiles/Stefan_Schiffer8">https://www.xing.com/profiles/Stefan_Schiffer8</a></li>
+<li>hört gern denn Geekstammtisch &lt;3</li>
+<li>hat mit Dirk und Basti Medieninformatik an der FH Köln studiert</li>
+<li>wollte immer in Richtung UX</li>
+<li>macht seit ~2 Jahren Rails</li>
+<li>explizite Stellen für Interaction Design sind eher unüblich</li>
+</ul>
+
+<h3>InVision (00:06:02)</h3>
+
+<ul>
+<li>Stefan arbeitet bei InVision AG: <a href="http://www.invision.de">http://www.invision.de</a></li>
+<li>InVision ein solides mittelstänidges Unternehmen aus der klassichen B2B On Premise Welt</li>
+<li>Jetzt allerdings radikaler Wandel: Weg von On Premise hin zur Cloud und zu SaaS</li>
+<li>InVision stellt Software für die Personaleinsatzplanung wie etwa Personal-Forecasting her</li>
+<li>Vor 3-4 Jahren kam die Erkenntnis, dass man sich technologisch modernisieren muss</li>
+<li>War mit der damaligen Software schwierig bis unmöglich</li>
+<li>Daher war eine Schnitt unvermeidbar</li>
+<li>InVision ist <em>kein</em> Startup</li>
+<li>Mittlerweile hat sich eine &quot;Startup-Mentalität&quot; eingestellt
+
+<ul>
+<li>Von Individualsoftware hin zu webbasierten Diensten</li>
+<li>Das UX-Team kommt hier viel besser zum Einsatz</li>
+</ul></li>
+<li>Vorher gab es eine C#/.NET-basierte Lösung mit viel lizensierter Drittanbietersoftware</li>
+<li>Das neue, Rails-basierte Produkt ist noch nicht in Gänze live</li>
+<li>Das Ziel ist, dass das neue Produkt das alte irgendwann ablöst</li>
+<li>Die alte Software lebt nun auch in der Cloud und wird weiterhin betrieben</li>
+<li>Diese Lösung ist auch schon als Saas verfügbar</li>
+<li>Neue Kompotenten greifen auch noch teilweise auf die alte Software zu</li>
+<li>Bestandskunden wechseln nach und nach auf die Cloud-basierte Variante</li>
+<li>Vor allem sehr große Kunden sind noch auf der On Premise Version</li>
+<li>Die Cloud der Wahl ist AWS (inkl. Windowsserver für die alte Umgebung)</li>
+<li>Kunden, die die On Premise Lösung einsetzen können bereits auf neue Clouddienste zugreifen
+
+<ul>
+<li>Beispiel dafür ist das Cloud-basierte Forecasting, was bereits jetzt einen Mehrwert bietet</li>
+<li>Bedingt dadurch hat man nicht nur einmalige Migrationen von Altdaten, sondern auch eine konstante Verbindung zwischen den Systemen</li>
+</ul></li>
+<li>80% der Entwickler arbeiten auf dem neuen System, 20% arbeiten an der Pflege des Altsystems</li>
+<li>Entwicklung findet an drei Standorten statt (Derry/Londonderry, Ratingen, Leipzig)</li>
+<li>Jeder Standort hat mehrere Teams für unterschiedliche Komponenten der Software</li>
+<li>Neben den Entwicklungsteams, gibt es noch Service-Teams für UX und Technical Writing, die allen Teams zur Verfügung stehen</li>
+<li>Es gibt ein Operations-Team in Derry/Londonderry und es wird ein DevOps-Team in Ratingen aufgebaut</li>
+<li>50-60 Menschen in der Produktentwicklung</li>
+</ul>
+
+<h3>Out of the Dark (00:17:40)</h3>
+
+<ul>
+<li>Was war der Auslöser für den radikalen Wandel?
+
+<ul>
+<li>Technologische Erweiterbarkeit war nicht mehr gegeben</li>
+<li>Zwei Möglichkeiten: Entweder radikal aufräumen, oder von Vorne anfangen</li>
+<li>Man war von der Cloud und ihren Möglichkeiten für den Anwendungsfall überzeugt</li>
+</ul></li>
+<li>Erst kam der Switch zur Cloud und erst danach der Wechsel der Technologie</li>
+<li>Gleichzeitig mit der Technologie wurde der Entwicklungsprozess und die Unternehmensstruktur radikal geändert</li>
+<li>Wichtig war, dass die Unternehmensführung zu 100% dahinter steht</li>
+<li>Ja, es sind Leute auf der Strecke geblieben: Es sind mehr Leute gegangen als die normale Fluktuation</li>
+<li>Die Änderung der Unternehmensstruktur war im Nachgang eine Bedingung für den neuen Prozess</li>
+<li>Mitarbeiter müssen Verantwortung übernehmen</li>
+<li>Vorteil: Fachwissen gefestigt, Probleme bekannt und weitestgehend gelöst, Kundenstamm vorhanden</li>
+<li>Nachteil: Niemand kannte Rails, niemand war firm in agiler Softwareentwicklung</li>
+<li>Zu Beginn Scrum nach Lehrbuch inkl. externen Trainings</li>
+<li>Heute wird Scrum <em>nicht</em> in Reinform gemacht, was die typische Entwicklung ist</li>
+</ul>
+
+<h3>Von C# hin zu Rails (00:26:38)</h3>
+
+<ul>
+<li>Schwerfällige Entwicklung</li>
+<li>Automatisiertes Testing nur sehr schwer möglich</li>
+<li>In der C#-Welt ist Open-Source nicht sehr populär</li>
+<li>Entscheidung für Rails ist eher spontan gefallen
+
+<ul>
+<li>Prototypen wurden mit Rails erstellt und das Vorgehen hat überzeugt</li>
+<li>Danach hat man sich entschieden, dass man einfach weiter darin arbeitet und die Prototypen noch mal neumacht</li>
+</ul></li>
+<li>Lizensierung und deren Kosten ein tatsächliches Problem</li>
+<li>Kosten für die Server in der Cloud waren auch ein Problem</li>
+<li>Herausforderungen beim Umstieg auf Rails war vor allem zu lernen was es bedeutet Web-Anwendungen zu schreiben</li>
+<li>Ansonsten die üblichen Probleme: Neue Sprache, neues Framework, neues Paradigma</li>
+<li>QA musste lernen Tests zu schreiben</li>
+<li>Keine IDE mehr, sondern arbeiten mit Texteditor und CLI, vor allem durch den &quot;Wegfall&quot; des Debuggers</li>
+<li>&quot;Ich kann gar nicht mehr debuggen&quot;</li>
+<li>Zudem kam auch noch ein Wechsel des Betriebssystems ^^</li>
+<li>Man musste auch lernen wie man deployed und Server provisioniert</li>
+<li>Jenkins zur Realisierung der Deployment-Pipeline</li>
+<li>Provisionierung der Server mit Chef</li>
+<li>Genutzte Dienste von AWS: Vor allem EC2, ELB und S3</li>
+<li>DB wird selber auf EC2 gehostet</li>
+<li>Basti weist mal wieder darauf hin, dass AWS sich nur lohnt, wenn man es richtig nutzt und automatisch provisioniert</li>
+<li>Stefan erzählt, dass sie am Anfang EC2 &quot;nur&quot; als Server in der Cloud gesehen haben und erst den richtigen Umgang lernen mussten</li>
+<li>Stefan meint, sie sind fast fertig, aber fertig wird man ja eh nicht</li>
+<li>Initiale Wissenslücke durch Trainings, Workshops und Self-Training geschlossen</li>
+<li>Man musste lernen, dass man seinen eigenen Code auch mal wegwerfen muss</li>
+</ul>
+
+<h3>Agile Softwareentwicklung (00:38:20)</h3>
+
+<ul>
+<li>Während der Umstellung auf neue Technologien hat man sich die Frage gestellt, warum schreiben wir eigentlich Spezifikationen? Am Ende kommt eh nicht das raus, was der Kunde wollte?</li>
+<li>Die häufigste Antwort auf diese Fragen war: Im besten Fall war es überflüssig, aber in der Regel hat es Nachteile gebracht.</li>
+<li>Und was ist eigentlich dieses Scrum?</li>
+<li>SaaS eignet sich perse nicht für Wasserfall, man muss viel schneller reagieren können</li>
+<li>Man hört ganz anders auf die Kunden: Nicht mehr der einzelne zählt, sondern der Bedarf des Marktes</li>
+<li>Dadurch musste auch der Produktbereich umlernen bzw. überhaupt aufgebaut werden</li>
+<li>Entscheidungen über Produktänderungen werden vor allem in den einzelnen Teams getroffen</li>
+<li>Am Anfang war es schwierig ein Produkt ohne echte Kunden zu entwickeln</li>
+<li>Die Lücke musste durch internes Know-How geschlossen werden</li>
+<li>Das machte auch Reviews schwierig</li>
+<li>Mittlerweile haben alle Teams den selben Sprint-Rythmus und machen ihr Review gemeinsam in einem Conference-Call</li>
+<li>Stefan ist zufrieden mit dem Transformationsprozess</li>
+<li>besondere positive Aspekte, der Mehrwert der Umstellung
+
+<ul>
+<li>direktes und schnelles Feedback</li>
+<li>worst-case werden nur 1-2 Sprints an Zeit &quot;weggeworfen&quot;</li>
+</ul></li>
+<li>Retrospektiven werden noch etwas stiefmütterlich behandelt</li>
+<li>Teams arbeiten sehr eigenverantwortlich
+
+<ul>
+<li>jedes Team betreibt ihre eigenen Komponenten/Module</li>
+<li>organisieren selbst Urlaub im Team</li>
+</ul></li>
+<li>Standortübergreifende Kommunikation ist eine Herausforderung
+
+<ul>
+<li>Module, die enger zusammenarbeiten und direkte Abhängigkeiten haben, sind nach Möglichkeit am selben Standort angesiedelt</li>
+<li>Ausnahme, das UX Team: Das Team ist verteilt und unterstüzt die anderen Teams</li>
+</ul></li>
+<li>Technologie/Architekturentscheidungen werden in einer Art Architekturboard getroffen, nachdem es Vorschläge und Bewertungen aus dem jeweiligen Team gab.</li>
+</ul>
+
+<h3>Technical Depts, eigene gems als externe Dependencies (00:54:19)</h3>
+
+<ul>
+<li>&quot;Technische Schulden&quot; hat jeder, egal wie jung oder alt ein Projekt ist</li>
+<li>Es gibt ein paar Regeln, wie mit Technical Depts umzugehen ist:
+
+<ul>
+<li>erst kommen Bugs, dann Technical Depts und dann User Features</li>
+</ul></li>
+<li>interne gems, werden von den Teams wie externe Dependencies verwendet (mit Pull Requests, Forks usw.)</li>
+<li>dadurch, dass alle Teams quasi eigene Rails Apps entwickeln, sind die Teams relativ unabhängig von Entscheidungen, wie erb vs HAML oder CSS/SCSS/…</li>
+<li>mitlerweile wird nur noch HAML benutzt: <a href="http://haml.info/">http://haml.info/</a></li>
+</ul>
+
+<h3>Lernprozesse &amp; Kulturwandel (01:01:25)</h3>
+
+<ul>
+<li>Andauernder Learnprozess, viele Fehler, viel gelernt</li>
+<li>Zusammen mit dem technischen Wandel gab es auch einen starken &quot;kulturellen&quot; Wandel
+
+<ul>
+<li>neuer Entwicklungsansatz, neue Motiviation gute Qualität abzuliefern</li>
+<li>Collective (code) Ownership: <a href="http://www.extremeprogramming.org/rules/collective.html">http://www.extremeprogramming.org/rules/collective.html</a></li>
+<li>ständier Lern- und Verbesserungsprozess</li>
+</ul></li>
+</ul>
+
+<h3>APIs, Service-Orientierung (01:03:47)</h3>
+
+<ul>
+<li>Die bisherige On-Premise-Lösung war nicht Service-orientiert</li>
+<li>Jetzt geht es schon mehr in diese Richtung</li>
+<li>z.B. gibt es ein zentrales User-Management (Service)
+
+<ul>
+<li>API spricht JSON via HTTP</li>
+<li>wird bereitgestellt durch gems</li>
+</ul></li>
+<li>Services/Module haben ihre eigenen Datenbanken</li>
+</ul>
+
+<h3>Zum Abschluss (01:09:12)</h3>
+
+<ul>
+<li>Wir sind beeindruckt von dem doch radikalen und positiven Wandel, den Stefan beschrieben hat</li>
+<li>Wir sind uns einig, dass ein ganzheitlicher Ansatz am erfolgversprechendsten ist</li>
+<li>InVision sucht noch Entwickler und vor allem Leute, die DevOps machen wollen</li>
+<li>Basti hat eine Mail mit Jobangebot bekommen, worin mit einem Foto von Clubmate im Kühlschrank geworben wurde :)</li>
+<li>Mate gibt es bei InVision noch nicht, aber es wird gegrillt (reicht nicht ganz ^^)</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST019" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro" />
+          
+            <psc:chapter start="00:03:24" title="Unser Gast" />
+          
+            <psc:chapter start="00:06:02" title="InVision" />
+          
+            <psc:chapter start="00:17:40" title="Out of the Dark" />
+          
+            <psc:chapter start="00:26:38" title="Von C# hin zu Rails" />
+          
+            <psc:chapter start="00:38:20" title="Agile Softwareentwicklung" />
+          
+            <psc:chapter start="00:54:19" title="Technical Depts, eigene gems als externe Dependencies" />
+          
+            <psc:chapter start="01:01:25" title="Lernprozesse &amp; Kulturwandel" />
+          
+            <psc:chapter start="01:03:47" title="APIs, Service-Orientierung" />
+          
+            <psc:chapter start="01:09:12" title="Zum Abschluss" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
