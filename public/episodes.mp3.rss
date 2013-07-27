@@ -4677,10 +4677,10 @@ Der Geekstammtisch wird volljährig! Dieses mal sprachen wir mit Sebastian Kippe
         </item>
         
         <item>
-          <title>GST019 - Weg von .NET & Windows</title>
+          <title>GST019 - Weg von .NET &amp; Windows</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST019 - Weg von .NET & Windows</itunes:subtitle>
+          <itunes:subtitle>GST019 - Weg von .NET &amp; Windows</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst019.mp3" length="56023780" type="audio/mpeg"/>
           <guid isPermaLink="false">GST019</guid>
           <pubDate>Sat, 27 Jul 2013 16:29:29 +0200</pubDate>
