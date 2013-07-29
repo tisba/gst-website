@@ -5076,5 +5076,233 @@ Der Geekstammtisch wird volljährig! Dieses mal sprachen wir mit Sebastian Kippe
           
         </item>
         
+        <item>
+          <title>GST020 - Wenn die Codebase groß genug ist...</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST020 - Wenn die Codebase groß genug ist...</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst020.opus" length="23337007" type="audio/opus"/>
+          <guid isPermaLink="false">GST020</guid>
+          <pubDate>Mon, 29 Jul 2013 18:27:42 +0200</pubDate>
+          <itunes:duration>00:47:27</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Auf dem RailsCamp sprachen wir mit Christoph
+@TheDeadSerious Olszowka. Es ging um das Rails Ökosystem und um zwei
+etwas bekanntere Projekte von Christoph: The Ruby Toolbox und
+simplecov.
+
+### Unser Gast (00:00:00)
+
+  * Wir sitzen im "Hackerzelt" !1!11!
+  * Christoph @TheDeadSerious Olszowka aus Hamburg
+  * The Ruby Toolbox: https://www.ruby-toolbox.com
+  * SimpleCov: https://github.com/colszowka/simplecov
+  * Studiert Informatik und macht Rails in einer Agentur
+
+### Rails Camp 2013 (00:02:40)
+
+  * Fishbowl Talk: http://de.wikipedia.org/wiki/Fishbowl
+  * Themen:
+    * Wäre Kennedy Python oder Ruby Programmierer gewesen?
+    * Rails, omakase
+    * PRISM
+
+### Das Rails Ökosystem (00:04:00)
+
+  * Turbolinks: https://github.com/rails/turbolinks
+  * Rails API: https://github.com/rails-api/rails-api
+  * Neuerdings: Neue Features erst als Gems bereitgestellt, dann in den Core übernommen
+  * Strong Parameters: https://github.com/rails/strong_parameters
+  * Rails is Omakase
+    * Blogpost von DHH: http://david.heinemeierhansson.com/2012/rails-is-omakase.html
+    * A Dramatic Reading: http://www.youtube.com/watch?v=E99FnoYqoII
+  * Seit Rails 3.0 ist vieles modularer geworden, einzelne Komponenten werden als Gems bereitgestellt
+  * GitHub ist immer noch auf einer auf Rails 2.3 basierenden Version
+  * Dirk und Basti kennen den Schmerz eine Rails 2.3 App maintainen zu müssen
+  * GitHub Fork von Rails 2.3: https://github.com/github/rails
+  * GitHub's Zwischenfall mit E-Mails verschicken: https://github.com/blog/1440-today-s-email-incident
+  * Rails 2.3 LTS: https://railslts.com
+  * Umstellung von Rails 3.0 auf 3.1 sehr schmerzhaft wegen der Asset Pipeline: http://guides.rubyonrails.org/asset_pipeline.html
+  * Rails 4.0 gibt sehr detaillierte Fehlermeldungen, bei der Migration
+  * Maintenance Policy for Ruby on Rails: http://weblog.rubyonrails.org/2013/2/24/maintenance-policy-for-ruby-on-rails
+
+### Ruby Toolbox (00:18:45)
+
+  * Projekt seit 2009
+  * Kategorisierter Katalog von Gems und anderen Open Source Projekten
+  * Sortierung nach Beliebtheit, viele Metadaten wie Aktualität, letzter Commit auf GitHub
+  * Als eingeloggter User kann man Kategorien hinzufügen, das Repo updaten, etc.
+  * Viele Änderungen müssen von Christoph noch manuell reviewt werden
+  * Basti nutzt die Toolbox regelmäßig, wusste aber nicht, dass man auch mitarbeiten kann
+  * Sortierung nach Rubygems Downloads, GitHub Stars/Watcher und Forks. 
+  * Man kann sich den Score eines Projektes anzeigen lassen. Beispiel: thor https://www.ruby-toolbox.com/projects/thor/popularity
+  * Dirk schlägt vor den letzten Commit auch mit einzubeziehen
+  * Wenn ein Gem bei RailsCasts (http://railscasts.com), etc erwähnt wird, dann beeinflusst das die Watcher Zahlen, aber die Download Zahlen ändert sich nicht zwangsläufig
+  * Für Basti ist es wichtig, dass ein Projekt aktiv ist (neue GitHub Commits), um zu sehen welches Tool er benutzt
+  * Gemcutter/Rubygems (http://www.rubygems.org) und Bundler (http://bundler.io/) haben das Ökosystem positiv beeinflusst
+  * Ein gem zu Erstellen, zu Open Sourcen und es zu maintainen ist ein echtes Commitment!
+  * Überprüfen ob Gems mit Rails 4 funktionieren: http://www.ready4rails4.net
+  * "View the full dependency tree for any ruby gem": https://www.gemlou.pe
+  * "Bei großen Projekten landet man oft in der Dependency-Hell"
+  * Angabe von Ruby Version (http://docs.rubygems.org/read/chapter/20#required_ruby_version) und Plattform (http://docs.rubygems.org/read/chapter/20#platform) im gemspec möglich
+  * Leider die Dependency-Angaben oft sehr eng oder schlichtweg falsch: z.B. MRI verlangt, aber jruby funktioniert auch
+
+### SimpleCov (00:31:50)
+
+  * SimpleCov basiert auf der Coverage API (http://www.ruby-doc.org/stdlib-1.9.3/libdoc/coverage/rdoc/Coverage.html), die mittlerweile von JRuby (http://jruby.org) und Rubinius (http://rubini.us) auch unterstützt werden
+  * die Testsuite für SimpleCov dauert unter jruby >45min :-/
+  * Basti ist zufrieden mit SimpleCov und hat keine Feature Requests
+  * Christoph will JavaScript Coverage mit einbauen
+  * Die Coverage API gibt Daten in einheitlichem Format raus, das könnte man für JavaScript Testsuites nachbauen
+  * SimpleCov kann die Coverage Daten aus mehreren Test-Suites zusammenfügen
+  * Wenn jemand mitarbeiten will, Christoph freut sich über Pull-Requests
+  * Weitere Idee: SimpleCov in Produktion einzusetzen ("Welcher Code wird überhaupt wie oft verwendet"), das wird aber von der Coverage API nicht unterstützt
+  * Dirk wirft in den Raum, dass das mit DTrace (http://de.wikipedia.org/wiki/DTrace) möglich sein könnte
+  * Dirk: "Man sollte sich öfter fragen, ob Code überhaupt noch benutzt wird"; +1
+
+### RailsCamp (00:38:50)
+
+  * In den letzten 2 Tagen war es verdammt heiß, heute ist es eher bewölkt aber angenehm kühl
+  * Abenteuer Hallen Kalk: http://ahk.abenteuerhallenkalk.de
+  * Viele Aktivitäten: Klettern, Basketball, Laufen, Kicker, BMX…
+  * Basti: "Das Wasser und die Mate, die man sich hier reinkippt, schwitzt man sofort wieder aus"
+  * Internet per Richtfunkstrecke und WLAN vom CCC
+  * Wi-Fi Access Points: Ubuquity UniFi http://www.ubnt.com/unifi
+  * Viprinet (http://www.viprinet.com/de/home)
+    * Backup Uplink von Vodafone & T-Mobile
+  * Man läuft rum, hört Sessions mit und unterhält sich mit den Leuten
+  * Weitere Aktivitäten: BMX mit einigen Verletzungen, AR Drone 2 (http://ardrone2.parrot.com)
+  * geiles Essen, lecker Kaffee
+  * Übernachtung in der Skate Halle in zwischen und neben den Half Pipes (Christoph hat's getestet)]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Auf dem RailsCamp sprachen wir mit Christoph
+<a href="https://twitter.com/TheDeadSerious">@TheDeadSerious</a> Olszowka. Es ging um das Rails Ökosystem und um zwei
+etwas bekanntere Projekte von Christoph: The Ruby Toolbox und
+simplecov.</p>
+
+<h3>Unser Gast (00:00:00)</h3>
+
+<ul>
+<li>Wir sitzen im &quot;Hackerzelt&quot; !1!11!</li>
+<li>Christoph <a href="https://twitter.com/TheDeadSerious">@TheDeadSerious</a> Olszowka aus Hamburg</li>
+<li>The Ruby Toolbox: <a href="https://www.ruby-toolbox.com">https://www.ruby-toolbox.com</a></li>
+<li>SimpleCov: <a href="https://github.com/colszowka/simplecov">https://github.com/colszowka/simplecov</a></li>
+<li>Studiert Informatik und macht Rails in einer Agentur</li>
+</ul>
+
+<h3>Rails Camp 2013 (00:02:40)</h3>
+
+<ul>
+<li>Fishbowl Talk: <a href="http://de.wikipedia.org/wiki/Fishbowl">http://de.wikipedia.org/wiki/Fishbowl</a></li>
+<li>Themen:
+
+<ul>
+<li>Wäre Kennedy Python oder Ruby Programmierer gewesen?</li>
+<li>Rails, omakase</li>
+<li>PRISM</li>
+</ul></li>
+</ul>
+
+<h3>Das Rails Ökosystem (00:04:00)</h3>
+
+<ul>
+<li>Turbolinks: <a href="https://github.com/rails/turbolinks">https://github.com/rails/turbolinks</a></li>
+<li>Rails API: <a href="https://github.com/rails-api/rails-api">https://github.com/rails-api/rails-api</a></li>
+<li>Neuerdings: Neue Features erst als Gems bereitgestellt, dann in den Core übernommen</li>
+<li>Strong Parameters: <a href="https://github.com/rails/strong_parameters">https://github.com/rails/strong_parameters</a></li>
+<li>Rails is Omakase
+
+<ul>
+<li>Blogpost von DHH: <a href="http://david.heinemeierhansson.com/2012/rails-is-omakase.html">http://david.heinemeierhansson.com/2012/rails-is-omakase.html</a></li>
+<li>A Dramatic Reading: <a href="http://www.youtube.com/watch?v=E99FnoYqoII">http://www.youtube.com/watch?v=E99FnoYqoII</a></li>
+</ul></li>
+<li>Seit Rails 3.0 ist vieles modularer geworden, einzelne Komponenten werden als Gems bereitgestellt</li>
+<li>GitHub ist immer noch auf einer auf Rails 2.3 basierenden Version</li>
+<li>Dirk und Basti kennen den Schmerz eine Rails 2.3 App maintainen zu müssen</li>
+<li>GitHub Fork von Rails 2.3: <a href="https://github.com/github/rails">https://github.com/github/rails</a></li>
+<li>GitHub&#39;s Zwischenfall mit E-Mails verschicken: <a href="https://github.com/blog/1440-today-s-email-incident">https://github.com/blog/1440-today-s-email-incident</a></li>
+<li>Rails 2.3 LTS: <a href="https://railslts.com">https://railslts.com</a></li>
+<li>Umstellung von Rails 3.0 auf 3.1 sehr schmerzhaft wegen der Asset Pipeline: <a href="http://guides.rubyonrails.org/asset_pipeline.html">http://guides.rubyonrails.org/asset_pipeline.html</a></li>
+<li>Rails 4.0 gibt sehr detaillierte Fehlermeldungen, bei der Migration</li>
+<li>Maintenance Policy for Ruby on Rails: <a href="http://weblog.rubyonrails.org/2013/2/24/maintenance-policy-for-ruby-on-rails">http://weblog.rubyonrails.org/2013/2/24/maintenance-policy-for-ruby-on-rails</a></li>
+</ul>
+
+<h3>Ruby Toolbox (00:18:45)</h3>
+
+<ul>
+<li>Projekt seit 2009</li>
+<li>Kategorisierter Katalog von Gems und anderen Open Source Projekten</li>
+<li>Sortierung nach Beliebtheit, viele Metadaten wie Aktualität, letzter Commit auf GitHub</li>
+<li>Als eingeloggter User kann man Kategorien hinzufügen, das Repo updaten, etc.</li>
+<li>Viele Änderungen müssen von Christoph noch manuell reviewt werden</li>
+<li>Basti nutzt die Toolbox regelmäßig, wusste aber nicht, dass man auch mitarbeiten kann</li>
+<li>Sortierung nach Rubygems Downloads, GitHub Stars/Watcher und Forks. </li>
+<li>Man kann sich den Score eines Projektes anzeigen lassen. Beispiel: thor <a href="https://www.ruby-toolbox.com/projects/thor/popularity">https://www.ruby-toolbox.com/projects/thor/popularity</a></li>
+<li>Dirk schlägt vor den letzten Commit auch mit einzubeziehen</li>
+<li>Wenn ein Gem bei RailsCasts (<a href="http://railscasts.com">http://railscasts.com</a>), etc erwähnt wird, dann beeinflusst das die Watcher Zahlen, aber die Download Zahlen ändert sich nicht zwangsläufig</li>
+<li>Für Basti ist es wichtig, dass ein Projekt aktiv ist (neue GitHub Commits), um zu sehen welches Tool er benutzt</li>
+<li>Gemcutter/Rubygems (<a href="http://www.rubygems.org">http://www.rubygems.org</a>) und Bundler (<a href="http://bundler.io/">http://bundler.io/</a>) haben das Ökosystem positiv beeinflusst</li>
+<li>Ein gem zu Erstellen, zu Open Sourcen und es zu maintainen ist ein echtes Commitment!</li>
+<li>Überprüfen ob Gems mit Rails 4 funktionieren: <a href="http://www.ready4rails4.net">http://www.ready4rails4.net</a></li>
+<li>&quot;View the full dependency tree for any ruby gem&quot;: <a href="https://www.gemlou.pe">https://www.gemlou.pe</a></li>
+<li>&quot;Bei großen Projekten landet man oft in der Dependency-Hell&quot;</li>
+<li>Angabe von Ruby Version (<a href="http://docs.rubygems.org/read/chapter/20#required_ruby_version">http://docs.rubygems.org/read/chapter/20#required_ruby_version</a>) und Plattform (<a href="http://docs.rubygems.org/read/chapter/20#platform">http://docs.rubygems.org/read/chapter/20#platform</a>) im gemspec möglich</li>
+<li>Leider die Dependency-Angaben oft sehr eng oder schlichtweg falsch: z.B. MRI verlangt, aber jruby funktioniert auch</li>
+</ul>
+
+<h3>SimpleCov (00:31:50)</h3>
+
+<ul>
+<li>SimpleCov basiert auf der Coverage API (<a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/coverage/rdoc/Coverage.html">http://www.ruby-doc.org/stdlib-1.9.3/libdoc/coverage/rdoc/Coverage.html</a>), die mittlerweile von JRuby (<a href="http://jruby.org">http://jruby.org</a>) und Rubinius (<a href="http://rubini.us">http://rubini.us</a>) auch unterstützt werden</li>
+<li>die Testsuite für SimpleCov dauert unter jruby &gt;45min :-/</li>
+<li>Basti ist zufrieden mit SimpleCov und hat keine Feature Requests</li>
+<li>Christoph will JavaScript Coverage mit einbauen</li>
+<li>Die Coverage API gibt Daten in einheitlichem Format raus, das könnte man für JavaScript Testsuites nachbauen</li>
+<li>SimpleCov kann die Coverage Daten aus mehreren Test-Suites zusammenfügen</li>
+<li>Wenn jemand mitarbeiten will, Christoph freut sich über Pull-Requests</li>
+<li>Weitere Idee: SimpleCov in Produktion einzusetzen (&quot;Welcher Code wird überhaupt wie oft verwendet&quot;), das wird aber von der Coverage API nicht unterstützt</li>
+<li>Dirk wirft in den Raum, dass das mit DTrace (<a href="http://de.wikipedia.org/wiki/DTrace">http://de.wikipedia.org/wiki/DTrace</a>) möglich sein könnte</li>
+<li>Dirk: &quot;Man sollte sich öfter fragen, ob Code überhaupt noch benutzt wird&quot;; +1</li>
+</ul>
+
+<h3>RailsCamp (00:38:50)</h3>
+
+<ul>
+<li>In den letzten 2 Tagen war es verdammt heiß, heute ist es eher bewölkt aber angenehm kühl</li>
+<li>Abenteuer Hallen Kalk: <a href="http://ahk.abenteuerhallenkalk.de">http://ahk.abenteuerhallenkalk.de</a></li>
+<li>Viele Aktivitäten: Klettern, Basketball, Laufen, Kicker, BMX…</li>
+<li>Basti: &quot;Das Wasser und die Mate, die man sich hier reinkippt, schwitzt man sofort wieder aus&quot;</li>
+<li>Internet per Richtfunkstrecke und WLAN vom CCC</li>
+<li>Wi-Fi Access Points: Ubuquity UniFi <a href="http://www.ubnt.com/unifi">http://www.ubnt.com/unifi</a></li>
+<li>Viprinet (<a href="http://www.viprinet.com/de/home">http://www.viprinet.com/de/home</a>)
+
+<ul>
+<li>Backup Uplink von Vodafone &amp; T-Mobile</li>
+</ul></li>
+<li>Man läuft rum, hört Sessions mit und unterhält sich mit den Leuten</li>
+<li>Weitere Aktivitäten: BMX mit einigen Verletzungen, AR Drone 2 (<a href="http://ardrone2.parrot.com">http://ardrone2.parrot.com</a>)</li>
+<li>geiles Essen, lecker Kaffee</li>
+<li>Übernachtung in der Skate Halle in zwischen und neben den Half Pipes (Christoph hat&#39;s getestet)</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST020" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Unser Gast" />
+          
+            <psc:chapter start="00:02:40" title="Rails Camp 2013" />
+          
+            <psc:chapter start="00:04:00" title="Das Rails Ökosystem" />
+          
+            <psc:chapter start="00:18:45" title="Ruby Toolbox" />
+          
+            <psc:chapter start="00:31:50" title="SimpleCov" />
+          
+            <psc:chapter start="00:38:50" title="RailsCamp" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
