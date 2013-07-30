@@ -5304,5 +5304,419 @@ simplecov.</p>
           
         </item>
         
+        <item>
+          <title>GST021 - Nerdstammtisch</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>GST021 - Nerdstammtisch</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst021.m4a" length="28626150" type="audio/x-m4a"/>
+          <guid isPermaLink="false">GST021</guid>
+          <pubDate>Tue, 30 Jul 2013 18:54:43 +0200</pubDate>
+          <itunes:duration>01:02:55</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Der Geekstammtisch und die Nerdkunde haben auf dem RailsCamp
+Germany 2013 zusammen ein paar Impressionen der Besucher gesammelt. Wir
+sprachen mit @skddc, @jkwebs, @argorak, @badboy_, @Uepsi, @slogmen und
+@Hagenburger. Bis zum nächsten Mal!
+
+
+### Intro (00:00:00)
+
+  * [Geekstammtisch](http://www.geekstammtisch.de) und [Nerdkunde](http://www.nerdkun.de) zusammen FTW! :)
+  * Wir senden "live" vom [RailsCamp 2013](http://2013.railscamp.de/), daher entschuldigt die ungewohnt "schlechte" Audioqualität
+  * Mit dabei: [Lucas](https://twitter.com/moonbeamlabs), [Basti](https://twitter.com/tisba), [Dirk](https://twitter.com/railsbros_dirk) und [Klaus](https://twitter.com/klaustopher) als hauptamtlicher Funkmikro-Träger!
+
+
+### Sebastian Kippe (00:01:02)
+
+  * Twitter: @skddc
+  * (Mit-)Organisator des RailsCamps
+  * es gab so circa 30 Mit-Organisatoren per [GitHub Issues](https://github.com/railscamp/railscamp-germany-2013/issues)
+  * wir fanden, die Orga lief super
+  * Sebastian kommt gerade von der Crypto-Session mit Key Signing & Co.
+  * Es wurden 125 Tickets verkauft, es waren circa 10 nicht da und es sind ein paar zusätzlich gekommen
+  * Sebastian's Highlight: Punk Rock mit @TheDeadSerious auflegen!
+  * Sport und Nerds: Es gab Opfer! 2 von 4 Leute beim BMXen waren im Krankenhaus
+
+
+### Jakob Hilden (00:07:09)
+
+  * Twitter: @jkwebs
+  * ebenfalls Organisator und vor allem Koordinator \o/
+  * findet es super, wie alles so zusammengekommen ist
+  * bei der vorletzten [Cologne.rb](http://www.colognerb.de) hat Jakob tolle "Hüte" gebastelt; hat funktioniert :)
+  * Die Idee einen Pool aufzustellen, kam leider etwas zu spät für's RailsCamp
+  * Jakob's Highlight: Nico @Hagenburger's Session zu [Living Styleguides](https://speakerdeck.com/hagenburger/style-guide-driven-development)
+  * Es gab eine tolle Feedback-Runde zu dem Living Styleguide Ansatz
+
+
+### Unsere Impressionen vom Camp (00:12:10)
+
+  * Dirk fragt sich, ob es eine grundsätzliche thematische Richtung auf dem Camp und wir haben nichts ausgemacht
+  * uns war allen warm :)
+  * Wir haben alle nicht so viele Sessions mitgemacht, sondern haben mehr an Diskussionen rundherum teilgenommen
+  * Lucas hat den Eindruck, dass viele auf der Suche nach DEM Frontend JS Framework sind
+  * Wir diskutieren etwas über [Ember.js](http://emberjs.com), [Backbone.js](http://backbonejs.org) und [AngularJS](http://angularjs.org)
+
+
+### Mike (00:16:40)
+
+  * betreut die ganzen Nerds in den AbenteuerHallenKALK: http://ahk.abenteuerhallenkalk.de/
+  * die gute Seele des Hauses
+  * Mike findet die RailsCamper sind tiefen-entspannt und ordentlich (hört, hört!)
+  * Nerds sind pflegeleichter als Jugendliche \o/
+  * Mike hat Chipstüten vermisst
+  * …und er fand unseren Musikgeschmack gut
+  * in den Hallen finden alle möglichen Events statt   
+    * z.B. die [Evoke 2013](http://www.evoke.eu/2013/) vom 16.-18.08.2013
+  * Evoke wird das selbe Wi-Fi Setup bekommen, wie das RailsCamp
+
+
+### Florian Gilcher (00:21:38)
+
+  * Twitter: @argorak
+  * Hat [AR.Dronen](http://ardrone2.parrot.com) mitgebracht, weil er eine geschenkt bekommen hat ^^
+  * Es sollte gescripted werden und nicht mit der iPhone App geflogen werden
+    * Ergebnis: Eine wird von einem N64-Controller gesteuert, die andere von einer [Shoes4-App](https://github.com/skade/shoes-ardrone)
+  * Klaus hat seine neue DrohDrohnene erstmal geschrottet
+  * Pro-Tipp: Drohne und Client müssen im gleichen WLAN sein
+  * Implementierungen in Ruby [artoo-ardrone](https://github.com/hybridgroup/artoo-ardrone) und Node.js [node-ar-drone](https://github.com/felixge/node-ar-drone)
+  * Florian hat einen Arbeitskreis für Ruby-Events gemacht
+  * Wie kann man sich besser vernetzen?
+    * Deutschlandweite Mailingsliste
+    * Deutschlandweites Blog
+    * Ruby Berlin e.V. ist trotz des Namens _nicht_ auf Berlin begrenzt
+  * Das Railscamp wurde vom Ruby e.V. veranstaltet
+  * Zentrale Frage sollen einfach zu klären sein (Bsp.: Internet, WLAN, etc)
+  * Die Telekom lässt das [eurucamp](http://2013.eurucamp.org) nicht an ihr Glas m(
+  * Findet statt vom 16.-18. August und es gibt noch Tickets
+  * Die einzige JRuby Konferenz dieses Jahr findet kurz vorher statt: [JRuby Conf EU](http://2013.jrubyconf.eu)
+  * Es gibt keine Kombitickets für die Konferenz aber eine Kombiparty
+  * Am 24./25. August findet die [RedFrog Conf](https://ruby.froscon.org) auf der [FrOSCon](http://www.froscon.org) statt 
+  * "[So Coded](http://socoded.com)" findet am 19./20. September in Hamburg statt
+
+
+### Jan-Erik Rediger (00:32:20)
+
+  * Twitter: @badboy_
+  * Kommt von [rrbone](https://www.rrbone.net), die den Uplink via Richtfunk zur FH Köln realisiert haben
+  * rrbone ist ein kleiner ISP aus Dortmund
+  * Richtfunkstrecke ging über 1,5 km
+  * Der Ausblick war großartig ^^
+  * Es gab für alle Teilnehmer öffentliche IPv4 und IPv6 Adressen
+  * Das Netz kommt in Düsseldorf raus!!!
+  * Es gab ein [Easteregg](http://tmp.rediger.net/railscamp-traceroute.txt)
+  * Bis zu 100MBit sind über die Richtfunkstrecke gemessen worden \o/
+  * Wir können jetzt überall Campen \o/
+
+
+### Wir (00:37:28)
+
+  * Sport von den Panelisten: Drohne fliegen, Kickern, Schwitzen
+  * Eine weitere Nerdkunde wurde in der Sauna mit Dennis Reimann aufgenommen: http://nerdkunde.de/nk0007.html
+  * Und ein Geekstammtisch mit Christoph @TheDeadSerious Olszowka
+  * Hardware Hacker: Buzzer und Funky Monkey Cards
+
+
+### Maxim (00:38:35)
+
+  * Twitter: @Uepsi
+  * Projekt hat auf der Interactive Cologne angefangen
+  * Das Projekt: Mit Karte einchecken und einfach zählen, wie oft jemand am Kühlschrank ist usw.
+  * [Raspberry Pis](http://www.raspberrypi.org) als Check-In Stations
+  * Aktuell sammelt jede Station für sich, denn das Netzwerk hat nicht mitgespielt
+  * App ist mit Rails gebaut, wer Lust hat mitzumachen: Bei Maxim melden!
+  * Buzzer hängen sich als Tastatur an den Rechner und können RGB Farbverläufe darstellen
+  * Läuft mit [AnyKey](http://www.anykey0x.de) – die Hacker sind aber noch schwer beschäftigt
+  * Klaus baut seine zukünftige Eisenbahnsteuerung vielleicht mit AnyKey
+  * Nerdifiziere alles mit Einchecken
+  * Alles anonym, Entwickler wehren sich gegen PRISM Vorwürfe
+  * Github Repo: [StuffCard local-service](https://github.com/StuffCard/local-service)
+
+
+### Wir (00:45:43)
+
+  * Das Fleisch war super (@killerg hat's gegrillt!)
+  * Fleisch + Zwiebeln + Beck's
+
+
+### Thomas Schrader (00:46:20)
+
+  * Twitter: @slogmen
+  * In einem riesengroßen Topf Fleisch + riesigen Mengen von Zwiebeln + Bier + Senf
+  * 24 Stunden eingelegt
+  * Butterzart!
+  * Sein erster Ruby Event
+  * Erst seit ein paar Monaten in Köln
+  * Super Atmosphäre, Leute und Location
+  * Er fand Sebastian's [Babuschka](http://babushka.me) Vortrag und den Living Styleguide super
+  * Babuschka automatisiert Server Setups
+  * Abhängigkeiten stehen im Vordergrund
+  * Keine zentrale Komponente wie bei Chef oder Puppet
+  * Server Setups automatisieren ist immer noch nicht gelöst
+  * Kann auch mehrere Server provisionieren
+  * Er wird noch auf weitere Events gehen
+
+
+### Wir (00:51:42)
+
+  * Podcast Workshop
+  * Einige waren interessiert am Podcasten
+  * Es waren jede Menge [RailsGirls](http://railsgirls.com) da
+  * Die Rails Girls treffen sich wöchentlich in kleinen Gruppen mit ihrem Coach
+  * Am Samstag haben sich die [Rubymonsters](https://github.com/rubymonsters) getroffen, um ihre Tests wieder grün zu machen
+    * Sie arbeiten an der Open Source Rails App [Speakerinnen Liste](https://github.com/rubymonsters/speakerinnen_liste)
+    * Das soll Speakerinnen und Konferenz Organizer zusammenbringen
+    * Haben Git Blame gelernt 
+    * Aber die sitzen alle im Git Workshop
+
+
+### Nico Hagenburger (00:55:40)
+
+  * Twitter: @Hagenburger
+  * Er hat einen Talk über Styleguide Driven Development gehalten: Separation von Frontend und Backend
+  * Er macht das auch so
+  * GitHub Repo – er baut ein Gem
+  * Er schreibt in Markdown seine Code Beispiele und schreibt dann seinen [Sass](http://sass-lang.com) Code, und produziert statisches HTML + CSS
+  * PHP Leute können wohl auch Sass. Aber er gibt am Liebsten direkt CSS raus
+  * [Sass und Compass in Symfony](http://alexandre-salome.fr/blog/Sass-Compass-Assetic-In-Ten-Minutes#sample-with-symfony2-sass-compass)
+  * Er muss keine Datenbank aufsetzen, die Entwickler müssen kein Sass mehr kompilieren
+  * Es gibt eine CSS Datei, in der alle Patches drin sind, und die werden dann später von Nico wieder in das Sass reingezogen
+  * Er macht das als Freelancer
+  * Ihm hat es super viel gebracht, da zu sein: Er hat Mitstreiter gefunden und Feedback gekriegt
+  * Das Gem liegt auf [GitHub](http://github.com/hagenburger/livingstyleguide)
+  * Er fand es anders richtig geil: Diesmal hat er viel technisches mitgenommen]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Der Geekstammtisch und die Nerdkunde haben auf dem RailsCamp
+Germany 2013 zusammen ein paar Impressionen der Besucher gesammelt. Wir
+sprachen mit <a href="https://twitter.com/skddc">@skddc</a>, <a href="https://twitter.com/jkwebs">@jkwebs</a>, <a href="https://twitter.com/argorak">@argorak</a>, <a href="https://twitter.com/badboy_">@badboy_</a>, <a href="https://twitter.com/Uepsi">@Uepsi</a>, <a href="https://twitter.com/slogmen">@slogmen</a> und
+<a href="https://twitter.com/Hagenburger">@Hagenburger</a>. Bis zum nächsten Mal!</p>
+
+<h3>Intro (00:00:00)</h3>
+
+<ul>
+<li><a href="http://www.geekstammtisch.de">Geekstammtisch</a> und <a href="http://www.nerdkun.de">Nerdkunde</a> zusammen FTW! :)</li>
+<li>Wir senden &quot;live&quot; vom <a href="http://2013.railscamp.de/">RailsCamp 2013</a>, daher entschuldigt die ungewohnt &quot;schlechte&quot; Audioqualität</li>
+<li>Mit dabei: <a href="https://twitter.com/moonbeamlabs">Lucas</a>, <a href="https://twitter.com/tisba">Basti</a>, <a href="https://twitter.com/railsbros_dirk">Dirk</a> und <a href="https://twitter.com/klaustopher">Klaus</a> als hauptamtlicher Funkmikro-Träger!</li>
+</ul>
+
+<h3>Sebastian Kippe (00:01:02)</h3>
+
+<ul>
+<li>Twitter: <a href="https://twitter.com/skddc">@skddc</a></li>
+<li>(Mit-)Organisator des RailsCamps</li>
+<li>es gab so circa 30 Mit-Organisatoren per <a href="https://github.com/railscamp/railscamp-germany-2013/issues">GitHub Issues</a></li>
+<li>wir fanden, die Orga lief super</li>
+<li>Sebastian kommt gerade von der Crypto-Session mit Key Signing &amp; Co.</li>
+<li>Es wurden 125 Tickets verkauft, es waren circa 10 nicht da und es sind ein paar zusätzlich gekommen</li>
+<li>Sebastian&#39;s Highlight: Punk Rock mit <a href="https://twitter.com/TheDeadSerious">@TheDeadSerious</a> auflegen!</li>
+<li>Sport und Nerds: Es gab Opfer! 2 von 4 Leute beim BMXen waren im Krankenhaus</li>
+</ul>
+
+<h3>Jakob Hilden (00:07:09)</h3>
+
+<ul>
+<li>Twitter: <a href="https://twitter.com/jkwebs">@jkwebs</a></li>
+<li>ebenfalls Organisator und vor allem Koordinator \o/</li>
+<li>findet es super, wie alles so zusammengekommen ist</li>
+<li>bei der vorletzten <a href="http://www.colognerb.de">Cologne.rb</a> hat Jakob tolle &quot;Hüte&quot; gebastelt; hat funktioniert :)</li>
+<li>Die Idee einen Pool aufzustellen, kam leider etwas zu spät für&#39;s RailsCamp</li>
+<li>Jakob&#39;s Highlight: Nico <a href="https://twitter.com/Hagenburger">@Hagenburger</a>&#39;s Session zu <a href="https://speakerdeck.com/hagenburger/style-guide-driven-development">Living Styleguides</a></li>
+<li>Es gab eine tolle Feedback-Runde zu dem Living Styleguide Ansatz</li>
+</ul>
+
+<h3>Unsere Impressionen vom Camp (00:12:10)</h3>
+
+<ul>
+<li>Dirk fragt sich, ob es eine grundsätzliche thematische Richtung auf dem Camp und wir haben nichts ausgemacht</li>
+<li>uns war allen warm :)</li>
+<li>Wir haben alle nicht so viele Sessions mitgemacht, sondern haben mehr an Diskussionen rundherum teilgenommen</li>
+<li>Lucas hat den Eindruck, dass viele auf der Suche nach DEM Frontend JS Framework sind</li>
+<li>Wir diskutieren etwas über <a href="http://emberjs.com">Ember.js</a>, <a href="http://backbonejs.org">Backbone.js</a> und <a href="http://angularjs.org">AngularJS</a></li>
+</ul>
+
+<h3>Mike (00:16:40)</h3>
+
+<ul>
+<li>betreut die ganzen Nerds in den AbenteuerHallenKALK: <a href="http://ahk.abenteuerhallenkalk.de/">http://ahk.abenteuerhallenkalk.de/</a></li>
+<li>die gute Seele des Hauses</li>
+<li>Mike findet die RailsCamper sind tiefen-entspannt und ordentlich (hört, hört!)</li>
+<li>Nerds sind pflegeleichter als Jugendliche \o/</li>
+<li>Mike hat Chipstüten vermisst</li>
+<li>…und er fand unseren Musikgeschmack gut</li>
+<li>in den Hallen finden alle möglichen Events statt<br>
+
+<ul>
+<li>z.B. die <a href="http://www.evoke.eu/2013/">Evoke 2013</a> vom 16.-18.08.2013</li>
+</ul></li>
+<li>Evoke wird das selbe Wi-Fi Setup bekommen, wie das RailsCamp</li>
+</ul>
+
+<h3>Florian Gilcher (00:21:38)</h3>
+
+<ul>
+<li>Twitter: <a href="https://twitter.com/argorak">@argorak</a></li>
+<li>Hat <a href="http://ardrone2.parrot.com">AR.Dronen</a> mitgebracht, weil er eine geschenkt bekommen hat ^^</li>
+<li>Es sollte gescripted werden und nicht mit der iPhone App geflogen werden
+
+<ul>
+<li>Ergebnis: Eine wird von einem N64-Controller gesteuert, die andere von einer <a href="https://github.com/skade/shoes-ardrone">Shoes4-App</a></li>
+</ul></li>
+<li>Klaus hat seine neue DrohDrohnene erstmal geschrottet</li>
+<li>Pro-Tipp: Drohne und Client müssen im gleichen WLAN sein</li>
+<li>Implementierungen in Ruby <a href="https://github.com/hybridgroup/artoo-ardrone">artoo-ardrone</a> und Node.js <a href="https://github.com/felixge/node-ar-drone">node-ar-drone</a></li>
+<li>Florian hat einen Arbeitskreis für Ruby-Events gemacht</li>
+<li>Wie kann man sich besser vernetzen?
+
+<ul>
+<li>Deutschlandweite Mailingsliste</li>
+<li>Deutschlandweites Blog</li>
+<li>Ruby Berlin e.V. ist trotz des Namens <em>nicht</em> auf Berlin begrenzt</li>
+</ul></li>
+<li>Das Railscamp wurde vom Ruby e.V. veranstaltet</li>
+<li>Zentrale Frage sollen einfach zu klären sein (Bsp.: Internet, WLAN, etc)</li>
+<li>Die Telekom lässt das <a href="http://2013.eurucamp.org">eurucamp</a> nicht an ihr Glas m(</li>
+<li>Findet statt vom 16.-18. August und es gibt noch Tickets</li>
+<li>Die einzige JRuby Konferenz dieses Jahr findet kurz vorher statt: <a href="http://2013.jrubyconf.eu">JRuby Conf EU</a></li>
+<li>Es gibt keine Kombitickets für die Konferenz aber eine Kombiparty</li>
+<li>Am 24./25. August findet die <a href="https://ruby.froscon.org">RedFrog Conf</a> auf der <a href="http://www.froscon.org">FrOSCon</a> statt </li>
+<li>&quot;<a href="http://socoded.com">So Coded</a>&quot; findet am 19./20. September in Hamburg statt</li>
+</ul>
+
+<h3>Jan-Erik Rediger (00:32:20)</h3>
+
+<ul>
+<li>Twitter: <a href="https://twitter.com/badboy_">@badboy_</a></li>
+<li>Kommt von <a href="https://www.rrbone.net">rrbone</a>, die den Uplink via Richtfunk zur FH Köln realisiert haben</li>
+<li>rrbone ist ein kleiner ISP aus Dortmund</li>
+<li>Richtfunkstrecke ging über 1,5 km</li>
+<li>Der Ausblick war großartig ^^</li>
+<li>Es gab für alle Teilnehmer öffentliche IPv4 und IPv6 Adressen</li>
+<li>Das Netz kommt in Düsseldorf raus!!!</li>
+<li>Es gab ein <a href="http://tmp.rediger.net/railscamp-traceroute.txt">Easteregg</a></li>
+<li>Bis zu 100MBit sind über die Richtfunkstrecke gemessen worden \o/</li>
+<li>Wir können jetzt überall Campen \o/</li>
+</ul>
+
+<h3>Wir (00:37:28)</h3>
+
+<ul>
+<li>Sport von den Panelisten: Drohne fliegen, Kickern, Schwitzen</li>
+<li>Eine weitere Nerdkunde wurde in der Sauna mit Dennis Reimann aufgenommen: <a href="http://nerdkunde.de/nk0007.html">http://nerdkunde.de/nk0007.html</a></li>
+<li>Und ein Geekstammtisch mit Christoph <a href="https://twitter.com/TheDeadSerious">@TheDeadSerious</a> Olszowka</li>
+<li>Hardware Hacker: Buzzer und Funky Monkey Cards</li>
+</ul>
+
+<h3>Maxim (00:38:35)</h3>
+
+<ul>
+<li>Twitter: <a href="https://twitter.com/Uepsi">@Uepsi</a></li>
+<li>Projekt hat auf der Interactive Cologne angefangen</li>
+<li>Das Projekt: Mit Karte einchecken und einfach zählen, wie oft jemand am Kühlschrank ist usw.</li>
+<li><a href="http://www.raspberrypi.org">Raspberry Pis</a> als Check-In Stations</li>
+<li>Aktuell sammelt jede Station für sich, denn das Netzwerk hat nicht mitgespielt</li>
+<li>App ist mit Rails gebaut, wer Lust hat mitzumachen: Bei Maxim melden!</li>
+<li>Buzzer hängen sich als Tastatur an den Rechner und können RGB Farbverläufe darstellen</li>
+<li>Läuft mit <a href="http://www.anykey0x.de">AnyKey</a> – die Hacker sind aber noch schwer beschäftigt</li>
+<li>Klaus baut seine zukünftige Eisenbahnsteuerung vielleicht mit AnyKey</li>
+<li>Nerdifiziere alles mit Einchecken</li>
+<li>Alles anonym, Entwickler wehren sich gegen PRISM Vorwürfe</li>
+<li>Github Repo: <a href="https://github.com/StuffCard/local-service">StuffCard local-service</a></li>
+</ul>
+
+<h3>Wir (00:45:43)</h3>
+
+<ul>
+<li>Das Fleisch war super (<a href="https://twitter.com/killerg">@killerg</a> hat&#39;s gegrillt!)</li>
+<li>Fleisch + Zwiebeln + Beck&#39;s</li>
+</ul>
+
+<h3>Thomas Schrader (00:46:20)</h3>
+
+<ul>
+<li>Twitter: <a href="https://twitter.com/slogmen">@slogmen</a></li>
+<li>In einem riesengroßen Topf Fleisch + riesigen Mengen von Zwiebeln + Bier + Senf</li>
+<li>24 Stunden eingelegt</li>
+<li>Butterzart!</li>
+<li>Sein erster Ruby Event</li>
+<li>Erst seit ein paar Monaten in Köln</li>
+<li>Super Atmosphäre, Leute und Location</li>
+<li>Er fand Sebastian&#39;s <a href="http://babushka.me">Babuschka</a> Vortrag und den Living Styleguide super</li>
+<li>Babuschka automatisiert Server Setups</li>
+<li>Abhängigkeiten stehen im Vordergrund</li>
+<li>Keine zentrale Komponente wie bei Chef oder Puppet</li>
+<li>Server Setups automatisieren ist immer noch nicht gelöst</li>
+<li>Kann auch mehrere Server provisionieren</li>
+<li>Er wird noch auf weitere Events gehen</li>
+</ul>
+
+<h3>Wir (00:51:42)</h3>
+
+<ul>
+<li>Podcast Workshop</li>
+<li>Einige waren interessiert am Podcasten</li>
+<li>Es waren jede Menge <a href="http://railsgirls.com">RailsGirls</a> da</li>
+<li>Die Rails Girls treffen sich wöchentlich in kleinen Gruppen mit ihrem Coach</li>
+<li>Am Samstag haben sich die <a href="https://github.com/rubymonsters">Rubymonsters</a> getroffen, um ihre Tests wieder grün zu machen
+
+<ul>
+<li>Sie arbeiten an der Open Source Rails App <a href="https://github.com/rubymonsters/speakerinnen_liste">Speakerinnen Liste</a></li>
+<li>Das soll Speakerinnen und Konferenz Organizer zusammenbringen</li>
+<li>Haben Git Blame gelernt </li>
+<li>Aber die sitzen alle im Git Workshop</li>
+</ul></li>
+</ul>
+
+<h3>Nico Hagenburger (00:55:40)</h3>
+
+<ul>
+<li>Twitter: <a href="https://twitter.com/Hagenburger">@Hagenburger</a></li>
+<li>Er hat einen Talk über Styleguide Driven Development gehalten: Separation von Frontend und Backend</li>
+<li>Er macht das auch so</li>
+<li>GitHub Repo – er baut ein Gem</li>
+<li>Er schreibt in Markdown seine Code Beispiele und schreibt dann seinen <a href="http://sass-lang.com">Sass</a> Code, und produziert statisches HTML + CSS</li>
+<li>PHP Leute können wohl auch Sass. Aber er gibt am Liebsten direkt CSS raus</li>
+<li><a href="http://alexandre-salome.fr/blog/Sass-Compass-Assetic-In-Ten-Minutes#sample-with-symfony2-sass-compass">Sass und Compass in Symfony</a></li>
+<li>Er muss keine Datenbank aufsetzen, die Entwickler müssen kein Sass mehr kompilieren</li>
+<li>Es gibt eine CSS Datei, in der alle Patches drin sind, und die werden dann später von Nico wieder in das Sass reingezogen</li>
+<li>Er macht das als Freelancer</li>
+<li>Ihm hat es super viel gebracht, da zu sein: Er hat Mitstreiter gefunden und Feedback gekriegt</li>
+<li>Das Gem liegt auf <a href="http://github.com/hagenburger/livingstyleguide">GitHub</a></li>
+<li>Er fand es anders richtig geil: Diesmal hat er viel technisches mitgenommen</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST021" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro" />
+          
+            <psc:chapter start="00:01:02" title="Sebastian Kippe" />
+          
+            <psc:chapter start="00:07:09" title="Jakob Hilden" />
+          
+            <psc:chapter start="00:12:10" title="Unsere Impressionen vom Camp" />
+          
+            <psc:chapter start="00:16:40" title="Mike" />
+          
+            <psc:chapter start="00:21:38" title="Florian Gilcher" />
+          
+            <psc:chapter start="00:32:20" title="Jan-Erik Rediger" />
+          
+            <psc:chapter start="00:37:28" title="Wir" />
+          
+            <psc:chapter start="00:38:35" title="Maxim" />
+          
+            <psc:chapter start="00:45:43" title="Wir" />
+          
+            <psc:chapter start="00:46:20" title="Thomas Schrader" />
+          
+            <psc:chapter start="00:51:42" title="Wir" />
+          
+            <psc:chapter start="00:55:40" title="Nico Hagenburger" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
