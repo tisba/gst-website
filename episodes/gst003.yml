@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 3
 name: Mein Callstack ist kleiner
+subtitle: Mit Florian Gilcher (@Argorak), u.a. über Padrino
 length: 3840
 media:
   mp3:

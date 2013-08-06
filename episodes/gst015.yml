@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 15
 name: Geschäftsvorfall als Ereignis
+subtitle: Mit Michael Bumann (@bumi) über AMQP und Legacy-Systeme, Cloud-Hosting und und und…
 length: 6757
 media:
   opus:

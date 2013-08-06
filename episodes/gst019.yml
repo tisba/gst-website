@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 19
 name: Weg von .NET & Windows
+subtitle: Mit Stefan Schiffer (@scrat0105) über die Wandlung eines Unternehmens
 length: 4645
 media:
   mp3:

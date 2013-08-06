@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 13
 name: NoSQL Matters 2013
+subtitle: Berichterstattung von der NoSQL Matters 2013
 length: 5927
 media:
   alac:

@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 18
 name: Runde Ecken
+subtitle: Mit Sebastian Kippe (@skddc) über 5Apps, Arbeiten beim W3C, HTTP 2.0, DevOps und mehr…
 length: 5151
 media:
   alac:

@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 14
 name: Business Kasper UG
+subtitle: Mit Matthias @luebken über den leidenschaftlichen Entwickler und agile Softwareentwicklung
 length: 6261
 media:
   alac:

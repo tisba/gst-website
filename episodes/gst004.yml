@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 4
 name: Ich dachte C ist fertig
+subtitle: Mit Frank Celler (@fceller) über mruby
 length: 4338
 media:
   mp3:
