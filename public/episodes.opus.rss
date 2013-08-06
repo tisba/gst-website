@@ -38,7 +38,7 @@
           <title>GST000 - Batteries Included</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST000 - Batteries Included</itunes:subtitle>
+          <itunes:subtitle>Der Geekstammtisch stellt sich vor</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst000.opus" length="20853697" type="audio/opus"/>
           <guid isPermaLink="false">GST000</guid>
           <pubDate>Mon, 17 Dec 2012 19:02:58 +0100</pubDate>
@@ -169,7 +169,7 @@ auch komplett weg, wenn gewünscht</li>
           <title>GST001 - Chubby Models on a Diet</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST001 - Chubby Models on a Diet</itunes:subtitle>
+          <itunes:subtitle>Noch mal mit ohne Gast über aktuelles aus der Ruby-Welt</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst001.opus" length="26362507" type="audio/opus"/>
           <guid isPermaLink="false">GST001</guid>
           <pubDate>Mon, 07 Jan 2013 20:50:46 +0100</pubDate>
@@ -346,7 +346,7 @@ auch komplett weg, wenn gewünscht</li>
           <title>GST002 - Shell ist immer da</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST002 - Shell ist immer da</itunes:subtitle>
+          <itunes:subtitle>Mit Sebastian Schulze (@bascht)</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst002.opus" length="29796441" type="audio/opus"/>
           <guid isPermaLink="false">GST002</guid>
           <pubDate>Mon, 21 Jan 2013 22:12:54 +0100</pubDate>
@@ -550,7 +550,7 @@ DOS zu verhindern.</li>
           <title>GST003 - Mein Callstack ist kleiner</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST003 - Mein Callstack ist kleiner</itunes:subtitle>
+          <itunes:subtitle>Mit Florian Gilcher (@Argorak), u.a. über Padrino</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst003.opus" length="31297600" type="audio/opus"/>
           <guid isPermaLink="false">GST003</guid>
           <pubDate>Mon, 28 Jan 2013 21:07:15 +0100</pubDate>
@@ -983,7 +983,7 @@ Controllers, Service Layer</li>
           <title>GST004 - Ich dachte C ist fertig</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST004 - Ich dachte C ist fertig</itunes:subtitle>
+          <itunes:subtitle>Mit Frank Celler (@fceller) über mruby</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst004.opus" length="35604935" type="audio/opus"/>
           <guid isPermaLink="false">GST004</guid>
           <pubDate>Tue, 05 Feb 2013 00:31:37 +0100</pubDate>
@@ -1303,7 +1303,7 @@ ArangoDB</li>
           <title>GST005 - HistorieLöschenService</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST005 - HistorieLöschenService</itunes:subtitle>
+          <itunes:subtitle>Mit Oliver Jucknath über Architektur, SOA, Continuous Deployment und Testing und die Cloud</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst005.opus" length="42217570" type="audio/opus"/>
           <guid isPermaLink="false">GST005</guid>
           <pubDate>Thu, 14 Feb 2013 15:07:49 +0100</pubDate>
@@ -1619,7 +1619,7 @@ Source haben</li>
           <title>GST006 - Heute machen, morgen Legacy</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST006 - Heute machen, morgen Legacy</itunes:subtitle>
+          <itunes:subtitle>Mit Lucas Dohmen (@moonbeamlabs) vor allem über ArangoDB</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst006.opus" length="43450751" type="audio/opus"/>
           <guid isPermaLink="false">GST006</guid>
           <pubDate>Tue, 19 Feb 2013 23:27:37 +0100</pubDate>
@@ -1929,7 +1929,7 @@ Ruby/Rails Security und anderen geilen Scheiß.</p>
           <title>GST007 - Provisionieren mit Bash</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST007 - Provisionieren mit Bash</itunes:subtitle>
+          <itunes:subtitle>Mit Klaus Zanders (@klaustopher)</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst007.opus" length="49518956" type="audio/opus"/>
           <guid isPermaLink="false">GST007</guid>
           <pubDate>Sat, 09 Mar 2013 18:40:28 +0100</pubDate>
@@ -2274,7 +2274,7 @@ abschießen <a href="https://github.com/awilliams/RTanque">https://github.com/aw
           <title>GST008 - Rake auf Drogen</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST008 - Rake auf Drogen</itunes:subtitle>
+          <itunes:subtitle>Mit Lucas Dohmen (@moonbeamlabs) über Ruby, JRuby, DevOps und anderen spannenden Dingen</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst008.opus" length="44717658" type="audio/opus"/>
           <guid isPermaLink="false">GST008</guid>
           <pubDate>Wed, 20 Mar 2013 17:49:40 +0100</pubDate>
@@ -2454,7 +2454,7 @@ abschießen <a href="https://github.com/awilliams/RTanque">https://github.com/aw
           <title>GST009 - Zweites Rack rechts</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST009 - Zweites Rack rechts</itunes:subtitle>
+          <itunes:subtitle>Mit @bascht und sehr DevOps lastig: Deployment Strategien, Chef und VPNs</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst009.opus" length="39260991" type="audio/opus"/>
           <guid isPermaLink="false">GST009</guid>
           <pubDate>Tue, 26 Mar 2013 13:50:35 +0100</pubDate>
@@ -2665,7 +2665,7 @@ Internet bekommt.</li>
           <title>GST010 - Dackelklub</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST010 - Dackelklub</itunes:subtitle>
+          <itunes:subtitle>Mit Liane Thönnes (liane_thoennes) über das Leben und Arbeiten einer Designerin unter Entwicklern</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst010.opus" length="33118776" type="audio/opus"/>
           <guid isPermaLink="false">GST010</guid>
           <pubDate>Tue, 02 Apr 2013 22:01:30 +0200</pubDate>
@@ -2826,7 +2826,7 @@ natürlich auch nicht fehlen.</p>
           <title>GST011 - Unsatisfied Computers</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST011 - Unsatisfied Computers</itunes:subtitle>
+          <itunes:subtitle>Ein Geekstammtisch Classic, mit ohne Gast über OO Design, Code Metriken und und und…</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst011.opus" length="40596944" type="audio/opus"/>
           <guid isPermaLink="false">GST011</guid>
           <pubDate>Mon, 15 Apr 2013 10:42:36 +0200</pubDate>
@@ -3042,7 +3042,7 @@ philosophieren wir gegen Ende noch etwas über den PC Markt.</p>
           <title>GST013 - NoSQL Matters 2013</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST013 - NoSQL Matters 2013</itunes:subtitle>
+          <itunes:subtitle>Berichterstattung von der NoSQL Matters 2013</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst013.opus" length="48384265" type="audio/opus"/>
           <guid isPermaLink="false">GST013</guid>
           <pubDate>Wed, 01 May 2013 20:40:24 +0200</pubDate>
@@ -3421,7 +3421,7 @@ philosophieren wir gegen Ende noch etwas über den PC Markt.</p>
           <title>GST014 - Business Kasper UG</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST014 - Business Kasper UG</itunes:subtitle>
+          <itunes:subtitle>Mit Matthias @luebken über den leidenschaftlichen Entwickler und agile Softwareentwicklung</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst014.opus" length="51062979" type="audio/opus"/>
           <guid isPermaLink="false">GST014</guid>
           <pubDate>Mon, 20 May 2013 17:18:16 +0200</pubDate>
@@ -3615,7 +3615,7 @@ Bieres!</p>
           <title>GST015 - Geschäftsvorfall als Ereignis</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST015 - Geschäftsvorfall als Ereignis</itunes:subtitle>
+          <itunes:subtitle>Mit Michael Bumann (@bumi) über AMQP und Legacy-Systeme, Cloud-Hosting und und und…</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst015.opus" length="55264727" type="audio/opus"/>
           <guid isPermaLink="false">GST015</guid>
           <pubDate>Sun, 09 Jun 2013 17:58:55 +0200</pubDate>
@@ -3907,7 +3907,7 @@ irgendwann nicht mehr skalieren.</li>
           <title>GST016 - WWDC 2013 - Surfin’ USA</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST016 - WWDC 2013 - Surfin’ USA</itunes:subtitle>
+          <itunes:subtitle>Wir kommentieren die WWDC 2013 Keynote</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst016.opus" length="20510663" type="audio/opus"/>
           <guid isPermaLink="false">GST016</guid>
           <pubDate>Tue, 11 Jun 2013 21:14:00 +0200</pubDate>
@@ -4045,7 +4045,7 @@ sicher und OS X 10.9 macht vor allem den Eindruck, dass aufgeräumt wird.</p>
           <title>GST017 - developer-whisperer.DLL</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST017 - developer-whisperer.DLL</itunes:subtitle>
+          <itunes:subtitle>Mit Oliver Thylmann (@othylmann) über Gründung (in Köln), Start-Ups und die Firma der Zukunft</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst017.opus" length="34377644" type="audio/opus"/>
           <guid isPermaLink="false">GST017</guid>
           <pubDate>Sun, 23 Jun 2013 16:41:14 +0200</pubDate>
@@ -4309,7 +4309,7 @@ so was wie der Startplatz herhalten.</li>
           <title>GST018 - Runde Ecken</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST018 - Runde Ecken</itunes:subtitle>
+          <itunes:subtitle>Mit Sebastian Kippe (@skddc) über 5Apps, Arbeiten beim W3C, HTTP 2.0, DevOps und mehr…</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst018.opus" length="42286961" type="audio/opus"/>
           <guid isPermaLink="false">GST018</guid>
           <pubDate>Fri, 28 Jun 2013 18:09:55 +0200</pubDate>
@@ -4680,7 +4680,7 @@ Der Geekstammtisch wird volljährig! Dieses mal sprachen wir mit Sebastian Kippe
           <title>GST019 - Weg von .NET &amp; Windows</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST019 - Weg von .NET &amp; Windows</itunes:subtitle>
+          <itunes:subtitle>Mit Stefan Schiffer (@scrat0105) über die Wandlung eines Unternehmens</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst019.opus" length="38208953" type="audio/opus"/>
           <guid isPermaLink="false">GST019</guid>
           <pubDate>Sat, 27 Jul 2013 16:29:29 +0200</pubDate>
@@ -5080,7 +5080,7 @@ Der Geekstammtisch wird volljährig! Dieses mal sprachen wir mit Sebastian Kippe
           <title>GST020 - Wenn die Codebase groß genug ist...</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST020 - Wenn die Codebase groß genug ist...</itunes:subtitle>
+          <itunes:subtitle>Auf dem RailsCamp 2013 mit Christoph Olszowka (@TheDeadSerious) über The Ruby Toolbox und simplecov</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst020.opus" length="23337007" type="audio/opus"/>
           <guid isPermaLink="false">GST020</guid>
           <pubDate>Mon, 29 Jul 2013 18:27:42 +0200</pubDate>
@@ -5308,7 +5308,7 @@ simplecov.</p>
           <title>GST021 - Nerdstammtisch (aka NK008)</title>
           <itunes:explicit>no</itunes:explicit>
           <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
-          <itunes:subtitle>GST021 - Nerdstammtisch (aka NK008)</itunes:subtitle>
+          <itunes:subtitle>Das Geekstammtisch und Nerdkunde Joint Venture berichtet vom RailCamp 2013</itunes:subtitle>
           <enclosure url="http://media.geekstammtisch.de/episodes/gst021.opus" length="30737787" type="audio/opus"/>
           <guid isPermaLink="false">GST021</guid>
           <pubDate>Tue, 30 Jul 2013 18:54:43 +0200</pubDate>
