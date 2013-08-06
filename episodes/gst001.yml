@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 1
 name: Chubby Models on a Diet
+subtitle: Noch mal mit ohne Gast über aktuelles aus der Ruby-Welt
 length: 3210
 media:
   mp3:

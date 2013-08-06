@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 21
 name: Nerdstammtisch (aka NK008)
+subtitle: Das Geekstammtisch und Nerdkunde Joint Venture berichtet vom RailCamp 2013
 length: 3775
 media:
   opus:

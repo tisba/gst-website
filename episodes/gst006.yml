@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 6
 name: Heute machen, morgen Legacy
+subtitle: Mit Lucas Dohmen (@moonbeamlabs) vor allem über ArangoDB
 length: 5287
 media:
   mp3:

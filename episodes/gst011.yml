@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 11
 name: Unsatisfied Computers
+subtitle: Ein Geekstammtisch Classic, mit ohne Gast über OO Design, Code Metriken und und und…
 length: 4952
 media:
   alac:

@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 20
 name: Wenn die Codebase groß genug ist...
+subtitle: Auf dem RailsCamp 2013 mit Christoph Olszowka (@TheDeadSerious) über The Ruby Toolbox und simplecov
 length: 2847
 media:
   mp3:

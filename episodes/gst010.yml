@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 10
 name: Dackelklub
+subtitle: Mit Liane Thönnes (liane_thoennes) über das Leben und Arbeiten einer Designerin unter Entwicklern
 length: 4060
 media:
   mp3:

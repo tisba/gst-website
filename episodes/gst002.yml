@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 2
 name: Shell ist immer da
+subtitle: Mit Sebastian Schulze (@bascht)
 length: 3629
 media:
   mp3:
