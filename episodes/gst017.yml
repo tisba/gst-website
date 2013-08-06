@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 17
 name: developer-whisperer.DLL
+subtitle: Mit Oliver Thylmann (@othylmann) über Gründung (in Köln), Start-Ups und die Firma der Zukunft
 length: 4219
 media:
   opus:

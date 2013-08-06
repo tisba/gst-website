@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 9
 name: Zweites Rack rechts
+subtitle: "Mit @bascht und sehr DevOps lastig: Deployment Strategien, Chef und VPNs"
 length: 4788
 media:
   mp3:

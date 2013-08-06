@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 7
 name: Provisionieren mit Bash
+subtitle: Mit Klaus Zanders (@klaustopher)
 length: 6010
 media:
   mp3:

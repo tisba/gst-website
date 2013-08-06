@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 0
 name: Batteries Included
+subtitle: Der Geekstammtisch stellt sich vor
 length: 2547
 media:
   mp3:

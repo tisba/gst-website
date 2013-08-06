@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 8
 name: Rake auf Drogen
+subtitle: Mit Lucas Dohmen (@moonbeamlabs) über Ruby, JRuby, DevOps und anderen spannenden Dingen
 length: 5432
 media:
   mp3:

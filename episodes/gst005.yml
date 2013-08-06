@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 5
 name: HistorieLöschenService
+subtitle: Mit Oliver Jucknath über Architektur, SOA, Continuous Deployment und Testing und die Cloud
 length: 5194
 media:
   mp3:

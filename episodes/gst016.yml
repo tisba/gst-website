@@ -1,6 +1,7 @@
 --- !ruby/struct:Episode
 number: 16
 name: WWDC 2013 - Surfin’ USA
+subtitle: Wir kommentieren die WWDC 2013 Keynote
 length: 2482
 media:
   opus:
