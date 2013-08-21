@@ -5718,5 +5718,345 @@ sprachen mit <a href="https://twitter.com/skddc">@skddc</a>, <a href="https://tw
           
         </item>
         
+        <item>
+          <title>GST022 - Der Finder lügt!</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Mit Manuel @StuFFmc Carrasco Molina über Podcasting, iOS/OS X Entwicklung und Apple Rumors.</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst022.m4a" length="43613655" type="audio/x-m4a"/>
+          <guid isPermaLink="false">GST022</guid>
+          <pubDate>Wed, 21 Aug 2013 10:07:09 +0200</pubDate>
+          <itunes:duration>01:39:10</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis**: Wir sprachen mit Manuel @StuFFmc Carrasco Molina über
+seine Zeit als Podcaster (http://pomcast.com), iOS und OS X Entwicklung.
+Da wir schon mal einen Apple Fanboy da hatten, haben wir die Gelegenheit
+genutzt um etwas in die Glaskugel zu schauen.
+
+### Unser Gast (00:00:00)
+
+  * Manuel "StuFF mc" Carrasco Molina
+  * trinkt Blue Bastard: http://www.amazon.de/Blue-Bastard-Energy-Drink-Dose/dp/B008KGDT2C
+  * iOS/Mac/Cocoa Entwickler
+  * Podcaster - Pomcast; Interview mit Woz! http://pomcast.com/2007/06/05/woz/
+  * war in einem früheren Leben mal .NET-Entwickler
+  * seit 2008 freiberuflich unterwegs
+  * <3 den Mac mehr als iOS
+  * Hat zwei Apps im Mac App Store
+    * Disk Alarm http://diskalarm.com/ und Comments.app http://commentsapp.co/
+  * Organisiert die objcgn, eine Objective-C Konferenz in Köln seit 2012
+
+### Podcasting (00:06:00)
+
+  * Pomcast: http://pomcast.com
+  * Stuff hat mit Podcasting angefangen am 31.5.2005...
+    * auf Französisch, später dann auch auf Englisch und Deutsch und ein paar auf Spanisch
+  * Thema: Apple, ~5000 Hörer
+  * Hat viele interessante Personen durch das Podcasting getroffen
+  * Idle seit ~2010
+  * Podcasts mit anderen via Skype aufnehmen - viel Arbeit!
+    * double-ender: http://en.wikipedia.org/wiki/Phone-sync
+
+### iOS Entwicklung, App Store & Co. (00:20:30)
+
+  * von Anfang an bei iOS dabei
+  * seit 2008 macht Stuff iOS freiberuflich
+  * hat erst iOS und dann OS X gemacht
+  * DevHouseFriday: http://devhousefriday.org
+  * Wir fragen Stuff wie es mit .NET Background war Cocoa zu lernen
+  * Stuff war 2007 schon auf der WWDC und hat Cocoa-Luft geschnuppert
+  * iOS 7 soll viel einfacher sein für den Einstieg
+  * seit iOS 5 gibt es ARC: http://en.wikipedia.org/wiki/Automatic_Reference_Counting
+  * iOS 7 und 6 als Target zu haben ist SEHR aufwendig, da sich viel geändert hat
+  * Ballmer laughs at iPhone, "$500 for a phone? *lol*": http://www.youtube.com/watch?v=eywi0h_Y5_U
+
+### Der (App) Markt (00:34:00)
+
+  * macht Apple die Preise kaputt? Was ist mit Updates? Fragen über Fragen...
+  * der Preis vom aktuellen Logic ist unter dem früheren Updatepreis
+  * Aperture ist alt (2010): http://www.apple.com/aperture/
+  * Wir sprechen noch mal kurz über Diskalarm und Comments.app
+  * Diskalarm und die Problematik mit der Mobile Time Machine; der Finder lügt!1!!
+  * df: http://en.wikipedia.org/wiki/Df_(Unix)
+  * du: http://en.wikipedia.org/wiki/Du_(Unix)
+  * App Store Updates?
+    * Neue Version = Neue App rausbringen?
+    * Immer wieder auf Neukäufe hoffen?
+    * In-App-Purchase?
+    * Stuff deutet eine mögliche Lösung mit iOS 7 an, leider NDA :-/
+  * App Pricing
+    * Ist allgemein schwer, aber die Preise sind gesunken
+    * Wie umgehen mit Demos? XY lite? Features via IAP?
+    * Basti findet Demo-Versionen blöd
+  * Where To? (@wheretoapp) Von Ortwin Gentz: http://www.futuretap.com/apps/whereto-en/
+  * Instapaper in Gefahr durch Safari Reading List: http://www.apple.com/osx/apps/#gallery-safari-readinglist
+    * Ist NICHT kostenlos im App Store, Basti!
+    * Neues schönes Webinterface zu Instapaper: http://beta.instapaper.com/
+    * Es ist nicht bekannt, ob es einen API für die Reading List gibt *hust*
+  * Wir vermuten, dass Apples Podcast-App den kostenpflichtigen Podfetchern nicht signifikant Markt weggenommen hat
+  * Podcast-App sieht unter iOS 7 immer noch so aus wie iOS 6
+
+### Projekte unter NDA (00:54:50)
+
+  * Basti und Dirk mögen keine NDAs ;-)
+  * Stuff hat zwar schon NDAs abgelehnt aber in der Regel steht er unter NDA
+  * Er darf noch nicht einmal den Auftraggeber nennen
+  * Manche Auftragsarbeiten sind mittlerweile auch nicht mehr im App-Store
+  * Manchmal macht Stuff alles von Server-Backend bis Frontend
+  * Arbeiten und NDA macht die Gestaltung des Lebenslaufs schwierig
+  * Für einige ist Stuff der Rails-Guy
+  * Es gibt relativ viele iOS-Entwickler, die auch die Serverbackends selber schreiben
+  * Stuff sollte für einen neuen eBook-Reader entwickeln, Projekt wurde aber eingestellt
+  * Er hat auch iOS-Kurse gegeben
+  * Auf Nachfrage gibt er diese Kurse auch immer noch
+  * Schwierigkeit ist es in 5 Tage die Kernaspekte von iOS-Entwicklung zu vermitteln
+  * KISS (https://en.wikipedia.org/wiki/KISS_principle): Präsentations-App mit Animationen, Animationen sind Keynote-Präsentationen als Quicktime exportiert
+  * Das Problem bei C# und .NET ist, dass leider ein Windows mitkommt
+
+### Gerüchteküche (01:06:40)
+
+  * Wir sind alle zufrieden mit dem MacBook Pro Retina
+  * Wir hoffen auf ein externes Retina/4K Display von Apple
+  * Stuff arbeitet nur mit dem Mac Book (inkl. Laptop-Stand und externer Maus/Tastatur)
+  * Basti und Dirk brauchen mehr Platz
+  * Grund für die Vermutung: Der Mac Pro sieht einfach nicht aus neben dem "alten" Cinema-Display
+  * 27" reicht von der Fläche aber wir brauchen mehr Pixel!
+  * Dirk vermutet den Preis bei 3500 Dollar - Basti hofft, dass er damit falsch liegt
+  * Für Stuff wäre viel wichtiger, keine Kabel mehr zu verwenden: Weder Strom noch Display
+  * Display könnte mit Mavericks via AirPlay gelöst werden
+  * Induktion könnte für Strom eine Lösung sein, aber Basti weist darauf hin, dass 80 Watt via Induktion uncool sind
+  * Basti glaubt nicht an niedrige Latenz bei AirPlay
+  * Weil: 4K passt noch nicht mal in Thunderbolt 1
+  * MacBook Pros brauchen Thunderbolt 2, sind vom Update überfällig, daher: 4K Display quasi sicher
+  * Finaler "Beweis": Die Vorstellung des 30"-Displays war so großartig, dass muss es noch mal geben: https://www.youtube.com/watch?v=j_QtUH_zG4U
+  * Stuff ist auf der Suche nach viel externem Plattenplatz
+    * Eine Überlegung war ein Drobo (http://www.drobo.com/)
+    * Wir erinnern uns an das Promise Pegasus RAID (http://www.promise.com/storage/raid_series.aspx?m=192&region=en-global&rsn1=40&rsn3=47)
+    * Empfohlen in der Freak Show: http://freakshow.fm/mm105-featuritis-ante-portas#t=1:55:17.658
+  * Stuff braucht den Platz für alle WWDC Videos seit 2007
+  * Apple Event am 10.9.2013: http://allthingsd.com/20130810/circle-sept-10-on-your-calendar-for-apples-big-iphone-event/
+    * "Yep" von Jim Dalrymple. @jdalrymple — http://www.loopinsight.com
+    * John Gruber hat das auch "bestätigt"
+  * Was könnte passieren?
+    * iOS 7 Release
+    * neues iPhone 5
+    * wir kommen wohl nicht im eine "Low-Cost" iPhone herum (http://appleinsider.com/articles/13/08/19/iphone-5c-expected-to-replace-iphone-5-while-apples-iphone-4s-will-live-on)
+    * Apple entgeht in diesem Marksegment eine Menge Geld
+    * Wir gehen nicht von einem Feature-Phone aus, aber etwas das den mittleren Bereich abdeckt
+  * HTC und Robert Downey Jr. http://www.theverge.com/2013/8/14/4620510/htc-and-robert-downey-jr-debut-full-version-of-new-change-ad
+
+### Der Marimba-Sound (01:27:37)
+
+  * Die Entstehungsgeschichte des Marimba-Tons: http://jacklinstudios.com/docs/making-of-158-marimba.html
+
+### Objective-Cologne (01:30:10)
+
+  * objcgn: http://objcgn.com/
+  * 17. - 18. September in Köln
+  * Eine Cocoa/Objective-Konferenz in Köln mit internationalen Speakern
+  * Getränke/Catering ist im Preis enthalten
+  * Am ersten Abend gibt es das "Conference-Dinner"
+  * Das letzte Mal ist das gesamte Bier weggetrunken worden :-)
+  * Konferenzen veranstalten macht einen nicht reich
+  * Promo-Code: https://objcgn.paydro.net/event/objective-cologne-2013/geekstammtisch]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis</strong>: Wir sprachen mit Manuel <a href="https://twitter.com/StuFFmc">@StuFFmc</a> Carrasco Molina über
+seine Zeit als Podcaster (<a href="http://pomcast.com">http://pomcast.com</a>), iOS und OS X Entwicklung.
+Da wir schon mal einen Apple Fanboy da hatten, haben wir die Gelegenheit
+genutzt um etwas in die Glaskugel zu schauen.</p>
+
+<h3>Unser Gast (00:00:00)</h3>
+
+<ul>
+<li>Manuel &quot;StuFF mc&quot; Carrasco Molina</li>
+<li>trinkt Blue Bastard: <a href="http://www.amazon.de/Blue-Bastard-Energy-Drink-Dose/dp/B008KGDT2C">http://www.amazon.de/Blue-Bastard-Energy-Drink-Dose/dp/B008KGDT2C</a></li>
+<li>iOS/Mac/Cocoa Entwickler</li>
+<li>Podcaster - Pomcast; Interview mit Woz! <a href="http://pomcast.com/2007/06/05/woz/">http://pomcast.com/2007/06/05/woz/</a></li>
+<li>war in einem früheren Leben mal .NET-Entwickler</li>
+<li>seit 2008 freiberuflich unterwegs</li>
+<li>&lt;3 den Mac mehr als iOS</li>
+<li>Hat zwei Apps im Mac App Store
+
+<ul>
+<li>Disk Alarm <a href="http://diskalarm.com/">http://diskalarm.com/</a> und Comments.app <a href="http://commentsapp.co/">http://commentsapp.co/</a></li>
+</ul></li>
+<li>Organisiert die objcgn, eine Objective-C Konferenz in Köln seit 2012</li>
+</ul>
+
+<h3>Podcasting (00:06:00)</h3>
+
+<ul>
+<li>Pomcast: <a href="http://pomcast.com">http://pomcast.com</a></li>
+<li>Stuff hat mit Podcasting angefangen am 31.5.2005...
+
+<ul>
+<li>auf Französisch, später dann auch auf Englisch und Deutsch und ein paar auf Spanisch</li>
+</ul></li>
+<li>Thema: Apple, ~5000 Hörer</li>
+<li>Hat viele interessante Personen durch das Podcasting getroffen</li>
+<li>Idle seit ~2010</li>
+<li>Podcasts mit anderen via Skype aufnehmen - viel Arbeit!
+
+<ul>
+<li>double-ender: <a href="http://en.wikipedia.org/wiki/Phone-sync">http://en.wikipedia.org/wiki/Phone-sync</a></li>
+</ul></li>
+</ul>
+
+<h3>iOS Entwicklung, App Store &amp; Co. (00:20:30)</h3>
+
+<ul>
+<li>von Anfang an bei iOS dabei</li>
+<li>seit 2008 macht Stuff iOS freiberuflich</li>
+<li>hat erst iOS und dann OS X gemacht</li>
+<li>DevHouseFriday: <a href="http://devhousefriday.org">http://devhousefriday.org</a></li>
+<li>Wir fragen Stuff wie es mit .NET Background war Cocoa zu lernen</li>
+<li>Stuff war 2007 schon auf der WWDC und hat Cocoa-Luft geschnuppert</li>
+<li>iOS 7 soll viel einfacher sein für den Einstieg</li>
+<li>seit iOS 5 gibt es ARC: <a href="http://en.wikipedia.org/wiki/Automatic_Reference_Counting">http://en.wikipedia.org/wiki/Automatic_Reference_Counting</a></li>
+<li>iOS 7 und 6 als Target zu haben ist SEHR aufwendig, da sich viel geändert hat</li>
+<li>Ballmer laughs at iPhone, &quot;$500 for a phone? <em>lol</em>&quot;: <a href="http://www.youtube.com/watch?v=eywi0h_Y5_U">http://www.youtube.com/watch?v=eywi0h_Y5_U</a></li>
+</ul>
+
+<h3>Der (App) Markt (00:34:00)</h3>
+
+<ul>
+<li>macht Apple die Preise kaputt? Was ist mit Updates? Fragen über Fragen...</li>
+<li>der Preis vom aktuellen Logic ist unter dem früheren Updatepreis</li>
+<li>Aperture ist alt (2010): <a href="http://www.apple.com/aperture/">http://www.apple.com/aperture/</a></li>
+<li>Wir sprechen noch mal kurz über Diskalarm und Comments.app</li>
+<li>Diskalarm und die Problematik mit der Mobile Time Machine; der Finder lügt!1!!</li>
+<li>df: <a href="http://en.wikipedia.org/wiki/Df_(Unix)">http://en.wikipedia.org/wiki/Df_(Unix)</a></li>
+<li>du: <a href="http://en.wikipedia.org/wiki/Du_(Unix)">http://en.wikipedia.org/wiki/Du_(Unix)</a></li>
+<li>App Store Updates?
+
+<ul>
+<li>Neue Version = Neue App rausbringen?</li>
+<li>Immer wieder auf Neukäufe hoffen?</li>
+<li>In-App-Purchase?</li>
+<li>Stuff deutet eine mögliche Lösung mit iOS 7 an, leider NDA :-/</li>
+</ul></li>
+<li>App Pricing
+
+<ul>
+<li>Ist allgemein schwer, aber die Preise sind gesunken</li>
+<li>Wie umgehen mit Demos? XY lite? Features via IAP?</li>
+<li>Basti findet Demo-Versionen blöd</li>
+</ul></li>
+<li>Where To? (<a href="https://twitter.com/wheretoapp">@wheretoapp</a>) Von Ortwin Gentz: <a href="http://www.futuretap.com/apps/whereto-en/">http://www.futuretap.com/apps/whereto-en/</a></li>
+<li>Instapaper in Gefahr durch Safari Reading List: <a href="http://www.apple.com/osx/apps/#gallery-safari-readinglist">http://www.apple.com/osx/apps/#gallery-safari-readinglist</a>
+
+<ul>
+<li>Ist NICHT kostenlos im App Store, Basti!</li>
+<li>Neues schönes Webinterface zu Instapaper: <a href="http://beta.instapaper.com/">http://beta.instapaper.com/</a></li>
+<li>Es ist nicht bekannt, ob es einen API für die Reading List gibt <em>hust</em></li>
+</ul></li>
+<li>Wir vermuten, dass Apples Podcast-App den kostenpflichtigen Podfetchern nicht signifikant Markt weggenommen hat</li>
+<li>Podcast-App sieht unter iOS 7 immer noch so aus wie iOS 6</li>
+</ul>
+
+<h3>Projekte unter NDA (00:54:50)</h3>
+
+<ul>
+<li>Basti und Dirk mögen keine NDAs ;-)</li>
+<li>Stuff hat zwar schon NDAs abgelehnt aber in der Regel steht er unter NDA</li>
+<li>Er darf noch nicht einmal den Auftraggeber nennen</li>
+<li>Manche Auftragsarbeiten sind mittlerweile auch nicht mehr im App-Store</li>
+<li>Manchmal macht Stuff alles von Server-Backend bis Frontend</li>
+<li>Arbeiten und NDA macht die Gestaltung des Lebenslaufs schwierig</li>
+<li>Für einige ist Stuff der Rails-Guy</li>
+<li>Es gibt relativ viele iOS-Entwickler, die auch die Serverbackends selber schreiben</li>
+<li>Stuff sollte für einen neuen eBook-Reader entwickeln, Projekt wurde aber eingestellt</li>
+<li>Er hat auch iOS-Kurse gegeben</li>
+<li>Auf Nachfrage gibt er diese Kurse auch immer noch</li>
+<li>Schwierigkeit ist es in 5 Tage die Kernaspekte von iOS-Entwicklung zu vermitteln</li>
+<li>KISS (<a href="https://en.wikipedia.org/wiki/KISS_principle):">https://en.wikipedia.org/wiki/KISS_principle):</a> Präsentations-App mit Animationen, Animationen sind Keynote-Präsentationen als Quicktime exportiert</li>
+<li>Das Problem bei C# und .NET ist, dass leider ein Windows mitkommt</li>
+</ul>
+
+<h3>Gerüchteküche (01:06:40)</h3>
+
+<ul>
+<li>Wir sind alle zufrieden mit dem MacBook Pro Retina</li>
+<li>Wir hoffen auf ein externes Retina/4K Display von Apple</li>
+<li>Stuff arbeitet nur mit dem Mac Book (inkl. Laptop-Stand und externer Maus/Tastatur)</li>
+<li>Basti und Dirk brauchen mehr Platz</li>
+<li>Grund für die Vermutung: Der Mac Pro sieht einfach nicht aus neben dem &quot;alten&quot; Cinema-Display</li>
+<li>27&quot; reicht von der Fläche aber wir brauchen mehr Pixel!</li>
+<li>Dirk vermutet den Preis bei 3500 Dollar - Basti hofft, dass er damit falsch liegt</li>
+<li>Für Stuff wäre viel wichtiger, keine Kabel mehr zu verwenden: Weder Strom noch Display</li>
+<li>Display könnte mit Mavericks via AirPlay gelöst werden</li>
+<li>Induktion könnte für Strom eine Lösung sein, aber Basti weist darauf hin, dass 80 Watt via Induktion uncool sind</li>
+<li>Basti glaubt nicht an niedrige Latenz bei AirPlay</li>
+<li>Weil: 4K passt noch nicht mal in Thunderbolt 1</li>
+<li>MacBook Pros brauchen Thunderbolt 2, sind vom Update überfällig, daher: 4K Display quasi sicher</li>
+<li>Finaler &quot;Beweis&quot;: Die Vorstellung des 30&quot;-Displays war so großartig, dass muss es noch mal geben: <a href="https://www.youtube.com/watch?v=j_QtUH_zG4U">https://www.youtube.com/watch?v=j_QtUH_zG4U</a></li>
+<li>Stuff ist auf der Suche nach viel externem Plattenplatz
+
+<ul>
+<li>Eine Überlegung war ein Drobo (<a href="http://www.drobo.com/">http://www.drobo.com/</a>)</li>
+<li>Wir erinnern uns an das Promise Pegasus RAID (<a href="http://www.promise.com/storage/raid_series.aspx?m=192&amp;region=en-global&amp;rsn1=40&amp;rsn3=47">http://www.promise.com/storage/raid_series.aspx?m=192&amp;region=en-global&amp;rsn1=40&amp;rsn3=47</a>)</li>
+<li>Empfohlen in der Freak Show: <a href="http://freakshow.fm/mm105-featuritis-ante-portas#t=1:55:17.658">http://freakshow.fm/mm105-featuritis-ante-portas#t=1:55:17.658</a></li>
+</ul></li>
+<li>Stuff braucht den Platz für alle WWDC Videos seit 2007</li>
+<li>Apple Event am 10.9.2013: <a href="http://allthingsd.com/20130810/circle-sept-10-on-your-calendar-for-apples-big-iphone-event/">http://allthingsd.com/20130810/circle-sept-10-on-your-calendar-for-apples-big-iphone-event/</a>
+
+<ul>
+<li>&quot;Yep&quot; von Jim Dalrymple. <a href="https://twitter.com/jdalrymple">@jdalrymple</a> — <a href="http://www.loopinsight.com">http://www.loopinsight.com</a></li>
+<li>John Gruber hat das auch &quot;bestätigt&quot;</li>
+</ul></li>
+<li>Was könnte passieren?
+
+<ul>
+<li>iOS 7 Release</li>
+<li>neues iPhone 5</li>
+<li>wir kommen wohl nicht im eine &quot;Low-Cost&quot; iPhone herum (<a href="http://appleinsider.com/articles/13/08/19/iphone-5c-expected-to-replace-iphone-5-while-apples-iphone-4s-will-live-on">http://appleinsider.com/articles/13/08/19/iphone-5c-expected-to-replace-iphone-5-while-apples-iphone-4s-will-live-on</a>)</li>
+<li>Apple entgeht in diesem Marksegment eine Menge Geld</li>
+<li>Wir gehen nicht von einem Feature-Phone aus, aber etwas das den mittleren Bereich abdeckt</li>
+</ul></li>
+<li>HTC und Robert Downey Jr. <a href="http://www.theverge.com/2013/8/14/4620510/htc-and-robert-downey-jr-debut-full-version-of-new-change-ad">http://www.theverge.com/2013/8/14/4620510/htc-and-robert-downey-jr-debut-full-version-of-new-change-ad</a></li>
+</ul>
+
+<h3>Der Marimba-Sound (01:27:37)</h3>
+
+<ul>
+<li>Die Entstehungsgeschichte des Marimba-Tons: <a href="http://jacklinstudios.com/docs/making-of-158-marimba.html">http://jacklinstudios.com/docs/making-of-158-marimba.html</a></li>
+</ul>
+
+<h3>Objective-Cologne (01:30:10)</h3>
+
+<ul>
+<li>objcgn: <a href="http://objcgn.com/">http://objcgn.com/</a></li>
+<li>17. - 18. September in Köln</li>
+<li>Eine Cocoa/Objective-Konferenz in Köln mit internationalen Speakern</li>
+<li>Getränke/Catering ist im Preis enthalten</li>
+<li>Am ersten Abend gibt es das &quot;Conference-Dinner&quot;</li>
+<li>Das letzte Mal ist das gesamte Bier weggetrunken worden :-)</li>
+<li>Konferenzen veranstalten macht einen nicht reich</li>
+<li>Promo-Code: <a href="https://objcgn.paydro.net/event/objective-cologne-2013/geekstammtisch">https://objcgn.paydro.net/event/objective-cologne-2013/geekstammtisch</a></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST022" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Unser Gast" />
+          
+            <psc:chapter start="00:06:00" title="Podcasting" />
+          
+            <psc:chapter start="00:20:30" title="iOS Entwicklung, App Store &amp; Co." />
+          
+            <psc:chapter start="00:34:00" title="Der (App) Markt" />
+          
+            <psc:chapter start="00:54:50" title="Projekte unter NDA" />
+          
+            <psc:chapter start="01:06:40" title="Gerüchteküche" />
+          
+            <psc:chapter start="01:27:37" title="Der Marimba-Sound" />
+          
+            <psc:chapter start="01:30:10" title="Objective-Cologne" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
