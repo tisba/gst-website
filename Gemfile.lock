@@ -17,7 +17,7 @@ GEM
       debugger-ruby_core_source (>= 1.1.1)
     debugger-ruby_core_source (1.2.0)
     fssm (0.2.9)
-    gst-kitchen (0.7.0)
+    gst-kitchen (0.8.0)
       rake
       redcarpet
       trollop
