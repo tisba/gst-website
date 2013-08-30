@@ -52,5 +52,19 @@ task :setup_github_pages do
   puts "\n---\n## Now you can deploy to #{url} with `rake deploy` ##"
 end
 
+desc "Create Iframe snippet for integrated player"
+task :iframe do
+  episode = ENV['EPISODE'].downcase
+  iframe_snippet =  %Q{<iframe src="http://geekstammtisch.de/ksta/#{episode}.html" height="200" frameborder="0" width="450"></iframe>}
+  IO.popen("pbcopy", "r+") do |clipboard|
+    clipboard << iframe_snippet
+  end
+
+  puts "** Iframe for #{episode}:"
+  puts ">> #{iframe_snippet}"
+  puts
+  puts "** Snippet has been copied to clipboard."
+end
+
 task :default => [:server]
 
