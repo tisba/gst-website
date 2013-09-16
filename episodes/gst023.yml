@@ -1,0 +1,160 @@
+--- !ruby/struct:Episode
+number: 23
+name: The NeXT Episode
+subtitle: Mit Mateus "@seanlilmateus" Armando über Mobilfunktechnik, MacRuby, RubyMotion
+  und Apple.
+length: 6782
+media:
+  alac:
+    size: 448808398
+    file_ext: m4a
+  descr:
+    size: 20090
+    file_ext: json
+  mp3:
+    size: 81662903
+    file_ext: mp3
+  input:
+    size: 352970014
+    file_ext: unprocessed.m4a
+  aac:
+    size: 49624431
+    file_ext: m4a
+  opus:
+    size: 55135103
+    file_ext: opus
+auphonic_uuid: FTQLsxoCyimELTarBqRWmX
+published_at: 2013-09-16 10:37:29.871984000 +02:00
+summary: "**Synopsis:** Dieses Mal war Mateus Armando zu Gast bei uns auf der Couch.
+  Wir sprachen darüber wie neue\r\nMobiltelefone in das Netz der Telekom eingegliedert
+  werden und was bei GSM so schief laufen kann. Im Anschluss\r\nhaben wir einen ganz
+  guten Abriss über die Geschichte von RubyMotion gehört und zum Abschluss äußern
+  wir uns\r\nnoch zum Apple iPhone Event vom 10. September.\r\n\r\n### Unser Gast
+  (00:00:00)\r\n\r\n  * Mateus \"@seanlilmateus\" Armando\r\n  * \"Lange Namen und die
+  Ämter\"\r\n  * Hat eine Fachinformatik Ausbildung und ein abgebrochenes Informatikstudium
+  vorzuweisen\r\n  * Arbeitet bei der Deutschen Telekom\r\n  * Ist in der MacRuby
+  (http://macruby.org/) und RubyMotion (http://www.rubymotion.com/) Szene aktiv\r\n
+  \ * Ruby is Magic: Cupcakes! https://speakerdeck.com/railsbros_dirk/ruby-is-magic-cupcakes\r\n\r\n###
+  Arbeiten der Telekom (00:03:55)\r\n\r\n  * Mateus automatisiert Dinge mit Ruby auf
+  der Arbeit, ansonsten kommt es weniger zum Einsatz\r\n  * Mateus testet Mobilfunkentgeräte
+  mit dem Netz der Telekom\r\n  * Zentrale Stelle für mehrere Länder\r\n    * Funktionieren
+  die Geräte mit dem Netz der Telekom?\r\n    * Softwaretests, Funktests\r\n  * Mateus
+  bekommt oft mal neue Geräte zum Testen in die Hand\r\n    * Die neuen Apple Geräte
+  werden von speziell ausgewählten Personen getestet; Apple ist da etwas pingelig
+  :)\r\n  * Wenn Hersteller Mist machen, dürfen die Geräte nicht ins Netz der Telekom\r\n
+  \ * Das Notification System eines ungenannten Devices hat vor einiger Zeit für großflächige
+  Ausfälle gesorgt\r\n  * Für Sicherheitsrelevante Fragen gibt es noch mal eine eigene
+  Abteilung\r\n  * Security Research Labs (Karsten Nohl) - \"Rooting SIM cars\": https://srlabs.de/rooting-sim-cards/\r\n
+  \ * Wireshark: http://www.wireshark.org/\r\n    * Wireshark und GSM: http://wiki.wireshark.org/GsmProtocolFamily\r\n\r\n###
+  GSM Hacking, Security und Co (00:14:30)\r\n\r\n  * Testgeräte und -installation
+  sind extrem teuer\r\n  * Base Transceiver Station: http://en.wikipedia.org/wiki/Base_transceiver_station\r\n
+  \ * Mehr Augen, finden mehr Fehler; bisher wurden Mobilfunkstandards wenig von der
+  \"Masse\" unter die Lupe genommen\r\n  * Einige Fehler müssen sowohl beim Hersteller
+  als auch auf Netzebene behandelt werden\r\n  * NTT DOCOMO: http://www.nttdocomo.co.jp/english/\r\n
+  \ * NTT DOCOMO Ausfälle: http://www.geek.com/mobile/ntt-docomo-asks-google-to-limit-android-data-use-1463313/
+  http://www.techinasia.com/docomo-outage-line/\r\n\r\n### C, Java, NeXT, WebObjects,
+  Erlang… (00:19:35)\r\n\r\n  * Mateus hat mit C im jungen Jahren angefangen - Basti
+  hat mit BASIC angefangen: 1 : 00 ;-)\r\n  * Wir machen einen Ausflug durch diverse
+  Programmiersprachen und Umgebungen, die NeXT und Apple durchgemacht haben\r\n  *
+  Mateus hat während seiner Ausbildung bei T-Systems Erlang programmiert\r\n  * Ruby
+  wurde irgendwann zu Mateus' Hobby\r\n  * PyObjC: http://pythonhosted.org/pyobjc/\r\n
+  \ * RubyCocoa: http://rubycocoa.sourceforge.net/\r\n  * Wir rätzeln, seit wann Ruby
+  in OS X dabei ist\r\n  * Der Ruby-Guy bei Apple war Laurent Sansonetti (@lrz)\r\n
+  \ * Apple Scripting Bridge: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ScriptingBridgeConcepts/Introduction/Introduction.html\r\n\r\n###
+  MacRuby & RubyMotion (00:27:30)\r\n\r\n  * Bertrand Serlet: http://en.wikipedia.org/wiki/Bertrand_Serlet\r\n
+  \ * Bertrand Serlet basht Windows Vista https://www.youtube.com/watch?v=n9UPhwmjJ-Y\r\n
+  \ * Laurent ist zu Bertrand gegangen und hat vorgeschlagen Ruby auf der Objective-C
+  Runtime laufen zu lassen\r\n  * Das war der Anfang von MacRuby: http://macruby.org/\r\n
+  \ * Es stand im Raum, ob Apple nicht MacRuby für das iPhone verfügbar machen wird
+  (das war 2008)\r\n  * ABER: MacRuby ist Garbage Collected und es gibt und gab auf
+  dem iPhone nie GC.\r\n  * Es wurde versucht MacRuby ohne GC zu bauen - nicht einfach\r\n
+  \ * Automatic Reference Counting: http://en.wikipedia.org/wiki/Automatic_Reference_Counting\r\n
+  \ * Garbage Collector in OS X 10.8 ist deprecated\r\n  * Laurent Sansonetti gründet
+  2012 eine Firma und präsentiert: RubyMotion: http://www.hipbyte.com  http://www.rubymotion.com/\r\n
+  \ * RubyMotion ist MacRuby mit ARC für iOS! Kommerzielle Lizenz, kostet ~150 EUR\r\n
+  \ * Wir rekapitulieren: RubyCocoa, MacRuby, RubyMotion\r\n  * RubyMotion gibt es
+  auch für Mac\r\n  * Shizuo @watson1978 Fujita arbeitet zusammen mit Laurent an MacRuby
+  und RubyMotion\r\n  * ARC bei Objective-C wird zur Compile-Zeit gemacht\r\n  * MacRuby
+  wird auch kompiliert, mit LLVM\r\n  * Bindings machen Probleme bei MacRuby und RubyMotion\r\n
+  \ * Blocks in Ruby sind Closures (http://en.wikipedia.org/wiki/Closure_(computer_science))
+  und sind sehr schwer in MacRuby zu implementieren\r\n  * Weak Reference: http://en.wikipedia.org/wiki/Weak_reference\r\n
+  \   * Es gibt WeakRef in Ruby! http://www.ruby-doc.org/stdlib-2.0/libdoc/weakref/rdoc/WeakRef.html\r\n
+  \ * Ruby Binding: http://www.ruby-doc.org/core-2.0.0/Binding.html\r\n  * How to
+  Marshal Procs Using Rubinius: http://yehudakatz.com/2011/11/19/how-to-marshal-procs-using-rubinius/\r\n
+  \ * Kernel#eval ist in RubyMotion nicht verfügbar, weil das die AppStore Richtlinien
+  nicht erlauben\r\n  * Ansonsten geht alles in RubyMotion, inkl. REPL\r\n  * Im Laufzeitverhalten
+  sind RubyMotion Anwendungen ohne Unterschied zu Anwendungen in Objective-C\r\n  *
+  Das Kompilat ist grundsätzlich nicht voneinander zu unterscheiden\r\n\r\n### Objective-C
+  Runtime (01:08:00)\r\n\r\n  * Objective-C Runtime ist noch nicht so weit wie die
+  JVM mit unterstützten Sprachen, aber es gibt trotzdem einiges\r\n    * Nu: http://programming.nu/\r\n
+  \   * F-Script: http://www.fscript.org/\r\n    * eero: http://eerolanguage.org/\r\n
+  \ * Es war wahrscheinlich nicht von Anfang so gedacht, aber das Design lässt es
+  sehr gut zu\r\n  * Damals sollte auf OpenStep (https://en.wikipedia.org/wiki/OpenStep)
+  Java laufen\r\n  * Es gibt ein GNUStep (http://www.gnustep.org/) basiertes System,
+  dass sich mit Smalltalk programmieren lässt (http://etoileos.com/etoile/)\r\n\r\n###
+  Probleme mit RubyMotion (01:12:45)\r\n\r\n  * Bis vor kurzem gab es noch viele Probleme
+  mit Blöcken in Bezug auf Speicherlücken\r\n  * Für Ruby-Entwickler sind Blöcke absolut
+  normal und werden überall verwendet\r\n  * Viele Bugs sind entdeckt worden bei der
+  (falschen) Verwendung von CoreData (https://en.wikipedia.org/wiki/Core_Data)\r\n
+  \ * Wichtig ist, CoreData ist keine Datenbank, aber man kann dort Objekte ablegen\r\n
+  \ * CoreData ist sehr mächtig und nicht leicht zu verstehen\r\n  * Da CoreData ein
+  Teil von iCloud-Sync ist, führt dass dazu das iCloud-Sync oft nicht richtig umgesetzt
+  ist\r\n  * RubyMotion ist nicht Ruby, sondern ein Dialekt von Ruby\r\n    * Beispiel
+  ist, dass man mit der Block-API von Objective-C interagieren muss\r\n    * Named
+  Arguments sind verhalten sich unterschiedlich\r\n    * In Objective-C sind die Named-Arguments
+  Teil des Methodenname\r\n  * Die großflächige Verwendung von Named-Arguments wird
+  sich in Ruby noch etwas hinziehen\r\n  * Wenn man für iOS entwickeln will, aber
+  keine Lust auf Objective-C hat, dann macht man was falsch\r\n  * Dokumentation ist
+  in Objective-C und die Laufzeitumgebung mit all ihren Eigenheiten ist eben auch
+  Objective-C\r\n  * Aber: RubyMotion ist nach Mateus die beste Möglichkeit Objective-C
+  zu lernen\r\n  * RubyMotion ist sehr viel kompakter als Objective-C, daher die bevorzugte
+  Umgebung von Mateus\r\n\r\n### Apple iPhone Event (01:30:20)\r\n\r\n  * Wir wollen
+  keine goldenen iPhones\r\n  * Event war leider nicht live\r\n  * Im Home-Office-Cologne
+  gab es Rudelgucken mit Tippspiel\r\n  * Enttäuschung, dass es keine Mac News gab\r\n
+  \ * Wieder kein AppleTV SDK :-)\r\n  * iPhone ist so wichtig, dass nichts parallel
+  vorgestellt wird\r\n  * Aber: Mavericks und Mac Pros werden kommen, aber ohne Event
+  ist der Mac Pro eher unwahrscheinlich\r\n  * Neue iPads und iPods stehen auch noch
+  aus, aber dafür lohnt sich auch ein eigenes Event\r\n  * Eigentlich haben sie Material
+  für noch 2 Events\r\n  * Dirk wünscht sich ein AppleTV mit SDK und der Möglichkeit
+  einen Playstation Controller anzuschließen\r\n  * Der Coup des Jahres wäre eine
+  AppleTV Spieleconsole\r\n  * iPhone/iPod als Controller für Spiele inkl. Secondscreen\r\n
+  \ * Wir gehen nicht davon aus, dass Apple einen eigenen Controller bauen wird/kann\r\n
+  \ * Am Anfang noch vorsichtig im Bereich, in letzter Zeit wird das ganze sehr ernsthaft
+  verfolgt, Stichwort: Grafikleistung und OpenGL 3\r\n  * In Bezug auf Independent-Spiele
+  ist Apple bereits da wo Microsoft und Sony gerne hinmöchten\r\n  * Das Event war
+  das Ende der Ära Steve Jobs und der Beginn der Ära Jony Ive\r\n  * Basti findet
+  das \"non\" lustig ist, wenn die Löcherhülle auf dem 5C ist (https://www.apple.com/iphone-5c/design/images/cases_gallery_white_white_2x.png)\r\n
+  \ * Die Position des iPhone 5C ist noch unklar\r\n    * Weder ein Billig-Phone\r\n
+  \   * Gute Leistungsdaten\r\n    * Es ist aber bunt\r\n  * Basti sagt nach wie vor,
+  Apple hat es nicht nötig ein Billig-iPhone zu bringen\r\n    * Unterschied momentan
+  ist die Qualität der Anwendungen\r\n    * Hintergrund wird nicht sein, mehr Umsatz
+  über iPhones zu machen, sondern iOS weiterzuverbreiten\r\n  * Das 'C' steht wahrscheinlich
+  für 'Color' und nicht 'Cheap' ;-)\r\n  * Wir warten weiterhin auf das 4k-Display…"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Begrüßung
+- !ruby/struct:Chapter
+  start: '00:01:06'
+  title: Unser Gast
+- !ruby/struct:Chapter
+  start: '00:03:55'
+  title: Arbeiten der Telekom
+- !ruby/struct:Chapter
+  start: '00:14:30'
+  title: GSM Hacking, Security und Co
+- !ruby/struct:Chapter
+  start: '00:19:35'
+  title: C, Java, NeXT, WebObjects, Erlang…
+- !ruby/struct:Chapter
+  start: '00:27:30'
+  title: MacRuby & RubyMotion
+- !ruby/struct:Chapter
+  start: '01:08:00'
+  title: Objective-C Runtime
+- !ruby/struct:Chapter
+  start: '01:12:45'
+  title: Probleme mit RubyMotion
+- !ruby/struct:Chapter
+  start: '01:30:20'
+  title: Apple iPhone Event
