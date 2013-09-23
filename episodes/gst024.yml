@@ -1,0 +1,257 @@
+--- !ruby/struct:Episode
+number: 24
+name: Super Spell Boy
+subtitle: Mit Björn "@_orko" Vollmer über (Indie-)Spieleentwicklung auf iOS und die
+  Entstehung von Super Spell Boy
+length: 5946
+media:
+  alac:
+    size: 397262300
+    file_ext: m4a
+  descr:
+    size: 28580
+    file_ext: json
+  mp3:
+    size: 71644657
+    file_ext: mp3
+  input:
+    size: 338039300
+    file_ext: unprocessed.m4a
+  aac:
+    size: 43608785
+    file_ext: m4a
+  opus:
+    size: 48804561
+    file_ext: opus
+auphonic_uuid: piYAxf6fgqRH9dkYsbCvnS
+published_at: 2013-09-23 22:23:10.435820000 +02:00
+summary: "**Synopsis**: Wir haben uns mit unserem @HomeOfficeCGN Kollegen Björn hingesetzt
+  und über Spieleentwicklung\r\ngesprochen. Konkret ging es um iOS Spiele und noch
+  konkreter um die Entstehung von Super Spell Boy, dem ersten\r\nerschienen Titel
+  für iOS von Björn. Wir gehen alles durch: von Grafiken erstellen, über Sounddesign,
+  Gameloops\r\nbis hin zur Preisfindung und Vermarktung.\r\n\r\n### Intro (00:00:00)\r\n\r\n
+  \ * Phill Schiller, Apple iPhone Event 2013: http://www.apple.com/apple-events/september-2013/\r\n
+  \ * Intro Musik: Eric Skiff, http://ericskiff.com/music/\r\n\r\n### Unser Gast (00:01:50)\r\n\r\n
+  \ * Björn @_orko Vollmer, Rhineality Games (http://rhinealitygames.com/)\r\n  *
+  Zu finden im @HomeOfficeCGN :)\r\n  * hat Informatik an der FH Köln studiert\r\n
+  \ * pkw.de: \"klassische\" Rails Webentwicklung\r\n  * seit 10.10.2010 (weil 101010
+  = 42 \\o/) als Freiberuflicher Softwareentwickler unterwegs\r\n  * und seit kurzem:
+  Mehr in Richtung Entwicklung von eigenen Spielen\r\n\r\n### Browser Spieleentwicklung
+  (00:04:00)\r\n\r\n  * Begonnen hat Björn mit Browserspiel (erst in PHP, dann mit
+  Ruby)\r\n  * Spiel ist immer noch in der Entwicklung, ruht aber derzeit ;-)\r\n
+  \ * Sci-Fi Setting, insgesamt sehr aufwendig\r\n  * Arbeitstitel: Hard Space (http://hardspace.net/)\r\n
+  \ * Nicht zu verwechseln mit Dead Space (https://en.wikipedia.org/wiki/Dead_Space_(video_game))\r\n\r\n###
+  iOS Spieleentwicklung (00:07:00)\r\n\r\n  * Dann kam der Entschluss ein iOS Spiel
+  zu machen (Startschuss: April 2012)\r\n  * Ziele waren:\r\n    * Mit weniger Umfang\r\n
+  \   * Alle Dinge mussten selbst gemacht werden ^^\r\n  * Bisher unbekannte Plattform\r\n
+  \ * Einfach losgelegt, ohne sich in vorher groß einzulesen\r\n  * Bei Spielen ohnehin
+  wenig Kontakt mit UIKit und daher Custom-UI\r\n  * Bücher\r\n    * \"Spiele entwickeln
+  für iPhone und iPad\" (ISBN 978-3-89864-725-0): http://www.amazon.de/Spiele-entwickeln-iPhone-iPad-Programmierung/dp/3898647250\r\n
+  \   * \"Spiele entwickeln für iPad, iPhone und iPod touch\" (ISBN 978-3446430853):
+  http://www.amazon.de/Spiele-entwickeln-iPad-iPhone-touch/dp/3446430857\r\n  * Grafik
+  hat Björn mit OpenGL implementiert\r\n  * Bei OpenGL verlässt man Objective-C Land
+  und macht Vanilla C ;-)\r\n  * Björn war froh als er damit fertig war ^^\r\n  *
+  OpenGL muss nicht 3D sein, für 2D gibt es aber auch andere Möglichkeiten\r\n  *
+  Entscheidung für OpenGL war von eher pragmatischer Natur\r\n\r\n### Grafiken (00:16:20)\r\n\r\n
+  \ * Grafiken kaufen? Selber machen?\r\n  * Mastermind: http://de.wikipedia.org/wiki/Mastermind\r\n
+  \ * Kurze Historie...\r\n    * Im April 2012: Mit Super Spell Boy angefangen\r\n
+  \   * Im Dezember 2012: Versuch ein (anderes) Spiel in zwei Monaten zu machen, weil
+  die ursprüngliche Idee zu schwer erschien\r\n    * Dann Anfang 2013: Doch wieder
+  zurück zu Super Spell Boy, weil geilere Idee :)\r\n  * Pixel Art: http://en.wikipedia.org/wiki/Pixel_art\r\n
+  \ * Pixel Art Editor unter OS X Pixen: http://pixenapp.com/\r\n  * Dann: Viel üben,
+  nachmalen, ausprobieren…\r\n  * Die Objekte im Spiel sind über Vertices definiert,
+  über die Texturen gespannt werden\r\n  * Animationen sind Bilder, wo mehrere Bilder
+  z.B. der Figur nebeneinander stehen\r\n  * Gameloop: http://en.wikipedia.org/wiki/Game_programming#Game_structure,
+  http://www.gameprogblog.com/generic-game-loop/\r\n    * eine endlose Schleife, die
+  z.B. 33 mal pro Sekunde ausgeführt wird (33 fps)\r\n    * enthalten in der Schleife
+  ist alles, was das Spiel ausmacht: Gamelogik, Rendering usw.\r\n    * Taktung von
+  Animationen und Ereignissen auf die Taktung der Gameloop\r\n\r\n### Sound & Music
+  erstellen (00:28:52)\r\n\r\n  * Der Intro-Sound dieser Folge war die Menümusik aus
+  dem Spiel\r\n  * Musik/Sound ist ein ähnliches Problem wie das Grafikproblem: Woher
+  nehmen?\r\n  * Laut Literatur hätte man damit direkt anfangen sollen, hat Björn
+  aber nicht gemacht :P\r\n  * Auch hier zunächst wieder versucht Sound-Effekte einzukaufen\r\n
+  \ * Folgende Seiten angeschaut:\r\n    * http://soundbible.com (free)\r\n    * http://www.freesound.org
+  (free)\r\n  * Nix dabei gewesen, weil Sound sollte vom Stil zum Spiel passen (lies:
+  8-bit)\r\n  * Dabei eine App gefunden, mit der man diese Sound leicht selber machen
+  kann: http://thirdcog.eu/apps/cfxr\r\n  * Das heisst: Die Sound sind auch selbst
+  gemacht\r\n  * Thema Musik: Kaufen ist teuer, daher Creative Commons\r\n  * Dabei
+  ist er bei Eric Skiff (http://ericskiff.com/music/) gelandet\r\n  * Die Musik (und
+  unser Intro) ist von dem Album \"Resistor Anthems\"\r\n  * Basti erwähnt, dass das
+  Spiel direkt einen vollständigeren Eindruck gemacht als Musik dabei war\r\n  * Findet
+  George Lucas auch ;-) (http://www.brainyquote.com/quotes/quotes/g/georgeluca462198.html)\r\n\r\n###
+  Super Spell Boy (00:33:53)\r\n\r\n  * Im App-Store: https://itunes.apple.com/app/id702233807\r\n
+  \ * Retro-Spiel, Retro-Name\r\n  * Worum geht es: Der Spieler steuert einen Zauberer
+  auf seiner Burg und muss diese gegen unendliche Horden dunkler Kreaturen verteidigen\r\n
+  \ * Wir fragen uns was es für ein Genre ist\r\n    * Im App-Store: Action, Arcade\r\n
+  \   * Wir einigen uns auf eine Mischung zwischen Tower Defense (https://en.wikipedia.org/wiki/Tower_defense)
+  und Shoot'em Up (https://en.wikipedia.org/wiki/Shoot_em_up)\r\n  * Wenn die Burg
+  zerstört ist, dann ist das Spiel vorbei\r\n  * Wie verteidigt man seine Burg? Natürlich
+  mit Magie!\r\n  * Man beschwört die Zauber per Gesten (a.k.a. der USP des Spiels)\r\n
+  \ * Gespielt wird Portrait-Modus und die Gegner kommen vom oberen Bildschirmrand\r\n
+  \ * Die Herausforderung für den Spieler besteht in:\r\n    * Lernen und Erinnern
+  der richtigen Gesten\r\n    * Lernen und Erinnern welche Gegner gegen welche Zauber
+  anfällig sind\r\n    * Bsp.: Brennender Gegner -> KEIN Feuer\r\n  * Von Beginn an
+  alle Zauber verfügbar\r\n    * Erst war die Idee, dass man nach und nach die Zauber
+  freispielt\r\n    * Ist aber \"einfach\" ein Arcadespiel: Solange spielen bis man
+  stirbt.\r\n  * Alle UI-Elemente sind im Spiel integriert:\r\n    * Pause-Button
+  ist das Tor der Burg\r\n    * Auf dem linken Turm liegt das Zauberbuch, in dem sich
+  alle Zauber nachschlagen lassen\r\n  * Wie sich das gehört gibt es auch Mana und
+  Zauber brauchen unterschiedlich viel Mana\r\n  * Mana regeneriert sich selbst, aber
+  langsam\r\n  * Manchmal lassen besiegte Gegner aber auch Mana-Tränke fallen\r\n
+  \ * Pro-Tipp: Wenn man einen Zauber beschwört hat und ihn noch NICHT auf einen Gegner
+  geschossen hat, regeneriert sich der Mana-Vorrat nicht\r\n  * Noch mal zur Erinnerung:
+  Das alles muss innerhalb der Game-Loop passieren\r\n  * Ereignisse müssen von Zeiteinheiten
+  in Spielzeit (Frames) umgerechnet werden\r\n    * Bsp.: Alle 0,275 Sekunden soll
+  sich Mana regenerieren, d.h. alle 12 Frames\r\n  * Das bedingt auch, dass die Events
+  abhängig vom Framecounter getriggert werden und nicht in Realzeit, wenn das Spiel
+  also langsamer läuft regeneriert nicht mehr alle 0,275 Sekunden Mana\r\n\r\n###
+  Kollisionserkennung (00:43:50)\r\n\r\n  * Irgendwann muss ermittelt werden, ob ein
+  Gegner getroffen wurde oder nicht\r\n  * Es wurden zwei Varianten verwendet:\r\n
+  \   * Rectangle-Rectangle: Überschneiden sich zwei Rechtecke, dann ist es ein Treffer\r\n
+  \   * Problem: Einige Zauber können über Gegner \"hinwegfliegen\" und treffen diese
+  nicht\r\n    * Lösung: Nur der Gegner darf getroffen werden, der vorher angeklickt
+  wurde\r\n    * Problem: Was heißt \"angeklickt\"?\r\n    * Point-Rectangle: Ist
+  ein Punkt in einem anderen Rechteck. Punkt ist in diesem Fall der \"Finger\" des
+  Spielers.\r\n  * Aber es gibt auch komplexere Erkennungen:\r\n    * Der Steinzauber
+  fliegt über das ganze Spielfeld und trifft dabei jeden Gegner\r\n    * Wenn in zwei
+  aufeinanderfolgenden Frames ein Gegner zweimal von gleichen Stein getroffen wird,
+  darf der Treffer nur einmal zählen\r\n    * Der Stein muss sich also merken wen
+  er getroffen hat o_O\r\n    * Vorbereitung für Combosystem ;-)\r\n  * Was \"musste\"
+  man sich selber ausdenken?\r\n    * Konzepte wie Game-Loop und Erkennen von Kollisionen
+  existieren und sind gut beschrieben\r\n    * Details wie wen hat man getroffen,
+  wen wollte man treffen etc. müssen dann selbst modelliert werden\r\n  * Kollisionserkennung
+  kann beliebig komplex werden. Stichwort: Polygone\r\n  * In der Spieleentwicklung
+  existieren ebenso Pattern wie in anderen Bereichen der Software-Entwicklung\r\n\r\n###
+  Gesten (00:50:00)\r\n\r\n  * Was muss man da selber machen\r\n  * iOS nimmt einem
+  kaum etwas ab\r\n  * Angefangen mit GLGestureRecognizer (https://github.com/preble/GLGestureRecognizer)\r\n
+  \   * Open Source Library basiert auf dem $1 Unistroke Recognizer: https://depts.washington.edu/aimgroup/proj/dollar/\r\n
+  \   * In der damals verwendeten Version keine zufriedenstellenden Ergebnisse\r\n
+  \ * Aktuelle Version des Spiels verwendet eine eigene Implementierung\r\n    * Prinzip
+  basiert auf \"Spiele entwickeln für iPhone und iPad (S. 398 ff.)\"\r\n    * Man
+  erstellt eine Matrix und vergibt jedem Feld der Matrix einen Buchstaben\r\n    *
+  Die Geste wird über die Matrix gelegt und jedes durchquerte Feld wird ausgelesen\r\n
+  \   * Ergebnis ist eine String-Repräsentation der Geste: Sampling der Geste\r\n
+  \   * Wahl der Auflösung ist entscheidend\r\n    * Mehrere Zeichenketten können
+  die gleiche Geste bedeuten\r\n    * Aktuell gute Ergebnisse aber immer noch nicht
+  perfekt\r\n  * Was stellt aber nun iOS zur Verfügung?\r\n    * iOS entscheidet ob
+  es eine Geste oder ein Touch war\r\n    * Man kann sich dann die Koordinaten der
+  Geste geben lassen oder schon während der Ausführung der Geste die Koordinaten einsammeln
+  (Björn macht die erste Variante)\r\n  * Noch mal zur Erinnerung: Das alles muss
+  innerhalb der Game-Loop passieren, sprich in jeder 1/33 Sekunde\r\n  * Aussteuerung
+  der erlaubten Toleranz bedingt potentielle Überschneidungen mit anderen Gesten\r\n
+  \ * GLGestureRecognizer hat aktuelle eine neue Version. Denkbar ist eine Kombination
+  aus beiden Ansätzen. Oder ganz neuer Ansatz/Bibliothek.\r\n  * Von außen betrachtet
+  ein einfaches Spiel und trotzdem gibt es schon Myriaden von Dingen zu beachten o_O\r\n\r\n###
+  Sound und Musik abspielen (00:57:35)\r\n\r\n  * Wie wird Sound/Musik abgespielt?\r\n
+  \ * Sound und Musik ist erstaunlich einfach:\r\n    * Musik: Zu Beginn des Spiels
+  das Abspielen der Musik an iOS übergeben\r\n    * Soundeffekte: Wird in dem entsprechenden
+  Frame an iOS übergeben\r\n    * Fertig :-)\r\n\r\n### Entwicklungsprozess (00:58:59)\r\n\r\n
+  \ * Anzeige von Sprites mittels OpenGL\r\n  * Bewegen/Animieren von Sprites\r\n
+  \ * Interagieren mit dem Spiel (Gesten-Erkennung)\r\n\r\n### Testen (01:00:55)\r\n\r\n
+  \ * HockeyApp: http://hockeyapp.net/\r\n  * Für SSB: TestFlight: http://testflightapp.com/\r\n
+  \ * TestFlight kostenlos\r\n  * Regelmäßige Updates an Tester\r\n  * 10 bis 15 Tester\r\n
+  \ * Iterative Entwicklung parallel zum Testen\r\n\r\n### Zum Schluss: Menüs, Logo,
+  Settings etc. (01:02:09)\r\n\r\n  * Macht das Spiel rund\r\n  * Umsetzung nochmals
+  viel Zeit gebraucht\r\n  * Viele Fallstricke beim Sound/Musik\r\n\r\n### Balancing
+  (01:04:20)\r\n\r\n  * Auch iterativer/begleitender/explorativer Prozess\r\n  * Gradwanderung\r\n
+  \ * Spannende Phase\r\n  * Spiel eventuell zu schwer für Causal Gamer\r\n  * Dirk
+  wartet immer noch auf sein Review zu Super Spell Boy im App-Store\r\n\r\n### Entwicklungsdauer
+  (01:06:25)\r\n\r\n  * 710:42 Stunden (~ 4,5 Monate)\r\n  * Überwiegend Teilzeit
+  auf über ein Jahr gestreckt\r\n  * Teilzeit erschwert die Entwicklung\r\n\r\n###
+  SpriteKit (01:08:50)\r\n\r\n  * Sprite Kit Programming Guide: https://developer.apple.com/library/ios/documentation/SpriteKit/Reference/SpriteKitFramework_Ref/_index.html\r\n
+  \ * Nimmt viele Low-Level-Entwicklungen ab\r\n  * 2D-Spiele-Entwicklung\r\n  * Entwicklung
+  für iOS und OSX\r\n  * OpenGL drin\r\n  * Physik drin (Collision Detection, Gravity)\r\n
+  \ * Partikelsystem\r\n  * Animationen\r\n  * Unterstützt ab iOS7\r\n  * 200 Millionen
+  Installationen iOS 7\r\n  * Auf den Support von älteren iOS verzichten\r\n  * Konzentrieren
+  nur auf die Spiele-Entwicklung\r\n  * Erhöhter Aufwand, wenn auch < iOS 7 unterstützt
+  wird\r\n\r\n### Preisfindung (01:15:10)\r\n\r\n  * Schritt für Schritt an den Preis
+  angenähert\r\n  * Schlechte Bewertung im App Store, wenn Preis \"zu hoch\"\r\n  *
+  Preise für Apps und Spiele im App Store \"anders\"\r\n  * Viel mit Leuten gesprochen,
+  die sich auskennen\r\n  * Ursprünglich 0,89 Euro\r\n  * Davon wurde mir abgeraten:
+  Tolles Spiel, nicht verschleudern\r\n  * Preis-\"Tiers\": Preise im App-Store sind
+  gestaffelt\r\n  * Keine Ads\r\n  * Momentan noch kein In-App-Purchases\r\n  * Ein
+  Preis\r\n  * Besprechen der verschiedenen Preise bekannter Spiele im App Store\r\n
+  \ * Entschieden für Tier 3: 2,69 Euro\r\n  * Der Entwickler bekommt: 1,64 Euro\r\n
+  \ * Preis = 2,69 Euro - USt. - 30 % an Apple\r\n  * Ne Menge verkaufen um davon
+  leben zu können\r\n  * Glücklich, wenn Super Spell Boy so viel einspielt, dass das
+  nächste Spiel finanziert ist\r\n\r\n### Marketing (01:25:01)\r\n\r\n  * Während
+  der Entwicklung kaum Marketing\r\n  * Seit Release Facebook (https://www.facebook.com/SuperSpellBoy),
+  Twitter (https://twitter.com/SuperSpellBoy) etc.\r\n  * Werbung bisher nur in Facebook\r\n
+  \ * Likes \"kaufen\"\r\n  * Gameplay-Video \"Fast Forward\" beworben: http://www.youtube.com/watch?v=L_WZVLLU2Mg.
+  Hat mittlerweile 1470 Likes\r\n  * Budget pro Tag\r\n  * Im Detail die Zielgruppe
+  bestimmen\r\n    * Nur Spiele-Interessierte\r\n    * Nur iOS-Nutzer\r\n    * etc.\r\n
+  \ * Apple Verkaufsstatistiken sind verzögert\r\n  * Promo-Codes\r\n    * Anschreiben
+  wegen Promo-Codes\r\n    * Bewertung schreiben im App-Store\r\n  * Wurde angeschrieben
+  von YouTube-App-Reviewer\r\n    * 1 Review für Lau (paar hundert Views pro Video)\r\n
+  \   * 1 Review für 350 USD (Views im tausender Bereich)\r\n\r\n### Monetarisierung
+  als Indie-Game-Entwickler (01:33:57)\r\n\r\n  * Interview mit Michael Contento http://www.gamasutra.com/blogs/RuthWilson/20130827/199049/CREATING_GAMES_FOR_KIDS_HOW_TO_FIND_AND_TEST_CONTENT_MONETIZE_AND_MARKET_YOUR_GAME.php\r\n
+  \ * Cross-Platform-Entwickler\r\n  * Spieler für Kinder\r\n  * Free2Play\r\n  *
+  In-App-Purchase\r\n    * Werbung ausblenden\r\n    * Weitere Level kaufen\r\n  *
+  Interview: Welche Herausforderungen bei diesem Ansatz\r\n    * Ansazt auf Masse\r\n
+  \   * Andere Strategien da man alleine ist\r\n    * Marketing ist teuer\r\n  * Ziel:
+  Spiel muss in die Top-Charts kommen\r\n  * Einkaufen von Reviews, Pressemitteilungen
+  und Downloads\r\n  * Preise hoch/runter setzen um auf Crawling-Seiten zu erscheinen\r\n\r\n###
+  Zusammenfassung (01:38:04)\r\n\r\n  * Game-Entwicklung cool\r\n  * Marketing uncool\r\n
+  \ * Weitere Links:\r\n    * iOS 5 By Tutorials (http://www.raywenderlich.com/store/ios-5-by-tutorials)\r\n
+  \   * iOS 6 By Tutorials (http://www.raywenderlich.com/store/ios-6-by-tutorials)"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Intro
+- !ruby/struct:Chapter
+  start: '00:01:50'
+  title: Unser Gast
+- !ruby/struct:Chapter
+  start: '00:04:00'
+  title: Browser Spieleentwicklung
+- !ruby/struct:Chapter
+  start: '00:07:00'
+  title: iOS Spieleentwicklung
+- !ruby/struct:Chapter
+  start: '00:16:20'
+  title: Grafiken
+- !ruby/struct:Chapter
+  start: '00:28:52'
+  title: Sound & Music erstellen
+- !ruby/struct:Chapter
+  start: '00:33:53'
+  title: Super Spell Boy
+- !ruby/struct:Chapter
+  start: '00:43:50'
+  title: Kollisionserkennung
+- !ruby/struct:Chapter
+  start: '00:50:00'
+  title: Gesten
+- !ruby/struct:Chapter
+  start: '00:57:35'
+  title: Sound und Musik abspielen
+- !ruby/struct:Chapter
+  start: '00:58:59'
+  title: Entwicklungsprozess
+- !ruby/struct:Chapter
+  start: '01:00:55'
+  title: Testen
+- !ruby/struct:Chapter
+  start: '01:02:09'
+  title: 'Zum Schluss: Menüs, Logo, Settings etc.'
+- !ruby/struct:Chapter
+  start: '01:04:20'
+  title: Balancing
+- !ruby/struct:Chapter
+  start: '01:06:25'
+  title: Entwicklungsdauer
+- !ruby/struct:Chapter
+  start: '01:08:50'
+  title: SpriteKit
+- !ruby/struct:Chapter
+  start: '01:15:10'
+  title: Preisfindung
+- !ruby/struct:Chapter
+  start: '01:25:01'
+  title: Marketing
+- !ruby/struct:Chapter
+  start: '01:33:57'
+  title: Monetarisierung als Indie-Game-Entwickler
+- !ruby/struct:Chapter
+  start: '01:38:04'
+  title: Zusammenfassung
