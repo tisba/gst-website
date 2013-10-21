@@ -7129,5 +7129,355 @@ bis hin zur Preisfindung und Vermarktung.</p>
           
         </item>
         
+        <item>
+          <title>GST025 - Vom Tellerwäscher zum Lisp-Entwickler</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Mit Moritz Heidkamp über die Geschichte und das Ökosystem von Lisp</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst025.m4a" length="43533937" type="audio/x-m4a"/>
+          <guid isPermaLink="false">GST025</guid>
+          <pubDate>Mon, 21 Oct 2013 18:56:59 +0200</pubDate>
+          <itunes:duration>01:38:57</itunes:duration>
+          <itunes:summary><![CDATA[Synopsis: Wir hatten Moritz Heidkamp aus Köln auf unserer Couch zu Gast und sprachen mit ihm über Lisp. Wir haben dabei ganz vorne bei John McCarthy angefangen und uns dann bis in die Gegenwart zu Clojure durchgebissen. Auf dem Weg dorthin lernen wir, wie zersplittert die Lisp-Gemeinde schon immer war und wohl auch immer sein wird. Was daraus für Probleme entstehen, aber vor allem welche Möglichkeiten es eröffnet. Den Abschluss macht ein Rückblick der EuroClojure und einige Buchempfehlungen für Einsteiger.
+
+### Intro (00:00:00)
+
+  * Bierüberschuss im Home Office
+  * 6th Cologne Web Performance Meetup: http://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/118740262/
+
+### Unser Gast (00:01:15)
+
+  * Moritz Heidkamp, @DerGuteMoritz, http://ceaude.twoticketsplease.de/
+  * Softwareentwickler seit 2006
+  * wollte ursprünglich mal Deutsch- und Geschichtslehrer werden
+  * studiert nun (ein bisschen) Informationsverarbeitung an der Uni Köln (Crossover aus Informatik und Geisteswissenschaften)
+  * Gründungsmitglied RuRuG, der Vorläufer der heutigen cologne.rb (http://colognerb.de)
+
+### Informatik an den Schulen (00:05:55)
+
+  * Moritz hatte einen guten Informatiklehrer
+  * Basti leider nicht :-/
+  * Wir fragen uns, ob es Informatik auf Lehramt gibt
+  * Weil Informatiklehrer ja oft gar keine Informatiker sind
+  * Rasberry Pi: http://www.raspberrypi.org
+
+### Von Ruby zu Lisp (00:10:58)
+
+  * Moritz suchte eine Alternative zu Ruby und fand Lisp: http://de.wikipedia.org/wiki/Lisp
+  * arbeitet für [bevuta IT](http://www.bevuta.com/), wo u.a. Lisp kommerziell eingesetzt wird
+  * Moritz macht auch Erlang bei bevuta
+
+### Elixir (00:14:23)
+
+  * Elixir (http://elixir-lang.org/): "Elixir is a functional, meta-programming aware language built on top of the Erlang VM"
+  * Reia (http://reia-lang.org/): "Reia is a Ruby-like scripting language for the Erlang virtual machine."
+  * PeepCode "Meet Elixir" mit José Valim: https://peepcode.com/products/elixir
+  * Joe Armstrong über Elixir: http://joearms.github.io/2013/05/31/a-week-with-elixir.html
+  * Prolog: http://en.wikipedia.org/wiki/Prolog
+  * Basti sieht die Gefahr, das Elixir und Ruby sich zu ähnlich sehen und das zu Verwirrungen führen könnte
+  * Elixir macht einen schönen, konsistenten Eindruck
+  * Tsung: http://tsung.erlang-projects.org
+
+### Lisp, eine Historie (00:25:30)
+
+  * Clojure: http://clojure.org/
+  * Joxa (http://joxa.org/), a concurrent distributed Lisp
+  * The Concurrent Schemer: http://the-concurrent-schemer.github.io/scm-doc/)
+  * The History of Lisp: http://www-formal.stanford.edu/jmc/history/lisp/lisp.html)
+  * John McCarthy: http://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)
+  * Lambda-Kalkül: http://de.wikipedia.org/wiki/Lambda-Kalk%C3%BCl
+  * Java: Lambda Expressions: http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
+  * Listen als Programme: (Operator Operant1 Operant2 ...)
+  * S-expression, "symbolic expression": http://en.wikipedia.org/wiki/S-expression
+  * M-expression, "meta expression": http://en.wikipedia.org/wiki/M-expression
+  * Scheme: http://en.wikipedia.org/wiki/Scheme_(programming_language)
+  * Ruby 2.1: Methoden Definitionen geben nun den Methoden Namen als Symbol zurück: http://rkh.im/ruby-2.1
+  * Wir sprechen über den semantischen Unterschied von Symbolen und Strings
+  * PicoLisp, ein minimalistisches Lisp: http://picolisp.com
+  * Clojure hat dagegen ein deutlich reicheres Set an Datenstrukturen
+  * Clojure legt viel Wert auf Immutability
+  * Common Lisp: http://en.wikipedia.org/wiki/Common_Lisp
+  * Emacs: http://www.gnu.org/software/emacs/
+  * Es gibt verschiedene Modell Lisp laufen zu lassen: kompiliert, interpretiert, beides :)
+  * Stalin, ein Scheme Compiler, "Stalin brutally optimizes.": http://en.wikipedia.org/wiki/Stalin_(scheme_implementation)
+  * In akademischen Veröffentlichung wird oft ein Lisp als Beispielsprache verwendet
+  * Insgesamt ist es sehr vielfältig, aber dabei (vielleicht) zu vielfältig
+  * In der Regel sind die Dialekte nicht untereinander kompatibel
+  * Die Lisp-Community neigt dazu, immer wieder neue Dialekte zu schaffen. Bedingt durch die Einfachheit dies zu tun.
+  * Keine Konvergenz in Sicht :-)
+  * In den 70er gab es bereits einen unüberschaubaren Wildwuchs an Dialekten. Daher die Initiative einen gemeinsamen Standard zu schaffen: Common Lisp, weil Standard Lisp gab es schon ^^
+  * Hat bis in die 90er gedauert!
+  * Ist jetzt aber ein ANSI-Standard
+  * Entwicklung des Standards über Mail, Archiv: ftp://ftp.cs.rochester.edu/pub/archives/lisp-standards/
+  * Ergebnis: 2000 Seiten langer Standard, Sprache inkl. Standard Bibliothek
+  * Guy Steele hat in Form eines Buches vor Verabschiedung des Standards einfach Tatsachen geschaffen: https://en.wikipedia.org/wiki/Common_Lisp_the_Language
+
+### Lisp in der Praxis (00:56:17)
+
+  * Probleme für den realen Einsatz ergeben sich durch die vielen Unterschiede allerdings weniger als man denkt
+  * Trotzdem ist es ein Problem, dass sehr viel Energie "verloren" geht: Die tolle Bibliothek A lässt sich dann nicht in Lisp X verwenden
+  * Man muss das Rad zwar relativ oft neu erfinden, aber es gibt zumindest einige Implementierung mit einer kleinen Community und Infrastruktur
+  * Bei bevuta wird Chicken Scheme (http://www.call-cc.org/) eingesetzt und man kann etwa auf 500 Erweiterungen zugreifen ("Eggs", lassen sich ähnlich wie Rubygems installieren)
+  * Insgesamt extremer Gegensatz zu Java: Bis ins letzte spezifizierte Sprache mit definiertem Verhalten
+  * Stichwort Java: Clojure versucht den Nachteil von zu wenig Bibliotheken so auszugleichen, dass man auf Java-Bibliotheken zugreifen kann
+  * Problem: Das Programmiermodell von Java passt nicht zu dem von Clojure
+  * Die Abbildung von Java-Objekten in Clojure und deren Verwendung ist Aufgabe des Entwicklers
+  * Für jede Klasse muss im Grunde eine neue Sprache gelernt werden
+  * Eine Möglichkeit ist zum Beispiel Attribute aus einem Java-Objekt in eine Clojure-Map zu übertragen
+  * Beispiel: Ring (https://github.com/ring-clojure/ring) übersetzt Requests aus Java-Webservern in Clojure-Maps und zurück
+  * Lisps versuchen in der Regel alles auf Listen abzubilden, weil dafür gibt es schon alle Operationen
+  * Klassen sind hingegen durch die Vorgaben des Entwicklers in ihrer Verwendung eingeschränkt
+  * Zwei Kulturen treffen aufeinander, dazu gibt es von Rich Hickey (Clojure) einige gute Talks: https://www.youtube.com/watch?v=rI8tNMsozo0
+  * Andere Ansätze/Modelle können/sollten Anregungen für die eigene "Welt" geben (z.B.: Immutability lässt sich auch in anderen Sprachen verwenden)
+  * bevuta versucht so viel wie möglich in Scheme zu machen, aber gerade bei Mobilentwicklung ist das leider nicht möglich
+    * Theoretisch läuft Clojure zwar auf Android, ist dort aber viel zu langsam
+  * Aber: Die Businesslogik kann in Scheme geschrieben werden und wird anschließend nach C kompiliert, um das dann in Objective-C und Java (via JNI) einzubinden
+  * Notwendiger Glue-Code ist sehr wenig, vor allem im Fall von Objective-C, JNI ist da anstrengender
+  * Auch als Script-Sprache lässt sich Scheme ohne weiteres verwenden
+  * Moritz macht alles™ in Emacs (soweit möglich), z.B.: Email, Todo-App. Gibt sogar einen PDF-Reader
+  * Man könnte Emacs auch als Shell booten und dann aus Emacs bei Bedarf Shells starten, dabei kollidieren aber Keybindings (vor allem bei ncurses-Anwendungen). Also nicht so toll.
+  * Stichwort Emacs als Betriebssystem: Es gab in den 70er- und 80er-Jahren auch Lisp-Maschinen: https://de.wikipedia.org/wiki/Lisp-Maschine
+  * Wie die genau funktionieren ist bei uns dünnes Eis ^^
+  * Entwicklung wurde dann Ende der 80er eingestellt, weil die Forschungsgelder im Bereich künstliche Intellegenz (vor allem vom Militär) zusammengestrichen wurden
+
+### EuroClojure (01:15:55)
+
+  * Moritz war auf der EuroClojure in Berlin: http://euroclojure.com/2013/, ist die europäische Clojure Konferenz (~ 300 Teilnehmer)
+  * Ansonsten ist Clojure sehr amerikanisch geprägt
+  * Inhalt aber nicht ausschließlich Clojure, 2 Präsentationen über das eigene Lisp ;-)
+  * Toy Lisp: https://www.google.com/search?q=toy%20lisp
+  * Moritz hat mal eine Liste von Lisp-Implementierungen in Javascript zusammengestellt: Ergebnis 50+
+  * Real-World-Clojure-Projekte auf der Konferenz:
+    * dailymail.co.uk: Hat ihr uraltes Backend im laufenden Betrieb auf Clojure umgestellt
+    * "Internet of Things"-Plattform ist von Rails nach Clojure migriert; Grund für Clojure war, sie  haben am meisten in der kürzesten Zeit erreicht (im Vergleich zu anderen Technologien)
+  * Clojures Webstack ist bereits sehr ausgereift, u.a. weil viele Ruby-Entwickler zu Clojure gegangen sind und Konzepte mitgenommen haben (Bsp.: Ring ist von Rack inspiriert)
+  * Leider keine Aufzeichnung der Talks :-(
+  * Besonders Schade um die Keynote:
+    * Verhältnis zwischen der perfekten Architektur und der Abwesenheit von Architektur
+    * Brasília als Beispiel von perfekt geplanter Stadt und dennoch wenig brauchbar
+    * Beispiel von Städteplanung auf Softwareentwicklung
+    * Java EE vs. PHP Frickelshop: Beides kann man nicht wirklich benutzen
+    * Fazit: Ein gute Mischung von Struktur und Chaos finden
+  * Moritz kann die Konferenz empfehlen, auch für Leute die sonst kein Clojure machen
+  * Clojure ist auch in der Lisp-Community schnell aufgestiegen und gehört mittlerweile zu den Top-3
+  * Positive Auswirkungen des Clojure-Hypes auf die Akzeptanz von Lisp konnte Moritz noch nicht feststellen
+
+### Getting Started (01:30:41)
+
+  * Clojure hat eine sehr viel freundlichere Community als etwa Common Lisp, vergleichbar mit der von Ruby
+  * Moritz selbst bewegt sich vor allem im Chicken Scheme Umfeld und der Entwickler mittlerweile ist auch bei bevuta eingestellt
+  * Chicken Scheme hat auch eine angenehme Community in der man auch Einsteigern gerne weiterhilft (ähnlich zu Clojure)
+  * Clojure und Chicken sind daher auf jeden Fall die Empfehlung für den Einstieg
+  * Das Problem ist allerdings gutes Tutorial-Material zu bekommen:
+    * Clojure ist da ganz gut aufgestellt, auch mit Büchern für Einsteiger
+    * Die anderen Lisps tun sich damit sehr schwer
+    * Ein gutes Buch für Common Lisp ist "Practical Common Lisp" von Peter Seibel (http://www.amazon.de/Practical-Common-Lisp-Peter-Seibel/dp/1590592395)
+    * Auch für Common Lisp ist "Land of Lisp" von Conrad Barski (http://www.amazon.de/Land-Lisp-Learn-Program-Game/dp/1593272812/ref=sr_1_1?s=books-intl-de&ie=UTF8&qid=1382353124&sr=1-1&keywords=The+land+of+lisp)
+    * Für Scheme sieht es da eher düster aus. Hauptwerk ist "Structure and Interpretation of Computer Programs" (http://www.amazon.de/Structure-Interpretation-Computer-Electrical-Engineering/dp/0262510871/ref=sr_1_1?s=books-intl-de&ie=UTF8&qid=1382353230&sr=1-1&keywords=Structure+and+Interpretation+of+Computer+Programs) was sehr akademisch ist. Weil es das ehemalige Lehrbuch des MIT ist.
+    * Von den Vorlesungen (Anfang der 80er) gibt es sogar noch Videoaufzeichnungen
+  * Usergroups in Köln:
+    * Cologne Clojure: http://www.meetup.com/clojure-cologne (gibt aber auch was anderes als Clojure), Treffen in der Bottmühle
+    * Moritz wollte mal eine Gruppe machen für Sprachen die eigentlich keine Rolle spielen , ähnlich der FringeDC von Conrad Barski (gibt es aber auch nicht mehr)]]></itunes:summary>
+          <description><![CDATA[<p>Synopsis: Wir hatten Moritz Heidkamp aus Köln auf unserer Couch zu Gast und sprachen mit ihm über Lisp. Wir haben dabei ganz vorne bei John McCarthy angefangen und uns dann bis in die Gegenwart zu Clojure durchgebissen. Auf dem Weg dorthin lernen wir, wie zersplittert die Lisp-Gemeinde schon immer war und wohl auch immer sein wird. Was daraus für Probleme entstehen, aber vor allem welche Möglichkeiten es eröffnet. Den Abschluss macht ein Rückblick der EuroClojure und einige Buchempfehlungen für Einsteiger.</p>
+
+<h3>Intro (00:00:00)</h3>
+
+<ul>
+<li>Bierüberschuss im Home Office</li>
+<li>6th Cologne Web Performance Meetup: <a href="http://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/118740262/">http://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/118740262/</a></li>
+</ul>
+
+<h3>Unser Gast (00:01:15)</h3>
+
+<ul>
+<li>Moritz Heidkamp, <a href="https://twitter.com/DerGuteMoritz">@DerGuteMoritz</a>, <a href="http://ceaude.twoticketsplease.de/">http://ceaude.twoticketsplease.de/</a></li>
+<li>Softwareentwickler seit 2006</li>
+<li>wollte ursprünglich mal Deutsch- und Geschichtslehrer werden</li>
+<li>studiert nun (ein bisschen) Informationsverarbeitung an der Uni Köln (Crossover aus Informatik und Geisteswissenschaften)</li>
+<li>Gründungsmitglied RuRuG, der Vorläufer der heutigen cologne.rb (<a href="http://colognerb.de">http://colognerb.de</a>)</li>
+</ul>
+
+<h3>Informatik an den Schulen (00:05:55)</h3>
+
+<ul>
+<li>Moritz hatte einen guten Informatiklehrer</li>
+<li>Basti leider nicht :-/</li>
+<li>Wir fragen uns, ob es Informatik auf Lehramt gibt</li>
+<li>Weil Informatiklehrer ja oft gar keine Informatiker sind</li>
+<li>Rasberry Pi: <a href="http://www.raspberrypi.org">http://www.raspberrypi.org</a></li>
+</ul>
+
+<h3>Von Ruby zu Lisp (00:10:58)</h3>
+
+<ul>
+<li>Moritz suchte eine Alternative zu Ruby und fand Lisp: <a href="http://de.wikipedia.org/wiki/Lisp">http://de.wikipedia.org/wiki/Lisp</a></li>
+<li>arbeitet für <a href="http://www.bevuta.com/">bevuta IT</a>, wo u.a. Lisp kommerziell eingesetzt wird</li>
+<li>Moritz macht auch Erlang bei bevuta</li>
+</ul>
+
+<h3>Elixir (00:14:23)</h3>
+
+<ul>
+<li>Elixir (<a href="http://elixir-lang.org/):">http://elixir-lang.org/):</a> &quot;Elixir is a functional, meta-programming aware language built on top of the Erlang VM&quot;</li>
+<li>Reia (<a href="http://reia-lang.org/):">http://reia-lang.org/):</a> &quot;Reia is a Ruby-like scripting language for the Erlang virtual machine.&quot;</li>
+<li>PeepCode &quot;Meet Elixir&quot; mit José Valim: <a href="https://peepcode.com/products/elixir">https://peepcode.com/products/elixir</a></li>
+<li>Joe Armstrong über Elixir: <a href="http://joearms.github.io/2013/05/31/a-week-with-elixir.html">http://joearms.github.io/2013/05/31/a-week-with-elixir.html</a></li>
+<li>Prolog: <a href="http://en.wikipedia.org/wiki/Prolog">http://en.wikipedia.org/wiki/Prolog</a></li>
+<li>Basti sieht die Gefahr, das Elixir und Ruby sich zu ähnlich sehen und das zu Verwirrungen führen könnte</li>
+<li>Elixir macht einen schönen, konsistenten Eindruck</li>
+<li>Tsung: <a href="http://tsung.erlang-projects.org">http://tsung.erlang-projects.org</a></li>
+</ul>
+
+<h3>Lisp, eine Historie (00:25:30)</h3>
+
+<ul>
+<li>Clojure: <a href="http://clojure.org/">http://clojure.org/</a></li>
+<li>Joxa (<a href="http://joxa.org/">http://joxa.org/</a>), a concurrent distributed Lisp</li>
+<li>The Concurrent Schemer: <a href="http://the-concurrent-schemer.github.io/scm-doc/">http://the-concurrent-schemer.github.io/scm-doc/</a>)</li>
+<li>The History of Lisp: <a href="http://www-formal.stanford.edu/jmc/history/lisp/lisp.html">http://www-formal.stanford.edu/jmc/history/lisp/lisp.html</a>)</li>
+<li>John McCarthy: <a href="http://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)">http://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)</a></li>
+<li>Lambda-Kalkül: <a href="http://de.wikipedia.org/wiki/Lambda-Kalk%C3%BCl">http://de.wikipedia.org/wiki/Lambda-Kalk%C3%BCl</a></li>
+<li>Java: Lambda Expressions: <a href="http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html</a></li>
+<li>Listen als Programme: (Operator Operant1 Operant2 ...)</li>
+<li>S-expression, &quot;symbolic expression&quot;: <a href="http://en.wikipedia.org/wiki/S-expression">http://en.wikipedia.org/wiki/S-expression</a></li>
+<li>M-expression, &quot;meta expression&quot;: <a href="http://en.wikipedia.org/wiki/M-expression">http://en.wikipedia.org/wiki/M-expression</a></li>
+<li>Scheme: <a href="http://en.wikipedia.org/wiki/Scheme_(programming_language)">http://en.wikipedia.org/wiki/Scheme_(programming_language)</a></li>
+<li>Ruby 2.1: Methoden Definitionen geben nun den Methoden Namen als Symbol zurück: <a href="http://rkh.im/ruby-2.1">http://rkh.im/ruby-2.1</a></li>
+<li>Wir sprechen über den semantischen Unterschied von Symbolen und Strings</li>
+<li>PicoLisp, ein minimalistisches Lisp: <a href="http://picolisp.com">http://picolisp.com</a></li>
+<li>Clojure hat dagegen ein deutlich reicheres Set an Datenstrukturen</li>
+<li>Clojure legt viel Wert auf Immutability</li>
+<li>Common Lisp: <a href="http://en.wikipedia.org/wiki/Common_Lisp">http://en.wikipedia.org/wiki/Common_Lisp</a></li>
+<li>Emacs: <a href="http://www.gnu.org/software/emacs/">http://www.gnu.org/software/emacs/</a></li>
+<li>Es gibt verschiedene Modell Lisp laufen zu lassen: kompiliert, interpretiert, beides :)</li>
+<li>Stalin, ein Scheme Compiler, &quot;Stalin brutally optimizes.&quot;: <a href="http://en.wikipedia.org/wiki/Stalin_(scheme_implementation)">http://en.wikipedia.org/wiki/Stalin_(scheme_implementation)</a></li>
+<li>In akademischen Veröffentlichung wird oft ein Lisp als Beispielsprache verwendet</li>
+<li>Insgesamt ist es sehr vielfältig, aber dabei (vielleicht) zu vielfältig</li>
+<li>In der Regel sind die Dialekte nicht untereinander kompatibel</li>
+<li>Die Lisp-Community neigt dazu, immer wieder neue Dialekte zu schaffen. Bedingt durch die Einfachheit dies zu tun.</li>
+<li>Keine Konvergenz in Sicht :-)</li>
+<li>In den 70er gab es bereits einen unüberschaubaren Wildwuchs an Dialekten. Daher die Initiative einen gemeinsamen Standard zu schaffen: Common Lisp, weil Standard Lisp gab es schon ^^</li>
+<li>Hat bis in die 90er gedauert!</li>
+<li>Ist jetzt aber ein ANSI-Standard</li>
+<li>Entwicklung des Standards über Mail, Archiv: <a href="ftp://ftp.cs.rochester.edu/pub/archives/lisp-standards/">ftp://ftp.cs.rochester.edu/pub/archives/lisp-standards/</a></li>
+<li>Ergebnis: 2000 Seiten langer Standard, Sprache inkl. Standard Bibliothek</li>
+<li>Guy Steele hat in Form eines Buches vor Verabschiedung des Standards einfach Tatsachen geschaffen: <a href="https://en.wikipedia.org/wiki/Common_Lisp_the_Language">https://en.wikipedia.org/wiki/Common_Lisp_the_Language</a></li>
+</ul>
+
+<h3>Lisp in der Praxis (00:56:17)</h3>
+
+<ul>
+<li>Probleme für den realen Einsatz ergeben sich durch die vielen Unterschiede allerdings weniger als man denkt</li>
+<li>Trotzdem ist es ein Problem, dass sehr viel Energie &quot;verloren&quot; geht: Die tolle Bibliothek A lässt sich dann nicht in Lisp X verwenden</li>
+<li>Man muss das Rad zwar relativ oft neu erfinden, aber es gibt zumindest einige Implementierung mit einer kleinen Community und Infrastruktur</li>
+<li>Bei bevuta wird Chicken Scheme (<a href="http://www.call-cc.org/">http://www.call-cc.org/</a>) eingesetzt und man kann etwa auf 500 Erweiterungen zugreifen (&quot;Eggs&quot;, lassen sich ähnlich wie Rubygems installieren)</li>
+<li>Insgesamt extremer Gegensatz zu Java: Bis ins letzte spezifizierte Sprache mit definiertem Verhalten</li>
+<li>Stichwort Java: Clojure versucht den Nachteil von zu wenig Bibliotheken so auszugleichen, dass man auf Java-Bibliotheken zugreifen kann</li>
+<li>Problem: Das Programmiermodell von Java passt nicht zu dem von Clojure</li>
+<li>Die Abbildung von Java-Objekten in Clojure und deren Verwendung ist Aufgabe des Entwicklers</li>
+<li>Für jede Klasse muss im Grunde eine neue Sprache gelernt werden</li>
+<li>Eine Möglichkeit ist zum Beispiel Attribute aus einem Java-Objekt in eine Clojure-Map zu übertragen</li>
+<li>Beispiel: Ring (<a href="https://github.com/ring-clojure/ring">https://github.com/ring-clojure/ring</a>) übersetzt Requests aus Java-Webservern in Clojure-Maps und zurück</li>
+<li>Lisps versuchen in der Regel alles auf Listen abzubilden, weil dafür gibt es schon alle Operationen</li>
+<li>Klassen sind hingegen durch die Vorgaben des Entwicklers in ihrer Verwendung eingeschränkt</li>
+<li>Zwei Kulturen treffen aufeinander, dazu gibt es von Rich Hickey (Clojure) einige gute Talks: <a href="https://www.youtube.com/watch?v=rI8tNMsozo0">https://www.youtube.com/watch?v=rI8tNMsozo0</a></li>
+<li>Andere Ansätze/Modelle können/sollten Anregungen für die eigene &quot;Welt&quot; geben (z.B.: Immutability lässt sich auch in anderen Sprachen verwenden)</li>
+<li>bevuta versucht so viel wie möglich in Scheme zu machen, aber gerade bei Mobilentwicklung ist das leider nicht möglich
+
+<ul>
+<li>Theoretisch läuft Clojure zwar auf Android, ist dort aber viel zu langsam</li>
+</ul></li>
+<li>Aber: Die Businesslogik kann in Scheme geschrieben werden und wird anschließend nach C kompiliert, um das dann in Objective-C und Java (via JNI) einzubinden</li>
+<li>Notwendiger Glue-Code ist sehr wenig, vor allem im Fall von Objective-C, JNI ist da anstrengender</li>
+<li>Auch als Script-Sprache lässt sich Scheme ohne weiteres verwenden</li>
+<li>Moritz macht alles™ in Emacs (soweit möglich), z.B.: Email, Todo-App. Gibt sogar einen PDF-Reader</li>
+<li>Man könnte Emacs auch als Shell booten und dann aus Emacs bei Bedarf Shells starten, dabei kollidieren aber Keybindings (vor allem bei ncurses-Anwendungen). Also nicht so toll.</li>
+<li>Stichwort Emacs als Betriebssystem: Es gab in den 70er- und 80er-Jahren auch Lisp-Maschinen: <a href="https://de.wikipedia.org/wiki/Lisp-Maschine">https://de.wikipedia.org/wiki/Lisp-Maschine</a></li>
+<li>Wie die genau funktionieren ist bei uns dünnes Eis ^^</li>
+<li>Entwicklung wurde dann Ende der 80er eingestellt, weil die Forschungsgelder im Bereich künstliche Intellegenz (vor allem vom Militär) zusammengestrichen wurden</li>
+</ul>
+
+<h3>EuroClojure (01:15:55)</h3>
+
+<ul>
+<li>Moritz war auf der EuroClojure in Berlin: <a href="http://euroclojure.com/2013/">http://euroclojure.com/2013/</a>, ist die europäische Clojure Konferenz (~ 300 Teilnehmer)</li>
+<li>Ansonsten ist Clojure sehr amerikanisch geprägt</li>
+<li>Inhalt aber nicht ausschließlich Clojure, 2 Präsentationen über das eigene Lisp ;-)</li>
+<li>Toy Lisp: <a href="https://www.google.com/search?q=toy%20lisp">https://www.google.com/search?q=toy%20lisp</a></li>
+<li>Moritz hat mal eine Liste von Lisp-Implementierungen in Javascript zusammengestellt: Ergebnis 50+</li>
+<li>Real-World-Clojure-Projekte auf der Konferenz:
+
+<ul>
+<li>dailymail.co.uk: Hat ihr uraltes Backend im laufenden Betrieb auf Clojure umgestellt</li>
+<li>&quot;Internet of Things&quot;-Plattform ist von Rails nach Clojure migriert; Grund für Clojure war, sie  haben am meisten in der kürzesten Zeit erreicht (im Vergleich zu anderen Technologien)</li>
+</ul></li>
+<li>Clojures Webstack ist bereits sehr ausgereift, u.a. weil viele Ruby-Entwickler zu Clojure gegangen sind und Konzepte mitgenommen haben (Bsp.: Ring ist von Rack inspiriert)</li>
+<li>Leider keine Aufzeichnung der Talks :-(</li>
+<li>Besonders Schade um die Keynote:
+
+<ul>
+<li>Verhältnis zwischen der perfekten Architektur und der Abwesenheit von Architektur</li>
+<li>Brasília als Beispiel von perfekt geplanter Stadt und dennoch wenig brauchbar</li>
+<li>Beispiel von Städteplanung auf Softwareentwicklung</li>
+<li>Java EE vs. PHP Frickelshop: Beides kann man nicht wirklich benutzen</li>
+<li>Fazit: Ein gute Mischung von Struktur und Chaos finden</li>
+</ul></li>
+<li>Moritz kann die Konferenz empfehlen, auch für Leute die sonst kein Clojure machen</li>
+<li>Clojure ist auch in der Lisp-Community schnell aufgestiegen und gehört mittlerweile zu den Top-3</li>
+<li>Positive Auswirkungen des Clojure-Hypes auf die Akzeptanz von Lisp konnte Moritz noch nicht feststellen</li>
+</ul>
+
+<h3>Getting Started (01:30:41)</h3>
+
+<ul>
+<li>Clojure hat eine sehr viel freundlichere Community als etwa Common Lisp, vergleichbar mit der von Ruby</li>
+<li>Moritz selbst bewegt sich vor allem im Chicken Scheme Umfeld und der Entwickler mittlerweile ist auch bei bevuta eingestellt</li>
+<li>Chicken Scheme hat auch eine angenehme Community in der man auch Einsteigern gerne weiterhilft (ähnlich zu Clojure)</li>
+<li>Clojure und Chicken sind daher auf jeden Fall die Empfehlung für den Einstieg</li>
+<li>Das Problem ist allerdings gutes Tutorial-Material zu bekommen:
+
+<ul>
+<li>Clojure ist da ganz gut aufgestellt, auch mit Büchern für Einsteiger</li>
+<li>Die anderen Lisps tun sich damit sehr schwer</li>
+<li>Ein gutes Buch für Common Lisp ist &quot;Practical Common Lisp&quot; von Peter Seibel (<a href="http://www.amazon.de/Practical-Common-Lisp-Peter-Seibel/dp/1590592395">http://www.amazon.de/Practical-Common-Lisp-Peter-Seibel/dp/1590592395</a>)</li>
+<li>Auch für Common Lisp ist &quot;Land of Lisp&quot; von Conrad Barski (<a href="http://www.amazon.de/Land-Lisp-Learn-Program-Game/dp/1593272812/ref=sr_1_1?s=books-intl-de&amp;ie=UTF8&amp;qid=1382353124&amp;sr=1-1&amp;keywords=The+land+of+lisp">http://www.amazon.de/Land-Lisp-Learn-Program-Game/dp/1593272812/ref=sr_1_1?s=books-intl-de&amp;ie=UTF8&amp;qid=1382353124&amp;sr=1-1&amp;keywords=The+land+of+lisp</a>)</li>
+<li>Für Scheme sieht es da eher düster aus. Hauptwerk ist &quot;Structure and Interpretation of Computer Programs&quot; (<a href="http://www.amazon.de/Structure-Interpretation-Computer-Electrical-Engineering/dp/0262510871/ref=sr_1_1?s=books-intl-de&amp;ie=UTF8&amp;qid=1382353230&amp;sr=1-1&amp;keywords=Structure+and+Interpretation+of+Computer+Programs">http://www.amazon.de/Structure-Interpretation-Computer-Electrical-Engineering/dp/0262510871/ref=sr_1_1?s=books-intl-de&amp;ie=UTF8&amp;qid=1382353230&amp;sr=1-1&amp;keywords=Structure+and+Interpretation+of+Computer+Programs</a>) was sehr akademisch ist. Weil es das ehemalige Lehrbuch des MIT ist.</li>
+<li>Von den Vorlesungen (Anfang der 80er) gibt es sogar noch Videoaufzeichnungen</li>
+</ul></li>
+<li>Usergroups in Köln:
+
+<ul>
+<li>Cologne Clojure: <a href="http://www.meetup.com/clojure-cologne">http://www.meetup.com/clojure-cologne</a> (gibt aber auch was anderes als Clojure), Treffen in der Bottmühle</li>
+<li>Moritz wollte mal eine Gruppe machen für Sprachen die eigentlich keine Rolle spielen , ähnlich der FringeDC von Conrad Barski (gibt es aber auch nicht mehr)</li>
+</ul></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST025" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro" />
+          
+            <psc:chapter start="00:01:15" title="Unser Gast" />
+          
+            <psc:chapter start="00:05:55" title="Informatik an den Schulen" />
+          
+            <psc:chapter start="00:10:58" title="Von Ruby zu Lisp" />
+          
+            <psc:chapter start="00:14:23" title="Elixir" />
+          
+            <psc:chapter start="00:25:30" title="Lisp, eine Historie" />
+          
+            <psc:chapter start="00:56:17" title="Lisp in der Praxis" />
+          
+            <psc:chapter start="01:15:55" title="EuroClojure" />
+          
+            <psc:chapter start="01:30:41" title="Getting Started" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
