@@ -7479,5 +7479,318 @@ bis hin zur Preisfindung und Vermarktung.</p>
           
         </item>
         
+        <item>
+          <title>GST026 - RubyConf 2013</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Post-Berichterstattung zur RubyConf 2013 mit Lucas Dohmen</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst026.opus" length="40413819" type="audio/opus"/>
+          <guid isPermaLink="false">GST026</guid>
+          <pubDate>Mon, 25 Nov 2013 11:19:48 +0100</pubDate>
+          <itunes:duration>01:22:03</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Lucas und Dirk waren auf der RubyConf in Miami Beach. Wir
+berichten von ihren Eindrücken und es gibt natürlich die ein oder andere
+Empfehlung für einen Vortrag. Darüber hinaus diskutieren wir über die Inhalte einiger Talks.
+Insgesamt ist die Folge leider ein bisschen durcheinander, trotzdem viel Spaß beim hören.
+
+### Intro (00:00:00)
+
+* Wir trinken Mühlen Kölsch! http://www.muehlenkoelsch.de/
+* Der Lucas ist dabei! Und es ist das fünfte mal :)
+    * http://geekstammtisch.de/#GST006
+    * http://geekstammtisch.de/#GST008
+    * http://geekstammtisch.de/#GST013
+    * http://geekstammtisch.de/#GST021
+* RubyConf 2013 Miami Beach: http://rubyconf.org/
+* Heutiger Titelsong: Miami Vice: http://en.wikipedia.org/wiki/Miami_Vice
+
+### Exkurs: Letzter Geekstammtich über Lisp (00:02:35)
+
+* Allgemein gutes Feedback und Lucas fand es auch gut
+* JavaScript Lisp Implementationen (von @DerGuteMoritz): http://ceaude.twoticketsplease.de/js-lisps.html
+* Hygienische Makros: http://en.wikipedia.org/wiki/Hygienic_macro
+
+### RubyConf (00:04:15)
+
+* Dirk und Lucas waren da!
+* Comic-Con in San Diego: http://www.comic-con.org/
+* Die Location war ganz cool, WiFi leider nicht so
+* RubyConf Schedule gibt es hier in einer Übersicht: http://rubyconf.org/schedule
+
+### Allgemeines (00:07:00)
+
+* Talks wurden gestreamt
+* Videos gibt es gegen Ende November
+* Dirk und Lucas müssen auch noch Talks schauen (3 Tracks ist halt zu viel)
+* Anfangs gab es im Schedule keine Angabe der Speaker; wurde dann aber nachgetragen
+
+### Talks, Talks, Talks (00:09:25)
+
+* The Big Picture (Jim Weirich): http://rubyconf.org/program#jim-weirich
+* Keynote Tag 1 von Matz über Phantasie Land, Außenwahrnehmung, Wahrnehmung, eher verwirrend... also, wie immer :)
+* That's Not Very Ruby of You (Keynote Tag 3), Ernie Miller:  http://rubyconf.org/program#ernie-miller
+* My KidsRuby Journey (Keynote Tag 2), PJ & Katie Hagerty: http://rubyconf.org/program#pj-katie-hagerty
+* Es gab viel zu Ruby 2.1 (kommt am 25.12.2013)
+* Object management on Ruby 2.1, Koichi Sasada: http://rubyconf.org/program#koichi-sasada
+* Neue C-API für Garbage Collection: Es wird diesmal weniger auf Kompatibilität geachtet und mehr auf Effizienz
+* Allgemein ist es recht schwer Ruby radikal weiterzuentwickeln
+* Kurz Thema bei der abschließenden Fragerunde mit Matz: Rubinius X und Ruby
+
+### JRuby (00:34:29)
+
+* Nächster Release wird definitiv JRuby 9000 heißen
+* Vorstellung eines verbesserten Entwicklungsprozesses
+* Talk von Tom Enebo und Charles Nutter: http://rubyconf.org/program#tomenebo-charles-nutter
+* Überlegungen ob Java 6 Unterstützung mit dem nächsten Release entfernt wird, abhängig von Community-Feedback
+* Sehr viel aufräumen innerhalb der Code-Basis, vor allem viel wird viel gelöscht ^^
+* Keine News zu FFI, aber da ist ja eh wieder alles in Ordnung: https://github.com/ffi/ffi/issues/288
+* In JRuby soll kein FFI verwendet, sondern die native Java-Bibliothek (wie etwa nokogiri)
+* Release von JRuby 9000 im ersten Quartal 2014
+* Insgesamt hatte der Talk aber wenig neues gegenüber den bisherigen Talks diesen Jahres
+* Viel interessanter zu JRuby war aber ein Gespräch mit einem der Sponsoren: Money Desktop, http://www.moneydesktop.com
+    * Mehrere hundert Server mit JRuby
+    * Extrem parallel
+    * Protocol Buffers (https://code.google.com/p/protobuf/) Serialisierungsformat
+    * PCI-compliant (http://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard) und trotzdem nahezu kontinuierliches Deployment (10-20/Tag)
+
+### ArangoDB auf der RubyConf (00:47:55)
+
+* Lucas hat einen Lightning Talk gehalten: Hamster und Graphen - https://speakerdeck.com/moonglum/graphs-plus-hamsters
+* Es um das Graphenfeature von ArangoDB, erklärt am Beispiel von einem Hamster, der sein Futter in seinem Bau zählen muss
+* Das Thema gab es kurz vorher auch auf der NoSQL Usergroup in Köln: http://www.nosql-cologne.org/2013/10/07/26th-meeting-november/
+* Graphtraversal API ist noch nicht in im Ruby-Treiber integriert
+* Graphtraversal ist in ArangoDB in Javascript implementiert, daher kann man sie nicht einfach von mruby aus ansprechen
+
+### Und noch mehr interessante Talks (00:53:40)
+
+* Ruby-Core Dilemmas von Marc-André Lafortune: http://rubyconf.org/program#marcandré-lafortune
+* Basti und Dirk kannten das Backport nicht: http://rubygems.org/gems/backports
+* Entwicklung von Backport gegen RubySpec (http://rubyspec.org)
+* "Es ist ein Bug oder Feature, wenn Matz sagt es ist ein Bug oder Feature"
+* Im Grunde sollte er dafür auch Geld nehmen (für Pro-User)
+* "The tricky truth about parallel execution and modern hardware": http://rubyconf.org/program#dirkjan-bussink
+* Insgesamt zu kurze Pausen (10 min) zwischen den Talks
+
+### Abendveranstaltung und RailsGirls (00:59:27)
+
+* Keine offiziellen Abendveranstaltung
+* Am Tag vor der RubyConf waren RailsGirls, die alle kostenlos zur Konferenz konnten
+    * Dadurch recht viele Frauen
+    * Guter Lightning Talk von einer Teilnehmerin adressiert an Mentoren
+    * Passend zu dem Thema von Floor Drees: http://floordrees.tumblr.com/post/58784746482/what-i-learned-learning-rails-becoming-a-better
+* Am zweiten Abend haben Lucas und Dirk das Boardgame Meeting leider verpasst :-(
+
+### Und noch mehr Talks (01:03:26)
+
+* Der Talk von Jim Weirich zu UML: http://rubyconf.org/program#jim-weirich
+    * UML ist nicht immer schlecht, es gibt auch sinnvolle Anwednungsfälle ^^
+* Von Andrew Havens - Build your own Ruby-powered Arcade Machine! (http://rubyconf.org/program#andrew-havens)
+    * Erste Hälfte super, wie baut man sich sein eigenes Arcade
+    * Zweite Hälfte, völlig wirr und durcheinander
+* Wir sprechen keine nicht-Empfehlungen aus
+* Dirk fand den Talk von Stephen Henrie zum Thema Thrift und AMQP ganz gut: http://rubyconf.org/program#stephen-henrie
+* Lucas war nicht begeistert
+* Aber wir einigen uns drauf, dass er eine gute Diskussionsgrundlage ist ;-)
+* Talk von Matt Aimonetti mit abschließendem Panel: http://rubyconf.org/program#matt-aimonetti-bryan-helmkamp-bryan-liles
+    * These: Es gibt keinen schlechten Code
+    * Wir sind uns einig, dass es auf jeden Fall schlechten Code gibt ;-)
+    * Nach Bryan Helmkamp (https://codeclimate.com) ist der beste Code nicht eine 4,0 sondern eine 3,2
+    * Wir fragen uns, warum das bei Code Climate dann nicht so abgebildet wird
+
+### Tipps zu Miami Beach (01:17:46)
+
+* Panther Coffee: http://www.panthercoffee.com
+* Vielen Dank an Bryce für die Empfehlung: https://twitter.com/BonzoESC
+* Beer and Burger Joint: http://www.bnbjoint.com - Gutes Bier und gute Burger
+* Ein Trip zum Kennedy Space Center lohnt sich auch: http://www.kennedyspacecenter.com
+* Das Home Office Cologne sucht noch Nachmieter und verkauft immer noch Teile der Einrichtung]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Lucas und Dirk waren auf der RubyConf in Miami Beach. Wir
+berichten von ihren Eindrücken und es gibt natürlich die ein oder andere
+Empfehlung für einen Vortrag. Darüber hinaus diskutieren wir über die Inhalte einiger Talks.
+Insgesamt ist die Folge leider ein bisschen durcheinander, trotzdem viel Spaß beim hören.</p>
+
+<h3>Intro (00:00:00)</h3>
+
+<ul>
+<li>Wir trinken Mühlen Kölsch! <a href="http://www.muehlenkoelsch.de/">http://www.muehlenkoelsch.de/</a></li>
+<li>Der Lucas ist dabei! Und es ist das fünfte mal :)
+
+<ul>
+<li><a href="http://geekstammtisch.de/#GST006">http://geekstammtisch.de/#GST006</a></li>
+<li><a href="http://geekstammtisch.de/#GST008">http://geekstammtisch.de/#GST008</a></li>
+<li><a href="http://geekstammtisch.de/#GST013">http://geekstammtisch.de/#GST013</a></li>
+<li><a href="http://geekstammtisch.de/#GST021">http://geekstammtisch.de/#GST021</a></li>
+</ul></li>
+<li>RubyConf 2013 Miami Beach: <a href="http://rubyconf.org/">http://rubyconf.org/</a></li>
+<li>Heutiger Titelsong: Miami Vice: <a href="http://en.wikipedia.org/wiki/Miami_Vice">http://en.wikipedia.org/wiki/Miami_Vice</a></li>
+</ul>
+
+<h3>Exkurs: Letzter Geekstammtich über Lisp (00:02:35)</h3>
+
+<ul>
+<li>Allgemein gutes Feedback und Lucas fand es auch gut</li>
+<li>JavaScript Lisp Implementationen (von <a href="https://twitter.com/DerGuteMoritz">@DerGuteMoritz</a>): <a href="http://ceaude.twoticketsplease.de/js-lisps.html">http://ceaude.twoticketsplease.de/js-lisps.html</a></li>
+<li>Hygienische Makros: <a href="http://en.wikipedia.org/wiki/Hygienic_macro">http://en.wikipedia.org/wiki/Hygienic_macro</a></li>
+</ul>
+
+<h3>RubyConf (00:04:15)</h3>
+
+<ul>
+<li>Dirk und Lucas waren da!</li>
+<li>Comic-Con in San Diego: <a href="http://www.comic-con.org/">http://www.comic-con.org/</a></li>
+<li>Die Location war ganz cool, WiFi leider nicht so</li>
+<li>RubyConf Schedule gibt es hier in einer Übersicht: <a href="http://rubyconf.org/schedule">http://rubyconf.org/schedule</a></li>
+</ul>
+
+<h3>Allgemeines (00:07:00)</h3>
+
+<ul>
+<li>Talks wurden gestreamt</li>
+<li>Videos gibt es gegen Ende November</li>
+<li>Dirk und Lucas müssen auch noch Talks schauen (3 Tracks ist halt zu viel)</li>
+<li>Anfangs gab es im Schedule keine Angabe der Speaker; wurde dann aber nachgetragen</li>
+</ul>
+
+<h3>Talks, Talks, Talks (00:09:25)</h3>
+
+<ul>
+<li>The Big Picture (Jim Weirich): <a href="http://rubyconf.org/program#jim-weirich">http://rubyconf.org/program#jim-weirich</a></li>
+<li>Keynote Tag 1 von Matz über Phantasie Land, Außenwahrnehmung, Wahrnehmung, eher verwirrend... also, wie immer :)</li>
+<li>That&#39;s Not Very Ruby of You (Keynote Tag 3), Ernie Miller:  <a href="http://rubyconf.org/program#ernie-miller">http://rubyconf.org/program#ernie-miller</a></li>
+<li>My KidsRuby Journey (Keynote Tag 2), PJ &amp; Katie Hagerty: <a href="http://rubyconf.org/program#pj-katie-hagerty">http://rubyconf.org/program#pj-katie-hagerty</a></li>
+<li>Es gab viel zu Ruby 2.1 (kommt am 25.12.2013)</li>
+<li>Object management on Ruby 2.1, Koichi Sasada: <a href="http://rubyconf.org/program#koichi-sasada">http://rubyconf.org/program#koichi-sasada</a></li>
+<li>Neue C-API für Garbage Collection: Es wird diesmal weniger auf Kompatibilität geachtet und mehr auf Effizienz</li>
+<li>Allgemein ist es recht schwer Ruby radikal weiterzuentwickeln</li>
+<li>Kurz Thema bei der abschließenden Fragerunde mit Matz: Rubinius X und Ruby</li>
+</ul>
+
+<h3>JRuby (00:34:29)</h3>
+
+<ul>
+<li>Nächster Release wird definitiv JRuby 9000 heißen</li>
+<li>Vorstellung eines verbesserten Entwicklungsprozesses</li>
+<li>Talk von Tom Enebo und Charles Nutter: <a href="http://rubyconf.org/program#tomenebo-charles-nutter">http://rubyconf.org/program#tomenebo-charles-nutter</a></li>
+<li>Überlegungen ob Java 6 Unterstützung mit dem nächsten Release entfernt wird, abhängig von Community-Feedback</li>
+<li>Sehr viel aufräumen innerhalb der Code-Basis, vor allem viel wird viel gelöscht ^^</li>
+<li>Keine News zu FFI, aber da ist ja eh wieder alles in Ordnung: <a href="https://github.com/ffi/ffi/issues/288">https://github.com/ffi/ffi/issues/288</a></li>
+<li>In JRuby soll kein FFI verwendet, sondern die native Java-Bibliothek (wie etwa nokogiri)</li>
+<li>Release von JRuby 9000 im ersten Quartal 2014</li>
+<li>Insgesamt hatte der Talk aber wenig neues gegenüber den bisherigen Talks diesen Jahres</li>
+<li>Viel interessanter zu JRuby war aber ein Gespräch mit einem der Sponsoren: Money Desktop, <a href="http://www.moneydesktop.com">http://www.moneydesktop.com</a>
+
+<ul>
+<li>Mehrere hundert Server mit JRuby</li>
+<li>Extrem parallel</li>
+<li>Protocol Buffers (<a href="https://code.google.com/p/protobuf/">https://code.google.com/p/protobuf/</a>) Serialisierungsformat</li>
+<li>PCI-compliant (<a href="http://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard">http://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard</a>) und trotzdem nahezu kontinuierliches Deployment (10-20/Tag)</li>
+</ul></li>
+</ul>
+
+<h3>ArangoDB auf der RubyConf (00:47:55)</h3>
+
+<ul>
+<li>Lucas hat einen Lightning Talk gehalten: Hamster und Graphen - <a href="https://speakerdeck.com/moonglum/graphs-plus-hamsters">https://speakerdeck.com/moonglum/graphs-plus-hamsters</a></li>
+<li>Es um das Graphenfeature von ArangoDB, erklärt am Beispiel von einem Hamster, der sein Futter in seinem Bau zählen muss</li>
+<li>Das Thema gab es kurz vorher auch auf der NoSQL Usergroup in Köln: <a href="http://www.nosql-cologne.org/2013/10/07/26th-meeting-november/">http://www.nosql-cologne.org/2013/10/07/26th-meeting-november/</a></li>
+<li>Graphtraversal API ist noch nicht in im Ruby-Treiber integriert</li>
+<li>Graphtraversal ist in ArangoDB in Javascript implementiert, daher kann man sie nicht einfach von mruby aus ansprechen</li>
+</ul>
+
+<h3>Und noch mehr interessante Talks (00:53:40)</h3>
+
+<ul>
+<li>Ruby-Core Dilemmas von Marc-André Lafortune: <a href="http://rubyconf.org/program#marcandr%C3%A9-lafortune">http://rubyconf.org/program#marcandré-lafortune</a></li>
+<li>Basti und Dirk kannten das Backport nicht: <a href="http://rubygems.org/gems/backports">http://rubygems.org/gems/backports</a></li>
+<li>Entwicklung von Backport gegen RubySpec (<a href="http://rubyspec.org">http://rubyspec.org</a>)</li>
+<li>&quot;Es ist ein Bug oder Feature, wenn Matz sagt es ist ein Bug oder Feature&quot;</li>
+<li>Im Grunde sollte er dafür auch Geld nehmen (für Pro-User)</li>
+<li>&quot;The tricky truth about parallel execution and modern hardware&quot;: <a href="http://rubyconf.org/program#dirkjan-bussink">http://rubyconf.org/program#dirkjan-bussink</a></li>
+<li>Insgesamt zu kurze Pausen (10 min) zwischen den Talks</li>
+</ul>
+
+<h3>Abendveranstaltung und RailsGirls (00:59:27)</h3>
+
+<ul>
+<li>Keine offiziellen Abendveranstaltung</li>
+<li>Am Tag vor der RubyConf waren RailsGirls, die alle kostenlos zur Konferenz konnten
+
+<ul>
+<li>Dadurch recht viele Frauen</li>
+<li>Guter Lightning Talk von einer Teilnehmerin adressiert an Mentoren</li>
+<li>Passend zu dem Thema von Floor Drees: <a href="http://floordrees.tumblr.com/post/58784746482/what-i-learned-learning-rails-becoming-a-better">http://floordrees.tumblr.com/post/58784746482/what-i-learned-learning-rails-becoming-a-better</a></li>
+</ul></li>
+<li>Am zweiten Abend haben Lucas und Dirk das Boardgame Meeting leider verpasst :-(</li>
+</ul>
+
+<h3>Und noch mehr Talks (01:03:26)</h3>
+
+<ul>
+<li>Der Talk von Jim Weirich zu UML: <a href="http://rubyconf.org/program#jim-weirich">http://rubyconf.org/program#jim-weirich</a>
+
+<ul>
+<li>UML ist nicht immer schlecht, es gibt auch sinnvolle Anwednungsfälle ^^</li>
+</ul></li>
+<li>Von Andrew Havens - Build your own Ruby-powered Arcade Machine! (<a href="http://rubyconf.org/program#andrew-havens">http://rubyconf.org/program#andrew-havens</a>)
+
+<ul>
+<li>Erste Hälfte super, wie baut man sich sein eigenes Arcade</li>
+<li>Zweite Hälfte, völlig wirr und durcheinander</li>
+</ul></li>
+<li>Wir sprechen keine nicht-Empfehlungen aus</li>
+<li>Dirk fand den Talk von Stephen Henrie zum Thema Thrift und AMQP ganz gut: <a href="http://rubyconf.org/program#stephen-henrie">http://rubyconf.org/program#stephen-henrie</a></li>
+<li>Lucas war nicht begeistert</li>
+<li>Aber wir einigen uns drauf, dass er eine gute Diskussionsgrundlage ist ;-)</li>
+<li>Talk von Matt Aimonetti mit abschließendem Panel: <a href="http://rubyconf.org/program#matt-aimonetti-bryan-helmkamp-bryan-liles">http://rubyconf.org/program#matt-aimonetti-bryan-helmkamp-bryan-liles</a>
+
+<ul>
+<li>These: Es gibt keinen schlechten Code</li>
+<li>Wir sind uns einig, dass es auf jeden Fall schlechten Code gibt ;-)</li>
+<li>Nach Bryan Helmkamp (<a href="https://codeclimate.com">https://codeclimate.com</a>) ist der beste Code nicht eine 4,0 sondern eine 3,2</li>
+<li>Wir fragen uns, warum das bei Code Climate dann nicht so abgebildet wird</li>
+</ul></li>
+</ul>
+
+<h3>Tipps zu Miami Beach (01:17:46)</h3>
+
+<ul>
+<li>Panther Coffee: <a href="http://www.panthercoffee.com">http://www.panthercoffee.com</a></li>
+<li>Vielen Dank an Bryce für die Empfehlung: <a href="https://twitter.com/BonzoESC">https://twitter.com/BonzoESC</a></li>
+<li>Beer and Burger Joint: <a href="http://www.bnbjoint.com">http://www.bnbjoint.com</a> - Gutes Bier und gute Burger</li>
+<li>Ein Trip zum Kennedy Space Center lohnt sich auch: <a href="http://www.kennedyspacecenter.com">http://www.kennedyspacecenter.com</a></li>
+<li>Das Home Office Cologne sucht noch Nachmieter und verkauft immer noch Teile der Einrichtung</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST026" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro" />
+          
+            <psc:chapter start="00:02:35" title="Exkurs: Letzter Geekstammtich über Lisp" />
+          
+            <psc:chapter start="00:04:15" title="RubyConf" />
+          
+            <psc:chapter start="00:07:00" title="Allgemeines" />
+          
+            <psc:chapter start="00:09:25" title="Talks, Talks, Talks" />
+          
+            <psc:chapter start="00:34:29" title="JRuby" />
+          
+            <psc:chapter start="00:47:55" title="ArangoDB auf der RubyConf" />
+          
+            <psc:chapter start="00:53:40" title="Und noch mehr interessante Talks" />
+          
+            <psc:chapter start="00:59:27" title="Abendveranstaltung und RailsGirls" />
+          
+            <psc:chapter start="01:03:26" title="Und noch mehr Talks" />
+          
+            <psc:chapter start="01:17:46" title="Tipps zu Miami Beach" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
