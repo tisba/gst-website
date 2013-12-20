@@ -81,7 +81,7 @@ function selectEpisode(episodenumber, jumpSeconds) {
     permalink: "http://geekstammtisch.de/#" + episode.guid[0].Text
   };
 
-  if (episode.chapters !== undefined) {
+  if (episode.chapters !== undefined && episode.chapters[0].chapter !== undefined) {
     var chapters = "";
 
     $.each(episode.chapters[0].chapter, function(index, chapter) {
