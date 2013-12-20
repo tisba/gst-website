@@ -1,0 +1,31 @@
+--- !ruby/struct:Episode
+number: 27
+name: Jahresrückblick 2013
+subtitle: Der (kleine) Geekstammtisch Jahresrückblick 2013
+length: 761
+media:
+  alac:
+    size: 33188894
+    file_ext: m4a
+  descr:
+    size: 10785
+    file_ext: json
+  mp3:
+    size: 9368201
+    file_ext: mp3
+  input:
+    size: 96622134
+    file_ext: unprocessed.m4a
+  aac:
+    size: 5830367
+    file_ext: m4a
+  opus:
+    size: 6468819
+    file_ext: opus
+auphonic_uuid: iGGnja2pCu2y723RQzwp7H
+published_at: 2013-12-20 17:16:52.635361000 +01:00
+summary: "Vorsicht! Diese Folge ist sehr meta! Wir ziehen ein kleines Resümee des
+  letzten Jahres Geekstammtisch und sagen an, dass wir auch nächstes Jahr weitermachen
+  werden :)\r\n\r\nWir bedanken uns bei allen Hörern für die Aufmerksamkeit, das tolle
+  Feedback und das Flattern und wünschen frohe Weihnachten und einen guten Rutsch!"
+chapters: []

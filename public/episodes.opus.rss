@@ -7792,5 +7792,30 @@ Insgesamt ist die Folge leider ein bisschen durcheinander, trotzdem viel Spaß b
           
         </item>
         
+        <item>
+          <title>GST027 - Jahresrückblick 2013</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Der (kleine) Geekstammtisch Jahresrückblick 2013</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst027.opus" length="6468819" type="audio/opus"/>
+          <guid isPermaLink="false">GST027</guid>
+          <pubDate>Fri, 20 Dec 2013 17:16:52 +0100</pubDate>
+          <itunes:duration>00:12:41</itunes:duration>
+          <itunes:summary><![CDATA[Vorsicht! Diese Folge ist sehr meta! Wir ziehen ein kleines Resümee des letzten Jahres Geekstammtisch und sagen an, dass wir auch nächstes Jahr weitermachen werden :)
+
+Wir bedanken uns bei allen Hörern für die Aufmerksamkeit, das tolle Feedback und das Flattern und wünschen frohe Weihnachten und einen guten Rutsch!]]></itunes:summary>
+          <description><![CDATA[<p>Vorsicht! Diese Folge ist sehr meta! Wir ziehen ein kleines Resümee des letzten Jahres Geekstammtisch und sagen an, dass wir auch nächstes Jahr weitermachen werden :)</p>
+
+<p>Wir bedanken uns bei allen Hörern für die Aufmerksamkeit, das tolle Feedback und das Flattern und wünschen frohe Weihnachten und einen guten Rutsch!</p>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST027" />
+
+          
+          <psc:chapters>
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
