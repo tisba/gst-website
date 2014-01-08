@@ -8,6 +8,6 @@ gem "shotgun"
 gem "puma"
 gem "rake"
 
-gem "debugger"
+gem "byebug"
 
 gem "gst-kitchen"

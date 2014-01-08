@@ -1,0 +1,56 @@
+--- !ruby/struct:Episode
+number: 28
+name: Sprachlos auf dem 30C3
+subtitle: Essy, Lucas, Tobias, Bodo, Dirk und Basti berichten ihre Eindrücke vom 30C3
+length: 2835
+media:
+  alac:
+    size: 135320594
+    file_ext: m4a
+  descr:
+    size: 13908
+    file_ext: json
+  mp3:
+    size: 34263997
+    file_ext: mp3
+  input:
+    size: 388132599
+    file_ext: unprocessed.m4a
+  aac:
+    size: 21678344
+    file_ext: m4a
+  opus:
+    size: 23922636
+    file_ext: opus
+auphonic_uuid: fZheHbWm3i5mEJhhrmHESJ
+published_at: 2013-12-30 15:43:01.673606000 +01:00
+summary: "**Synopsis:** Das zweite Joint Venture der @nerdkunde (ohne Klaus, mit Bodo)\r\nund
+  des @geekstammtisch (mit allen) live und in Farbe vom 30. Chaos\r\nCommunication
+  Congress (30C3) aus dem @Sendezentrum. Wir geben einen kurzen\r\npersönlichen Rundblick
+  über die letzten vier Tage Kongress. Vielen Dank an das\r\nSendezentrum für die
+  Bereitstellung des Equipments und Ralf (@rstockm) für die\r\nsuper Betreuung!\r\n\r\n###
+  Eröffnung (00:00:00)\r\n\r\n* Intro (http://vimeo.com/82903406)\r\n* Nerdkunde-Style:
+  Wie geht es uns? Bitte jeder einmal kurz seine Eindrücke zum Congress\r\n* Eröffnungsveranstaltung
+  mit Tim Pritlove und super Video (https://events.ccc.de/congress/2013/Fahrplan/events/5605.html)\r\n*
+  Wir sind beeindruckt von der Atmosphäre\r\n\r\n### Unsere Top-7 (00:07:53)\r\n\r\n*
+  Even More Tamagotchis Were Harmed in the Making of this Presentation: https://events.ccc.de/congress/2013/Fahrplan/events/5279.html\r\n*
+  My journey into FM-RDS: https://events.ccc.de/congress/2013/Fahrplan/events/5588.html\r\n*
+  Fnord News Show mit Frank und Fefe: https://events.ccc.de/congress/2013/Fahrplan/events/5714.html\r\n*
+  Die Keynote mit Glenn Greenwald: https://events.ccc.de/congress/2013/Fahrplan/speakers/4428.html\r\n*
+  Bullshit made in Germany mit Linus Neumann: https://events.ccc.de/congress/2013/Fahrplan/events/5210.html\r\n*
+  Seeing The Secret State: Six Landscapes von Trevor Paglen: https://events.ccc.de/congress/2013/Fahrplan/events/5604.html\r\n*
+  Seidenstraße und How to build your own bottle paket LEDs: https://events.ccc.de/congress/2013/Fahrplan/events/5610.html\r\n
+  \ * Bild: https://twitter.com/bitboxer/status/417628749841313792/photo/1/large\r\n*
+  Detaillierte Übersicht / Interviews zum Congress: Die Sondersendung: http://die-sondersendung.de/30c3\r\n\r\n###
+  So long and thank you for all the ~~fish~~mate (00:44:07)\r\n\r\n* Danke an den
+  CCC, alle Engel und die Orga für eine großartigen Congress"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Eröffnung
+- !ruby/struct:Chapter
+  start: '00:07:53'
+  title: Unsere Top-7
+- !ruby/struct:Chapter
+  start: '00:44:07'
+  title: So long and thank you for all the (fish)mate
