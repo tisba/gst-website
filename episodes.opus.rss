@@ -7909,5 +7909,365 @@ super Betreuung!</p>
           
         </item>
         
+        <item>
+          <title>GST029 - Die JVM ist ein Erfolgsmodell</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Wir sprachen mit Matthias Richter über die Freuden der Java-Entwicklung</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst029.opus" length="50409610" type="audio/opus"/>
+          <guid isPermaLink="false">GST029</guid>
+          <pubDate>Tue, 28 Jan 2014 13:19:21 +0100</pubDate>
+          <itunes:duration>01:47:38</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Matthias ist Softwareentwickler und erzählt uns wie er jahrelang
+Java im Telko-Sektor gemacht hat. Vor einem Jahr hat er dann die Branche und
+die auch die Größe des Unternehmens radikal geändert und macht nun
+Produktentwicklung in der Logistikbranche. Neben Java wird dort viel im
+Embedded-Bereich entwickelt und trotz eines kleinen Teams sind die Aufgaben
+sehr vielfältig. Seit neuestem wird Software nun auch mit JRuby und AngularJS
+umgesetzt. Wir erfahren über die damit verbundenen Herausforderungen und wie
+damit umgegangen wurde.
+
+
+### Einleitung & GST-Meta (00:00:00)
+
+  * Matthias Richter (@mr_samma) ist heute unser Gast
+  * GST019 mit Stefan Schiffer "Weg von .NET & Windows": http://geekstammtisch.de/#GST019
+  * Der Geekstammtisch und die Nerdkunde beim Rudelpodcasten: http://das-sendezentrum.de/blog/podcasts-aus-unserer-30c3-assembly
+  * Das neue Büro des Home Office Cologne in der Lindenstraße 14: https://twitter.com/HomeOfficeCGN/status/425630254364119040
+
+### Unser Gast (00:02:45)
+
+  * Matthias hat mit Dirk & Basti studiert
+  * …und hat nach dem Studium als Java Entwickler bei einer Softwarefirma im "Telekommunikationsumfeld" gearbeitet
+  * Matthias hat dort nie Admins zu Gesicht bekommen :)
+  * Nach vier Jahren hat Matthias dann etwas neues gesucht und ist in der Logistikbranche gelandet
+  * Kleineres Unternehmen, eigene Produkte, jeder macht alles (Matthias ist also "auch" Admin)
+  * wollte weiter auf der JVM entwickeln
+  * Scala: http://www.scala-lang.org/
+  * Clojure Koans: http://clojurekoans.com/
+  * Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages  (von Bruce A. Tate): http://pragprog.com/book/btlang/seven-languages-in-seven-weeks
+
+### Java-Entwicklung (00:12:30)
+
+  * Dirk hat das letzte mal ernsthaft Java 2005 gemacht (mit Apache Struts, http://struts.apache.org/); "Das war schlimm!" – Dirk
+  * Basti hat es nie ernsthaft gemacht (abgesehen vom Studium)
+  * "Java, das Ökosystem"
+  * Die JVM ist ein Erfolgsmodell
+  * K virtual machine (KVM): http://en.wikipedia.org/wiki/K_virtual_machine
+  * Java Platform, Micro Edition, J2ME: http://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition
+  * Java EE Application Server: http://en.wikipedia.org/wiki/Comparison_of_application_servers
+  * Java ME / SE / EE: http://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html
+  * Java Community Process: https://www.jcp.org/en/home/index
+  * Servlet API ist Teil der Java EE
+  * Spring Framework: http://spring.io/
+  * Zwischen Anhängern von Spring und Java EE hat sich ein flame war entwickelt:
+    * Blog Beitrag eines bekannten JEE Evangelist inkl. Antworten von Spring Mitarbeitern in den Kommentaren: https://blogs.oracle.com/arungupta/entry/why_java_ee_6_is
+    * Antwort eines VMWare Mitarbeiters: http://www.iamjambay.com/2012/03/arun-gupta-java-ee-6-and-spring.html
+    * tl;dr: hier eine Zusammenfassung auf deutsch: http://jaxenter.de/news/JavaEE-versus-Spring-Hitzige-Debatte-um-Arun-Guptas-Legacy-Vorwurf
+  * Matthias würde immer Spring wählen, da es dynamischer ist und aktueller
+  * Spring legt wesentlich mehr Wert auf Testing
+  * Java 8 SE Release März 2014, EE dann wesentlich später, irgendwann noch später lassen sich Application Server zertifizieren 
+  * Vielzahl an Java Frameworks für jeden Zweck
+  * Web Frameworks, die "Großen" http://zeroturnaround.com/rebellabs/the-curious-coders-java-web-frameworks-comparison-spring-mvc-grails-vaadin-gwt-wicket-play-struts-and-jsf/
+  * Liste von sonstigen Web Frameworks: http://java-source.net/open-source/web-frameworks
+  * Liste von Persistenz Frameworks: http://java-source.net/open-source/persistence
+  * Frameworks zur asynchronen Verarbeitung: 
+    * http://spring.io/blog/2013/05/13/reactor-a-foundation-for-asynchronous-applications-on-the-jvm
+    * http://akka.io/
+    * http://vertx.io/
+  * Web Service Frameworks, Xfire, Apache CXF
+  * DAO / ActiveRecord als Beispiel dafür, dass in Rails Dinge falsch angegangen werden
+    * dies kann aber für einfache Anwendungsfälle in Ordnung sein, findet Matthias, Dirk sieht das aber anders
+  * DAOs sind lange Standard in Java Apps gewesen
+    * mittlerweile werden häufig Repositories eingesetzt: http://thinkinginobjects.com/2012/08/26/dont-use-dao-use-repository/
+  * Repository Ansatz in Java EE 6 / 7
+  * Misko Hevery zu AR: http://misko.hevery.com/2009/05/05/the-problem-with-active-record/
+  * Spring Roo nutzt ActiveRecord Pattern in Java Apps: http://docs.spring.io/spring-roo/reference/html/architecture.html#architecture-dao
+  * AR in Rails tief verwurzelt, ermöglicht aber die Geschwindigkeit in der Rails Entwicklung
+  * Matthias findet opinionated Ansatz in Rails gut
+  * Matthias macht mittlerweile Projekte mit JRuby on Rails, AngularJS und Elasticsearch
+  * Elasticsearch basiert auf Lucene, in Java geschrieben
+
+### Deployment & JVM (01:20:00)
+
+  * JRuby ist ein guter Einstieg in Ruby-Entwicklung gewesen, da man "nur" ein WAR (https://en.wikipedia.org/wiki/WAR_(file_format)) erstellen muss und es im bisherigen Application-Server deployed
+  * Java Wissen auf der Betriebsseite kann im Grunde 1:1 weiter verwendet werden
+  * Auch Deploymentstruktur über Jenkins konnte weiter verwendet werden
+  * Deployment via JMX (https://en.wikipedia.org/wiki/Java_Management_Extensions)
+  * Das WAR wird per Warbler erstellt (http://caldersphere.rubyforge.org/warbler/)
+  * Switch von Java auf JRuby ist schneller gemacht als die Umstellung von JBoss auf nginx+passenger (o.ä.)
+  * Maven ist auch im Projekt \o/
+
+### Entwicklungsumgebung (01:23:05)
+
+  * Matthias hat jahrelang Eclipse verwendet, dann zu IntelliJ gegangen
+  * Mit Ruby dann zu RubyMine gegangen (bzw. IntelliJ mit Ruby-Plugin)
+  * Sublime Text auch mal ausprobiert, geweint
+  * Vim ausprobiert, noch mehr geweint
+  * AngularJS auch in RubyMine, Alternativ auch WebStorm vielleicht eine Möglichkeit
+  * Lokale Entwicklung ist schneller geworden, da kein Kompilieren und Deployment mehr
+  * Lokal wird die Anwendung mit Puma/JRuby entwickelt sowie Grunt für JavaScript
+  * Keine weiteren Java-Abhängigkeiten (außer dem Datenbanktreiber)
+  * Basti möchte wissen wie der Umstieg von IDE in die Welt des Terminals war
+  * Matthias ist aber leider ein schlechtes Beispiel ;-) Er hat Eclipse eigentlich immer "nur" als Editor verwendet
+  * Matthias würde sich gerne auch Vim mal ansehen, aber scheut derzeit die Lernkurve
+  * Frage: Warum Vim? Antwort: Kosten. Aber wir stellen in Frage, ob die Kosten wirklich ein Grund ist. Wahrscheinlich nicht :-)
+  * Insgesamt ist Matthias noch in der Findungsphase: RubyMine ist aber ein Favorit
+  * Matthias hat Spaß auf neue Tools umzustellen :-)
+
+### Next Steps (01:30:47)
+
+  * Derzeit macht er AngularJS Entwicklung, Testing mit Karma, Jasmine, PhantomJS
+  * Es wird auch für Mobile-Plattformen mit AngularJS und Cordova (https://cordova.apache.org/) entwickelt
+  * Die Software die derzeit entwickelt wird, ist sehr allgemein einsetzbar
+  * Im Grunde geht darum Firmen zu unterstützen ihren Kram zusammenzuhalten
+  * Zusätzlich gibt es Systeme die auf Gabelstapler montiert werden
+  * Der Branchenwechseln war eine gute Idee
+
+### Fazit (01:33:10)
+
+  * Bewertung des Wechsels: Positiv, nicht nur wegen dem Spaß sich in neue Dinge einzuarbeiten
+  * Frontend-Entwicklung mit AngularJS fühlt sich tatsächlich mal an wie Entwicklung ;-)
+  * Gab es auch Probleme bei der Umstellung?
+    * Einige Mitarbeiter wollen sich nicht mit so vielen Technologien befassen, das kann auch OK sein, aber man muss damit als Unternehmen/Team umgehen
+    * Ein Kollege ist auch gegangen, da er mehr .NET machen wollte
+    * Lernkurven müssen an die Geschäftsführung und die anderen Kollegen kommuniziert werden
+    * Viele Parallenen zu GST019 (http://geekstammtisch.de/#GST019)
+    * Die Umstellung ist unter anderem auch dadurch motiviert worden, weil der Chef die Folge gehört hat :-)
+  * Frage dann vom Chef: Was ist eigentlich dieses Ruby und Rails? Und wenn das so gut ist, warum machen das nicht alle?
+  * Entwicklungsgeschwindigkeit hat mit überzeugt
+
+### Ausklang (01:38:35)
+
+  * Wir sind uns einig, dass die Folge Leute nicht davon abhalten wird weiter Java zu bashen. Dafür ist es auch einfach zu lustig.
+  * Kritiker werden sagen: "Matthias hat ja dann doch von Java auf Ruby gewechselt"
+  * Matthias hat sich eigentlich auf Java 8 gefreut
+  * Das Unternehmen wird nie ganz auf (J)Ruby umstellen, dafür gibt es zu viele Bereiche in denen man Software entwickelt. Gleichzeitig macht das den Reiz aus
+  * JRuby hat zwar kein Komitee aber dennoch genug Entwicklungsresourcen :-)
+  * Problem ist aber, dass die Community recht klein ist und man schwieriger Lösungen für seine Probleme findet:
+    * Erste Einschränkung: JRuby
+    * Zweiter Einschränkung: JBoss Deployment
+  * Matthias empfiehlt: Wenn man kein Java-Know-How hat, einfach MRI verwenden
+  * Wir fordern Matthias zu Usergroups zu kommen und ihr Wissen zu teilen
+  * Vor allem JRuby Wissen in die Welt zu tragen lohnt sich
+  * NoSQL-Matters als Konferenz Empfehlung (http://2014.nosql-matters.org/cgn/)
+  * Wenn man ernsthaft JRuby macht, kann man auch mal mit dem Core-Team Kontakt aufnehmen, die freuen sich über derartiges Feedback
+
+### Hiring-Pitch (01:44:06)
+
+  * Wir fragen explizit nach ob noch Entwickler gesucht werden
+  * Antwort: Ja
+  * Firma sitzt in St. Augustin, direkt neben der FH
+  * FrOSCon quasi einen Steinwurf entfernt ;-)
+  * Aufgaben sind sehr vielfältig (Mobile-Entwicklung, Emedded-Entwicklung, Hardware-Entwicklung, Web-Entwicklung, Infrastruktur, etc.)
+  * Die Branche nennt sich: Intra-Logistik
+  * Die Firma heißt IdentPro: http://www.identpro.de/de/, aber bitte nicht von der Webseite abschrecken lassen, die ist old-school-Industrie-kompatibel \o/]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Matthias ist Softwareentwickler und erzählt uns wie er jahrelang
+Java im Telko-Sektor gemacht hat. Vor einem Jahr hat er dann die Branche und
+die auch die Größe des Unternehmens radikal geändert und macht nun
+Produktentwicklung in der Logistikbranche. Neben Java wird dort viel im
+Embedded-Bereich entwickelt und trotz eines kleinen Teams sind die Aufgaben
+sehr vielfältig. Seit neuestem wird Software nun auch mit JRuby und AngularJS
+umgesetzt. Wir erfahren über die damit verbundenen Herausforderungen und wie
+damit umgegangen wurde.</p>
+
+<h3>Einleitung &amp; GST-Meta (00:00:00)</h3>
+
+<ul>
+<li>Matthias Richter (<a href="https://twitter.com/mr_samma">@mr_samma</a>) ist heute unser Gast</li>
+<li>GST019 mit Stefan Schiffer &quot;Weg von .NET &amp; Windows&quot;: <a href="http://geekstammtisch.de/#GST019">http://geekstammtisch.de/#GST019</a></li>
+<li>Der Geekstammtisch und die Nerdkunde beim Rudelpodcasten: <a href="http://das-sendezentrum.de/blog/podcasts-aus-unserer-30c3-assembly">http://das-sendezentrum.de/blog/podcasts-aus-unserer-30c3-assembly</a></li>
+<li>Das neue Büro des Home Office Cologne in der Lindenstraße 14: <a href="https://twitter.com/HomeOfficeCGN/status/425630254364119040">https://twitter.com/HomeOfficeCGN/status/425630254364119040</a></li>
+</ul>
+
+<h3>Unser Gast (00:02:45)</h3>
+
+<ul>
+<li>Matthias hat mit Dirk &amp; Basti studiert</li>
+<li>…und hat nach dem Studium als Java Entwickler bei einer Softwarefirma im &quot;Telekommunikationsumfeld&quot; gearbeitet</li>
+<li>Matthias hat dort nie Admins zu Gesicht bekommen :)</li>
+<li>Nach vier Jahren hat Matthias dann etwas neues gesucht und ist in der Logistikbranche gelandet</li>
+<li>Kleineres Unternehmen, eigene Produkte, jeder macht alles (Matthias ist also &quot;auch&quot; Admin)</li>
+<li>wollte weiter auf der JVM entwickeln</li>
+<li>Scala: <a href="http://www.scala-lang.org/">http://www.scala-lang.org/</a></li>
+<li>Clojure Koans: <a href="http://clojurekoans.com/">http://clojurekoans.com/</a></li>
+<li>Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages  (von Bruce A. Tate): <a href="http://pragprog.com/book/btlang/seven-languages-in-seven-weeks">http://pragprog.com/book/btlang/seven-languages-in-seven-weeks</a></li>
+</ul>
+
+<h3>Java-Entwicklung (00:12:30)</h3>
+
+<ul>
+<li>Dirk hat das letzte mal ernsthaft Java 2005 gemacht (mit Apache Struts, <a href="http://struts.apache.org/">http://struts.apache.org/</a>); &quot;Das war schlimm!&quot; – Dirk</li>
+<li>Basti hat es nie ernsthaft gemacht (abgesehen vom Studium)</li>
+<li>&quot;Java, das Ökosystem&quot;</li>
+<li>Die JVM ist ein Erfolgsmodell</li>
+<li>K virtual machine (KVM): <a href="http://en.wikipedia.org/wiki/K_virtual_machine">http://en.wikipedia.org/wiki/K_virtual_machine</a></li>
+<li>Java Platform, Micro Edition, J2ME: <a href="http://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition">http://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition</a></li>
+<li>Java EE Application Server: <a href="http://en.wikipedia.org/wiki/Comparison_of_application_servers">http://en.wikipedia.org/wiki/Comparison_of_application_servers</a></li>
+<li>Java ME / SE / EE: <a href="http://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html">http://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html</a></li>
+<li>Java Community Process: <a href="https://www.jcp.org/en/home/index">https://www.jcp.org/en/home/index</a></li>
+<li>Servlet API ist Teil der Java EE</li>
+<li>Spring Framework: <a href="http://spring.io/">http://spring.io/</a></li>
+<li>Zwischen Anhängern von Spring und Java EE hat sich ein flame war entwickelt:
+
+<ul>
+<li>Blog Beitrag eines bekannten JEE Evangelist inkl. Antworten von Spring Mitarbeitern in den Kommentaren: <a href="https://blogs.oracle.com/arungupta/entry/why_java_ee_6_is">https://blogs.oracle.com/arungupta/entry/why_java_ee_6_is</a></li>
+<li>Antwort eines VMWare Mitarbeiters: <a href="http://www.iamjambay.com/2012/03/arun-gupta-java-ee-6-and-spring.html">http://www.iamjambay.com/2012/03/arun-gupta-java-ee-6-and-spring.html</a></li>
+<li>tl;dr: hier eine Zusammenfassung auf deutsch: <a href="http://jaxenter.de/news/JavaEE-versus-Spring-Hitzige-Debatte-um-Arun-Guptas-Legacy-Vorwurf">http://jaxenter.de/news/JavaEE-versus-Spring-Hitzige-Debatte-um-Arun-Guptas-Legacy-Vorwurf</a></li>
+</ul></li>
+<li>Matthias würde immer Spring wählen, da es dynamischer ist und aktueller</li>
+<li>Spring legt wesentlich mehr Wert auf Testing</li>
+<li>Java 8 SE Release März 2014, EE dann wesentlich später, irgendwann noch später lassen sich Application Server zertifizieren </li>
+<li>Vielzahl an Java Frameworks für jeden Zweck</li>
+<li>Web Frameworks, die &quot;Großen&quot; <a href="http://zeroturnaround.com/rebellabs/the-curious-coders-java-web-frameworks-comparison-spring-mvc-grails-vaadin-gwt-wicket-play-struts-and-jsf/">http://zeroturnaround.com/rebellabs/the-curious-coders-java-web-frameworks-comparison-spring-mvc-grails-vaadin-gwt-wicket-play-struts-and-jsf/</a></li>
+<li>Liste von sonstigen Web Frameworks: <a href="http://java-source.net/open-source/web-frameworks">http://java-source.net/open-source/web-frameworks</a></li>
+<li>Liste von Persistenz Frameworks: <a href="http://java-source.net/open-source/persistence">http://java-source.net/open-source/persistence</a></li>
+<li>Frameworks zur asynchronen Verarbeitung: 
+
+<ul>
+<li><a href="http://spring.io/blog/2013/05/13/reactor-a-foundation-for-asynchronous-applications-on-the-jvm">http://spring.io/blog/2013/05/13/reactor-a-foundation-for-asynchronous-applications-on-the-jvm</a></li>
+<li><a href="http://akka.io/">http://akka.io/</a></li>
+<li><a href="http://vertx.io/">http://vertx.io/</a></li>
+</ul></li>
+<li>Web Service Frameworks, Xfire, Apache CXF</li>
+<li>DAO / ActiveRecord als Beispiel dafür, dass in Rails Dinge falsch angegangen werden
+
+<ul>
+<li>dies kann aber für einfache Anwendungsfälle in Ordnung sein, findet Matthias, Dirk sieht das aber anders</li>
+</ul></li>
+<li>DAOs sind lange Standard in Java Apps gewesen
+
+<ul>
+<li>mittlerweile werden häufig Repositories eingesetzt: <a href="http://thinkinginobjects.com/2012/08/26/dont-use-dao-use-repository/">http://thinkinginobjects.com/2012/08/26/dont-use-dao-use-repository/</a></li>
+</ul></li>
+<li>Repository Ansatz in Java EE 6 / 7</li>
+<li>Misko Hevery zu AR: <a href="http://misko.hevery.com/2009/05/05/the-problem-with-active-record/">http://misko.hevery.com/2009/05/05/the-problem-with-active-record/</a></li>
+<li>Spring Roo nutzt ActiveRecord Pattern in Java Apps: <a href="http://docs.spring.io/spring-roo/reference/html/architecture.html#architecture-dao">http://docs.spring.io/spring-roo/reference/html/architecture.html#architecture-dao</a></li>
+<li>AR in Rails tief verwurzelt, ermöglicht aber die Geschwindigkeit in der Rails Entwicklung</li>
+<li>Matthias findet opinionated Ansatz in Rails gut</li>
+<li>Matthias macht mittlerweile Projekte mit JRuby on Rails, AngularJS und Elasticsearch</li>
+<li>Elasticsearch basiert auf Lucene, in Java geschrieben</li>
+</ul>
+
+<h3>Deployment &amp; JVM (01:20:00)</h3>
+
+<ul>
+<li>JRuby ist ein guter Einstieg in Ruby-Entwicklung gewesen, da man &quot;nur&quot; ein WAR (<a href="https://en.wikipedia.org/wiki/WAR_(file_format)">https://en.wikipedia.org/wiki/WAR_(file_format)</a>) erstellen muss und es im bisherigen Application-Server deployed</li>
+<li>Java Wissen auf der Betriebsseite kann im Grunde 1:1 weiter verwendet werden</li>
+<li>Auch Deploymentstruktur über Jenkins konnte weiter verwendet werden</li>
+<li>Deployment via JMX (<a href="https://en.wikipedia.org/wiki/Java_Management_Extensions">https://en.wikipedia.org/wiki/Java_Management_Extensions</a>)</li>
+<li>Das WAR wird per Warbler erstellt (<a href="http://caldersphere.rubyforge.org/warbler/">http://caldersphere.rubyforge.org/warbler/</a>)</li>
+<li>Switch von Java auf JRuby ist schneller gemacht als die Umstellung von JBoss auf nginx+passenger (o.ä.)</li>
+<li>Maven ist auch im Projekt \o/</li>
+</ul>
+
+<h3>Entwicklungsumgebung (01:23:05)</h3>
+
+<ul>
+<li>Matthias hat jahrelang Eclipse verwendet, dann zu IntelliJ gegangen</li>
+<li>Mit Ruby dann zu RubyMine gegangen (bzw. IntelliJ mit Ruby-Plugin)</li>
+<li>Sublime Text auch mal ausprobiert, geweint</li>
+<li>Vim ausprobiert, noch mehr geweint</li>
+<li>AngularJS auch in RubyMine, Alternativ auch WebStorm vielleicht eine Möglichkeit</li>
+<li>Lokale Entwicklung ist schneller geworden, da kein Kompilieren und Deployment mehr</li>
+<li>Lokal wird die Anwendung mit Puma/JRuby entwickelt sowie Grunt für JavaScript</li>
+<li>Keine weiteren Java-Abhängigkeiten (außer dem Datenbanktreiber)</li>
+<li>Basti möchte wissen wie der Umstieg von IDE in die Welt des Terminals war</li>
+<li>Matthias ist aber leider ein schlechtes Beispiel ;-) Er hat Eclipse eigentlich immer &quot;nur&quot; als Editor verwendet</li>
+<li>Matthias würde sich gerne auch Vim mal ansehen, aber scheut derzeit die Lernkurve</li>
+<li>Frage: Warum Vim? Antwort: Kosten. Aber wir stellen in Frage, ob die Kosten wirklich ein Grund ist. Wahrscheinlich nicht :-)</li>
+<li>Insgesamt ist Matthias noch in der Findungsphase: RubyMine ist aber ein Favorit</li>
+<li>Matthias hat Spaß auf neue Tools umzustellen :-)</li>
+</ul>
+
+<h3>Next Steps (01:30:47)</h3>
+
+<ul>
+<li>Derzeit macht er AngularJS Entwicklung, Testing mit Karma, Jasmine, PhantomJS</li>
+<li>Es wird auch für Mobile-Plattformen mit AngularJS und Cordova (<a href="https://cordova.apache.org/">https://cordova.apache.org/</a>) entwickelt</li>
+<li>Die Software die derzeit entwickelt wird, ist sehr allgemein einsetzbar</li>
+<li>Im Grunde geht darum Firmen zu unterstützen ihren Kram zusammenzuhalten</li>
+<li>Zusätzlich gibt es Systeme die auf Gabelstapler montiert werden</li>
+<li>Der Branchenwechseln war eine gute Idee</li>
+</ul>
+
+<h3>Fazit (01:33:10)</h3>
+
+<ul>
+<li>Bewertung des Wechsels: Positiv, nicht nur wegen dem Spaß sich in neue Dinge einzuarbeiten</li>
+<li>Frontend-Entwicklung mit AngularJS fühlt sich tatsächlich mal an wie Entwicklung ;-)</li>
+<li>Gab es auch Probleme bei der Umstellung?
+
+<ul>
+<li>Einige Mitarbeiter wollen sich nicht mit so vielen Technologien befassen, das kann auch OK sein, aber man muss damit als Unternehmen/Team umgehen</li>
+<li>Ein Kollege ist auch gegangen, da er mehr .NET machen wollte</li>
+<li>Lernkurven müssen an die Geschäftsführung und die anderen Kollegen kommuniziert werden</li>
+<li>Viele Parallenen zu GST019 (<a href="http://geekstammtisch.de/#GST019">http://geekstammtisch.de/#GST019</a>)</li>
+<li>Die Umstellung ist unter anderem auch dadurch motiviert worden, weil der Chef die Folge gehört hat :-)</li>
+</ul></li>
+<li>Frage dann vom Chef: Was ist eigentlich dieses Ruby und Rails? Und wenn das so gut ist, warum machen das nicht alle?</li>
+<li>Entwicklungsgeschwindigkeit hat mit überzeugt</li>
+</ul>
+
+<h3>Ausklang (01:38:35)</h3>
+
+<ul>
+<li>Wir sind uns einig, dass die Folge Leute nicht davon abhalten wird weiter Java zu bashen. Dafür ist es auch einfach zu lustig.</li>
+<li>Kritiker werden sagen: &quot;Matthias hat ja dann doch von Java auf Ruby gewechselt&quot;</li>
+<li>Matthias hat sich eigentlich auf Java 8 gefreut</li>
+<li>Das Unternehmen wird nie ganz auf (J)Ruby umstellen, dafür gibt es zu viele Bereiche in denen man Software entwickelt. Gleichzeitig macht das den Reiz aus</li>
+<li>JRuby hat zwar kein Komitee aber dennoch genug Entwicklungsresourcen :-)</li>
+<li>Problem ist aber, dass die Community recht klein ist und man schwieriger Lösungen für seine Probleme findet:
+
+<ul>
+<li>Erste Einschränkung: JRuby</li>
+<li>Zweiter Einschränkung: JBoss Deployment</li>
+</ul></li>
+<li>Matthias empfiehlt: Wenn man kein Java-Know-How hat, einfach MRI verwenden</li>
+<li>Wir fordern Matthias zu Usergroups zu kommen und ihr Wissen zu teilen</li>
+<li>Vor allem JRuby Wissen in die Welt zu tragen lohnt sich</li>
+<li>NoSQL-Matters als Konferenz Empfehlung (<a href="http://2014.nosql-matters.org/cgn/">http://2014.nosql-matters.org/cgn/</a>)</li>
+<li>Wenn man ernsthaft JRuby macht, kann man auch mal mit dem Core-Team Kontakt aufnehmen, die freuen sich über derartiges Feedback</li>
+</ul>
+
+<h3>Hiring-Pitch (01:44:06)</h3>
+
+<ul>
+<li>Wir fragen explizit nach ob noch Entwickler gesucht werden</li>
+<li>Antwort: Ja</li>
+<li>Firma sitzt in St. Augustin, direkt neben der FH</li>
+<li>FrOSCon quasi einen Steinwurf entfernt ;-)</li>
+<li>Aufgaben sind sehr vielfältig (Mobile-Entwicklung, Emedded-Entwicklung, Hardware-Entwicklung, Web-Entwicklung, Infrastruktur, etc.)</li>
+<li>Die Branche nennt sich: Intra-Logistik</li>
+<li>Die Firma heißt IdentPro: <a href="http://www.identpro.de/de/">http://www.identpro.de/de/</a>, aber bitte nicht von der Webseite abschrecken lassen, die ist old-school-Industrie-kompatibel \o/</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST029" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Einleitung &amp; GST-Meta" />
+          
+            <psc:chapter start="00:02:45" title="Unser Gast" />
+          
+            <psc:chapter start="00:12:30" title="Java-Entwicklung" />
+          
+            <psc:chapter start="01:20:00" title="Deployment &amp; JVM" />
+          
+            <psc:chapter start="01:23:05" title="Entwicklungsumgebung" />
+          
+            <psc:chapter start="01:30:47" title="Next Steps" />
+          
+            <psc:chapter start="01:33:10" title="Fazit" />
+          
+            <psc:chapter start="01:38:35" title="Ausklang" />
+          
+            <psc:chapter start="01:44:06" title="Hiring-Pitch" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
