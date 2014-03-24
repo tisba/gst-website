@@ -8269,5 +8269,464 @@ damit umgegangen wurde.</p>
           
         </item>
         
+        <item>
+          <title>GST030 - Turnschuhadministration</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Wir sprachen mit Essy (@casheeew) über das spannende Dasein einer Administratorinnen</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst030.m4a" length="55567023" type="audio/x-m4a"/>
+          <guid isPermaLink="false">GST030</guid>
+          <pubDate>Mon, 24 Mar 2014 15:02:41 +0100</pubDate>
+          <itunes:duration>02:03:22</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Mit Essy (@casheeew) sprachen wir ausführlich über das Leben und
+Arbeiten einer Administratorin innerhalb eines großen Rechenzentrums. Es geht
+um Prozesse, Betrieb, Deployment und Komplexität im Umfeld von großen
+Hostingumgebungen. Wir gehen auf diverse Aspekte etwas näher ein und erhalten
+einen recht vollständigen Einblick in ihren Arbeitsalltag.
+
+### Unser Gast (00:00:00)
+
+  * Essy podcastet sonst bei der Nerdkunde: http://nerdkun.de
+  * Hat mal "Bindestrichinformatik" studiert und macht nun ihren berufsbegleitenden Master an der FH-Köln
+    * Master Studium WebScience an der FH Köln: http://webscience.fh-koeln.de/live/
+    * Basti und Dirk haben an der FH Köln auch ihren Master gemacht: http://www.medieninformatik.fh-koeln.de/website/general/startseite/startseite_527/de/de_startseite_articl_1.php
+    * Es gibt eine gewisse Deckungsgleichheit bei den Dozenten ^^
+    * Vorlesungen finden abends via Webcam statt
+    * Fokus (noch) auf Theorie, weniger Implementierung
+    * Alle Klausuren (~8) sind an einem Wochenende
+  * Weiterempfehlungsgrad von WebScience: Kommt drauf an was man möchte ;-)
+
+### Deployment über Netzwerkfreigabe (00:10:44)
+
+  * In GST029 (http://geekstammtisch.de/#GST029) haben wir über Java-Entwicklung und Betrieb gesprochen, dabei viel der Begriff JBoss
+  * Und Essy setzt sich beruflich mit dem Betrieb von Anwendungen auf dem JBoss auseinander
+  * Essy arbeitet bei einem großen Rechenzentrum in Köln
+  * Betrieben werden dort die unterschiedlichsten Anwendungen (vor allem auch große Anwendungen mit vielen Abhängigkeiten)
+  * Herausforderungen: Leben mit komplexeren Prozessen als bei einem Fancy-Web-Startup™
+  * Deployment für den JBoss läuft zum Beispiel so ab:
+    * Kunde legt Auszug aus seinem JBoss inkl. aller Konfigurationen auf einer Netzwerkfreigabe ab
+    * Essy sucht Änderungen zwischen altem und neuem Stand heraus
+    * Änderungen werden auf allen Systemen eingespielt
+  * Klingt umständlich und ist es auch, daher der Plan: Verwendung von Puppet: http://puppetlabs.com/
+  * Trotz der Strukturen und Prozesse ist es Essy und ihren Kollegen überlassen welche Tools intern verwendet werden, solange das Ergebnis am Ende passt
+  * Warum mit Puppet? Die nächste Version des Red Hat Enterprise Satellite Server (http://de.redhat.com/products/enterprise-linux/satellite/) setzt auf Puppet auf, daher war hier der Wunsch Puppet auch für weitere Bereiche einzusetzen
+
+### Server, Monitoring & Bereitschaft (00:26:00)
+
+  * Essy verantwortet den vollständigen Server
+  * Die Maschine wird lediglich von einem anderen Team bereitgestellt und übergeben
+  * Neben Maschinen für Kunden gibt es auch Maschinen für Forschung & Entwicklung
+  * Basis-Monitoring (Erreichbarkeit, Plattenfüllstand, etc) kommt mit dem Server mit
+  * Weiteres Monitoring lässt sich dann hinzufügen
+  * Monitoring läuft über Icinga (https://www.icinga.org/), einem Nagios (http://www.nagios.org/) Ableger
+  * Es gibt natürlich auch eine 24x7 Bereitschaft (in der nicht alle Server enthalten sind)
+  * Folge ist: Systeme werden so redundant und solide aufgesetzt, dass man Nachts nicht angerufen wird
+  * Das bedeutet auch, dass man Bereitschaft für Systeme machen muss, die man in der Regel nicht selbst betreut
+  * Dafür existiert dann entsprechende Dokumentation, die regelmäßig kontrolliert und auditiert wird
+
+### Softwarelandschaft (00:35:48)
+
+  * Unterschiedlichste Versionsstände von (beispielsweise) Java (von alt bis ganz neu)
+  * JBoss wird nicht in der Community-Variante verwendet, sondern in der kommerziell unterstützten
+  * Die Open-Source Variante wird auch nicht mehr JBoss heißen, sondern WildFly (https://github.com/wildfly/wildfly)
+  * Kostet nicht unerheblich, aber weniger im Vergleich zu anderen Produkten
+  * Support lohnt sich und wurde von Essy auch immer mal wieder in Anspruch genommen
+  * Als Dienstleister hat mal im Grunde keine andere Wahl als den kommerziellen Support sowohl von Red Hat Linux als auch JBoss zu nehmen
+  * Aus diesem Grund wird Ruby 1.8.7 auch immer noch von Red Hat gepflegt
+  * Was dann natürlich zu anderen Problemen führt ^^
+
+### Virtualisierung (00:40:40)
+
+  * Ein Großteil der Server laufen auf VMWare ESX Virtualisierung:
+    * Der ESX-Hypervisor läuft direkt auf dem Server ohne weiteres Betriebssytem (https://en.wikipedia.org/wiki/VMware_ESX)
+    * VMware (http://www.vmware.com/de)
+    * VMware vSphere (http://www.vmware.com/de/products/vsphere)
+    * VMware vCenter zum Verwalten/Clustern von mehreren VMware ESX Servern mit DRS (Dynamic Resource Scheduling) und HA (High Availability)(http://www.vmware.com/de/products/vcenter-server)
+  * Einige Dinge machen virtualisiert einfach keinen Sinn (manchmal auch aus Lizenzgründen…)
+  * Virtualisierung ist auf diesem Niveau schon sehr spaßig: Einfach mal laufende Server per Mausklick auf andere Hardware ziehen
+  * Für ein Rechenzentrum extrem sinnvoll
+
+### Prozesszertifizierung, Support und Monitoring der Kaffeemaschinen (00:44:35)
+
+  * Zertifizierung ist für einen Betreiber eines Rechenzentrums sehr wichtig
+  * Die ISO in diesem Fall ist die 27001 (http://de.wikipedia.org/wiki/ISO/IEC_27001)
+  * In diesem Zuge werden vor allem organisatorische Aspekte geprüft
+  * Neben der Dokumentation der Prozesse werden aber auch Gespräche mit Mitarbeitern geführt und exemplarisch Server betrachtet
+  * Das Audit findet jährlich statt
+  * Pentesting (http://de.wikipedia.org/wiki/Penetrationstest_(Informatik)) ist nicht Teil der Zertifizierung
+  * Glücklicherweise keine PCI Zertifizierung (http://de.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)
+  * Bei der Vielzahl von Kunden und Projekten lassen sich umfangreiche Prozesse am Ende aber nicht vermeiden
+  * Das Maximum an Projekten, die man so übernimmt varriert und hängt von der Komplexität der jeweiligen Projekte ab
+  * Essy macht glücklicherweise kaum bis keinen Support (:
+  * Der Rest des Teams macht aber durchaus auch mehr 2nd-Level Support
+  * 2nd-Level Support hat keinen unmittelbaren Kontakt mit dem Kunden
+  * Inhouse Servicecenter für den First Level Support, wenn das nicht reicht, landen die Tickets im Team im Second Level Support
+  * Ärzte schrauben ganz gerne mal selbst an PCs rum und mailen an alle über den Mailverteiler
+  * Basti hat mal in einer Firma die Druckerlandschaft mitkonfiguriert, globales Auslesen von über SNMP von Tonerfüllständen mit Abgleich auf den Lagerbestand und ggf. direkte automatisierte Bestellung beim Händler
+  * Drucker sind natürlich auch im Icinga ;-) Telefone allerdings nicht mehr
+  * Icinga hört immer dort auf, wo es spezialisierte Tools der jeweilgen Produkte gibt
+    * JBoss Operation Network (http://de.redhat.com/products/jbossenterprisemiddleware/operations-network/)
+  * Ungelöstes Problem: Monitoring und Alerting der Kaffeemaschinen
+
+### K-Fälle (01:02:35)
+
+  * K-Fälle wie Katastrophenfälle
+  * Redundanz bedeutet in diesem Fall auch, dass ein Rechenzentrum wegbrechen kann
+  * Für diesen Fall werden unterschiedliche Szenarien durchgespielt, um Lücken im System zu entdecken
+  * ESX-Cluster werden inkl. Storage zwischen den Rechenzentren gespiegelt und im Hot-Standby gehalten
+  * Dafür braucht man dann allerdings auch entsprechend Bandbreite
+  * Wir vermuten, dass Darkfibers in Köln zu bekommen kein Problem sein sollten
+  * Diese hohe Ausfallsicherheit lohnt sich erst für Projekte/System ab einem gewissen Grad, vorher macht es finanziell einfach keinen Sinn
+  * Finanziell bedeutet in diesem Fall weniger Hardware, sondern vor allem Personal, Organisation und Prozess
+  * Resultat ist in jedem Fall die Einbüßung von Flexibilität
+  * Hohe Anhängigkeiten zwischen verschiedenen Teams
+
+### Deployment, Koordination (01:10:30)
+
+  * Produktmanager koordinieren zwischen Kunde, externer Entwicklung und Infrastruktur
+  * Es gibt komplexe Abhängigkeiten zwischen verschiedenen System (sowohl in Hard- als auch Software)
+  * Zero-Downtime Deployments werden angestrebt, aber sind nicht immer möglich
+  * Vor Deployments: Wöchentliche Meetings von Teams zur Koordination
+
+### Tooling (01:16:00)
+
+  * Excel ist ein wichtiges Werkzeug *hust*, soll aber langsam abgelöst werden
+  * Confluence ist seit neustem im Einsatz (https://www.atlassian.com/de/software/confluence)
+  * OwnCloud (http://owncloud.org/) ist auch hinzugekommen
+
+### git, Gitlab, Stash, Github Enterprise (01:18:35)
+
+  * bisher SVN: https://subversion.apache.org/
+  * aber Essy hat Gitlab aufgesetzt: https://www.gitlab.com/
+  * Wir erzählen Essy von Stash: https://www.atlassian.com/software/stash
+    * Integration in Confluence & Co
+    * Betrieb macht man selber (wie bei GHE), für hosted nimmt man dann Bitbucket https://bitbucket.org/
+  * Ja, Github kann auch SVN sprechen!
+  * Github Enterprise: https://enterprise.github.com/
+
+### Administration und Automatisierung (01:25:00)
+
+  * Turnschuh-Administration: Monkey see, Monkey do!
+  * Automatisierung ist nicht for-free und ein anhaltender Prozess
+  * "Läuft's noch oder automatisierst du schon?" (@bascht)
+
+### Backups (01:28:20)
+
+  * Regelmäßig machen, lang genug aufbewahren UND
+  * Restore testen!
+  * Bei Essys Arbeitgeber gibt es dazu ein dediziertes Backup Team
+  * von VMs werden Snapshots erstellt und gesichert
+  * Restore ist ein Informationssicherheitsvorfall
+
+### Chaos Monkey (01:32:20)
+
+  * Wir fragen Essy, was mit dem Testen von Infrastruktur ist
+  * Chaos Monkey bei Netflix (http://techblog.netflix.com/2012/07/chaos-monkey-released-into-wild.html)
+    * Chaos Gorilla macht ganze AWS Availability Zones aus
+    * Mehr Monkeys… Latency Monkey, Conformity Monkey, Doctor Monkey, Janitor Monkey, Security Monkey, 10-18 Monkey: http://techblog.netflix.com/2011/07/netflix-simian-army.html
+  * Essy sagt, das sei im VMware Land (auch) möglich
+
+### IPv6 (01:38:05)
+
+  * Bei Essy noch kein IPv6
+  * IPv6 CRE: http://cre.fm/cre197-ipv6
+
+### Verschiedenes (01:38:30)
+
+  * es gibt einen regelmäßigen Austausch zwischen den Teams
+  * ActiveDirectory: https://en.wikipedia.org/wiki/Active_Directory
+
+### Telearbeit (01:45:00)
+
+  * Essy hat einen (Windows) Arbeitsrechner und darf mit ihrem Mac Book nicht ins Firmennetz
+  * WPA2: https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access
+  * Remote Zugang via Citrix, dann via Remote Desktop (RDP) zum Arbeitsrechner und von da aus zu den Servern
+  * Problem dabei: Keyboard Shortcuts funktionieren wegen dem hin- und hermapping nicht so richtig
+  * Essy kann Heimarbeit machen, sofern es keine Notwendigkeit gibt, Vorort zu arbeiten
+
+### Homesetup (01:53:55)
+
+  * Essy hat drei Displays (sowohl zuhause als auch auf der Arbeit) und sich kürzlich neue Hardware für einen Desktop Rechner gekauft
+  * Dirk und Basti haben schon EWIG keinen Rechner mehr komplett aus Einzelteilen gebaut
+
+### Abschluß (01:59:15)
+
+  * Es gibt wohl Führungen durch ein Vorzeigerechenzentrum!
+  * Girls'Day: http://www.girls-day.de/]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Mit Essy (<a href="https://twitter.com/casheeew">@casheeew</a>) sprachen wir ausführlich über das Leben und
+Arbeiten einer Administratorin innerhalb eines großen Rechenzentrums. Es geht
+um Prozesse, Betrieb, Deployment und Komplexität im Umfeld von großen
+Hostingumgebungen. Wir gehen auf diverse Aspekte etwas näher ein und erhalten
+einen recht vollständigen Einblick in ihren Arbeitsalltag.</p>
+
+<h3>Unser Gast (00:00:00)</h3>
+
+<ul>
+<li>Essy podcastet sonst bei der Nerdkunde: <a href="http://nerdkun.de">http://nerdkun.de</a></li>
+<li>Hat mal &quot;Bindestrichinformatik&quot; studiert und macht nun ihren berufsbegleitenden Master an der FH-Köln
+
+<ul>
+<li>Master Studium WebScience an der FH Köln: <a href="http://webscience.fh-koeln.de/live/">http://webscience.fh-koeln.de/live/</a></li>
+<li>Basti und Dirk haben an der FH Köln auch ihren Master gemacht: <a href="http://www.medieninformatik.fh-koeln.de/website/general/startseite/startseite_527/de/de_startseite_articl_1.php">http://www.medieninformatik.fh-koeln.de/website/general/startseite/startseite_527/de/de_startseite_articl_1.php</a></li>
+<li>Es gibt eine gewisse Deckungsgleichheit bei den Dozenten ^^</li>
+<li>Vorlesungen finden abends via Webcam statt</li>
+<li>Fokus (noch) auf Theorie, weniger Implementierung</li>
+<li>Alle Klausuren (~8) sind an einem Wochenende</li>
+</ul></li>
+<li>Weiterempfehlungsgrad von WebScience: Kommt drauf an was man möchte ;-)</li>
+</ul>
+
+<h3>Deployment über Netzwerkfreigabe (00:10:44)</h3>
+
+<ul>
+<li>In GST029 (<a href="http://geekstammtisch.de/#GST029">http://geekstammtisch.de/#GST029</a>) haben wir über Java-Entwicklung und Betrieb gesprochen, dabei viel der Begriff JBoss</li>
+<li>Und Essy setzt sich beruflich mit dem Betrieb von Anwendungen auf dem JBoss auseinander</li>
+<li>Essy arbeitet bei einem großen Rechenzentrum in Köln</li>
+<li>Betrieben werden dort die unterschiedlichsten Anwendungen (vor allem auch große Anwendungen mit vielen Abhängigkeiten)</li>
+<li>Herausforderungen: Leben mit komplexeren Prozessen als bei einem Fancy-Web-Startup™</li>
+<li>Deployment für den JBoss läuft zum Beispiel so ab:
+
+<ul>
+<li>Kunde legt Auszug aus seinem JBoss inkl. aller Konfigurationen auf einer Netzwerkfreigabe ab</li>
+<li>Essy sucht Änderungen zwischen altem und neuem Stand heraus</li>
+<li>Änderungen werden auf allen Systemen eingespielt</li>
+</ul></li>
+<li>Klingt umständlich und ist es auch, daher der Plan: Verwendung von Puppet: <a href="http://puppetlabs.com/">http://puppetlabs.com/</a></li>
+<li>Trotz der Strukturen und Prozesse ist es Essy und ihren Kollegen überlassen welche Tools intern verwendet werden, solange das Ergebnis am Ende passt</li>
+<li>Warum mit Puppet? Die nächste Version des Red Hat Enterprise Satellite Server (<a href="http://de.redhat.com/products/enterprise-linux/satellite/">http://de.redhat.com/products/enterprise-linux/satellite/</a>) setzt auf Puppet auf, daher war hier der Wunsch Puppet auch für weitere Bereiche einzusetzen</li>
+</ul>
+
+<h3>Server, Monitoring &amp; Bereitschaft (00:26:00)</h3>
+
+<ul>
+<li>Essy verantwortet den vollständigen Server</li>
+<li>Die Maschine wird lediglich von einem anderen Team bereitgestellt und übergeben</li>
+<li>Neben Maschinen für Kunden gibt es auch Maschinen für Forschung &amp; Entwicklung</li>
+<li>Basis-Monitoring (Erreichbarkeit, Plattenfüllstand, etc) kommt mit dem Server mit</li>
+<li>Weiteres Monitoring lässt sich dann hinzufügen</li>
+<li>Monitoring läuft über Icinga (<a href="https://www.icinga.org/">https://www.icinga.org/</a>), einem Nagios (<a href="http://www.nagios.org/">http://www.nagios.org/</a>) Ableger</li>
+<li>Es gibt natürlich auch eine 24x7 Bereitschaft (in der nicht alle Server enthalten sind)</li>
+<li>Folge ist: Systeme werden so redundant und solide aufgesetzt, dass man Nachts nicht angerufen wird</li>
+<li>Das bedeutet auch, dass man Bereitschaft für Systeme machen muss, die man in der Regel nicht selbst betreut</li>
+<li>Dafür existiert dann entsprechende Dokumentation, die regelmäßig kontrolliert und auditiert wird</li>
+</ul>
+
+<h3>Softwarelandschaft (00:35:48)</h3>
+
+<ul>
+<li>Unterschiedlichste Versionsstände von (beispielsweise) Java (von alt bis ganz neu)</li>
+<li>JBoss wird nicht in der Community-Variante verwendet, sondern in der kommerziell unterstützten</li>
+<li>Die Open-Source Variante wird auch nicht mehr JBoss heißen, sondern WildFly (<a href="https://github.com/wildfly/wildfly">https://github.com/wildfly/wildfly</a>)</li>
+<li>Kostet nicht unerheblich, aber weniger im Vergleich zu anderen Produkten</li>
+<li>Support lohnt sich und wurde von Essy auch immer mal wieder in Anspruch genommen</li>
+<li>Als Dienstleister hat mal im Grunde keine andere Wahl als den kommerziellen Support sowohl von Red Hat Linux als auch JBoss zu nehmen</li>
+<li>Aus diesem Grund wird Ruby 1.8.7 auch immer noch von Red Hat gepflegt</li>
+<li>Was dann natürlich zu anderen Problemen führt ^^</li>
+</ul>
+
+<h3>Virtualisierung (00:40:40)</h3>
+
+<ul>
+<li>Ein Großteil der Server laufen auf VMWare ESX Virtualisierung:
+
+<ul>
+<li>Der ESX-Hypervisor läuft direkt auf dem Server ohne weiteres Betriebssytem (<a href="https://en.wikipedia.org/wiki/VMware_ESX">https://en.wikipedia.org/wiki/VMware_ESX</a>)</li>
+<li>VMware (<a href="http://www.vmware.com/de">http://www.vmware.com/de</a>)</li>
+<li>VMware vSphere (<a href="http://www.vmware.com/de/products/vsphere">http://www.vmware.com/de/products/vsphere</a>)</li>
+<li>VMware vCenter zum Verwalten/Clustern von mehreren VMware ESX Servern mit DRS (Dynamic Resource Scheduling) und HA (High Availability)(<a href="http://www.vmware.com/de/products/vcenter-server">http://www.vmware.com/de/products/vcenter-server</a>)</li>
+</ul></li>
+<li>Einige Dinge machen virtualisiert einfach keinen Sinn (manchmal auch aus Lizenzgründen…)</li>
+<li>Virtualisierung ist auf diesem Niveau schon sehr spaßig: Einfach mal laufende Server per Mausklick auf andere Hardware ziehen</li>
+<li>Für ein Rechenzentrum extrem sinnvoll</li>
+</ul>
+
+<h3>Prozesszertifizierung, Support und Monitoring der Kaffeemaschinen (00:44:35)</h3>
+
+<ul>
+<li>Zertifizierung ist für einen Betreiber eines Rechenzentrums sehr wichtig</li>
+<li>Die ISO in diesem Fall ist die 27001 (<a href="http://de.wikipedia.org/wiki/ISO/IEC_27001">http://de.wikipedia.org/wiki/ISO/IEC_27001</a>)</li>
+<li>In diesem Zuge werden vor allem organisatorische Aspekte geprüft</li>
+<li>Neben der Dokumentation der Prozesse werden aber auch Gespräche mit Mitarbeitern geführt und exemplarisch Server betrachtet</li>
+<li>Das Audit findet jährlich statt</li>
+<li>Pentesting (<a href="http://de.wikipedia.org/wiki/Penetrationstest_(Informatik)">http://de.wikipedia.org/wiki/Penetrationstest_(Informatik)</a>) ist nicht Teil der Zertifizierung</li>
+<li>Glücklicherweise keine PCI Zertifizierung (<a href="http://de.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard">http://de.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard</a>)</li>
+<li>Bei der Vielzahl von Kunden und Projekten lassen sich umfangreiche Prozesse am Ende aber nicht vermeiden</li>
+<li>Das Maximum an Projekten, die man so übernimmt varriert und hängt von der Komplexität der jeweiligen Projekte ab</li>
+<li>Essy macht glücklicherweise kaum bis keinen Support (:</li>
+<li>Der Rest des Teams macht aber durchaus auch mehr 2nd-Level Support</li>
+<li>2nd-Level Support hat keinen unmittelbaren Kontakt mit dem Kunden</li>
+<li>Inhouse Servicecenter für den First Level Support, wenn das nicht reicht, landen die Tickets im Team im Second Level Support</li>
+<li>Ärzte schrauben ganz gerne mal selbst an PCs rum und mailen an alle über den Mailverteiler</li>
+<li>Basti hat mal in einer Firma die Druckerlandschaft mitkonfiguriert, globales Auslesen von über SNMP von Tonerfüllständen mit Abgleich auf den Lagerbestand und ggf. direkte automatisierte Bestellung beim Händler</li>
+<li>Drucker sind natürlich auch im Icinga ;-) Telefone allerdings nicht mehr</li>
+<li>Icinga hört immer dort auf, wo es spezialisierte Tools der jeweilgen Produkte gibt
+
+<ul>
+<li>JBoss Operation Network (<a href="http://de.redhat.com/products/jbossenterprisemiddleware/operations-network/">http://de.redhat.com/products/jbossenterprisemiddleware/operations-network/</a>)</li>
+</ul></li>
+<li>Ungelöstes Problem: Monitoring und Alerting der Kaffeemaschinen</li>
+</ul>
+
+<h3>K-Fälle (01:02:35)</h3>
+
+<ul>
+<li>K-Fälle wie Katastrophenfälle</li>
+<li>Redundanz bedeutet in diesem Fall auch, dass ein Rechenzentrum wegbrechen kann</li>
+<li>Für diesen Fall werden unterschiedliche Szenarien durchgespielt, um Lücken im System zu entdecken</li>
+<li>ESX-Cluster werden inkl. Storage zwischen den Rechenzentren gespiegelt und im Hot-Standby gehalten</li>
+<li>Dafür braucht man dann allerdings auch entsprechend Bandbreite</li>
+<li>Wir vermuten, dass Darkfibers in Köln zu bekommen kein Problem sein sollten</li>
+<li>Diese hohe Ausfallsicherheit lohnt sich erst für Projekte/System ab einem gewissen Grad, vorher macht es finanziell einfach keinen Sinn</li>
+<li>Finanziell bedeutet in diesem Fall weniger Hardware, sondern vor allem Personal, Organisation und Prozess</li>
+<li>Resultat ist in jedem Fall die Einbüßung von Flexibilität</li>
+<li>Hohe Anhängigkeiten zwischen verschiedenen Teams</li>
+</ul>
+
+<h3>Deployment, Koordination (01:10:30)</h3>
+
+<ul>
+<li>Produktmanager koordinieren zwischen Kunde, externer Entwicklung und Infrastruktur</li>
+<li>Es gibt komplexe Abhängigkeiten zwischen verschiedenen System (sowohl in Hard- als auch Software)</li>
+<li>Zero-Downtime Deployments werden angestrebt, aber sind nicht immer möglich</li>
+<li>Vor Deployments: Wöchentliche Meetings von Teams zur Koordination</li>
+</ul>
+
+<h3>Tooling (01:16:00)</h3>
+
+<ul>
+<li>Excel ist ein wichtiges Werkzeug <em>hust</em>, soll aber langsam abgelöst werden</li>
+<li>Confluence ist seit neustem im Einsatz (<a href="https://www.atlassian.com/de/software/confluence">https://www.atlassian.com/de/software/confluence</a>)</li>
+<li>OwnCloud (<a href="http://owncloud.org/">http://owncloud.org/</a>) ist auch hinzugekommen</li>
+</ul>
+
+<h3>git, Gitlab, Stash, Github Enterprise (01:18:35)</h3>
+
+<ul>
+<li>bisher SVN: <a href="https://subversion.apache.org/">https://subversion.apache.org/</a></li>
+<li>aber Essy hat Gitlab aufgesetzt: <a href="https://www.gitlab.com/">https://www.gitlab.com/</a></li>
+<li>Wir erzählen Essy von Stash: <a href="https://www.atlassian.com/software/stash">https://www.atlassian.com/software/stash</a>
+
+<ul>
+<li>Integration in Confluence &amp; Co</li>
+<li>Betrieb macht man selber (wie bei GHE), für hosted nimmt man dann Bitbucket <a href="https://bitbucket.org/">https://bitbucket.org/</a></li>
+</ul></li>
+<li>Ja, Github kann auch SVN sprechen!</li>
+<li>Github Enterprise: <a href="https://enterprise.github.com/">https://enterprise.github.com/</a></li>
+</ul>
+
+<h3>Administration und Automatisierung (01:25:00)</h3>
+
+<ul>
+<li>Turnschuh-Administration: Monkey see, Monkey do!</li>
+<li>Automatisierung ist nicht for-free und ein anhaltender Prozess</li>
+<li>&quot;Läuft&#39;s noch oder automatisierst du schon?&quot; (<a href="https://twitter.com/bascht">@bascht</a>)</li>
+</ul>
+
+<h3>Backups (01:28:20)</h3>
+
+<ul>
+<li>Regelmäßig machen, lang genug aufbewahren UND</li>
+<li>Restore testen!</li>
+<li>Bei Essys Arbeitgeber gibt es dazu ein dediziertes Backup Team</li>
+<li>von VMs werden Snapshots erstellt und gesichert</li>
+<li>Restore ist ein Informationssicherheitsvorfall</li>
+</ul>
+
+<h3>Chaos Monkey (01:32:20)</h3>
+
+<ul>
+<li>Wir fragen Essy, was mit dem Testen von Infrastruktur ist</li>
+<li>Chaos Monkey bei Netflix (<a href="http://techblog.netflix.com/2012/07/chaos-monkey-released-into-wild.html">http://techblog.netflix.com/2012/07/chaos-monkey-released-into-wild.html</a>)
+
+<ul>
+<li>Chaos Gorilla macht ganze AWS Availability Zones aus</li>
+<li>Mehr Monkeys… Latency Monkey, Conformity Monkey, Doctor Monkey, Janitor Monkey, Security Monkey, 10-18 Monkey: <a href="http://techblog.netflix.com/2011/07/netflix-simian-army.html">http://techblog.netflix.com/2011/07/netflix-simian-army.html</a></li>
+</ul></li>
+<li>Essy sagt, das sei im VMware Land (auch) möglich</li>
+</ul>
+
+<h3>IPv6 (01:38:05)</h3>
+
+<ul>
+<li>Bei Essy noch kein IPv6</li>
+<li>IPv6 CRE: <a href="http://cre.fm/cre197-ipv6">http://cre.fm/cre197-ipv6</a></li>
+</ul>
+
+<h3>Verschiedenes (01:38:30)</h3>
+
+<ul>
+<li>es gibt einen regelmäßigen Austausch zwischen den Teams</li>
+<li>ActiveDirectory: <a href="https://en.wikipedia.org/wiki/Active_Directory">https://en.wikipedia.org/wiki/Active_Directory</a></li>
+</ul>
+
+<h3>Telearbeit (01:45:00)</h3>
+
+<ul>
+<li>Essy hat einen (Windows) Arbeitsrechner und darf mit ihrem Mac Book nicht ins Firmennetz</li>
+<li>WPA2: <a href="https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access">https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access</a></li>
+<li>Remote Zugang via Citrix, dann via Remote Desktop (RDP) zum Arbeitsrechner und von da aus zu den Servern</li>
+<li>Problem dabei: Keyboard Shortcuts funktionieren wegen dem hin- und hermapping nicht so richtig</li>
+<li>Essy kann Heimarbeit machen, sofern es keine Notwendigkeit gibt, Vorort zu arbeiten</li>
+</ul>
+
+<h3>Homesetup (01:53:55)</h3>
+
+<ul>
+<li>Essy hat drei Displays (sowohl zuhause als auch auf der Arbeit) und sich kürzlich neue Hardware für einen Desktop Rechner gekauft</li>
+<li>Dirk und Basti haben schon EWIG keinen Rechner mehr komplett aus Einzelteilen gebaut</li>
+</ul>
+
+<h3>Abschluß (01:59:15)</h3>
+
+<ul>
+<li>Es gibt wohl Führungen durch ein Vorzeigerechenzentrum!</li>
+<li>Girls&#39;Day: <a href="http://www.girls-day.de/">http://www.girls-day.de/</a></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST030" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Unser Gast" />
+          
+            <psc:chapter start="00:10:44" title="Deployment über Netzwerkfreigabe" />
+          
+            <psc:chapter start="00:26:00" title="Server, Monitoring &amp; Bereitschaft" />
+          
+            <psc:chapter start="00:35:48" title="Softwarelandschaft" />
+          
+            <psc:chapter start="00:40:40" title="Virtualisierung" />
+          
+            <psc:chapter start="00:44:35" title="Prozesszertifizierung, Support und Monitoring der Kaffeemaschinen" />
+          
+            <psc:chapter start="01:02:35" title="K-Fälle" />
+          
+            <psc:chapter start="01:10:30" title="Deployment, Koordination" />
+          
+            <psc:chapter start="01:16:00" title="Tooling" />
+          
+            <psc:chapter start="01:18:35" title="git, Gitlab, Stash, Github Enterprise" />
+          
+            <psc:chapter start="01:25:00" title="Administration und Automatisierung" />
+          
+            <psc:chapter start="01:28:20" title="Backups" />
+          
+            <psc:chapter start="01:32:20" title="Chaos Monkey" />
+          
+            <psc:chapter start="01:38:05" title="IPv6" />
+          
+            <psc:chapter start="01:38:30" title="Verschiedenes" />
+          
+            <psc:chapter start="01:45:00" title="Telearbeit" />
+          
+            <psc:chapter start="01:53:55" title="Homesetup" />
+          
+            <psc:chapter start="01:59:15" title="Abschluß" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
