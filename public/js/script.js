@@ -104,7 +104,7 @@ function showimpressum() {
   var impressum = "";
   impressum += "Impressum gem. § 5 TMG und § 55 Rundfunkstaatsvertrag\n\n";
   impressum += "http://geekstammtisch.de ist ein publizistisches Angebot von Dirk Breuer und Sebastian Cohnen.\n\n";
-  impressum += "Postanschrift\n\nHochstadenstr. 1-3\n50674 Köln\n\nE-Mail\n\nalle@geekstammtisch.de\n\n";
+  impressum += "Postanschrift\n\nLindenstr. 14\n50674 Köln\n\nE-Mail\n\nalle@geekstammtisch.de\n\n";
   impressum += "Verantwortlicher nach § 55, Abs. 2, Rundfunkstaatsvertrag: s.o.";
 
   alert(impressum);
