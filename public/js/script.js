@@ -7,6 +7,8 @@ $(document).ready(function() {
     var json = $.xmlToJSON(xml, null, 1);
 
     episodes = json.channel[0].item;
+    episodes.reverse();
+
     var latest;
     $.each(episodes, function(index, value) {
       $("#episode-list").append('<li><a id="episode-'+index+'" href="javascript:selectEpisode('+index+')">'+value.title[0].Text+"</a></li>");
