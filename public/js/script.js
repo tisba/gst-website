@@ -7,14 +7,14 @@ $(document).ready(function() {
     var json = $.xmlToJSON(xml, null, 1);
 
     episodes = json.channel[0].item;
-    var latest;
+    episodes.reverse();
+
     $.each(episodes, function(index, value) {
       $("#episode-list").append('<li><a id="episode-'+index+'" href="javascript:selectEpisode('+index+')">'+value.title[0].Text+"</a></li>");
-      latest = index;
     });
 
     var urlhash = self.location.hash;
-    var preselection = latest;
+    var preselection = 0; // latest
 
     // Check for GST prefix, slice and extract episode number
     if (urlhash.match(/#GST\d+$/)){
