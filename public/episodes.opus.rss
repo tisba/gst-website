@@ -8728,5 +8728,325 @@ einen recht vollständigen Einblick in ihren Arbeitsalltag.</p>
           
         </item>
         
+        <item>
+          <title>GST031 - CORBA in cool</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Wir haben mit Stefan Tilkov über Softwarearchitekturen, REST und das Web gesprochen.</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst031.opus" length="44143648" type="audio/opus"/>
+          <guid isPermaLink="false">GST031</guid>
+          <pubDate>Mon, 14 Apr 2014 13:39:53 +0200</pubDate>
+          <itunes:duration>01:20:22</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Mit Stefan Tilkov (@stilkov) sprachen wir über
+Softwarearchitekturen, vor allem REST und Web Services. Wir haben keine 800
+Personenjahre gebraucht, um festzustellen, dass Thrift CORBA in cool ist und
+die Idee "Rechte Maustaste, 'Generate and Deploy Web Service'" nicht wirklich
+funktioniert. Neben REST im Allgemeinen sprechen wir über Hypermedia und wie
+alles zusammengreifen kann. Stefan schlägt eine interessante Brücke von der
+Idee REST als Backend-Thema hin zu REST für das Web, wodurch wir zu ROCA, einem
+Architekturstil, kommen.
+
+
+### Unser Gast (00:00:00)
+
+  * Stefan Tilkov, @stilkov, http://www.innoq.com/blog/st/about/
+  * REST und HTTP: Einsatz der Architektur des Web für Integrationsszenarien, Stefan Tilkov: http://rest-http.info
+  * Macht zum Teil Management und sonst wozu er so Lust hat: Workshops, Konferenzen, Schulungen, …
+  * Hat C, C++, Java und und und gemacht, sein aktueller Favorit ist allerdings: Closure
+
+
+### Architektur im Wandel (00:02:45)
+
+  * "architect" is Latin for "cannot code anymore.", Ted Neward: http://msdn.microsoft.com/en-us/library/aa905335.aspx
+  * "Architektur ist die Menge der wichtigen Entscheidungen", Stefan Tilkov :)
+  * Anwendungsarchitektur Anfang der 2000er
+  * Irgendwann wurde der Begriff "Architektur" negativ belegt
+
+
+### Projekte bei innoQ (00:05:10)
+
+  * 60 Leute bei innoQ
+  * 20% strategische Beratung
+  * 80% Entwicklungsprojekt, teilweise nur mitarbeiten, teilweise komplett selber verantwortet
+  * bei innoQ werden immer wieder die Rollen/Aufgaben und Projekte gewechselt
+
+
+### Architektur: negativ? (00:08:40)
+
+  * Agile Is Dead (Long Live Agility), Dave Thomas: http://pragdave.me/blog/2014/03/04/time-to-kill-agile/
+  * Rollen (z.B. "der Architekt") ergeben sich oft automatisch, ohne dass es vorgegeben ist
+  * Architektur negativ? "Ist wie ich darf nicht mehr nachdenken!"
+
+
+### REST (00:12:05)
+
+  * REST: https://en.wikipedia.org/wiki/Representational_state_transfer
+  * Representational State Transfer (REST), Roy Fielding, Dissertation (2000), Kapitel 5: https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+  * Roy Fieldings Blog: http://roy.gbiv.com/untangled/
+  * REST war eigentlich vor der SOAP/WS-* Welle da
+  * Ressourcen haben eine URI und sind damit identifizierbar
+  * Standard-Interface um mit Ressourcen zu interagieren: GET, PUT, POST, DELETE
+  * Hypermedia: https://en.wikipedia.org/wiki/Hypermedia
+  * REST Maturity Models (RMM): http://martinfowler.com/articles/richardsonMaturityModel.html
+
+
+### Der WS-Weg (00:16:55)
+
+  * Leute müssen für Webservices oft missioniert werden; bei REST ist das deutlich einfacher
+  * Bei Web Serivces entwirft man permanent neue Protokolle (mit SOAP)
+  * WSDL: http://www.w3.org/TR/wsdl
+  * Enterprise Service Bus: https://en.wikipedia.org/wiki/Enterprise_service_bus
+
+
+### Microservices vs SOA? (00:22:05)
+
+  * James Lewis, Martin Fowler über Microservices: http://martinfowler.com/articles/microservices.html
+  * Jim Webber "Guerilla SOA": http://www.infoq.com/presentations/webber-guerilla-soa
+
+
+### Hypermedia Explained (00:23:53)
+
+  * Hypermedia: https://en.wikipedia.org/wiki/Hypermedia
+  * Heute sind REST APIs relativ gut (kein GET mehr, um eine Ressource zu löschen)
+  * URI Templating, http://whatisrest.com/rest_service_contracts/uri_templates_and_resource_queries
+  * REST APIs haben eine Startseite, von wo aus der Clients den Links folgen kann
+  * Der API Client braucht nicht so festverdrahtet sein
+  * Links für Ressourcen signalisieren dem Client, wie er mit einer Ressource interagieren kann
+  * Architekturstile (https://de.wikipedia.org/wiki/Architekturstil) haben immer Tradeoffs!
+  * Apache Thrift: https://en.wikipedia.org/wiki/Apache_Thrift
+  * CORBA: https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture
+  * URI Templates sind ein Rezept, um z.B. eine große Menge von Links abzubilden
+    * HTML ist ein schönes Beispiel: Mit einem Formular und GET
+  * HTML ist ein Hypermedia Format!
+  * Ein Browser ist quasi ein Hypermedia Client
+  * REST sollte Standardformate, selbstbeschreibender Nachrichten verwenden
+  * IANA Media Types: https://www.iana.org/assignments/media-types/media-types.xhtml
+  * Populäre Formate: JSON, XML
+  * JSON Schema: http://json-schema.org/
+  * JSON & Hypermedia
+    * Collection+JSON: http://amundsen.com/media-types/collection/
+    * Hypertext Application Language: http://stateless.co/hal_specification.html
+    * Siren: https://github.com/kevinswiber/siren
+  * Jon Moore, "Building Hypermedia APIs with HTML": http://www.infoq.com/presentations/web-api-html
+  * AtomPub, The Atom Publishing Protocol: http://bitworking.org/projects/atom/rfc5023.html
+
+
+### REST für das Web (00:45:00)
+
+  * REST ist die Architektur des Webs und nicht nur von Web Services
+  * ROCA: Resource-oriented Client Architecture: http://roca-style.org
+  * Single Page Application Frameworks: http://emberjs.com, http://angularjs.org, http://backbonejs.org, ...
+  * Yehuda Katz: http://yehudakatz.com/
+  * JSON API: http://jsonapi.org/
+  * ROCA: Server-seitiges HTML, App Logik nur im Server, Seite funktioniert ohne JavaScript, JavaScript erweitert nur, Progressive Enhancement (https://en.wikipedia.org/wiki/Progressive_enhancement), ...
+  * History API: http://diveintohtml5.info/history.html
+  * SEO & Single Page Apps: http://backbonetutorials.com/seo-for-single-page-apps/
+  * iTunes im Browser? o_O z.B. mit https://vaadin.com/home
+  * Monolithen aufbrechen; die einzelnen Teile sollten auch ein eigenes UI haben
+  * Breaking the monolith: Towards a system-of-systems architecture: http://vimeo.com/74354372
+  * jQuery UI: https://jqueryui.com/
+  * ember.js und AngularJS bieten Konventionen und vermeiden Diskussionen (meint Basti)
+  * Web Framework Ansatz: "Wir nehmen entweder JSF oder Grails oder JRuby oder Angular oder jQuery"
+  * Architektur sollte unabhängig sein von der Implementierung
+  * Bower: http://bower.io/
+  * "build for replacement, not for reuse"
+  * The Twelve-Factor App: http://12factor.net/
+
+
+### Web Services, REST (01:11:30)
+
+  * innoQ macht auch Projekte im klassischen Web Service Kontext
+  * Web Service Metadaten mit RESTful HTTP managen
+  * UDDI: https://en.wikipedia.org/wiki/Universal_Description_Discovery_and_Integration
+  * WSDL: https://en.wikipedia.org/wiki/Web_Services_Description_Language
+  * WS-MetadataExchange: https://en.wikipedia.org/wiki/WS-MetadataExchange
+
+
+### Ausblick (01:17:20)
+
+  * Alte Ideen tauchen in neuen Konzepten wieder auf; verschiedene Gruppe lernen von einander
+  * JAXconf: http://jaxconf.com/
+  * innoQ Timeline: http://www.innoq.com/de/timeline/
+  * innoQ Podcast: http://www.innoq.com/de/timeline/?type=podcast_episodes]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Mit Stefan Tilkov (<a href="https://twitter.com/stilkov">@stilkov</a>) sprachen wir über
+Softwarearchitekturen, vor allem REST und Web Services. Wir haben keine 800
+Personenjahre gebraucht, um festzustellen, dass Thrift CORBA in cool ist und
+die Idee &quot;Rechte Maustaste, &#39;Generate and Deploy Web Service&#39;&quot; nicht wirklich
+funktioniert. Neben REST im Allgemeinen sprechen wir über Hypermedia und wie
+alles zusammengreifen kann. Stefan schlägt eine interessante Brücke von der
+Idee REST als Backend-Thema hin zu REST für das Web, wodurch wir zu ROCA, einem
+Architekturstil, kommen.</p>
+
+<h3>Unser Gast (00:00:00)</h3>
+
+<ul>
+<li>Stefan Tilkov, <a href="https://twitter.com/stilkov">@stilkov</a>, <a href="http://www.innoq.com/blog/st/about/">http://www.innoq.com/blog/st/about/</a></li>
+<li>REST und HTTP: Einsatz der Architektur des Web für Integrationsszenarien, Stefan Tilkov: <a href="http://rest-http.info">http://rest-http.info</a></li>
+<li>Macht zum Teil Management und sonst wozu er so Lust hat: Workshops, Konferenzen, Schulungen, …</li>
+<li>Hat C, C++, Java und und und gemacht, sein aktueller Favorit ist allerdings: Closure</li>
+</ul>
+
+<h3>Architektur im Wandel (00:02:45)</h3>
+
+<ul>
+<li>&quot;architect&quot; is Latin for &quot;cannot code anymore.&quot;, Ted Neward: <a href="http://msdn.microsoft.com/en-us/library/aa905335.aspx">http://msdn.microsoft.com/en-us/library/aa905335.aspx</a></li>
+<li>&quot;Architektur ist die Menge der wichtigen Entscheidungen&quot;, Stefan Tilkov :)</li>
+<li>Anwendungsarchitektur Anfang der 2000er</li>
+<li>Irgendwann wurde der Begriff &quot;Architektur&quot; negativ belegt</li>
+</ul>
+
+<h3>Projekte bei innoQ (00:05:10)</h3>
+
+<ul>
+<li>60 Leute bei innoQ</li>
+<li>20% strategische Beratung</li>
+<li>80% Entwicklungsprojekt, teilweise nur mitarbeiten, teilweise komplett selber verantwortet</li>
+<li>bei innoQ werden immer wieder die Rollen/Aufgaben und Projekte gewechselt</li>
+</ul>
+
+<h3>Architektur: negativ? (00:08:40)</h3>
+
+<ul>
+<li>Agile Is Dead (Long Live Agility), Dave Thomas: <a href="http://pragdave.me/blog/2014/03/04/time-to-kill-agile/">http://pragdave.me/blog/2014/03/04/time-to-kill-agile/</a></li>
+<li>Rollen (z.B. &quot;der Architekt&quot;) ergeben sich oft automatisch, ohne dass es vorgegeben ist</li>
+<li>Architektur negativ? &quot;Ist wie ich darf nicht mehr nachdenken!&quot;</li>
+</ul>
+
+<h3>REST (00:12:05)</h3>
+
+<ul>
+<li>REST: <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">https://en.wikipedia.org/wiki/Representational_state_transfer</a></li>
+<li>Representational State Transfer (REST), Roy Fielding, Dissertation (2000), Kapitel 5: <a href="https://www.ics.uci.edu/%7Efielding/pubs/dissertation/rest_arch_style.htm">https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm</a></li>
+<li>Roy Fieldings Blog: <a href="http://roy.gbiv.com/untangled/">http://roy.gbiv.com/untangled/</a></li>
+<li>REST war eigentlich vor der SOAP/WS-* Welle da</li>
+<li>Ressourcen haben eine URI und sind damit identifizierbar</li>
+<li>Standard-Interface um mit Ressourcen zu interagieren: GET, PUT, POST, DELETE</li>
+<li>Hypermedia: <a href="https://en.wikipedia.org/wiki/Hypermedia">https://en.wikipedia.org/wiki/Hypermedia</a></li>
+<li>REST Maturity Models (RMM): <a href="http://martinfowler.com/articles/richardsonMaturityModel.html">http://martinfowler.com/articles/richardsonMaturityModel.html</a></li>
+</ul>
+
+<h3>Der WS-Weg (00:16:55)</h3>
+
+<ul>
+<li>Leute müssen für Webservices oft missioniert werden; bei REST ist das deutlich einfacher</li>
+<li>Bei Web Serivces entwirft man permanent neue Protokolle (mit SOAP)</li>
+<li>WSDL: <a href="http://www.w3.org/TR/wsdl">http://www.w3.org/TR/wsdl</a></li>
+<li>Enterprise Service Bus: <a href="https://en.wikipedia.org/wiki/Enterprise_service_bus">https://en.wikipedia.org/wiki/Enterprise_service_bus</a></li>
+</ul>
+
+<h3>Microservices vs SOA? (00:22:05)</h3>
+
+<ul>
+<li>James Lewis, Martin Fowler über Microservices: <a href="http://martinfowler.com/articles/microservices.html">http://martinfowler.com/articles/microservices.html</a></li>
+<li>Jim Webber &quot;Guerilla SOA&quot;: <a href="http://www.infoq.com/presentations/webber-guerilla-soa">http://www.infoq.com/presentations/webber-guerilla-soa</a></li>
+</ul>
+
+<h3>Hypermedia Explained (00:23:53)</h3>
+
+<ul>
+<li>Hypermedia: <a href="https://en.wikipedia.org/wiki/Hypermedia">https://en.wikipedia.org/wiki/Hypermedia</a></li>
+<li>Heute sind REST APIs relativ gut (kein GET mehr, um eine Ressource zu löschen)</li>
+<li>URI Templating, <a href="http://whatisrest.com/rest_service_contracts/uri_templates_and_resource_queries">http://whatisrest.com/rest_service_contracts/uri_templates_and_resource_queries</a></li>
+<li>REST APIs haben eine Startseite, von wo aus der Clients den Links folgen kann</li>
+<li>Der API Client braucht nicht so festverdrahtet sein</li>
+<li>Links für Ressourcen signalisieren dem Client, wie er mit einer Ressource interagieren kann</li>
+<li>Architekturstile (<a href="https://de.wikipedia.org/wiki/Architekturstil">https://de.wikipedia.org/wiki/Architekturstil</a>) haben immer Tradeoffs!</li>
+<li>Apache Thrift: <a href="https://en.wikipedia.org/wiki/Apache_Thrift">https://en.wikipedia.org/wiki/Apache_Thrift</a></li>
+<li>CORBA: <a href="https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture">https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture</a></li>
+<li>URI Templates sind ein Rezept, um z.B. eine große Menge von Links abzubilden
+
+<ul>
+<li>HTML ist ein schönes Beispiel: Mit einem Formular und GET</li>
+</ul></li>
+<li>HTML ist ein Hypermedia Format!</li>
+<li>Ein Browser ist quasi ein Hypermedia Client</li>
+<li>REST sollte Standardformate, selbstbeschreibender Nachrichten verwenden</li>
+<li>IANA Media Types: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">https://www.iana.org/assignments/media-types/media-types.xhtml</a></li>
+<li>Populäre Formate: JSON, XML</li>
+<li>JSON Schema: <a href="http://json-schema.org/">http://json-schema.org/</a></li>
+<li>JSON &amp; Hypermedia
+
+<ul>
+<li>Collection+JSON: <a href="http://amundsen.com/media-types/collection/">http://amundsen.com/media-types/collection/</a></li>
+<li>Hypertext Application Language: <a href="http://stateless.co/hal_specification.html">http://stateless.co/hal_specification.html</a></li>
+<li>Siren: <a href="https://github.com/kevinswiber/siren">https://github.com/kevinswiber/siren</a></li>
+</ul></li>
+<li>Jon Moore, &quot;Building Hypermedia APIs with HTML&quot;: <a href="http://www.infoq.com/presentations/web-api-html">http://www.infoq.com/presentations/web-api-html</a></li>
+<li>AtomPub, The Atom Publishing Protocol: <a href="http://bitworking.org/projects/atom/rfc5023.html">http://bitworking.org/projects/atom/rfc5023.html</a></li>
+</ul>
+
+<h3>REST für das Web (00:45:00)</h3>
+
+<ul>
+<li>REST ist die Architektur des Webs und nicht nur von Web Services</li>
+<li>ROCA: Resource-oriented Client Architecture: <a href="http://roca-style.org">http://roca-style.org</a></li>
+<li>Single Page Application Frameworks: <a href="http://emberjs.com">http://emberjs.com</a>, <a href="http://angularjs.org">http://angularjs.org</a>, <a href="http://backbonejs.org">http://backbonejs.org</a>, ...</li>
+<li>Yehuda Katz: <a href="http://yehudakatz.com/">http://yehudakatz.com/</a></li>
+<li>JSON API: <a href="http://jsonapi.org/">http://jsonapi.org/</a></li>
+<li>ROCA: Server-seitiges HTML, App Logik nur im Server, Seite funktioniert ohne JavaScript, JavaScript erweitert nur, Progressive Enhancement (<a href="https://en.wikipedia.org/wiki/Progressive_enhancement">https://en.wikipedia.org/wiki/Progressive_enhancement</a>), ...</li>
+<li>History API: <a href="http://diveintohtml5.info/history.html">http://diveintohtml5.info/history.html</a></li>
+<li>SEO &amp; Single Page Apps: <a href="http://backbonetutorials.com/seo-for-single-page-apps/">http://backbonetutorials.com/seo-for-single-page-apps/</a></li>
+<li>iTunes im Browser? o_O z.B. mit <a href="https://vaadin.com/home">https://vaadin.com/home</a></li>
+<li>Monolithen aufbrechen; die einzelnen Teile sollten auch ein eigenes UI haben</li>
+<li>Breaking the monolith: Towards a system-of-systems architecture: <a href="http://vimeo.com/74354372">http://vimeo.com/74354372</a></li>
+<li>jQuery UI: <a href="https://jqueryui.com/">https://jqueryui.com/</a></li>
+<li>ember.js und AngularJS bieten Konventionen und vermeiden Diskussionen (meint Basti)</li>
+<li>Web Framework Ansatz: &quot;Wir nehmen entweder JSF oder Grails oder JRuby oder Angular oder jQuery&quot;</li>
+<li>Architektur sollte unabhängig sein von der Implementierung</li>
+<li>Bower: <a href="http://bower.io/">http://bower.io/</a></li>
+<li>&quot;build for replacement, not for reuse&quot;</li>
+<li>The Twelve-Factor App: <a href="http://12factor.net/">http://12factor.net/</a></li>
+</ul>
+
+<h3>Web Services, REST (01:11:30)</h3>
+
+<ul>
+<li>innoQ macht auch Projekte im klassischen Web Service Kontext</li>
+<li>Web Service Metadaten mit RESTful HTTP managen</li>
+<li>UDDI: <a href="https://en.wikipedia.org/wiki/Universal_Description_Discovery_and_Integration">https://en.wikipedia.org/wiki/Universal_Description_Discovery_and_Integration</a></li>
+<li>WSDL: <a href="https://en.wikipedia.org/wiki/Web_Services_Description_Language">https://en.wikipedia.org/wiki/Web_Services_Description_Language</a></li>
+<li>WS-MetadataExchange: <a href="https://en.wikipedia.org/wiki/WS-MetadataExchange">https://en.wikipedia.org/wiki/WS-MetadataExchange</a></li>
+</ul>
+
+<h3>Ausblick (01:17:20)</h3>
+
+<ul>
+<li>Alte Ideen tauchen in neuen Konzepten wieder auf; verschiedene Gruppe lernen von einander</li>
+<li>JAXconf: <a href="http://jaxconf.com/">http://jaxconf.com/</a></li>
+<li>innoQ Timeline: <a href="http://www.innoq.com/de/timeline/">http://www.innoq.com/de/timeline/</a></li>
+<li>innoQ Podcast: <a href="http://www.innoq.com/de/timeline/?type=podcast_episodes">http://www.innoq.com/de/timeline/?type=podcast_episodes</a></li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST031" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Unser Gast" />
+          
+            <psc:chapter start="00:02:45" title="Architektur im Wandel" />
+          
+            <psc:chapter start="00:05:10" title="Projekte bei innoQ" />
+          
+            <psc:chapter start="00:08:40" title="Architektur: negativ?" />
+          
+            <psc:chapter start="00:12:05" title="REST" />
+          
+            <psc:chapter start="00:16:55" title="Der WS-Weg" />
+          
+            <psc:chapter start="00:22:05" title="Microservices vs SOA?" />
+          
+            <psc:chapter start="00:23:53" title="Hypermedia Explained" />
+          
+            <psc:chapter start="00:45:00" title="REST für das Web" />
+          
+            <psc:chapter start="01:11:30" title="Web Services, REST" />
+          
+            <psc:chapter start="01:17:20" title="Ausblick" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
