@@ -36,7 +36,7 @@ summary: "**Synopsis:** Mit Stefan Tilkov (@stilkov) sprachen wir über\r\nSoftw
   \ * REST und HTTP: Einsatz der Architektur des Web für Integrationsszenarien, Stefan
   Tilkov: http://rest-http.info\r\n  * Macht zum Teil Management und sonst wozu er
   so Lust hat: Workshops, Konferenzen, Schulungen, …\r\n  * Hat C, C++, Java und und
-  und gemacht, sein aktueller Favorit ist allerdings: Closure\r\n\r\n\r\n### Architektur
+  und gemacht, sein aktueller Favorit ist allerdings: Clojure\r\n\r\n\r\n### Architektur
   im Wandel (00:02:45)\r\n\r\n  * \"architect\" is Latin for \"cannot code anymore.\",
   Ted Neward: http://msdn.microsoft.com/en-us/library/aa905335.aspx\r\n  * \"Architektur
   ist die Menge der wichtigen Entscheidungen\", Stefan Tilkov :)\r\n  * Anwendungsarchitektur
