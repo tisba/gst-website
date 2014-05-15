@@ -100,6 +100,7 @@
               </header>
               <section>
                 <span id="audioplayer"></span>
+                <span id="download-links"></span>
                 <div id="shownotes">shownotes</div>
               </section>
             </article>
@@ -130,6 +131,14 @@
           <source src="<%= media.url %>" type="<%= media.content_type %>" />
           <% }); %>
       </audio>
+    </script>
+    <script type="text/template" id="download_template">
+      Media Download:
+      <ul style="display: inline; margin:0;">
+        <% _.each(media_sources, function(media) { %>
+        <li style="display: inline;"><a href="<%= media.url %>"><%= media.format %></a></li>
+        <% }); %>
+      </ul>
     </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
