@@ -8752,7 +8752,7 @@ Architekturstil, kommen.
   * Stefan Tilkov, @stilkov, http://www.innoq.com/blog/st/about/
   * REST und HTTP: Einsatz der Architektur des Web für Integrationsszenarien, Stefan Tilkov: http://rest-http.info
   * Macht zum Teil Management und sonst wozu er so Lust hat: Workshops, Konferenzen, Schulungen, …
-  * Hat C, C++, Java und und und gemacht, sein aktueller Favorit ist allerdings: Closure
+  * Hat C, C++, Java und und und gemacht, sein aktueller Favorit ist allerdings: Clojure
 
 
 ### Architektur im Wandel (00:02:45)
@@ -8883,7 +8883,7 @@ Architekturstil, kommen.</p>
 <li>Stefan Tilkov, <a href="https://twitter.com/stilkov">@stilkov</a>, <a href="http://www.innoq.com/blog/st/about/">http://www.innoq.com/blog/st/about/</a></li>
 <li>REST und HTTP: Einsatz der Architektur des Web für Integrationsszenarien, Stefan Tilkov: <a href="http://rest-http.info">http://rest-http.info</a></li>
 <li>Macht zum Teil Management und sonst wozu er so Lust hat: Workshops, Konferenzen, Schulungen, …</li>
-<li>Hat C, C++, Java und und und gemacht, sein aktueller Favorit ist allerdings: Closure</li>
+<li>Hat C, C++, Java und und und gemacht, sein aktueller Favorit ist allerdings: Clojure</li>
 </ul>
 
 <h3>Architektur im Wandel (00:02:45)</h3>
@@ -9043,6 +9043,382 @@ Architekturstil, kommen.</p>
             <psc:chapter start="01:11:30" title="Web Services, REST" />
           
             <psc:chapter start="01:17:20" title="Ausblick" />
+          
+          </psc:chapters>
+          
+        </item>
+        
+        <item>
+          <title>GST032 - NoSQL Matters 2014 Cologne</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Der Geekstammtisch mit Gesprächen von der NoSQL Matters 2014.</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst032.m4a" length="96781987" type="audio/x-m4a"/>
+          <guid isPermaLink="false">GST032</guid>
+          <pubDate>Thu, 15 May 2014 08:44:23 +0200</pubDate>
+          <itunes:duration>03:36:27</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis**: Auch dieses Jahr sind wir wieder auf der NoSQL Matters in Köln und haben wieder mit Speakern wie Besuchern gesprochen. Wir haben viele neue Menschen kennengelernt, aber auch die ein oder andere Fortsetzung vom letzten Mal ist dabei. Ein Hinweis noch, es sind überwiegend Gespräche in Englisch.
+
+#### Gesprächspartner
+
+  * [EN] Ted Dunning (@ted_dunning)
+  * [EN] Ellen Friedman (@Ellen_Friedman)
+  * [EN] Johnny Miller (@cyanmiller)
+  * [DE] Michael Hunger (@mesirii)
+  * [EN] Akmal Chaudhr (@akmalchaudhri)
+  * [DE] Gereon Steffens (@gereons)
+  * [DE] Max Neunhöffer
+  * [EN] Mahesh Paolini-Subramanya (@dieswaytoofast)
+  * [EN] Boaz Leskes (@bleskes)
+  * [DE] Frank Celler (@fceller) und Stefan Edlich (@edlich)
+  * [EN] Russel Brown (@russelldb)
+  * [EN] Jennifer Rullmann (@jrullmann)
+
+### Intro (00:00:00)
+
+  * Basti und Dirk sagen "Hallo"
+
+### Ted Dunning, MapR (00:03:46)
+
+  * @ted_dunning
+  * War dieses Jahr Keynote Speaker
+  * Thema war "Remember the Future"
+  * Gist: Einige Dinge die heute modern erscheinen werden in Zukunft nicht mehr sein. Dinge von denen man dachte, sie spielen keine Relevanz mehr, werden in Zukunft modern sein.
+  * Was braucht NoSQL für die Zukunft?
+  * Welche Möglichkeiten werden uns Daten eröffnen?
+  * Was sind die kleinen Dinge, die in Zukunft große Relevanz haben werden?
+
+### Ellen Friedman (00:18:23)
+
+  * @Ellen_Friedman
+  * Hat einen eher ungewöhnlichen Hintergrund: Sie ist Biologin mit Schwerpunkt auf Bio-Chemie und Genetik und hat in diesen Bereichen sowohl Forschung als auch Lehre betrieben
+  * Sie ist Autorin von zahlreichen Publikationen in diesem Bereich, aber auch Mitglied des Mahout-Projekts und schreibt aktuell viel über Machine-Learning
+  * Sie erklärt uns wie es zum Thema der Keynote "Remembering the future" kam
+  * Ellen glaubt wir werden genauer wenn es darum geht die Zukunft vorher zusagen
+  * Im Sinne von: Was für Probleme gelöst werden, weniger wie sie gelöst werden
+  * Die Lösung wird oft sehr überraschend sein
+  * Manchmal gab es die Lösung schon in der Vergangenheit und sie wird neu entdeckt
+  * "Die Geschichte wiederholt sich nicht"
+  * Wir sprechen über die Herausforderungen die auf unsere Gesellschaft zukommen mit der weiteren Erfassung großer Datenmengen
+  * Welche Verantwortung hat die Tech-Community in diesem Zusammenhang
+  * Abschließend geht es noch um die verständliche Vermittlung von komplexem Wissen
+
+### Johnny Miller, DataStax (00:34:34)
+
+  * @cyanmiller
+  * Johnny ist Solution Architect bei DataStax, der größte Committer von Cassandra
+  * Neben einem Vortrag hat er auch einen sehr guten Einsteiger-Workshop gegeben
+  * Wir haben mit ihm über Ease-of-use gesprochen, und dass scheinbar viele NoSQL Systeme ihre Funktionalität langsam im Griff haben und sich nun auf die Benutzbarkeit konzentrieren können
+  * Sein Herzensthema ist Sicherheit in NoSQL Datenbanken, daher haben wir natürlich auch darüber gesprochen
+
+### Michael Hunger, Neo Technologies (00:53:52)
+
+  * @mesirii
+  * Michael kommt von Neo Technologies, der Firma hinter Neo4j, einer Graphdatenbank
+  * Auch seinen Einsteiger-Workshop konnten wir besuchen
+  * Sein Talk war ebenfalls ein Einstieg, vor allem in die Welt der Graphen
+  * Wir sprachen mit ihm über "The right tool for the job" und welche Problemstellungen für Graphen geeignet sind
+  * Auch hier war Ease-of-use ein Thema
+  * Im Fall von Neo4j bezieht sich das sowohl auf die Anwendung als solche aber auch auf den Einstieg in die Welt der Graphen
+  * Off-the-Record: Leider erst nach Aufnahme haben wir uns noch verraten lassen, dass Neo4j seinen Namen aus dem Film der Matrix hat :-)
+
+### Akmal Chaudhri, DataStax (01:12:24)
+
+  * @akmalchaudhri
+  * Akmal hat einen der wenigen nicht-technischen Talks gehalten
+  * Das Thema könnte dennoch nicht wichtiger sein: Skills
+  * Wie schafft man es als Unternehmen aber auch als Entwickler mit der rasanten technologischen Entwicklung mithalten zu können?
+  * Wir stellen fest, dass ein großer Vorteil ist, dass im Grunde alle großen NoSQL Datenbanken frei verfügbar sind und zu jeder zahlreiche und qualitativ hochwertige Lernressourcen kostenlos zur Verfügung stehen
+
+### Gereon Steffens, Finanzen100 (01:29:17)
+
+  * @gereons
+  * Gereon ist Head of IT bei Finanzen100 in Köln
+  * Wir sprachen letztes Jahr mit ihm über die geplante Einführung von Redis
+  * Diese Einführung ist mehr als erfolgreich verlaufen
+  * Alle Anforderungen konnten erfüllt und neue Funktionalitäten für die Nutzer etabliert werden
+  * Wir sprachen auch darüber wie er diese neue Technologie im Team erfolgreich etablieren konnte
+
+### Max Neunhöffer, triAGENS (01:45:09)
+
+  * Max kommt von der Open-Source Multi-Model Datenbank ArangoDB
+  * Wir reden mit ihm über das neueste Feature von ArangoDB: Sharding
+  * Vor allem geht es um die Herausforderungen ein solches Feature zu implementieren
+  * Der aktuelle Stand funktioniert zwar, aber es gibt noch viel zu tun
+
+### Mahesh Paolini-Subramanya, Ubiquiti Networks (02:00:43)
+
+  * @dieswaytoofast
+  * Mit Mahesh wollten wir schon letztes Jahr sprechen, haben es aber nicht mehr geschafft. Nun hat es geklappt!
+  * Er arbeitet zur Zeit bei Ubiquiti Networks "The largest Network infrastructure company you may never heard of"
+  * Erste Frage die sich stellt: Was hat ein Hersteller von Netzwerkhardware mit NoSQL am Hut?
+  * Antwort: Unmengen von Daten!
+  * Uniquiti bietet eine Cloud-basierte Management Plattform für die Hardware an
+  * Jedes Gerät schickt alle 30 Sekunden Daten dorthin und kann von dort auch Konfiguration oder andere Informationen abrufen
+* Sie setzen dazu so ziemlich jede NoSQL Datenbank ein die es gibt (außer MongoDB)
+  * Auch hier ist wieder "The right tool for the job" Thema
+  * Und natürlich sprechen wir über das große Thema Sicherheit
+
+### Boaz Leskes, Elasticsearch (02:23:56)
+
+  * @bleskes
+  * Entwickler bei elasticsearch
+  * Er hat einen Talk zu den Aggregationsmöglichkeiten in elasticsearch gehalten
+  * Zusammengefasst: Mit Aggregationen, Facettensuche und den Analysefunktionen lassen sich sehr komplexe Systeme zur Analyse von beliebigen Daten erstellen
+  * elasticsearch ist noch viel weniger "nur" für Suchen geeignet, als noch vor einem Jahr
+  * Die Nutzer erkennen immer mehr, welche weiteren Möglichkeiten durch elasticsearch bekommen
+  * Boaz erklärt wie die Suchfunktionalitäten von elasticsearch bei der Analyse von arbiträren Daten helfen kann
+  * Es geht weiter mit einigen interessanten Einblicken in die Optimierung von Algorithmen
+  * Ease-of-use ist auch bei elasticsearch ein sehr wichtiges Thema, nicht nur bei der Nutzung aus Entwicklersicht, sondern auch aus Betriebssicht
+  * "Elasticsearch is a highly distributed system that really, really hard tries to hide it"
+
+### Frank Celler, triAGENS und Dr. Stefan Edlich (02:39:35)
+
+  * @fceller & @edlich
+  * Frank und Stefan sind beide Organisatoren der Konferenz und im Programmkommitee
+  * Wir sprechen über die Vorbereitungen der Konferenz und wie die bisherigen Eindrücke sind
+  * Wir erhalten ein paar Einblicke in die Schwierigkeiten bei der Zusammenstellung des Programms
+  * NoSQL Matters gibt es nicht nur in Köln, sondern auch in Dublin und Barcelona
+
+### Russel Brown, Basho (02:53:18)
+
+  * @russelldb
+  * Russel ist kurzfristig für einen Talk eingesprungen, glücklicherweise zu dem Thema, dass er implementiert hat ;-)
+  * Mit Russel haben wir über CRDT in Riak gesprochen, dieses Theme hatten wir letztes Jahr auch schon mit Sean Cribbs
+  * Damals steckte es noch in den Kinderschuhen, heute ist es nutzbar in der neuesten Version von Riak
+  * CRDTs steht für "Conflict-Free Replicated Data-Typ"
+  * Wir reden über die Herausforderungen der Implementierung
+  * Und vor allem über die Herausforderungen beim Testing
+  * Obwohl das Feature implementiert ist, gibt es noch viele Dinge zu tun und zu optimieren
+
+### Jennifer Rullmann, FoundationDB (03:11:26)
+
+  * @jrullmann
+  * Entwicklerin bei FoundationDB
+  * Hat vorher Webanwendungen Entwickelt nun arbeitet sie an FoundationDB
+  * FoundationDB: Distributed Key-Value DB mit der Möglichkeit andere Datenmodelle (Dokumente, Graphen, ...) in Form von Layern hinzufügen
+  * Ihr Talk war zu dem Thema "NoSQL and ACID"
+  * Ease of Use: FoundationDB legt viel Wert darauf einfach im Betrieb zu sein (wenig Konfiguration by default)
+
+### Outro (03:28:52)
+
+  * Bast und Dirk sagen "Tschüss"
+  * persönliches Fazit: Wir hatten tolle drei Tage, haben viel gelernt und sehr spannende Gespräche geführt
+  * Fazit zur Konferenz: NoSQL wird erwachsen und wird uns bestimmt noch viele Jahre begleiten. In welcher Form? Das wird die Zukunft zeigen ;-)]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis</strong>: Auch dieses Jahr sind wir wieder auf der NoSQL Matters in Köln und haben wieder mit Speakern wie Besuchern gesprochen. Wir haben viele neue Menschen kennengelernt, aber auch die ein oder andere Fortsetzung vom letzten Mal ist dabei. Ein Hinweis noch, es sind überwiegend Gespräche in Englisch.</p>
+
+<h4>Gesprächspartner</h4>
+
+<ul>
+<li>[EN] Ted Dunning (<a href="https://twitter.com/ted_dunning">@ted_dunning</a>)</li>
+<li>[EN] Ellen Friedman (<a href="https://twitter.com/Ellen_Friedman">@Ellen_Friedman</a>)</li>
+<li>[EN] Johnny Miller (<a href="https://twitter.com/cyanmiller">@cyanmiller</a>)</li>
+<li>[DE] Michael Hunger (<a href="https://twitter.com/mesirii">@mesirii</a>)</li>
+<li>[EN] Akmal Chaudhr (<a href="https://twitter.com/akmalchaudhri">@akmalchaudhri</a>)</li>
+<li>[DE] Gereon Steffens (<a href="https://twitter.com/gereons">@gereons</a>)</li>
+<li>[DE] Max Neunhöffer</li>
+<li>[EN] Mahesh Paolini-Subramanya (<a href="https://twitter.com/dieswaytoofast">@dieswaytoofast</a>)</li>
+<li>[EN] Boaz Leskes (<a href="https://twitter.com/bleskes">@bleskes</a>)</li>
+<li>[DE] Frank Celler (<a href="https://twitter.com/fceller">@fceller</a>) und Stefan Edlich (<a href="https://twitter.com/edlich">@edlich</a>)</li>
+<li>[EN] Russel Brown (<a href="https://twitter.com/russelldb">@russelldb</a>)</li>
+<li>[EN] Jennifer Rullmann (<a href="https://twitter.com/jrullmann">@jrullmann</a>)</li>
+</ul>
+
+<h3>Intro (00:00:00)</h3>
+
+<ul>
+<li>Basti und Dirk sagen &quot;Hallo&quot;</li>
+</ul>
+
+<h3>Ted Dunning, MapR (00:03:46)</h3>
+
+<ul>
+<li><a href="https://twitter.com/ted_dunning">@ted_dunning</a></li>
+<li>War dieses Jahr Keynote Speaker</li>
+<li>Thema war &quot;Remember the Future&quot;</li>
+<li>Gist: Einige Dinge die heute modern erscheinen werden in Zukunft nicht mehr sein. Dinge von denen man dachte, sie spielen keine Relevanz mehr, werden in Zukunft modern sein.</li>
+<li>Was braucht NoSQL für die Zukunft?</li>
+<li>Welche Möglichkeiten werden uns Daten eröffnen?</li>
+<li>Was sind die kleinen Dinge, die in Zukunft große Relevanz haben werden?</li>
+</ul>
+
+<h3>Ellen Friedman (00:18:23)</h3>
+
+<ul>
+<li><a href="https://twitter.com/Ellen_Friedman">@Ellen_Friedman</a></li>
+<li>Hat einen eher ungewöhnlichen Hintergrund: Sie ist Biologin mit Schwerpunkt auf Bio-Chemie und Genetik und hat in diesen Bereichen sowohl Forschung als auch Lehre betrieben</li>
+<li>Sie ist Autorin von zahlreichen Publikationen in diesem Bereich, aber auch Mitglied des Mahout-Projekts und schreibt aktuell viel über Machine-Learning</li>
+<li>Sie erklärt uns wie es zum Thema der Keynote &quot;Remembering the future&quot; kam</li>
+<li>Ellen glaubt wir werden genauer wenn es darum geht die Zukunft vorher zusagen</li>
+<li>Im Sinne von: Was für Probleme gelöst werden, weniger wie sie gelöst werden</li>
+<li>Die Lösung wird oft sehr überraschend sein</li>
+<li>Manchmal gab es die Lösung schon in der Vergangenheit und sie wird neu entdeckt</li>
+<li>&quot;Die Geschichte wiederholt sich nicht&quot;</li>
+<li>Wir sprechen über die Herausforderungen die auf unsere Gesellschaft zukommen mit der weiteren Erfassung großer Datenmengen</li>
+<li>Welche Verantwortung hat die Tech-Community in diesem Zusammenhang</li>
+<li>Abschließend geht es noch um die verständliche Vermittlung von komplexem Wissen</li>
+</ul>
+
+<h3>Johnny Miller, DataStax (00:34:34)</h3>
+
+<ul>
+<li><a href="https://twitter.com/cyanmiller">@cyanmiller</a></li>
+<li>Johnny ist Solution Architect bei DataStax, der größte Committer von Cassandra</li>
+<li>Neben einem Vortrag hat er auch einen sehr guten Einsteiger-Workshop gegeben</li>
+<li>Wir haben mit ihm über Ease-of-use gesprochen, und dass scheinbar viele NoSQL Systeme ihre Funktionalität langsam im Griff haben und sich nun auf die Benutzbarkeit konzentrieren können</li>
+<li>Sein Herzensthema ist Sicherheit in NoSQL Datenbanken, daher haben wir natürlich auch darüber gesprochen</li>
+</ul>
+
+<h3>Michael Hunger, Neo Technologies (00:53:52)</h3>
+
+<ul>
+<li><a href="https://twitter.com/mesirii">@mesirii</a></li>
+<li>Michael kommt von Neo Technologies, der Firma hinter Neo4j, einer Graphdatenbank</li>
+<li>Auch seinen Einsteiger-Workshop konnten wir besuchen</li>
+<li>Sein Talk war ebenfalls ein Einstieg, vor allem in die Welt der Graphen</li>
+<li>Wir sprachen mit ihm über &quot;The right tool for the job&quot; und welche Problemstellungen für Graphen geeignet sind</li>
+<li>Auch hier war Ease-of-use ein Thema</li>
+<li>Im Fall von Neo4j bezieht sich das sowohl auf die Anwendung als solche aber auch auf den Einstieg in die Welt der Graphen</li>
+<li>Off-the-Record: Leider erst nach Aufnahme haben wir uns noch verraten lassen, dass Neo4j seinen Namen aus dem Film der Matrix hat :-)</li>
+</ul>
+
+<h3>Akmal Chaudhri, DataStax (01:12:24)</h3>
+
+<ul>
+<li><a href="https://twitter.com/akmalchaudhri">@akmalchaudhri</a></li>
+<li>Akmal hat einen der wenigen nicht-technischen Talks gehalten</li>
+<li>Das Thema könnte dennoch nicht wichtiger sein: Skills</li>
+<li>Wie schafft man es als Unternehmen aber auch als Entwickler mit der rasanten technologischen Entwicklung mithalten zu können?</li>
+<li>Wir stellen fest, dass ein großer Vorteil ist, dass im Grunde alle großen NoSQL Datenbanken frei verfügbar sind und zu jeder zahlreiche und qualitativ hochwertige Lernressourcen kostenlos zur Verfügung stehen</li>
+</ul>
+
+<h3>Gereon Steffens, Finanzen100 (01:29:17)</h3>
+
+<ul>
+<li><a href="https://twitter.com/gereons">@gereons</a></li>
+<li>Gereon ist Head of IT bei Finanzen100 in Köln</li>
+<li>Wir sprachen letztes Jahr mit ihm über die geplante Einführung von Redis</li>
+<li>Diese Einführung ist mehr als erfolgreich verlaufen</li>
+<li>Alle Anforderungen konnten erfüllt und neue Funktionalitäten für die Nutzer etabliert werden</li>
+<li>Wir sprachen auch darüber wie er diese neue Technologie im Team erfolgreich etablieren konnte</li>
+</ul>
+
+<h3>Max Neunhöffer, triAGENS (01:45:09)</h3>
+
+<ul>
+<li>Max kommt von der Open-Source Multi-Model Datenbank ArangoDB</li>
+<li>Wir reden mit ihm über das neueste Feature von ArangoDB: Sharding</li>
+<li>Vor allem geht es um die Herausforderungen ein solches Feature zu implementieren</li>
+<li>Der aktuelle Stand funktioniert zwar, aber es gibt noch viel zu tun</li>
+</ul>
+
+<h3>Mahesh Paolini-Subramanya, Ubiquiti Networks (02:00:43)</h3>
+
+<ul>
+<li><a href="https://twitter.com/dieswaytoofast">@dieswaytoofast</a></li>
+<li>Mit Mahesh wollten wir schon letztes Jahr sprechen, haben es aber nicht mehr geschafft. Nun hat es geklappt!</li>
+<li>Er arbeitet zur Zeit bei Ubiquiti Networks &quot;The largest Network infrastructure company you may never heard of&quot;</li>
+<li>Erste Frage die sich stellt: Was hat ein Hersteller von Netzwerkhardware mit NoSQL am Hut?</li>
+<li>Antwort: Unmengen von Daten!</li>
+<li>Uniquiti bietet eine Cloud-basierte Management Plattform für die Hardware an</li>
+<li>Jedes Gerät schickt alle 30 Sekunden Daten dorthin und kann von dort auch Konfiguration oder andere Informationen abrufen
+
+<ul>
+<li>Sie setzen dazu so ziemlich jede NoSQL Datenbank ein die es gibt (außer MongoDB)</li>
+</ul></li>
+<li>Auch hier ist wieder &quot;The right tool for the job&quot; Thema</li>
+<li>Und natürlich sprechen wir über das große Thema Sicherheit</li>
+</ul>
+
+<h3>Boaz Leskes, Elasticsearch (02:23:56)</h3>
+
+<ul>
+<li><a href="https://twitter.com/bleskes">@bleskes</a></li>
+<li>Entwickler bei elasticsearch</li>
+<li>Er hat einen Talk zu den Aggregationsmöglichkeiten in elasticsearch gehalten</li>
+<li>Zusammengefasst: Mit Aggregationen, Facettensuche und den Analysefunktionen lassen sich sehr komplexe Systeme zur Analyse von beliebigen Daten erstellen</li>
+<li>elasticsearch ist noch viel weniger &quot;nur&quot; für Suchen geeignet, als noch vor einem Jahr</li>
+<li>Die Nutzer erkennen immer mehr, welche weiteren Möglichkeiten durch elasticsearch bekommen</li>
+<li>Boaz erklärt wie die Suchfunktionalitäten von elasticsearch bei der Analyse von arbiträren Daten helfen kann</li>
+<li>Es geht weiter mit einigen interessanten Einblicken in die Optimierung von Algorithmen</li>
+<li>Ease-of-use ist auch bei elasticsearch ein sehr wichtiges Thema, nicht nur bei der Nutzung aus Entwicklersicht, sondern auch aus Betriebssicht</li>
+<li>&quot;Elasticsearch is a highly distributed system that really, really hard tries to hide it&quot;</li>
+</ul>
+
+<h3>Frank Celler, triAGENS und Dr. Stefan Edlich (02:39:35)</h3>
+
+<ul>
+<li><a href="https://twitter.com/fceller">@fceller</a> &amp; <a href="https://twitter.com/edlich">@edlich</a></li>
+<li>Frank und Stefan sind beide Organisatoren der Konferenz und im Programmkommitee</li>
+<li>Wir sprechen über die Vorbereitungen der Konferenz und wie die bisherigen Eindrücke sind</li>
+<li>Wir erhalten ein paar Einblicke in die Schwierigkeiten bei der Zusammenstellung des Programms</li>
+<li>NoSQL Matters gibt es nicht nur in Köln, sondern auch in Dublin und Barcelona</li>
+</ul>
+
+<h3>Russel Brown, Basho (02:53:18)</h3>
+
+<ul>
+<li><a href="https://twitter.com/russelldb">@russelldb</a></li>
+<li>Russel ist kurzfristig für einen Talk eingesprungen, glücklicherweise zu dem Thema, dass er implementiert hat ;-)</li>
+<li>Mit Russel haben wir über CRDT in Riak gesprochen, dieses Theme hatten wir letztes Jahr auch schon mit Sean Cribbs</li>
+<li>Damals steckte es noch in den Kinderschuhen, heute ist es nutzbar in der neuesten Version von Riak</li>
+<li>CRDTs steht für &quot;Conflict-Free Replicated Data-Typ&quot;</li>
+<li>Wir reden über die Herausforderungen der Implementierung</li>
+<li>Und vor allem über die Herausforderungen beim Testing</li>
+<li>Obwohl das Feature implementiert ist, gibt es noch viele Dinge zu tun und zu optimieren</li>
+</ul>
+
+<h3>Jennifer Rullmann, FoundationDB (03:11:26)</h3>
+
+<ul>
+<li><a href="https://twitter.com/jrullmann">@jrullmann</a></li>
+<li>Entwicklerin bei FoundationDB</li>
+<li>Hat vorher Webanwendungen Entwickelt nun arbeitet sie an FoundationDB</li>
+<li>FoundationDB: Distributed Key-Value DB mit der Möglichkeit andere Datenmodelle (Dokumente, Graphen, ...) in Form von Layern hinzufügen</li>
+<li>Ihr Talk war zu dem Thema &quot;NoSQL and ACID&quot;</li>
+<li>Ease of Use: FoundationDB legt viel Wert darauf einfach im Betrieb zu sein (wenig Konfiguration by default)</li>
+</ul>
+
+<h3>Outro (03:28:52)</h3>
+
+<ul>
+<li>Bast und Dirk sagen &quot;Tschüss&quot;</li>
+<li>persönliches Fazit: Wir hatten tolle drei Tage, haben viel gelernt und sehr spannende Gespräche geführt</li>
+<li>Fazit zur Konferenz: NoSQL wird erwachsen und wird uns bestimmt noch viele Jahre begleiten. In welcher Form? Das wird die Zukunft zeigen ;-)</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST032" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Intro" />
+          
+            <psc:chapter start="00:03:46" title="Ted Dunning, MapR" />
+          
+            <psc:chapter start="00:18:23" title="Ellen Friedman" />
+          
+            <psc:chapter start="00:34:34" title="Johnny Miller, DataStax" />
+          
+            <psc:chapter start="00:53:52" title="Michael Hunger, Neo Technologies" />
+          
+            <psc:chapter start="01:12:24" title="Akmal Chaudhri, DataStax" />
+          
+            <psc:chapter start="01:29:17" title="Gereon Steffens, Finanzen100" />
+          
+            <psc:chapter start="01:45:09" title="Max Neunhöffer, triAGENS" />
+          
+            <psc:chapter start="02:00:43" title="Mahesh Paolini-Subramanya, Ubiquiti Networks" />
+          
+            <psc:chapter start="02:23:56" title="Boaz Leskes, Elasticsearch" />
+          
+            <psc:chapter start="02:39:35" title="Frank Celler, triAGENS und Dr. Stefan Edlich" />
+          
+            <psc:chapter start="02:53:18" title="Russel Brown, Basho" />
+          
+            <psc:chapter start="03:11:26" title="Jennifer Rullmann, FoundationDB" />
+          
+            <psc:chapter start="03:28:52" title="Outro" />
           
           </psc:chapters>
           
