@@ -1,0 +1,198 @@
+--- !ruby/struct:Episode
+number: 33
+name: "(Code)ship all the things!"
+subtitle: Remote-Episode mit Flo von Codeship.io über Serverautomatisierung und UX
+length: 5124
+media:
+  opus:
+    size: 43162741
+    file_ext: opus
+  descr:
+    size: 25049
+    file_ext: json
+  alac:
+    size: 376650079
+    file_ext: m4a
+  input:
+    size: 785389520
+    file_ext: unprocessed.m4a
+  aac:
+    size: 38793525
+    file_ext: m4a
+  mp3:
+    size: 61765064
+    file_ext: mp3
+auphonic_uuid: MkrX6z3zoi25uKKN8P3LhJ
+published_at: 2014-06-16 17:23:59.697318000 +02:00
+summary: "**Synopsis:** In unserer ersten Remote-Ausgabe vom Geekstammtisch sprachen
+  wir mit Florian Motlik, CTO von Codeship.io. In dem Gespräch haben wir im Grunde
+  alle wesentlichen Aspekte einer Continuous Delivery Plattform abgeklopft. Technischen
+  Themen wie der automatischen Provisionierung von Build-Servern oder der Verwaltung
+  von LXC Container standen dabei ebenso im Fokus wie die Entwicklung eines sehr guten
+  User-Interfaces. Da Codeship ein recht junges Unternehmen ist, gab es auch Einblicke
+  in die Herausforderung der Produktentwicklung.\r\n\r\n### Unser Gast (00:00:00)\r\n\r\n*
+  Florian Motlik\r\n* CTO und Co-Founder von https://codeship.io\r\n* Codeship ist
+  ein Continuous Integration/Deployment Service\r\n* Ist 2011 als Neben-dem-Studium-Projekt
+  gestartet\r\n* 2012 dann die Entscheidung das ganze Vollzeit zu verfolgen: Studium
+  hinschmeißen und alle ziehen nach Berlin\r\n* Nach Berlin dann 2013 nach Boston\r\n*
+  Hauptsitz in Boston und ein Büro Wien\r\n* Wachsen erstmal \"nur\" vor Ort in Boston/Wien,
+  Remote erst später; Ziel: gesunder Wachstum\r\n\r\n### Usability ist wichtig (00:05:45)\r\n\r\n*
+  Usability war von Anfang im Fokus\r\n* Geführter Einstieg in das Produkt und Features\r\n*
+  Noch vor der Anmeldung eines Nutzers sollen Screencasts und Blogposts Interessenten
+  in die Thematik einführen\r\n* Bei Anmeldung weiß man dann schon im Grunde worum
+  es geht und kann schneller starten\r\n\r\n### Tour durch Codeship.io (00:10:46)\r\n\r\n*
+  Erster Schritt: Anmeldung über GitHub (https://github.com/) oder Bitbucket (https://bitbucket.org/)\r\n*
+  Anschließend die Wahl des Repositories\r\n* Einrichtung der Test-Befehle, dazu gibt
+  Templates für die unterschiedlichsten Sprachen und Umgebungen\r\n* Solange der Exit-Status
+  eines Befehls 0 ist wird der nächste Schritt ausgeführt\r\n* Nach dem Testing kommt
+  das Deployment\r\n* Auch hier lässt sich aus fertigen Anbindungen wählen, oder ein
+  eigenes Skript wird verwendet\r\n* Das Deployment ist dabei eher als Pipeline zu
+  verstehen:\r\n    * Deploye erst auf Staging\r\n    * Lasse dann gegen Staging einige
+  Tests laufen\r\n    * Deploye dann auf Produktion\r\n    * Prüfe auch hier mit einem
+  Skript\r\n* Am Ende des Tages kann Ablauf beliebig komplex oder sehr einfach sein,
+  was immer gebraucht wird\r\n* Genauso wird im übrigen auch Codeship selbst getestet
+  und deployed\r\n    * \"Eat your own dog food\" ist vor allem für Developer-Produkte
+  extrem wichtig\r\n\r\n### Infrastruktur (00:14:10)\r\n\r\n* Website läuft auf Heroku
+  (https://www.heroku.com/home)\r\n* Sidekiq (http://sidekiq.org/) als Worker Queue
+  mit externem Redis (https://openredis.com/)\r\n* Die interessanten Dinge passieren
+  bei AWS (https://aws.amazon.com/): Die Ausführung der Jobs\r\n    * Zu AWS ist man
+  von Hetzner über Rackspace gekommen. Die Erklärung warum haben wir dann später leider
+  vergessen zu erwähnen :/\r\n* AWS-Setup\r\n    * Eigenes Auto-Scaling: Mehr Builds
+  -> mehr Server\r\n    * Die größten Compute-Instanzen (c3.8xlarge) als Basis, Unterteilung
+  mit LXC (https://linuxcontainers.org/)\r\n    * Ein Container mit einem vollständigen
+  Ubuntu inkl. aller möglichen Abhängigkeiten\r\n    * Learning 1: Container eignen
+  sich besser als dedizierte kleine Maschinen, weil mehr Speicher und CPU\r\n    *
+  Learning 2: Einfach alles hochfahren treibt den Speicherverbrauch hoch, macht aber
+  das Handling sehr viel leichter\r\n* Jeder Push auf das Repo erzeugt eine neue virtuelle
+  Maschine auf der man im Grunde tun und lassen kann was man will\r\n    * Es gibt
+  aus Sicherheitsgründen kein sudo\r\n    * Es lässt sich alles nach installieren
+  was ohne sudo geht\r\n* Es sind die gängigen Sprachen in unzähligen Versionen enthalten
+  + Haskell\r\n* Das gleiche gilt für Datenbanken\r\n* Support ist sehr wichtig\r\n*
+  Ein Dienst für Developer fordert Developer als Support, daher muss jeder Entwickler
+  auch einen Tag Support machen und zwar 7 Tage die Woche\r\n* Es gibt einen Cache-Layer
+  (wo zum Beispiel auch Rubygems gecached werden) in den sich eigene Erzeugnisse ebenfalls
+  cachen lassen\r\n\r\n### Build-Artefakte (00:20:50)\r\n\r\n* Keine Integration in
+  Codeship: Build-Artefakte müssen per Skript woanders hinkopiert werden\r\n* Hintergrund:
+  Nach jedem Build wird der Container vollständig zerstört\r\n* Deployment muss kein
+  \"Deployment\" auf einen Server sein, sondern kann auch ein Script sein, welches
+  z.B. Artefakte auf S3 kopiert\r\n* von Codeship vordefinierte Deployments sind vorgefertigte
+  Abläufe, machen aber sonst nichts spezielles\r\n* im Wesentlichen gibt es keine
+  Unterscheidung zwischen Setup, Test und Deploymentphasen: Es werden lediglich Kommandos
+  ausgeführt\r\n* Im Environment werden alle möglichen Informationen exportiert\r\n*
+  Ein spezieller Schutz für \"geheime\" Informationen (wie Access Keys) können aktuell
+  noch nicht verschlüsselt in die Build-Umgebung gereicht werden\r\n\r\n### Private
+  Installations (00:28:10)\r\n\r\n* Konkrete Pläne gibt es für On-Premise Installationen
+  gibt es aktuell nicht\r\n* Codeship will sich nicht in Unternehmen rein verkaufen,
+  sondern die Teams sollen Codeship haben wollen\r\n\r\n### Server in der EU und Datenschutz?
+  (00:31:30)\r\n\r\n* Aktuell benutzt Codeship AWS EC2 Instanzen in us-east\r\n* Instanzen
+  in der EU werden irgendwann wichtig sein (Datenschutzgesetz und auch Ausfallsicherheit)\r\n*
+  Aber: Die Kunden haben aktuell ihren Code ohnehin auf Github oder Bitbucket, und
+  deren Code liegt dann ohnehin nicht in der EU\r\n\r\n### Produktentwicklung & Fokus
+  behalten (00:33:45)\r\n\r\n* Wie behält man den Fokus bei der Entwicklung?\r\n*
+  Der Fokus war bei Codeship notwendig, weil Flo der einzige Entwickler war\r\n* Tech-only
+  Start-Ups \"bauen sich gerne in den Markt\", was nicht funktioniert\r\n\r\n### Blogposts
+  und Screencast (00:37:30)\r\n\r\n* 20% der Entwicklerzeit geht in Marketing: z.B.
+  Blogposts und Screencasts\r\n* Der Aufwand für einen Blogpost: 4-8 Stunden, wenn
+  man nicht zu viel Research machen muss\r\n* ...und bei Screencasts: Aufnahme 2-3
+  Stunden, Schneiden noch mal 1-1,5 Tage\r\n* Auch in den 20%: Meetups organisieren,
+  Konferenzbesuche, User Groups...\r\n* Flo's Pro Tip: Sticker!!!\r\n\r\n### Hosting
+  bei Heroku (00:42:40)\r\n\r\n* Codeship selber läuft auf Heroku mit 8 Add-Ons\r\n
+  \   * Postgres: https://addons.heroku.com/heroku-postgresql#premium-ika\r\n    *
+  Logentries: https://addons.heroku.com/logentries\r\n    * New Relic: https://addons.heroku.com/newrelic\r\n*
+  New Relic Alternative: Skylight: https://www.skylight.io/\r\n\r\n### Pricing bei
+  Codeship (00:49:15)\r\n\r\n* Codeship Preise: https://codeship.io/pricing\r\n* Kostenfrei
+  (keine: 50 Builds, ein Concurrent Build\r\n* 49 USD: ein Concurrent Build, sonst
+  keine Limits\r\n* je 50 USD mehr, +1 Concurrent Build\r\n\r\n### AWS (00:51:50)\r\n\r\n*
+  EC2 Reserved Instances: https://aws.amazon.com/ec2/purchasing-options/reserved-instances/\r\n*
+  AWS Trusted Advisor: https://aws.amazon.com/premiumsupport/trustedadvisor/\r\n\r\n###
+  Immutable Servers (00:54:40)\r\n\r\n* Server sind immutable\r\n* Server werden gebaut
+  mit Packer (http://www.packer.io/)\r\n  * Aus einer JSON Konfiguration und Skripten
+  zur Provisionierung wird eine Amazon Machine Image (AMI) erstellt\r\n* Worklfow
+  bei Codeship.io:\r\n  * Code-Änderungen auf GitHub\r\n  * Automatische Tests\r\n
+  \ * Erstellung des AMI (Laufzeit ~ 90 Minuten)\r\n* Austausch eines AMI\r\n  * Alte
+  Server werden ausgemacht wenn keine Jobs mehr laufen\r\n  * Scaling-System fährt
+  nur noch neue Maschinen hoch\r\n* Wichtig: Laufende Server werden nicht mehr angefasst!\r\n*
+  Vorteil:\r\n  * Alle Server sind immer gleich\r\n  * Server sind getestet bevor
+  ein AMI überhaupt gebaut wird\r\n* Ziel bei der Automatisierung: Fokus der Entwickler
+  auf die Entwicklung, alles nach dem Push muss automatisch geschehen\r\n\r\n### Automatisierung
+  (01:00:56)\r\n\r\n* Weiteres wichtiges Tool ist Librato (https://metrics.librato.com/)
+  zur Erfassung und Auswertung von sämtlichen Daten\r\n* Neben Betriebsdaten von Heroku
+  und Amazon laufen dort auch Businessdaten rein\r\n* Alerts auf unterschiedlichen
+  Ebenen\r\n* Wenn was ist, dann wird man benachrichtigt\r\n* Über Health-Checks werden
+  sogar die Build-Server automatisch deaktiviert und neue Instanzen hochgefahren\r\n*
+  Wenn alles automatisiert ist, dann können sich die Entwickler stärker auf ihre Arbeit
+  konzentrieren\r\n* Keine dedizierte Ops-Abteilung, sondern gute Sys-Admins, die
+  in die Entwicklungsabteilung und deren Prozesse integriert sind (aka: DevOps)\r\n*
+  Am Ende haben alle Beteiligten (Frontend, Backend, Ops) den gleichen Workflow\r\n\r\n###
+  Wie kommen auf die Jobs auf die Build-Server (01:05:00)\r\n\r\n* Auf jedem Build-Server
+  läuft ein Sidekiq-Job\r\n* Die Web-App schiebt neue Jobs in die Queue\r\n* Die Build-Server
+  schieben Ergebnisse zur Anzeige auf der Webseite auch wieder in eine Queue\r\n*
+  Sidekiq-Pro kommt zum Einsatz\r\n\r\n### Provisionierung der LXC-Container (01:08:12)\r\n\r\n*
+  Provisionierung via Bash\r\n* Aktuelles Projekt: Migration auf Ansible (http://www.ansible.com/home)\r\n*
+  Ansible erscheint für die Anforderungen als die sinnvollste Lösung\r\n* Trotz LXC
+  ist Docker (http://www.docker.com/) aktuell keine Alternative\r\n* Früher oder später
+  werden sie auf Docker umstellen, da es sich als das Tooling für LXC entwickelt\r\n*
+  Aktuell würde es aber mehr Arbeit machen als Benefit bringen\r\n\r\n### UX (01:12:59)\r\n\r\n*
+  Die Komplexität liegt bei Codeship.io in der Feinabstimmung aller beteiligten Komponenten\r\n*
+  Technisch ist es kein Hexenwerk\r\n* Wie bereits mehrfach angesprochen: UI/UX war
+  und ist eine der großen Herausforderungen\r\n* Daher: Dedizierte Menschen, die sich
+  um dieses Thema kümmern\r\n* Interviews mit Kunden\r\n* User-Tracking spielt auch
+  eine wichtige Rolle\r\n* Kommunikation mit den Usern über Intercom (https://www.intercom.io/)\r\n
+  \ * grundsätzlicher Support\r\n  * Auf Basis von Metriken Identifikation von möglichen
+  Problemen bei Kunden\r\n* In der UI werden unterschiedliche Fehler unterschieden:
+  Bundle Install, Tests nicht gelaufen, etc\r\n  * Matching der Fehlermeldung auf
+  Reguläre Ausdrücke\r\n  * Nicht nur die Fehlermeldung sondern entsprechender Hinweis
+  auf die Fehlerursache\r\n  * Next-Steps: Unterschiedliche Benachrichtigungen für
+  unterschiedliche Fehlertypen"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Unser Gast
+- !ruby/struct:Chapter
+  start: '00:05:45'
+  title: Usability ist wichtig
+- !ruby/struct:Chapter
+  start: '00:10:46'
+  title: Tour durch Codeship.io
+- !ruby/struct:Chapter
+  start: '00:14:10'
+  title: Infrastruktur
+- !ruby/struct:Chapter
+  start: '00:20:50'
+  title: Build-Artefakte
+- !ruby/struct:Chapter
+  start: '00:28:10'
+  title: Private Installations
+- !ruby/struct:Chapter
+  start: '00:31:30'
+  title: Server in der EU und Datenschutz?
+- !ruby/struct:Chapter
+  start: '00:33:45'
+  title: Produktentwicklung & Fokus behalten
+- !ruby/struct:Chapter
+  start: '00:37:30'
+  title: Blogposts und Screencast
+- !ruby/struct:Chapter
+  start: '00:42:40'
+  title: Hosting bei Heroku
+- !ruby/struct:Chapter
+  start: '00:49:15'
+  title: Pricing bei Codeship
+- !ruby/struct:Chapter
+  start: '00:51:50'
+  title: AWS
+- !ruby/struct:Chapter
+  start: '00:54:40'
+  title: Immutable Servers
+- !ruby/struct:Chapter
+  start: '01:00:56'
+  title: Automatisierung
+- !ruby/struct:Chapter
+  start: '01:05:00'
+  title: Wie kommen auf die Jobs auf die Build-Server
+- !ruby/struct:Chapter
+  start: '01:08:12'
+  title: Provisionierung der LXC-Container
+- !ruby/struct:Chapter
+  start: '01:12:59'
+  title: UX
