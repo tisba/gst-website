@@ -9893,5 +9893,471 @@ Architekturstil, kommen.</p>
           
         </item>
         
+        <item>
+          <title>GST034 - IPv6 to the Home!</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Über die Herausforderungen der IPv6 Einführung aus Sicht eines ISP</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst034.mp3" length="86187259" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST034</guid>
+          <pubDate>Thu, 10 Jul 2014 09:57:26 +0200</pubDate>
+          <itunes:duration>01:59:18</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Wir haben mit Christian Rohmann über die Einführung von IPv6 bei dem lokalen ISP NetCologne gesprochen. Angefangen bei technischen Grundlagen, wie das Internet überhaupt zum Kunden kommt über was IPv6 überhaupt ist bis hin zu der mehrstufigen Umstellung der beteiligten Infrastruktur. Das Ergebnis jahrelanger Arbeit ist im besten Fall, dass der Kunden nicht mal merkt, dass sich etwas geändert hat.
+
+### Unser Gast (00:00:00)
+
+* Christian Rohmann
+* Arbeitet bei NetCologne: http://netcologne.de
+* "NetCologne macht Internet"... und Telefon... und ein paar Dienste drumherum
+* Christian arbeitet im Bereich Network Engineering und Design, genauer um die Infrastruktur und Dienste
+
+
+### DSL Zuhause (00:02:40)
+
+* Die DSL-Box/Router/"FritzBox" meldet sich im Netz mit ihrer Identifikation und bekommt automatisch ihre Konfiguration
+* Alternativ muss man alle Zugangsdaten, Netzwerkeinstellungen etc. selber machen
+* Hybrid Fibre Cable/Coaxial (HFC): https://en.wikipedia.org/wiki/Hybrid_fibre-coaxial
+    * Authentifizierung via DOCSIS: https://en.wikipedia.org/wiki/DOCSIS
+    * Konfiguration quasi via DHCP
+* Digital Subscriber Line (DSL): https://en.wikipedia.org/wiki/DSL
+    * z.B. via Kupfer oder Glasfaser
+    * Digital subscriber line access multiplexer (DSLAM): https://en.wikipedia.org/wiki/Dslam
+    * Point-to-point protocol over Ethernet (PPPoE): https://en.wikipedia.org/wiki/Pppoe
+    * Broadband remote access server: (BRAS): https://en.wikipedia.org/wiki/Broadband_Remote_Access_Server
+    * Authentifizierung gegenüber BRAS über PPPoE
+
+
+### IPv4 (00:08:50)
+
+* IPv6: https://en.wikipedia.org/wiki/Ipv6
+* In Köln gibt es jetzt von NetCologne IPv6 für alle!
+* IPv4: https://en.wikipedia.org/wiki/Ipv4
+* IPv4 Adressen werden knapp, 32 Bit Adressen, also ~4 Mrd. Adressen
+* Classless Inter-Domain Routing (CIDR): https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+* Network Address Translation (NAT): https://en.wikipedia.org/wiki/Network_address_translation
+* Private Network Adresses: https://en.wikipedia.org/wiki/Private_IP_address
+    * z.B. 192.168.0.0 - 192.168.255.255 (192.168.0.0/16) oder 10.0.0.0 - 10.255.255.255 (10.0.0.0/8)
+    * NAT ist kein Security Feature(!), das ist nur ein notwendiges Übel.
+    * Direkte Verbindungen, z.B. für File Sharing, sind per se nicht ohne weiteres Möglich
+* Port Forwarding: https://en.wikipedia.org/wiki/Port_forwarding
+
+
+### IPv6 (00:16:30)
+
+* IPv5: https://en.wikipedia.org/wiki/Ipv5
+* IPv6: Angefangen ~1996
+* VIEL Mehr Adressen: 128 Bit Adressen, 2^128 Adressen
+* Die Netze in IPv6 ist strenger strukturiert als IPv4
+* Den Netzteil, die ersten 64 bit einer IPv6 Adresse nennt man Prefix, den Rest nennt man Interface
+* Stateless Autoconfiguration: https://en.wikipedia.org/wiki/Ipv6#Stateless_Autoconfiguration
+    * jedes Gerät kann sich seine eigene Adresse aussuchen und sich selber konfigurieren
+* DHCPv6: https://en.wikipedia.org/wiki/DHCPv6
+* Link Local Adress: https://en.wikipedia.org/wiki/Ipv6#Link_local_address
+    * Nur gültig für alles, was nicht geroutet wird
+* Global Unicast Adress: https://en.wikipedia.org/wiki/Ipv6#Create_a_global_address
+    * Prefix vom Netz + Interface Adresse generieren
+    * Der Router broadcastet im Netz regelmäßig, dass er ein Netz hat und welchen Prefix zu verwenden ist
+* Prefix Delegation: https://en.wikipedia.org/wiki/Prefix_delegation
+    * Der Router fragt beim ISP nach einem Prefix
+    * Bei NetCologne bekommt jeder Kunde ein /48 Prefix, kann also 65.536 Netze aufbauen
+* Router Advertisement
+* NetCologne hat 2005 angefangen mit einem /32 Netz
+    * Wenn jeder ein /32 Netz bekommt, kann man so viele ISPs anbieten, wie es bisher insgesamt theoretische Adressen im IPv4 Internet gibt!
+    * Mittlerweile hat NetCologne ein /29 Netz
+* Regional Internet Registry: https://en.wikipedia.org/wiki/Regional_Internet_registry
+    * Erlaubt die Zuordnung von Adressen zu Regionen
+    * NetCologne ist dann eine Local Internet Registry https://en.wikipedia.org/wiki/Local_Internet_registry
+    * Verwaltet autonom das zugeteilte Netz
+* Nächster Schritt nach dem Netz ist die Kommunikation mit anderen Netzen
+* Peering (https://en.wikipedia.org/wiki/Peering) mit direkten Partnern und Upstream mit indirekten Partnern
+* Wichtig als ISP: Mit IPv6 darf es nicht schlechter für den Kunden werden
+* Daher: Sehr viele stabile und redundante Verbindungen in das restliche Internet
+* War in den ersten Jahren einfach nicht gegeben
+* Es gab zwischendurch 2 oder 3 Internetze (IPv6)
+
+
+### IPv6 und IPv4 parallel (00:42:23)
+
+* Dual Stack (https://en.wikipedia.org/wiki/Dual-stack#Dual_IP_stack_implementation)
+* Technisch sind das IPv4 und IPv6 Netz vollständig getrennt
+* Andere Möglichkeiten mit nur IPv6 in das IPv4 Netz zu kommen
+* Verwendung eines Proxies (passiert auf Application Layer)
+    * Geht auf mit SSL da die Zertifikate auf den Common Name ausgestellt sind
+    * Geht aber nur für HTTP-Dienste
+* Mail ist auf Grund der begrenzten Gegenstellen einfacher
+* Probleme bei Diensten wie VoIP
+* Themen vor allem in Asien sehr relevant, da dort keine IPv4 Adressen mehr verfügbar sind
+* Um einen transparenten Parallelbetrieb zu leisten muss man auf IP oder TCP Layer runter
+    * Carrier-grade NAT: https://en.wikipedia.org/wiki/Carrier_grade_NAT
+    * Dual-Stack Lite: https://en.wikipedia.org/wiki/Dual-Stack_Lite#Dual-Stack_Lite_.28DS-Lite.29
+    * Dual-Stack Lite muss man machen, wenn man nicht mehr genug IPv4 Adressen für alle hat
+* Carrier-grade NAT will man nicht haben
+* IPv4 wird noch auf unbestimmte Zeit weiterhin existieren
+* Meilensteine für das Internet: IPv6 Tage
+    * Erst ein Test: https://en.wikipedia.org/wiki/World_IPv6_Day_and_World_IPv6_Launch_Day#World_IPv6_Day
+    * Und der Launch: https://en.wikipedia.org/wiki/World_IPv6_Day_and_World_IPv6_Launch_Day#World_IPv6_Launch
+* "Launch" bedeutet konkret, dass beide Netze parallel existieren und Domainnamen müssen im DNS sowohl auf IPv4 als auch IPv6 aufgelöst werden können
+* Per RFC ist definiert, dass zuerst versucht wird die IPv6 Adresse aufzulösen
+* Basti fragt sich warum AWS und Co. noch nicht IPv6 eingeführt ist
+    * Große Netzwerkinfrastruktur löst Dinge oft in Hardware, ein Austausch ist daher nicht so einfach
+    * Sehr große Anbieter haben sehr komplexe Setups mit sehr vielen Systemen
+    * Ein gewisses Maß an Nostalgie lässt sich auch nicht abstreiten ;-)
+    * unzähliger weitere Gründe an die man gar nicht denken mag…
+* Neben der Infrastruktur gibt es ja auch noch die Endgeräte (Für Christian sind Endgeräte die Router bei den Leuten zu Hause, Anm.d.Red.)
+    * Sehr viele Endgeräte die nur IPv4 können und nie was anderes können werden
+* Grundsätzliches Problem: IPv6 kann man nicht verkaufen, daher muss man wirtschaftlich den regulären Lebenszyklus der Gerätschaften abwarten, um diese zu erneuern
+* Endgeräte im Sinne von, dass wo der Nutzer vorsieht, sind alle vollständig und stabil IPv6 fähig
+* Wenn Geräte nicht IPv6 können sollten sie am besten ignorant sein und nicht kaputt gehen, wenn ihnen jemand eine IPv6-Adresse andrehen will
+* Tests hierzu wurden u.a. von Akamai und Google durchgeführt
+* Um Fehlverhalten in Browsern zu verhindern, wurde Happy Eyeballs entwickelt: https://en.wikipedia.org/wiki/Happy_Eyeballs
+    * Der Browser erkennt sehr schnell ob IPv6 geht und wenn nicht geht man auf IPv4
+* Um als Dienstanbieter testen zu können wie die IPv6 Konnektivität der Nutzer ist werden einige Teile nur über IPv6 bzw. IPv4 zugänglich gemacht
+    * Whitelisting auf Providerebene
+    * Wird jetzt nicht mehr gemacht
+* Kein konkreter Austausch zwischen Diensteanbieter und ISP
+* Die Topologie und das Routing bei IPv6 und IPv4 sind nicht zwingend gleich
+* Am Ende ist der Weg zwischen Dienst und Nutzer, dass was am längsten bei der Umstellung braucht
+
+
+### Tunnel (01:15:46)
+
+* Wenn man umbedingt IPv6 haben will aber der Provider es noch nicht anbietet oder die Hardware zu Hause es nicht kann, gibt es die Möglichkeit einen Tunnel zu verwenden
+* NetCologne bietet auch einen solchen Tunnelendpunkt im Rahmen des SixXS-Projektes an (https://www.sixxs.net/main/)
+* Nicht zu verwechseln mit Dual-Stack, dass Equipment weiß nichts von IPv6
+* Unterschiedliche Möglichkeiten: Netz auf einen Router zuweisen lassen, IPv6 auf ein Gerät
+* Neben den reinen Fakten zu IPv6 muss man als ISP auch Erfahrung im Betrieb haben und dafür eignet sich der SixXS-PoP hervorragend
+* SixXS-Tunnel ist sein 2010 in Betrieb, lange bevor IPv6 für den Endkunden überhaupt in konkreter Planung war
+* Das war möglich, weil der Ausbau des Backbones seit 2005 statt fand
+
+
+### Stufen der Umsetzung (01:24:00)
+
+* 2005 - Zuteilung eines Netzblocks
+* Ab da Umstellung des Backbones
+* 2010 - SixXS PoP
+* Ab 2011 begonnen Serverdienste auf IPv6-Betrieb aufzurüsten
+* Ende 2011 waren alle Dienste über IPv6 erreichbar
+* Mailverkehr zwischen den Servern geschieht mittlerweile zum Großteil über IPv6
+* IPv6 Konnektivität bei sich selbst testen
+    * Google Chrome Plugin: <BASTI HIER LINK EINFÜGEN>
+    * Testseite von NetCologne: http://ipv6-test.netcologne.de
+    * The dancing kame: http://www.kame.net
+* AirPort Extreme konnte in einer bestimmten Konstellation das IPv6 Netz nicht ins interne Netz weitertragen
+* IPv6 ist bei NetCologne auf Ebene der Dienste abgeschlossen
+* Für PPPoE (DSL) ist es auch abgeschlossen
+* Für Kabelkunden ist die Umstellung in den letzten Zügen
+* Technischer Unterschied zwischen Kabel- und DSL-Kunden sehr grundlegend, daher getrennte Umstellung
+    * Wesentlicher Unterschied an dieser Stelle: Konfiguration des Internetzugangs
+    * DSL: PPPoE
+    * Kabel: Direkt DHCP vom CMTS (https://en.wikipedia.org/wiki/Cable_modem_termination_system)
+* Grundsätzlich ginge das bei DSL natürlich auch, ist aber historisch nun so wie es ist
+* Bei Kabel ist das die unterliegende Technik ausschlaggebend gewesen. Stichwort an dieser Stelle: Shared Medium
+* Auch wenn es ähnlich klingt ist die automatische Konfiguration der DSL-Anschlüsse nicht damit zu verwechseln
+* Umstellung für den Kunden extrem konservativ
+* Explizites Nachfragen der Kunden notwendig und zusätzlich hatten NetCologne Mitarbeiter IPv6 konifguriert
+* Erst als man sich weitestgehend sicher war, wurde es für alle freigeschaltet
+* Nicht technische Aspekte bei der Umsetzung
+    * Diagnosewerkzeuge müssen erstellt werden
+    * Support muss geschult werden
+* Während der Umsetzung findet man dann natürlich auch noch Bugs in der verwendeten Software von namhaften Herstellern, diese müssen auch erst behoben werden
+* Selbst ein so "kleiner" Provider wie NetCologne findet immer noch Probleme
+* 2011 in sehr vielen Updates IPv6 relevante Änderungen
+* Um den Jahreswechsel 2013/2014 wurde flächendeckend IPv6 angeschaltet
+* Am Ende keine Probleme, dank einer sehr sorgfältigen Vorbereitung
+* Was noch nicht gemacht wurde: Die Endgeräte wurden nicht so konfiguriert, dass sie IPv6 auch aktiv anfordern sollen
+
+
+### Fazit & Ausblick (01:44:00)
+
+* Bei NetCologne hoher einstelliger Prozentsatz mit IPv6 unterwegs
+* Aus der Abteilung kuriose Fehler: Alte Outlook-Version stellt den Betrieb ein, wenn ein AAAA-Record ausgeliefert wird
+* Verantwortung bei solchen Fehlern liegt bei NetCologne auch wenn sie den Fehler selbst nicht beheben können
+* Insgesamt IPv6-Traffic bei Google in Deutschland: ~9% (https://www.google.com/intl/en/ipv6/statistics.html#tab=ipv6-adoption)
+* Wachstum steigt exponentiell: Jedes neue Gerät, jeder neue Anschluss wird direkt IPv6 bekommen
+* Bei Email ist es der Löwenanteil bei Server-Server Kommunikation
+* Besser erst alle Dienste umgestellt und langsam wachsende Zugriffe, als andersrum
+* Glaskugel: In drei bis fünf Jahren die Mehrheit der Zugriffe via IPv6
+* Zu unterscheiden ist zwischen Zugriffen und Datenvolumen
+* Wichtiger Schritt: Umstellung bei Cloud-Provider, und damit auch Dienste wie Netflix die zu Spitzenzeiten 1/3 des Traffics in den USA ausmachen
+* Offene Baustellen bei NetCologne:
+    * Kabelkunden und öffentliches WLAN (https://www.netcologne.de/ueber-uns/unternehmen/presse/mitteilung/6866/) mit IPv6 versorgen
+* Endgerätehersteller werden noch was brauchen
+* Im Hintergrund ist aber alles ordentlich vorbereitet]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Wir haben mit Christian Rohmann über die Einführung von IPv6 bei dem lokalen ISP NetCologne gesprochen. Angefangen bei technischen Grundlagen, wie das Internet überhaupt zum Kunden kommt über was IPv6 überhaupt ist bis hin zu der mehrstufigen Umstellung der beteiligten Infrastruktur. Das Ergebnis jahrelanger Arbeit ist im besten Fall, dass der Kunden nicht mal merkt, dass sich etwas geändert hat.</p>
+
+<h3>Unser Gast (00:00:00)</h3>
+
+<ul>
+<li>Christian Rohmann</li>
+<li>Arbeitet bei NetCologne: <a href="http://netcologne.de">http://netcologne.de</a></li>
+<li>&quot;NetCologne macht Internet&quot;... und Telefon... und ein paar Dienste drumherum</li>
+<li>Christian arbeitet im Bereich Network Engineering und Design, genauer um die Infrastruktur und Dienste</li>
+</ul>
+
+<h3>DSL Zuhause (00:02:40)</h3>
+
+<ul>
+<li>Die DSL-Box/Router/&quot;FritzBox&quot; meldet sich im Netz mit ihrer Identifikation und bekommt automatisch ihre Konfiguration</li>
+<li>Alternativ muss man alle Zugangsdaten, Netzwerkeinstellungen etc. selber machen</li>
+<li>Hybrid Fibre Cable/Coaxial (HFC): <a href="https://en.wikipedia.org/wiki/Hybrid_fibre-coaxial">https://en.wikipedia.org/wiki/Hybrid_fibre-coaxial</a>
+
+<ul>
+<li>Authentifizierung via DOCSIS: <a href="https://en.wikipedia.org/wiki/DOCSIS">https://en.wikipedia.org/wiki/DOCSIS</a></li>
+<li>Konfiguration quasi via DHCP</li>
+</ul></li>
+<li>Digital Subscriber Line (DSL): <a href="https://en.wikipedia.org/wiki/DSL">https://en.wikipedia.org/wiki/DSL</a>
+
+<ul>
+<li>z.B. via Kupfer oder Glasfaser</li>
+<li>Digital subscriber line access multiplexer (DSLAM): <a href="https://en.wikipedia.org/wiki/Dslam">https://en.wikipedia.org/wiki/Dslam</a></li>
+<li>Point-to-point protocol over Ethernet (PPPoE): <a href="https://en.wikipedia.org/wiki/Pppoe">https://en.wikipedia.org/wiki/Pppoe</a></li>
+<li>Broadband remote access server: (BRAS): <a href="https://en.wikipedia.org/wiki/Broadband_Remote_Access_Server">https://en.wikipedia.org/wiki/Broadband_Remote_Access_Server</a></li>
+<li>Authentifizierung gegenüber BRAS über PPPoE</li>
+</ul></li>
+</ul>
+
+<h3>IPv4 (00:08:50)</h3>
+
+<ul>
+<li>IPv6: <a href="https://en.wikipedia.org/wiki/Ipv6">https://en.wikipedia.org/wiki/Ipv6</a></li>
+<li>In Köln gibt es jetzt von NetCologne IPv6 für alle!</li>
+<li>IPv4: <a href="https://en.wikipedia.org/wiki/Ipv4">https://en.wikipedia.org/wiki/Ipv4</a></li>
+<li>IPv4 Adressen werden knapp, 32 Bit Adressen, also ~4 Mrd. Adressen</li>
+<li>Classless Inter-Domain Routing (CIDR): <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing</a></li>
+<li>Network Address Translation (NAT): <a href="https://en.wikipedia.org/wiki/Network_address_translation">https://en.wikipedia.org/wiki/Network_address_translation</a></li>
+<li>Private Network Adresses: <a href="https://en.wikipedia.org/wiki/Private_IP_address">https://en.wikipedia.org/wiki/Private_IP_address</a>
+
+<ul>
+<li>z.B. 192.168.0.0 - 192.168.255.255 (192.168.0.0/16) oder 10.0.0.0 - 10.255.255.255 (10.0.0.0/8)</li>
+<li>NAT ist kein Security Feature(!), das ist nur ein notwendiges Übel.</li>
+<li>Direkte Verbindungen, z.B. für File Sharing, sind per se nicht ohne weiteres Möglich</li>
+</ul></li>
+<li>Port Forwarding: <a href="https://en.wikipedia.org/wiki/Port_forwarding">https://en.wikipedia.org/wiki/Port_forwarding</a></li>
+</ul>
+
+<h3>IPv6 (00:16:30)</h3>
+
+<ul>
+<li>IPv5: <a href="https://en.wikipedia.org/wiki/Ipv5">https://en.wikipedia.org/wiki/Ipv5</a></li>
+<li>IPv6: Angefangen ~1996</li>
+<li>VIEL Mehr Adressen: 128 Bit Adressen, 2^128 Adressen</li>
+<li>Die Netze in IPv6 ist strenger strukturiert als IPv4</li>
+<li>Den Netzteil, die ersten 64 bit einer IPv6 Adresse nennt man Prefix, den Rest nennt man Interface</li>
+<li>Stateless Autoconfiguration: <a href="https://en.wikipedia.org/wiki/Ipv6#Stateless_Autoconfiguration">https://en.wikipedia.org/wiki/Ipv6#Stateless_Autoconfiguration</a>
+
+<ul>
+<li>jedes Gerät kann sich seine eigene Adresse aussuchen und sich selber konfigurieren</li>
+</ul></li>
+<li>DHCPv6: <a href="https://en.wikipedia.org/wiki/DHCPv6">https://en.wikipedia.org/wiki/DHCPv6</a></li>
+<li>Link Local Adress: <a href="https://en.wikipedia.org/wiki/Ipv6#Link_local_address">https://en.wikipedia.org/wiki/Ipv6#Link_local_address</a>
+
+<ul>
+<li>Nur gültig für alles, was nicht geroutet wird</li>
+</ul></li>
+<li>Global Unicast Adress: <a href="https://en.wikipedia.org/wiki/Ipv6#Create_a_global_address">https://en.wikipedia.org/wiki/Ipv6#Create_a_global_address</a>
+
+<ul>
+<li>Prefix vom Netz + Interface Adresse generieren</li>
+<li>Der Router broadcastet im Netz regelmäßig, dass er ein Netz hat und welchen Prefix zu verwenden ist</li>
+</ul></li>
+<li>Prefix Delegation: <a href="https://en.wikipedia.org/wiki/Prefix_delegation">https://en.wikipedia.org/wiki/Prefix_delegation</a>
+
+<ul>
+<li>Der Router fragt beim ISP nach einem Prefix</li>
+<li>Bei NetCologne bekommt jeder Kunde ein /48 Prefix, kann also 65.536 Netze aufbauen</li>
+</ul></li>
+<li>Router Advertisement</li>
+<li>NetCologne hat 2005 angefangen mit einem /32 Netz
+
+<ul>
+<li>Wenn jeder ein /32 Netz bekommt, kann man so viele ISPs anbieten, wie es bisher insgesamt theoretische Adressen im IPv4 Internet gibt!</li>
+<li>Mittlerweile hat NetCologne ein /29 Netz</li>
+</ul></li>
+<li>Regional Internet Registry: <a href="https://en.wikipedia.org/wiki/Regional_Internet_registry">https://en.wikipedia.org/wiki/Regional_Internet_registry</a>
+
+<ul>
+<li>Erlaubt die Zuordnung von Adressen zu Regionen</li>
+<li>NetCologne ist dann eine Local Internet Registry <a href="https://en.wikipedia.org/wiki/Local_Internet_registry">https://en.wikipedia.org/wiki/Local_Internet_registry</a></li>
+<li>Verwaltet autonom das zugeteilte Netz</li>
+</ul></li>
+<li>Nächster Schritt nach dem Netz ist die Kommunikation mit anderen Netzen</li>
+<li>Peering (<a href="https://en.wikipedia.org/wiki/Peering">https://en.wikipedia.org/wiki/Peering</a>) mit direkten Partnern und Upstream mit indirekten Partnern</li>
+<li>Wichtig als ISP: Mit IPv6 darf es nicht schlechter für den Kunden werden</li>
+<li>Daher: Sehr viele stabile und redundante Verbindungen in das restliche Internet</li>
+<li>War in den ersten Jahren einfach nicht gegeben</li>
+<li>Es gab zwischendurch 2 oder 3 Internetze (IPv6)</li>
+</ul>
+
+<h3>IPv6 und IPv4 parallel (00:42:23)</h3>
+
+<ul>
+<li>Dual Stack (<a href="https://en.wikipedia.org/wiki/Dual-stack#Dual_IP_stack_implementation">https://en.wikipedia.org/wiki/Dual-stack#Dual_IP_stack_implementation</a>)</li>
+<li>Technisch sind das IPv4 und IPv6 Netz vollständig getrennt</li>
+<li>Andere Möglichkeiten mit nur IPv6 in das IPv4 Netz zu kommen</li>
+<li>Verwendung eines Proxies (passiert auf Application Layer)
+
+<ul>
+<li>Geht auf mit SSL da die Zertifikate auf den Common Name ausgestellt sind</li>
+<li>Geht aber nur für HTTP-Dienste</li>
+</ul></li>
+<li>Mail ist auf Grund der begrenzten Gegenstellen einfacher</li>
+<li>Probleme bei Diensten wie VoIP</li>
+<li>Themen vor allem in Asien sehr relevant, da dort keine IPv4 Adressen mehr verfügbar sind</li>
+<li>Um einen transparenten Parallelbetrieb zu leisten muss man auf IP oder TCP Layer runter
+
+<ul>
+<li>Carrier-grade NAT: <a href="https://en.wikipedia.org/wiki/Carrier_grade_NAT">https://en.wikipedia.org/wiki/Carrier_grade_NAT</a></li>
+<li>Dual-Stack Lite: <a href="https://en.wikipedia.org/wiki/Dual-Stack_Lite#Dual-Stack_Lite_.28DS-Lite.29">https://en.wikipedia.org/wiki/Dual-Stack_Lite#Dual-Stack_Lite_.28DS-Lite.29</a></li>
+<li>Dual-Stack Lite muss man machen, wenn man nicht mehr genug IPv4 Adressen für alle hat</li>
+</ul></li>
+<li>Carrier-grade NAT will man nicht haben</li>
+<li>IPv4 wird noch auf unbestimmte Zeit weiterhin existieren</li>
+<li>Meilensteine für das Internet: IPv6 Tage
+
+<ul>
+<li>Erst ein Test: <a href="https://en.wikipedia.org/wiki/World_IPv6_Day_and_World_IPv6_Launch_Day#World_IPv6_Day">https://en.wikipedia.org/wiki/World_IPv6_Day_and_World_IPv6_Launch_Day#World_IPv6_Day</a></li>
+<li>Und der Launch: <a href="https://en.wikipedia.org/wiki/World_IPv6_Day_and_World_IPv6_Launch_Day#World_IPv6_Launch">https://en.wikipedia.org/wiki/World_IPv6_Day_and_World_IPv6_Launch_Day#World_IPv6_Launch</a></li>
+</ul></li>
+<li>&quot;Launch&quot; bedeutet konkret, dass beide Netze parallel existieren und Domainnamen müssen im DNS sowohl auf IPv4 als auch IPv6 aufgelöst werden können</li>
+<li>Per RFC ist definiert, dass zuerst versucht wird die IPv6 Adresse aufzulösen</li>
+<li>Basti fragt sich warum AWS und Co. noch nicht IPv6 eingeführt ist
+
+<ul>
+<li>Große Netzwerkinfrastruktur löst Dinge oft in Hardware, ein Austausch ist daher nicht so einfach</li>
+<li>Sehr große Anbieter haben sehr komplexe Setups mit sehr vielen Systemen</li>
+<li>Ein gewisses Maß an Nostalgie lässt sich auch nicht abstreiten ;-)</li>
+<li>unzähliger weitere Gründe an die man gar nicht denken mag…</li>
+</ul></li>
+<li>Neben der Infrastruktur gibt es ja auch noch die Endgeräte (Für Christian sind Endgeräte die Router bei den Leuten zu Hause, Anm.d.Red.)
+
+<ul>
+<li>Sehr viele Endgeräte die nur IPv4 können und nie was anderes können werden</li>
+</ul></li>
+<li>Grundsätzliches Problem: IPv6 kann man nicht verkaufen, daher muss man wirtschaftlich den regulären Lebenszyklus der Gerätschaften abwarten, um diese zu erneuern</li>
+<li>Endgeräte im Sinne von, dass wo der Nutzer vorsieht, sind alle vollständig und stabil IPv6 fähig</li>
+<li>Wenn Geräte nicht IPv6 können sollten sie am besten ignorant sein und nicht kaputt gehen, wenn ihnen jemand eine IPv6-Adresse andrehen will</li>
+<li>Tests hierzu wurden u.a. von Akamai und Google durchgeführt</li>
+<li>Um Fehlverhalten in Browsern zu verhindern, wurde Happy Eyeballs entwickelt: <a href="https://en.wikipedia.org/wiki/Happy_Eyeballs">https://en.wikipedia.org/wiki/Happy_Eyeballs</a>
+
+<ul>
+<li>Der Browser erkennt sehr schnell ob IPv6 geht und wenn nicht geht man auf IPv4</li>
+</ul></li>
+<li>Um als Dienstanbieter testen zu können wie die IPv6 Konnektivität der Nutzer ist werden einige Teile nur über IPv6 bzw. IPv4 zugänglich gemacht
+
+<ul>
+<li>Whitelisting auf Providerebene</li>
+<li>Wird jetzt nicht mehr gemacht</li>
+</ul></li>
+<li>Kein konkreter Austausch zwischen Diensteanbieter und ISP</li>
+<li>Die Topologie und das Routing bei IPv6 und IPv4 sind nicht zwingend gleich</li>
+<li>Am Ende ist der Weg zwischen Dienst und Nutzer, dass was am längsten bei der Umstellung braucht</li>
+</ul>
+
+<h3>Tunnel (01:15:46)</h3>
+
+<ul>
+<li>Wenn man umbedingt IPv6 haben will aber der Provider es noch nicht anbietet oder die Hardware zu Hause es nicht kann, gibt es die Möglichkeit einen Tunnel zu verwenden</li>
+<li>NetCologne bietet auch einen solchen Tunnelendpunkt im Rahmen des SixXS-Projektes an (<a href="https://www.sixxs.net/main/">https://www.sixxs.net/main/</a>)</li>
+<li>Nicht zu verwechseln mit Dual-Stack, dass Equipment weiß nichts von IPv6</li>
+<li>Unterschiedliche Möglichkeiten: Netz auf einen Router zuweisen lassen, IPv6 auf ein Gerät</li>
+<li>Neben den reinen Fakten zu IPv6 muss man als ISP auch Erfahrung im Betrieb haben und dafür eignet sich der SixXS-PoP hervorragend</li>
+<li>SixXS-Tunnel ist sein 2010 in Betrieb, lange bevor IPv6 für den Endkunden überhaupt in konkreter Planung war</li>
+<li>Das war möglich, weil der Ausbau des Backbones seit 2005 statt fand</li>
+</ul>
+
+<h3>Stufen der Umsetzung (01:24:00)</h3>
+
+<ul>
+<li>2005 - Zuteilung eines Netzblocks</li>
+<li>Ab da Umstellung des Backbones</li>
+<li>2010 - SixXS PoP</li>
+<li>Ab 2011 begonnen Serverdienste auf IPv6-Betrieb aufzurüsten</li>
+<li>Ende 2011 waren alle Dienste über IPv6 erreichbar</li>
+<li>Mailverkehr zwischen den Servern geschieht mittlerweile zum Großteil über IPv6</li>
+<li>IPv6 Konnektivität bei sich selbst testen
+
+<ul>
+<li>Google Chrome Plugin: <BASTI HIER LINK EINFÜGEN></li>
+<li>Testseite von NetCologne: <a href="http://ipv6-test.netcologne.de">http://ipv6-test.netcologne.de</a></li>
+<li>The dancing kame: <a href="http://www.kame.net">http://www.kame.net</a></li>
+</ul></li>
+<li>AirPort Extreme konnte in einer bestimmten Konstellation das IPv6 Netz nicht ins interne Netz weitertragen</li>
+<li>IPv6 ist bei NetCologne auf Ebene der Dienste abgeschlossen</li>
+<li>Für PPPoE (DSL) ist es auch abgeschlossen</li>
+<li>Für Kabelkunden ist die Umstellung in den letzten Zügen</li>
+<li>Technischer Unterschied zwischen Kabel- und DSL-Kunden sehr grundlegend, daher getrennte Umstellung
+
+<ul>
+<li>Wesentlicher Unterschied an dieser Stelle: Konfiguration des Internetzugangs</li>
+<li>DSL: PPPoE</li>
+<li>Kabel: Direkt DHCP vom CMTS (<a href="https://en.wikipedia.org/wiki/Cable_modem_termination_system">https://en.wikipedia.org/wiki/Cable_modem_termination_system</a>)</li>
+</ul></li>
+<li>Grundsätzlich ginge das bei DSL natürlich auch, ist aber historisch nun so wie es ist</li>
+<li>Bei Kabel ist das die unterliegende Technik ausschlaggebend gewesen. Stichwort an dieser Stelle: Shared Medium</li>
+<li>Auch wenn es ähnlich klingt ist die automatische Konfiguration der DSL-Anschlüsse nicht damit zu verwechseln</li>
+<li>Umstellung für den Kunden extrem konservativ</li>
+<li>Explizites Nachfragen der Kunden notwendig und zusätzlich hatten NetCologne Mitarbeiter IPv6 konifguriert</li>
+<li>Erst als man sich weitestgehend sicher war, wurde es für alle freigeschaltet</li>
+<li>Nicht technische Aspekte bei der Umsetzung
+
+<ul>
+<li>Diagnosewerkzeuge müssen erstellt werden</li>
+<li>Support muss geschult werden</li>
+</ul></li>
+<li>Während der Umsetzung findet man dann natürlich auch noch Bugs in der verwendeten Software von namhaften Herstellern, diese müssen auch erst behoben werden</li>
+<li>Selbst ein so &quot;kleiner&quot; Provider wie NetCologne findet immer noch Probleme</li>
+<li>2011 in sehr vielen Updates IPv6 relevante Änderungen</li>
+<li>Um den Jahreswechsel 2013/2014 wurde flächendeckend IPv6 angeschaltet</li>
+<li>Am Ende keine Probleme, dank einer sehr sorgfältigen Vorbereitung</li>
+<li>Was noch nicht gemacht wurde: Die Endgeräte wurden nicht so konfiguriert, dass sie IPv6 auch aktiv anfordern sollen</li>
+</ul>
+
+<h3>Fazit &amp; Ausblick (01:44:00)</h3>
+
+<ul>
+<li>Bei NetCologne hoher einstelliger Prozentsatz mit IPv6 unterwegs</li>
+<li>Aus der Abteilung kuriose Fehler: Alte Outlook-Version stellt den Betrieb ein, wenn ein AAAA-Record ausgeliefert wird</li>
+<li>Verantwortung bei solchen Fehlern liegt bei NetCologne auch wenn sie den Fehler selbst nicht beheben können</li>
+<li>Insgesamt IPv6-Traffic bei Google in Deutschland: ~9% (<a href="https://www.google.com/intl/en/ipv6/statistics.html#tab=ipv6-adoption">https://www.google.com/intl/en/ipv6/statistics.html#tab=ipv6-adoption</a>)</li>
+<li>Wachstum steigt exponentiell: Jedes neue Gerät, jeder neue Anschluss wird direkt IPv6 bekommen</li>
+<li>Bei Email ist es der Löwenanteil bei Server-Server Kommunikation</li>
+<li>Besser erst alle Dienste umgestellt und langsam wachsende Zugriffe, als andersrum</li>
+<li>Glaskugel: In drei bis fünf Jahren die Mehrheit der Zugriffe via IPv6</li>
+<li>Zu unterscheiden ist zwischen Zugriffen und Datenvolumen</li>
+<li>Wichtiger Schritt: Umstellung bei Cloud-Provider, und damit auch Dienste wie Netflix die zu Spitzenzeiten 1/3 des Traffics in den USA ausmachen</li>
+<li>Offene Baustellen bei NetCologne:
+
+<ul>
+<li>Kabelkunden und öffentliches WLAN (<a href="https://www.netcologne.de/ueber-uns/unternehmen/presse/mitteilung/6866/">https://www.netcologne.de/ueber-uns/unternehmen/presse/mitteilung/6866/</a>) mit IPv6 versorgen</li>
+</ul></li>
+<li>Endgerätehersteller werden noch was brauchen</li>
+<li>Im Hintergrund ist aber alles ordentlich vorbereitet</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST034" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Unser Gast" />
+          
+            <psc:chapter start="00:02:40" title="DSL Zuhause" />
+          
+            <psc:chapter start="00:08:50" title="IPv4" />
+          
+            <psc:chapter start="00:16:30" title="IPv6" />
+          
+            <psc:chapter start="00:42:23" title="IPv6 und IPv4 parallel" />
+          
+            <psc:chapter start="01:15:46" title="Tunnel" />
+          
+            <psc:chapter start="01:24:00" title="Stufen der Umsetzung" />
+          
+            <psc:chapter start="01:44:00" title="Fazit &amp; Ausblick" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
