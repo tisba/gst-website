@@ -478,7 +478,7 @@ DOS zu verhindern.</li>
 
 <ul>
 <li>Cluster Shell (<a href="http://sourceforge.net/projects/clusterssh/">http://sourceforge.net/projects/clusterssh/</a>)</li>
-<li>Oder einfach mit iTerm2 (&quot;Shell&quot; -> &quot;Broadcast Input&quot;)</li>
+<li>Oder einfach mit iTerm2 (&quot;Shell&quot; -&gt; &quot;Broadcast Input&quot;)</li>
 </ul></li>
 <li>Echte Automatisierung:
 
@@ -948,7 +948,7 @@ Controllers, Service Layer</li>
 <li>GitHub Pages (<a href="http://pages.github.com/">http://pages.github.com/</a>)</li>
 <li>Muss nicht nur Jekyll sein…</li>
 <li><a href="http://neilmiddleton.com/the-composability-of-buildpacks/">http://neilmiddleton.com/the-composability-of-buildpacks/</a></li>
-<li><a href="http://middlemanapp.com/">http://middlemanapp.com/</a> -> Heroku</li>
+<li><a href="http://middlemanapp.com/">http://middlemanapp.com/</a> -&gt; Heroku</li>
 <li>Auch gut für Bloggen im Zug</li>
 </ul></li>
 <li>Empfehlung: Syntax-Sonntag bei Ruby-Mine (<a href="http://www.ruby-mine.de/">http://www.ruby-mine.de/</a>)
@@ -1158,7 +1158,7 @@ mruby hier eine Lücke schließen</li>
 <ul>
 <li>Es gibt <em>kein</em> <code>require</code></li>
 <li>Es gibt <code>mgem</code> (<a href="https://github.com/bovi/mgem">https://github.com/bovi/mgem</a>)</li>
-<li><strong>Einschub:</strong> <a href="http://mruby.sh/">http://mruby.sh/</a> -> Englische Übersetzung der japanischen News
+<li><strong>Einschub:</strong> <a href="http://mruby.sh/">http://mruby.sh/</a> -&gt; Englische Übersetzung der japanischen News
 von Daniel Bovensiepen (<a href="http://www.bovensiepen.net/">http://www.bovensiepen.net/</a>)</li>
 <li>mgems sind quasi C-Libs</li>
 <li>Stdlib ist quasi nicht existent</li>
@@ -1210,7 +1210,7 @@ Features</li>
 <li>mruby wurde mit dem Gedanke entwickelt eingebettet zu werden, daher
 sind entsprechende Hooks vorgesehen C-Strukturen in Ruby abzubilden</li>
 <li>V8 verwendet UTF-16, Arango verwendet UTF-8</li>
-<li>mruby verwendet auch UTF-8 -> Overhead fällt weg</li>
+<li>mruby verwendet auch UTF-8 -&gt; Overhead fällt weg</li>
 <li>Frank hat mit LLVM rum gespielt und hat aus mruby den Faktor 2-3 raus geholt</li>
 <li>Was noch viel für die Performance tun kann ist Method-Caching</li>
 <li>Momentan ist mruby noch Alpha-Status
@@ -1832,7 +1832,7 @@ Ruby/Rails Security und anderen geilen Scheiß.</p>
 
 <ul>
 <li>Ruby auf Python: Topaz (<a href="http://docs.topazruby.com/en/latest/blog/announcing-topaz/">http://docs.topazruby.com/en/latest/blog/announcing-topaz/</a>)</li>
-<li>Basti erinnert ein Projekt für eine True-Ruby-Sandbox: Ruby -> Rubyracer (V8) -> emscripted-ruby -> Ruby (<a href="https://github.com/cantino/ruby_on_ruby">https://github.com/cantino/ruby_on_ruby</a>)</li>
+<li>Basti erinnert ein Projekt für eine True-Ruby-Sandbox: Ruby -&gt; Rubyracer (V8) -&gt; emscripted-ruby -&gt; Ruby (<a href="https://github.com/cantino/ruby_on_ruby">https://github.com/cantino/ruby_on_ruby</a>)</li>
 <li>Yanked Gems sind doof :-) (net-scp, net-ssh-gateway, newrelic)</li>
 </ul>
 
@@ -2611,7 +2611,7 @@ aber nicht ausprobiert: <a href="https://github.com/bryanwb/chef-rewind">https:/
 <li>Fragewürdige Seite: &#39;BESTVPNZ&#39;</li>
 <li>VPN-Vergleich-Liste
 <a href="http://torrentfreak.com/vpn-services-that-take-your-anonymity-seriously-2013-edition-130302/">http://torrentfreak.com/vpn-services-that-take-your-anonymity-seriously-2013-edition-130302/</a></li>
-<li>Warum? -> Wenn man mal irgendwo ist wo es man nicht weiß was man für
+<li>Warum? -&gt; Wenn man mal irgendwo ist wo es man nicht weiß was man für
 Internet bekommt.</li>
 <li>Aktueller Favorit ist BlackVPN: <a href="https://www.blackvpn.com/services/">https://www.blackvpn.com/services/</a></li>
 <li>Einwurf: 30C3 Sneak Preview: <a href="https://alpha.app.net/evelyn/post/4178558">https://alpha.app.net/evelyn/post/4178558</a></li>
@@ -2630,7 +2630,7 @@ Internet bekommt.</li>
 <h3>Vermischtes (01:14:31)</h3>
 
 <ul>
-<li><a href="http://flattr.kejsarmakten.se/github/">http://flattr.kejsarmakten.se/github/</a> -> Flattr Button bei GitHub</li>
+<li><a href="http://flattr.kejsarmakten.se/github/">http://flattr.kejsarmakten.se/github/</a> -&gt; Flattr Button bei GitHub</li>
 <li><a href="https://www.gittip.com/">https://www.gittip.com/</a></li>
 <li>Sublime statt Vim:
 <a href="http://delvarworld.github.com/blog/2013/03/16/just-use-sublime-text/">http://delvarworld.github.com/blog/2013/03/16/just-use-sublime-text/</a></li>
@@ -3313,7 +3313,7 @@ philosophieren wir gegen Ende noch etwas über den PC Markt.</p>
 <li>Simon macht mit Lucene NoSQL seit 2001</li>
 <li>Neo4J verwendet Lucene unter der Haube</li>
 <li>Lucene ist ein sehr performanter Key-Value-Store</li>
-<li>&quot;Ich brauche keine Volltextsuche, ich brauch kein elasticsearch&quot; -> Die Anwendungsbereiche sind sehr viel größer (z.B. Lucene als sehr schnelle Hashmap zu nutzen)</li>
+<li>&quot;Ich brauche keine Volltextsuche, ich brauch kein elasticsearch&quot; -&gt; Die Anwendungsbereiche sind sehr viel größer (z.B. Lucene als sehr schnelle Hashmap zu nutzen)</li>
 </ul></li>
 <li>elasticsearch ist durch sein append-only Ansatz extrem auf schnelles Schreiben optimiert und begünstigt zudem den Einsatz von SSDs</li>
 <li>Lucene 4 ist seit Oktober 2012 draußen mit massiven Verbesserungen bei der Performance und den Datenstrukturen</li>
@@ -6822,7 +6822,7 @@ bis hin zur Preisfindung und Vermarktung.</p>
 <ul>
 <li>Lernen und Erinnern der richtigen Gesten</li>
 <li>Lernen und Erinnern welche Gegner gegen welche Zauber anfällig sind</li>
-<li>Bsp.: Brennender Gegner -> KEIN Feuer</li>
+<li>Bsp.: Brennender Gegner -&gt; KEIN Feuer</li>
 </ul></li>
 <li>Von Beginn an alle Zauber verfügbar
 
@@ -9668,7 +9668,7 @@ Architekturstil, kommen.</p>
 <li>AWS-Setup
 
 <ul>
-<li>Eigenes Auto-Scaling: Mehr Builds -> mehr Server</li>
+<li>Eigenes Auto-Scaling: Mehr Builds -&gt; mehr Server</li>
 <li>Die größten Compute-Instanzen (c3.8xlarge) als Basis, Unterteilung mit LXC (<a href="https://linuxcontainers.org/">https://linuxcontainers.org/</a>)</li>
 <li>Ein Container mit einem vollständigen Ubuntu inkl. aller möglichen Abhängigkeiten</li>
 <li>Learning 1: Container eignen sich besser als dedizierte kleine Maschinen, weil mehr Speicher und CPU</li>
@@ -10354,6 +10354,340 @@ Architekturstil, kommen.</p>
             <psc:chapter start="01:24:00" title="Stufen der Umsetzung" />
           
             <psc:chapter start="01:44:00" title="Fazit &amp; Ausblick" />
+          
+          </psc:chapters>
+          
+        </item>
+        
+        <item>
+          <title>GST035 - Im DOM hört dich keiner schreien</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Wir sprachen mit Mario Heiderich über (Web-)Security</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst035.opus" length="44225273" type="audio/opus"/>
+          <guid isPermaLink="false">GST035</guid>
+          <pubDate>Fri, 29 Aug 2014 11:17:49 +0200</pubDate>
+          <itunes:duration>01:21:38</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis** Wir sprachen mit Mario Heiderich (@0x6D6172696F) über (Web-)Security, Pentesting und wie sich in der letzten Zeit das Feld gewandelt hat. Immer mehr Logik passiert im Browser womit sich die Angriffsflächen verschieben. Browser sind darüber hinaus hoch komplexe und oft angreifbare Softwaresysteme.
+
+Die Aufnahme ist vom 1.7.2014. Entschuldigt die späte Veröffentlichung.
+
+### Unser Gast (00:00:00)
+
+- Mario Heiderich, @0x6D6172696F
+- Hat einen Security Talk "Im DOM hört Dich keiner schreien" auf der enterJS gegeben: http://www.enterjs.de/
+- Mario's Security Firma: https://cure53.de/
+  - Nutzen wenig Scanner, mehr Handarbeit
+- Security Scanner finden keine "logischen Bugs"
+- RIPS: Statische Analyse von PHP Code: http://rips-scanner.sourceforge.net/
+
+
+### Terminologie & Methodologie (00:05:51)
+
+- Sources: Quellen von Input (User Input z.B.)
+- Sink: Stellen im Code, wo Input ankommt bzw. was mit ihm passiert
+- Input: Input :)
+- Getestet wird manchmal in VMs,  manchmal auf Test oder Staging Umgebungen oder auch in Produktion
+  - das hängt vom Kunden und Projekt ab
+- WAF: Web Application Firewall: https://en.wikipedia.org/wiki/Application_firewall
+- Erfolgsquote: 100% - "noch keine leeren Reports"
+- Eine Frage der Einstellung: Die einen Entwickler wollen Features bauen, andere Software kaputt machen
+- Scope
+  - "Ihr dürft nicht nach DoS suchen!"
+  - Abgrenzung, was in der Betrachtung liegt und was nicht
+- Vektor: Der Angriff an sich, z.B. ein String bei einer SQL Injection; oder Vektor kann ein ganzer Prozess oder Ablauf sein
+- Exploit: Nutzung eines Vektors mit einem Ziel: Beispiel String (Source) für SQL Injection (Vektor) nutzen, um Admin zu werden
+- Pwn2Own: https://en.wikipedia.org/wiki/Pwn2Own
+- Stuxnet: https://en.wikipedia.org/wiki/Stuxnet
+
+
+### Betätigungsfelder (00:22:20)
+
+- Marios Firma hat für alle möglichen Bereiche Spezialisten:
+  - Binary Pentesting
+  - Datenbanken
+  - Web/Browser/JavaScript/Flash
+  - Bruteforcing
+  - Cold Fusion
+  - Kryptographie, Kryptoanalyse
+  - Java
+
+
+### Neue und alte Probleme (00:24:30)
+
+- Es verlagert sich viel in den Browser
+- daher mehr und mehr Lücken in Richtung XSS, CSRF, …
+- NoSQL wird auch getestet
+- MongoDB führt JS in der Datenbank aus und zwar als `eval`!
+
+
+### Auf der Suche nach XSS und anderen Schwachstellen (00:27:00)
+
+- "Nennt sich doch mal constructor.constructor"
+  - oder "prototype"
+  - "__proto__"
+
+
+### Handhaben von Benutzerinput (00:28:30)
+
+- Validieren: Format explizit und strikt prüfen
+- Filtern: z.B. Single Quotes oder Kommata entfernen
+- Aber so einfach ist das nicht
+  - Strings (Quotes) verboten? was ist mit /i'm a string/.source
+  - 1..constructor.constructor
+- Sanitizing:
+  - "Escape den Input und Encode den Output"
+  - Es ist wichtig zu unterscheiden zwischen der Information die durch das Sanitizing soll, UND
+  - Kontext, wo die Information später verwendet werden soll
+
+
+### Back to Frontend Security (00:34:30)
+
+- Template Expressions Exploit, z.B. bei AngularJS: https://code.google.com/p/mustache-security/wiki/AngularJS
+- Der Browser ist die neue Sink
+- Security im Browser ist anders und komplexer als auf dem Server
+- Sehr viel mehr Wissen über konkrete Prozesse bei der Darstellung von HTML/CSS und der Ausführung von Javascript notwendig
+- Browser ist im Grunde "moving target"
+- Die Vielzahl der Browser bietet sehr viel Angriffsfläche
+- Vor allem im Kontext großer Unternehmen sind oft auch sehr alte Browser noch im Einsatz (IE6)
+- Eine Umstellung auf neuere Browser ist u.U. nicht immer möglich => Paradies für Pentesting
+
+
+### Im DOM hört dich keiner schreien (00:46:50)
+
+- Talk auf der enter.js (http://www.enterjs.de/abstracts#im-dom-hoert-dich-keiner-schreien-eine-reise-in-die-gruselige-schicht-zwischen-html-und-javascript)
+- Historie des DOMs
+- Verschiedene Probleme aufgezeigt, Bsp.: DOM-Clobbering
+  - Mit statischem HTML bestehende Variablen, Funktionen o.ä. überschreiben
+  - Ist im Grunde im Standard sogar definiertes Verhalten oO
+- Am Ende kann man sehr viel Spaß nur mit statischem HTML haben :-)
+- Was ist das DOM überhaupt
+  - Ein API zwischen einem Dokument und einer beliebigen Scripting-Sprache
+  - Ziel des DOM: Bereitstellung von Feature-Parität, dabei müssen einige Features explizit ausgeschlossen werden
+  - Bsp: CSS-History-Stealing (http://jeremiahgrossman.blogspot.de/2006/08/i-know-where-youve-been.html)
+- SVG bringt möglicherweise ganz neue Probleme mit
+  - Timing Attacke von Paul Stone mit Hilfe von SVG Filtern: http://www.contextis.com/documents/2/Browser_Timing_Attacks.pdf
+- Manchmal gibt es auch keinen echten Fix für Lücken, und selbst wenn, es gibt ja jetzt auch CSS Shader ;-)
+- Wie geht man vor um Lücken zu finden
+  - Viel Kreativität notwendig
+  - Man hört von einem Feature und denkt sich, da muss doch was gehen und dann wird halt so lange gebohrt bis man was findet ;-)
+- DOMPurify (https://github.com/cure53/DOMPurify) ist ein Client-seitiger Sanitzer, um verschiedenen Angriffen zu begegnen
+- Reaktion auf der Konferenz war vor allem gefasst :-)
+
+
+### Krypto im Browser und moderne APIs (01:07:45)
+
+- Grundsätzlich: Bedarf steigt an, Verbreitung nimmt zu
+- Man hört immer wieder von Problemen
+- Was kann man machen?
+- Antwort: "Ich habe keine Ahnung"
+- Aussage Mario: Wir sind noch nicht soweit, es zuverlässig einzusetzen.
+- Aber: Es ist auch nicht zum Scheitern verurteilt, aber es braucht noch einiges an Research
+- Seiten wie https://keybase.io machen das bereits
+  - Kann man machen, wenn die Seite 100% sicher und vor allem beweisbar sicher ist
+  - Ergo: Aufwand ist enorm hoch
+- Es gibt auch Bestrebungen vom W3C das Thema voranzutreiben: http://www.w3.org/TR/WebCryptoAPI/
+- Zusätzlich entstehen ganz neue APIs für den Zugriff auf mobile Devices
+  - Bsp: Android-Devices haben über nicht hörbare Töne miteinander kommuniziert 
+  - Exploits mit Sprachsynthese und Spracherkennung (Bsp: Cookies zwischen Tabs übertragen)
+- WebGL klingt kritisch, aber in dem Bereich gibt es in den letzten Jahren viel Forschung
+- WebSockets und WebRTC bietet hingegen auch viele Möglichkeiten]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis</strong> Wir sprachen mit Mario Heiderich (<a href="https://twitter.com/0x6D6172696F">@0x6D6172696F</a>) über (Web-)Security, Pentesting und wie sich in der letzten Zeit das Feld gewandelt hat. Immer mehr Logik passiert im Browser womit sich die Angriffsflächen verschieben. Browser sind darüber hinaus hoch komplexe und oft angreifbare Softwaresysteme.</p>
+
+<p>Die Aufnahme ist vom 1.7.2014. Entschuldigt die späte Veröffentlichung.</p>
+
+<h3>Unser Gast (00:00:00)</h3>
+
+<ul>
+<li>Mario Heiderich, <a href="https://twitter.com/0x6D6172696F">@0x6D6172696F</a></li>
+<li>Hat einen Security Talk &quot;Im DOM hört Dich keiner schreien&quot; auf der enterJS gegeben: <a href="http://www.enterjs.de/">http://www.enterjs.de/</a></li>
+<li>Mario&#39;s Security Firma: <a href="https://cure53.de/">https://cure53.de/</a>
+
+<ul>
+<li>Nutzen wenig Scanner, mehr Handarbeit</li>
+</ul></li>
+<li>Security Scanner finden keine &quot;logischen Bugs&quot;</li>
+<li>RIPS: Statische Analyse von PHP Code: <a href="http://rips-scanner.sourceforge.net/">http://rips-scanner.sourceforge.net/</a></li>
+</ul>
+
+<h3>Terminologie &amp; Methodologie (00:05:51)</h3>
+
+<ul>
+<li>Sources: Quellen von Input (User Input z.B.)</li>
+<li>Sink: Stellen im Code, wo Input ankommt bzw. was mit ihm passiert</li>
+<li>Input: Input :)</li>
+<li>Getestet wird manchmal in VMs,  manchmal auf Test oder Staging Umgebungen oder auch in Produktion
+
+<ul>
+<li>das hängt vom Kunden und Projekt ab</li>
+</ul></li>
+<li>WAF: Web Application Firewall: <a href="https://en.wikipedia.org/wiki/Application_firewall">https://en.wikipedia.org/wiki/Application_firewall</a></li>
+<li>Erfolgsquote: 100% - &quot;noch keine leeren Reports&quot;</li>
+<li>Eine Frage der Einstellung: Die einen Entwickler wollen Features bauen, andere Software kaputt machen</li>
+<li>Scope
+
+<ul>
+<li>&quot;Ihr dürft nicht nach DoS suchen!&quot;</li>
+<li>Abgrenzung, was in der Betrachtung liegt und was nicht</li>
+</ul></li>
+<li>Vektor: Der Angriff an sich, z.B. ein String bei einer SQL Injection; oder Vektor kann ein ganzer Prozess oder Ablauf sein</li>
+<li>Exploit: Nutzung eines Vektors mit einem Ziel: Beispiel String (Source) für SQL Injection (Vektor) nutzen, um Admin zu werden</li>
+<li>Pwn2Own: <a href="https://en.wikipedia.org/wiki/Pwn2Own">https://en.wikipedia.org/wiki/Pwn2Own</a></li>
+<li>Stuxnet: <a href="https://en.wikipedia.org/wiki/Stuxnet">https://en.wikipedia.org/wiki/Stuxnet</a></li>
+</ul>
+
+<h3>Betätigungsfelder (00:22:20)</h3>
+
+<ul>
+<li>Marios Firma hat für alle möglichen Bereiche Spezialisten:
+
+<ul>
+<li>Binary Pentesting</li>
+<li>Datenbanken</li>
+<li>Web/Browser/JavaScript/Flash</li>
+<li>Bruteforcing</li>
+<li>Cold Fusion</li>
+<li>Kryptographie, Kryptoanalyse</li>
+<li>Java</li>
+</ul></li>
+</ul>
+
+<h3>Neue und alte Probleme (00:24:30)</h3>
+
+<ul>
+<li>Es verlagert sich viel in den Browser</li>
+<li>daher mehr und mehr Lücken in Richtung XSS, CSRF, …</li>
+<li>NoSQL wird auch getestet</li>
+<li>MongoDB führt JS in der Datenbank aus und zwar als <code>eval</code>!</li>
+</ul>
+
+<h3>Auf der Suche nach XSS und anderen Schwachstellen (00:27:00)</h3>
+
+<ul>
+<li>&quot;Nennt sich doch mal constructor.constructor&quot;
+
+<ul>
+<li>oder &quot;prototype&quot;</li>
+<li>&quot;<strong>proto</strong>&quot;</li>
+</ul></li>
+</ul>
+
+<h3>Handhaben von Benutzerinput (00:28:30)</h3>
+
+<ul>
+<li>Validieren: Format explizit und strikt prüfen</li>
+<li>Filtern: z.B. Single Quotes oder Kommata entfernen</li>
+<li>Aber so einfach ist das nicht
+
+<ul>
+<li>Strings (Quotes) verboten? was ist mit /i&#39;m a string/.source</li>
+<li>1..constructor.constructor</li>
+</ul></li>
+<li>Sanitizing:
+
+<ul>
+<li>&quot;Escape den Input und Encode den Output&quot;</li>
+<li>Es ist wichtig zu unterscheiden zwischen der Information die durch das Sanitizing soll, UND</li>
+<li>Kontext, wo die Information später verwendet werden soll</li>
+</ul></li>
+</ul>
+
+<h3>Back to Frontend Security (00:34:30)</h3>
+
+<ul>
+<li>Template Expressions Exploit, z.B. bei AngularJS: <a href="https://code.google.com/p/mustache-security/wiki/AngularJS">https://code.google.com/p/mustache-security/wiki/AngularJS</a></li>
+<li>Der Browser ist die neue Sink</li>
+<li>Security im Browser ist anders und komplexer als auf dem Server</li>
+<li>Sehr viel mehr Wissen über konkrete Prozesse bei der Darstellung von HTML/CSS und der Ausführung von Javascript notwendig</li>
+<li>Browser ist im Grunde &quot;moving target&quot;</li>
+<li>Die Vielzahl der Browser bietet sehr viel Angriffsfläche</li>
+<li>Vor allem im Kontext großer Unternehmen sind oft auch sehr alte Browser noch im Einsatz (IE6)</li>
+<li>Eine Umstellung auf neuere Browser ist u.U. nicht immer möglich =&gt; Paradies für Pentesting</li>
+</ul>
+
+<h3>Im DOM hört dich keiner schreien (00:46:50)</h3>
+
+<ul>
+<li>Talk auf der enter.js (<a href="http://www.enterjs.de/abstracts#im-dom-hoert-dich-keiner-schreien-eine-reise-in-die-gruselige-schicht-zwischen-html-und-javascript">http://www.enterjs.de/abstracts#im-dom-hoert-dich-keiner-schreien-eine-reise-in-die-gruselige-schicht-zwischen-html-und-javascript</a>)</li>
+<li>Historie des DOMs</li>
+<li>Verschiedene Probleme aufgezeigt, Bsp.: DOM-Clobbering
+
+<ul>
+<li>Mit statischem HTML bestehende Variablen, Funktionen o.ä. überschreiben</li>
+<li>Ist im Grunde im Standard sogar definiertes Verhalten oO</li>
+</ul></li>
+<li>Am Ende kann man sehr viel Spaß nur mit statischem HTML haben :-)</li>
+<li>Was ist das DOM überhaupt
+
+<ul>
+<li>Ein API zwischen einem Dokument und einer beliebigen Scripting-Sprache</li>
+<li>Ziel des DOM: Bereitstellung von Feature-Parität, dabei müssen einige Features explizit ausgeschlossen werden</li>
+<li>Bsp: CSS-History-Stealing (<a href="http://jeremiahgrossman.blogspot.de/2006/08/i-know-where-youve-been.html">http://jeremiahgrossman.blogspot.de/2006/08/i-know-where-youve-been.html</a>)</li>
+</ul></li>
+<li>SVG bringt möglicherweise ganz neue Probleme mit
+
+<ul>
+<li>Timing Attacke von Paul Stone mit Hilfe von SVG Filtern: <a href="http://www.contextis.com/documents/2/Browser_Timing_Attacks.pdf">http://www.contextis.com/documents/2/Browser_Timing_Attacks.pdf</a></li>
+</ul></li>
+<li>Manchmal gibt es auch keinen echten Fix für Lücken, und selbst wenn, es gibt ja jetzt auch CSS Shader ;-)</li>
+<li>Wie geht man vor um Lücken zu finden
+
+<ul>
+<li>Viel Kreativität notwendig</li>
+<li>Man hört von einem Feature und denkt sich, da muss doch was gehen und dann wird halt so lange gebohrt bis man was findet ;-)</li>
+</ul></li>
+<li>DOMPurify (<a href="https://github.com/cure53/DOMPurify">https://github.com/cure53/DOMPurify</a>) ist ein Client-seitiger Sanitzer, um verschiedenen Angriffen zu begegnen</li>
+<li>Reaktion auf der Konferenz war vor allem gefasst :-)</li>
+</ul>
+
+<h3>Krypto im Browser und moderne APIs (01:07:45)</h3>
+
+<ul>
+<li>Grundsätzlich: Bedarf steigt an, Verbreitung nimmt zu</li>
+<li>Man hört immer wieder von Problemen</li>
+<li>Was kann man machen?</li>
+<li>Antwort: &quot;Ich habe keine Ahnung&quot;</li>
+<li>Aussage Mario: Wir sind noch nicht soweit, es zuverlässig einzusetzen.</li>
+<li>Aber: Es ist auch nicht zum Scheitern verurteilt, aber es braucht noch einiges an Research</li>
+<li>Seiten wie <a href="https://keybase.io">https://keybase.io</a> machen das bereits
+
+<ul>
+<li>Kann man machen, wenn die Seite 100% sicher und vor allem beweisbar sicher ist</li>
+<li>Ergo: Aufwand ist enorm hoch</li>
+</ul></li>
+<li>Es gibt auch Bestrebungen vom W3C das Thema voranzutreiben: <a href="http://www.w3.org/TR/WebCryptoAPI/">http://www.w3.org/TR/WebCryptoAPI/</a></li>
+<li>Zusätzlich entstehen ganz neue APIs für den Zugriff auf mobile Devices
+
+<ul>
+<li>Bsp: Android-Devices haben über nicht hörbare Töne miteinander kommuniziert </li>
+<li>Exploits mit Sprachsynthese und Spracherkennung (Bsp: Cookies zwischen Tabs übertragen)</li>
+</ul></li>
+<li>WebGL klingt kritisch, aber in dem Bereich gibt es in den letzten Jahren viel Forschung</li>
+<li>WebSockets und WebRTC bietet hingegen auch viele Möglichkeiten</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST035" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Unser Gast" />
+          
+            <psc:chapter start="00:05:51" title="Terminologie &amp; Methodologie" />
+          
+            <psc:chapter start="00:22:20" title="Betätigungsfelder" />
+          
+            <psc:chapter start="00:24:30" title="Neue und alte Probleme" />
+          
+            <psc:chapter start="00:27:00" title="Auf der Suche nach XSS und anderen Schwachstellen" />
+          
+            <psc:chapter start="00:28:30" title="Handhaben von Benutzerinput" />
+          
+            <psc:chapter start="00:34:30" title="Back to Frontend Security" />
+          
+            <psc:chapter start="00:46:50" title="Im DOM hört dich keiner schreien" />
+          
+            <psc:chapter start="01:07:45" title="Krypto im Browser und moderne APIs" />
           
           </psc:chapters>
           
