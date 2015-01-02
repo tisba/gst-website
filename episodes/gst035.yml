@@ -1,0 +1,128 @@
+--- !ruby/struct:Episode
+number: 35
+name: Im DOM hört dich keiner schreien
+subtitle: Wir sprachen mit Mario Heiderich über (Web-)Security
+length: 4898
+media:
+  opus:
+    size: 44225273
+    file_ext: opus
+  descr:
+    size: 19229
+    file_ext: json
+  alac:
+    size: 335822879
+    file_ext: m4a
+  input:
+    size: 650466910
+    file_ext: unprocessed.m4a
+  aac:
+    size: 37114970
+    file_ext: m4a
+  mp3:
+    size: 59039140
+    file_ext: mp3
+auphonic_uuid: Xe6zmhLdPjKAe7AXXFxjNX
+published_at: 2014-08-29 11:17:49.059831000 +02:00
+summary: "**Synopsis** Wir sprachen mit Mario Heiderich (@0x6D6172696F) über (Web-)Security,
+  Pentesting und wie sich in der letzten Zeit das Feld gewandelt hat. Immer mehr Logik
+  passiert im Browser womit sich die Angriffsflächen verschieben. Browser sind darüber
+  hinaus hoch komplexe und oft angreifbare Softwaresysteme.\r\n\r\nDie Aufnahme ist
+  vom 1.7.2014. Entschuldigt die späte Veröffentlichung.\r\n\r\n### Unser Gast (00:00:00)\r\n\r\n-
+  Mario Heiderich, @0x6D6172696F\r\n- Hat einen Security Talk \"Im DOM hört Dich keiner
+  schreien\" auf der enterJS gegeben: http://www.enterjs.de/\r\n- Mario's Security
+  Firma: https://cure53.de/\r\n  - Nutzen wenig Scanner, mehr Handarbeit\r\n- Security
+  Scanner finden keine \"logischen Bugs\"\r\n- RIPS: Statische Analyse von PHP Code:
+  http://rips-scanner.sourceforge.net/\r\n\r\n\r\n### Terminologie & Methodologie
+  (00:05:51)\r\n\r\n- Sources: Quellen von Input (User Input z.B.)\r\n- Sink: Stellen
+  im Code, wo Input ankommt bzw. was mit ihm passiert\r\n- Input: Input :)\r\n- Getestet
+  wird manchmal in VMs,  manchmal auf Test oder Staging Umgebungen oder auch in Produktion\r\n
+  \ - das hängt vom Kunden und Projekt ab\r\n- WAF: Web Application Firewall: https://en.wikipedia.org/wiki/Application_firewall\r\n-
+  Erfolgsquote: 100% - \"noch keine leeren Reports\"\r\n- Eine Frage der Einstellung:
+  Die einen Entwickler wollen Features bauen, andere Software kaputt machen\r\n- Scope\r\n
+  \ - \"Ihr dürft nicht nach DoS suchen!\"\r\n  - Abgrenzung, was in der Betrachtung
+  liegt und was nicht\r\n- Vektor: Der Angriff an sich, z.B. ein String bei einer
+  SQL Injection; oder Vektor kann ein ganzer Prozess oder Ablauf sein\r\n- Exploit:
+  Nutzung eines Vektors mit einem Ziel: Beispiel String (Source) für SQL Injection
+  (Vektor) nutzen, um Admin zu werden\r\n- Pwn2Own: https://en.wikipedia.org/wiki/Pwn2Own\r\n-
+  Stuxnet: https://en.wikipedia.org/wiki/Stuxnet\r\n\r\n\r\n### Betätigungsfelder
+  (00:22:20)\r\n\r\n- Marios Firma hat für alle möglichen Bereiche Spezialisten:\r\n
+  \ - Binary Pentesting\r\n  - Datenbanken\r\n  - Web/Browser/JavaScript/Flash\r\n
+  \ - Bruteforcing\r\n  - Cold Fusion\r\n  - Kryptographie, Kryptoanalyse\r\n  - Java\r\n\r\n\r\n###
+  Neue und alte Probleme (00:24:30)\r\n\r\n- Es verlagert sich viel in den Browser\r\n-
+  daher mehr und mehr Lücken in Richtung XSS, CSRF, …\r\n- NoSQL wird auch getestet\r\n-
+  MongoDB führt JS in der Datenbank aus und zwar als `eval`!\r\n\r\n\r\n### Auf der
+  Suche nach XSS und anderen Schwachstellen (00:27:00)\r\n\r\n- \"Nennt sich doch
+  mal constructor.constructor\"\r\n  - oder \"prototype\"\r\n  - \"__proto__\"\r\n\r\n\r\n###
+  Handhaben von Benutzerinput (00:28:30)\r\n\r\n- Validieren: Format explizit und
+  strikt prüfen\r\n- Filtern: z.B. Single Quotes oder Kommata entfernen\r\n- Aber
+  so einfach ist das nicht\r\n  - Strings (Quotes) verboten? was ist mit /i'm a string/.source\r\n
+  \ - 1..constructor.constructor\r\n- Sanitizing:\r\n  - \"Escape den Input und Encode
+  den Output\"\r\n  - Es ist wichtig zu unterscheiden zwischen der Information die
+  durch das Sanitizing soll, UND\r\n  - Kontext, wo die Information später verwendet
+  werden soll\r\n\r\n\r\n### Back to Frontend Security (00:34:30)\r\n\r\n- Template
+  Expressions Exploit, z.B. bei AngularJS: https://code.google.com/p/mustache-security/wiki/AngularJS\r\n-
+  Der Browser ist die neue Sink\r\n- Security im Browser ist anders und komplexer
+  als auf dem Server\r\n- Sehr viel mehr Wissen über konkrete Prozesse bei der Darstellung
+  von HTML/CSS und der Ausführung von Javascript notwendig\r\n- Browser ist im Grunde
+  \"moving target\"\r\n- Die Vielzahl der Browser bietet sehr viel Angriffsfläche\r\n-
+  Vor allem im Kontext großer Unternehmen sind oft auch sehr alte Browser noch im
+  Einsatz (IE6)\r\n- Eine Umstellung auf neuere Browser ist u.U. nicht immer möglich
+  => Paradies für Pentesting\r\n\r\n\r\n### Im DOM hört dich keiner schreien (00:46:50)\r\n\r\n-
+  Talk auf der enter.js (http://www.enterjs.de/abstracts#im-dom-hoert-dich-keiner-schreien-eine-reise-in-die-gruselige-schicht-zwischen-html-und-javascript)\r\n-
+  Historie des DOMs\r\n- Verschiedene Probleme aufgezeigt, Bsp.: DOM-Clobbering\r\n
+  \ - Mit statischem HTML bestehende Variablen, Funktionen o.ä. überschreiben\r\n
+  \ - Ist im Grunde im Standard sogar definiertes Verhalten oO\r\n- Am Ende kann man
+  sehr viel Spaß nur mit statischem HTML haben :-)\r\n- Was ist das DOM überhaupt\r\n
+  \ - Ein API zwischen einem Dokument und einer beliebigen Scripting-Sprache\r\n  -
+  Ziel des DOM: Bereitstellung von Feature-Parität, dabei müssen einige Features explizit
+  ausgeschlossen werden\r\n  - Bsp: CSS-History-Stealing (http://jeremiahgrossman.blogspot.de/2006/08/i-know-where-youve-been.html)\r\n-
+  SVG bringt möglicherweise ganz neue Probleme mit\r\n  - Timing Attacke von Paul
+  Stone mit Hilfe von SVG Filtern: http://www.contextis.com/documents/2/Browser_Timing_Attacks.pdf\r\n-
+  Manchmal gibt es auch keinen echten Fix für Lücken, und selbst wenn, es gibt ja
+  jetzt auch CSS Shader ;-)\r\n- Wie geht man vor um Lücken zu finden\r\n  - Viel
+  Kreativität notwendig\r\n  - Man hört von einem Feature und denkt sich, da muss
+  doch was gehen und dann wird halt so lange gebohrt bis man was findet ;-)\r\n- DOMPurify
+  (https://github.com/cure53/DOMPurify) ist ein Client-seitiger Sanitzer, um verschiedenen
+  Angriffen zu begegnen\r\n- Reaktion auf der Konferenz war vor allem gefasst :-)\r\n\r\n\r\n###
+  Krypto im Browser und moderne APIs (01:07:45)\r\n\r\n- Grundsätzlich: Bedarf steigt
+  an, Verbreitung nimmt zu\r\n- Man hört immer wieder von Problemen\r\n- Was kann
+  man machen?\r\n- Antwort: \"Ich habe keine Ahnung\"\r\n- Aussage Mario: Wir sind
+  noch nicht soweit, es zuverlässig einzusetzen.\r\n- Aber: Es ist auch nicht zum
+  Scheitern verurteilt, aber es braucht noch einiges an Research\r\n- Seiten wie https://keybase.io
+  machen das bereits\r\n  - Kann man machen, wenn die Seite 100% sicher und vor allem
+  beweisbar sicher ist\r\n  - Ergo: Aufwand ist enorm hoch\r\n- Es gibt auch Bestrebungen
+  vom W3C das Thema voranzutreiben: http://www.w3.org/TR/WebCryptoAPI/\r\n- Zusätzlich
+  entstehen ganz neue APIs für den Zugriff auf mobile Devices\r\n  - Bsp: Android-Devices
+  haben über nicht hörbare Töne miteinander kommuniziert \r\n  - Exploits mit Sprachsynthese
+  und Spracherkennung (Bsp: Cookies zwischen Tabs übertragen)\r\n- WebGL klingt kritisch,
+  aber in dem Bereich gibt es in den letzten Jahren viel Forschung\r\n- WebSockets
+  und WebRTC bietet hingegen auch viele Möglichkeiten"
+chapters:
+- !ruby/struct:Chapter
+  start: '00:00:00'
+  title: Unser Gast
+- !ruby/struct:Chapter
+  start: '00:05:51'
+  title: Terminologie & Methodologie
+- !ruby/struct:Chapter
+  start: '00:22:20'
+  title: Betätigungsfelder
+- !ruby/struct:Chapter
+  start: '00:24:30'
+  title: Neue und alte Probleme
+- !ruby/struct:Chapter
+  start: '00:27:00'
+  title: Auf der Suche nach XSS und anderen Schwachstellen
+- !ruby/struct:Chapter
+  start: '00:28:30'
+  title: Handhaben von Benutzerinput
+- !ruby/struct:Chapter
+  start: '00:34:30'
+  title: Back to Frontend Security
+- !ruby/struct:Chapter
+  start: '00:46:50'
+  title: Im DOM hört dich keiner schreien
+- !ruby/struct:Chapter
+  start: '01:07:45'
+  title: Krypto im Browser und moderne APIs

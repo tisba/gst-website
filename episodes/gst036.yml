@@ -1,0 +1,41 @@
+--- !ruby/struct:Episode
+number: 36
+name: Die NerdGeekBits vom 31c3
+subtitle: Bits of Berlin, Geekstammtisch und Nerdkunde waren wieder gemeinsam auf
+  dem 31C3.
+length: 4703
+media:
+  mp3:
+    size: 65846807
+    file_ext: mp3
+  aac:
+    size: 48029074
+    file_ext: m4a
+  opus:
+    size: 43443481
+    file_ext: opus
+  input:
+    size: 109780872
+    file_ext: unprocessed.flac
+  descr:
+    size: 120735
+    file_ext: json
+  alac:
+    size: 233840438
+    file_ext: m4a
+auphonic_uuid: y6znzx5q786hB7HF3QYKaa
+published_at: 2015-01-02 16:38:45.100258000 +01:00
+summary: "Alle Jahre wieder kommen Hacker, Künstler und Aktivisten aus Deutschland
+  und aller Welt auf dem Congress™ zusammen. Die neuste Inkarnation trägt den Namen
+  'A new Dawn'. Wo im letzten Jahr Sprachlosigkeit herrschte wagt man auf dem 31c3
+  im CCH, Hamburg einen Neuanfang. Es waren mehr Menschen denn je auf dem Congress
+  und von Trübsal war keine Rede. Projekte wie Tor bekommen mehr Aufmerksamkeit denn
+  je und auch die Sicherheitsforscher gehen weiterhin ihrer Arbeit nach. Die Community
+  hat die Zukunft noch nicht aufgegeben.\r\n\r\nIn diesem Käfig voller Narren fand
+  sich die Belegschaft der Podcasts Bits of Berlin, Geekstammtisch und Nerdkunde in
+  Sendezentrum zum erneuten Rudelpodcasten ein. An Tag 2 berichten wir von unseren
+  bisherigen Eindrücken und wie es ist ein Assembly zu fahren.\r\n\r\ntl;dr ist auf
+  jeden Fall mal wieder, dass es zu viel Content gibt, als das man es alles konsumieren
+  könnte :-)\r\n\r\n\r\nDisclaimer: Intro Musik - Nina Simone, Feeling Good im Bassnectar
+  Remix (https://www.youtube.com/watch?v=A9VcCo9M608&spfreload=10)"
+chapters: []
