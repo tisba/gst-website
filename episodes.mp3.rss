@@ -10727,5 +10727,342 @@ Disclaimer: Intro Musik - Nina Simone, Feeling Good im Bassnectar Remix (https:/
           
         </item>
         
+        <item>
+          <title>GST037 - Vom Hebdrehwähler zu Voice over IP</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Wir sprachen mit Pablo Beyen über Telefonie, VoIP &amp; Co</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst037.mp3" length="100588646" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST037</guid>
+          <pubDate>Mon, 02 Feb 2015 14:15:35 +0100</pubDate>
+          <itunes:duration>02:19:21</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis:** Mit Pablo Beyen (http://www.bevuta.com/de/) sprachen wir in aller Ausführlichkeit über Telefonie und dessen Anfängen bis hin zu Voice-over-IP. Pablo's Firma baut selber unter anderem Telefonanlagen und ist ein (kleiner) Telekommunikationsanbieter und weiht uns in technische und strukturelle Herausforderungen des Telefoniealltags ein.
+
+
+### Pablo Beyen (00:00:00)
+
+* Pablo hat Bier mitgebracht: http://www.crewrepublic.de/crew-biere/roundhouse-kick.html
+* erster Computer mit 7
+* Internet: seit 1995
+* eigene Firma (bevuta IT): seit 1999
+    * Rails, lisp, Telefon :)
+    * Seit 2004 kam VoIP dazu
+    * "Apps" werden allerdings auch entwickelt
+    * jetzt 20 Mitarbeiter
+* Pablo's erster Mitarbeiter war auch schon mal beim Geekstammtisch: GST025 - Vom Tellerwäscher zum Lisp-Entwickler http://geekstammtisch.de/#GST025
+* Pablo macht Tech-Sprechstunde im Startplatz: http://www.startplatz.de/sprechstunde/tech-sprechstunde-mit-technology-angel-pablo/
+
+
+### Geschichte des Telefons (00:10:57)
+
+* 1837 - Samuel F. B. Morse - Morsetelegraphen - Digital
+* 186x - Philipp Reis - "Telephon" in Anlehnung an "Telegraph"
+* 187x - Alexander Graham Bell - Kommerzialisierung des Reis "Telefons"
+* 1885 - Bell gründet American Telephone and Telegraph Company (AT&T) - kennt vielleicht der eine oder andere :)
+* 188x - Ortsnetze und Fernverbindungen zwischen vielen deutschen Städten, Handvermittlung "Fräulein vom Amt"
+* 1891, ab 1908 in Deutschland - erster Hebdrehwähler, Automatisierung: https://de.wikipedia.org/wiki/Hebdrehw%C3%A4hler
+* 1966 - Letzte reguläre nationale Handvermittlung geschlossen
+* 1969 - Entwicklung von Unix an den Bell Labs (AT&T); iOS, Android, … geht am Ende auf Bells Firma zurück
+* 1969 - Beginn des ARPANET: https://en.wikipedia.org/wiki/ARPANET
+* 1975 - Einführung von SS7/Digitale Vermittlung/Übertragung: https://en.wikipedia.org/wiki/Signalling_System_No._7
+* 198x - Modem-/Mailbox-Ära
+* 1989 - Start von ISDN - Umstellung auf ISDN
+* 199x - ISDN-Ära + allgemeine Internetverfügbarkeit
+
+
+### Umstellung DSL und ISDN (00:33:20)
+
+* 200x - DSL-Ära
+* ISDN & Co Kram kann man sich gut auf den CCC Events beim POC (Phone Operation Center) anschauen
+* 201x - Umstellung des Netzes auf VoIP
+    * Umstellung auf VoIP Mitte 2000er: Uni Stuttgart mit 10k Nebenstellen
+    * Status Telekom - Derzeit 3,5 Millionen VoIP-Kunden und 60.000 Umstellungen pro Monat, soll bis 2019 abgeschlossen sein
+* Fax auf VoIP ist ein Problem
+
+
+### Voice over IP (00:52:30)
+
+* allgemeiner Begriff für die Echtzeitübertragung von Sprache über das Internet
+* SIP: https://en.wikipedia.org/wiki/Session_Initiation_Protocol
+    * Nur "Vermittlung", keine Sprachdaten
+* SIP ist der absolute Standard und wird auch zwischen den Anbietern eingesetzt
+* MGCP - vor allem für Kabelmodems: https://en.wikipedia.org/wiki/Media_Gateway_Control_Protocol
+
+
+### Pablo ruft den Basti an (oder andersrum) (00:58:40)
+
+* Client starten und einloggen ("registrieren")
+    * Anbieter kennt dann die IP
+    * Client hat für eingehende Verbindungen ggf. was mit dem Netzwerk/der Firewall gemacht
+* Pablo wählt Basti's Nummer
+* Telekom, über "einen Partner" in Bevutas Rechenzentrum in Frankfurt
+* über SIP wird signalisiert, wer angerufen werden soll und welche Codecs verwendet werden
+* Audio wird über RTP transportiert
+
+
+### SS7, E1, Zeitschlitze und so (01:03:00)
+
+* Wir schweifen etwas ab…
+* In Frankfurt hat Bevuta E1 Anschlüsse: https://en.wikipedia.org/wiki/E-carrier#E1_frame_structure
+  * 32 Zeitschlitze: 1x Synchronisation, 1x Signalisierung (S2m), 30 bzw. 31 Nutzkanäle
+* E1 Verbindung durch Frankfurt: 400 EUR/Monat
+
+
+### Zurück zum Telefonat (01:10:40)
+
+* Pablo ruft Basti an
+* T-Mobile -> Mobilfunknetz -> Telekom -> "Partner" -> Bevuta
+* Bevuta bekommt via SS7 den Call an einen Linux-Server durchgestellt
+* Server schaut nach, ob es zu der Nummer des Angerufenen einen Account gibt und ob dieser online ist
+* Dann werden zwischen Bevuta-Server und Client z.B. Codecs ausgehandelt
+* Es klingelt :)
+* Audio wird in real-time zum Zielcodec umcodiert
+
+
+### Sicherheit (01:17:00)
+
+* In der Telko Welt ist alles recht isoliert
+* keine Ende-zu-Ende Verbindungen, also wird recodiert, und recodiert...
+* von Ende-zu-Ende Kryptographie ganz zu schweigen :-/ 
+* Mobilfunk ist verschlüsselt! Erm, nicht wirklich…
+
+
+### VoIP und SIP und Firewalls (01:24:00)
+
+* QoS und Router und Firewalls sind ein Problem für SIP
+* The Miracleshaper: http://mshaper.florz.de/
+* Telefonie ist sehr Latenz- und Jitterempfindlich
+* für Zuhause kann man ganz gut mit der FritzBox fahren
+
+
+### VoIP Telefonanlagen (01:31:50)
+
+* Asterisk: http://www.asterisk.org/
+* Back-to-Back User-Agent: https://en.wikipedia.org/wiki/Back-to-back_user_agent
+* FreeSWITCH: https://freeswitch.org/
+* SIP Proxy
+* YXA: http://www.stacken.kth.se/project/yxa/
+
+
+### Telekommunikationsanbieter (01:36:35)
+
+* Rufnummernzuteilung: nicht ganz einfach
+* 5200 Ortsnetze in Deutschland
+* Rufnummern kann man nur in 1000er Blöcke kaufen
+* Lawful Intercept: Bei kleinen Anbietern muss das nicht voll automatisiert sein
+* Bestandsdatenabfrage: "Welche Nummern hat der Dirk?"
+* Ortsgrenzen entsprechen nicht den Ortsnetzen
+* Vorwahl für VoIP: 032 - https://de.wikipedia.org/wiki/Vorwahl_032_(Deutschland)
+* Flatrates sind so eine Sache: Unter Anbietern gibt es keine Flatrates!
+* Accounting & Billing
+* Es gibt viel spezialisierte Hardware auf 48V Basis, inkl. Server
+
+
+### Bevuta's Telefonanlage (01:59:00)
+
+* Bevuta baut Telefonanlagen, basierend auf Linux-Servern
+* Auch mit eigener Hardware
+* Basiert auf Asterisk
+* eigener Call-Router, basiert auf Ruby
+* die Anlage ist Scriptbare mit Scheme: https://en.wikipedia.org/wiki/Scheme_(programming_language)
+* Herausforderung: Maintenance der Anlagen
+
+
+### Schlussworte (02:12:50)]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis:</strong> Mit Pablo Beyen (<a href="http://www.bevuta.com/de/">http://www.bevuta.com/de/</a>) sprachen wir in aller Ausführlichkeit über Telefonie und dessen Anfängen bis hin zu Voice-over-IP. Pablo&#39;s Firma baut selber unter anderem Telefonanlagen und ist ein (kleiner) Telekommunikationsanbieter und weiht uns in technische und strukturelle Herausforderungen des Telefoniealltags ein.</p>
+
+<h3>Pablo Beyen (00:00:00)</h3>
+
+<ul>
+<li>Pablo hat Bier mitgebracht: <a href="http://www.crewrepublic.de/crew-biere/roundhouse-kick.html">http://www.crewrepublic.de/crew-biere/roundhouse-kick.html</a></li>
+<li>erster Computer mit 7</li>
+<li>Internet: seit 1995</li>
+<li>eigene Firma (bevuta IT): seit 1999
+
+<ul>
+<li>Rails, lisp, Telefon :)</li>
+<li>Seit 2004 kam VoIP dazu</li>
+<li>&quot;Apps&quot; werden allerdings auch entwickelt</li>
+<li>jetzt 20 Mitarbeiter</li>
+</ul></li>
+<li>Pablo&#39;s erster Mitarbeiter war auch schon mal beim Geekstammtisch: GST025 - Vom Tellerwäscher zum Lisp-Entwickler <a href="http://geekstammtisch.de/#GST025">http://geekstammtisch.de/#GST025</a></li>
+<li>Pablo macht Tech-Sprechstunde im Startplatz: <a href="http://www.startplatz.de/sprechstunde/tech-sprechstunde-mit-technology-angel-pablo/">http://www.startplatz.de/sprechstunde/tech-sprechstunde-mit-technology-angel-pablo/</a></li>
+</ul>
+
+<h3>Geschichte des Telefons (00:10:57)</h3>
+
+<ul>
+<li>1837 - Samuel F. B. Morse - Morsetelegraphen - Digital</li>
+<li>186x - Philipp Reis - &quot;Telephon&quot; in Anlehnung an &quot;Telegraph&quot;</li>
+<li>187x - Alexander Graham Bell - Kommerzialisierung des Reis &quot;Telefons&quot;</li>
+<li>1885 - Bell gründet American Telephone and Telegraph Company (AT&amp;T) - kennt vielleicht der eine oder andere :)</li>
+<li>188x - Ortsnetze und Fernverbindungen zwischen vielen deutschen Städten, Handvermittlung &quot;Fräulein vom Amt&quot;</li>
+<li>1891, ab 1908 in Deutschland - erster Hebdrehwähler, Automatisierung: <a href="https://de.wikipedia.org/wiki/Hebdrehw%C3%A4hler">https://de.wikipedia.org/wiki/Hebdrehw%C3%A4hler</a></li>
+<li>1966 - Letzte reguläre nationale Handvermittlung geschlossen</li>
+<li>1969 - Entwicklung von Unix an den Bell Labs (AT&amp;T); iOS, Android, … geht am Ende auf Bells Firma zurück</li>
+<li>1969 - Beginn des ARPANET: <a href="https://en.wikipedia.org/wiki/ARPANET">https://en.wikipedia.org/wiki/ARPANET</a></li>
+<li>1975 - Einführung von SS7/Digitale Vermittlung/Übertragung: <a href="https://en.wikipedia.org/wiki/Signalling_System_No._7">https://en.wikipedia.org/wiki/Signalling_System_No._7</a></li>
+<li>198x - Modem-/Mailbox-Ära</li>
+<li>1989 - Start von ISDN - Umstellung auf ISDN</li>
+<li>199x - ISDN-Ära + allgemeine Internetverfügbarkeit</li>
+</ul>
+
+<h3>Umstellung DSL und ISDN (00:33:20)</h3>
+
+<ul>
+<li>200x - DSL-Ära</li>
+<li>ISDN &amp; Co Kram kann man sich gut auf den CCC Events beim POC (Phone Operation Center) anschauen</li>
+<li>201x - Umstellung des Netzes auf VoIP
+
+<ul>
+<li>Umstellung auf VoIP Mitte 2000er: Uni Stuttgart mit 10k Nebenstellen</li>
+<li>Status Telekom - Derzeit 3,5 Millionen VoIP-Kunden und 60.000 Umstellungen pro Monat, soll bis 2019 abgeschlossen sein</li>
+</ul></li>
+<li>Fax auf VoIP ist ein Problem</li>
+</ul>
+
+<h3>Voice over IP (00:52:30)</h3>
+
+<ul>
+<li>allgemeiner Begriff für die Echtzeitübertragung von Sprache über das Internet</li>
+<li>SIP: <a href="https://en.wikipedia.org/wiki/Session_Initiation_Protocol">https://en.wikipedia.org/wiki/Session_Initiation_Protocol</a>
+
+<ul>
+<li>Nur &quot;Vermittlung&quot;, keine Sprachdaten</li>
+</ul></li>
+<li>SIP ist der absolute Standard und wird auch zwischen den Anbietern eingesetzt</li>
+<li>MGCP - vor allem für Kabelmodems: <a href="https://en.wikipedia.org/wiki/Media_Gateway_Control_Protocol">https://en.wikipedia.org/wiki/Media_Gateway_Control_Protocol</a></li>
+</ul>
+
+<h3>Pablo ruft den Basti an (oder andersrum) (00:58:40)</h3>
+
+<ul>
+<li>Client starten und einloggen (&quot;registrieren&quot;)
+
+<ul>
+<li>Anbieter kennt dann die IP</li>
+<li>Client hat für eingehende Verbindungen ggf. was mit dem Netzwerk/der Firewall gemacht</li>
+</ul></li>
+<li>Pablo wählt Basti&#39;s Nummer</li>
+<li>Telekom, über &quot;einen Partner&quot; in Bevutas Rechenzentrum in Frankfurt</li>
+<li>über SIP wird signalisiert, wer angerufen werden soll und welche Codecs verwendet werden</li>
+<li>Audio wird über RTP transportiert</li>
+</ul>
+
+<h3>SS7, E1, Zeitschlitze und so (01:03:00)</h3>
+
+<ul>
+<li>Wir schweifen etwas ab…</li>
+<li>In Frankfurt hat Bevuta E1 Anschlüsse: <a href="https://en.wikipedia.org/wiki/E-carrier#E1_frame_structure">https://en.wikipedia.org/wiki/E-carrier#E1_frame_structure</a>
+
+<ul>
+<li>32 Zeitschlitze: 1x Synchronisation, 1x Signalisierung (S2m), 30 bzw. 31 Nutzkanäle</li>
+</ul></li>
+<li>E1 Verbindung durch Frankfurt: 400 EUR/Monat</li>
+</ul>
+
+<h3>Zurück zum Telefonat (01:10:40)</h3>
+
+<ul>
+<li>Pablo ruft Basti an</li>
+<li>T-Mobile -&gt; Mobilfunknetz -&gt; Telekom -&gt; &quot;Partner&quot; -&gt; Bevuta</li>
+<li>Bevuta bekommt via SS7 den Call an einen Linux-Server durchgestellt</li>
+<li>Server schaut nach, ob es zu der Nummer des Angerufenen einen Account gibt und ob dieser online ist</li>
+<li>Dann werden zwischen Bevuta-Server und Client z.B. Codecs ausgehandelt</li>
+<li>Es klingelt :)</li>
+<li>Audio wird in real-time zum Zielcodec umcodiert</li>
+</ul>
+
+<h3>Sicherheit (01:17:00)</h3>
+
+<ul>
+<li>In der Telko Welt ist alles recht isoliert</li>
+<li>keine Ende-zu-Ende Verbindungen, also wird recodiert, und recodiert...</li>
+<li>von Ende-zu-Ende Kryptographie ganz zu schweigen :-/ </li>
+<li>Mobilfunk ist verschlüsselt! Erm, nicht wirklich…</li>
+</ul>
+
+<h3>VoIP und SIP und Firewalls (01:24:00)</h3>
+
+<ul>
+<li>QoS und Router und Firewalls sind ein Problem für SIP</li>
+<li>The Miracleshaper: <a href="http://mshaper.florz.de/">http://mshaper.florz.de/</a></li>
+<li>Telefonie ist sehr Latenz- und Jitterempfindlich</li>
+<li>für Zuhause kann man ganz gut mit der FritzBox fahren</li>
+</ul>
+
+<h3>VoIP Telefonanlagen (01:31:50)</h3>
+
+<ul>
+<li>Asterisk: <a href="http://www.asterisk.org/">http://www.asterisk.org/</a></li>
+<li>Back-to-Back User-Agent: <a href="https://en.wikipedia.org/wiki/Back-to-back_user_agent">https://en.wikipedia.org/wiki/Back-to-back_user_agent</a></li>
+<li>FreeSWITCH: <a href="https://freeswitch.org/">https://freeswitch.org/</a></li>
+<li>SIP Proxy</li>
+<li>YXA: <a href="http://www.stacken.kth.se/project/yxa/">http://www.stacken.kth.se/project/yxa/</a></li>
+</ul>
+
+<h3>Telekommunikationsanbieter (01:36:35)</h3>
+
+<ul>
+<li>Rufnummernzuteilung: nicht ganz einfach</li>
+<li>5200 Ortsnetze in Deutschland</li>
+<li>Rufnummern kann man nur in 1000er Blöcke kaufen</li>
+<li>Lawful Intercept: Bei kleinen Anbietern muss das nicht voll automatisiert sein</li>
+<li>Bestandsdatenabfrage: &quot;Welche Nummern hat der Dirk?&quot;</li>
+<li>Ortsgrenzen entsprechen nicht den Ortsnetzen</li>
+<li>Vorwahl für VoIP: 032 - <a href="https://de.wikipedia.org/wiki/Vorwahl_032_(Deutschland)">https://de.wikipedia.org/wiki/Vorwahl_032_(Deutschland)</a></li>
+<li>Flatrates sind so eine Sache: Unter Anbietern gibt es keine Flatrates!</li>
+<li>Accounting &amp; Billing</li>
+<li>Es gibt viel spezialisierte Hardware auf 48V Basis, inkl. Server</li>
+</ul>
+
+<h3>Bevuta&#39;s Telefonanlage (01:59:00)</h3>
+
+<ul>
+<li>Bevuta baut Telefonanlagen, basierend auf Linux-Servern</li>
+<li>Auch mit eigener Hardware</li>
+<li>Basiert auf Asterisk</li>
+<li>eigener Call-Router, basiert auf Ruby</li>
+<li>die Anlage ist Scriptbare mit Scheme: <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)">https://en.wikipedia.org/wiki/Scheme_(programming_language)</a></li>
+<li>Herausforderung: Maintenance der Anlagen</li>
+</ul>
+
+<h3>Schlussworte (02:12:50)</h3>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST037" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Pablo Beyen" />
+          
+            <psc:chapter start="00:10:57" title="Geschichte des Telefons" />
+          
+            <psc:chapter start="00:33:20" title="Umstellung DSL und ISDN" />
+          
+            <psc:chapter start="00:52:30" title="Voice over IP" />
+          
+            <psc:chapter start="00:58:40" title="Pablo ruft den Basti an (oder andersrum)" />
+          
+            <psc:chapter start="01:03:00" title="SS7, E1, Zeitschlitze und so" />
+          
+            <psc:chapter start="01:10:40" title="Zurück zum Telefonat" />
+          
+            <psc:chapter start="01:17:00" title="Sicherheit" />
+          
+            <psc:chapter start="01:24:00" title="VoIP und SIP und Firewalls" />
+          
+            <psc:chapter start="01:31:50" title="VoIP Telefonanlagen" />
+          
+            <psc:chapter start="01:36:35" title="Telekommunikationsanbieter" />
+          
+            <psc:chapter start="01:59:00" title="Bevuta&#39;s Telefonanlage" />
+          
+            <psc:chapter start="02:12:50" title="Schlussworte" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
