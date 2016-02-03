@@ -11064,5 +11064,949 @@ Disclaimer: Intro Musik - Nina Simone, Feeling Good im Bassnectar Remix (https:/
           
         </item>
         
+        <item>
+          <title>GST038 - Microservices aus dem Gewürzregal</title>
+          <itunes:explicit>no</itunes:explicit>
+          <itunes:author>Dirk Breuer, Sebastian Cohnen</itunes:author>
+          <itunes:subtitle>Wir sprachen mit Uwe Friedrichsen über IT-Geschichte, SW Architektur und mehr</itunes:subtitle>
+          <enclosure url="http://media.geekstammtisch.de/episodes/gst038.mp3" length="95164391" type="audio/mpeg"/>
+          <guid isPermaLink="false">GST038</guid>
+          <pubDate>Wed, 03 Feb 2016 10:32:16 +0100</pubDate>
+          <itunes:duration>02:11:44</itunes:duration>
+          <itunes:summary><![CDATA[**Synopsis**: Uwe Friedrichsen nimmt uns mit auf eine historische Rundreise der IT-Geschichte und schafft eine Grundlage, um aktuelle Problematiken der Unternehmenswelt zu verstehen. Durch die Veränderung der Märkte und Organisationsstrukturen in den letzten Jahrzehnten wuchs die IT als Nervensystem eines jeden Unternehmens heran. Dies bedingt eine Wechselwirkung zwischen den organisatorischen Strukturen eines Unternehmens und dem Architekturdesign der Softwarelösungen.
+
+### Uwe Friedrichsen (00:00:00)
+
+* Uwe Friedrichsen, CTO bei codecentric.de
+* Seit über 30 Jahren in der IT Szene unterwegs
+* Hat Kinder, Studieren bereits
+* Vor 33 Jahren erste kommerzielle Software verkauft
+* Hat Informatik studiert
+* Hat so ziemlich alles gemacht rund um Softwareentwicklung 
+* Von Anforderungserhebung über Architekturdesign und Entwicklung bis Testmanagement
+* Aktuell für thematische Entwicklung und Aufstellung von codecentric.de zuständig
+* Interesse an skalierbare verteile Systeme
+
+### Trendgeschichte der IT (00:06:00)
+
+* Erste Züge von CORBA mitbekommen
+* Anschließend JAVA Komponenten (EJB)
+* SOA Welle mit SOAP
+* WS* Standards
+* RESTafarians
+* Funktionsorientierung vs Ressourcenorientierung
+* Objekte als Ressourcen?
+* Ressourcen auf Funktionen aufsetzen?
+
+### Designgrundlage: UseCase (00:14:00)
+
+* Viele versuchen Ressourcenmodell auf Entitätsmodell aufzubauen
+* Sinnvollerer Ansatz: UseCase Modell
+    * Ressource soll Ende-zu-Ende Dienstleistung anbieten
+    * System nach UseCases zuschneiden
+    * UseCases sinnvoll kapseln
+    * Services autonom gestalten
+
+### Problem etablierte Ansätze und Konzepte (00:21:20)
+
+* CORBA, ECB, SOA
+    * Fingen alle mit fluffiger, leichter Idee an
+    * Niedrige Lernkurve
+    * Dann ging Fragerei los (was ist mit Naming? wie ist das mit verteilten Transaktionen?, usw.)
+    * Einzelne Lösungen für immer mehr Probleme
+    * Ansätze unter eigener Last zusammengebrochen
+* REST ist REST geblieben
+
+### Qualitativer unterschied zwischen Server und Mainframe (00:29:00)
+
+* Mainframe 
+    * Hat das Verfügbarkeitsproblem und das Verteilungsproblem für lange Zeit sehr gut gelöst
+    * War von seiner Hardware so gestaltet, dass er extrem hoch verfügbar ist
+    * Hat hervorragendes Ressourcenmanagement (Ressourcenallokation)
+    * Für frühere Verhältnisse sehr vertikal skalierbar
+    * Keine Notwendigkeit für Verteiltheit
+    * Man konnte alles auf einer Maschine laufen lassen
+    * EJB Container auf Steroiden
+    * Auf einem 266er Pentium konnten simultan über 250 User bedient werden (Benchmark)
+    * Extreme Verfügbarkeit durch Infrastruktur
+    * Probleme
+        * Schwierigkeit für international agierende Unternehmen
+        * Monolitisches System für lokal verteilte Nutzer
+        * Geschäftsmodelle haben sich geändert
+        * Neukunden steigen nicht mehr mit Mainframe ein
+        * Neugeschäft dümpelt auf sehr niedrigem Niveau
+        * Vertikale Skalierung ist irgendwann zu ende
+        * Preise für CPU, Storage und Netzzeit sind irgendwann nicht mehr konkurrenzfähig
+        * Fehlendes Know-How und Preis töten Mainframes
+        * Ära ist einfach vorbei
+    * Anekdote von Uwe 
+      * Kunde mit Online Suchmaschine
+      * 2 große Unix-Maschinen
+      * Darauf liegt sehr namenhafte Suchmaschine
+      * Lizenzkosten waren sehr hoch (jährlich im 7-stelligen Bereich)
+      * (SLA) 300 Anfragen/s mit der Antwortzeit von 250ms
+      * "Das können wir billiger."
+      * 3 normale "Kisten" von Dell (o.ä.) mit 2 Xenon, 12 Kerne (24 virtuell)
+      * ca. 5000€ pro Kiste
+      * 20 Mio. Datensätze des Kunden 
+      * Proof of Concept System: MongoDB, Solr, UI
+      * Lasttest wurde bei 3000 simultanen Clients wurde abgebrochen, weil das Testnetz nicht mehr Leistung hergegeben hat
+      * Es konnte nicht mehr Durchsatz erzeugt werden
+      * Normale Kiste lief im "Idle"; es wurde nur eine von drei benötigt
+
+### Ab wann ist Data Big? (00:41:50)
+
+  * 20 Mio. Datensätze ist Micky Mouse Data
+  * IBM Mitarbeiter erzählte das BigData bei 40MB anfängt
+  * BigData ist dann, wenn du wirklich viele Daten bekommst!
+  * BigData sind Datensätze im Milliardenbereich
+   * 20 Mio. Datensätze kann man entspannt in relationaler Datenbank verwalten
+   * BigData ist auch, wenn man Daten so schnell bekommt (Velocity-Thema), dass man nicht mehr in der Lage ist, diese zu speichern und dann zu bearbeiten, sondern im vorbeifliegen bearbeiten muss
+
+### Angemessene Lösungen finden (00:44:40)
+
+* Ziel ist es immer, eine angemessene Lösung zu finden
+* Kunde will Hadoop Cluster für 20 Mio. Datensätze
+* Mit Hadoop hat man mehr Stress
+* Diese Menge an Daten kann man entspannt in transaktionaler Datenbank verwalten
+* Weniger komplexes Programmiermodell
+* Unterschied ob man im Moment kein echtes BigData hat aber Thema lernen will
+* ODER 
+* Ob man in einem Produktionsszenario ist, Wartung, Betrieb, Weiterentwicklung etc. hat und BigData Technologien einsetzen will
+* Ergebnis ist dann oftmals: 
+    * Betrieb wird aufwendiger,
+    * Überwachung wird aufwendiger, 
+    * Rausfinden was schief geht, wird aufwendiger
+    * Tooling ist schlechter
+    * Laufzeiten sind höher, 
+    * Mehr Ressourcen werden benötigt, 
+    * Weiterentwicklung ist lausiger
+* --> Dann wurde keine gute Designentscheidung/Architekturentscheidung getroffen
+    
+### Spieltrieb (00:48:05)
+
+* Jeder, der in die IT Branche kommt, weil er gerne programmiert, hat ausgeprägten Spieltrieb
+* Problem ist, dass Unternehmen diesen kreativen Menschen jedoch kein Ventil für diesen Spieltrieb geben
+* Diese Menschen wollen neue Dinge irgendwo ausprobieren
+* Das nächste Projekt wird dann als Spielwiese missbraucht
+
+### Entscheider und Entscheidungen (00:49:40)
+
+* Sehr viele IT Entscheider haben keine Ahnung was sie da entscheiden
+* Zwei Möglichkeiten: entweder was von der Materie verstehen oder man braucht einen Vertrauten, der etwas davon versteht
+* Es gibt zu viele Entscheider die ihre Themen nur auf Basis von Computerwoche verstehen
+* Computerwoche ist Bildzeitung der Computerbranche
+* Artikel sind Informationshäppchen, die nicht in die Tiefe gehen
+* Keine Grundlage für Entscheidung, die sich auf Unternehmen auswirkt
+* Entscheider versuchen sich über diese Zeitung zu informieren
+* Letztendlich Entscheidung auf Basis von Buzzword-Bingo durch Zeitung, Marketing, Sales- und Consultants
+
+### Buzzword Standards (00:53:00) 
+
+* Buzzwords wie Agil, Microservices, ... lassen Interpretationsspielraum
+* Problem der Verwässerung
+* Multimilliardenmarkt IT Branche ist von Entscheidern durchsetzt, die keine Ahnung haben
+* Bzw. keine Ahnung auf der Ebene, als dass sie sagen können: "Du erzählst mir gerade hier jede Menge Bullshit."
+* Anforderung: Auf einer Flughöhe von 3000m sollte ein Entscheider ein Verständnis dafür haben, was da unten passiert
+* Grundverständnis aufbauen, was das tut, warum das tut, usw...
+
+### Microservices aus dem Gewürzregal (00:56:00)
+
+* Kunde macht neues System und das soll auch mit Microservices
+* Will eigtl. klassischen Deploymentzyklus haben (1 Mal im Monat)
+* Skalierung reicht wenn man innerhalb von 1-3 Tagen skalieren kann
+* Gegenüberstellung von monolitischem System und Microservices
+* In 10 Minuten erzählt, was das ist und wo die Unterschiede sind, Vor- und Nachteile aufgezeigt
+* Spannungsfeld zwischen den beiden Entwürfen
+* Dann gefragt, was er haben will
+* --> für Monolit entschieden
+    
+### Monolitische Microservices zur Laufzeit (00:59:13)
+
+* Abhängigkeiten von Services zur Build-Zeit auflösen
+* Services, im Java Umfeld, als Jar File im Repo reinnehmen
+* Einbinden von Bibliotheken in Anwendung, die an sich unabhängig sind
+* Zur Laufzeit von aussen wie ein Monolit, der zur Build-Zeit aus einzelnen Services zusammengesetzt wird
+* Nachteil: man hat immer Full Deployment
+* Wenn System logisch diese Komponenten rausgeformt hat, dann sollte der Schritt, dass man zur Laufzeit das System in unabhängige Komponten bringt, nicht mehr so weit hin sein
+* Services, die man hat, als externe Schnittstelle zur Verfügung stellen
+* Zur Laufzeit zugreifbar machen
+* Problem: man hat verteiltes System
+    * Bislang hatte man nur einen großen Brocken
+    * Plötzlich hat man statt 2-3 deployment Einheiten, 20-30 Deployment-Einheiten
+    * Jetzt schlagen die ganzen Verfügbarkeits-Wahrscheinlichkeiten zu
+
+### Verteilte Systeme (01:03:18)
+
+* Uwe ist absoluter Liebhaber verteilter Systeme
+* Es gibt 2 Harte Themen in der IT: Security und verteilte Systeme
+    * Oder Naming und Cache-Invalidation?
+* Naming ist Teilaspekt von verteilten Systemen
+* Projekt mit guten Anwendungsentwicklern, die aber keine Cracks in verteilter Systementwicklung sind
+    * Wenn ich die auf ein verteiltes System los lasse
+    * Und gleichzeitig Sicherstellen, dass man das System zur Laufzeit überwachen kann
+    * Dem System Selbstheilungsfähigkeiten beibringen
+    * Da kein Admin ein System dieser Größe unter Kontrolle halten kann
+    * Bevor ich mir diesen Schmerz nehme, brauch ich auch einen Treiber für diesen Schmerz
+
+### Einfluss von SOA und Microservices auf Organisationen  (01:07:55)
+
+* Märkte haben sich verändert
+* Wir waren lange Zeit im industriellen Zeitalter, geprägt von Taylorismus
+    * Sehr flexibel, sehr spezifisch, handgefertigt
+    * Sehr individuell auf Kundenbedürfnisse eingegangen
+    * Problem: Man konnte nicht skalieren
+* Heute hat man große, weite, nahezu unlimitierte Märkte
+    * Wie will man diesen Markt bedienen?
+    * --> Standardisieren
+    * Vereinfachung und Zerlegung der einzelnen Schritte der Prozesskette
+    * Dadurch relativ langsam sich veränderten Markt skaliert
+* (seit 70er/80er) Marktsättigung, stärkere Globalisierung
+    * Märkte immer enger, die Kunden wurden wählerischer, mehr Wettbewerber
+    * Plötzlich musste man wankelmütigen Kunden schneller angehen
+    * Dynamisch robustes Unternehmen für dynamischen, sehr aktiven Markt
+    * Nicht mehr skalierung das Hauptthema, sondern die Reaktionsgeschwindigkeit
+    * "Time To Market"
+* Markt hat sich massiv gewandelt
+    * Wirtschafts-Darwinismus
+    * IT ist das Nervensystem eines jeden Unternehmens
+        * IT hatte Skalierungsproblem
+        * Problem war: es konnte nicht so schnell geliefert werden, wie es gefordert wurde
+        * Ideen des Software Engineering (Ende 60er)
+            * Prinzipien aus Taylorismus
+        * 80er Siegeszug der PCs
+        * Vernetzung
+        * Immer komplexere Sachen durch IT gelöst
+        * Bis auf Geschäftsprozessebene
+        * Irgendwann kam Internet dazu
+        * Internet Handel
+        * Noch mehr Vernetzung
+    * Gesamte IT Landschaft war soweit, dass es das komplette Nervensystem eines Unternehmens geworden ist
+        * Jetzt haben wir das Problem: 
+            * Wenn IT 2 Stunden ausfällt, haben wir ein massives Problem.
+        * Entscheider haben das wiederwillig akzeptiert
+        * --> Sicherungsmaßnahmen wurden eingerichtet
+        * Mit dem Ziel: Stabilen und zuverlässigen Betrieb
+        * Problem Heute: Wenn IT Nervensystem des Unternehmens ist, dann sind sämtliche Geschäftsprozesse wie DNA in IT reincodiert
+        * Man kann kein neues Produkt launchen, kein Feature, kein neuen Prozess auf der Businessebene ändern, ohne die IT anzufassen
+        * IT ist integraler Bestandteil eines Unternehmens
+* IT als Nervensystem
+    * Mittlerweile keine komplizierten Projekte mehr, sondern komplexe Projekte
+    * Weil man nicht mehr einzelne Geschäftsfunktionen unterstützt, sondern kompletter Dynamik des Marktes ausgeliefert ist
+    * Nicht mehr Anforderung, dass man skalieren muss, sondern dass die Reaktionsgeschwindigkeit das neue A und O wird
+    * "Mehrwert ist erst in Produktion"
+    * Anforderung von Geschäftsseite: 
+        *Man möchte in der Lage sein, etwas in Tages- oder Wochenzeitraum rausbringen
+    * Teilfeature raus hauen, um die Kundenreaktion einzuholen
+
+### PDCA vs OODA (01:20:25)
+
+* Plan Do Check Act vs. Observe Orient Decide Act
+* Bei beiden macht man einen Schritt, guckt wie die Leute reagieren und macht den nächsten Schritt
+* Example A
+    * Unternehmen stellt Hypothese auf:
+        * "Kunden werden auf dieses Produkt fliegen."
+    * Baut Produkt und ist nach 9-15 Monaten live
+* Example B
+    * Lean Start Up
+    * Hypothese
+    * Man macht Minimal Viable Product
+    * Bringt das raus, misst
+    * Passt Produkt an
+* Frage: Wer wird nach einem Jahr näher an den Kundenbedürfnissen dran sein?
+
+### Organisationsstrukturen im Wandel (01:23:15)
+
+* Aufstellung nicht mehr nach Skalierung und Fehlervermeidung, sondern nach Reaktiongeschwindigkeit
+* Reaktionsgeschwindigkeit benötigt autonome Teams, dezentrale Steuerung, usw...
+* Ende zu Ende Verantwortung für meine Themen
+* Man landet bei DevOps, 
+* Wertschöpfungskette wird nicht mehr nach Spezialistenteams aufgebaut, mit dem Ziel der maximalen Fehlervermeidung
+* Sondern jetzt mit dem Ziel der Reaktionsgeschwindigkeit
+* Daher crossfunktionale Teams, die Ende zu Ende alles machen können
+* Die ganzen Leute sind beieinander und interagieren direkt miteinander
+* Notwendige Komplexität auf der Lösungsseite aufgebaut, die auf der Anforderungsseite entsteht
+* "Die Architektur meines Systems wird normalerweise immer der Kommunikationsstrukturen in meinem Unternehmen entsprechen." - Conway's Law
+* Organisation kann nur effektiv und effizient werden, wenn Architektur, die ich auf der technischen Seite anbiete, zur Unternehmensstruktur passt
+* Problem: Man kann keine autonomen Teams, die reaktionsschnell sein sollen, auf einem großen Monoliten zusammen arbeiten lassen
+* Microservices liefern das Architekturparadigma, um diese Autonomie auf der IT-Organisationsebene zu liefern
+* Wird über DevOps Teams abgebildet
+
+### Von Visionen und Agilität (01:27:30)
+
+* Man Benötigt eine gemeinsame Vision
+* Aufgabe eines Architekten ist es die Vision darzustellen, das Zielbild
+* Agile Teams: Selbstorganisation als indirekte Steuerung
+* "Ich will, dass ihr da ankommt, unter diesen Rahmenbedingungen."
+* Man muss Lücken zwischen Teams füllen
+* Team muss mit Services von anderen Teams reden
+* Damit Kommunikation zwischen Teams und Services funktioniert, muss es Satz an Constraints geben
+* Spielregeln zur effizienten Zusammenarbeit definieren
+* Auf Prozessebene hat man Agilität der Lean- und DevOps Prinzipien
+* Auf Organisationsebene fängt man mit autonome Teams an, End-to-End Verantwortung
+* Auf menschlicher Seite hat man Craftmanship
+    * bzw. die Gedankenwelt hinter Craftmanship: Professionalisierung der Arbeitsweise und Kollaboration miteinander
+* Auf technischer Ebene wird Diversität zugelassen:
+    * Microservices
+    * Cloudinfrastruktur
+    * Self-Service-Prinzip
+
+### Der Homo-Ja-Aber (01:35:40)
+
+* Unternemerischer und Organisatorischer Wandel ist die Hölle, besonders in Deutschland
+* Hindernisse in der deutschen IT Szene:
+    * Der Deutsche ist die Weiterentwicklung des Homosapians in den Homo-Ja-Aber
+    * Der Deutsche neigt dazu, Gründe gegen eine Veränderung zu finden
+    * SWAT Analyse (aus Marketing), Deutsche guckt nur auf Weaknesses und Threats
+        * Beharrungsvermögen der Deutschen (Ja, aber...)
+    * Unternehmen haben Kultur, die seit 20 Jahren oder länger entwickelt wurde
+        * Deutsche Unternehmen sind träger
+    * Viele Unternehmen stellen fest, dass sie ein Problem haben, dass es so nicht weiter gehen kann
+    * Erkennen, dass sie sich ändern müssen, haben jedoch keine Idee wohin und wie
+* Viele Unternehmen bauen Piloten nebenan, StartUps im Unternehmen
+    * Wird so weit wie möglich entkoppelt
+    * Ist notwendig, da man bis hin zu Governance Modellen (Führung, Steuerung) die IT neu gedacht werden muss
+    * Man will hohe Reaktionsgeschwindigkeit erschaffen in den Teams
+    * Entkopplung von dynamischen, agilen Teams aus trägem System
+    * Um zu lernen, wie anderer Ansatz funktioniert, muss sich so weit wie möglich entkoppelt werden
+*  Zu verstehen wie neue Struktur funktioniert ist Lernzyklus 
+    * Man muss Zyklus auf Metaebene durchlaufen
+        * Bis man kapiert hat wie neue Organisation auf allen Ebenen wie Technologie, Prozessorganisation und Governance Modell funktioniert
+
+### Unternehmen bei denen der Wandel funktioniert hat? (01:45:40)
+
+* Bei Otto wurde Shop neu aufgestellt, mit neuen Prinzipien, sowohl technisch als auch organisatorisch
+* Bei der Post ist man mit einigen internen StartUps unterwegs
+* Telekom hat auch Ansätze in dieser Richtung
+* Einige weitere versuchen es
+* Bei Organisationen, die einen hohen Wettbewerbsdruck haben, sieht man Änderungen massiv
+
+### Ausnahmen (01:51:00)
+
+* Wann kann ich mich dem Wettbewerbsdruck entziehen?
+    1. Wenn ich einen nicht-effizienten Markt habe
+        * Markt wird künstlich träge gehalten (Lobbyismus)
+    2. Auf technischer Ebene
+        * Wenn technische Ebene komplett intern ist und keinem Marktdruck ausgesetzt ist
+    3. Produkt-Lebenszyklus: 
+        * Neues Produkt, dass ich durch die IT unterstütze, bzw. IT ist selber das Produkt
+        * Boston Consulting Group Hype Cycle
+        * Versuche rauszufinden, was die Kunden haben wollen
+        * Kosten überschaubar halten
+        * Ding hebt ab
+        * Mich interessiert keine Kosteneffizient
+        * Versuchen jeden potentiellen Kunden auf mein Produkt drauf kriegen
+        * Solange dran drehen (IT Systeme nacharbeiten) bis ich maximalen Marktanteil rausgeholt habe
+        * Dann wechsel ich den Zyklus in Cash Cow rüber
+        * Markt ist klar, Anteile sind vergeben
+        * Reaktionsgeschwindigkeit runter fahren, Kosteneffizienz hoch fahren
+        * Kann in anderes Paradigma wechseln, rein auf Kosteneffizient trimmen
+        * Quality of Service wird aufrecht erhalten, um keine Kunde zu verlieren
+
+### Von Null auf Legacy in unter 3 Monaten (01:56:00)
+
+* Agile Projekte die nur Code gekloppt haben
+* Velocity ist runter gegangen
+* Der normale ITler ist ein Messi, löscht keinen Code
+* Man hat auf der Fachseite Leute die gar nicht wissen warum Sachen gemacht werden, sondern nur wie sie gemacht werden
+* Haben den Sinn nicht verstanden
+* Auf der IT Seite hat man sehr viele Entwickler, die sich wehren Fachlogik zu verstehen
+* können daher kein gutes Design machen und wissen nicht, ob Code noch irgendwo gebraucht wird
+
+### Beim neu Bauen wird alles besser (02:00:30)
+
+* Wenn ein System komplett neu gebaut wird, begeht man zwar die alten Fehler nicht mehr, dafür aber sehr viele neue
+* Man hat keine Chance wenn man keine guten Leute im Design hat
+* Wenn man ein gutes, wartbares System haben möchte, ist Design das wichtigste
+* Unternehme erkennen nur schwer: Wenn ich so etwas hoch ziehe, muss ich gute Leute reinsetzen, die Dinge gut beurteilen und abwägen und entscheiden können
+* Das sind dann die Leute, auf die man dann in einem kosteneffizienten Unternehmen niemals in dem Fachbereichen verzichten kann, weil sie unersetzlich sind
+* Hybridlösung: 30% der Zeit, Tauchen 2 Stunden die Woche mal auf
+* Entwickler sind wo anders untergebracht als der Fachbereich: verteilte Entwicklung
+* Das macht es schwierig
+* Idealzustand: 
+    * Crossfunktionales Team
+    * Alle Kompetenzen vorhanden
+    * Alle vor Ort
+    * Idealerweise in einem Büro
+    * Wenn das richtig gemacht ist, kann das gut funktionieren.
+
+### Schlusswort (02:08:20)
+
+* Markt hat sich geändert
+* IT muss sich darauf anpassen und sich neu erfinden
+* Amazon, Google, Netflix usw. haben vorgemacht wie es funktionieren kann
+* haben Lernkurven hinter sich. Da kann man wunderbar drauf gucken
+* man muss aufhören Ja-Aber zu sagen und gucken, was man da raus ziehen kann]]></itunes:summary>
+          <description><![CDATA[<p><strong>Synopsis</strong>: Uwe Friedrichsen nimmt uns mit auf eine historische Rundreise der IT-Geschichte und schafft eine Grundlage, um aktuelle Problematiken der Unternehmenswelt zu verstehen. Durch die Veränderung der Märkte und Organisationsstrukturen in den letzten Jahrzehnten wuchs die IT als Nervensystem eines jeden Unternehmens heran. Dies bedingt eine Wechselwirkung zwischen den organisatorischen Strukturen eines Unternehmens und dem Architekturdesign der Softwarelösungen.</p>
+
+<h3>Uwe Friedrichsen (00:00:00)</h3>
+
+<ul>
+<li>Uwe Friedrichsen, CTO bei codecentric.de</li>
+<li>Seit über 30 Jahren in der IT Szene unterwegs</li>
+<li>Hat Kinder, Studieren bereits</li>
+<li>Vor 33 Jahren erste kommerzielle Software verkauft</li>
+<li>Hat Informatik studiert</li>
+<li>Hat so ziemlich alles gemacht rund um Softwareentwicklung </li>
+<li>Von Anforderungserhebung über Architekturdesign und Entwicklung bis Testmanagement</li>
+<li>Aktuell für thematische Entwicklung und Aufstellung von codecentric.de zuständig</li>
+<li>Interesse an skalierbare verteile Systeme</li>
+</ul>
+
+<h3>Trendgeschichte der IT (00:06:00)</h3>
+
+<ul>
+<li>Erste Züge von CORBA mitbekommen</li>
+<li>Anschließend JAVA Komponenten (EJB)</li>
+<li>SOA Welle mit SOAP</li>
+<li>WS* Standards</li>
+<li>RESTafarians</li>
+<li>Funktionsorientierung vs Ressourcenorientierung</li>
+<li>Objekte als Ressourcen?</li>
+<li>Ressourcen auf Funktionen aufsetzen?</li>
+</ul>
+
+<h3>Designgrundlage: UseCase (00:14:00)</h3>
+
+<ul>
+<li>Viele versuchen Ressourcenmodell auf Entitätsmodell aufzubauen</li>
+<li>Sinnvollerer Ansatz: UseCase Modell
+
+<ul>
+<li>Ressource soll Ende-zu-Ende Dienstleistung anbieten</li>
+<li>System nach UseCases zuschneiden</li>
+<li>UseCases sinnvoll kapseln</li>
+<li>Services autonom gestalten</li>
+</ul></li>
+</ul>
+
+<h3>Problem etablierte Ansätze und Konzepte (00:21:20)</h3>
+
+<ul>
+<li>CORBA, ECB, SOA
+
+<ul>
+<li>Fingen alle mit fluffiger, leichter Idee an</li>
+<li>Niedrige Lernkurve</li>
+<li>Dann ging Fragerei los (was ist mit Naming? wie ist das mit verteilten Transaktionen?, usw.)</li>
+<li>Einzelne Lösungen für immer mehr Probleme</li>
+<li>Ansätze unter eigener Last zusammengebrochen</li>
+</ul></li>
+<li>REST ist REST geblieben</li>
+</ul>
+
+<h3>Qualitativer unterschied zwischen Server und Mainframe (00:29:00)</h3>
+
+<ul>
+<li>Mainframe 
+
+<ul>
+<li>Hat das Verfügbarkeitsproblem und das Verteilungsproblem für lange Zeit sehr gut gelöst</li>
+<li>War von seiner Hardware so gestaltet, dass er extrem hoch verfügbar ist</li>
+<li>Hat hervorragendes Ressourcenmanagement (Ressourcenallokation)</li>
+<li>Für frühere Verhältnisse sehr vertikal skalierbar</li>
+<li>Keine Notwendigkeit für Verteiltheit</li>
+<li>Man konnte alles auf einer Maschine laufen lassen</li>
+<li>EJB Container auf Steroiden</li>
+<li>Auf einem 266er Pentium konnten simultan über 250 User bedient werden (Benchmark)</li>
+<li>Extreme Verfügbarkeit durch Infrastruktur</li>
+<li>Probleme
+
+<ul>
+<li>Schwierigkeit für international agierende Unternehmen</li>
+<li>Monolitisches System für lokal verteilte Nutzer</li>
+<li>Geschäftsmodelle haben sich geändert</li>
+<li>Neukunden steigen nicht mehr mit Mainframe ein</li>
+<li>Neugeschäft dümpelt auf sehr niedrigem Niveau</li>
+<li>Vertikale Skalierung ist irgendwann zu ende</li>
+<li>Preise für CPU, Storage und Netzzeit sind irgendwann nicht mehr konkurrenzfähig</li>
+<li>Fehlendes Know-How und Preis töten Mainframes</li>
+<li>Ära ist einfach vorbei</li>
+</ul></li>
+<li>Anekdote von Uwe 
+
+<ul>
+<li>Kunde mit Online Suchmaschine</li>
+<li>2 große Unix-Maschinen</li>
+<li>Darauf liegt sehr namenhafte Suchmaschine</li>
+<li>Lizenzkosten waren sehr hoch (jährlich im 7-stelligen Bereich)</li>
+<li>(SLA) 300 Anfragen/s mit der Antwortzeit von 250ms</li>
+<li>&quot;Das können wir billiger.&quot;</li>
+<li>3 normale &quot;Kisten&quot; von Dell (o.ä.) mit 2 Xenon, 12 Kerne (24 virtuell)</li>
+<li>ca. 5000€ pro Kiste</li>
+<li>20 Mio. Datensätze des Kunden </li>
+<li>Proof of Concept System: MongoDB, Solr, UI</li>
+<li>Lasttest wurde bei 3000 simultanen Clients wurde abgebrochen, weil das Testnetz nicht mehr Leistung hergegeben hat</li>
+<li>Es konnte nicht mehr Durchsatz erzeugt werden</li>
+<li>Normale Kiste lief im &quot;Idle&quot;; es wurde nur eine von drei benötigt</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3>Ab wann ist Data Big? (00:41:50)</h3>
+
+<ul>
+<li>20 Mio. Datensätze ist Micky Mouse Data</li>
+<li>IBM Mitarbeiter erzählte das BigData bei 40MB anfängt</li>
+<li>BigData ist dann, wenn du wirklich viele Daten bekommst!</li>
+<li>BigData sind Datensätze im Milliardenbereich
+
+<ul>
+<li>20 Mio. Datensätze kann man entspannt in relationaler Datenbank verwalten</li>
+<li>BigData ist auch, wenn man Daten so schnell bekommt (Velocity-Thema), dass man nicht mehr in der Lage ist, diese zu speichern und dann zu bearbeiten, sondern im vorbeifliegen bearbeiten muss</li>
+</ul></li>
+</ul>
+
+<h3>Angemessene Lösungen finden (00:44:40)</h3>
+
+<ul>
+<li>Ziel ist es immer, eine angemessene Lösung zu finden</li>
+<li>Kunde will Hadoop Cluster für 20 Mio. Datensätze</li>
+<li>Mit Hadoop hat man mehr Stress</li>
+<li>Diese Menge an Daten kann man entspannt in transaktionaler Datenbank verwalten</li>
+<li>Weniger komplexes Programmiermodell</li>
+<li>Unterschied ob man im Moment kein echtes BigData hat aber Thema lernen will</li>
+<li>ODER </li>
+<li>Ob man in einem Produktionsszenario ist, Wartung, Betrieb, Weiterentwicklung etc. hat und BigData Technologien einsetzen will</li>
+<li>Ergebnis ist dann oftmals: 
+
+<ul>
+<li>Betrieb wird aufwendiger,</li>
+<li>Überwachung wird aufwendiger, </li>
+<li>Rausfinden was schief geht, wird aufwendiger</li>
+<li>Tooling ist schlechter</li>
+<li>Laufzeiten sind höher, </li>
+<li>Mehr Ressourcen werden benötigt, </li>
+<li>Weiterentwicklung ist lausiger</li>
+</ul></li>
+<li>--&gt; Dann wurde keine gute Designentscheidung/Architekturentscheidung getroffen</li>
+</ul>
+
+<h3>Spieltrieb (00:48:05)</h3>
+
+<ul>
+<li>Jeder, der in die IT Branche kommt, weil er gerne programmiert, hat ausgeprägten Spieltrieb</li>
+<li>Problem ist, dass Unternehmen diesen kreativen Menschen jedoch kein Ventil für diesen Spieltrieb geben</li>
+<li>Diese Menschen wollen neue Dinge irgendwo ausprobieren</li>
+<li>Das nächste Projekt wird dann als Spielwiese missbraucht</li>
+</ul>
+
+<h3>Entscheider und Entscheidungen (00:49:40)</h3>
+
+<ul>
+<li>Sehr viele IT Entscheider haben keine Ahnung was sie da entscheiden</li>
+<li>Zwei Möglichkeiten: entweder was von der Materie verstehen oder man braucht einen Vertrauten, der etwas davon versteht</li>
+<li>Es gibt zu viele Entscheider die ihre Themen nur auf Basis von Computerwoche verstehen</li>
+<li>Computerwoche ist Bildzeitung der Computerbranche</li>
+<li>Artikel sind Informationshäppchen, die nicht in die Tiefe gehen</li>
+<li>Keine Grundlage für Entscheidung, die sich auf Unternehmen auswirkt</li>
+<li>Entscheider versuchen sich über diese Zeitung zu informieren</li>
+<li>Letztendlich Entscheidung auf Basis von Buzzword-Bingo durch Zeitung, Marketing, Sales- und Consultants</li>
+</ul>
+
+<h3>Buzzword Standards (00:53:00)</h3>
+
+<ul>
+<li>Buzzwords wie Agil, Microservices, ... lassen Interpretationsspielraum</li>
+<li>Problem der Verwässerung</li>
+<li>Multimilliardenmarkt IT Branche ist von Entscheidern durchsetzt, die keine Ahnung haben</li>
+<li>Bzw. keine Ahnung auf der Ebene, als dass sie sagen können: &quot;Du erzählst mir gerade hier jede Menge Bullshit.&quot;</li>
+<li>Anforderung: Auf einer Flughöhe von 3000m sollte ein Entscheider ein Verständnis dafür haben, was da unten passiert</li>
+<li>Grundverständnis aufbauen, was das tut, warum das tut, usw...</li>
+</ul>
+
+<h3>Microservices aus dem Gewürzregal (00:56:00)</h3>
+
+<ul>
+<li>Kunde macht neues System und das soll auch mit Microservices</li>
+<li>Will eigtl. klassischen Deploymentzyklus haben (1 Mal im Monat)</li>
+<li>Skalierung reicht wenn man innerhalb von 1-3 Tagen skalieren kann</li>
+<li>Gegenüberstellung von monolitischem System und Microservices</li>
+<li>In 10 Minuten erzählt, was das ist und wo die Unterschiede sind, Vor- und Nachteile aufgezeigt</li>
+<li>Spannungsfeld zwischen den beiden Entwürfen</li>
+<li>Dann gefragt, was er haben will</li>
+<li>--&gt; für Monolit entschieden</li>
+</ul>
+
+<h3>Monolitische Microservices zur Laufzeit (00:59:13)</h3>
+
+<ul>
+<li>Abhängigkeiten von Services zur Build-Zeit auflösen</li>
+<li>Services, im Java Umfeld, als Jar File im Repo reinnehmen</li>
+<li>Einbinden von Bibliotheken in Anwendung, die an sich unabhängig sind</li>
+<li>Zur Laufzeit von aussen wie ein Monolit, der zur Build-Zeit aus einzelnen Services zusammengesetzt wird</li>
+<li>Nachteil: man hat immer Full Deployment</li>
+<li>Wenn System logisch diese Komponenten rausgeformt hat, dann sollte der Schritt, dass man zur Laufzeit das System in unabhängige Komponten bringt, nicht mehr so weit hin sein</li>
+<li>Services, die man hat, als externe Schnittstelle zur Verfügung stellen</li>
+<li>Zur Laufzeit zugreifbar machen</li>
+<li>Problem: man hat verteiltes System
+
+<ul>
+<li>Bislang hatte man nur einen großen Brocken</li>
+<li>Plötzlich hat man statt 2-3 deployment Einheiten, 20-30 Deployment-Einheiten</li>
+<li>Jetzt schlagen die ganzen Verfügbarkeits-Wahrscheinlichkeiten zu</li>
+</ul></li>
+</ul>
+
+<h3>Verteilte Systeme (01:03:18)</h3>
+
+<ul>
+<li>Uwe ist absoluter Liebhaber verteilter Systeme</li>
+<li>Es gibt 2 Harte Themen in der IT: Security und verteilte Systeme
+
+<ul>
+<li>Oder Naming und Cache-Invalidation?</li>
+</ul></li>
+<li>Naming ist Teilaspekt von verteilten Systemen</li>
+<li>Projekt mit guten Anwendungsentwicklern, die aber keine Cracks in verteilter Systementwicklung sind
+
+<ul>
+<li>Wenn ich die auf ein verteiltes System los lasse</li>
+<li>Und gleichzeitig Sicherstellen, dass man das System zur Laufzeit überwachen kann</li>
+<li>Dem System Selbstheilungsfähigkeiten beibringen</li>
+<li>Da kein Admin ein System dieser Größe unter Kontrolle halten kann</li>
+<li>Bevor ich mir diesen Schmerz nehme, brauch ich auch einen Treiber für diesen Schmerz</li>
+</ul></li>
+</ul>
+
+<h3>Einfluss von SOA und Microservices auf Organisationen  (01:07:55)</h3>
+
+<ul>
+<li>Märkte haben sich verändert</li>
+<li>Wir waren lange Zeit im industriellen Zeitalter, geprägt von Taylorismus
+
+<ul>
+<li>Sehr flexibel, sehr spezifisch, handgefertigt</li>
+<li>Sehr individuell auf Kundenbedürfnisse eingegangen</li>
+<li>Problem: Man konnte nicht skalieren</li>
+</ul></li>
+<li>Heute hat man große, weite, nahezu unlimitierte Märkte
+
+<ul>
+<li>Wie will man diesen Markt bedienen?</li>
+<li>--&gt; Standardisieren</li>
+<li>Vereinfachung und Zerlegung der einzelnen Schritte der Prozesskette</li>
+<li>Dadurch relativ langsam sich veränderten Markt skaliert</li>
+</ul></li>
+<li>(seit 70er/80er) Marktsättigung, stärkere Globalisierung
+
+<ul>
+<li>Märkte immer enger, die Kunden wurden wählerischer, mehr Wettbewerber</li>
+<li>Plötzlich musste man wankelmütigen Kunden schneller angehen</li>
+<li>Dynamisch robustes Unternehmen für dynamischen, sehr aktiven Markt</li>
+<li>Nicht mehr skalierung das Hauptthema, sondern die Reaktionsgeschwindigkeit</li>
+<li>&quot;Time To Market&quot;</li>
+</ul></li>
+<li>Markt hat sich massiv gewandelt
+
+<ul>
+<li>Wirtschafts-Darwinismus</li>
+<li>IT ist das Nervensystem eines jeden Unternehmens
+
+<ul>
+<li>IT hatte Skalierungsproblem</li>
+<li>Problem war: es konnte nicht so schnell geliefert werden, wie es gefordert wurde</li>
+<li>Ideen des Software Engineering (Ende 60er)
+
+<ul>
+<li>Prinzipien aus Taylorismus</li>
+</ul></li>
+<li>80er Siegeszug der PCs</li>
+<li>Vernetzung</li>
+<li>Immer komplexere Sachen durch IT gelöst</li>
+<li>Bis auf Geschäftsprozessebene</li>
+<li>Irgendwann kam Internet dazu</li>
+<li>Internet Handel</li>
+<li>Noch mehr Vernetzung</li>
+</ul></li>
+<li>Gesamte IT Landschaft war soweit, dass es das komplette Nervensystem eines Unternehmens geworden ist
+
+<ul>
+<li>Jetzt haben wir das Problem: 
+
+<ul>
+<li>Wenn IT 2 Stunden ausfällt, haben wir ein massives Problem.</li>
+</ul></li>
+<li>Entscheider haben das wiederwillig akzeptiert</li>
+<li>--&gt; Sicherungsmaßnahmen wurden eingerichtet</li>
+<li>Mit dem Ziel: Stabilen und zuverlässigen Betrieb</li>
+<li>Problem Heute: Wenn IT Nervensystem des Unternehmens ist, dann sind sämtliche Geschäftsprozesse wie DNA in IT reincodiert</li>
+<li>Man kann kein neues Produkt launchen, kein Feature, kein neuen Prozess auf der Businessebene ändern, ohne die IT anzufassen</li>
+<li>IT ist integraler Bestandteil eines Unternehmens</li>
+</ul></li>
+</ul></li>
+<li>IT als Nervensystem
+
+<ul>
+<li>Mittlerweile keine komplizierten Projekte mehr, sondern komplexe Projekte</li>
+<li>Weil man nicht mehr einzelne Geschäftsfunktionen unterstützt, sondern kompletter Dynamik des Marktes ausgeliefert ist</li>
+<li>Nicht mehr Anforderung, dass man skalieren muss, sondern dass die Reaktionsgeschwindigkeit das neue A und O wird</li>
+<li>&quot;Mehrwert ist erst in Produktion&quot;</li>
+<li>Anforderung von Geschäftsseite: 
+*Man möchte in der Lage sein, etwas in Tages- oder Wochenzeitraum rausbringen</li>
+<li>Teilfeature raus hauen, um die Kundenreaktion einzuholen</li>
+</ul></li>
+</ul>
+
+<h3>PDCA vs OODA (01:20:25)</h3>
+
+<ul>
+<li>Plan Do Check Act vs. Observe Orient Decide Act</li>
+<li>Bei beiden macht man einen Schritt, guckt wie die Leute reagieren und macht den nächsten Schritt</li>
+<li>Example A
+
+<ul>
+<li>Unternehmen stellt Hypothese auf:
+
+<ul>
+<li>&quot;Kunden werden auf dieses Produkt fliegen.&quot;</li>
+</ul></li>
+<li>Baut Produkt und ist nach 9-15 Monaten live</li>
+</ul></li>
+<li>Example B
+
+<ul>
+<li>Lean Start Up</li>
+<li>Hypothese</li>
+<li>Man macht Minimal Viable Product</li>
+<li>Bringt das raus, misst</li>
+<li>Passt Produkt an</li>
+</ul></li>
+<li>Frage: Wer wird nach einem Jahr näher an den Kundenbedürfnissen dran sein?</li>
+</ul>
+
+<h3>Organisationsstrukturen im Wandel (01:23:15)</h3>
+
+<ul>
+<li>Aufstellung nicht mehr nach Skalierung und Fehlervermeidung, sondern nach Reaktiongeschwindigkeit</li>
+<li>Reaktionsgeschwindigkeit benötigt autonome Teams, dezentrale Steuerung, usw...</li>
+<li>Ende zu Ende Verantwortung für meine Themen</li>
+<li>Man landet bei DevOps, </li>
+<li>Wertschöpfungskette wird nicht mehr nach Spezialistenteams aufgebaut, mit dem Ziel der maximalen Fehlervermeidung</li>
+<li>Sondern jetzt mit dem Ziel der Reaktionsgeschwindigkeit</li>
+<li>Daher crossfunktionale Teams, die Ende zu Ende alles machen können</li>
+<li>Die ganzen Leute sind beieinander und interagieren direkt miteinander</li>
+<li>Notwendige Komplexität auf der Lösungsseite aufgebaut, die auf der Anforderungsseite entsteht</li>
+<li>&quot;Die Architektur meines Systems wird normalerweise immer der Kommunikationsstrukturen in meinem Unternehmen entsprechen.&quot; - Conway&#39;s Law</li>
+<li>Organisation kann nur effektiv und effizient werden, wenn Architektur, die ich auf der technischen Seite anbiete, zur Unternehmensstruktur passt</li>
+<li>Problem: Man kann keine autonomen Teams, die reaktionsschnell sein sollen, auf einem großen Monoliten zusammen arbeiten lassen</li>
+<li>Microservices liefern das Architekturparadigma, um diese Autonomie auf der IT-Organisationsebene zu liefern</li>
+<li>Wird über DevOps Teams abgebildet</li>
+</ul>
+
+<h3>Von Visionen und Agilität (01:27:30)</h3>
+
+<ul>
+<li>Man Benötigt eine gemeinsame Vision</li>
+<li>Aufgabe eines Architekten ist es die Vision darzustellen, das Zielbild</li>
+<li>Agile Teams: Selbstorganisation als indirekte Steuerung</li>
+<li>&quot;Ich will, dass ihr da ankommt, unter diesen Rahmenbedingungen.&quot;</li>
+<li>Man muss Lücken zwischen Teams füllen</li>
+<li>Team muss mit Services von anderen Teams reden</li>
+<li>Damit Kommunikation zwischen Teams und Services funktioniert, muss es Satz an Constraints geben</li>
+<li>Spielregeln zur effizienten Zusammenarbeit definieren</li>
+<li>Auf Prozessebene hat man Agilität der Lean- und DevOps Prinzipien</li>
+<li>Auf Organisationsebene fängt man mit autonome Teams an, End-to-End Verantwortung</li>
+<li>Auf menschlicher Seite hat man Craftmanship
+
+<ul>
+<li>bzw. die Gedankenwelt hinter Craftmanship: Professionalisierung der Arbeitsweise und Kollaboration miteinander</li>
+</ul></li>
+<li>Auf technischer Ebene wird Diversität zugelassen:
+
+<ul>
+<li>Microservices</li>
+<li>Cloudinfrastruktur</li>
+<li>Self-Service-Prinzip</li>
+</ul></li>
+</ul>
+
+<h3>Der Homo-Ja-Aber (01:35:40)</h3>
+
+<ul>
+<li>Unternemerischer und Organisatorischer Wandel ist die Hölle, besonders in Deutschland</li>
+<li>Hindernisse in der deutschen IT Szene:
+
+<ul>
+<li>Der Deutsche ist die Weiterentwicklung des Homosapians in den Homo-Ja-Aber</li>
+<li>Der Deutsche neigt dazu, Gründe gegen eine Veränderung zu finden</li>
+<li>SWAT Analyse (aus Marketing), Deutsche guckt nur auf Weaknesses und Threats
+
+<ul>
+<li>Beharrungsvermögen der Deutschen (Ja, aber...)</li>
+</ul></li>
+<li>Unternehmen haben Kultur, die seit 20 Jahren oder länger entwickelt wurde
+
+<ul>
+<li>Deutsche Unternehmen sind träger</li>
+</ul></li>
+<li>Viele Unternehmen stellen fest, dass sie ein Problem haben, dass es so nicht weiter gehen kann</li>
+<li>Erkennen, dass sie sich ändern müssen, haben jedoch keine Idee wohin und wie</li>
+</ul></li>
+<li>Viele Unternehmen bauen Piloten nebenan, StartUps im Unternehmen
+
+<ul>
+<li>Wird so weit wie möglich entkoppelt</li>
+<li>Ist notwendig, da man bis hin zu Governance Modellen (Führung, Steuerung) die IT neu gedacht werden muss</li>
+<li>Man will hohe Reaktionsgeschwindigkeit erschaffen in den Teams</li>
+<li>Entkopplung von dynamischen, agilen Teams aus trägem System</li>
+<li>Um zu lernen, wie anderer Ansatz funktioniert, muss sich so weit wie möglich entkoppelt werden</li>
+</ul></li>
+<li> Zu verstehen wie neue Struktur funktioniert ist Lernzyklus 
+
+<ul>
+<li>Man muss Zyklus auf Metaebene durchlaufen
+
+<ul>
+<li>Bis man kapiert hat wie neue Organisation auf allen Ebenen wie Technologie, Prozessorganisation und Governance Modell funktioniert</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3>Unternehmen bei denen der Wandel funktioniert hat? (01:45:40)</h3>
+
+<ul>
+<li>Bei Otto wurde Shop neu aufgestellt, mit neuen Prinzipien, sowohl technisch als auch organisatorisch</li>
+<li>Bei der Post ist man mit einigen internen StartUps unterwegs</li>
+<li>Telekom hat auch Ansätze in dieser Richtung</li>
+<li>Einige weitere versuchen es</li>
+<li>Bei Organisationen, die einen hohen Wettbewerbsdruck haben, sieht man Änderungen massiv</li>
+</ul>
+
+<h3>Ausnahmen (01:51:00)</h3>
+
+<ul>
+<li>Wann kann ich mich dem Wettbewerbsdruck entziehen?
+
+<ol>
+<li>Wenn ich einen nicht-effizienten Markt habe
+
+<ul>
+<li>Markt wird künstlich träge gehalten (Lobbyismus)</li>
+</ul></li>
+<li>Auf technischer Ebene
+
+<ul>
+<li>Wenn technische Ebene komplett intern ist und keinem Marktdruck ausgesetzt ist</li>
+</ul></li>
+<li>Produkt-Lebenszyklus: 
+
+<ul>
+<li>Neues Produkt, dass ich durch die IT unterstütze, bzw. IT ist selber das Produkt</li>
+<li>Boston Consulting Group Hype Cycle</li>
+<li>Versuche rauszufinden, was die Kunden haben wollen</li>
+<li>Kosten überschaubar halten</li>
+<li>Ding hebt ab</li>
+<li>Mich interessiert keine Kosteneffizient</li>
+<li>Versuchen jeden potentiellen Kunden auf mein Produkt drauf kriegen</li>
+<li>Solange dran drehen (IT Systeme nacharbeiten) bis ich maximalen Marktanteil rausgeholt habe</li>
+<li>Dann wechsel ich den Zyklus in Cash Cow rüber</li>
+<li>Markt ist klar, Anteile sind vergeben</li>
+<li>Reaktionsgeschwindigkeit runter fahren, Kosteneffizienz hoch fahren</li>
+<li>Kann in anderes Paradigma wechseln, rein auf Kosteneffizient trimmen</li>
+<li>Quality of Service wird aufrecht erhalten, um keine Kunde zu verlieren</li>
+</ul></li>
+</ol></li>
+</ul>
+
+<h3>Von Null auf Legacy in unter 3 Monaten (01:56:00)</h3>
+
+<ul>
+<li>Agile Projekte die nur Code gekloppt haben</li>
+<li>Velocity ist runter gegangen</li>
+<li>Der normale ITler ist ein Messi, löscht keinen Code</li>
+<li>Man hat auf der Fachseite Leute die gar nicht wissen warum Sachen gemacht werden, sondern nur wie sie gemacht werden</li>
+<li>Haben den Sinn nicht verstanden</li>
+<li>Auf der IT Seite hat man sehr viele Entwickler, die sich wehren Fachlogik zu verstehen</li>
+<li>können daher kein gutes Design machen und wissen nicht, ob Code noch irgendwo gebraucht wird</li>
+</ul>
+
+<h3>Beim neu Bauen wird alles besser (02:00:30)</h3>
+
+<ul>
+<li>Wenn ein System komplett neu gebaut wird, begeht man zwar die alten Fehler nicht mehr, dafür aber sehr viele neue</li>
+<li>Man hat keine Chance wenn man keine guten Leute im Design hat</li>
+<li>Wenn man ein gutes, wartbares System haben möchte, ist Design das wichtigste</li>
+<li>Unternehme erkennen nur schwer: Wenn ich so etwas hoch ziehe, muss ich gute Leute reinsetzen, die Dinge gut beurteilen und abwägen und entscheiden können</li>
+<li>Das sind dann die Leute, auf die man dann in einem kosteneffizienten Unternehmen niemals in dem Fachbereichen verzichten kann, weil sie unersetzlich sind</li>
+<li>Hybridlösung: 30% der Zeit, Tauchen 2 Stunden die Woche mal auf</li>
+<li>Entwickler sind wo anders untergebracht als der Fachbereich: verteilte Entwicklung</li>
+<li>Das macht es schwierig</li>
+<li>Idealzustand: 
+
+<ul>
+<li>Crossfunktionales Team</li>
+<li>Alle Kompetenzen vorhanden</li>
+<li>Alle vor Ort</li>
+<li>Idealerweise in einem Büro</li>
+<li>Wenn das richtig gemacht ist, kann das gut funktionieren.</li>
+</ul></li>
+</ul>
+
+<h3>Schlusswort (02:08:20)</h3>
+
+<ul>
+<li>Markt hat sich geändert</li>
+<li>IT muss sich darauf anpassen und sich neu erfinden</li>
+<li>Amazon, Google, Netflix usw. haben vorgemacht wie es funktionieren kann</li>
+<li>haben Lernkurven hinter sich. Da kann man wunderbar drauf gucken</li>
+<li>man muss aufhören Ja-Aber zu sagen und gucken, was man da raus ziehen kann</li>
+</ul>
+]]></description>
+          <atom:link rel="http://podlove.org/deep-link" href="http://geekstammtisch.de#GST038" />
+
+          
+          <psc:chapters>
+          
+            <psc:chapter start="00:00:00" title="Uwe Friedrichsen" />
+          
+            <psc:chapter start="00:06:00" title="Trendgeschichte der IT" />
+          
+            <psc:chapter start="00:14:00" title="Designgrundlage: UseCase" />
+          
+            <psc:chapter start="00:21:20" title="Problem etablierte Ansätze und Konzepte" />
+          
+            <psc:chapter start="00:29:00" title="Qualitativer unterschied zwischen Server und Mainframe" />
+          
+            <psc:chapter start="00:41:50" title="Ab wann ist Data Big?" />
+          
+            <psc:chapter start="00:44:40" title="Angemessene Lösungen finden" />
+          
+            <psc:chapter start="00:48:05" title="Spieltrieb" />
+          
+            <psc:chapter start="00:49:40" title="Entscheider und Entscheidungen" />
+          
+            <psc:chapter start="00:53:00" title="Buzzword Standards" />
+          
+            <psc:chapter start="00:56:00" title="Microservices aus dem Gewürzregal" />
+          
+            <psc:chapter start="00:59:13" title="Monolitische Microservices zur Laufzeit" />
+          
+            <psc:chapter start="01:03:18" title="Verteilte Systeme" />
+          
+            <psc:chapter start="01:07:55" title="Einfluss von SOA und Microservices auf Organisationen " />
+          
+            <psc:chapter start="01:20:25" title="PDCA vs OODA" />
+          
+            <psc:chapter start="01:23:15" title="Organisationsstrukturen im Wandel" />
+          
+            <psc:chapter start="01:27:30" title="Von Visionen und Agilität" />
+          
+            <psc:chapter start="01:35:40" title="Der Homo-Ja-Aber" />
+          
+            <psc:chapter start="01:45:40" title="Unternehmen bei denen der Wandel funktioniert hat?" />
+          
+            <psc:chapter start="01:51:00" title="Ausnahmen" />
+          
+            <psc:chapter start="01:56:00" title="Von Null auf Legacy in unter 3 Monaten" />
+          
+            <psc:chapter start="02:00:30" title="Beim neu Bauen wird alles besser" />
+          
+            <psc:chapter start="02:08:20" title="Schlusswort" />
+          
+          </psc:chapters>
+          
+        </item>
+        
     </channel>
 </rss>
